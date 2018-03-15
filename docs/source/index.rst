@@ -1,5 +1,5 @@
-SUEWS v2017b
-~~~~~~~~~~~~
+SUEWS: Surface Urban Energy and Water Balance Scheme
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The current version of SUEWS is v2017b. The software can be downloaded
 by completing the form
@@ -19997,7 +19997,7 @@ ESTM output file format
 | 5           | dectime     | Decimal     |             |
 |             |             | time        |             |
 +-------------+-------------+-------------+-------------+-------------+
-| 6           | QSnet       | Net storage | W           | --T:288-->  |
+| 6           | QSnet       | Net storage | W           |             |
 |             |             | heat flux   | m\ :sup:`-2 |             |
 |             |             | (QSwall+QSg | `           |             |
 |             |             | round+QS)   |             |             |
@@ -20847,13 +20847,6 @@ References
    related developments. Journal of Applied Meteorology & Climatology
    50, 185-202, doi: 10.1175/2010JAMC2474.1
 
-.. [6]
-
-.. [7]
-
-.. [8]
-
-.. [9]
 
 .. [10]
    Iamarino M, Beevers S & Grimmond CSB (2011) High-resolution (space,
@@ -20887,19 +20880,11 @@ References
    central European city center. International J. of Climatology. 25:
    1405–1419 doi: 10.1002/joc.1198
 
-.. [16]
-
-.. [17]
-
-.. [18]
 
 .. [19]
    Grimmond CSB, Oke TR and Steyn DG (1986) Urban water-balance 1. A
    model for daily totals. Water Resour Res 22: 1397-1403.
 
-.. [20]
-
-.. [21]
 
 .. [22]
    Järvi L, Grimmond CSB, Taka M, Nordbo A, Setälä H & Strachan IB
@@ -20930,9 +20915,6 @@ References
    in urban areas: model development and evaluation. Theoretical and
    Applied Climatology 105:3, 311-323.
 
-.. [27]
-
-.. [28]
 
 .. [29]
    Kokkonen TV, Grimmond CSB, Räty O, Ward HC, Christen A, Oke TR,
@@ -20945,11 +20927,6 @@ References
    atmospheric conditions for urban land surface models’ performance.
    Urban Climate 10: 387-406. doi: 10.1016/j.uclim.2013.10.006.
 
-.. [31]
-
-.. [32]
-
-.. [33]
 
 .. [34]
    Allen L, F Lindberg, CSB Grimmond (2011) Global to city scale model
@@ -20962,23 +20939,6 @@ References
    Europe 1995–2015, Urban Climate,4,1-13
    `paper <http://dx.doi.org/10.1016/j.uclim.2013.03.002>`__
 
-.. [36]
-
-.. [37]
-
-.. [38]
-
-.. [39]
-
-.. [40]
-
-.. [41]
-
-.. [42]
-
-.. [43]
-
-.. [44]
 
 .. [45]
    Dyer AJ (1974) A review of flux-profile relationships. Boundary-Layer
@@ -20994,30 +20954,17 @@ References
    layer parameters for boundary layer applications. J. Clim. Appl.
    Meteorol. 24, 1196-1207.
 
-.. [48]
-
-.. [49]
 
 .. [50]
    Campbell GS & Norman JM (1998) Introduction to Environmental
    Biophysics. Springer Science, US.
 
-.. [51]
-
-.. [52]
-
-.. [53]
 
 .. [54]
    Businger JA, Wyngaard JC, Izumi Y & Bradley EF (1971) Flux-Profile
    Relationships in the Atmospheric Surface Layer. J. Atmos. Sci., 28,
    181–189.
 
-.. [55]
-
-.. [56]
-
-.. [57]
 
 .. [58]
    Kawai T, Ridwan MK & Kanda M (2009) Evaluation of the simple urban
@@ -21044,24 +20991,6 @@ References
    estimation of surface roughness of obstacle arrays. Atmos. Env. 32,
    1857-1864.
 
-.. [63]
-
-.. [64]
-
-.. [65]
-
-.. [66]
-
-.. [67]
-
-.. [68]
-
-.. [69]
-
-.. [70]
-
-.. [71]
-
 .. [72]
    Dyer AJ (1974) A review of flux-profile relationships. Boundary-Layer
    Meteorol. 7, 363-372.
@@ -21076,30 +21005,17 @@ References
    layer parameters for boundary layer applications. J. Clim. Appl.
    Meteorol. 24, 1196-1207.
 
-.. [75]
-
-.. [76]
 
 .. [77]
    Campbell GS & Norman JM (1998) Introduction to Environmental
    Biophysics. Springer Science, US.
 
-.. [78]
-
-.. [79]
-
-.. [80]
 
 .. [81]
    Businger JA, Wyngaard JC, Izumi Y & Bradley EF (1971) Flux-Profile
    Relationships in the Atmospheric Surface Layer. J. Atmos. Sci., 28,
    181–189.
 
-.. [82]
-
-.. [83]
-
-.. [84]
 
 .. [85]
    Kawai T, Ridwan MK & Kanda M (2009) Evaluation of the simple urban
@@ -21126,17 +21042,6 @@ References
    estimation of surface roughness of obstacle arrays. Atmos. Env. 32,
    1857-1864.
 
-.. [90]
-
-.. [91]
-
-.. [92]
-
-.. [93]
-
-.. [94]
-
-.. [95]
 
 .. [96]
    Falk J & Niemczynowicz J, (1978) Characteristics of the above ground
@@ -21154,11 +21059,6 @@ References
    Interception From Sitka Spruce: Some Evidence for an Additional
    Transport Mechanism. Water Resour. Res., 22(3), 409–417.
 
-.. [99]
-
-.. [100]
-
-.. [101]
 
 .. [102]
    Falk J & Niemczynowicz J, (1978) Characteristics of the above ground
@@ -21176,37 +21076,6 @@ References
    Interception From Sitka Spruce: Some Evidence for an Additional
    Transport Mechanism. Water Resour. Res., 22(3), 409–417.
 
-.. [105]
-
-.. [106]
-
-.. [107]
-
-.. [108]
-
-.. [109]
-
-.. [110]
-
-.. [111]
-
-.. [112]
-
-.. [113]
-
-.. [114]
-
-.. [115]
-
-.. [116]
-
-.. [117]
-
-.. [118]
-
-.. [119]
-
-.. [120]
 
 .. [121]
    Falk J & Niemczynowicz J, (1978) Characteristics of the above ground
@@ -21224,11 +21093,6 @@ References
    Interception From Sitka Spruce: Some Evidence for an Additional
    Transport Mechanism. Water Resour. Res., 22(3), 409–417.
 
-.. [124]
-
-.. [125]
-
-.. [126]
 
 .. [127]
    Falk J & Niemczynowicz J, (1978) Characteristics of the above ground
@@ -21246,694 +21110,67 @@ References
    Interception From Sitka Spruce: Some Evidence for an Additional
    Transport Mechanism. Water Resour. Res., 22(3), 409–417.
 
-.. [130]
-
-.. [131]
-
-.. [132]
-
-.. [133]
-
-.. [134]
-
-.. [135]
-
-.. [136]
-
-.. [137]
-
-.. [138]
-
-.. [139]
-
-.. [140]
-
-.. [141]
-
-.. [142]
-
-.. [143]
-
-.. [144]
-
-.. [145]
-
-.. [146]
-
-.. [147]
-
-.. [148]
-
-.. [149]
-
-.. [150]
 
 .. [151]
    Oke TR (1987) Boundary Layer Climates. Routledge, London, UK
 
-.. [152]
-
-.. [153]
-
-.. [154]
-
-.. [155]
-
-.. [156]
-
-.. [157]
-
-.. [158]
-
-.. [159]
 
 .. [160]
    Breuer L, Eckhardt K and Frede H-G (2003) Plant parameter values for
    models in temperate climates. Ecol. Model. 169, 237-293.
 
-.. [161]
-
-.. [162]
-
-.. [163]
-
-.. [164]
-
-.. [165]
-
-.. [166]
-
-.. [167]
-
-.. [168]
-
-.. [169]
-
-.. [170]
-
-.. [171]
-
-.. [172]
-
-.. [173]
-
-.. [174]
-
-.. [175]
-
-.. [176]
-
-.. [177]
-
-.. [178]
-
-.. [179]
-
-.. [180]
-
-.. [181]
-
-.. [182]
-
-.. [183]
-
-.. [184]
-
-.. [185]
-
-.. [186]
-
-.. [187]
-
-.. [188]
-
-.. [189]
-
-.. [190]
-
-.. [191]
-
-.. [192]
-
-.. [193]
-
-.. [194]
-
-.. [195]
-
-.. [196]
-
-.. [197]
-
-.. [198]
-
-.. [199]
-
-.. [200]
-
-.. [201]
-
-.. [202]
-
-.. [203]
-
-.. [204]
-
-.. [205]
-
-.. [206]
-
-.. [207]
-
-.. [208]
-
-.. [209]
-
-.. [210]
-
-.. [211]
-
-.. [212]
-
-.. [213]
-
-.. [214]
-
-.. [215]
 
 .. [216]
    Jarvis PG (1976) The interpretation of the variations in leaf water
    potential and stomatal conductance found in canopies in the field.
    Philos. Trans. R. Soc. London, Ser. B., 273, 593-610.
 
-.. [217]
-
-.. [218]
-
-.. [219]
-
-.. [220]
-
-.. [221]
-
-.. [222]
-
-.. [223]
-
-.. [224]
-
-.. [225]
-
-.. [226]
-
-.. [227]
-
-.. [228]
-
-.. [229]
-
-.. [230]
-
-.. [231]
-
-.. [232]
-
-.. [233]
-
-.. [234]
-
-.. [235]
-
-.. [236]
-
-.. [237]
-
-.. [238]
-
-.. [239]
-
-.. [240]
 
 .. [241]
    Oke TR (1987) Boundary Layer Climates. Routledge, London, UK
 
-.. [242]
-
-.. [243]
 
 .. [244]
    Oke TR (1987) Boundary Layer Climates. Routledge, London, UK
 
-.. [245]
-
-.. [246]
-
-.. [247]
-
-.. [248]
-
-.. [249]
-
-.. [250]
-
-.. [251]
-
-.. [252]
-
-.. [253]
-
-.. [254]
-
-.. [255]
-
-.. [256]
-
-.. [257]
-
-.. [258]
 
 .. [259]
    Breuer L, Eckhardt K and Frede H-G (2003) Plant parameter values for
    models in temperate climates. Ecol. Model. 169, 237-293.
 
-.. [260]
-
-.. [261]
 
 .. [262]
    Breuer L, Eckhardt K and Frede H-G (2003) Plant parameter values for
    models in temperate climates. Ecol. Model. 169, 237-293.
 
-.. [263]
-
-.. [264]
-
-.. [265]
-
-.. [266]
-
-.. [267]
-
-.. [268]
-
-.. [269]
-
-.. [270]
-
-.. [271]
-
-.. [272]
-
-.. [273]
-
-.. [274]
-
-.. [275]
-
-.. [276]
-
-.. [277]
-
-.. [278]
-
-.. [279]
-
-.. [280]
-
-.. [281]
-
-.. [282]
-
-.. [283]
-
-.. [284]
-
-.. [285]
-
-.. [286]
-
-.. [287]
-
-.. [288]
-
-.. [289]
-
-.. [290]
-
-.. [291]
-
-.. [292]
-
-.. [293]
-
-.. [294]
-
-.. [295]
-
-.. [296]
-
-.. [297]
-
-.. [298]
-
-.. [299]
-
-.. [300]
-
-.. [301]
-
-.. [302]
-
-.. [303]
-
-.. [304]
-
-.. [305]
-
-.. [306]
-
-.. [307]
-
-.. [308]
-
-.. [309]
-
-.. [310]
-
-.. [311]
-
-.. [312]
-
-.. [313]
-
-.. [314]
-
-.. [315]
-
-.. [316]
-
-.. [317]
-
-.. [318]
-
-.. [319]
-
-.. [320]
-
-.. [321]
-
-.. [322]
-
-.. [323]
-
-.. [324]
-
-.. [325]
-
-.. [326]
-
-.. [327]
-
-.. [328]
-
-.. [329]
-
-.. [330]
-
-.. [331]
-
-.. [332]
-
-.. [333]
-
-.. [334]
-
-.. [335]
-
-.. [336]
-
-.. [337]
-
-.. [338]
 
 .. [339]
    Jarvis PG (1976) The interpretation of the variations in leaf water
    potential and stomatal conductance found in canopies in the field.
    Philos. Trans. R. Soc. London, Ser. B., 273, 593-610.
 
-.. [340]
-
-.. [341]
-
-.. [342]
-
-.. [343]
-
-.. [344]
-
-.. [345]
-
-.. [346]
-
-.. [347]
-
-.. [348]
-
-.. [349]
-
-.. [350]
-
-.. [351]
-
-.. [352]
-
-.. [353]
-
-.. [354]
-
-.. [355]
-
-.. [356]
-
-.. [357]
-
-.. [358]
-
-.. [359]
-
-.. [360]
-
-.. [361]
-
-.. [362]
-
-.. [363]
-
-.. [364]
-
-.. [365]
-
-.. [366]
-
-.. [367]
-
-.. [368]
-
-.. [369]
-
-.. [370]
-
-.. [371]
-
-.. [372]
-
-.. [373]
-
-.. [374]
-
-.. [375]
-
-.. [376]
-
-.. [377]
-
-.. [378]
-
-.. [379]
-
-.. [380]
-
-.. [381]
-
-.. [382]
-
-.. [383]
 
 .. [384]
    Auer AH (1974) The rain versus snow threshold temperatures.
    Weatherwise, 27, 67.
 
-.. [385]
-
-.. [386]
-
-.. [387]
-
-.. [388]
-
-.. [389]
-
-.. [390]
 
 .. [391]
    Auer AH (1974) The rain versus snow threshold temperatures.
    Weatherwise, 27, 67.
 
-.. [392]
-
-.. [393]
-
-.. [394]
-
-.. [395]
-
-.. [396]
 
 .. [397]
    Sailor DJ and Vasireddy C (2006) Correcting aggregate energy
    consumption data account for variability in local weather. Environ.
    Modell. Softw. 21, 733-738.
 
-.. [398]
-
-.. [399]
-
-.. [400]
-
-.. [401]
-
-.. [402]
-
-.. [403]
-
-.. [404]
-
-.. [405]
-
-.. [406]
-
-.. [407]
-
-.. [408]
-
-.. [409]
-
-.. [410]
-
-.. [411]
-
-.. [412]
-
-.. [413]
-
-.. [414]
-
-.. [415]
-
-.. [416]
-
-.. [417]
-
-.. [418]
-
-.. [419]
-
-.. [420]
-
-.. [421]
-
-.. [422]
-
-.. [423]
-
-.. [424]
 
 .. [425]
    Sailor DJ and Vasireddy C (2006) Correcting aggregate energy
    consumption data account for variability in local weather. Environ.
    Modell. Softw. 21, 733-738.
 
-.. [426]
-
-.. [427]
-
-.. [428]
-
-.. [429]
-
-.. [430]
-
-.. [431]
-
-.. [432]
-
-.. [433]
-
-.. [434]
-
-.. [435]
-
-.. [436]
-
-.. [437]
-
-.. [438]
-
-.. [439]
-
-.. [440]
-
-.. [441]
-
-.. [442]
-
-.. [443]
-
-.. [444]
-
-.. [445]
-
-.. [446]
-
-.. [447]
-
-.. [448]
-
-.. [449]
-
-.. [450]
-
-.. [451]
-
-.. [452]
-
-.. [453]
-
-.. [454]
-
-.. [455]
-
-.. [456]
-
-.. [457]
-
-.. [458]
-
-.. [459]
-
-.. [460]
-
-.. [461]
 
 .. [462]
    Konarska J, Lindberg F, Larsson A, Thorsson S and Holmer B (2014)
@@ -21941,15 +21178,11 @@ References
    trees—application for outdoor thermal comfort modelling. Theor Appl
    Climatol 117:363–376.
 
-.. [463]
-
-.. [464]
 
 .. [465]
    Reindl DT, Beckman WA and Duffie JA (1990) Diffuse fraction
    correlation. Sol Energy 45:1–7.
 
-.. [466]
 
 .. [467]
    Konarska J, Lindberg F, Larsson A, Thorsson S and Holmer B (2014)
@@ -21957,53 +21190,10 @@ References
    trees—application for outdoor thermal comfort modelling. Theor Appl
    Climatol 117:363–376.
 
-.. [468]
-
-.. [469]
 
 .. [470]
    Reindl DT, Beckman WA and Duffie JA (1990) Diffuse fraction
    correlation. Sol Energy 45:1–7.
-
-.. [471]
-
-.. [472]
-
-.. [473]
-
-.. [474]
-
-.. [475]
-
-.. [476]
-
-.. [477]
-
-.. [478]
-
-.. [479]
-
-.. [480]
-
-.. [481]
-
-.. [482]
-
-.. [483]
-
-.. [484]
-
-.. [485]
-
-.. [486]
-
-.. [487]
-
-.. [488]
-
-.. [489]
-
-.. [490]
 
 .. [491]
    Loridan T and Grimmond CSB (2012) Characterization of energy flux
