@@ -1,0 +1,1011 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Output files &#8212; SUEWS 2018a documentation</title>
+    
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2018a',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="nav-item nav-item-0"><a href="index.html">SUEWS 2018a documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="output-files">
+<h1>Output files<a class="headerlink" href="#output-files" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="error-messages-problems-txt">
+<h2>Error messages: problems.txt<a class="headerlink" href="#error-messages-problems-txt" title="Permalink to this headline">¶</a></h2>
+<p>If there are problems running the program serious error messages will be
+written to problems.txt.</p>
+<ul class="simple">
+<li>Serious problems will usually cause the program to stop after writing
+the error message. If this is the case, the last line of problems.txt
+will contain a non-zero number (the error code).</li>
+<li>If the program runs successfully, problems.txt file ends with</li>
+</ul>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">Run&nbsp;completed.</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">0</span></code></div>
+</div>
+<p>SUEWS has a large number of error messages included to try to capture
+common errors to help the user determine what the problem is. If you
+encounter an error that does not provide an error message please capture
+the details so we can hopefully provide better error messages in future.</p>
+<p>See <a class="reference external" href="#Troubleshooting">Troubleshooting</a> section for help solving
+problems. If the file paths are not correct the program will return an
+error when run (see <a class="reference external" href="#Preparing_to_run_the_model">Preparing to run the
+model</a>).</p>
+</div>
+<div class="section" id="error-messages-warnings-txt">
+<h2>Error messages: warnings.txt<a class="headerlink" href="#error-messages-warnings-txt" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>If the program encounters a more minor issue it will not stop but a
+warning may be written to warnings.txt. It is advisable to check the
+warnings to ensure there is not a more serious problem.</li>
+<li>The warnings.txt file can be large (over several GBs) given warning
+messages are written out during a large scale simulation, you can use
+<code class="docutils literal"><span class="pre">tail</span></code>/<code class="docutils literal"><span class="pre">head</span></code> to view the ending/starting part without opening
+the whole file on Unix-like systems (Linux/mac OS), which may slow
+down your system.</li>
+<li>To prevent warnings.txt from being written, set <strong>SuppressWarnings</strong>
+to 1 in <a class="reference external" href="#RunControl.nml">RunControl.nml</a>.</li>
+<li>Warning messages are usually written with a grid number, timestamp
+and error count. If the problem occurs in the initial stages (i.e.
+before grid numbers and timestamps are assigned, these are printed as
+00000).</li>
+</ul>
+</div>
+<div class="section" id="summary-of-model-parameters-ss-filechoices-txt">
+<h2>Summary of model parameters: SS_FileChoices.txt<a class="headerlink" href="#summary-of-model-parameters-ss-filechoices-txt" title="Permalink to this headline">¶</a></h2>
+<p>For each run, the model parameters specified in the input files are
+written out to the file SS_FileChoices.txt.</p>
+</div>
+<div class="section" id="model-output-files">
+<h2>Model output files<a class="headerlink" href="#model-output-files" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="ssss-yyyy-tt-txt">
+<h3>SSss_YYYY_TT.txt<a class="headerlink" href="#ssss-yyyy-tt-txt" title="Permalink to this headline">¶</a></h3>
+<p>SUEWS produces the main output file (SSss_YYYY_tt.txt) with time
+resolution (TT min) set by <strong>ResolutionFilesOut</strong> in
+<a class="reference external" href="#RunControl">RunControl</a>.</p>
+<p>Before these main data files are written out, SUEWS provides a summary
+of the column names, units and variables included in the file
+Ss_YYYY_TT_OutputFormat.txt (one file per run).</p>
+<p>The variables included in the main output file are determined according
+to <strong>WriteOutOption</strong> set in <a class="reference external" href="#RunControl.nml">RunControl.nml</a>.</p>
+<p>====SSss_YYYY_nn_TT.nc (when ncMode=1 in RunControl) ==== SUEWS can also
+produce the main output file in netCDF format by setting ncMode=1 (set
+in <a class="reference external" href="#RunControl">RunControl</a>).</p>
+<p>As the date and time information is incorporated in the netCDF output as
+separate dimension, the first five variables in the normal text output
+file (in .txt) are not included in the netCDF output but other variables
+are all kept.</p>
+<p>N.B., considering the file size limit by the classic netCDF format, the
+output frequency is determined automatically by the internal SUEWS
+program setting to avoid the oversize problem in the netCDF files.</p>
+</div>
+<div class="section" id="ssss-dailystate-txt">
+<h3>SSss_DailyState.txt<a class="headerlink" href="#ssss-dailystate-txt" title="Permalink to this headline">¶</a></h3>
+<p>Contains information about the state of the surface and soil and
+vegetation parameters at a time resolution of one day. One file is
+written for each grid so it may contain multiple years.</p>
+</div>
+<div class="section" id="initialconditionsssss-yyyy-nml">
+<span id="initialconditionsssss-yyyy-nml-1"></span><h3>InitialConditionsSSss_YYYY.nml<a class="headerlink" href="#initialconditionsssss-yyyy-nml" title="Permalink to this headline">¶</a></h3>
+<p>At the end of the model run (or the end of each year in the model run) a
+new InitialConditions file is written out (to the input folder) for each
+grid, see
+<a class="reference external" href="#InitialConditionsSSss_YYYY.nml">InitialConditionsSSss_YYYY.nml</a></p>
+</div>
+<div class="section" id="ssss-yyyy-snow-tt-txt">
+<h3>SSss_YYYY_snow_TT.txt<a class="headerlink" href="#ssss-yyyy-snow-tt-txt" title="Permalink to this headline">¶</a></h3>
+<p>SUEWS produces a separate output file for snow (when snowUse = 1 in
+RunControl.nml) with details for each surface type.</p>
+<p>File format of SSss_YYYY_snow_60.txt</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Column</th>
+<th class="head">Name</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>iy</td>
+<td>Year [YYYY]</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>id</td>
+<td>Day of year [DOY]</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>it</td>
+<td>Hour [H]</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>imin</td>
+<td>Minute [M]</td>
+</tr>
+<tr class="row-even"><td>5</td>
+<td>dectime</td>
+<td>Decimal time [-]</td>
+</tr>
+<tr class="row-odd"><td>6</td>
+<td>SWE_Paved</td>
+<td>Snow water equivalent
+– paved surface [mm]</td>
+</tr>
+<tr class="row-even"><td>7</td>
+<td>SWE_Bldgs</td>
+<td>Snow water equivalent
+– building surface
+[mm]</td>
+</tr>
+<tr class="row-odd"><td>8</td>
+<td>SWE_EveTr</td>
+<td>Snow water equivalent
+– evergreen surface
+[mm]</td>
+</tr>
+<tr class="row-even"><td>9</td>
+<td>SWE_DecTr</td>
+<td>Snow water equivalent
+– deciduous surface
+[mm]</td>
+</tr>
+<tr class="row-odd"><td>10</td>
+<td>SWE_Grass</td>
+<td>Snow water equivalent
+– grass surface [mm]</td>
+</tr>
+<tr class="row-even"><td>11</td>
+<td>SWE_BSoil</td>
+<td>Snow water equivalent
+– bare soil surface
+[mm]</td>
+</tr>
+<tr class="row-odd"><td>12</td>
+<td>SWE_Water</td>
+<td>Snow water equivalent
+– water surface [mm]</td>
+</tr>
+<tr class="row-even"><td>13</td>
+<td>Mw_Paved</td>
+<td>Meltwater – paved
+surface [mm
+h<sup>-1</sup>]</td>
+</tr>
+<tr class="row-odd"><td>14</td>
+<td>Mw_Bldgs</td>
+<td>Meltwater – building
+surface [mm
+h<sup>-1</sup>]</td>
+</tr>
+<tr class="row-even"><td>15</td>
+<td>Mw_EveTr</td>
+<td>Meltwater – evergreen
+surface [mm
+h<sup>-1</sup>]</td>
+</tr>
+<tr class="row-odd"><td>16</td>
+<td>Mw_DecTr</td>
+<td>Meltwater – deciduous
+surface [mm
+h<sup>-1</sup>]</td>
+</tr>
+<tr class="row-even"><td>17</td>
+<td>Mw_Grass</td>
+<td>Meltwater – grass
+surface [mm
+h<sup>-1</sup>1]</td>
+</tr>
+<tr class="row-odd"><td>18</td>
+<td>Mw_BSoil</td>
+<td>Meltwater – bare soil
+surface [mm
+h<sup>-1</sup>]</td>
+</tr>
+<tr class="row-even"><td>19</td>
+<td>Mw_Water</td>
+<td>Meltwater – water
+surface [mm
+h<sup>-1</sup>]</td>
+</tr>
+<tr class="row-odd"><td>20</td>
+<td>Qm_Paved</td>
+<td>Snowmelt-related heat
+– paved surface [W
+m<sup>-2</sup>]</td>
+</tr>
+<tr class="row-even"><td>21</td>
+<td>Qm_Bldgs</td>
+<td>Snowmelt-related heat
+– building surface [W
+m<sup>-2</sup>]</td>
+</tr>
+<tr class="row-odd"><td>22</td>
+<td>Qm_EveTr</td>
+<td>Snowmelt-related heat
+– evergreen surface
+[W m<sup>-2</sup>]</td>
+</tr>
+<tr class="row-even"><td>23</td>
+<td>Qm_DecTr</td>
+<td>Snowmelt-related heat
+– deciduous surface
+[W m<sup>-2</sup>]</td>
+</tr>
+<tr class="row-odd"><td>24</td>
+<td>Qm_Grass</td>
+<td>Snowmelt-related heat
+– grass surface [W
+m<sup>-2</sup>]</td>
+</tr>
+<tr class="row-even"><td>25</td>
+<td>Qm_BSoil</td>
+<td>Snowmelt-related heat
+– bare soil surface
+[W m<sup>-2</sup>]</td>
+</tr>
+<tr class="row-odd"><td>26</td>
+<td>Qm_Water</td>
+<td>Snowmelt-related heat
+– water surface [W
+m<sup>-2</sup>]</td>
+</tr>
+<tr class="row-even"><td>27</td>
+<td>Qa_Paved</td>
+<td>Advective heat –
+paved surface [W
+m<sup>-2</sup>]</td>
+</tr>
+<tr class="row-odd"><td>28</td>
+<td>Qa_Bldgs</td>
+<td>Advective heat –
+building surface [W
+m<sup>-2</sup>]</td>
+</tr>
+<tr class="row-even"><td>29</td>
+<td>Qa_EveTr</td>
+<td>Advective heat –
+evergreen surface [W
+m<sup>-2</sup>]</td>
+</tr>
+<tr class="row-odd"><td>30</td>
+<td>Qa_DecTr</td>
+<td>Advective heat –
+deciduous surface [W
+m<sup>-2</sup>]</td>
+</tr>
+<tr class="row-even"><td>31</td>
+<td>Qa_Grass</td>
+<td>Advective heat –
+grass surface [W
+m<sup>-2</sup>]</td>
+</tr>
+<tr class="row-odd"><td>32</td>
+<td>Qa_BSoil</td>
+<td>Advective heat – bare
+soil surface [W
+m<sup>-2</sup>]</td>
+</tr>
+<tr class="row-even"><td>33</td>
+<td>Qa_Water</td>
+<td>Advective heat –
+water surface [W
+m<sup>-2</sup>]</td>
+</tr>
+<tr class="row-odd"><td>34</td>
+<td>QmFr_Paved</td>
+<td>Heat related to
+freezing of surface
+store – paved surface
+[W m<sup>-2</sup>]</td>
+</tr>
+<tr class="row-even"><td>35</td>
+<td>QmFr_Bldgs</td>
+<td>Heat related to
+freezing of surface
+store – building
+surface [W
+m<sup>-2</sup>]</td>
+</tr>
+<tr class="row-odd"><td>36</td>
+<td>QmFr_EveTr</td>
+<td>Heat related to
+freezing of surface
+store – evergreen
+surface [W
+m<sup>-2</sup>]</td>
+</tr>
+<tr class="row-even"><td>37</td>
+<td>QmFr_DecTr</td>
+<td>Heat related to
+freezing of surface
+store – deciduous
+surface [W
+m<sup>-2</sup>]</td>
+</tr>
+<tr class="row-odd"><td>38</td>
+<td>QmFr_Grass</td>
+<td>Heat related to
+freezing of surface
+store – grass surface
+[W m<sup>-2</sup>]</td>
+</tr>
+<tr class="row-even"><td>39</td>
+<td>QmFr_BSoil</td>
+<td>Heat related to
+freezing of surface
+store – bare soil
+surface [W
+m<sup>-2</sup>]</td>
+</tr>
+<tr class="row-odd"><td>40</td>
+<td>QmFr_Water</td>
+<td>Heat related to
+freezing of surface
+store – water [W
+m<sup>-2</sup>]</td>
+</tr>
+<tr class="row-even"><td>41</td>
+<td>fr_Paved</td>
+<td>Fraction of snow –
+paved surface [-]</td>
+</tr>
+<tr class="row-odd"><td>42</td>
+<td>fr_Bldgs</td>
+<td>Fraction of snow –
+building surface [-]</td>
+</tr>
+<tr class="row-even"><td>43</td>
+<td>fr_EveTr</td>
+<td>Fraction of snow –
+evergreen surface [-]</td>
+</tr>
+<tr class="row-odd"><td>44</td>
+<td>fr_DecTr</td>
+<td>Fraction of snow –
+deciduous surface [-]</td>
+</tr>
+<tr class="row-even"><td>45</td>
+<td>fr_Grass</td>
+<td>Fraction of snow –
+grass surface [-]</td>
+</tr>
+<tr class="row-odd"><td>46</td>
+<td>Fr_BSoil</td>
+<td>Fraction of snow –
+bare soil surface [-]</td>
+</tr>
+<tr class="row-even"><td>47</td>
+<td>RainSn_Paved</td>
+<td>Rain on snow – paved
+surface [mm]</td>
+</tr>
+<tr class="row-odd"><td>48</td>
+<td>RainSn_Bdgs</td>
+<td>Rain on snow –
+building surface [mm]</td>
+</tr>
+<tr class="row-even"><td>49</td>
+<td>RainSn_EveTr</td>
+<td>Rain on snow –
+evergreen surface
+[mm]</td>
+</tr>
+<tr class="row-odd"><td>50</td>
+<td>RainSn_DecTr</td>
+<td>Rain on snow –
+deciduous surface
+[mm]</td>
+</tr>
+<tr class="row-even"><td>51</td>
+<td>RainSn_Grass</td>
+<td>Rain on snow – grass
+surface [mm]</td>
+</tr>
+<tr class="row-odd"><td>52</td>
+<td>RainSn_BSoil</td>
+<td>Rain on snow – bare
+soil surface [mm]</td>
+</tr>
+<tr class="row-even"><td>53</td>
+<td>RainSn_Water</td>
+<td>Rain on snow – water
+surface [mm]</td>
+</tr>
+<tr class="row-odd"><td>54</td>
+<td>qn_PavedSnow</td>
+<td>Net all-wave
+radiation – paved
+surface [W
+m<sup>-2</sup>]</td>
+</tr>
+<tr class="row-even"><td>55</td>
+<td>qn_BldgsSnow</td>
+<td>Net all-wave
+radiation – building
+surface [W
+m<sup>-2</sup>]</td>
+</tr>
+<tr class="row-odd"><td>56</td>
+<td>qn_EveTrSnow</td>
+<td>Net all-wave
+radiation – evergreen
+surface [W
+m<sup>-2</sup>]</td>
+</tr>
+<tr class="row-even"><td>57</td>
+<td>qn_DecTrSnow</td>
+<td>Net all-wave
+radiation – deciduous
+surface [W
+m<sup>-2</sup>]</td>
+</tr>
+<tr class="row-odd"><td>58</td>
+<td>qn_GrassSnow</td>
+<td>Net all-wave
+radiation – grass
+surface [W
+m<sup>-2</sup>]</td>
+</tr>
+<tr class="row-even"><td>59</td>
+<td>qn_BSoilSnow</td>
+<td>Net all-wave
+radiation – bare soil
+surface [W
+m<sup>-2</sup>]</td>
+</tr>
+<tr class="row-odd"><td>60</td>
+<td>qn_WaterSnow</td>
+<td>Net all-wave
+radiation – water
+surface [W
+m<sup>-2</sup>]</td>
+</tr>
+<tr class="row-even"><td>61</td>
+<td>kup_PavedSnow</td>
+<td>Reflected shortwave
+radiation – paved
+surface [W
+m<sup>-2</sup>]</td>
+</tr>
+<tr class="row-odd"><td>62</td>
+<td>kup_BldgsSnow</td>
+<td>Reflected shortwave
+radiation – building
+surface [W
+m<sup>-2</sup>]</td>
+</tr>
+<tr class="row-even"><td>63</td>
+<td>kup_EveTrSnow</td>
+<td>Reflected shortwave
+radiation – evergreen
+surface [W
+m<sup>-2</sup>]</td>
+</tr>
+<tr class="row-odd"><td>64</td>
+<td>kup_DecTrSnow</td>
+<td>Reflected shortwave
+radiation – deciduous
+surface [W
+m<sup>-2</sup>]</td>
+</tr>
+<tr class="row-even"><td>65</td>
+<td>kup_GrassSnow</td>
+<td>Reflected shortwave
+radiation – grass
+surface [W
+m<sup>-2</sup>]</td>
+</tr>
+<tr class="row-odd"><td>66</td>
+<td>kup_BSoilSnow</td>
+<td>Reflected shortwave
+radiation – bare soil
+surface [W
+m<sup>-2</sup>]</td>
+</tr>
+<tr class="row-even"><td>67</td>
+<td>kup_WaterSnow</td>
+<td>Reflected shortwave
+radiation – water
+surface [W
+m<sup>-2</sup>]</td>
+</tr>
+<tr class="row-odd"><td>68</td>
+<td>frMelt_Paved</td>
+<td>Amount of freezing
+melt water – paved
+surface [mm]</td>
+</tr>
+<tr class="row-even"><td>69</td>
+<td>frMelt_Bldgs</td>
+<td>Amount of freezing
+melt water – building
+surface [mm]</td>
+</tr>
+<tr class="row-odd"><td>70</td>
+<td>frMelt_EveTr</td>
+<td>Amount of freezing
+melt water –
+evergreen surface
+[mm]</td>
+</tr>
+<tr class="row-even"><td>71</td>
+<td>frMelt_DecTr</td>
+<td>Amount of freezing
+melt water –
+deciduous surface
+[mm]</td>
+</tr>
+<tr class="row-odd"><td>72</td>
+<td>frMelt_Grass</td>
+<td>Amount of freezing
+melt water – grass
+surface [mm]</td>
+</tr>
+<tr class="row-even"><td>73</td>
+<td>frMelt_BSoil</td>
+<td>Amount of freezing
+melt water – bare
+soil surface [mm]</td>
+</tr>
+<tr class="row-odd"><td>74</td>
+<td>frMelt_Water</td>
+<td>Amount of freezing
+melt water – water
+surface [mm]</td>
+</tr>
+<tr class="row-even"><td>75</td>
+<td>MwStore_Paved</td>
+<td>Melt water store –
+paved surface [mm]</td>
+</tr>
+<tr class="row-odd"><td>76</td>
+<td>MwStore_Bldgs</td>
+<td>Melt water store –
+building surface [mm]</td>
+</tr>
+<tr class="row-even"><td>77</td>
+<td>MwStore_EveTt</td>
+<td>Melt water store –
+evergreen surface
+[mm]</td>
+</tr>
+<tr class="row-odd"><td>78</td>
+<td>MwStore_DecTr</td>
+<td>Melt water store –
+deciduous surface
+[mm]</td>
+</tr>
+<tr class="row-even"><td>79</td>
+<td>MwStore_Grass</td>
+<td>Melt water store –
+grass surface [mm]</td>
+</tr>
+<tr class="row-odd"><td>80</td>
+<td>MwStore_BSoil</td>
+<td>Melt water store –
+bare soil surface
+[mm]</td>
+</tr>
+<tr class="row-even"><td>81</td>
+<td>MwStore_Water</td>
+<td>Melt water store –
+water surface [mm]</td>
+</tr>
+<tr class="row-odd"><td>82</td>
+<td>DensSnow_Paved</td>
+<td>Snow density – paved
+surface [kg
+m<sup>-3</sup>]</td>
+</tr>
+<tr class="row-even"><td>83</td>
+<td>DensSnow_Bldgs</td>
+<td>Snow density –
+building surface [kg
+m<sup>-3</sup>]</td>
+</tr>
+<tr class="row-odd"><td>84</td>
+<td>DensSnow_EveTr</td>
+<td>Snow density –
+evergreen surface [kg
+m<sup>-3</sup>]</td>
+</tr>
+<tr class="row-even"><td>85</td>
+<td>DensSnow_DecTr</td>
+<td>Snow density –
+deciduous surface [kg
+m<sup>-3</sup>]</td>
+</tr>
+<tr class="row-odd"><td>86</td>
+<td>DensSnow_Grass</td>
+<td>Snow density – grass
+surface [kg
+m<sup>-3</sup>]</td>
+</tr>
+<tr class="row-even"><td>87</td>
+<td>DensSnow_BSoil</td>
+<td>Snow density – bare
+soil surface [kg
+m<sup>-3</sup>]</td>
+</tr>
+<tr class="row-odd"><td>88</td>
+<td>DensSnow_Water</td>
+<td>Snow density – water
+surface [kg
+m<sup>-3</sup>]</td>
+</tr>
+<tr class="row-even"><td>89</td>
+<td>Sd_Paved</td>
+<td>Snow depth – paved
+surface [mm]</td>
+</tr>
+<tr class="row-odd"><td>90</td>
+<td>Sd_Bldgs</td>
+<td>Snow depth – building
+surface [mm]</td>
+</tr>
+<tr class="row-even"><td>91</td>
+<td>Sd_EveTr</td>
+<td>Snow depth –
+evergreen surface
+[mm]</td>
+</tr>
+<tr class="row-odd"><td>92</td>
+<td>Sd_DecTr</td>
+<td>Snow depth –
+deciduous surface
+[mm]</td>
+</tr>
+<tr class="row-even"><td>93</td>
+<td>Sd_Grass</td>
+<td>Snow depth – grass
+surface [mm]</td>
+</tr>
+<tr class="row-odd"><td>94</td>
+<td>Sd_BSoil</td>
+<td>Snow depth – bare
+soil surface [mm]</td>
+</tr>
+<tr class="row-even"><td>95</td>
+<td>Sd_Water</td>
+<td>Snow depth – water
+surface [mm]</td>
+</tr>
+<tr class="row-odd"><td>96</td>
+<td>Tsnow_Paved</td>
+<td>Snow surface
+temperature – paved
+surface [°C]</td>
+</tr>
+<tr class="row-even"><td>97</td>
+<td>Tsnow_Bldgs</td>
+<td>Snow surface
+temperature –
+building surface [°C]</td>
+</tr>
+<tr class="row-odd"><td>98</td>
+<td>Tsnow_EveTr</td>
+<td>Snow surface
+temperature –
+evergreen surface
+[°C]</td>
+</tr>
+<tr class="row-even"><td>99</td>
+<td>Tsnow_DecTr</td>
+<td>Snow surface
+temperature –
+deciduous surface
+[°C]</td>
+</tr>
+<tr class="row-odd"><td>100</td>
+<td>Tsnow_Grass</td>
+<td>Snow surface
+temperature – grass
+surface [°C]</td>
+</tr>
+<tr class="row-even"><td>101</td>
+<td>Tsnow_BSoil</td>
+<td>Snow surface
+temperature – bare
+soil surface [°C]</td>
+</tr>
+<tr class="row-odd"><td>102</td>
+<td>Tsnow_Water</td>
+<td>Snow surface
+temperature – water
+surface [°C]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="ssss-yyyy-bl-txt">
+<h3>SSss_YYYY_BL.txt<a class="headerlink" href="#ssss-yyyy-bl-txt" title="Permalink to this headline">¶</a></h3>
+<p>Meteorological variables modelled by CBL portion of the model are output
+in to this file created for each day with time step (see section CBL
+Input).</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Col</th>
+<th class="head">Header</th>
+<th class="head">Name</th>
+<th class="head">Units</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>iy</td>
+<td>Year [YYYY]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>id</td>
+<td>Day of year
+[DoY]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>it</td>
+<td>Hour [H]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>imin</td>
+<td>Minute [M]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>5</td>
+<td>dectime</td>
+<td>Decimal time
+[-]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>6</td>
+<td>zi</td>
+<td>Convectibe
+boundary layer
+height</td>
+<td>m</td>
+</tr>
+<tr class="row-even"><td>7</td>
+<td>Theta</td>
+<td>Potential
+temperature in
+the inertial
+sublayer</td>
+<td>K</td>
+</tr>
+<tr class="row-odd"><td>8</td>
+<td>Q</td>
+<td>Specific
+humidity in the
+inertial
+sublayer</td>
+<td>g kg<sup>-1</sup></td>
+</tr>
+<tr class="row-even"><td>9</td>
+<td>theta+</td>
+<td>Potential
+temperature
+just above the
+CBL</td>
+<td>K</td>
+</tr>
+<tr class="row-odd"><td>10</td>
+<td>q+</td>
+<td>Specific
+humidity just
+above the CBL</td>
+<td>g kg<sup>-1</sup></td>
+</tr>
+<tr class="row-even"><td>11</td>
+<td>Temp_C</td>
+<td>Air temperature</td>
+<td>°C</td>
+</tr>
+<tr class="row-odd"><td>12</td>
+<td>RH</td>
+<td>Relative
+humidity</td>
+<td>%</td>
+</tr>
+<tr class="row-even"><td>13</td>
+<td>QH_use</td>
+<td>Sensible heat
+flux used for
+calculation</td>
+<td>W m<sup>-2</sup></td>
+</tr>
+<tr class="row-odd"><td>14</td>
+<td>QE_use</td>
+<td>Latent heat
+flux used for
+calculation</td>
+<td>W m<sup>-2</sup></td>
+</tr>
+<tr class="row-even"><td>15</td>
+<td>Press_hPa</td>
+<td>Pressure used
+for calculation</td>
+<td>hPa</td>
+</tr>
+<tr class="row-odd"><td>16</td>
+<td>avu1</td>
+<td>Wind speed used
+for calculation</td>
+<td>m s<sup>-1</sup></td>
+</tr>
+<tr class="row-even"><td>17</td>
+<td>ustar</td>
+<td>Friction
+velocity used
+for calculation</td>
+<td>m s<sup>-1</sup></td>
+</tr>
+<tr class="row-odd"><td>18</td>
+<td>avdens</td>
+<td>Air density
+used for
+calculation</td>
+<td>kg m<sup>-3</sup></td>
+</tr>
+<tr class="row-even"><td>19</td>
+<td>lv_J_kg</td>
+<td>Latent heat of
+vaporization
+used for
+calculation</td>
+<td>J kg<sup>-1</sup></td>
+</tr>
+<tr class="row-odd"><td>20</td>
+<td>avcp</td>
+<td>Specific heat
+capacity used
+for calculation</td>
+<td>J kg<sup>-1</sup>
+K<sup>-1</sup></td>
+</tr>
+<tr class="row-even"><td>21</td>
+<td>gamt</td>
+<td>Vertical
+gradient of
+potential
+temperature</td>
+<td>K m<sup>-1</sup></td>
+</tr>
+<tr class="row-odd"><td>22</td>
+<td>gamq</td>
+<td>Vertical
+gradient of
+specific
+humidity</td>
+<td>kg
+kg<sup>-1</sup>
+m<sup>-1</sup></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="solweigpoiout-txt">
+<h3>SOLWEIGpoiOut.txt<a class="headerlink" href="#solweigpoiout-txt" title="Permalink to this headline">¶</a></h3>
+<p>Calculated variables from POI, point of interest (row, col) stated in
+SOLWEIGinput.nml.</p>
+<p>SOLWEIG model output file format: SOLWEIGpoiOUT.txt</p>
+</div>
+<div class="section" id="ssss-yyyy-estm-tt-txt">
+<h3>SSss_YYYY_ESTM_TT.txt<a class="headerlink" href="#ssss-yyyy-estm-tt-txt" title="Permalink to this headline">¶</a></h3>
+<p>If the ESTM model option is run, the following output file is created.
+<strong>Note: First time steps of storage output could give NaN values during
+the initial converging phase.</strong></p>
+<p>ESTM output file format</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Output files</a><ul>
+<li><a class="reference internal" href="#error-messages-problems-txt">Error messages: problems.txt</a></li>
+<li><a class="reference internal" href="#error-messages-warnings-txt">Error messages: warnings.txt</a></li>
+<li><a class="reference internal" href="#summary-of-model-parameters-ss-filechoices-txt">Summary of model parameters: SS_FileChoices.txt</a></li>
+<li><a class="reference internal" href="#model-output-files">Model output files</a><ul>
+<li><a class="reference internal" href="#ssss-yyyy-tt-txt">SSss_YYYY_TT.txt</a></li>
+<li><a class="reference internal" href="#ssss-dailystate-txt">SSss_DailyState.txt</a></li>
+<li><a class="reference internal" href="#initialconditionsssss-yyyy-nml">InitialConditionsSSss_YYYY.nml</a></li>
+<li><a class="reference internal" href="#ssss-yyyy-snow-tt-txt">SSss_YYYY_snow_TT.txt</a></li>
+<li><a class="reference internal" href="#ssss-yyyy-bl-txt">SSss_YYYY_BL.txt</a></li>
+<li><a class="reference internal" href="#solweigpoiout-txt">SOLWEIGpoiOut.txt</a></li>
+<li><a class="reference internal" href="#ssss-yyyy-estm-tt-txt">SSss_YYYY_ESTM_TT.txt</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/8.output-files.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="nav-item nav-item-0"><a href="index.html">SUEWS 2018a documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, Sue Grimmond, Ting Sun.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.2.
+    </div>
+  </body>
+</html>

@@ -32,8 +32,8 @@ further details v2017a:
 See other publications in the next section (if you have papers that
 could be added, please send them through)
 
-.. toctree::
-   :maxdepth: 1
+.. contents:: :local:
+	:depth: 1
 	2.recent-publications.rst
 	3.introduction.rst
 	4.suews-and-umep.rst
