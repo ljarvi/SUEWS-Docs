@@ -1,0 +1,272 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>2. Introduction &mdash; SUEWS 2018a documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="SUEWS 2018a documentation" href="index.html"/>
+        <link rel="next" title="3. SUEWS and UMEP" href="suews-and-umep.html"/>
+        <link rel="prev" title="1. Recent publications" href="recent-publications.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> SUEWS
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="recent-publications.html">1. Recent publications</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">2. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="suews-and-umep.html">3. SUEWS and UMEP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="parameterisations-and-sub-models.html">4. Parameterisations and sub-models within SUEWS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prepare-to-run-the-model.html">5. Preparing to run the model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input-files.html">6. Input files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="output-files.html">7. Output files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">8. Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acknowledgement.html">9. Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notation.html">10. Notation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development.html">11. Development, Suggestions and Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="version-history.html">12. Version History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="differences-suews-lumps-fraise.html">13. Differences between SUEWS, LUMPS and FRAISE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">14. References</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">SUEWS</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>2. Introduction</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/introduction.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="introduction">
+<h1>2. Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<div class="figure">
+<img alt="Overview of SUEWS" src="_images/SUEWS_Overview_s.png" />
+</div>
+<p>Surface Urban Energy and Water Balance Scheme (<strong>SUEWS</strong>) (Järvi et al.
+2011 <a href="#id4"><span class="problematic" id="id1">[1]_</span></a>, Ward et al. 2016 <a href="#id5"><span class="problematic" id="id2">[2]_</span></a>) is able to simulate the urban
+radiation, energy and water balances using only commonly measured
+meteorological variables and information about the surface cover. SUEWS
+utilizes an evaporation-interception approach (Grimmond et al.
+1991 <a href="#id6"><span class="problematic" id="id3">[3]_</span></a>), similar to that used in forests, to model evaporation from
+urban surfaces.</p>
+<div class="figure">
+<img alt="The seven surface types considered in SUEWS" src="_images/SUEWS_SurfaceWaterBalance_v2_xxs.jpg" />
+</div>
+<p>The model uses seven surface types: paved, buildings, evergreen
+trees/shrubs, deciduous trees/shrubs, grass, bare soil and water. The
+surface state for each surface type at each time step is calculated from
+the running water balance of the canopy where the evaporation is
+calculated from the Penman-Monteith equation. The soil moisture below
+each surface type (excluding water) is taken into account.</p>
+<p>Horizontal movement of water above and below ground level is allowed.
+The user can specify the model time-step, but 5 min is strongly
+recommended. The main output file is provided at a resolution of 60 min
+by default. The model provides the radiation and energy balance
+components, surface and soil wetness, surface and soil runoff and the
+drainage for each surface. Timestamps refer to the end of the averaging
+period.</p>
+<p>Model applicability: SUEWS is a neighbourhood-scale or local-scale
+model.</p>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="suews-and-umep.html" class="btn btn-neutral float-right" title="3. SUEWS and UMEP" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="recent-publications.html" class="btn btn-neutral" title="1. Recent publications" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, micromet@University of Reading, led by Prof Sue Grimmond.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'2018a',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
