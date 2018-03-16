@@ -6,7 +6,6 @@ SUEWS: Surface Urban Energy and Water Balance Scheme
 The current version of SUEWS is v2017b. The software can be downloaded
 by completing `this form`_.
 
-``Ward HC, L Järvi, T Sun, S Onomura, F Lindberg, F Olofson, A Gabey, CSB Grimmond (2017) SUEWS Manual V2018a, ``\ ```http://urban-climate.net/umep/SUEWS`` <http://urban-climate.net/umep/SUEWS>`__\ `` Department of Meteorology, University of Reading, Reading, UK``
 
 :ref:`This documentation site <index_page>` is regularly
 updated with new developments. For what's new in this version, see :ref:`version_history`.
@@ -20,27 +19,30 @@ follows:
 
 .. epigraph::
 
-   Ward HC, L Järvi, T Sun, S Onomura, F Lindberg, F Olofson, A Gabey, CSB Grimmond (2017) SUEWS Manual V2017b Department of Meteorology, University of Reading, Reading, UK
+   Ward HC, L Järvi, T Sun, S Onomura, F Lindberg, F Olofson, A Gabey, CSB Grimmond (2017).
+   SUEWS Manual V2017b Department of Meteorology, University of Reading, Reading, UK
 
 
 To download the latest version of SUEWS please complete the `online
 form <https://docs.google.com/forms/d/1AiPC9RVoQ_T_eaVnkuhI1UqmO8sWWMMRD9Yqeq98sfo/viewform?formkey=dExvc3V1RDBqWmlIcURfLW5VOGtvQ0E6MQ&ifq>`__.
 
-Please refer to `Ward et al.
-(2017) <http://onlinelibrary.wiley.com/doi/10.1002/joc.5200/full>`__ for
+Please refer to `Ward et al. (2017) <http://onlinelibrary.wiley.com/doi/10.1002/joc.5200/full>`__ for
 further details v2017a:
 
-  Ward HC, Yin San Tan, AM Gabey, S Kotthaus, WTJ Morrison, CSB Grimmond Impact of temporal resolution of precipitation forcing data on modelled urban\-atmosphere exchanges and surface conditions International Journal of Climatology doi: 10.1002/joc.5200
+.. epigraph::
+
+  Ward HC, Yin San Tan, AM Gabey, S Kotthaus, WTJ Morrison, CSB Grimmond. 
+  Impact of temporal resolution of precipitation forcing data on modelled urban-atmosphere exchanges and surface conditions. 
+  International Journal of Climatology.
+  `doi: 10.1002/joc.5200 <http://doi.org/10.1002/joc.5200/>`_
+
+
+.. note:: See other publications in the next section (if you have papers that could be added, please send them through)
 
 
 
 
-See other publications in the next section (if you have papers that
-could be added, please send them through)
 
-It refers to the section itself, see :ref:`version_history`.
-
-`link_variable_name <http://>`_
 
 .. _this form: `dowload form`_
 .. _dowload form: http://micromet.reading.ac.uk/software/
@@ -50,6 +52,7 @@ It refers to the section itself, see :ref:`version_history`.
 .. toctree::
 	:maxdepth: 1
 	:numbered:
+	:hidden:
 
 	recent-publications
 	introduction

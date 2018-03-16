@@ -11438,76 +11438,72 @@ Depending on how the storage heat flux is calculated (specified by
 StorageHeatMethod in `RunControl.nml <#RunControl.nml>`__), different
 input files are required:
 
-+---------+---------+---------+---------+---------+---------+---------+
-| Option  | Storage | Files   |
-|         | HeatMet | needed  |
-|         | hod     |         |
-+=========+=========+=========+
-| OHM     | 1       | \*Coeff | SUEWS_O |
-|         |         | icients | HMCoeff |
-|         |         | a1, a2, | icients |
-|         |         | a3      | .txt]]  |
-|         |         | specifi |         |
-|         |         | ed      |         |
-|         |         | in      |         |
-|         |         | [[#SUEW |         |
-|         |         | S_OHMCo |         |
-|         |         | efficie |         |
-|         |         | nts.txt |         |
-+---------+---------+---------+---------+---------+---------+---------+
-| Observa | 2       | -  Stor |
-| tions   |         | age     |
-|         |         |    heat |
-|         |         |    flux |
-|         |         |    is   |
-|         |         |    prov |
-|         |         | ide     |
-|         |         |    in   |
-|         |         |    mete |
-|         |         | orologi |
-|         |         | cal     |
-|         |         |    forc |
-|         |         | ing     |
-|         |         |    file |
-+---------+---------+---------+---------+---------+---------+---------+
-| AnOHM   | 3       | \*Therm | SUEWS_N | SUEWS_V | SUEWS_W | SUEWS_S |
-|         |         | al      | onVeg.t | eg.txt] | ater.tx | now.txt |
-|         |         | propert | xt]],   | ],[[#SU | t]]     | ]]      |
-|         |         | ies     | [[#SUEW | EWS_Wat | and     |         |
-|         |         | specifi | S_Veg.t | er.txt  | [[#SUEW |         |
-|         |         | ed      | xt      |         | S_Snow. |         |
-|         |         | with    |         |         | txt     |         |
-|         |         | other   |         |         |         |         |
-|         |         | site    |         |         |         |         |
-|         |         | charact |         |         |         |         |
-|         |         | eristic |         |         |         |         |
-|         |         | s       |         |         |         |         |
-|         |         | in      |         |         |         |         |
-|         |         | [[#SUEW |         |         |         |         |
-|         |         | S_NonVe |         |         |         |         |
-|         |         | g.txt   |         |         |         |         |
-+---------+---------+---------+---------+---------+---------+---------+
-| ESTM    | 4       | \*Prope | SUEWS_E | ESTMinp | SSss_YY |
-|         |         | rties   | STMCoef | ut.nml] | YY_ESTM |
-|         |         | of each | ficient | ]       | _Ts_dat |
-|         |         | element | s.txt]] |         | a_tt.tx |
-|         |         | specifi |         | \*Time- | t]]     |
-|         |         | ed      | \*Model | series  |         |
-|         |         | in      | options | of      |         |
-|         |         | [[#SUEW | specifi | surface |         |
-|         |         | S_ESTMC | ed      | tempera |         |
-|         |         | oeffici | in      | tures   |         |
-|         |         | ents.tx | [[#ESTM | provide |         |
-|         |         | t       | input.n | d       |         |
-|         |         |         | ml      | in      |         |
-|         |         |         |         | [[#SSss |         |
-|         |         |         |         | _YYYY_E |         |
-|         |         |         |         | STM_Ts_ |         |
-|         |         |         |         | data_tt |         |
-|         |         |         |         | .txt    |         |
-+---------+---------+---------+---------+---------+---------+---------+
-|  |
-+---------+---------+---------+---------+---------+---------+---------+
++---------+----------------------+--------------+---------+---------+---------+---------+
+| Option  | Storage  Heat Method | Files needed |         |         |         |         |
++=========+======================+==============+=========+=========+=========+=========+
+| OHM     | 1                    | \*Coeff      | SUEWS_O |         |         |         |
+|         |                      | icients      | HMCoeff |         |         |         |
+|         |                      | a1, a2,      | icients |         |         |         |
+|         |                      | a3           | .txt]]  |         |         |         |
+|         |                      | specifi      |         |         |         |         |
+|         |                      | ed           |         |         |         |         |
+|         |                      | in           |         |         |         |         |
+|         |                      | [[#SUEW      |         |         |         |         |
+|         |                      | S_OHMCo      |         |         |         |         |
+|         |                      | efficie      |         |         |         |         |
+|         |                      | nts.txt      |         |         |         |         |
++---------+----------------------+--------------+---------+---------+---------+---------+
+| Observa | 2                    | -  Stor      |         |         |         |         |
+| tions   |                      | age          |         |         |         |         |
+|         |                      | heat         |         |         |         |         |
+|         |                      | flux         |         |         |         |         |
+|         |                      | is           |         |         |         |         |
+|         |                      | prov         |         |         |         |         |
+|         |                      | ide          |         |         |         |         |
+|         |                      | in           |         |         |         |         |
+|         |                      | mete         |         |         |         |         |
+|         |                      | orologi      |         |         |         |         |
+|         |                      | cal          |         |         |         |         |
+|         |                      | forc         |         |         |         |         |
+|         |                      | ing          |         |         |         |         |
+|         |                      | file         |         |         |         |         |
++---------+----------------------+--------------+---------+---------+---------+---------+
+| AnOHM   | 3                    | \*Therm      | SUEWS_N | SUEWS_V | SUEWS_W | SUEWS_S |
+|         |                      | al           | onVeg.t | eg.txt] | ater.tx | now.txt |
+|         |                      | propert      | xt]],   | ],[[#SU | t]]     | ]]      |
+|         |                      | ies          | [[#SUEW | EWS_Wat | and     |         |
+|         |                      | specifi      | S_Veg.t | er.txt  | [[#SUEW |         |
+|         |                      | ed           | xt      |         | S_Snow. |         |
+|         |                      | with         |         |         | txt     |         |
+|         |                      | other        |         |         |         |         |
+|         |                      | site         |         |         |         |         |
+|         |                      | charact      |         |         |         |         |
+|         |                      | eristic      |         |         |         |         |
+|         |                      | s            |         |         |         |         |
+|         |                      | in           |         |         |         |         |
+|         |                      | [[#SUEW      |         |         |         |         |
+|         |                      | S_NonVe      |         |         |         |         |
+|         |                      | g.txt        |         |         |         |         |
++---------+----------------------+--------------+---------+---------+---------+---------+
+| ESTM    | 4                    | \*Prope      | SUEWS_E | ESTMinp | SSss_YY |         |
+|         |                      | rties        | STMCoef | ut.nml] | YY_ESTM |         |
+|         |                      | of each      | ficient | ]       | _Ts_dat |         |
+|         |                      | element      | s.txt]] | \*Time- | a_tt.tx |         |
+|         |                      | specifi      | \*Model | series  | t]]     |         |
+|         |                      | ed           | options | of      |         |         |
+|         |                      | in           | specifi | surface |         |         |
+|         |                      | [[#SUEW      | ed      | tempera |         |         |
+|         |                      | S_ESTMC      | in      | tures   |         |         |
+|         |                      | oeffici      | [[#ESTM | provide |         |         |
+|         |                      | ents.tx      | input.n | d       |         |         |
+|         |                      | t            | ml      | in      |         |         |
+|         |                      |              |         | [[#SSss |         |         |
+|         |                      |              |         | _YYYY_E |         |         |
+|         |                      |              |         | STM_Ts_ |         |         |
+|         |                      |              |         | data_tt |         |         |
+|         |                      |              |         | .txt    |         |         |
++---------+----------------------+--------------+---------+---------+---------+---------+
+
 
 **Note ESTM is under development in v2017a and should not be used!**
 
@@ -11521,96 +11517,96 @@ ESTMinput.nml specifies the model settings and default values.
 
 -  The file contents can be in any order.
 
-+-------------+-----------------------+-----------------------+
-| Name        | Description           |                       |
-+=============+=======================+=======================+
-|             |                       |                       |
-+-------------+-----------------------+-----------------------+
-| TsurfChoice | Source of surface     |                       |
-|             | temperature data      |                       |
-|             | used.                 |                       |
-+-------------+-----------------------+-----------------------+
-| 0           | \*Tsurf in            | SSss_YYYY_ESTM_Ts_dat |
-|             | [[#SSss_YYYY_ESTM_Ts_ | a_tt.txt]]            |
-|             | data_tt.txt           | used for **all**      |
-|             |                       | surface elements.     |
-+-------------+-----------------------+-----------------------+
-| 1           | \*Tground, Troof and  | SSss_YYYY_ESTM_Ts_dat |
-|             | Twall in              | a_tt.txt]]            |
-|             | [[#SSss_YYYY_ESTM_Ts_ | used.                 |
-|             | data_tt.txt           | -  Input surface      |
-|             |                       | temperature are       |
-|             |                       | different for         |
-|             |                       | ground, roof and      |
-|             |                       | wall.                 |
-+-------------+-----------------------+-----------------------+
-| 2           | \*Tground, Troof,     | SSss_YYYY_ESTM_Ts_dat |
-|             | Twall_n, Twall_e,     | a_tt.txt]]            |
-|             | Twall_s and Twall_w   | used.                 |
-|             | in                    | -  Wall surface       |
-|             | [[#SSss_YYYY_ESTM_Ts_ | temperature is        |
-|             | data_tt.txt           | different for four    |
-|             |                       | directions.           |
-+-------------+-----------------------+-----------------------+
-| evolveTibld | Source of internal    |                       |
-|             | building temperature  |                       |
-|             | (Tibld)               |                       |
-+-------------+-----------------------+-----------------------+
-| 0           | \*Tiair in            | SSss_YYYY_ESTM_Ts_dat |
-|             | [[#SSss_YYYY_ESTM_Ts_ | a_tt.txt]]            |
-|             | data_tt.txt           | used.                 |
-+-------------+-----------------------+-----------------------+
-| 1           | \*Tibld calculated    |                       |
-|             | considering the       |                       |
-|             | effect of             |                       |
-|             | anthropogenic heat    |                       |
-|             | from HVAC             |                       |
-+-------------+-----------------------+-----------------------+
-| 2           | \*Tibld calculated    |                       |
-|             | without considering   |                       |
-|             | the influence of      |                       |
-|             | HVAC.                 |                       |
-+-------------+-----------------------+-----------------------+
-| IbldCHmod   | Method to calculate   |                       |
-|             | internal convective   |                       |
-|             | heat exchange         |                       |
-|             | coefficients (CH) for |                       |
-|             | internal building,    |                       |
-|             | wall and roof if      |                       |
-|             | evolveTibld is 1 or   |                       |
-|             | 2.                    |                       |
-+-------------+-----------------------+-----------------------+
-| 0           | CHs are read from     |                       |
-|             | SUEWS_ESTMcoefficient |                       |
-|             | s.txt.                |                       |
-+-------------+-----------------------+-----------------------+
-| 1           | CHs are calculated    |                       |
-|             | based on ASHRAE       |                       |
-|             | (2001)                |                       |
-+-------------+-----------------------+-----------------------+
-| 2           | CHs are calculated    |                       |
-|             | based on Awbi (1998). |                       |
-+-------------+-----------------------+-----------------------+
-| LBC_soil    | Soil temperature at   |                       |
-|             | lowest boundary       |                       |
-|             | condition [˚C]        |                       |
-+-------------+-----------------------+-----------------------+
-| Theat_on    | Temperature at which  |                       |
-|             | heat control is       |                       |
-|             | turned on (used when  |                       |
-|             | evolveTibld =1) [˚C]  |                       |
-+-------------+-----------------------+-----------------------+
-| Theat_off   | Temperature at which  |                       |
-|             | heat control is       |                       |
-|             | turned off (used when |                       |
-|             | evolveTibld=1) [˚C]   |                       |
-+-------------+-----------------------+-----------------------+
-| Theat_fix   | Ideal internal        |                       |
-|             | building temperature  |                       |
-|             | [˚C]                  |                       |
-+-------------+-----------------------+-----------------------+
-|             |                       |                       |
-+-------------+-----------------------+-----------------------+
++-------------+----------------------------------------------------------------------------------------------------+
+| Name        | Description                                                                                        |
++=============+====================================================================================================+
+|             |                                                                                                    |
++-------------+----------------------------------------------------------------------------------------------------+
+| TsurfChoice | Source of surface                                                                                  |
+|             | temperature data                                                                                   |
+|             | used.                                                                                              |
++-------------+----------------------------------------------------------------------------------------------------+
+| 0           | \*Tsurf in             SSss_YYYY_ESTM_Ts_dat                                                       |
+|             | [[#SSss_YYYY_ESTM_Ts_  a_tt.txt]]                                                                  |
+|             | data_tt.txt            used for **all**                                                            |
+|             | surface elements.                                                                                  |
++-------------+----------------------------------------------------------------------------------------------------+
+| 1           | \*Tground, Troof and                          SSss_YYYY_ESTM_Ts_dat                                |
+|             | Twall in                                      a_tt.txt]]                                           |
+|             | [[#SSss_YYYY_ESTM_Ts_                         used.                                                |
+|             | data_tt.txt                                   -  Input surface                                     |
+|             | temperature are                                                                                    |
+|             | different for                                                                                      |
+|             | ground, roof and                                                                                   |
+|             | wall.                                                                                              |
++-------------+----------------------------------------------------------------------------------------------------+
+| 2           | \*Tground, Troof,                                                                                  |
+|             | Twall_n, Twall_e,                                                                                  |
+|             | Twall_s and Twall_w                                                                                |
+|             | in                                                                                                 |
+|             | [[#SSss_YYYY_ESTM_Ts_                                                                              |
+|             | data_tt.txt                                                                                        |
+|             | directions.SSss_YYYY_ESTM_Ts_data_tt.txt]] used.-  Wall surface temperature is  different for four |
++-------------+----------------------------------------------------------------------------------------------------+
+| evolveTibld | Source of internal                                                                                 |
+|             | building temperature                                                                               |
+|             | (Tibld)                                                                                            |
++-------------+----------------------------------------------------------------------------------------------------+
+| 0           | \*Tiair in                                    SSss_YYYY_ESTM_Ts_dat                                |
+|             | [[#SSss_YYYY_ESTM_Ts_                         a_tt.txt]]                                           |
+|             | data_tt.txt                                   used.                                                |
++-------------+----------------------------------------------------------------------------------------------------+
+| 1           | \*Tibld calculated                                                                                 |
+|             | considering the                                                                                    |
+|             | effect of                                                                                          |
+|             | anthropogenic heat                                                                                 |
+|             | from HVAC                                                                                          |
++-------------+----------------------------------------------------------------------------------------------------+
+| 2           | \*Tibld calculated                                                                                 |
+|             | without considering                                                                                |
+|             | the influence of                                                                                   |
+|             | HVAC.                                                                                              |
++-------------+----------------------------------------------------------------------------------------------------+
+| IbldCHmod   | Method to calculate                                                                                |
+|             | internal convective                                                                                |
+|             | heat exchange                                                                                      |
+|             | coefficients (CH) for                                                                              |
+|             | internal building,                                                                                 |
+|             | wall and roof if                                                                                   |
+|             | evolveTibld is 1 or                                                                                |
+|             | 2.                                                                                                 |
++-------------+----------------------------------------------------------------------------------------------------+
+| 0           | CHs are read from                                                                                  |
+|             | SUEWS_ESTMcoefficient                                                                              |
+|             | s.txt.                                                                                             |
++-------------+----------------------------------------------------------------------------------------------------+
+| 1           | CHs are calculated                                                                                 |
+|             | based on ASHRAE                                                                                    |
+|             | (2001)                                                                                             |
++-------------+----------------------------------------------------------------------------------------------------+
+| 2           | CHs are calculated                                                                                 |
+|             | based on Awbi (1998).                                                                              |
++-------------+----------------------------------------------------------------------------------------------------+
+| LBC_soil    | Soil temperature at                                                                                |
+|             | lowest boundary                                                                                    |
+|             | condition [˚C]                                                                                     |
++-------------+----------------------------------------------------------------------------------------------------+
+| Theat_on    | Temperature at which                                                                               |
+|             | heat control is                                                                                    |
+|             | turned on (used when                                                                               |
+|             | evolveTibld =1) [˚C]                                                                               |
++-------------+----------------------------------------------------------------------------------------------------+
+| Theat_off   | Temperature at which                                                                               |
+|             | heat control is                                                                                    |
+|             | turned off (used when                                                                              |
+|             | evolveTibld=1) [˚C]                                                                                |
++-------------+----------------------------------------------------------------------------------------------------+
+| Theat_fix   | Ideal internal                                                                                     |
+|             | building temperature                                                                               |
+|             | [˚C]                                                                                               |
++-------------+----------------------------------------------------------------------------------------------------+
+|             |                                                                                                    |
++-------------+----------------------------------------------------------------------------------------------------+
 
 SSss_YYYY_ESTM_Ts_data_tt.txt
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -13154,7 +13150,7 @@ If CBL slab model is used (CBLuse=1 in
 +----------------------+-----------------------------------+
 
 CBL_initial_data.txt
-''''''''''''''''''''
+^^^^^^^^^^^^^^^^^^^^
 
 This file should give initial data every morning when CBL slab model
 starts running. The file name should match the InitialData_FileName in

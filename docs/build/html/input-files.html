@@ -128,7 +128,8 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#cbl-input-files">6.6. CBL input files</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#cbl-input-nml">6.6.1. CBL_Input.nml</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cbl-initial-data-txt">6.6.1. CBL_initial_data.txt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cbl-input-nml">6.6.2. CBL_Input.nml</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#solweig-input-files">6.7. SOLWEIG input files</a></li>
@@ -17827,6 +17828,165 @@ put.nml</td>
 <p>Depending on how the storage heat flux is calculated (specified by
 StorageHeatMethod in <a class="reference external" href="#RunControl.nml">RunControl.nml</a>), different
 input files are required:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="11%" />
+<col width="27%" />
+<col width="17%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Option</th>
+<th class="head">Storage  Heat Method</th>
+<th class="head">Files needed</th>
+<th class="head">&#160;</th>
+<th class="head">&#160;</th>
+<th class="head">&#160;</th>
+<th class="head">&#160;</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>OHM</td>
+<td>1</td>
+<td>*Coeff
+icients
+a1, a2,
+a3
+specifi
+ed
+in
+[[#SUEW
+S_OHMCo
+efficie
+nts.txt</td>
+<td>SUEWS_O
+HMCoeff
+icients
+.txt]]</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Observa
+tions</td>
+<td>2</td>
+<td><ul class="first simple">
+<li>Stor</li>
+</ul>
+<p class="last">age
+heat
+flux
+is
+prov
+ide
+in
+mete
+orologi
+cal
+forc
+ing
+file</p>
+</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>AnOHM</td>
+<td>3</td>
+<td>*Therm
+al
+propert
+ies
+specifi
+ed
+with
+other
+site
+charact
+eristic
+s
+in
+[[#SUEW
+S_NonVe
+g.txt</td>
+<td>SUEWS_N
+onVeg.t
+xt]],
+[[#SUEW
+S_Veg.t
+xt</td>
+<td>SUEWS_V
+eg.txt]
+],[[#SU
+EWS_Wat
+er.txt</td>
+<td>SUEWS_W
+ater.tx
+t]]
+and
+[[#SUEW
+S_Snow.
+txt</td>
+<td>SUEWS_S
+now.txt
+]]</td>
+</tr>
+<tr class="row-odd"><td>ESTM</td>
+<td>4</td>
+<td>*Prope
+rties
+of each
+element
+specifi
+ed
+in
+[[#SUEW
+S_ESTMC
+oeffici
+ents.tx
+t</td>
+<td>SUEWS_E
+STMCoef
+ficient
+s.txt]]
+*Model
+options
+specifi
+ed
+in
+[[#ESTM
+input.n
+ml</td>
+<td>ESTMinp
+ut.nml]
+]
+*Time-
+series
+of
+surface
+tempera
+tures
+provide
+d
+in
+[[#SSss
+_YYYY_E
+<a href="#id219"><span class="problematic" id="id220">STM_Ts_</span></a>
+data_tt
+.txt</td>
+<td>SSss_YY
+YY_ESTM
+_Ts_dat
+a_tt.tx
+t]]</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
 <p><strong>Note ESTM is under development in v2017a and should not be used!</strong></p>
 <p>The following input files are required if ESTM is used to calculate the
 storage heat flux.</p>
@@ -17838,45 +17998,34 @@ storage heat flux.</p>
 </ul>
 <table border="1" class="docutils">
 <colgroup>
-<col width="22%" />
-<col width="39%" />
-<col width="39%" />
+<col width="12%" />
+<col width="88%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Name</th>
 <th class="head">Description</th>
-<th class="head">&#160;</th>
 </tr>
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td>&#160;</td>
-<td>&#160;</td>
 <td>&#160;</td>
 </tr>
 <tr class="row-odd"><td>TsurfChoice</td>
 <td>Source of surface
 temperature data
 used.</td>
-<td>&#160;</td>
 </tr>
 <tr class="row-even"><td>0</td>
-<td>*Tsurf in
-[[#SSss_YYYY_ESTM_Ts_
-data_tt.txt</td>
-<td>SSss_YYYY_ESTM_Ts_dat
-a_tt.txt]]
-used for <strong>all</strong>
+<td>*Tsurf in             SSss_YYYY_ESTM_Ts_dat
+[[#SSss_YYYY_ESTM_Ts_  a_tt.txt]]
+data_tt.txt            used for <strong>all</strong>
 surface elements.</td>
 </tr>
 <tr class="row-odd"><td>1</td>
-<td>*Tground, Troof and
-Twall in
-[[#SSss_YYYY_ESTM_Ts_
-data_tt.txt</td>
-<td>SSss_YYYY_ESTM_Ts_dat
-a_tt.txt]]
-used.
--  Input surface
+<td>*Tground, Troof and                          SSss_YYYY_ESTM_Ts_dat
+Twall in                                      a_tt.txt]]
+[[#SSss_YYYY_ESTM_Ts_                         used.
+data_tt.txt                                   -  Input surface
 temperature are
 different for
 ground, roof and
@@ -17888,28 +18037,18 @@ Twall_n, Twall_e,
 Twall_s and Twall_w
 in
 [[#SSss_YYYY_ESTM_Ts_
-data_tt.txt</td>
-<td>SSss_YYYY_ESTM_Ts_dat
-a_tt.txt]]
-used.
--  Wall surface
-temperature is
-different for four
-directions.</td>
+data_tt.txt
+directions.SSss_YYYY_ESTM_Ts_data_tt.txt]] used.-  Wall surface temperature is  different for four</td>
 </tr>
 <tr class="row-odd"><td>evolveTibld</td>
 <td>Source of internal
 building temperature
 (Tibld)</td>
-<td>&#160;</td>
 </tr>
 <tr class="row-even"><td>0</td>
-<td>*Tiair in
-[[#SSss_YYYY_ESTM_Ts_
-data_tt.txt</td>
-<td>SSss_YYYY_ESTM_Ts_dat
-a_tt.txt]]
-used.</td>
+<td>*Tiair in                                    SSss_YYYY_ESTM_Ts_dat
+[[#SSss_YYYY_ESTM_Ts_                         a_tt.txt]]
+data_tt.txt                                   used.</td>
 </tr>
 <tr class="row-odd"><td>1</td>
 <td>*Tibld calculated
@@ -17917,14 +18056,12 @@ considering the
 effect of
 anthropogenic heat
 from HVAC</td>
-<td>&#160;</td>
 </tr>
 <tr class="row-even"><td>2</td>
 <td>*Tibld calculated
 without considering
 the influence of
 HVAC.</td>
-<td>&#160;</td>
 </tr>
 <tr class="row-odd"><td>IbldCHmod</td>
 <td>Method to calculate
@@ -17935,53 +18072,44 @@ internal building,
 wall and roof if
 evolveTibld is 1 or
 2.</td>
-<td>&#160;</td>
 </tr>
 <tr class="row-even"><td>0</td>
 <td>CHs are read from
 SUEWS_ESTMcoefficient
 s.txt.</td>
-<td>&#160;</td>
 </tr>
 <tr class="row-odd"><td>1</td>
 <td>CHs are calculated
 based on ASHRAE
 (2001)</td>
-<td>&#160;</td>
 </tr>
 <tr class="row-even"><td>2</td>
 <td>CHs are calculated
 based on Awbi (1998).</td>
-<td>&#160;</td>
 </tr>
 <tr class="row-odd"><td>LBC_soil</td>
 <td>Soil temperature at
 lowest boundary
 condition [˚C]</td>
-<td>&#160;</td>
 </tr>
 <tr class="row-even"><td>Theat_on</td>
 <td>Temperature at which
 heat control is
 turned on (used when
 evolveTibld =1) [˚C]</td>
-<td>&#160;</td>
 </tr>
 <tr class="row-odd"><td>Theat_off</td>
 <td>Temperature at which
 heat control is
 turned off (used when
 evolveTibld=1) [˚C]</td>
-<td>&#160;</td>
 </tr>
 <tr class="row-even"><td>Theat_fix</td>
 <td>Ideal internal
 building temperature
 [˚C]</td>
-<td>&#160;</td>
 </tr>
 <tr class="row-odd"><td>&#160;</td>
-<td>&#160;</td>
 <td>&#160;</td>
 </tr>
 </tbody>
@@ -18379,7 +18507,7 @@ based
 on the
 values
 set in
-<a href="#id219"><span class="problematic" id="id220">SUEWS_</span></a>
+<a href="#id221"><span class="problematic" id="id222">SUEWS_</span></a>
 SiteInfo.
 xlsm.
 -  If the
@@ -18412,7 +18540,7 @@ based
 on the
 values
 set in
-<a href="#id221"><span class="problematic" id="id222">SUEWS_</span></a>
+<a href="#id223"><span class="problematic" id="id224">SUEWS_</span></a>
 SiteInfo.
 xlsm.
 -  Not
@@ -18567,7 +18695,7 @@ as
 GDDFul
 l
 in
-<a href="#id223"><span class="problematic" id="id224">SUEWS_</span></a>
+<a href="#id225"><span class="problematic" id="id226">SUEWS_</span></a>
 Veg.txt.
 -  If
 <em>winte
@@ -18647,7 +18775,7 @@ of
 SDDFul
 l
 in
-<a href="#id225"><span class="problematic" id="id226">SUEWS_</span></a>
+<a href="#id227"><span class="problematic" id="id228">SUEWS_</span></a>
 Veg.txt
 to
 guide
@@ -20167,8 +20295,8 @@ ted</td>
 </div>
 <div class="section" id="cbl-input-files">
 <h2>6.6. CBL input files<a class="headerlink" href="#cbl-input-files" title="Permalink to this headline">¶</a></h2>
-<p>Main references for this part of the model: Onomura et al. (2015) <a href="#id227"><span class="problematic" id="id126">[454]_</span></a>
-and Cleugh and Grimmond (2001) <a href="#id228"><span class="problematic" id="id127">[455]_</span></a>.</p>
+<p>Main references for this part of the model: Onomura et al. (2015) <a href="#id229"><span class="problematic" id="id126">[454]_</span></a>
+and Cleugh and Grimmond (2001) <a href="#id230"><span class="problematic" id="id127">[455]_</span></a>.</p>
 <p>If CBL slab model is used (CBLuse=1 in
 <a class="reference external" href="#RunControl.nml">RunControl.nml</a>) the following files are needed:</p>
 <table border="1" class="docutils">
@@ -20201,6 +20329,8 @@ and input file names.
 </tr>
 </tbody>
 </table>
+<div class="section" id="cbl-initial-data-txt">
+<h3>6.6.1. CBL_initial_data.txt<a class="headerlink" href="#cbl-initial-data-txt" title="Permalink to this headline">¶</a></h3>
 <p>This file should give initial data every morning when CBL slab model
 starts running. The file name should match the InitialData_FileName in
 CBLInput.nml.</p>
@@ -20268,7 +20398,7 @@ CBL (g kg<sup>-1</sup>)</td>
 </table>
 <ul class="simple">
 <li>gamt_Km and gamq_gkgm written to two significant figures are required
-for the model performance in appropriate ranges <a href="#id229"><span class="problematic" id="id128">[456]_</span></a>.</li>
+for the model performance in appropriate ranges <a href="#id231"><span class="problematic" id="id128">[456]_</span></a>.</li>
 </ul>
 <table border="1" class="docutils">
 <colgroup>
@@ -20340,8 +20470,9 @@ for the model performance in appropriate ranges <a href="#id229"><span class="pr
 </tr>
 </tbody>
 </table>
+</div>
 <div class="section" id="cbl-input-nml">
-<h3>6.6.1. CBL_Input.nml<a class="headerlink" href="#cbl-input-nml" title="Permalink to this headline">¶</a></h3>
+<h3>6.6.2. CBL_Input.nml<a class="headerlink" href="#cbl-input-nml" title="Permalink to this headline">¶</a></h3>
 <table border="1" class="docutils">
 <colgroup>
 <col width="38%" />
@@ -20359,7 +20490,7 @@ for the model performance in appropriate ranges <a href="#id229"><span class="pr
 <tr class="row-odd"><td>EntrainmentType</td>
 <td>Determines entrainment scheme.
 See Cleugh and Grimmond
-2000 <a href="#id230"><span class="problematic" id="id129">[459]_</span></a> for details.</td>
+2000 <a href="#id232"><span class="problematic" id="id129">[459]_</span></a> for details.</td>
 </tr>
 <tr class="row-even"><td>Value</td>
 <td>Comments</td>
@@ -20396,7 +20527,7 @@ the meteorological input file</td>
 <tr class="row-even"><td>Wsb</td>
 <td>Subsidence velocity (m
 s<sup>-1</sup>) in eq. 1 and 2 of
-Onomura et al. (2015) <a href="#id231"><span class="problematic" id="id130">[460]_</span></a>.
+Onomura et al. (2015) <a href="#id233"><span class="problematic" id="id130">[460]_</span></a>.
 (-0.01 m s<sup>-1</sup>
 recommended)</td>
 </tr>
@@ -20560,7 +20691,7 @@ man: 1.1 m</td>
 <tr class="row-even"><td>1</td>
 <td>Vegetation scheme is
 active (Lindberg and
-Grimmond 2011 <a href="#id232"><span class="problematic" id="id131">[466]_</span></a>)</td>
+Grimmond 2011 <a href="#id234"><span class="problematic" id="id131">[466]_</span></a>)</td>
 <td>&#160;</td>
 </tr>
 <tr class="row-odd"><td>2</td>
@@ -20609,7 +20740,7 @@ through deciduous
 vegetation (leaf on)
 -  Recommended value:
 0.02 (Konarska et
-al. 2014 <a href="#id233"><span class="problematic" id="id132">[467]_</span></a>)</td>
+al. 2014 <a href="#id235"><span class="problematic" id="id132">[467]_</span></a>)</td>
 </tr>
 <tr class="row-odd"><td>TransMax</td>
 <td><ul class="first last simple">
@@ -20621,7 +20752,7 @@ through deciduous
 vegetation (leaf off)
 -  Recommended value:
 0.50 (Konarska et
-al. 2014 <a href="#id234"><span class="problematic" id="id133">[468]_</span></a>)</td>
+al. 2014 <a href="#id236"><span class="problematic" id="id133">[468]_</span></a>)</td>
 </tr>
 <tr class="row-even"><td>SVFPath</td>
 <td><ul class="first last simple">
@@ -20631,7 +20762,7 @@ al. 2014 <a href="#id234"><span class="problematic" id="id133">[468]_</span></a>
 <td>Path to SVFs matrices
 (See Lindberg and
 Grimmond
-(2011) <a href="#id235"><span class="problematic" id="id134">[469]_</span></a> for
+(2011) <a href="#id237"><span class="problematic" id="id134">[469]_</span></a> for
 details)</td>
 </tr>
 <tr class="row-odd"><td>SVFSuffix</td>
@@ -20693,7 +20824,7 @@ forcing file.</td>
 shortwave radiation
 calculated from
 Reindl et al.
-(1990) <a href="#id236"><span class="problematic" id="id135">[470]_</span></a></td>
+(1990) <a href="#id238"><span class="problematic" id="id135">[470]_</span></a></td>
 <td>&#160;</td>
 </tr>
 <tr class="row-even"><td>SOLWEIGpoi_out</td>
