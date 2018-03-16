@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -7,7 +6,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Index &#8212; SUEWS 2018a documentation</title>
+    <title>Introduction &#8212; SUEWS 2018a documentation</title>
     <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript" src="_static/documentation_options.js"></script>
@@ -15,14 +14,14 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <link rel="index" title="Index" href="#" />
+    <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="#" title="General Index"
+          <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="nav-item nav-item-0"><a href="index.html">SUEWS 2018a documentation</a> &#187;</li> 
       </ul>
@@ -33,11 +32,36 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
+  <div class="section" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<div class="figure">
+<img alt="Overview of SUEWS" src="_images/SUEWS_Overview_s.png" />
+</div>
+<p>Surface Urban Energy and Water Balance Scheme (<strong>SUEWS</strong>) (Järvi et al.
+2011 <a href="#id4"><span class="problematic" id="id1">[1]_</span></a>, Ward et al. 2016 <a href="#id5"><span class="problematic" id="id2">[2]_</span></a>) is able to simulate the urban
+radiation, energy and water balances using only commonly measured
+meteorological variables and information about the surface cover. SUEWS
+utilizes an evaporation-interception approach (Grimmond et al.
+1991 <a href="#id6"><span class="problematic" id="id3">[3]_</span></a>), similar to that used in forests, to model evaporation from
+urban surfaces.</p>
+<div class="figure">
+<img alt="The seven surface types considered in SUEWS" src="_images/SUEWS_SurfaceWaterBalance_v2_xxs.jpg" />
+</div>
+<p>The model uses seven surface types: paved, buildings, evergreen
+trees/shrubs, deciduous trees/shrubs, grass, bare soil and water. The
+surface state for each surface type at each time step is calculated from
+the running water balance of the canopy where the evaporation is
+calculated from the Penman-Monteith equation. The soil moisture below
+each surface type (excluding water) is taken into account.</p>
+<p>Horizontal movement of water above and below ground level is allowed.
+The user can specify the model time-step, but 5 min is strongly
+recommended. The main output file is provided at a resolution of 60 min
+by default. The model provides the radiation and energy balance
+components, surface and soil wetness, surface and soil runoff and the
+drainage for each surface. Timestamps refer to the end of the averaging
+period.</p>
+<p>Model applicability: SUEWS is a neighbourhood-scale or local-scale
+model.</p>
 </div>
 
 
@@ -46,6 +70,13 @@
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/3.introduction.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
     <div class="searchformwrapper">
@@ -66,7 +97,7 @@
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="#" title="General Index"
+          <a href="genindex.html" title="General Index"
              >index</a></li>
         <li class="nav-item nav-item-0"><a href="index.html">SUEWS 2018a documentation</a> &#187;</li> 
       </ul>

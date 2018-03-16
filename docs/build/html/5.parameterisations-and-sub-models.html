@@ -1,0 +1,234 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Parameterisations and sub-models within SUEWS &#8212; SUEWS 2018a documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="nav-item nav-item-0"><a href="index.html">SUEWS 2018a documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="parameterisations-and-sub-models-within-suews">
+<h1>Parameterisations and sub-models within SUEWS<a class="headerlink" href="#parameterisations-and-sub-models-within-suews" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="net-all-wave-radiation-q">
+<h2>Net all-wave radiation, Q*<a class="headerlink" href="#net-all-wave-radiation-q" title="Permalink to this headline">¶</a></h2>
+<p>There are several options for modelling or using observed radiation
+components depending on the data available. As a minimum, SUEWS requires
+incoming shortwave radiation to be provided.</p>
+<ol class="arabic simple">
+<li>Observed net all-wave radiation can be provided as input instead of
+being calculated by the model.</li>
+<li>Observed incoming shortwave and incoming longwave components can be
+provided as input, instead of incoming longwave being calculated by
+the model.</li>
+<li>Other data can be provided as input, such as cloud fraction (see
+options in <a class="reference external" href="#RunControl.nml">RunControl</a>).</li>
+<li><strong>NARP</strong> (Net All-wave Radiation Parameterization, Offerle et al.
+2003 <a href="#id25"><span class="problematic" id="id1">[4]_</span></a> , Loridan et al. 2011 <a href="#id26"><span class="problematic" id="id2">[5]_</span></a> ) scheme calculates outgoing
+shortwave and incoming and outgoing longwave radiation components
+based on incoming shortwave radiation, temperature, relative humidity
+and surface characteristics (albedo, emissivity).</li>
+</ol>
+</div>
+<div class="section" id="anthropogenic-heat-flux-qf">
+<h2>Anthropogenic heat flux, Q<sub>F</sub><a class="headerlink" href="#anthropogenic-heat-flux-qf" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Two simple anthropogenic heat flux sub-models exist within SUEWS:<ul>
+<li>Järvi et al. (2011) <a href="#id27"><span class="problematic" id="id3">[6]_</span></a> approach, based on heating and cooling
+degree days and population density (allows distinction between
+weekdays and weekends).</li>
+<li>Loridan et al. (2011) <a href="#id28"><span class="problematic" id="id4">[7]_</span></a> approach, based on a linear piece-wise
+relation with air temperature.</li>
+</ul>
+</li>
+<li>Pre-calculated values can be supplied with the meteorological forcing
+data, either derived from knowledge of the study site, or obtained
+from other models, for example:<ul>
+<li><strong>LUCY</strong> (Allen et al. 2011 <a href="#id29"><span class="problematic" id="id5">[8]_</span></a>, Lindberg et al. 2013 <a href="#id30"><span class="problematic" id="id6">[9]_</span></a>). A
+new version has been now included in UMEP. To distinguish it is
+referred to as
+<a class="reference external" href="http://urban-climate.net/umep/LQF_Manual">**LQF**</a></li>
+<li><strong>GreaterQF</strong> (Iamarino et al. 2011 <a href="#id31"><span class="problematic" id="id7">[10]_</span></a>). A new version has been
+now included in UMEP. To distinguish it is referred to as
+<a class="reference external" href="http://urban-climate.net/umep/GQF_Manual">**GQF**</a></li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="storage-heat-flux-qs">
+<h2>Storage heat flux, ΔQ<sub>S</sub><a class="headerlink" href="#storage-heat-flux-qs" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Three sub-models are available to estimate the storage heat flux:<ul>
+<li><strong>OHM</strong> (Objective Hysteresis Model, Grimmond et al. 1991 <a href="#id32"><span class="problematic" id="id8">[11]_</span></a>,
+Grimmond &amp; Oke 1999a <a href="#id33"><span class="problematic" id="id9">[12]_</span></a>, 2002 <a href="#id34"><span class="problematic" id="id10">[13]_</span></a>). Storage heat heat flux is
+calculated using empirically-fitted relations with net all-wave
+radiation and the rate of change in net all-wave radiation.</li>
+<li><strong>AnOHM</strong> (Analytical Objective Hysteresis Model, Sun et al.
+2017 <a href="#id35"><span class="problematic" id="id11">[14]_</span></a>). OHM approach using analytically-derived coefficients.
+(<strong>Not recommended in v2017b</strong>)</li>
+<li><strong>ESTM</strong> (Element Surface Temperature Method, Offerle et al.
+2005 <a href="#id36"><span class="problematic" id="id12">[15]_</span></a>). Heat transfer through urban facets (roof, wall, road,
+interior) is calculated from surface temperature measurements and
+knowledge of material properties. (<strong>Not recommended in v2017b</strong>)</li>
+</ul>
+</li>
+<li>Alternatively, ‘observed’ storage heat flux can be supplied with the
+meteorological forcing data.</li>
+</ol>
+</div>
+<div class="section" id="turbulent-heat-fluxes-qh-and-qe">
+<h2>Turbulent heat fluxes, Q<sub>H</sub> and Q<sub>E</sub><a class="headerlink" href="#turbulent-heat-fluxes-qh-and-qe" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><strong>LUMPS</strong> (Local-scale Urban Meteorological Parameterization Scheme,
+Grimmond &amp; Oke 2002 <a href="#id37"><span class="problematic" id="id13">[16]_</span></a>) provides a simple means of estimating
+sensible and latent heat fluxes based on the proportion of vegetation
+in the study area.</li>
+<li><strong>SUEWS</strong> adopts a more biophysical approach to calculate the latent
+heat flux; the sensible heat flux is then calculated as the residual
+of the energy balance. The initial estimate of stability is based on
+the LUMPS calculations of sensible and latent heat flux. Future
+versions will have alternative sensible heat and storage heat flux
+options.</li>
+</ol>
+<p>Sensible and latent heat fluxes from both LUMPS and SUEWS are provided
+in the <a class="reference external" href="#Output_files">model output</a>. Whether the turbulent heat
+fluxes are calculated using LUMPS or SUEWS can have a major impact on
+the results. For SUEWS, an appropriate surface conductance
+parameterisation is also critical <a href="#id38"><span class="problematic" id="id14">[17]_</span></a> <a href="#id39"><span class="problematic" id="id15">[18]_</span></a>. For more details see
+<a class="reference external" href="#Differences_between_SUEWS,_LUMPS_and_FRAISE">Differences between SUEWS, LUMPS and
+FRAISE</a>.</p>
+</div>
+<div class="section" id="water-balance">
+<h2>Water balance<a class="headerlink" href="#water-balance" title="Permalink to this headline">¶</a></h2>
+<p>The running water balance at each time step is based on the urban water
+balance model of Grimmond et al. (1986) <a href="#id40"><span class="problematic" id="id16">[19]_</span></a> and urban
+evaporation-interception scheme of Grimmond and Oke (1991) <a href="#id41"><span class="problematic" id="id17">[20]_</span></a>.</p>
+<ul class="simple">
+<li>Precipitation is a required variable in the meteorological forcing
+file.</li>
+<li>Irrigation can be modelled <a href="#id42"><span class="problematic" id="id18">[21]_</span></a> or observed values can be provided
+if data are available.</li>
+<li>Drainage equations and coefficients to use must be specified in the
+input files.</li>
+<li>Soil moisture can be calculated by the model (<strong>Use of observed soil
+moisture is not possible in v2017b</strong>).</li>
+<li>Runoff is permitted:<ul>
+<li>between surface types within each model grid</li>
+<li>between model grids (<strong>Not implemented in v2017b</strong>)</li>
+<li>to deep soil</li>
+<li>to pipes.</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="snowmelt">
+<h2>Snowmelt<a class="headerlink" href="#snowmelt" title="Permalink to this headline">¶</a></h2>
+<p>The snowmelt model within SUEWS is described in Järvi et al.
+(2014) <a href="#id43"><span class="problematic" id="id19">[22]_</span></a>. Due to changes in the new model version (since v2016a)
+when compared to the older versions, the snow calculation has slightly
+changed. The main difference is that previously all surface state could
+freeze in 1-h time step but now the amount of freezing surface state is
+calculated similar way as melt water can freeze within the snow pack.
+Also the snowmelt-related coefficients have slightly changed (see
+<a class="reference external" href="#SUEWS_Snow.txt">SUEWS_Snow.txt</a>).</p>
+</div>
+<div class="section" id="convective-boundary-layer">
+<h2>Convective boundary layer<a class="headerlink" href="#convective-boundary-layer" title="Permalink to this headline">¶</a></h2>
+<p>A convective boundary layer (CBL) slab model (Cleugh and Grimmond
+2001 <a href="#id44"><span class="problematic" id="id20">[23]_</span></a>) calculates the CBL height, temperature and humidity during
+daytime (Onomura et al. 2015 <a href="#id45"><span class="problematic" id="id21">[24]_</span></a>).</p>
+</div>
+<div class="section" id="thermal-comfort">
+<h2>Thermal comfort<a class="headerlink" href="#thermal-comfort" title="Permalink to this headline">¶</a></h2>
+<p><strong>SOLWEIG</strong> (Solar and longwave environmental irradiance geometry model,
+Lindberg et al. 2008 <a href="#id46"><span class="problematic" id="id22">[25]_</span></a>, Lindberg and Grimmond 2011 <a href="#id47"><span class="problematic" id="id23">[26]_</span></a>) is a 2D
+radiation model to estimate mean radiant temperature.</p>
+<div class="figure">
+<img alt="Overview of scales. Source: Onomura et al. (2015)" src="Bluews_2.jpg" />
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Parameterisations and sub-models within SUEWS</a><ul>
+<li><a class="reference internal" href="#net-all-wave-radiation-q">Net all-wave radiation, Q*</a></li>
+<li><a class="reference internal" href="#anthropogenic-heat-flux-qf">Anthropogenic heat flux, Q<sub>F</sub></a></li>
+<li><a class="reference internal" href="#storage-heat-flux-qs">Storage heat flux, ΔQ<sub>S</sub></a></li>
+<li><a class="reference internal" href="#turbulent-heat-fluxes-qh-and-qe">Turbulent heat fluxes, Q<sub>H</sub> and Q<sub>E</sub></a></li>
+<li><a class="reference internal" href="#water-balance">Water balance</a></li>
+<li><a class="reference internal" href="#snowmelt">Snowmelt</a></li>
+<li><a class="reference internal" href="#convective-boundary-layer">Convective boundary layer</a></li>
+<li><a class="reference internal" href="#thermal-comfort">Thermal comfort</a></li>
+</ul>
+</li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/5.parameterisations-and-sub-models.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="nav-item nav-item-0"><a href="index.html">SUEWS 2018a documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, Sue Grimmond, Ting Sun.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.1.
+    </div>
+  </body>
+</html>

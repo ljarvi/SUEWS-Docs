@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -7,7 +6,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Index &#8212; SUEWS 2018a documentation</title>
+    <title>Differences between SUEWS, LUMPS and FRAISE &#8212; SUEWS 2018a documentation</title>
     <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript" src="_static/documentation_options.js"></script>
@@ -15,14 +14,14 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <link rel="index" title="Index" href="#" />
+    <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="#" title="General Index"
+          <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="nav-item nav-item-0"><a href="index.html">SUEWS 2018a documentation</a> &#187;</li> 
       </ul>
@@ -33,11 +32,25 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
+  <div class="section" id="differences-between-suews-lumps-and-fraise">
+<h1>Differences between SUEWS, LUMPS and FRAISE<a class="headerlink" href="#differences-between-suews-lumps-and-fraise" title="Permalink to this headline">¶</a></h1>
+<p>The largest difference between LUMPS and SUEWS is that the latter
+simulates the urban water balance in detail while LUMPS takes a simpler
+approach for the sensible and latent heat fluxes and the water balance
+(“water bucket”). The calculation of evaporation/latent heat in SUEWS is
+more biophysically based. Due to its simplicity, LUMPS requires less
+parameters in order to run. SUEWS gives turbulent heat fluxes calculated
+with both models as an output. <strong>The model can run LUMPS alone without
+running SUEWS (Table 4.1 – SuewsStatus).</strong></p>
+<p>Similarities and differences between LUMPS and SUEWS.</p>
+<div class="section" id="fraise-flux-ratio-active-index-surface-exchange">
+<h2>FRAISE Flux Ratio – Active Index Surface Exchange<a class="headerlink" href="#fraise-flux-ratio-active-index-surface-exchange" title="Permalink to this headline">¶</a></h2>
+<p>FRAISE provides an estimate of mean midday (±3 h around solar noon)
+energy partitioning from information on the surface characteristics and
+estimates of the mean midday incoming radiative energy and anthropogenic
+heat release. Please refer to Loridan and Grimmond (2012) <a href="#id2"><span class="problematic" id="id1">[491]_</span></a> for
+further details.</p>
+</div>
 </div>
 
 
@@ -46,6 +59,21 @@
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Differences between SUEWS, LUMPS and FRAISE</a><ul>
+<li><a class="reference internal" href="#fraise-flux-ratio-active-index-surface-exchange">FRAISE Flux Ratio – Active Index Surface Exchange</a></li>
+</ul>
+</li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/14.differences-suews-lumps-fraise.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
     <div class="searchformwrapper">
@@ -66,7 +94,7 @@
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="#" title="General Index"
+          <a href="genindex.html" title="General Index"
              >index</a></li>
         <li class="nav-item nav-item-0"><a href="index.html">SUEWS 2018a documentation</a> &#187;</li> 
       </ul>
