@@ -1,2 +1,2 @@
 # SUEWS-Docs
-[the documentation for SUEWS](suews-docs.readthedocs.io)
+[the documentation for SUEWS](http://suews-docs.readthedocs.io)
