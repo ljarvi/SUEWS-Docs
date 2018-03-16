@@ -35,5 +35,6 @@ could be added, please send them through)
 
 .. toctree::
    :maxdepth: 1
+   
    recent-publications
    introduction
