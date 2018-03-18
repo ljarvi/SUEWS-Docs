@@ -4581,6 +4581,8 @@ particular surface type. For suggestions on how to complete this table,
 see: `Typical
 Values <http://urban-climate.net/umep/TypicalValues#Typical_Values>`__.
 
+.. tabularcolumns:: |p{1.5cm}|p{1.5cm}|L|
+
 +-----+-----+---------+---------+---------+---------+---------+---+
 | No. | Use | Column  | Example | Descrip |         |         |   |
 |     |     | name    |         | tion    |         |         |   |

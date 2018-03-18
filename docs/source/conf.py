@@ -74,7 +74,13 @@ pygments_style = 'sphinx'
 
 
 # -- Options for HTML output -------------------------------------------------
+html_static_path = ['_static']
 
+html_context = {
+    'css_files': [
+        '_static/theme_overrides.css',  # override wide tables in RTD theme
+        ],
+     }
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #

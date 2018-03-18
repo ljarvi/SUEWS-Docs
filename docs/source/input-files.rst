@@ -32,8 +32,8 @@ In *Linux* and *Mac*, please add an empty line after the end slash.
 -  The parameters and variables can appear in any order.
 
 +-----------------+---------------------+-----------------+-----------------+
-| Name            | Required/Option     | Description     |                 |
-|                 | al                  |                 |                 |
+| Name            | Required/Optional     | Description     |                 |
+|                 |                   |                 |                 |
 +=================+=====================+=================+=================+
 | *Model run      |                     |                 |                 |
 | options*        |                     |                 |                 |
@@ -4580,6 +4580,8 @@ of SUEWS_NonVeg.txt to the codes specified in SUEWS_SiteSelect.txt
 particular surface type. For suggestions on how to complete this table,
 see: `Typical
 Values <http://urban-climate.net/umep/TypicalValues#Typical_Values>`__.
+
+.. tabularcolumns:: |p{1.5cm}|p{1.5cm}|L|
 
 +-----+-----+---------+---------+---------+---------+---------+---+
 | No. | Use | Column  | Example | Descrip |         |         |   |
