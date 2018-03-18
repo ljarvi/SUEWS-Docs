@@ -1,9 +1,10 @@
 Introduction
 ============
 
+
 .. figure:: SUEWS_Overview_s.png
 	:alt: Overview of SUEWS
-	
+
 	Overview of SUEWS
 
 
@@ -15,10 +16,11 @@ utilizes an evaporation-interception approach (Grimmond et al.
 1991 [G91]_), similar to that used in forests, to model evaporation from
 urban surfaces.
 
+
 .. figure:: SUEWS_SurfaceWaterBalance_v2_xxs.jpg
 	:alt: The seven surface types considered in SUEWS
 
-   The seven surface types considered in SUEWS
+	The seven surface types considered in SUEWS
 
 
 The model uses seven surface types: paved, buildings, evergreen

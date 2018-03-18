@@ -11,7 +11,6 @@ references to help decide how appropriate these are for your site/model
 domain); values marked with 'MU' need to be set (i.e. changed from the
 example) for your site/model domain.
 
-.. _runcontrol-nml:
 
 RunControl.nml
 --------------
