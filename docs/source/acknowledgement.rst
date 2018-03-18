@@ -1,5 +1,6 @@
 Acknowledgements
-----------------
+================
+
 
 -  People who have contributed to the development of SUEWS (plus
    co-authors of papers):

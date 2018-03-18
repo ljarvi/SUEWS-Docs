@@ -1,21 +1,24 @@
 Introduction
-------------
+============
 
 .. figure:: SUEWS_Overview_s.png
-   :alt:  Overview of SUEWS
-
+	:alt: Overview of SUEWS
+	
+	Overview of SUEWS
 
 
 Surface Urban Energy and Water Balance Scheme (**SUEWS**) (Järvi et al.
-2011 [1]_, Ward et al. 2016 [2]_) is able to simulate the urban
+2011 [J11]_, Ward et al. 2016 [W16]_) is able to simulate the urban
 radiation, energy and water balances using only commonly measured
 meteorological variables and information about the surface cover. SUEWS
 utilizes an evaporation-interception approach (Grimmond et al.
-1991 [3]_), similar to that used in forests, to model evaporation from
+1991 [G91]_), similar to that used in forests, to model evaporation from
 urban surfaces.
 
 .. figure:: SUEWS_SurfaceWaterBalance_v2_xxs.jpg
-   :alt:  The seven surface types considered in SUEWS
+	:alt: The seven surface types considered in SUEWS
+
+   The seven surface types considered in SUEWS
 
 
 The model uses seven surface types: paved, buildings, evergreen

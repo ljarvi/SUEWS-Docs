@@ -8,7 +8,7 @@ by completing `this form`_.
 
 
 :ref:`This documentation site <index_page>` is regularly
-updated with new developments. For what's new in this version, see :ref:`version_history`.
+updated with new developments. For what's new in this version, see :ref:`new_latest`.
 
 The **latest formal** release of SUEWS is **v2017b** (released 1 August
 2017).
@@ -22,9 +22,6 @@ follows:
    Ward HC, L Järvi, T Sun, S Onomura, F Lindberg, F Olofson, A Gabey, CSB Grimmond (2017).
    SUEWS Manual V2017b Department of Meteorology, University of Reading, Reading, UK
 
-
-To download the latest version of SUEWS please complete the `online
-form <https://docs.google.com/forms/d/1AiPC9RVoQ_T_eaVnkuhI1UqmO8sWWMMRD9Yqeq98sfo/viewform?formkey=dExvc3V1RDBqWmlIcURfLW5VOGtvQ0E6MQ&ifq>`__.
 
 Please refer to `Ward et al. (2017) <http://onlinelibrary.wiley.com/doi/10.1002/joc.5200/full>`__ for
 further details v2017a:
@@ -42,29 +39,27 @@ further details v2017a:
 
 
 
-
-
 .. _this form: `dowload form`_
 .. _dowload form: http://micromet.reading.ac.uk/software/
 
 
 
 .. toctree::
-	:maxdepth: 1
-	:numbered:
-	:hidden:
+   :maxdepth: 1
+   :numbered:
+   :hidden:
 
-	recent-publications
-	introduction
-	suews-and-umep
-	parameterisations-and-sub-models
-	prepare-to-run-the-model
-	input-files
-	output-files
-	troubleshooting
-	acknowledgement
-	notation
-	development
-	version-history
-	differences-suews-lumps-fraise
-	references
+   recent-publications
+   introduction
+   suews-and-umep
+   parameterisations-and-sub-models
+   prepare-to-run-the-model
+   input-files
+   output-files
+   troubleshooting
+   acknowledgement
+   notation
+   development
+   version-history
+   differences-suews-lumps-fraise
+   references

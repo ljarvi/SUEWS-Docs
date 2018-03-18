@@ -178,183 +178,105 @@
            <div itemprop="articleBody">
             
   <div class="section" id="version-history">
-<span id="id1"></span><h1>12. Version History<a class="headerlink" href="#version-history" title="Permalink to this headline">¶</a></h1>
+<h1>12. Version History<a class="headerlink" href="#version-history" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="new-in-suews-version-2018a">
-<h2>12.1. New in SUEWS Version 2018a<a class="headerlink" href="#new-in-suews-version-2018a" title="Permalink to this headline">¶</a></h2>
-<p>see <a class="reference internal" href="#version-history"><span class="std std-ref">Version History</span></a>.</p>
+<span id="new-latest"></span><h2>12.1. New in SUEWS Version 2018a<a class="headerlink" href="#new-in-suews-version-2018a" title="Permalink to this headline">¶</a></h2>
+<p>see <span class="xref std std-ref">version history</span>.</p>
 </div>
 <div class="section" id="new-in-suews-version-2017b-released-2-august-2017">
 <h2>12.2. New in SUEWS Version 2017b (released 2 August 2017)<a class="headerlink" href="#new-in-suews-version-2017b-released-2-august-2017" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href=":File:SUEWS_V2017b_Manual.pdf">PDF Manual for v2017b</a></p>
-<ol class="arabic">
-<li><dl class="first docutils">
-<dt>Surface-level diagnostics: T2 (air temperature at 2 m agl), Q2 (air</dt>
-<dd><p class="first last">specific humidity at 2 m agl) and U10 (wind speed at 10 m agl) added
-as default output.</p>
-</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>Output in netCDF format. Please note this feature is <strong>NOT</strong> enabled</dt>
-<dd><p class="first last">in the public release due to the dependency of netCDF library.
+<ol class="arabic simple">
+<li>Surface-level diagnostics: T2 (air temperature at 2 m agl), Q2 (air
+specific humidity at 2 m agl) and U10 (wind speed at 10 m agl) added
+as default output.</li>
+<li>Output in netCDF format. Please note this feature is <strong>NOT</strong> enabled
+in the public release due to the dependency of netCDF library.
 Assistance in enabling this feature may be requested to the
 development team via <a class="reference external" href="https://www.lists.reading.ac.uk/mailman/listinfo/met-suews">SUEWS mail
-list</a>.</p>
-</dd>
-</dl>
-</li>
-<li><p class="first">Edits to the manual.</p>
-</li>
-<li><dl class="first docutils">
-<dt>New capabilities being developed, including two new options for</dt>
-<dd><p class="first last">calculating storage heat flux (AnOHM, ESTM) and modelling of carbon
+list</a>.</li>
+<li>Edits to the manual.</li>
+<li>New capabilities being developed, including two new options for
+calculating storage heat flux (AnOHM, ESTM) and modelling of carbon
 dioxide fluxes. These are currently under development and <strong>should
-not be used</strong> in v2017b.</p>
-</dd>
-</dl>
-</li>
-<li><p class="first">Known issues</p>
-<blockquote>
-<div><ol class="arabic simple">
+not be used</strong> in v2017b.</li>
+<li>Known issues<ol class="arabic">
 <li>BLUEWS parameters need to be checked</li>
 <li>Observed soil moisture can not be used as an input</li>
-<li><dl class="first docutils">
-<dt>Wind direction is not currently downscaled so non -999 values will</dt>
-<dd>cause an error.</dd>
-</dl>
-</li>
+<li>Wind direction is not currently downscaled so non -999 values will
+cause an error.</li>
 </ol>
-</div></blockquote>
 </li>
 </ol>
 </div>
 <div class="section" id="new-in-suews-version-2017a-feb-2017">
 <h2>12.3. New in SUEWS Version 2017a (Feb 2017)<a class="headerlink" href="#new-in-suews-version-2017a-feb-2017" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
-<li><dl class="first docutils">
-<dt>Changes to input file formats (including RunControl.nml and</dt>
-<dd>InitialConditions files) to facilitate setting up and running the
+<li>Changes to input file formats (including RunControl.nml and
+InitialConditions files) to facilitate setting up and running the
 model. Met forcing files no longer need two rows of -9 at the end to
-indicate the end of the file.</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>Changes to output file formats (now option to write out only a subset</dt>
-<dd>of variables, rather than all variables).</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>SUEWS can now disaggregate forcing files to the model time-step and</dt>
-<dd>aggregate output at the model time-step to lower resolution. This
-removes the need for the python wrapper used with previous versions.</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>InitialConditions format and requirements changed. A single file can</dt>
-<dd>now be provided for multiple grids. SUEWS will approximate most (but
+indicate the end of the file.</li>
+<li>Changes to output file formats (now option to write out only a subset
+of variables, rather than all variables).</li>
+<li>SUEWS can now disaggregate forcing files to the model time-step and
+aggregate output at the model time-step to lower resolution. This
+removes the need for the python wrapper used with previous versions.</li>
+<li>InitialConditions format and requirements changed. A single file can
+now be provided for multiple grids. SUEWS will approximate most (but
 not all) of the required initial conditions if values are unknown.
 (However, if detailed information about the initial conditions is
-known, this can still be provided to and used by SUEWS.)</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>Leaf area index calculations now use parameters provided for each</dt>
-<dd>vegetated surface (previously only the deciduous tree LAI development
-parameters were applied to all vegetated surfaces).</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>For compatibility with GIS, <a href="#id2"><span class="problematic" id="id3">**</span></a>the sign convention for longitude has</dt>
-<dd>been changed**. Now negative values are to the west, positive values
+known, this can still be provided to and used by SUEWS.)</li>
+<li>Leaf area index calculations now use parameters provided for each
+vegetated surface (previously only the deciduous tree LAI development
+parameters were applied to all vegetated surfaces).</li>
+<li>For compatibility with GIS, <strong>the sign convention for longitude has
+been changed</strong>. Now negative values are to the west, positive values
 are to the east. Note this appears to have been incorrectly coded in
-previous versions (but may not necessarily have been problematic).</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>Storage heat flux calculation adapted for shorter (sub-hourly) model</dt>
-<dd>time-step: hysteresis calculation now based on running means over the
-previous hour.</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>Improved error handling, including separate files for serious errors</dt>
-<dd>(problems.txt) and less critical issues (warnings.txt).</dd>
-</dl>
-</li>
+previous versions (but may not necessarily have been problematic).</li>
+<li>Storage heat flux calculation adapted for shorter (sub-hourly) model
+time-step: hysteresis calculation now based on running means over the
+previous hour.</li>
+<li>Improved error handling, including separate files for serious errors
+(problems.txt) and less critical issues (warnings.txt).</li>
 <li>Edits to the manual.</li>
-<li><dl class="first docutils">
-<dt>New capabilities being developed, including two new options for</dt>
-<dd>calculating storage heat flux (AnOHM, ESTM) and modelling of carbon
+<li>New capabilities being developed, including two new options for
+calculating storage heat flux (AnOHM, ESTM) and modelling of carbon
 dioxide fluxes. These are currently under development and <strong>should
-not be used</strong> in v2017a.</dd>
-</dl>
-</li>
+not be used</strong> in v2017a.</li>
 </ol>
 </div>
 <div class="section" id="new-in-suews-version-2016a-released-21-june-2016">
 <h2>12.4. New in SUEWS Version 2016a (released 21 June 2016)<a class="headerlink" href="#new-in-suews-version-2016a-released-21-june-2016" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href=":File:SUEWS_V2016a_Manual.pdf">PDF Manual for v2016a</a></p>
-<ol class="arabic">
-<li><dl class="first docutils">
-<dt>Major changes to the input file formats to facilitate the running of</dt>
-<dd><p class="first last">multiple grids and multiple years. Surface characteristics are
+<ol class="arabic simple">
+<li>Major changes to the input file formats to facilitate the running of
+multiple grids and multiple years. Surface characteristics are
 provided in SiteSelect.txt and other input files are cross-referenced
-via codes or profile types.</p>
-</dd>
-</dl>
-</li>
-<li><p class="first">The surface types have been altered:</p>
-<blockquote>
-<div><ul class="simple">
-<li><dl class="first docutils">
-<dt>Previously, grass surfaces were entered separately as irrigated</dt>
-<dd>grass and unirrigated grass surfaces, whilst the ‘unmanaged’ land
+via codes or profile types.</li>
+<li>The surface types have been altered:<ul>
+<li>Previously, grass surfaces were entered separately as irrigated
+grass and unirrigated grass surfaces, whilst the ‘unmanaged’ land
 cover fraction was assumed by the model to behave as unirrigated
 grass. There is now a single surface type for grass (total for
-irrigated plus unirrigated) and a new bare soil surface type.</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>The proportion of irrigated vegetation must now be specified for</dt>
-<dd>grass, evergreen trees and deciduous trees individually.</dd>
-</dl>
-</li>
+irrigated plus unirrigated) and a new bare soil surface type.</li>
+<li>The proportion of irrigated vegetation must now be specified for
+grass, evergreen trees and deciduous trees individually.</li>
 </ul>
-</div></blockquote>
 </li>
-<li><dl class="first docutils">
-<dt>The entire model now runs at a time step specified by the user. Note</dt>
-<dd><p class="first last">that 5 min is strongly recommended. (Previously only the water
+<li>The entire model now runs at a time step specified by the user. Note
+that 5 min is strongly recommended. (Previously only the water
 balance calculations were done at 5 min with the energy balance
-calculations at 60 min).</p>
-</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>Surface conductance now depends on the soil moisture under the</dt>
-<dd><p class="first last">vegetated surfaces only (rather than the total soil moisture for the
-whole study area as previously).</p>
-</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>Albedo of evergreen trees and grass surfaces can now change with leaf</dt>
-<dd><p class="first last">area index as was previously possible for deciduous trees only.</p>
-</dd>
-</dl>
-</li>
-<li><p class="first">New suggestions in Troubleshooting section.</p>
-</li>
-<li><p class="first">Edits to the manual.</p>
-</li>
-<li><p class="first">CBL model included.</p>
-</li>
-<li><dl class="first docutils">
-<dt>SUEWS has been incorporated into</dt>
-<dd><p class="first last"><a class="reference external" href="http://urban-climate.net/umep/UMEP">UMEP</a></p>
-</dd>
-</dl>
-</li>
+calculations at 60 min).</li>
+<li>Surface conductance now depends on the soil moisture under the
+vegetated surfaces only (rather than the total soil moisture for the
+whole study area as previously).</li>
+<li>Albedo of evergreen trees and grass surfaces can now change with leaf
+area index as was previously possible for deciduous trees only.</li>
+<li>New suggestions in Troubleshooting section.</li>
+<li>Edits to the manual.</li>
+<li>CBL model included.</li>
+<li>SUEWS has been incorporated into
+<a class="reference external" href="http://urban-climate.net/umep/UMEP">UMEP</a></li>
 </ol>
 </div>
 <div class="section" id="new-in-suews-version-2014b-released-8-october-2014">
@@ -364,36 +286,21 @@ manual</a>
 These affect the run configuration if previously run with older versions
 of the model:</p>
 <ol class="arabic simple">
-<li><dl class="first docutils">
-<dt>New input of three additional columns in the Meteorological input</dt>
-<dd>file (diffusive and direct solar radiation, and wind direction)</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>Change of input variables in InitialConditions.nml file. Note we now</dt>
-<dd>refer to CT as ET (ie. Evergreen trees rather than coniferous trees)</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>In GridConnectionsYYYY.txt, the site names should now be without the</dt>
-<dd>underscore (e.g “Sm” and not “<a href="#id4"><span class="problematic" id="id5">Sm_</span></a>”)</dd>
-</dl>
-</li>
+<li>New input of three additional columns in the Meteorological input
+file (diffusive and direct solar radiation, and wind direction)</li>
+<li>Change of input variables in InitialConditions.nml file. Note we now
+refer to CT as ET (ie. Evergreen trees rather than coniferous trees)</li>
+<li>In GridConnectionsYYYY.txt, the site names should now be without the
+underscore (e.g “Sm” and not “<a href="#id1"><span class="problematic" id="id2">Sm_</span></a>”)</li>
 </ol>
 <p>Other issues:</p>
 <ol class="arabic simple">
-<li><dl class="first docutils">
-<dt>Number of grid areas that can be modelled (for one grid, one year</dt>
-<dd>120; for one grid two years 80)</dd>
-</dl>
-</li>
+<li>Number of grid areas that can be modelled (for one grid, one year
+120; for one grid two years 80)</li>
 <li>Comment about Time interval of input data</li>
 <li>Bug fix: Column headers corrected in 5 min file</li>
-<li><dl class="first docutils">
-<dt>Bug fix: Surface state 60 min file - corrected to give the last 5 min</dt>
-<dd>of the hour (rather than cumulating through the hour)</dd>
-</dl>
-</li>
+<li>Bug fix: Surface state 60 min file - corrected to give the last 5 min
+of the hour (rather than cumulating through the hour)</li>
 <li>Bug fix: units in the Horizontal soil water transfer</li>
 <li>ErrorHints: More have been added to the problems.txt file.</li>
 <li>Manual: new section on running the model appropriately</li>
@@ -416,248 +323,143 @@ doi:10.5194/gmd-7-1691-2014.</p>
 <div class="section" id="new-in-suews-version-2014a-released-21-february-2014">
 <h2>12.7. New in SUEWS Version 2014a (released 21 February 2014)<a class="headerlink" href="#new-in-suews-version-2014a-released-21-february-2014" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
-<li><dl class="first docutils">
-<dt>Bug fix: External irrigation is calculated as combined from automatic</dt>
-<dd>and manual irrigation and during precipitation events the manual
+<li>Bug fix: External irrigation is calculated as combined from automatic
+and manual irrigation and during precipitation events the manual
 irrigation is reduced to 60% of the calculated values. In previous
 version of the model, the irrigation was in all cases taken 60% of
-the calculated value, but now this has been fixed.</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>In previous versions of the model, irrigation was only allowed on the</dt>
-<dd>irrigated grass surface type. Now, irrigation is also allowed on
+the calculated value, but now this has been fixed.</li>
+<li>In previous versions of the model, irrigation was only allowed on the
+irrigated grass surface type. Now, irrigation is also allowed on
 evergreen and deciduous trees/shrubs surfaces. These are not however
 treated as separate surfaces, but the amount of irrigation is evenly
 distributed to the whole surface type in the modelled area. The
 amount of water is calculated using same equation as for grass
 surface (equation 5 in Järvi et al. 2011), and the fraction of
 irrigated trees/shrubs (relative to the area of tree/shrubs surface)
-is set in the gis file (See Table 4.11: SSss_YYYY.gis)</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>In the current version of the model, the user is able to adjust the</dt>
-<dd>leaf-on and leaf-off lengths in the FunctionalTypes. nml file. In
+is set in the gis file (See Table 4.11: SSss_YYYY.gis)</li>
+<li>In the current version of the model, the user is able to adjust the
+leaf-on and leaf-off lengths in the FunctionalTypes. nml file. In
 addition, user can choose whether to use temperature dependent
 functions or combination of temperature and day length (advised to be
-used at high-latitudes)</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>In the gis-file, there is a new variable Alt that is the area</dt>
-<dd>altitude above sea level. If not known exactly use an approximate
-value.</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>Snow removal profile has been added to the</dt>
-<dd>HourlyProfileSSss_YYYY.txt. Not yet used!</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>Model time interval has been changed from minutes to seconds.</dt>
-<dd>Preferred interval is 3600 seconds (1 hour)</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>Manual correction: input variable Soil moisture said soil moisture</dt>
-<dd>deficit in the manual – word removed</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>Multiple compiled versions of SUEWS released. There are now users in</dt>
-<dd>Apple, Linux and Windows environments. So we will now release
-compiled versions for more operating systems (section 3).</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>There are some changes in the output file columns so please, check</dt>
-<dd>the respective table of each used output file.</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>Bug fix: with very small amount of vegetation in an area – impacted</dt>
-<dd>Phenology for LUMPS</dd>
-</dl>
-</li>
+used at high-latitudes)</li>
+<li>In the gis-file, there is a new variable Alt that is the area
+altitude above sea level. If not known exactly use an approximate
+value.</li>
+<li>Snow removal profile has been added to the
+HourlyProfileSSss_YYYY.txt. Not yet used!</li>
+<li>Model time interval has been changed from minutes to seconds.
+Preferred interval is 3600 seconds (1 hour)</li>
+<li>Manual correction: input variable Soil moisture said soil moisture
+deficit in the manual – word removed</li>
+<li>Multiple compiled versions of SUEWS released. There are now users in
+Apple, Linux and Windows environments. So we will now release
+compiled versions for more operating systems (section 3).</li>
+<li>There are some changes in the output file columns so please, check
+the respective table of each used output file.</li>
+<li>Bug fix: with very small amount of vegetation in an area – impacted
+Phenology for LUMPS</li>
 </ol>
 </div>
 <div class="section" id="new-in-suews-version-2013a">
 <h2>12.8. New in SUEWS Version 2013a<a class="headerlink" href="#new-in-suews-version-2013a" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
 <li>Radiation selection bug fixed</li>
-<li><dl class="first docutils">
-<dt>Aerodynamic resistance – when very low - no longer reverts to neutral</dt>
-<dd>(which caused a large jump) – but stays low</dd>
-</dl>
-</li>
+<li>Aerodynamic resistance – when very low - no longer reverts to neutral
+(which caused a large jump) – but stays low</li>
 <li>Irrigation day of week fixed</li>
 <li>New error messages</li>
-<li><dl class="first docutils">
-<dt>min file – now includes a decimal time column – see Section 5.4 –</dt>
-<dd>Table 5.3</dd>
-</dl>
-</li>
+<li>min file – now includes a decimal time column – see Section 5.4 –
+Table 5.3</li>
 </ol>
 </div>
 <div class="section" id="new-in-suews-version-2012b">
 <h2>12.9. New in SUEWS Version 2012b<a class="headerlink" href="#new-in-suews-version-2012b" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
-<li><dl class="first docutils">
-<dt>Error message generated if all the data are not available for the</dt>
-<dd>surface resistance calculations</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>Error message generated if wind data are below zero plane</dt>
-<dd>displacement height.</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>All error messages now written to ‘Problem.txt’ rather than embedded</dt>
-<dd>in an ErrorFile. Note some errors will be written and the program
-will continue others will stop the program.</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>Default variables removed (see below). Model will stop if any data</dt>
-<dd>are problematic. File should be checked to ensure that reasonable
+<li>Error message generated if all the data are not available for the
+surface resistance calculations</li>
+<li>Error message generated if wind data are below zero plane
+displacement height.</li>
+<li>All error messages now written to ‘Problem.txt’ rather than embedded
+in an ErrorFile. Note some errors will be written and the program
+will continue others will stop the program.</li>
+<li>Default variables removed (see below). Model will stop if any data
+are problematic. File should be checked to ensure that reasonable
 data are being used. If an error occurs when there should not be one
-let us know as it may mean we have made the limits too restrictive.</dd>
-</dl>
-</li>
+let us know as it may mean we have made the limits too restrictive.</li>
 </ol>
 <p>Contents no longer used File defaultFcld=0.1 defaultPres=1013
 defaultRH=50 defaultT=10 defaultU=3 RunControl.nml</p>
 <ul class="simple">
 <li>Just delete lines from file</li>
-<li><dl class="first docutils">
-<dt>Values you had were likely different from these example value shown</dt>
-<dd>here</dd>
-</dl>
-</li>
+<li>Values you had were likely different from these example value shown
+here</li>
 </ul>
 </div>
 <div class="section" id="new-in-suews-version-2012a">
 <h2>12.10. New in SUEWS Version 2012a<a class="headerlink" href="#new-in-suews-version-2012a" title="Permalink to this headline">¶</a></h2>
-<ol class="arabic">
-<li><dl class="first docutils">
-<dt>Improved error messages when an error is encountered. Error message</dt>
-<dd><p class="first last">will generally be written to the screen and to the file
-‘problems.txt’</p>
-</dd>
-</dl>
-</li>
-<li><p class="first">Format of all input files have changed.</p>
-</li>
-<li><dl class="first docutils">
-<dt>New excel spreadsheet and R programme to help prepare required data</dt>
-<dd><p class="first last">files. (Not required)</p>
-</dd>
-</dl>
-</li>
-<li><p class="first">Format of coef flux (OHM) input files have changed.</p>
-<blockquote>
-<div><ul class="simple">
-<li><dl class="first docutils">
-<dt>This allows for clearer identification for users of the</dt>
-<dd>coefficients that are actually to be used</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>This requires an additional file with coefficients. These do not</dt>
-<dd>need to be adjusted but new coefficients can be added. We would
+<ol class="arabic simple">
+<li>Improved error messages when an error is encountered. Error message
+will generally be written to the screen and to the file
+‘problems.txt’</li>
+<li>Format of all input files have changed.</li>
+<li>New excel spreadsheet and R programme to help prepare required data
+files. (Not required)</li>
+<li>Format of coef flux (OHM) input files have changed.<ul>
+<li>This allows for clearer identification for users of the
+coefficients that are actually to be used</li>
+<li>This requires an additional file with coefficients. These do not
+need to be adjusted but new coefficients can be added. We would
 appreciate receiving additional coefficients so they can be
-included in future releases – Please email Sue.</dd>
-</dl>
-</li>
+included in future releases – Please email Sue.</li>
 </ul>
-</div></blockquote>
 </li>
-<li><p class="first">Storage heat flux (OHM) coefficients can be changed by</p>
-<blockquote>
-<div><ul class="simple">
+<li>Storage heat flux (OHM) coefficients can be changed by<ul>
 <li>time of year (summer, winter)</li>
 <li>surface wetness state</li>
 </ul>
-</div></blockquote>
 </li>
-<li><p class="first">New files are written: DailyState.txt</p>
-<blockquote>
-<div><ul class="simple">
-<li><dl class="first docutils">
-<dt>Provides the status of variables that are updated on a daily or</dt>
-<dd>basis or a snapshot at the end of each day.</dd>
-</dl>
-</li>
+<li>New files are written: DailyState.txt<ul>
+<li>Provides the status of variables that are updated on a daily or
+basis or a snapshot at the end of each day.</li>
 </ul>
-</div></blockquote>
 </li>
-<li><p class="first">Surface Types</p>
-<blockquote>
-<div><ul class="simple">
-<li><dl class="first docutils">
-<dt>Clarification of surface types has been made. See GIS and OHM</dt>
-<dd>related files</dd>
-</dl>
-</li>
+<li>Surface Types<ul>
+<li>Clarification of surface types has been made. See GIS and OHM
+related files</li>
 </ul>
-</div></blockquote>
 </li>
 </ol>
 </div>
 <div class="section" id="new-in-suews-version2011b">
 <h2>12.11. New in SUEWS Version2011b<a class="headerlink" href="#new-in-suews-version2011b" title="Permalink to this headline">¶</a></h2>
-<ol class="arabic">
-<li><dl class="first docutils">
-<dt>Storage heat flux (ΔQs) and anthropogenic heat flux (QF) can be set</dt>
-<dd><p class="first last">to be 0 W m<sup>-2</sup></p>
-</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>Calculation of hydraulic conductivity in soil has been improved and</dt>
-<dd><p class="first last">HydraulicConduct in SUEWSInput.nml is replaced with name
-SatHydraulicConduct</p>
-</dd>
-</dl>
-</li>
-<li><p class="first">Following removed from HeaderInput.nml</p>
-<blockquote>
-<div><ul class="simple">
+<ol class="arabic simple">
+<li>Storage heat flux (ΔQs) and anthropogenic heat flux (QF) can be set
+to be 0 W m<sup>-2</sup></li>
+<li>Calculation of hydraulic conductivity in soil has been improved and
+HydraulicConduct in SUEWSInput.nml is replaced with name
+SatHydraulicConduct</li>
+<li>Following removed from HeaderInput.nml<ul>
 <li>HydraulicConduct</li>
 <li>GrassFractionIrrigated</li>
 <li>PavedFractionIrrigated</li>
 <li>TreeFractionIrrigated</li>
 </ul>
-</div></blockquote>
 </li>
 </ol>
 <p>The lower three are now determined from the water use behaviour used in
 SUEWS</p>
-<ol class="arabic">
-<li><p class="first">Following added to HeaderInput.nml</p>
-<blockquote>
-<div><ul class="simple">
+<ol class="arabic simple">
+<li>Following added to HeaderInput.nml<ul>
 <li>SatHydraulicConduct</li>
 <li>defaultQf</li>
 <li>defaultQs</li>
 </ul>
-</div></blockquote>
 </li>
-<li><dl class="first docutils">
-<dt>If ΔQs and QF are not calculated in the model but are given as an</dt>
-<dd><p class="first last">input, the missing data is replaced with the default values.</p>
-</dd>
-</dl>
-</li>
-<li><p class="first">Added to SAHP input file</p>
-<blockquote>
-<div><ul class="simple">
+<li>If ΔQs and QF are not calculated in the model but are given as an
+input, the missing data is replaced with the default values.</li>
+<li>Added to SAHP input file<ul>
 <li>AHDIUPRF – diurnal profile used if AnthropHeatChoice = 1</li>
 </ul>
-</div></blockquote>
 </li>
 </ol>
 <p>V2012a this became obsolete OHM file (SSss_YYYY.ohm)</p>

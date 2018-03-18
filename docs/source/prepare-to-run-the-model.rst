@@ -1,5 +1,5 @@
 Preparing to run the model
---------------------------
+==========================
 
 The following is to help with the model setup. Note that there is a
 version of SUEWS in `UMEP <http://urban-climate.net/umep/UMEP_Manual>`__
@@ -10,7 +10,7 @@ standalone version so you can swap to that later once you have some
 familiarity.
 
 Preparatory reading
-~~~~~~~~~~~~~~~~~~~
+-------------------
 
 Read the manual and relevant papers (and references therein):
 
@@ -32,7 +32,7 @@ Read the manual and relevant papers (and references therein):
 applications <http://urban-climate.net/umep/SUEWS#Recent_publications>`__
 
 Decide what type of model run you are interested in
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------------------------------
 
 +--------------------------------------------+---------------------------+
 |                                            | Available in this release |
@@ -53,7 +53,7 @@ Decide what type of model run you are interested in
 +--------------------------------------------+---------------------------+
 
 Download the program and example data files
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------------
 
 Visit the website to receive a link to download the program and example
 data files. Select the appropriate compiled version of the model to
@@ -72,41 +72,41 @@ Kc11)
 In the following SS is the site code (e.g. Kc), ss the grid ID, YYYY the
 year and tt the time interval.
 
-+-----------------------+-----------------------+-----------------------+
-| Filename              | Description           | Input/output          |
-+=======================+=======================+=======================+
-| SSss_data.txt         | Meteorological input  | Input                 |
-|                       | file (60-min)         |                       |
-+-----------------------+-----------------------+-----------------------+
-| SSss_YYYY_data_5.txt  | Meteorological input  | Input                 |
-|                       | file (5-min)          |                       |
-+-----------------------+-----------------------+-----------------------+
-| InitialConditionsSSss | Initial conditions    | Input                 |
-| _YYYY.nml(+)          | file                  |                       |
-+-----------------------+-----------------------+-----------------------+
-| SUEWS_SiteInfo_SSss.x | Spreadsheet           | Input                 |
-| lsm                   | containing all other  |                       |
-|                       | input information     |                       |
-+-----------------------+-----------------------+-----------------------+
-| RunControl.nml        | Sets model run        | Input (located in     |
-|                       | options               | main directory)       |
-+-----------------------+-----------------------+-----------------------+
-| SS_Filechoices.txt    | Summary of model run  | Output                |
-|                       | options               |                       |
-+-----------------------+-----------------------+-----------------------+
-| SSss_YYYY_5.txt       | (Optional) 5-min      | Output                |
-|                       | resolution output     |                       |
-|                       | file                  |                       |
-+-----------------------+-----------------------+-----------------------+
-| SSss_YYYY_60.txt      | 60-min resolution     | Output                |
-|                       | output file           |                       |
-+-----------------------+-----------------------+-----------------------+
-| SSss_DailyState.txt   | Daily state variables | Output                |
-|                       | (all years in one     |                       |
-|                       | file)                 |                       |
-+-----------------------+-----------------------+-----------------------+
-|  |
-+-----------------------+-----------------------+-----------------------+
++-----------------------+-----------------------+-------------------+
+| Filename              | Description           | Input/output      |
++=======================+=======================+===================+
+| SSss_data.txt         | Meteorological input  | Input             |
+|                       | file (60-min)         |                   |
++-----------------------+-----------------------+-------------------+
+| SSss_YYYY_data_5.txt  | Meteorological input  | Input             |
+|                       | file (5-min)          |                   |
++-----------------------+-----------------------+-------------------+
+| InitialConditionsSSss | Initial conditions    | Input             |
+| _YYYY.nml(+)          | file                  |                   |
++-----------------------+-----------------------+-------------------+
+| SUEWS_SiteInfo_SSss.x | Spreadsheet           | Input             |
+| lsm                   | containing all other  |                   |
+|                       | input information     |                   |
++-----------------------+-----------------------+-------------------+
+| RunControl.nml        | Sets model run        | Input (located in |
+|                       | options               | main directory)   |
++-----------------------+-----------------------+-------------------+
+| SS_Filechoices.txt    | Summary of model run  | Output            |
+|                       | options               |                   |
++-----------------------+-----------------------+-------------------+
+| SSss_YYYY_5.txt       | (Optional) 5-min      | Output            |
+|                       | resolution output     |                   |
+|                       | file                  |                   |
++-----------------------+-----------------------+-------------------+
+| SSss_YYYY_60.txt      | 60-min resolution     | Output            |
+|                       | output file           |                   |
++-----------------------+-----------------------+-------------------+
+| SSss_DailyState.txt   | Daily state variables | Output            |
+|                       | (all years in one     |                   |
+|                       | file)                 |                   |
++-----------------------+-----------------------+-------------------+
+|                       |                       |                   |
++-----------------------+-----------------------+-------------------+
 
 (+) There is a second file InitialConditionsSSss_YYYY_EndOfRun.nml or
 InitialConditionsSSss_YYYY+1.nml in the input directory. At the end of
@@ -115,7 +115,7 @@ out so that this information could be used to initialize further model
 runs.
 
 Run the model for example data
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------
 
 Before running the model for your own data it is good to make certain
 that you can run the test data and get the same results as in the
@@ -131,7 +131,7 @@ Please see `Troubleshooting <#Troubleshooting>`__ if you have problems
 running the model.
 
 Preparation of data
-~~~~~~~~~~~~~~~~~~~
+-------------------
 
 This section describes the information required to run SUEWS for your
 site. The input data can be summarised as follows:
@@ -165,23 +165,23 @@ It is particularly important to ensure the following input information
 is appropriate and representative of the site:
 
 -  Fractions of different land cover types and (less so) heights of
-   buildings [28]_
+   buildings [W16]_
 -  Accurate meteorological forcing data, particularly precipitation and
-   incoming shortwave radiation [29]_
--  Initial soil moisture conditions [30]_
+   incoming shortwave radiation [Ko17]_
+-  Initial soil moisture conditions [Best2014]_
 -  Anthropogenic heat flux parameters, particularly if there are
    considerable energy emissions from transport, buildings, metabolism,
-   etc [31]_
+   etc [W16]_
 -  External water use (if irrigation or street cleaning occurs)
 -  Snow clearing (if running the snow option)
--  Surface conductance parameterisation [32]_ [33]_
+-  Surface conductance parameterisation [J11]_ [W16]_
 
 SUEWS can be run either for an individual area or for multiple areas.
 There is no requirement for the areas to be of any particular shape but
 here we refer to them as model 'grids'.
 
 Preparation of site characteristics and model parameters
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The area to be modelled is described by a set of characteristics that
 are specified in the `SUEWS_SiteSelect.txt <#SUEWS_SiteSelect.txt>`__
@@ -202,42 +202,42 @@ different years.) See `Input files <#Input_files>`__ for details. Note
 components of this.
 
 Land cover
-''''''''''
+^^^^^^^^^^
 
 For each grid, the land cover must be classified using the following
 surface types:
 
-+-----------------+-----------------+-----------------+-----------------+
-| Classification  | Surface type    | File where      |
-|                 |                 | characteristics |
-|                 |                 | are specified   |
-+=================+=================+=================+
-| Non-vegetated   | Paved surfaces  | [[#SUEWS_NonVeg | SUEWS_NonVeg.tx |
-|                 |                 | .txt            | t]]             |
-+-----------------+-----------------+-----------------+-----------------+
-|                 | Building        | [[#SUEWS_NonVeg | SUEWS_NonVeg.tx |
-|                 | surfaces        | .txt            | t]]             |
-+-----------------+-----------------+-----------------+-----------------+
-|                 | Bare soil       | [[#SUEWS_NonVeg | SUEWS_NonVeg.tx |
-|                 | surfaces        | .txt            | t]]             |
-+-----------------+-----------------+-----------------+-----------------+
-| Vegetation      | Evergreen trees | [[#SUEWS_Veg.tx | SUEWS_Veg.txt]] |
-|                 | and shrubs      | t               |                 |
-+-----------------+-----------------+-----------------+-----------------+
-|                 | Deciduous trees | [[#SUEWS_Veg.tx | SUEWS_Veg.txt]] |
-|                 | and shrubs      | t               |                 |
-+-----------------+-----------------+-----------------+-----------------+
-|                 | Grass           | [[#SUEWS_Veg.tx | SUEWS_Veg.txt]] |
-|                 |                 | t               |                 |
-+-----------------+-----------------+-----------------+-----------------+
-| Water           | Water           | [[#SUEWS_Water. | SUEWS_Water.txt |
-|                 |                 | txt             | ]]              |
-+-----------------+-----------------+-----------------+-----------------+
-| Snow            | Snow            | [[#SUEWS_Snow.t | SUEWS_Snow.txt] |
-|                 |                 | xt              | ]               |
-+-----------------+-----------------+-----------------+-----------------+
-|  |
-+-----------------+-----------------+-----------------+-----------------+
++----------------+-----------------+-----------------+-----------------+
+| Classification | Surface type    | File where      |                 |
+|                |                 | characteristics |                 |
+|                |                 | are specified   |                 |
++================+=================+=================+=================+
+| Non-vegetated  | Paved surfaces  | [[#SUEWS_NonVeg | SUEWS_NonVeg.tx |
+|                |                 | .txt            | t]]             |
++----------------+-----------------+-----------------+-----------------+
+|                | Building        | [[#SUEWS_NonVeg | SUEWS_NonVeg.tx |
+|                | surfaces        | .txt            | t]]             |
++----------------+-----------------+-----------------+-----------------+
+|                | Bare soil       | [[#SUEWS_NonVeg | SUEWS_NonVeg.tx |
+|                | surfaces        | .txt            | t]]             |
++----------------+-----------------+-----------------+-----------------+
+| Vegetation     | Evergreen trees | [[#SUEWS_Veg.tx | SUEWS_Veg.txt]] |
+|                | and shrubs      | t               |                 |
++----------------+-----------------+-----------------+-----------------+
+|                | Deciduous trees | [[#SUEWS_Veg.tx | SUEWS_Veg.txt]] |
+|                | and shrubs      | t               |                 |
++----------------+-----------------+-----------------+-----------------+
+|                | Grass           | [[#SUEWS_Veg.tx | SUEWS_Veg.txt]] |
+|                |                 | t               |                 |
++----------------+-----------------+-----------------+-----------------+
+| Water          | Water           | [[#SUEWS_Water. | SUEWS_Water.txt |
+|                |                 | txt             | ]]              |
++----------------+-----------------+-----------------+-----------------+
+| Snow           | Snow            | [[#SUEWS_Snow.t | SUEWS_Snow.txt] |
+|                |                 | xt              | ]               |
++----------------+-----------------+-----------------+-----------------+
+|                |                 |                 |                 |
++----------------+-----------------+-----------------+-----------------+
 
 The surface cover fractions (i.e. proportion of the grid taken up by
 each surface) must be specified in
@@ -256,14 +256,14 @@ to a GIS environment using QGIS.
 .. _anthropogenic-heat-flux-qf-1:
 
 Anthropogenic heat flux (Q:sub:`F`)
-'''''''''''''''''''''''''''''''''''
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You can either model Q\ :sub:`F` within SUEWS or provide it as an input.
 
 -  To model it population density is needed as an input for LUMPS and
    SUEWS to calculate Q\ :sub:`F`.
 -  If you have no information about the population of the site we
-   recommend that you use the LUCY model [34]_  [35]_ to estimate the
+   recommend that you use the LUCY model [lucy]_  [lucy2]_ to estimate the
    anthropogenic heat flux which can then be provided as input SUEWS
    along with the meteorological forcing data. The LUCY model can be
    downloaded from `here <http://micromet.reading.ac.uk/>`__.
@@ -273,7 +273,7 @@ Alternatively, you can use the updated version of LUCY called
 `UMEP <http://urban-climate.net/umep/UMEP>`__.
 
 Other information
-'''''''''''''''''
+^^^^^^^^^^^^^^^^^
 
 The surface cover fractions and population density can have a major
 impact on the model output. However, it is important to consider the
@@ -286,7 +286,7 @@ with important considerations for how to select appropriate values for
 your site.
 
 Data Entry
-''''''''''
+^^^^^^^^^^
 
 To create the series of input text files describing the characteristics
 of your site, there are three options:
@@ -328,7 +328,7 @@ In addition to these text files, the following files are also needed to
 run the model.
 
 Preparation of the RunControl file
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In the RunControl.nml file the site name (SS_) and directories for the
 model input and output are given. This means **before running** the
@@ -342,7 +342,7 @@ model (even the with the example datasets) you must either
 From the given site identification the model identifies the input files
 and generates the output files. For example if you specify
 
-| **``FileOutputPath``\ ````\ ``=``\ ````\ ``“C:\FolderName\SUEWSOutput\”``**\ `` and use site code SS the model creates an output file``
+| **``FileOutputPath``\ ````\ ``=``\ ````\ ``“C:\FolderName\SUEWSOutput\”``**\ `` and use site code SS the model creates an output file ``
 | **``C:\FolderName\SUEWSOutput\SSss_YYYY_TT.txt``**\ `` (remember to add the last backslash in windows and slash in Linux/Mac).``
 
 If the file paths are not correct the program will return an error when
@@ -350,7 +350,7 @@ run (see `error messages <#Error_messages:_problems.txt>`__) and write
 the error to the problems.txt file.
 
 Preparation of the Meteorological forcing data
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The model time-step is specified in `RunControl.nml <#RunControl.nml>`__
 (5 min is highly recommended). If meteorological forcing data are not
@@ -364,7 +364,7 @@ derived) above the height of the roughness elements (buildings and
 trees).
 
 Preparation of the InitialConditions file
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Information about the surface state and meteorological conditions just
 before the start of the run are provided in the Initial Conditions file.
@@ -373,7 +373,7 @@ Conditions file, or a single file can be used for all grids. For details
 see `InitialConditions <#InitialConditions>`__.
 
 Run the model for your site
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------
 
 To run the model you can use **Command Prompt** (in the directory where
 the programme is located type the model name) or just double click the
@@ -383,83 +383,80 @@ Please see `Troubleshooting <#Troubleshooting>`__ if you have problems
 running the model.
 
 Analyse the output
-~~~~~~~~~~~~~~~~~~
+------------------
 
 It is a good idea to perform initial checks that the model output looks
 reasonable.
 
-+-----------------------+-----------------------+-----------------------+
-| Characteristic        | Things to check       |
-+=======================+=======================+
-| Leaf area index       | Does the phenology    |
-|                       | look appropriate      |
-|                       | (i.e. what does the   |
-|                       | seasonal cycle of     |
-|                       | `leaf area index      |
-|                       | (LAI) <http://glossar |
-|                       | y.ametsoc.org/wiki/Le |
-|                       | af_area_index>`__     |
-|                       | look like?)           |
-|                       |                       |
-|                       | -  Are the leaves on  |
-|                       |    the trees at       |
-|                       |    approximately the  |
-|                       |    right time of the  |
-|                       |    year?              |
-+-----------------------+-----------------------+-----------------------+
-| Kdown                 | Is the timing of the  | SUEWS_SiteSelect.txt] |
-|                       | diurnal cycle correct | ].                    |
-|                       | for the incoming      |                       |
-|                       | solar radiation?      | -  Checking solar     |
-|                       |                       |    angles (zenith and |
-|                       | \*Although Kdown is a |    azimuth) can also  |
-|                       | required input, it is |    be a useful check  |
-|                       | also included in the  |    that the timing is |
-|                       | output file. It is a  |    correct.           |
-|                       | good idea to check    |                       |
-|                       | that the timing of    |                       |
-|                       | Kdown in the output   |                       |
-|                       | file is appropriate,  |                       |
-|                       | as problems can       |                       |
-|                       | indicate errors with  |                       |
-|                       | the timestamp,        |                       |
-|                       | incorrect time        |                       |
-|                       | settings or problems  |                       |
-|                       | with the              |                       |
-|                       | disaggregation. In    |                       |
-|                       | particular, make sure |                       |
-|                       | the sign of the       |                       |
-|                       | longitude is          |                       |
-|                       | specified correctly   |                       |
-|                       | in                    |                       |
-|                       | [[#SUEWS_SiteSelect.t |                       |
-|                       | xt                    |                       |
-+-----------------------+-----------------------+-----------------------+
-| Albedo                | Is the bulk albedo    |
-|                       | correct?              |
-|                       |                       |
-|                       | -  This is critical   |
-|                       |    because a small    |
-|                       |    error has an       |
-|                       |    impact on all the  |
-|                       |    fluxes (energy and |
-|                       |    hydrology).        |
-|                       | -  If you have        |
-|                       |    measurements of    |
-|                       |    outgoing shortwave |
-|                       |    radiation compare  |
-|                       |    these with the     |
-|                       |    modelled values.   |
-|                       | -  How do the values  |
-|                       |    compare to         |
-|                       |    literature values  |
-|                       |    for your area?     |
-+-----------------------+-----------------------+-----------------------+
-|  |
-+-----------------------+-----------------------+-----------------------+
++-----------------+-----------------------+-----------------------+
+| Characteristic  | Things to check       |                       |
++=================+=======================+=======================+
+| Leaf area index | Does the phenology    |                       |
+|                 | look appropriate      |                       |
+|                 | (i.e. what does the   |                       |
+|                 | seasonal cycle of     |                       |
+|                 | `leaf area index      |                       |
+|                 | (LAI) <http://glossar |                       |
+|                 | y.ametsoc.org/wiki/Le |                       |
+|                 | af_area_index>`__     |                       |
+|                 | look like?)           |                       |
+|                 | -  Are the leaves on  |                       |
+|                 | the trees at          |                       |
+|                 | approximately the     |                       |
+|                 | right time of the     |                       |
+|                 | year?                 |                       |
++-----------------+-----------------------+-----------------------+
+| Kdown           | Is the timing of the  | SUEWS_SiteSelect.txt] |
+|                 | diurnal cycle correct | ].                    |
+|                 | for the incoming      | -  Checking solar     |
+|                 | solar radiation?      | angles (zenith and    |
+|                 | \*Although Kdown is a | azimuth) can also     |
+|                 | required input, it is | be a useful check     |
+|                 | also included in the  | that the timing is    |
+|                 | output file. It is a  | correct.              |
+|                 | good idea to check    |                       |
+|                 | that the timing of    |                       |
+|                 | Kdown in the output   |                       |
+|                 | file is appropriate,  |                       |
+|                 | as problems can       |                       |
+|                 | indicate errors with  |                       |
+|                 | the timestamp,        |                       |
+|                 | incorrect time        |                       |
+|                 | settings or problems  |                       |
+|                 | with the              |                       |
+|                 | disaggregation. In    |                       |
+|                 | particular, make sure |                       |
+|                 | the sign of the       |                       |
+|                 | longitude is          |                       |
+|                 | specified correctly   |                       |
+|                 | in                    |                       |
+|                 | [[#SUEWS_SiteSelect.t |                       |
+|                 | xt                    |                       |
++-----------------+-----------------------+-----------------------+
+| Albedo          | Is the bulk albedo    |                       |
+|                 | correct?              |                       |
+|                 | -  This is critical   |                       |
+|                 | because a small       |                       |
+|                 | error has an          |                       |
+|                 | impact on all the     |                       |
+|                 | fluxes (energy and    |                       |
+|                 | hydrology).           |                       |
+|                 | -  If you have        |                       |
+|                 | measurements of       |                       |
+|                 | outgoing shortwave    |                       |
+|                 | radiation compare     |                       |
+|                 | these with the        |                       |
+|                 | modelled values.      |                       |
+|                 | -  How do the values  |                       |
+|                 | compare to            |                       |
+|                 | literature values     |                       |
+|                 | for your area?        |                       |
++-----------------+-----------------------+-----------------------+
+|                 |                       |                       |
++-----------------+-----------------------+-----------------------+
 
 Summary of files
-~~~~~~~~~~~~~~~~
+----------------
 
 The table below lists the files required to run SUEWS and the output
 files produced. SS is the two-letter code (specified in RunControl)
@@ -475,56 +472,56 @@ grid (1/grid).
 | ``[B] indicates files used with the CBL part of SUEWS (BLUEWS) and therefore are only needed/produced if this option is selected``
 | ``[E] indicates files associated with ESTM storage heat flux models and therefore are only needed/produced if this option is selected``
 
-+-------------+-------------+-------------+-------------+-------------+
++-------------+-------------+-------------+-------------+
 | Filename    | Description | Location    | Option      |
 +=============+=============+=============+=============+
 | **Program** |             |             |             |
-+-------------+-------------+-------------+-------------+-------------+
++-------------+-------------+-------------+-------------+
 | SUEWS_V2017 | SUEWS       | Directory   |             |
 | b.exe       | executable  | where the   |             |
 |             |             | program     |             |
 |             |             | will run    |             |
-+-------------+-------------+-------------+-------------+-------------+
-| [[#Input    | **Input     |             |             |             |
-| files       | files**]]   |             |             |             |
-+-------------+-------------+-------------+-------------+-------------+
++-------------+-------------+-------------+-------------+
+| [[#Input    | **Input     |             |             |
+| files       | files**]]   |             |             |
++-------------+-------------+-------------+-------------+
 | RunControl. | Specifies   | Same        | 1/run       |
 | nml         | options for | directory   |             |
 |             | the model   | as          |             |
 |             | run         | executable  |             |
-+-------------+-------------+-------------+-------------+-------------+
++-------------+-------------+-------------+-------------+
 | SUEWS_SiteS | Main input  | Input       | 1/run       |
 | elect.txt   | file for    | directory   |             |
 |             | this site   |             |             |
-+-------------+-------------+-------------+-------------+-------------+
++-------------+-------------+-------------+-------------+
 | SUEWS_NonVe | Inputs for  | Input       | 1/run       |
 | g.txt       | non-vegetat | directory   |             |
 |             | ed          |             |             |
 |             | surfaces    |             |             |
-+-------------+-------------+-------------+-------------+-------------+
++-------------+-------------+-------------+-------------+
 | SUEWS_Veg.t | Inputs for  | Input       | 1/run       |
 | xt          | vegetated   | directory   |             |
 |             | surfaces    |             |             |
-+-------------+-------------+-------------+-------------+-------------+
++-------------+-------------+-------------+-------------+
 | SUEWS_Water | Inputs for  | Input       | 1/run       |
 | .txt        | water       | directory   |             |
 |             | surfaces    |             |             |
-+-------------+-------------+-------------+-------------+-------------+
++-------------+-------------+-------------+-------------+
 | SUEWS_Snow. | Inputs for  | Input       | 1/run       |
 | txt         | snow        | directory   |             |
-+-------------+-------------+-------------+-------------+-------------+
++-------------+-------------+-------------+-------------+
 | SUEWS_Soil. | Inputs for  | Input       | 1/run       |
 | txt         | sub-surface | directory   |             |
 |             | soil        |             |             |
-+-------------+-------------+-------------+-------------+-------------+
++-------------+-------------+-------------+-------------+
 | SUEWS_Anthr | Inputs for  | Input       | 1/run       |
 | opogenicHea | anthropogen | directory   |             |
 | t.txt       | ic          |             |             |
 |             | heat flux   |             |             |
-+-------------+-------------+-------------+-------------+-------------+
++-------------+-------------+-------------+-------------+
 | SUEWS_Irrig | Inputs for  | Input       | 1/run       |
 | ation.txt   | irrigation  | directory   |             |
-+-------------+-------------+-------------+-------------+-------------+
++-------------+-------------+-------------+-------------+
 | SUEWS_Profi | Inputs for  | Input       | 1/run       |
 | les.txt     | hourly      | directory   |             |
 |             | profiles    |             |             |
@@ -533,23 +530,23 @@ grid (1/grid).
 |             | use,        |             |             |
 |             | snow-cleari |             |             |
 |             | ng)         |             |             |
-+-------------+-------------+-------------+-------------+-------------+
++-------------+-------------+-------------+-------------+
 | SUEWS_Withi | Inputs      | Input       | 1/run       |
 | nGridWaterD | describing  | directory   |             |
 | ist.txt     | within-grid |             |             |
 |             | water       |             |             |
 |             | distributio |             |             |
 |             | n           |             |             |
-+-------------+-------------+-------------+-------------+-------------+
++-------------+-------------+-------------+-------------+
 | SUEWS_OHMCo | Inputs for  | Input       | 1/run       |
 | efficients. | OHM         | directory   |             |
 | txt         | coefficient |             |             |
 |             | s           |             |             |
-+-------------+-------------+-------------+-------------+-------------+
++-------------+-------------+-------------+-------------+
 | SUEWS_Condu | Inputs for  | Input       | 1/run       |
 | ctance.txt  | surface     | directory   |             |
 |             | conductance |             |             |
-+-------------+-------------+-------------+-------------+-------------+
++-------------+-------------+-------------+-------------+
 | SUEWS_SiteI | (Optional)  | Anywhere,   | -           |
 | nfo.xlsm    | spreadsheet | but the     |             |
 |             | for         | input files |             |
@@ -557,7 +554,7 @@ grid (1/grid).
 |             | input files | must be in  |             |
 |             |             | the input   |             |
 |             |             | directory   |             |
-+-------------+-------------+-------------+-------------+-------------+
++-------------+-------------+-------------+-------------+
 | SSss_YYYY_d | Meteorologi | Input       | 1/grid/year |
 | ata_tt.txt  | cal         | directory   | or 1/year   |
 | /           | input file  |             |             |
@@ -567,21 +564,21 @@ grid (1/grid).
 |             | lower       |             |             |
 |             | resolution  |             |             |
 |             | (TT)        |             |             |
-+-------------+-------------+-------------+-------------+-------------+
++-------------+-------------+-------------+-------------+
 | InitialCond | Initial     | Input       | 1/grid/run  |
 | itionsSSss_ | conditions  | directory   | or 1/run    |
 | YYYY.nml    | file        |             |             |
-+-------------+-------------+-------------+-------------+-------------+
++-------------+-------------+-------------+-------------+
 | ESTMinput.n | Specifies   | Input       | 1/run [E]   |
 | ml          | options and | directory   |             |
 |             | inputs for  |             |             |
 |             | ESTM model  |             |             |
-+-------------+-------------+-------------+-------------+-------------+
++-------------+-------------+-------------+-------------+
 | SUEWS_ESTMC | Inputs for  | Input       | 1/run [E]   |
 | oefficients | ESTM        | directory   |             |
 | .txt        | coefficient |             |             |
 |             | s           |             |             |
-+-------------+-------------+-------------+-------------+-------------+
++-------------+-------------+-------------+-------------+
 | SSss_YYYY_E | Surface     | Input       | 1/grid/year |
 | STM_Ts_data | temperature | directory   | or 1/year   |
 | _tt.txt     | data input  |             | [E]         |
@@ -592,25 +589,25 @@ grid (1/grid).
 |             | lower       |             |             |
 |             | resolution  |             |             |
 |             | (TT)        |             |             |
-+-------------+-------------+-------------+-------------+-------------+
++-------------+-------------+-------------+-------------+
 | CBLinput.nm | Specifies   | Input       | 1/run [B]   |
 | l           | options and | directory   |             |
 |             | inputs for  |             |             |
 |             | CBL model   |             |             |
-+-------------+-------------+-------------+-------------+-------------+
++-------------+-------------+-------------+-------------+
 | CBL_initial | Initial     | Input       | 1/day [B]   |
 | _data.txt   | data for    | directory   |             |
 |             | CBL model   |             |             |
-+-------------+-------------+-------------+-------------+-------------+
-| [[#Output   | **Output    |             |             |             |
-| files       | files**]]   |             |             |             |
-+-------------+-------------+-------------+-------------+-------------+
++-------------+-------------+-------------+-------------+
+| [[#Output   | **Output    |             |             |
+| files       | files**]]   |             |             |
++-------------+-------------+-------------+-------------+
 | SSss_YYYY_t | Model       | Output      | 1/grid/year |
 | t.txt       | output at   | directory   |             |
 |             | model       |             |             |
 |             | time-step   |             |             |
 |             | (optional)  |             |             |
-+-------------+-------------+-------------+-------------+-------------+
++-------------+-------------+-------------+-------------+
 | SSss_YYYY_T | Model       | Output      | 1/grid/year |
 | T.txt       | output at   | directory   |             |
 |             | resolution  |             |             |
@@ -618,11 +615,11 @@ grid (1/grid).
 |             | by          |             |             |
 |             | ResolutionF |             |             |
 |             | ilesOut     |             |             |
-+-------------+-------------+-------------+-------------+-------------+
++-------------+-------------+-------------+-------------+
 | SSss_DailyS | Status at a | Output      | 1/grid      |
 | tate.txt    | daily time  | directory   |             |
 |             | step        |             |             |
-+-------------+-------------+-------------+-------------+-------------+
++-------------+-------------+-------------+-------------+
 | InitialCond | New         | Input       | 1/grid/year |
 | itionsSSss_ | InitialCond | directory   |             |
 | YYYY+1.nml  | itions      |             |             |
@@ -649,24 +646,24 @@ grid (1/grid).
 |             | appended    |             |             |
 |             | with        |             |             |
 |             | '_EndofRun' |             |             |
-+-------------+-------------+-------------+-------------+-------------+
++-------------+-------------+-------------+-------------+
 | SS_FileChoi | Summary of  | Output      | 1/run       |
 | ces.txt     | model run   | directory   |             |
 |             | options     |             |             |
-+-------------+-------------+-------------+-------------+-------------+
++-------------+-------------+-------------+-------------+
 | SS_YYYY_TT_ | Describes   | Output      | 1/run       |
 | OutputForma | header,     | directory   |             |
 | t.txt       | units and   |             |             |
 |             | formatting  |             |             |
 |             | of the main |             |             |
 |             | output file |             |             |
-+-------------+-------------+-------------+-------------+-------------+
++-------------+-------------+-------------+-------------+
 | SSss_YYYY_E | Model       | Output      | 1/grid/year |
 | STM_tt.txt  | output at   | directory   | [E]         |
 |             | model       |             |             |
 |             | time-step   |             |             |
 |             | (optional)  |             |             |
-+-------------+-------------+-------------+-------------+-------------+
++-------------+-------------+-------------+-------------+
 | SSss_YYYY_E | Model       | Output      | 1/grid/year |
 | STM_TT.txt  | output at   | directory   | [E]         |
 |             | resolution  |             |             |
@@ -674,7 +671,7 @@ grid (1/grid).
 |             | by          |             |             |
 |             | ResoltuionF |             |             |
 |             | ilesOut     |             |             |
-+-------------+-------------+-------------+-------------+-------------+
++-------------+-------------+-------------+-------------+
 | problems.tx | Contains    | Same        | 1/run       |
 | t           | details of  | directory   |             |
 |             | serious     | as          |             |
@@ -682,18 +679,18 @@ grid (1/grid).
 |             | encountered |             |             |
 |             | in the      |             |             |
 |             | model run   |             |             |
-+-------------+-------------+-------------+-------------+-------------+
++-------------+-------------+-------------+-------------+
 | warnings.tx | List of     | Same        | 1/run       |
 | t           | potential   | directory   |             |
 |             | issues      | as          |             |
 |             | encountered | executable  |             |
 |             | in the      |             |             |
 |             | model run   |             |             |
-+-------------+-------------+-------------+-------------+-------------+
-|  |
-+-------------+-------------+-------------+-------------+-------------+
++-------------+-------------+-------------+-------------+
+|             |             |             |             |
++-------------+-------------+-------------+-------------+
 | CBL_id.txt  | CBL model   | Output      | 1/day [B]   |
 |             | output file | directory   |             |
 |             | for day of  |             |             |
 |             | year id     |             |             |
-+-------------+-------------+-------------+-------------+-------------+
++-------------+-------------+-------------+-------------+

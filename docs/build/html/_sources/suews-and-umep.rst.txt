@@ -1,6 +1,6 @@
-
 SUEWS and UMEP
---------------
+==============
+
 
 SUEWS can be run as a standalone model but also can be used within
 `UMEP <http://urban-climate.net/umep/UMEP_Manual>`__. There are numerous
@@ -15,11 +15,8 @@ simple <http://urban-climate.net/umep/UMEP_Manual#Urban_Energy_Balance:_Urban_En
 runs all options are set to values to allow intial exploration of the
 model behaviour.
 
-
 The version of SUEWS within UMEP is a more recent release of the model
 than the independent SUEWS release.
-
-
 
 +-----------------+-----------------+-----------------+-----------------+
 |     UMEP                                            | Description     |
@@ -136,7 +133,7 @@ than the independent SUEWS release.
 +                 +                 +-----------------+-----------------+
 |                 |                 | `GQF <http://ww | Anthropogenic   |
 |                 |                 | w.urban-climate | Heat            |
-|                 |                 | .net/umep/UMEP_ | (Q:sub:`F`).    |
+|                 |                 | .net/umep/UMEP_ | (Q \:sub:`F`\ ).|
 |                 |                 | Manual#Urban_En |                 |
 |                 |                 | ergy_Balance:_G |                 |
 |                 |                 | QF>`__          |                 |

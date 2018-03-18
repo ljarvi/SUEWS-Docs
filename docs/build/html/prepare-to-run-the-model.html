@@ -121,8 +121,18 @@
 <li class="toctree-l1"><a class="reference internal" href="notation.html">10. Notation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="development.html">11. Development, Suggestions and Support</a></li>
 <li class="toctree-l1"><a class="reference internal" href="version-history.html">12. Version History</a></li>
-<li class="toctree-l1"><a class="reference internal" href="differences-suews-lumps-fraise.html">13. Differences between SUEWS, LUMPS and FRAISE</a></li>
-<li class="toctree-l1"><a class="reference internal" href="references.html">14. References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="version-history.html#new-in-suews-version-2017b-released-2-august-2017">13. New in SUEWS Version 2017b (released 2 August 2017)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="version-history.html#new-in-suews-version-2017a-feb-2017">14. New in SUEWS Version 2017a (Feb 2017)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="version-history.html#new-in-suews-version-2016a-released-21-june-2016">15. New in SUEWS Version 2016a (released 21 June 2016)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="version-history.html#new-in-suews-version-2014b-released-8-october-2014">16. New in SUEWS Version 2014b (released 8 October 2014)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="version-history.html#new-in-suews-version-2014a-1-released-26-february-2014">17. New in SUEWS Version 2014a.1 (released 26 February 2014)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="version-history.html#new-in-suews-version-2014a-released-21-february-2014">18. New in SUEWS Version 2014a (released 21 February 2014)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="version-history.html#new-in-suews-version-2013a">19. New in SUEWS Version 2013a</a></li>
+<li class="toctree-l1"><a class="reference internal" href="version-history.html#new-in-suews-version-2012b">20. New in SUEWS Version 2012b</a></li>
+<li class="toctree-l1"><a class="reference internal" href="version-history.html#new-in-suews-version-2012a">21. New in SUEWS Version 2012a</a></li>
+<li class="toctree-l1"><a class="reference internal" href="version-history.html#new-in-suews-version2011b">22. New in SUEWS Version2011b</a></li>
+<li class="toctree-l1"><a class="reference internal" href="differences-suews-lumps-fraise.html">23. Differences between SUEWS, LUMPS and FRAISE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">24. References</a></li>
 </ul>
 
             
@@ -268,6 +278,76 @@ the output files.</p>
 Kc11)</p>
 <p>In the following SS is the site code (e.g. Kc), ss the grid ID, YYYY the
 year and tt the time interval.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="35%" />
+<col width="35%" />
+<col width="29%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Filename</th>
+<th class="head">Description</th>
+<th class="head">Input/output</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>SSss_data.txt</td>
+<td>Meteorological input
+file (60-min)</td>
+<td>Input</td>
+</tr>
+<tr class="row-odd"><td>SSss_YYYY_data_5.txt</td>
+<td>Meteorological input
+file (5-min)</td>
+<td>Input</td>
+</tr>
+<tr class="row-even"><td>InitialConditionsSSss
+_YYYY.nml(+)</td>
+<td>Initial conditions
+file</td>
+<td>Input</td>
+</tr>
+<tr class="row-odd"><td>SUEWS_SiteInfo_SSss.x
+lsm</td>
+<td>Spreadsheet
+containing all other
+input information</td>
+<td>Input</td>
+</tr>
+<tr class="row-even"><td>RunControl.nml</td>
+<td>Sets model run
+options</td>
+<td>Input (located in
+main directory)</td>
+</tr>
+<tr class="row-odd"><td>SS_Filechoices.txt</td>
+<td>Summary of model run
+options</td>
+<td>Output</td>
+</tr>
+<tr class="row-even"><td>SSss_YYYY_5.txt</td>
+<td>(Optional) 5-min
+resolution output
+file</td>
+<td>Output</td>
+</tr>
+<tr class="row-odd"><td>SSss_YYYY_60.txt</td>
+<td>60-min resolution
+output file</td>
+<td>Output</td>
+</tr>
+<tr class="row-even"><td>SSss_DailyState.txt</td>
+<td>Daily state variables
+(all years in one
+file)</td>
+<td>Output</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
 <p>(+) There is a second file InitialConditionsSSss_YYYY_EndOfRun.nml or
 InitialConditionsSSss_YYYY+1.nml in the input directory. At the end of
 the run, and at the end of each year of the run, these files are written
@@ -321,16 +401,16 @@ using irrigation and the type of irrigation (automatic or manual).</li>
 is appropriate and representative of the site:</p>
 <ul class="simple">
 <li>Fractions of different land cover types and (less so) heights of
-buildings <a href="#id9"><span class="problematic" id="id1">[28]_</span></a></li>
+buildings <a class="reference internal" href="references.html#w16" id="id1">[W16]</a></li>
 <li>Accurate meteorological forcing data, particularly precipitation and
-incoming shortwave radiation <a href="#id10"><span class="problematic" id="id2">[29]_</span></a></li>
-<li>Initial soil moisture conditions <a href="#id11"><span class="problematic" id="id3">[30]_</span></a></li>
+incoming shortwave radiation <a class="reference internal" href="references.html#ko17" id="id2">[Ko17]</a></li>
+<li>Initial soil moisture conditions <a class="reference internal" href="references.html#best2014" id="id3">[Best2014]</a></li>
 <li>Anthropogenic heat flux parameters, particularly if there are
 considerable energy emissions from transport, buildings, metabolism,
-etc <a href="#id12"><span class="problematic" id="id4">[31]_</span></a></li>
+etc <a class="reference internal" href="references.html#w16" id="id4">[W16]</a></li>
 <li>External water use (if irrigation or street cleaning occurs)</li>
 <li>Snow clearing (if running the snow option)</li>
-<li>Surface conductance parameterisation <a href="#id13"><span class="problematic" id="id5">[32]_</span></a> <a href="#id14"><span class="problematic" id="id6">[33]_</span></a></li>
+<li>Surface conductance parameterisation <a class="reference internal" href="references.html#j11" id="id5">[J11]</a> <a class="reference internal" href="references.html#w16" id="id6">[W16]</a></li>
 </ul>
 <p>SUEWS can be run either for an individual area or for multiple areas.
 There is no requirement for the areas to be of any particular shape but
@@ -358,6 +438,87 @@ components of this.</p>
 <h4>5.5.1.1. Land cover<a class="headerlink" href="#land-cover" title="Permalink to this headline">¶</a></h4>
 <p>For each grid, the land cover must be classified using the following
 surface types:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Classification</th>
+<th class="head">Surface type</th>
+<th class="head">File where
+characteristics
+are specified</th>
+<th class="head">&#160;</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Non-vegetated</td>
+<td>Paved surfaces</td>
+<td>[[#SUEWS_NonVeg
+.txt</td>
+<td>SUEWS_NonVeg.tx
+t]]</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>Building
+surfaces</td>
+<td>[[#SUEWS_NonVeg
+.txt</td>
+<td>SUEWS_NonVeg.tx
+t]]</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>Bare soil
+surfaces</td>
+<td>[[#SUEWS_NonVeg
+.txt</td>
+<td>SUEWS_NonVeg.tx
+t]]</td>
+</tr>
+<tr class="row-odd"><td>Vegetation</td>
+<td>Evergreen trees
+and shrubs</td>
+<td>[[#SUEWS_Veg.tx
+t</td>
+<td>SUEWS_Veg.txt]]</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>Deciduous trees
+and shrubs</td>
+<td>[[#SUEWS_Veg.tx
+t</td>
+<td>SUEWS_Veg.txt]]</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>Grass</td>
+<td>[[#SUEWS_Veg.tx
+t</td>
+<td>SUEWS_Veg.txt]]</td>
+</tr>
+<tr class="row-even"><td>Water</td>
+<td>Water</td>
+<td>[[#SUEWS_Water.
+txt</td>
+<td>SUEWS_Water.txt
+]]</td>
+</tr>
+<tr class="row-odd"><td>Snow</td>
+<td>Snow</td>
+<td>[[#SUEWS_Snow.t
+xt</td>
+<td>SUEWS_Snow.txt]
+]</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
 <p>The surface cover fractions (i.e. proportion of the grid taken up by
 each surface) must be specified in
 <a class="reference external" href="#SUEWS_SiteSelect.txt">SUEWS_SiteSelect.txt</a>. The surface cover
@@ -378,7 +539,7 @@ to a GIS environment using QGIS.</p>
 <li>To model it population density is needed as an input for LUMPS and
 SUEWS to calculate Q<sub>F</sub>.</li>
 <li>If you have no information about the population of the site we
-recommend that you use the LUCY model <a href="#id15"><span class="problematic" id="id7">[34]_</span></a>  <a href="#id16"><span class="problematic" id="id8">[35]_</span></a> to estimate the
+recommend that you use the LUCY model <a class="reference internal" href="references.html#lucy" id="id7">[lucy]</a>  <a class="reference internal" href="references.html#lucy2" id="id8">[lucy2]</a> to estimate the
 anthropogenic heat flux which can then be provided as input SUEWS
 along with the meteorological forcing data. The LUCY model can be
 downloaded from <a class="reference external" href="http://micromet.reading.ac.uk/">here</a>.</li>
@@ -442,7 +603,7 @@ run the model.</p>
 </div>
 <div class="section" id="preparation-of-the-runcontrol-file">
 <h3>5.5.2. Preparation of the RunControl file<a class="headerlink" href="#preparation-of-the-runcontrol-file" title="Permalink to this headline">¶</a></h3>
-<p>In the RunControl.nml file the site name (<a href="#id17"><span class="problematic" id="id18">SS_</span></a>) and directories for the
+<p>In the RunControl.nml file the site name (<a href="#id9"><span class="problematic" id="id10">SS_</span></a>) and directories for the
 model input and output are given. This means <strong>before running</strong> the
 model (even the with the example datasets) you must either</p>
 <ol class="arabic simple">
@@ -454,7 +615,7 @@ they are correct for your setup, or</li>
 <p>From the given site identification the model identifies the input files
 and generates the output files. For example if you specify</p>
 <div class="line-block">
-<div class="line"><strong>``FileOutputPath````````=````````“C:FolderNameSUEWSOutput”``</strong>``&nbsp;and&nbsp;use&nbsp;site&nbsp;code&nbsp;SS&nbsp;the&nbsp;model&nbsp;creates&nbsp;an&nbsp;output&nbsp;file``</div>
+<div class="line"><strong>``FileOutputPath````````=````````“C:FolderNameSUEWSOutput”``</strong>``&nbsp;and&nbsp;use&nbsp;site&nbsp;code&nbsp;SS&nbsp;the&nbsp;model&nbsp;creates&nbsp;an&nbsp;output&nbsp;file&nbsp;``</div>
 <div class="line"><strong>``C:FolderNameSUEWSOutputSSss_YYYY_TT.txt``</strong>``&nbsp;(remember&nbsp;to&nbsp;add&nbsp;the&nbsp;last&nbsp;backslash&nbsp;in&nbsp;windows&nbsp;and&nbsp;slash&nbsp;in&nbsp;Linux/Mac).``</div>
 </div>
 <p>If the file paths are not correct the program will return an error when
@@ -495,6 +656,97 @@ running the model.</p>
 <h2>5.7. Analyse the output<a class="headerlink" href="#analyse-the-output" title="Permalink to this headline">¶</a></h2>
 <p>It is a good idea to perform initial checks that the model output looks
 reasonable.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="27%" />
+<col width="37%" />
+<col width="37%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Characteristic</th>
+<th class="head">Things to check</th>
+<th class="head">&#160;</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Leaf area index</td>
+<td>Does the phenology
+look appropriate
+(i.e. what does the
+seasonal cycle of
+<a class="reference external" href="http://glossary.ametsoc.org/wiki/Leaf_area_index">leaf area index
+(LAI)</a>
+look like?)
+-  Are the leaves on
+the trees at
+approximately the
+right time of the
+year?</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Kdown</td>
+<td>Is the timing of the
+diurnal cycle correct
+for the incoming
+solar radiation?
+*Although Kdown is a
+required input, it is
+also included in the
+output file. It is a
+good idea to check
+that the timing of
+Kdown in the output
+file is appropriate,
+as problems can
+indicate errors with
+the timestamp,
+incorrect time
+settings or problems
+with the
+disaggregation. In
+particular, make sure
+the sign of the
+longitude is
+specified correctly
+in
+[[#SUEWS_SiteSelect.t
+xt</td>
+<td>SUEWS_SiteSelect.txt]
+].
+-  Checking solar
+angles (zenith and
+azimuth) can also
+be a useful check
+that the timing is
+correct.</td>
+</tr>
+<tr class="row-even"><td>Albedo</td>
+<td>Is the bulk albedo
+correct?
+-  This is critical
+because a small
+error has an
+impact on all the
+fluxes (energy and
+hydrology).
+-  If you have
+measurements of
+outgoing shortwave
+radiation compare
+these with the
+modelled values.
+-  How do the values
+compare to
+literature values
+for your area?</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="summary-of-files">
 <h2>5.8. Summary of files<a class="headerlink" href="#summary-of-files" title="Permalink to this headline">¶</a></h2>
@@ -511,6 +763,449 @@ grid (1/grid).</p>
 <div class="line"><code class="docutils literal notranslate"><span class="pre">[B]&nbsp;indicates&nbsp;files&nbsp;used&nbsp;with&nbsp;the&nbsp;CBL&nbsp;part&nbsp;of&nbsp;SUEWS&nbsp;(BLUEWS)&nbsp;and&nbsp;therefore&nbsp;are&nbsp;only&nbsp;needed/produced&nbsp;if&nbsp;this&nbsp;option&nbsp;is&nbsp;selected</span></code></div>
 <div class="line"><code class="docutils literal notranslate"><span class="pre">[E]&nbsp;indicates&nbsp;files&nbsp;associated&nbsp;with&nbsp;ESTM&nbsp;storage&nbsp;heat&nbsp;flux&nbsp;models&nbsp;and&nbsp;therefore&nbsp;are&nbsp;only&nbsp;needed/produced&nbsp;if&nbsp;this&nbsp;option&nbsp;is&nbsp;selected</span></code></div>
 </div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Filename</th>
+<th class="head">Description</th>
+<th class="head">Location</th>
+<th class="head">Option</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>Program</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>SUEWS_V2017
+b.exe</td>
+<td>SUEWS
+executable</td>
+<td>Directory
+where the
+program
+will run</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>[[#Input
+files</td>
+<td><strong>Input
+files</strong>]]</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>RunControl.
+nml</td>
+<td>Specifies
+options for
+the model
+run</td>
+<td>Same
+directory
+as
+executable</td>
+<td>1/run</td>
+</tr>
+<tr class="row-even"><td>SUEWS_SiteS
+elect.txt</td>
+<td>Main input
+file for
+this site</td>
+<td>Input
+directory</td>
+<td>1/run</td>
+</tr>
+<tr class="row-odd"><td>SUEWS_NonVe
+g.txt</td>
+<td>Inputs for
+non-vegetat
+ed
+surfaces</td>
+<td>Input
+directory</td>
+<td>1/run</td>
+</tr>
+<tr class="row-even"><td>SUEWS_Veg.t
+xt</td>
+<td>Inputs for
+vegetated
+surfaces</td>
+<td>Input
+directory</td>
+<td>1/run</td>
+</tr>
+<tr class="row-odd"><td>SUEWS_Water
+.txt</td>
+<td>Inputs for
+water
+surfaces</td>
+<td>Input
+directory</td>
+<td>1/run</td>
+</tr>
+<tr class="row-even"><td>SUEWS_Snow.
+txt</td>
+<td>Inputs for
+snow</td>
+<td>Input
+directory</td>
+<td>1/run</td>
+</tr>
+<tr class="row-odd"><td>SUEWS_Soil.
+txt</td>
+<td>Inputs for
+sub-surface
+soil</td>
+<td>Input
+directory</td>
+<td>1/run</td>
+</tr>
+<tr class="row-even"><td>SUEWS_Anthr
+opogenicHea
+t.txt</td>
+<td>Inputs for
+anthropogen
+ic
+heat flux</td>
+<td>Input
+directory</td>
+<td>1/run</td>
+</tr>
+<tr class="row-odd"><td>SUEWS_Irrig
+ation.txt</td>
+<td>Inputs for
+irrigation</td>
+<td>Input
+directory</td>
+<td>1/run</td>
+</tr>
+<tr class="row-even"><td>SUEWS_Profi
+les.txt</td>
+<td>Inputs for
+hourly
+profiles
+(energy
+use, water
+use,
+snow-cleari
+ng)</td>
+<td>Input
+directory</td>
+<td>1/run</td>
+</tr>
+<tr class="row-odd"><td>SUEWS_Withi
+nGridWaterD
+ist.txt</td>
+<td>Inputs
+describing
+within-grid
+water
+distributio
+n</td>
+<td>Input
+directory</td>
+<td>1/run</td>
+</tr>
+<tr class="row-even"><td>SUEWS_OHMCo
+efficients.
+txt</td>
+<td>Inputs for
+OHM
+coefficient
+s</td>
+<td>Input
+directory</td>
+<td>1/run</td>
+</tr>
+<tr class="row-odd"><td>SUEWS_Condu
+ctance.txt</td>
+<td>Inputs for
+surface
+conductance</td>
+<td>Input
+directory</td>
+<td>1/run</td>
+</tr>
+<tr class="row-even"><td>SUEWS_SiteI
+nfo.xlsm</td>
+<td>(Optional)
+spreadsheet
+for
+creating
+input files</td>
+<td>Anywhere,
+but the
+input files
+created
+must be in
+the input
+directory</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>SSss_YYYY_d
+ata_tt.txt
+/
+SSss_YYYY_d
+ata_TT.txt</td>
+<td>Meteorologi
+cal
+input file
+at model
+time-step
+(tt) /
+lower
+resolution
+(TT)</td>
+<td>Input
+directory</td>
+<td>1/grid/year
+or 1/year</td>
+</tr>
+<tr class="row-even"><td>InitialCond
+<a href="#id11"><span class="problematic" id="id12">itionsSSss_</span></a>
+YYYY.nml</td>
+<td>Initial
+conditions
+file</td>
+<td>Input
+directory</td>
+<td>1/grid/run
+or 1/run</td>
+</tr>
+<tr class="row-odd"><td>ESTMinput.n
+ml</td>
+<td>Specifies
+options and
+inputs for
+ESTM model</td>
+<td>Input
+directory</td>
+<td>1/run [E]</td>
+</tr>
+<tr class="row-even"><td>SUEWS_ESTMC
+oefficients
+.txt</td>
+<td>Inputs for
+ESTM
+coefficient
+s</td>
+<td>Input
+directory</td>
+<td>1/run [E]</td>
+</tr>
+<tr class="row-odd"><td>SSss_YYYY_E
+STM_Ts_data
+_tt.txt</td>
+<td>Surface
+temperature
+data input
+file at
+model
+time-step
+(tt) /
+lower
+resolution
+(TT)</td>
+<td>Input
+directory</td>
+<td>1/grid/year
+or 1/year
+[E]</td>
+</tr>
+<tr class="row-even"><td>CBLinput.nm
+l</td>
+<td>Specifies
+options and
+inputs for
+CBL model</td>
+<td>Input
+directory</td>
+<td>1/run [B]</td>
+</tr>
+<tr class="row-odd"><td>CBL_initial
+_data.txt</td>
+<td>Initial
+data for
+CBL model</td>
+<td>Input
+directory</td>
+<td>1/day [B]</td>
+</tr>
+<tr class="row-even"><td>[[#Output
+files</td>
+<td><strong>Output
+files</strong>]]</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>SSss_YYYY_t
+t.txt</td>
+<td>Model
+output at
+model
+time-step
+(optional)</td>
+<td>Output
+directory</td>
+<td>1/grid/year</td>
+</tr>
+<tr class="row-even"><td>SSss_YYYY_T
+T.txt</td>
+<td>Model
+output at
+resolution
+specified
+by
+ResolutionF
+ilesOut</td>
+<td>Output
+directory</td>
+<td>1/grid/year</td>
+</tr>
+<tr class="row-odd"><td>SSss_DailyS
+tate.txt</td>
+<td>Status at a
+daily time
+step</td>
+<td>Output
+directory</td>
+<td>1/grid</td>
+</tr>
+<tr class="row-even"><td>InitialCond
+<a href="#id13"><span class="problematic" id="id14">itionsSSss_</span></a>
+YYYY+1.nml</td>
+<td>New
+InitialCond
+itions
+file
+written for
+each grid
+at the end
+of each
+year for
+multi-year
+runs. If
+the run
+finishes
+before the
+end of the
+year the
+InitialCond
+itions
+file is
+still
+written and
+the file
+name is
+appended
+with
+‘_EndofRun’</td>
+<td>Input
+directory</td>
+<td>1/grid/year</td>
+</tr>
+<tr class="row-odd"><td>SS_FileChoi
+ces.txt</td>
+<td>Summary of
+model run
+options</td>
+<td>Output
+directory</td>
+<td>1/run</td>
+</tr>
+<tr class="row-even"><td><a href="#id15"><span class="problematic" id="id16">SS_YYYY_TT_</span></a>
+OutputForma
+t.txt</td>
+<td>Describes
+header,
+units and
+formatting
+of the main
+output file</td>
+<td>Output
+directory</td>
+<td>1/run</td>
+</tr>
+<tr class="row-odd"><td>SSss_YYYY_E
+STM_tt.txt</td>
+<td>Model
+output at
+model
+time-step
+(optional)</td>
+<td>Output
+directory</td>
+<td>1/grid/year
+[E]</td>
+</tr>
+<tr class="row-even"><td>SSss_YYYY_E
+STM_TT.txt</td>
+<td>Model
+output at
+resolution
+specified
+by
+ResoltuionF
+ilesOut</td>
+<td>Output
+directory</td>
+<td>1/grid/year
+[E]</td>
+</tr>
+<tr class="row-odd"><td>problems.tx
+t</td>
+<td>Contains
+details of
+serious
+errors
+encountered
+in the
+model run</td>
+<td>Same
+directory
+as
+executable</td>
+<td>1/run</td>
+</tr>
+<tr class="row-even"><td>warnings.tx
+t</td>
+<td>List of
+potential
+issues
+encountered
+in the
+model run</td>
+<td>Same
+directory
+as
+executable</td>
+<td>1/run</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>CBL_id.txt</td>
+<td>CBL model
+output file
+for day of
+year id</td>
+<td>Output
+directory</td>
+<td>1/day [B]</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 

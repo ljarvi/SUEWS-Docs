@@ -178,13 +178,158 @@ parameters in order to run. SUEWS gives turbulent heat fluxes calculated
 with both models as an output. <strong>The model can run LUMPS alone without
 running SUEWS (Table 4.1 – SuewsStatus).</strong></p>
 <p>Similarities and differences between LUMPS and SUEWS.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="31%" />
+<col width="34%" />
+<col width="35%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">&#160;</th>
+<th class="head">LUMPS</th>
+<th class="head">SUEWS</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Net all-wave
+radiation (Q*)</td>
+<td>Input or NARP</td>
+<td>Input or NARP</td>
+</tr>
+<tr class="row-odd"><td>Storage heat flux
+(ΔQS)</td>
+<td>Input or from OHM</td>
+<td>Input or from OHM</td>
+</tr>
+<tr class="row-even"><td>Anthropogenic heat
+flux (QF)</td>
+<td>Input or calculated</td>
+<td>Input or calculated</td>
+</tr>
+<tr class="row-odd"><td>Latent heat (QE)</td>
+<td>DeBruin and Holtslag
+(1982)</td>
+<td>Penman-Monteith
+equation2</td>
+</tr>
+<tr class="row-even"><td>Sensible heat flux
+(QH)</td>
+<td>DeBruin and Holtslag
+(1982)</td>
+<td>Residual from
+available energy
+minus QE</td>
+</tr>
+<tr class="row-odd"><td>Water balance</td>
+<td>No water balance
+included</td>
+<td>Running water balance
+of canopy and water
+balance of soil</td>
+</tr>
+<tr class="row-even"><td>Soil moisture</td>
+<td>Not considered</td>
+<td>Modelled</td>
+</tr>
+<tr class="row-odd"><td>Surface wetness</td>
+<td>Simple water bucket
+model</td>
+<td>Running water balance</td>
+</tr>
+<tr class="row-even"><td>Irrigation</td>
+<td>Only fraction of
+surface area that is
+irrigated</td>
+<td>Input or calculated
+with a simple model</td>
+</tr>
+<tr class="row-odd"><td>Surface cover</td>
+<td>buildings, paved,
+vegetation</td>
+<td>buildings, paved,
+coniferous and
+deciduous
+trees/shrubs,
+irrigated and
+unirrigated grass</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
 <div class="section" id="fraise-flux-ratio-active-index-surface-exchange">
 <h2>13.1. FRAISE Flux Ratio – Active Index Surface Exchange<a class="headerlink" href="#fraise-flux-ratio-active-index-surface-exchange" title="Permalink to this headline">¶</a></h2>
 <p>FRAISE provides an estimate of mean midday (±3 h around solar noon)
 energy partitioning from information on the surface characteristics and
 estimates of the mean midday incoming radiative energy and anthropogenic
-heat release. Please refer to Loridan and Grimmond (2012) <a href="#id2"><span class="problematic" id="id1">[491]_</span></a> for
+heat release. Please refer to Loridan and Grimmond (2012) <a class="reference internal" href="references.html#lg2012" id="id1">[LG2012]</a> for
 further details.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="24%" />
+<col width="26%" />
+<col width="26%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Topic</th>
+<th class="head">FRAISE</th>
+<th class="head">LUMPS</th>
+<th class="head">SUEWS</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>Complexity</strong></td>
+<td>Simplest:
+FRAISE</td>
+<td>&#160;</td>
+<td>More complex:
+SUEWS</td>
+</tr>
+<tr class="row-odd"><td><strong>Software
+provided:</strong></td>
+<td>R code</td>
+<td>Windows exe
+(written in
+Fortran)</td>
+<td>Windows exe
+(written in
+Fortran) -
+other versions
+available</td>
+</tr>
+<tr class="row-even"><td>Applicable
+period:</td>
+<td>Midday (within
+3 h of solar
+noon)</td>
+<td>hourly</td>
+<td>5
+min-hourly-annu
+al</td>
+</tr>
+<tr class="row-odd"><td>Unique
+features:</td>
+<td>calculates
+active surface
+– and fluxes</td>
+<td>radiation and
+energy balances</td>
+<td>radiation,
+energy and
+water balance
+(includes
+LUMPS)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 

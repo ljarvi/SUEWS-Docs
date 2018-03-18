@@ -1,27 +1,28 @@
 Troubleshooting
----------------
+===============
+
 
 How to create a directory?
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+--------------------------
 
     please search the web using this phrase if you do not know how to
     create a folder or directory
 
 How to unzip a file
-^^^^^^^^^^^^^^^^^^^
+-------------------
 
     please search the web using this phrase if you do not know how to
     unzip a file
 
 A text editor
-^^^^^^^^^^^^^
+-------------
 
     is a program to edit plain text files. If you search on the web
     using the phrase ‘text editor’ you will find numerous programs.
     These include for example, NotePad, EditPad, Text Pad etc
 
 Command prompt
-^^^^^^^^^^^^^^
+--------------
 
     From Start select run –type cmd – this will open a window. Change
     directory to the location of where you stored your files. The
@@ -29,7 +30,7 @@ Command prompt
     prompt is: http://dosprompt.info/
 
 Day of year [DOY]
-^^^^^^^^^^^^^^^^^
+-----------------
 
     January 1st is day 1, February 1st is day 32. If you search on the
     web using the phrase ‘day of year calendar’ you will find tables
@@ -37,13 +38,13 @@ Day of year [DOY]
     will be different between leap years and non-leap years.
 
 ESTM output
-^^^^^^^^^^^
+-----------
 
 First time steps of storage output could give NaN values during the
 initial converging phase.
 
 First things to Check if the program seems to have problems
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------------------------------------
 
 -  Check the problems.txt file.
 -  Check file options – in RunControl.nml.
@@ -55,7 +56,7 @@ First things to Check if the program seems to have problems
    `UMEP <http://urban-climate.net/umep/UMEP>`__
 
 A pop-up saying “file path not found"
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This means the program cannot find the file paths defined in
 RunControl.nml file. Possible solutions:
@@ -74,14 +75,14 @@ zero in the calculation of water vapour pressure parameterization.
    the data.
 
 %T changed to fit limits
-^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 -  [TL =0.1]/ [TL =39.9] You may want to change the coefficients for
    surface resistance. If you have data from these temperatures, we
    would happily determine them.
 
 %Iteration loop stopped for too stable conditions.
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -  [zL]/[USTAR] This warning indicates that the atmospheric stability
    gets above 2. In these conditions `MO
@@ -95,14 +96,14 @@ zero in the calculation of water vapour pressure parameterization.
    data.
 
 “Reference to undefined variable, array element or function result”
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -  Parameter(s) missing from input files.
 
 See also the error messages provided in problems.txt and warnings.txt
 
 Email list
-^^^^^^^^^^
+~~~~~~~~~~
 
 -  SUEWS email list
 

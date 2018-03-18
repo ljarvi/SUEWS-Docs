@@ -100,23 +100,33 @@
 <li class="toctree-l2"><a class="reference internal" href="#a-text-editor">8.3. A text editor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#command-prompt">8.4. Command prompt</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#day-of-year-doy">8.5. Day of year [DOY]</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#estm-output">8.6. ESTM output</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#first-things-to-check-if-the-program-seems-to-have-problems">8.6.1. First things to Check if the program seems to have problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#estm-output">8.6. ESTM output</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#first-things-to-check-if-the-program-seems-to-have-problems">8.7. First things to Check if the program seems to have problems</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#a-pop-up-saying-file-path-not-found">8.7.1. A pop-up saying “file path not found”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#t-changed-to-fit-limits">8.7.2. %T changed to fit limits</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#iteration-loop-stopped-for-too-stable-conditions">8.7.3. %Iteration loop stopped for too stable conditions.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#reference-to-undefined-variable-array-element-or-function-result">8.7.4. “Reference to undefined variable, array element or function result”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#email-list">8.7.5. Email list</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#a-pop-up-saying-file-path-not-found">8.7. A pop-up saying “file path not found”</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#t-changed-to-fit-limits">8.8. %T changed to fit limits</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#iteration-loop-stopped-for-too-stable-conditions">8.9. %Iteration loop stopped for too stable conditions.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#reference-to-undefined-variable-array-element-or-function-result">8.10. “Reference to undefined variable, array element or function result”</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#email-list">8.11. Email list</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="acknowledgement.html">9. Acknowledgements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notation.html">10. Notation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="development.html">11. Development, Suggestions and Support</a></li>
 <li class="toctree-l1"><a class="reference internal" href="version-history.html">12. Version History</a></li>
-<li class="toctree-l1"><a class="reference internal" href="differences-suews-lumps-fraise.html">13. Differences between SUEWS, LUMPS and FRAISE</a></li>
-<li class="toctree-l1"><a class="reference internal" href="references.html">14. References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="version-history.html#new-in-suews-version-2017b-released-2-august-2017">13. New in SUEWS Version 2017b (released 2 August 2017)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="version-history.html#new-in-suews-version-2017a-feb-2017">14. New in SUEWS Version 2017a (Feb 2017)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="version-history.html#new-in-suews-version-2016a-released-21-june-2016">15. New in SUEWS Version 2016a (released 21 June 2016)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="version-history.html#new-in-suews-version-2014b-released-8-october-2014">16. New in SUEWS Version 2014b (released 8 October 2014)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="version-history.html#new-in-suews-version-2014a-1-released-26-february-2014">17. New in SUEWS Version 2014a.1 (released 26 February 2014)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="version-history.html#new-in-suews-version-2014a-released-21-february-2014">18. New in SUEWS Version 2014a (released 21 February 2014)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="version-history.html#new-in-suews-version-2013a">19. New in SUEWS Version 2013a</a></li>
+<li class="toctree-l1"><a class="reference internal" href="version-history.html#new-in-suews-version-2012b">20. New in SUEWS Version 2012b</a></li>
+<li class="toctree-l1"><a class="reference internal" href="version-history.html#new-in-suews-version-2012a">21. New in SUEWS Version 2012a</a></li>
+<li class="toctree-l1"><a class="reference internal" href="version-history.html#new-in-suews-version2011b">22. New in SUEWS Version2011b</a></li>
+<li class="toctree-l1"><a class="reference internal" href="differences-suews-lumps-fraise.html">23. Differences between SUEWS, LUMPS and FRAISE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">24. References</a></li>
 </ul>
 
             
@@ -221,8 +231,9 @@ will be different between leap years and non-leap years.</div></blockquote>
 <h2>8.6. ESTM output<a class="headerlink" href="#estm-output" title="Permalink to this headline">¶</a></h2>
 <p>First time steps of storage output could give NaN values during the
 initial converging phase.</p>
+</div>
 <div class="section" id="first-things-to-check-if-the-program-seems-to-have-problems">
-<h3>8.6.1. First things to Check if the program seems to have problems<a class="headerlink" href="#first-things-to-check-if-the-program-seems-to-have-problems" title="Permalink to this headline">¶</a></h3>
+<h2>8.7. First things to Check if the program seems to have problems<a class="headerlink" href="#first-things-to-check-if-the-program-seems-to-have-problems" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>Check the problems.txt file.</li>
 <li>Check file options – in RunControl.nml.</li>
@@ -233,10 +244,8 @@ compare it with the original version supplied with the model.</li>
 help with this you may want to checkout
 <a class="reference external" href="http://urban-climate.net/umep/UMEP">UMEP</a></li>
 </ul>
-</div>
-</div>
 <div class="section" id="a-pop-up-saying-file-path-not-found">
-<h2>8.7. A pop-up saying “file path not found”<a class="headerlink" href="#a-pop-up-saying-file-path-not-found" title="Permalink to this headline">¶</a></h2>
+<h3>8.7.1. A pop-up saying “file path not found”<a class="headerlink" href="#a-pop-up-saying-file-path-not-found" title="Permalink to this headline">¶</a></h3>
 <p>This means the program cannot find the file paths defined in
 RunControl.nml file. Possible solutions:</p>
 <ul class="simple">
@@ -255,7 +264,7 @@ the data.</li>
 </ul>
 </div>
 <div class="section" id="t-changed-to-fit-limits">
-<h2>8.8. %T changed to fit limits<a class="headerlink" href="#t-changed-to-fit-limits" title="Permalink to this headline">¶</a></h2>
+<h3>8.7.2. %T changed to fit limits<a class="headerlink" href="#t-changed-to-fit-limits" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>[TL =0.1]/ [TL =39.9] You may want to change the coefficients for
 surface resistance. If you have data from these temperatures, we
@@ -263,7 +272,7 @@ would happily determine them.</li>
 </ul>
 </div>
 <div class="section" id="iteration-loop-stopped-for-too-stable-conditions">
-<h2>8.9. %Iteration loop stopped for too stable conditions.<a class="headerlink" href="#iteration-loop-stopped-for-too-stable-conditions" title="Permalink to this headline">¶</a></h2>
+<h3>8.7.3. %Iteration loop stopped for too stable conditions.<a class="headerlink" href="#iteration-loop-stopped-for-too-stable-conditions" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>[zL]/[USTAR] This warning indicates that the atmospheric stability
 gets above 2. In these conditions <a class="reference external" href="http://glossary.ametsoc.org/wiki/Monin-obukhov_similarity_theory">MO
@@ -278,14 +287,14 @@ data.</li>
 </ul>
 </div>
 <div class="section" id="reference-to-undefined-variable-array-element-or-function-result">
-<h2>8.10. “Reference to undefined variable, array element or function result”<a class="headerlink" href="#reference-to-undefined-variable-array-element-or-function-result" title="Permalink to this headline">¶</a></h2>
+<h3>8.7.4. “Reference to undefined variable, array element or function result”<a class="headerlink" href="#reference-to-undefined-variable-array-element-or-function-result" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>Parameter(s) missing from input files.</li>
 </ul>
 <p>See also the error messages provided in problems.txt and warnings.txt</p>
 </div>
 <div class="section" id="email-list">
-<h2>8.11. Email list<a class="headerlink" href="#email-list" title="Permalink to this headline">¶</a></h2>
+<h3>8.7.5. Email list<a class="headerlink" href="#email-list" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>SUEWS email list</li>
 </ul>
@@ -294,6 +303,7 @@ data.</li>
 <li>UMEP email list</li>
 </ul>
 <p><a class="reference external" href="https://www.lists.reading.ac.uk/mailman/listinfo/met-umep">https://www.lists.reading.ac.uk/mailman/listinfo/met-umep</a></p>
+</div>
 </div>
 </div>
 
