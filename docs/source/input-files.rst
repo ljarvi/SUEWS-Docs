@@ -1467,7 +1467,6 @@ always shipped with the SUEWS public release.
 |     |                                   |
 +-----+-----------------------------------+
 
-.. _SUEWS_SiteSelect-txt:
 
 SUEWS_SiteSelect.txt
 ~~~~~~~~~~~~~~~~~~~~
@@ -4581,7 +4580,6 @@ particular surface type. For suggestions on how to complete this table,
 see: `Typical
 Values <http://urban-climate.net/umep/TypicalValues#Typical_Values>`__.
 
-.. tabularcolumns:: |p{1.5cm}|p{1.5cm}|L|
 
 +-----+-----+---------+---------+---------+---------+---------+---+
 | No. | Use | Column  | Example | Descrip |         |         |   |
@@ -8572,7 +8570,7 @@ specified in SUEWS_SiteSelect.txt (Code_Water).
 |     |     |              |         | in                                                                                                                       |           |   |
 |     |     |              |         | summer.                                                                                                                  |           |   |
 |     |     |              |         | Links to                                                                                                                 |           |   |
-|     |     |              |         | :ref:`suews_ohmcoefficients.txt` Value of  integer   is arbitrary but must  match     code      specified in column 1 of |           |   |
+|     |     |              |         | :ref:`suews-ohmcoefficients-txt` Value of  integer   is arbitrary but must  match     code      specified in column 1 of |           |   |
 +-----+-----+--------------+---------+--------------------------------------------------------------------------------------------------------------------------+-----------+---+
 | 14  | L   | OHMCode_S    |         | Code for                                                                                                                 | SUEWS_OHM |   |
 |     |     | ummerDry     |         | OHM                                                                                                                      | Coefficie |   |
@@ -8587,11 +8585,10 @@ specified in SUEWS_SiteSelect.txt (Code_Water).
 |     |     |              |         | s                                                                                                                        | code      |   |
 |     |     |              |         | in                                                                                                                       | specified |   |
 |     |     |              |         | summer.                                                                                                                  | in column |   |
-|     |     |              |         | Links to                                                                                                                 | 1 of      |   |
-|     |     |              |         | [[#SUEWS_                                                                                                                | SUEWS_OHM |   |
-|     |     |              |         | OHMCoeffi                                                                                                                | Coefficie |   |
-|     |     |              |         | cients.tx                                                                                                                | nts.txt.  |   |
-|     |     |              |         | t                                                                                                                        |           |   |
+|     |     |              |         | Links to  :ref:`suews-ohmcoefficients-txt`                                                                               | 1 of      |   |
+|     |     |              |         |                                                                                                                          | SUEWS_OHM |   |
+|     |     |              |         |                                                                                                                          | Coefficie |   |
+|     |     |              |         |                                                                                                                          | nts.txt.  |   |
 +-----+-----+--------------+---------+--------------------------------------------------------------------------------------------------------------------------+-----------+---+
 | 15  | L   | OHMCode_W    |         | Code for                                                                                                                 | SUEWS_OHM |   |
 |     |     | interWet     |         | OHM                                                                                                                      | Coefficie |   |

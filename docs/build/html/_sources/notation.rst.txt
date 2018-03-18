@@ -2,136 +2,75 @@ Notation
 ========
 
 
-+---------+--------------------------------------------------+
-|         | Definition                                       |
-+=========+==================================================+
-| *λF*    | frontal area                                     |
-|         | index                                            |
-+---------+--------------------------------------------------+
-| *ΔQS*   | storage heat                                     |
-|         | flux                                             |
-+---------+--------------------------------------------------+
-| BLUEWS  | Boundary Layer                Relation           |
-|         | part of SUEWS                     between BLUEWS |
-|         | and SUEWS                                        |
-|         | Source:                                          |
-|         | [[File:Bluews_1                                  |
-|         | .jpg                                             |
-|         | "Shiho2015" ]]                                   |
-+---------+--------------------------------------------------+
-| Bldgs   | Building                                         |
-|         | surface                                          |
-+---------+--------------------------------------------------+
-| CBL     | Convective                                       |
-|         | boundary layer                                   |
-+---------+--------------------------------------------------+
-| DEM     | Digital                                          |
-|         | Elevation Model                                  |
-+---------+--------------------------------------------------+
-| DSM     | Digital surface                                  |
-|         | model                                            |
-+---------+--------------------------------------------------+
-| DTM     | Digital Terrain                                  |
-|         | Model                                            |
-+---------+--------------------------------------------------+
-| DecTr   | deciduous trees                                  |
-|         | and shrubs                                       |
-+---------+--------------------------------------------------+
-| EveTr   | Evergreen trees                                  |
-|         | and shrubs                                       |
-+---------+--------------------------------------------------+
-| ESTM    | Element Surface                                  |
-|         | Temperature                                      |
-|         | Method (Offerle                                  |
-|         | et al.,                                          |
-|         | 2005 [Oaf2005]_)                                 |
-+---------+--------------------------------------------------+
-| Grass   | Grass surface                                    |
-+---------+--------------------------------------------------+
-| BSoil   | Unmanaged land                                   |
-|         | and/or bare                                      |
-|         | soil                                             |
-+---------+--------------------------------------------------+
-| L↓      | incoming                                         |
-|         | longwave                                         |
-|         | radiation                                        |
-+---------+--------------------------------------------------+
-| LAI     | Leaf area index                                  |
-+---------+--------------------------------------------------+
-| LUMPS   | Local scale                                      |
-|         | Urban                                            |
-|         | Meteorological                                   |
-|         | Parameterizatio                                  |
-|         | n                                                |
-|         | Scheme (Loridan                                  |
-|         | et al.                                           |
-|         | 2011 [L2011]_)                                   |
-+---------+--------------------------------------------------+
-| NARP    | Net All-wave                                     |
-|         | Radiation                                        |
-|         | Parameterizatio                                  |
-|         | n                                                |
-|         | (Offerle et al.                                  |
-|         | 2003 [O2003]_,                                   |
-|         | Loridan et al.                                   |
-|         | 2011 [L2011]_)                                   |
-+---------+--------------------------------------------------+
-| OHM     | Objective                                        |
-|         | Hysteresis                                       |
-|         | Model (Grimmond                                  |
-|         | et al.                                           |
-|         | 1991 [G91OHM]_,                                  |
-|         | Grimmond & Oke                                   |
-|         | 1999a [GO99QS]_,                                 |
-|         | 2002 [GO2002]_)                                  |
-+---------+--------------------------------------------------+
-| Paved   | Paved surface                                    |
-+---------+--------------------------------------------------+
-| Q\*     | net all-wave                                     |
-|         | radiation                                        |
-+---------+--------------------------------------------------+
-| QE      | latent heat                                      |
-|         | flux                                             |
-+---------+--------------------------------------------------+
-| QF      | anthropogenic                                    |
-|         | heat flux                                        |
-+---------+--------------------------------------------------+
-| QH      | sensible heat                                    |
-|         | flux                                             |
-+---------+--------------------------------------------------+
-| SOLWEIG | The solar and                                    |
-|         | longwave                                         |
-|         | environmental                                    |
-|         | irradiance                                       |
-|         | geometry model                                   |
-|         | (Lindberg et                                     |
-|         | al.                                              |
-|         | 2008 [FL2008]_,                                  |
-|         | Lindberg and                                     |
-|         | Grimmond                                         |
-|         | 2011 [FL2011]_)                                  |
-+---------+--------------------------------------------------+
-| SVF     | Sky view factor                                  |
-+---------+--------------------------------------------------+
-| theta   | potential                                        |
-|         | temperature                                      |
-+---------+--------------------------------------------------+
-| tt      | time step of                                     |
-|         | data                                             |
-+---------+--------------------------------------------------+
-| UMEP    | `Urban                                           |
-|         | Multi-scale                                      |
-|         | Environmental                                    |
-|         | Predictor <http                                  |
-|         | ://urban-climat                                  |
-|         | e.net/umep/UMEP                                  |
-|         | >`__                                             |
-+---------+--------------------------------------------------+
-| Water   | Water surface                                    |
-+---------+--------------------------------------------------+
-| zi      | Convective                                       |
-|         | boundary layer                                   |
-|         | height                                           |
-+---------+--------------------------------------------------+
+.. list-table::
+   :widths: 50 50
+   :header-rows: 1
 
-Development,
+   * - Symbol
+     - Definition
+   * - *λF*
+     - frontal area  index
+   * - *ΔQS*
+     - storage heat flux
+   * - BLUEWS
+     - Boundary Layer  part of SUEWS 
+          
+        .. figure:: Bluews_1.jpg
+          :alt: Relation between BLUEWS and SUEWS
+
+          Relation between BLUEWS and SUEWS
+
+   * - Bldgs
+     - Building  surface
+   * - CBL
+     - Convective  boundary layer
+   * - DEM
+     - Digital   Elevation Model
+   * - DSM
+     - Digital surface  model
+   * - DTM
+     - Digital Terrain Model
+   * - DecTr
+     - deciduous trees and shrubs
+   * - EveTr
+     - Evergreen trees and shrubs
+   * - ESTM
+     - Element Surface Temperature Method (Offerle  et al.,2005 [Oaf2005]_)
+   * - Grass
+     - Grass surface
+   * - BSoil
+     - Unmanaged land and/or bare soil
+   * - L↓
+     - incoming longwave radiation
+   * - LAI
+     - Leaf area index
+   * - LUMPS
+     - Local scale   Urban   Meteorological   Parameterizatio   n   Scheme (Loridan   et al. 2011 [L2011]_)
+   * - NARP
+     - Net All-wave   Radiation   Parameterizatio   n   (Offerle et al.   2003 [O2003]_,   Loridan et al.   2011 [L2011]_)
+   * - OHM
+     - Objective   Hysteresis   Model (Grimmond   et al.   1991 [G91OHM]_,   Grimmond & Oke   1999a [GO99QS]_,   2002 [GO2002]_)
+   * - Paved
+     - Paved surface
+   * - Q\*
+     - net all-wave radiation
+   * - QE
+     - latent heat flux
+   * - QF
+     - anthropogenic  heat flux
+   * - QH
+     - sensible heat  flux
+   * - SOLWEIG
+     - The solar and   longwave   environmental   irradiance   geometry model   (Lindberg et   al.   2008 [FL2008]_,   Lindberg and   Grimmond   2011 [FL2011]_)
+   * - SVF
+     - Sky view factor
+   * - theta
+     - potential  temperature
+   * - tt
+     - time step of data
+   * - UMEP
+     - `Urban Multi-scale Environmental Predictor <http://urban-climate.net/umep/UMEP >`__
+   * - Water
+     - Water surface
+   * - zi
+     - Convective boundary layer height

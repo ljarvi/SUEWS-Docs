@@ -233,1976 +233,6 @@ executable file.</p>
 <li>The file is not case-sensitive.</li>
 <li>The parameters and variables can appear in any order.</li>
 </ul>
-<table border="1" class="docutils">
-<colgroup>
-<col width="24%" />
-<col width="29%" />
-<col width="24%" />
-<col width="24%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Name</th>
-<th class="head">Required/Option
-al</th>
-<th class="head">Description</th>
-<th class="head">&#160;</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td><em>Model run
-options</em></td>
-<td>&#160;</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>CBLuse</td>
-<td>R</td>
-<td>Determines
-whether a CBL
-slab model is
-used to
-calculate
-temperature and
-humidity.</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>Value</td>
-<td>Comments</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>0</td>
-<td>CBL model
-<strong>not</strong> used.
-SUEWS and LUMPS
-use temperature
-and humidity
-provided in the
-meteorological
-forcing file.</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>1</td>
-<td>CBL model is
-used to
-calculate
-temperature and
-humidity used
-in SUEWS and
-LUMPS.</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>SnowUse</td>
-<td>R</td>
-<td>Determines
-whether the
-snow part of
-the model runs.</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>Value</td>
-<td>Comments</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>0</td>
-<td>Snow
-calculations
-are <strong>not</strong>
-performed.</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>1</td>
-<td>Snow
-calculations
-are performed.</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>SOLWEIGUse</td>
-<td>R</td>
-<td>Determines
-whether a high
-resolution
-radiation model
-to calculate
-mean radiant
-temperate
-should be used
-(SOLWEIG).
-NOTE: this
-option will
-considerably
-slow down the
-model since
-SOLWEIG is a 2D
-model.</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>Value</td>
-<td>Comments</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>0</td>
-<td>SOLWEIG
-calculations
-are <strong>not</strong>
-performed.</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>1</td>
-<td>SOLWEIG
-calculations
-are performed.
-A grid of mean
-radiant
-temperature
-(Tmrt) is
-calculated
-based on high
-resolution
-digital surface
-models.</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>NetRadiationMet
-hod
-(previously
-NetRadiationCho
-ice)</td>
-<td>R</td>
-<td>Determines
-method for
-calculation of
-radiation
-fluxes.</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>Value</td>
-<td>Comments</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>0</td>
-<td>Uses observed
-values of Q*
-supplied in
-meteorological
-forcing file.</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>1</td>
-<td><ul class="first simple">
-<li>Q* modelled</li>
-</ul>
-<p class="last">with L↓
-observations
-supplied in
-meteorologic
-al
-forcing
-file.
--  Zenith angle
-<strong>not</strong>
-accounted
-for in
-albedo
-calculation.</p>
-</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>2</td>
-<td><ul class="first simple">
-<li>Q* modelled</li>
-</ul>
-<p class="last">with L↓
-modelled
-using cloud
-cover
-fraction
-supplied in
-meteorologic
-al
-forcing file
-(Loridan et
-al.
-2011 <a class="reference internal" href="references.html#l2011" id="id1">[L2011]</a>).
--  Zenith angle
-<strong>not</strong>
-accounted
-for in
-albedo
-calculation.</p>
-</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>3</td>
-<td><ul class="first simple">
-<li>Q* modelled</li>
-</ul>
-<p class="last">with L↓
-modelled
-using air
-temperature
-and relative
-humidity
-supplied in
-meteorologic
-al
-forcing file
-(Loridan et
-al.
-2011 <a class="reference internal" href="references.html#l2011" id="id2">[L2011]</a>).
--  Zenith angle
-<strong>not</strong>
-accounted
-for in
-albedo
-calculation.</p>
-</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>100</td>
-<td><ul class="first simple">
-<li>Q* modelled</li>
-</ul>
-<p class="last">with L↓
-observations
-supplied in
-meteorologic
-al
-forcing
-file.
--  Zenith angle
-accounted
-for in
-albedo
-calculation.
--  SSss_YYYY_NA
-RPOut.txt
-file
-produced.
--  <strong>Not
-recommended
-in this
-release</strong></p>
-</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>200</td>
-<td><ul class="first simple">
-<li>Q* modelled</li>
-</ul>
-<p class="last">with L↓
-modelled
-using cloud
-cover
-fraction
-supplied in
-meteorologic
-al
-forcing file
-(Loridan et
-al.
-2011 <a class="reference internal" href="references.html#l2011" id="id3">[L2011]</a>).
--  Zenith angle
-accounted
-for in
-albedo
-calculation.
--  SSss_YYYY_NA
-RPOut.txt
-file
-produced.
--  <strong>Not
-recommended
-in this
-release</strong></p>
-</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>300</td>
-<td><ul class="first simple">
-<li>Q* modelled</li>
-</ul>
-<p class="last">with L↓
-modelled
-using air
-temperature
-and relative
-humidity
-supplied in
-meteorologic
-al
-forcing file
-(Loridan et
-al.
-2011 <a class="reference internal" href="references.html#l2011" id="id4">[L2011]</a>).
--  Zenith angle
-accounted
-for in
-albedo
-calculation.
--  SSss_YYYY_NA
-RPOut.txt
-file
-produced.
--  <strong>Not
-recommended
-in this
-release</strong></p>
-</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>AnthropHeatMeth
-od
-(previously
-AnthropHeatChoi
-ce)</td>
-<td>R</td>
-<td>Determines
-method for QF
-calculation.</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>Value</td>
-<td>Comments</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>0</td>
-<td><ul class="first simple">
-<li>Uses values</li>
-</ul>
-<p class="last">provided in
-the
-meteorologic
-al
-forcing file
-(SSss_YYYY_d
-ata_tt.txt).
--  If you do
-not want to
-include QF
-to the
-calculation
-of surface
-energy
-balance, you
-should set
-values in
-the
-meteorologic
-al
-forcing file
-to zero to
-prevent
-calculation
-of QF.
--  <a class="reference external" href="http://urban-climate.net/umep/LQF_Manual">UMEP &lt;http:
-//urban-climate
-.net/umep/UMEP&gt;
-`__
-provides two
-methods to
-calculate QF
-#. `LQF</a>
-which is
-simpler
-#. <a class="reference external" href="http://urban-climate.net/umep/GQF_Manual">GQF</a>
-which is
-more
-complete but
-requires
-more data
-inputs</p>
-</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>1</td>
-<td>*’‘’Currently
-not recommended</td>
-<td>‘’’
--  Calculated
-according to
-Loridan et
-al.
-(2011) <a class="reference internal" href="references.html#l2011" id="id5">[L2011]</a>
-using
-coefficients
-specified in
-SUEWS_Anthro
-pogenicHeat.txt
-.
--  Modelled
-values will
-be used even
-if QF is
-provided in
-the
-meteorologic
-al
-forcing
-file.</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>2</td>
-<td><ul class="first simple">
-<li><a href="#id6"><span class="problematic" id="id7">**</span></a>Recommende</li>
-</ul>
-<p class="last">d**
--  Calculated
-according to
-Järvi et al.
-(2011) <a class="reference internal" href="references.html#j11" id="id8">[J11]</a>
-using
-coefficients
-specified in
-SUEWS_Anthro
-pogenicHeat.txt
-and diurnal
-patterns
-specified in
-SUEWS_Profil
-es.txt.
--  Modelled
-values will
-be used even
-if QF is
-provided in
-the
-meteorologic
-al
-forcing
-file.</p>
-</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>AnthropCO2Metho
-d</td>
-<td>R</td>
-<td>Determines
-method for CO2
-calculation.</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>Value</td>
-<td>Comments</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>1</td>
-<td>Not used.</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>2</td>
-<td><ul class="first simple">
-<li><a href="#id9"><span class="problematic" id="id10">**</span></a>Under</li>
-</ul>
-<p class="last">development
-- not
-recommended
-in v2017b**
--  Calculate
-CO2
-emissions
-from traffic
-based on QF
-calculation.</p>
-</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>3</td>
-<td><ul class="first simple">
-<li><a href="#id11"><span class="problematic" id="id12">**</span></a>Under</li>
-</ul>
-<p class="last">development
-- not
-recommended
-in v2017b**
--  Calculate
-CO2
-emissions
-from traffic
-from input
-data
-provided.</p>
-</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>StorageHeatMeth
-od
-(previously
-QSChoice)</td>
-<td>&#160;</td>
-<td>Determines
-method for
-calculating
-storage heat
-flux ΔQS.</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>Value</td>
-<td>Comments</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>1</td>
-<td><ul class="first simple">
-<li>ΔQS modelled</li>
-</ul>
-<p class="last">using the
-objective
-hysteresis
-model
-(OHM) <a class="reference internal" href="references.html#g91ohm" id="id13">[G91OHM]</a>
-<a class="reference internal" href="references.html#go99qs" id="id14">[GO99QS]</a> <a class="reference internal" href="references.html#go2002" id="id15">[GO2002]</a>
-using
-parameters
-specified
-for each
-surface
-type.</p>
-</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>2</td>
-<td><ul class="first simple">
-<li>Uses</li>
-</ul>
-<p class="last">observed
-values of
-ΔQS supplied
-in
-meteorologic
-al
-forcing
-file.</p>
-</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>3</td>
-<td><ul class="first simple">
-<li>ΔQS modelled</li>
-</ul>
-<p class="last">using AnOHM.
--  <strong>Not
-available in
-v2017b</strong></p>
-</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>4</td>
-<td><ul class="first simple">
-<li>ΔQS modelled</li>
-</ul>
-<p class="last">using the
-Element
-Surface
-Temperature
-Method
-(ESTM)
-(Offerle et
-al.
-2005 <a class="reference internal" href="references.html#oaf2005" id="id16">[Oaf2005]</a>).
--  <strong>Not
-recommended
-in v2017b</strong></p>
-</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>OHMIncQF</td>
-<td>R</td>
-<td>Determines
-whether the
-storage heat
-flux
-calculation
-uses Q* or
-(Q*+QF).</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>Value</td>
-<td>Comments</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>0</td>
-<td>ΔQS modelled
-Q* only.</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>1</td>
-<td>ΔQS modelled
-using Q*+QF.</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>StabilityMethod</td>
-<td>R</td>
-<td>Defines which
-atmospheric
-stability
-functions are
-used.</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>Value</td>
-<td>Comments</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>0</td>
-<td>Not used.</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>1</td>
-<td>Not used.</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>2</td>
-<td><ul class="first simple">
-<li><a href="#id17"><span class="problematic" id="id18">**</span></a>Recommende</li>
-</ul>
-<p class="last">d**
--  Momentum -
-unstable:
-Dyer
-(1974) <a class="reference internal" href="references.html#d74" id="id19">[D74]</a>
-modified by
-Högstrom
-(1988) <a class="reference internal" href="references.html#h88" id="id20">[H88]</a>
-;
-stable: Van
-Ulden and
-Holtslag
-(1985) <a class="reference internal" href="references.html#vuh85" id="id21">[VUH85]</a>
--  Heat - Dyer
-(1974) <a class="reference internal" href="references.html#d74" id="id22">[D74]</a>
-modified by
-Högstrom
-(1988) <a class="reference internal" href="references.html#h88" id="id23">[H88]</a></p>
-</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>3</td>
-<td><ul class="first simple">
-<li>Momentum:</li>
-</ul>
-<p class="last">Campbell and
-Norman (Eq
-7.27, Pg97)
-<a class="reference internal" href="references.html#cnstab" id="id24">[CNstab]</a>
--  Heat -
-unstable:
-Campbell and
-Norman <a class="reference internal" href="references.html#cnstab" id="id25">[CNstab]</a>
-;
-stable: Dyer
-(1974) <a class="reference internal" href="references.html#d74" id="id26">[D74]</a>
-modified by
-Högstrom
-(1988) <a class="reference internal" href="references.html#h88" id="id27">[H88]</a></p>
-</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>4</td>
-<td><ul class="first simple">
-<li>Momentum:</li>
-</ul>
-<p class="last">Businger et
-al.
-(1971) <a class="reference internal" href="references.html#b71" id="id28">[B71]</a>
-modified by
-Högstrom
-(1988) <a class="reference internal" href="references.html#h88" id="id29">[H88]</a>
--  Heat:
-Businger et
-al.
-(1971) <a class="reference internal" href="references.html#b71" id="id30">[B71]</a>
-modified by
-Högstrom
-(1988) <a class="reference internal" href="references.html#h88" id="id31">[H88]</a></p>
-</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>RoughLenHeatMet
-hod
-(previously
-RoughLen_heat)</td>
-<td>R</td>
-<td>Determines
-method for
-calculating
-roughness
-length for
-heat.</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>Value</td>
-<td>Comments</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>1</td>
-<td><ul class="first simple">
-<li>Uses value</li>
-</ul>
-<p class="last">of 0.1z0m.</p>
-</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>2</td>
-<td><ul class="first simple">
-<li><a href="#id32"><span class="problematic" id="id33">**</span></a>Recommende</li>
-</ul>
-<p class="last">d**
--  Calculated
-according to
-Kawai et al.
-(2009) <a class="reference internal" href="references.html#ka09" id="id34">[Ka09]</a>
-.</p>
-</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>3</td>
-<td><ul class="first simple">
-<li>Calculated</li>
-</ul>
-<p class="last">according to
-Voogt and
-Grimmond
-(2000) <a class="reference internal" href="references.html#vg00" id="id35">[VG00]</a>
-.</p>
-</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>4</td>
-<td><ul class="first simple">
-<li>Calculated</li>
-</ul>
-<p class="last">according to
-Kanda et al.
-(2007) <a class="reference internal" href="references.html#ka07" id="id36">[Ka07]</a>
-.</p>
-</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>RoughLenMomMeth
-od
-(previously
-z0_method)</td>
-<td>R</td>
-<td>Determines how
-aerodynamic
-roughness
-length (z0m)
-and zero
-displacement
-height (zdm)
-are calculated.</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>Value</td>
-<td>Comments</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>1</td>
-<td>*Values
-specified in
-[[#SUEWS_SiteSe
-lect.txt</td>
-<td>SUEWS_SiteSelec
-t.txt]]
-are used. Note
-that
-<a class="reference external" href="http://urban-climate.net/umep/UMEP">UMEP</a>
-provides tools
-to calculate
-these]. See
-<a class="reference external" href="https://link.springer.com/article/10.1007/s10546-017-0248-z">Kent et al.
-(2017a)</a>
-for
-recommendations
-on methods.
-Kent et al.
-(2017b) have
-developed a
-method to
-include
-vegetation
-which is also
-avaialble
-within UMEP.
--  Kent CW, CSB
-Grimmond, J
-Barlow, D
-Gatey, S
-Kotthaus, F
-Lindberg, CH
-Halios
-2017a:
-Evaluation
-of urban
-local-scale
-aerodynamic
-parameters:
-implications
-for the
-vertical
-profile of
-wind and
-source areas
-Boundary
-Layer
-Meteorology
-164,183–213
-doi:
-10.1007/s105
-46-017-0248-z
--  Kent CW, S
-Grimmond, D
-Gatey 2017b:
-Aerodynamic
-roughness
-parameters
-in cities:
-inclusion of
-vegetation
-Journal of
-Wind
-Engineering
-&amp; Industrial
-Aerodynamics
-<a class="reference external" href="http://dx.do">http://dx.do</a>
-i.org/10.1016/j
-.jweia.2017.07.
-016</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>2</td>
-<td>*z0m and zd
-are calculated
-using ‘rule of
-thumb’
-(Grimmond and
-Oke 1999 <a class="reference internal" href="references.html#go99" id="id37">[GO99]</a>)
-using mean
-building and
-tree height
-specified in
-[[#SUEWS_SiteSe
-lect.txt</td>
-<td>SUEWS_SiteSelec
-t.txt]].
--  z0m and zd
-are adjusted
-with time to
-account for
-seasonal
-variation in
-porosity of
-deciduous
-trees.</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>3</td>
-<td>*z0m and zd
-are calculated
-based on the
-MacDonald et
-al.
-(1998) <a class="reference internal" href="references.html#mc98" id="id38">[Mc98]</a>
-method using
-mean building
-and tree
-heights, plan
-area fraction
-and frontal
-areal index
-specified in
-[[#SUEWS_SiteSe
-lect.txt</td>
-<td>SUEWS_SiteSelec
-t.txt]].
--  z0m and zd
-are adjusted
-with time to
-account for
-seasonal
-variation in
-porosity of
-deciduous
-trees.</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>SMDMethod
-(previously
-SMD_Choice)</td>
-<td>R</td>
-<td>Determines
-method for
-calculating
-soil moisture
-deficit (SMD).</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>Value</td>
-<td>Comments</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>0</td>
-<td><ul class="first simple">
-<li><a href="#id39"><span class="problematic" id="id40">**</span></a>Recommende</li>
-</ul>
-<p class="last">d**
-*SMD modelled
-using
-parameters
-specified in
-[[#SUEWS_Soil.t
-xt</p>
-</td>
-<td>SUEWS_Soil.txt]
-].</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>1</td>
-<td>*’‘’Not
-currently
-implemented -
-do not use</td>
-<td>‘’’
--  Observed SM
-provided in
-the
-meteorologic
-al
-forcing file
-is used.
-*Data are
-provided as
-<em>volumetric</em>
-soil moisture
-content.
-Metadata must
-be provided in
-[[#SUEWS_Soil.t
-xt</td>
-<td>SUEWS_Soil.txt]
-].</td>
-</tr>
-<tr class="row-even"><td>2</td>
-<td>*’‘’Not
-currently
-implemented -
-do not use</td>
-<td>‘’’
--  Observed SM
-provided in
-the
-meteorologic
-al
-forcing file
-is used.
-*Data are
-provided as
-<em>gravimetric</em>
-soil moisture
-content.
-Metadata must
-be provided in
-[[#SUEWS_Soil.t
-xt</td>
-<td>SUEWS_Soil.txt]
-].</td>
-</tr>
-<tr class="row-odd"><td>WaterUseMethod
-(previously
-WUChoice)</td>
-<td>R</td>
-<td>Defines how
-external water
-use is
-calculated.</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>Value</td>
-<td>Comments</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>0</td>
-<td>External water
-use modelled
-using
-parameters
-specified in
-[[#SUEWS_Irriga
-tion.txt</td>
-<td>SUEWS_Irrigatio
-n.txt]].</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>1</td>
-<td>Observations of
-external water
-use provided in
-the
-meteorological
-forcing file
-are used.</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td><em>File-related
-options</em></td>
-<td>&#160;</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>FileCode</td>
-<td>R</td>
-<td>Two-letter site
-identification
-code (e.g. He,
-Sc, Kc).</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>FileInputPath</td>
-<td>R</td>
-<td>Input
-directory.</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>FileOutputPath</td>
-<td>R</td>
-<td>Output
-directory.</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>MultipleMetFile
-s</td>
-<td>R</td>
-<td>Specifies
-whether one
-single
-meteorological
-forcing file is
-used for all
-grids or a
-separate met
-file is
-provided for
-each grid.</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>Value</td>
-<td>Comments</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>0</td>
-<td><ul class="first simple">
-<li>Single</li>
-</ul>
-<p class="last">meteorologic
-al
-forcing file
-used for all
-grids.
--  No grid
-number
-should
-appear in
-the file
-name.</p>
-</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>1</td>
-<td><ul class="first simple">
-<li>Separate</li>
-</ul>
-<p class="last">meteorologic
-al
-forcing
-files used
-for each
-grid.
--  The grid
-number
-should
-appear in
-the file
-name.</p>
-</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>MultipleInitFil
-es</td>
-<td>R</td>
-<td>Specifies
-whether one
-single initial
-conditions file
-is used for all
-grids at the
-start of the
-run or a
-separate
-initial
-conditions file
-is provided for
-each grid.</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>Value</td>
-<td>Comments</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>0</td>
-<td><ul class="first simple">
-<li>Single</li>
-</ul>
-<p class="last">initial
-conditions
-file used
-for all
-grids.
--  No grid
-number
-should
-appear in
-the file
-name.</p>
-</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>1</td>
-<td><ul class="first simple">
-<li>Separate</li>
-</ul>
-<p class="last">initial
-conditions
-files used
-for each
-grid.
--  The grid
-number
-should
-appear in
-the file
-name.</p>
-</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>MultipleESTMFil
-es</td>
-<td>O</td>
-<td>Specifies
-whether one
-single ESTM
-forcing file is
-used for all
-grids or a
-separate file
-is provided for
-each grid.</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>Value</td>
-<td>Comments</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>0</td>
-<td><ul class="first simple">
-<li>Single ESTM</li>
-</ul>
-<p class="last">forcing file
-used for all
-grids.
--  No grid
-number
-should
-appear in
-the file
-name.</p>
-</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>1</td>
-<td><ul class="first simple">
-<li>Separate</li>
-</ul>
-<p class="last">ESTM forcing
-files used
-for each
-grid.
--  The grid
-number
-should
-appear in
-the file
-name.</p>
-</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>KeepTstepFilesI
-n</td>
-<td>O</td>
-<td>Specifies
-whether input
-meteorological
-forcing files
-at the
-resolution of
-the model time
-step should be
-saved.</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>Value</td>
-<td>Comments</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>0</td>
-<td><ul class="first simple">
-<li>Meteorologic</li>
-</ul>
-<p class="last">al
-forcing
-files at
-model time
-step are not
-written out.
-This is the
-default
-option
--  Recommended
-to reduce
-processing
-time and
-save disk
-space as
-(e.g. 5-min)
-files can be
-large.</p>
-</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>1</td>
-<td><ul class="first simple">
-<li>Meteorologic</li>
-</ul>
-<p class="last">al
-forcing
-files at
-model time
-step are
-written out.</p>
-</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>KeepTstepFilesO
-ut</td>
-<td>O</td>
-<td>Specifies
-whether output
-meteorological
-forcing files
-at the
-resolution of
-the model time
-step should be
-saved.</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>Value</td>
-<td>Comments</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>0</td>
-<td><ul class="first simple">
-<li>Output files</li>
-</ul>
-<p class="last">at model
-time are not
-saved. This
-is the
-default
-option.
--  Recommended
-to save disk
-space as
-(e.g. 5-min)
-files can be
-large.</p>
-</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>1</td>
-<td><ul class="first simple">
-<li>Output files</li>
-</ul>
-<p class="last">at model
-time step
-are written
-out.</p>
-</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>WriteOutOption</td>
-<td>O</td>
-<td>Specifies which
-variables are
-written in the
-output files.</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>Value</td>
-<td>Comments</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>0</td>
-<td><ul class="first simple">
-<li>All (except</li>
-</ul>
-<p class="last">snow-related
-)
-output
-variables
-written.
-This is the
-default
-option.</p>
-</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>1</td>
-<td><ul class="first simple">
-<li>All</li>
-</ul>
-<p class="last">(including
-snow-related
-)
-output
-variables
-written.</p>
-</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>2</td>
-<td><ul class="first simple">
-<li>Writes out a</li>
-</ul>
-<p class="last">minimal set
-of output
-variables
-(use this to
-save space
-or if
-information
-about the
-different
-surfaces is
-not
-required).</p>
-</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>SuppressWarning
-s</td>
-<td>O</td>
-<td>Controls
-whether the
-warnings.txt
-file is written
-or not.</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>Value</td>
-<td>Comments</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>0</td>
-<td><ul class="first simple">
-<li>The</li>
-</ul>
-<p class="last">warnings.txt
-file is
-written.
-This is the
-default
-option.</p>
-</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>1</td>
-<td><ul class="first simple">
-<li>No</li>
-</ul>
-<p class="last">warnings.txt
-file is
-written. May
-be useful
-for large
-model runs
-as this file
-can grow
-large.</p>
-</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td><em>Time-related
-options</em></td>
-<td>&#160;</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>Tstep</td>
-<td>R</td>
-<td>Specifies the
-model time step
-[s]. A value of
-300 s (5 min)
-is strongly
-recommended.
-The time step
-cannot be less
-than 1 min or
-greater than 10
-min, and must
-be a whole
-number of
-minutes that
-divide into an
-hour (i.e.
-options are 1,
-2, 3, 4, 5, 6,
-10 min or 60,
-120, 180, 240,
-300, 360, 600
-s).</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>ResolutionFiles
-In</td>
-<td>R</td>
-<td>Specifies the
-resolution of
-the input files
-[s] which SUEWS
-will
-disaggregate to
-the model time
-step. 1800 s
-for 30 min or
-3600 s for 60
-min are
-recommended.
-(N.B. if
-ResolutionFiles
-In
-is not
-provided, SUEWS
-assumes
-ResolutionFiles
-In
-= Tstep.)</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>ResolutionFiles
-InESTM</td>
-<td>O</td>
-<td>Specifies the
-resolution of
-the ESTM input
-files [s] which
-SUEWS will
-disaggregate to
-the model time
-step.</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>ResolutionFiles
-Out</td>
-<td>R</td>
-<td>Specifies the
-resolution of
-the output
-files [s]. 1800
-s for 30 min or
-3600 s for 60
-min are
-recommended.</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td><em>Options
-related to
-disaggregation
-of input data</em></td>
-<td>&#160;</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>DisaggMethod</td>
-<td>O</td>
-<td>Specifies how
-meteorological
-variables in
-the input file
-(except rain
-and snow) are
-disaggregated
-to the model
-time step.
-<strong>Wind
-direction is
-not currently
-downscaled so
-non -999 values
-will cause an
-error.</strong></td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>Value</td>
-<td>Comments</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>1</td>
-<td>Linear
-downscaling of
-averages for
-all variables,
-additional
-zenith check is
-used for Kdown.
-This is the
-default option.</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>2</td>
-<td>Linear
-downscaling of
-instantaneous
-values for all
-variables,
-additional
-zenith check is
-used for Kdown.</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>3</td>
-<td>WFDEI setting:
-average Kdown
-(with
-additional
-zenith check);
-instantaneous
-for Tair, RH,
-pres and U.
-(N.B. WFDEI
-actually
-provides Q not
-RH)</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>KdownZen</td>
-<td>O</td>
-<td>Can be used to
-switch off
-zenith checking
-in Kdown
-disaggregation.
-Note that the
-zenith
-calculation
-requires
-location
-information
-obtained from
-SUEWS_SiteSelec
-t.txt.
-If a single met
-file is used
-for all grids,
-the zenith is
-calculated for
-the first grid
-and the
-disaggregated
-data is then
-applied for all
-grids.</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>Value</td>
-<td>Comments</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>0</td>
-<td>No zenith angle
-check is
-applied.</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>1</td>
-<td>Disaggregated
-Kdown is set to
-zero when
-zenith angle
-exceeds 90
-degrees (i.e.
-sun below
-horizon) and
-redistributed
-over the day.
-This is the
-default option.</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>RainDisaggMetho
-d</td>
-<td>O</td>
-<td>Specifies how
-rain in the
-meteorological
-forcing file
-are
-disaggregated
-to the model
-time step. <strong>If
-present in the
-original met
-forcing file,
-snow is
-currently
-disaggregated
-in the same way
-as rainfall.</strong></td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>Value</td>
-<td>Comments</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>100</td>
-<td>Rainfall is
-evenly
-distributed
-among all
-subintervals in
-a rainy
-interval. This
-is the default
-option.</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>101</td>
-<td>Rainfall is
-evenly
-distributed
-among among
-<strong>RainAmongN</strong>
-subintervals in
-a rainy
-interval – also
-requires
-RainAmongN to
-be set.</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>102</td>
-<td>Rainfall is
-evenly
-distributed
-among among
-<strong>RainAmongN</strong>
-subintervals in
-a rainy
-interval for
-different
-intensity bins
-– also requires
-MultRainAmongN
-and
-MultRainAmongNU
-pperI
-to be set.</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>RainAmongN</td>
-<td>O</td>
-<td>Specifies the
-number of
-subintervals
-(of length tt)
-over which to
-distribute
-rainfall in
-each interval
-(of length TT).
-Must be an
-integer value.
-Use with
-RainDisaggMetho
-d
-= 101.</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>MultRainAmongN</td>
-<td>O</td>
-<td>Specifies the
-number of
-subintervals
-(of length tt)
-over which to
-distribute
-rainfall in
-each interval
-(of length TT)
-for up to 5
-intensity bins.
-Must take
-integer values.
-Use with
-RainDisaggMetho
-d
-= 102. e.g.
-MultRainAmongN(
-1)
-= 5,
-MultRainAmongN(
-2)
-= 8,
-MultRainAmongN(
-3)
-= 12</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>MultRainAmongNU
-pperI</td>
-<td>O</td>
-<td>Specifies upper
-limit for each
-intensity bin
-to apply
-MultRainAmongN.
-Any intensities
-above the
-highest
-specified
-intensity will
-use the last
-MultRainAmongN
-value and write
-a warning to
-warnings.txt.
-Use with
-RainDisaggMetho
-d
-= 102. e.g.
-MultRainAmongNU
-pperI(1)
-= 0.5,
-MultRainAmongNU
-pperI(2)
-= 2.0,
-MultRainAmongNU
-pperI(3)
-= 50.0</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>DisaggMethodEST
-M</td>
-<td>O</td>
-<td>Specifies how
-ESTM-related
-temperatures in
-the input file
-are
-disaggregated
-to the model
-time step.</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>Value</td>
-<td>Comments</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>1</td>
-<td>Linear
-downscaling of
-averages.</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>2</td>
-<td>Linear
-downscaling of
-instantaneous
-values.</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td><em>netCDF-related
-options</em>
-‘’‘N.B.: This
-feature is NOT
-enabled in the
-public release
-due to the
-dependency of
-netCDF library.
-Please contact
-the development
-team for
-assistance in
-enabling this
-feature if this
-feature is
-needed: <a class="reference external" href="https://www.lists.reading.ac.uk/mailman/listinfo/met-suews">SUEWS
-mail
-list</a></td>
-<td>&#160;</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>ncMode</td>
-<td>O</td>
-<td>Determine if
-the output
-files should be
-written in
-netCDF format.</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>Value</td>
-<td>Comments</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>0</td>
-<td><ul class="first simple">
-<li>Output files</li>
-</ul>
-<p class="last">are kept as
-plain text
-files (i.e.,
-.txt).</p>
-</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>1</td>
-<td><ul class="first simple">
-<li>Output files</li>
-</ul>
-<p class="last">will be
-written in
-netCDF
-format
-(i.e., .nc).</p>
-</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>nRow</td>
-<td>O</td>
-<td>Number of rows
-(e.g., 36) in
-the output
-layout (only
-applicable when
-ncMode=1).</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>nCol</td>
-<td>O</td>
-<td>Number of
-columns (e.g.,
-47) in the
-output layout
-(only
-applicable when
-ncMode=1).</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>&#160;</td>
-<td>&#160;</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="section" id="suews-siteinfo-xlsm">
 <h2>6.2. SUEWS_SiteInfo.xlsm<a class="headerlink" href="#suews-siteinfo-xlsm" title="Permalink to this headline">¶</a></h2>
@@ -2274,7 +304,7 @@ fail.</td>
 </tbody>
 </table>
 <div class="section" id="suews-siteselect-txt">
-<span id="id41"></span><h3>6.2.1. SUEWS_SiteSelect.txt<a class="headerlink" href="#suews-siteselect-txt" title="Permalink to this headline">¶</a></h3>
+<h3>6.2.1. SUEWS_SiteSelect.txt<a class="headerlink" href="#suews-siteselect-txt" title="Permalink to this headline">¶</a></h3>
 <p>For each year and each grid, site specific surface cover information and
 other input parameters is provided to SUEWS by <strong>SUEWS_SiteSelect.txt</strong>.
 The model currently requires a new row for each year of the model run.
@@ -3987,7 +2017,7 @@ from
 Loridan
 et al.
 (2011)
-<a class="reference internal" href="references.html#l2011" id="id42">[L2011]</a>.</td>
+<a class="reference internal" href="references.html#l2011" id="id1">[L2011]</a>.</td>
 <td>&#160;</td>
 <td>&#160;</td>
 </tr>
@@ -4020,7 +2050,7 @@ from
 Loridan
 et al.
 (2011)
-<a class="reference internal" href="references.html#l2011" id="id43">[L2011]</a>.</td>
+<a class="reference internal" href="references.html#l2011" id="id2">[L2011]</a>.</td>
 <td>&#160;</td>
 <td>&#160;</td>
 </tr>
@@ -4051,7 +2081,7 @@ mm from
 Loridan
 et al.
 (2011)
-<a class="reference internal" href="references.html#l2011" id="id44">[L2011]</a>.</td>
+<a class="reference internal" href="references.html#l2011" id="id3">[L2011]</a>.</td>
 <td>&#160;</td>
 <td>&#160;</td>
 </tr>
@@ -4592,7 +2622,7 @@ for CO2
 flux
 calcula
 tion
-- <a href="#id45"><span class="problematic" id="id46">**</span></a>not
+- <a href="#id4"><span class="problematic" id="id5">**</span></a>not
 used in
 v2017a*
 *</td>
@@ -4647,7 +2677,7 @@ for CO2
 flux
 calcula
 tion
-- <a href="#id47"><span class="problematic" id="id48">**</span></a>not
+- <a href="#id6"><span class="problematic" id="id7">**</span></a>not
 used in
 v2017a*
 *</td>
@@ -10395,14 +8425,14 @@ n
 Järvi
 et al.
 (2011)
-<a class="reference internal" href="references.html#j11" id="id49">[J11]</a>;
+<a class="reference internal" href="references.html#j11" id="id8">[J11]</a>;
 Append
 ix
 A
 Järvi
 et al.
 (2014)
-<a class="reference internal" href="references.html#leena2014" id="id50">[Leena2014]</a>.
+<a class="reference internal" href="references.html#leena2014" id="id9">[Leena2014]</a>.
 +—+—+
 —+
 +===+
@@ -10563,14 +8593,14 @@ n
 Järvi
 et al.
 (2011)
-<a class="reference internal" href="references.html#j11" id="id51">[J11]</a>;
+<a class="reference internal" href="references.html#j11" id="id10">[J11]</a>;
 Append
 ix
 A
 Järvi
 et al.
 (2014)
-<a class="reference internal" href="references.html#leena2014" id="id52">[Leena2014]</a>
+<a class="reference internal" href="references.html#leena2014" id="id11">[Leena2014]</a>
 for
 more
 detail
@@ -10735,14 +8765,14 @@ n
 Järvi
 et al.
 (2011)
-<a class="reference internal" href="references.html#j11" id="id53">[J11]</a>;
+<a class="reference internal" href="references.html#j11" id="id12">[J11]</a>;
 Append
 ix
 A
 Järvi
 et al.
 (2014)
-<a class="reference internal" href="references.html#leena2014" id="id54">[Leena2014]</a>
+<a class="reference internal" href="references.html#leena2014" id="id13">[Leena2014]</a>
 for
 more
 detail
@@ -13022,7 +11052,7 @@ s
 in
 summer.
 Links to
-<span class="xref std std-ref">suews_ohmcoefficients.txt</span> Value of  integer   is arbitrary but must  match     code      specified in column 1 of</td>
+<span class="xref std std-ref">suews-ohmcoefficients-txt</span> Value of  integer   is arbitrary but must  match     code      specified in column 1 of</td>
 <td>SUEWS_OHM
 Coefficie
 nts.txt]]
@@ -13050,11 +11080,7 @@ condition
 s
 in
 summer.
-Links to
-[[#SUEWS_
-OHMCoeffi
-cients.tx
-t</td>
+Links to  <span class="xref std std-ref">suews-ohmcoefficients-txt</span></td>
 <td>SUEWS_OHM
 Coefficie
 nts.txt]]
@@ -13384,7 +11410,7 @@ SnowUse=1 in <a class="reference external" href="#RunControl.nml">RunControl.nml
 the model is not run, fill this table with ‘-999’ except for the first
 (Code) column and set SnowUse=0 in <a class="reference external" href="#RunControl.nml">RunControl.nml</a>.
 For a detailed description of the variables, see Järvi et al.
-(2014) <a class="reference internal" href="references.html#leena2014" id="id55">[Leena2014]</a>. <em>In the current release SnowUse should be set to 0.</em></p>
+(2014) <a class="reference internal" href="references.html#leena2014" id="id14">[Leena2014]</a>. <em>In the current release SnowUse should be set to 0.</em></p>
 <table border="1" class="docutils">
 <colgroup>
 <col width="9%" />
@@ -14512,8 +12538,8 @@ y
 for
 saturated
 soil [mm
-s:sup:<a href="#id56"><span class="problematic" id="id57">`</span></a>-1
-<a href="#id58"><span class="problematic" id="id59">`</span></a>]</td>
+s:sup:<a href="#id15"><span class="problematic" id="id16">`</span></a>-1
+<a href="#id17"><span class="problematic" id="id18">`</span></a>]</td>
 </tr>
 <tr class="row-even"><td>5</td>
 <td>MD</td>
@@ -14521,8 +12547,8 @@ s:sup:<a href="#id56"><span class="problematic" id="id57">`</span></a>-1
 <td>1.16</td>
 <td>Soil
 density [kg
-m:sup:<a href="#id60"><span class="problematic" id="id61">`</span></a>-3
-<a href="#id62"><span class="problematic" id="id63">`</span></a>]</td>
+m:sup:<a href="#id19"><span class="problematic" id="id20">`</span></a>-3
+<a href="#id21"><span class="problematic" id="id22">`</span></a>]</td>
 </tr>
 <tr class="row-odd"><td>6</td>
 <td>O</td>
@@ -14532,8 +12558,8 @@ nRate</td>
 <td><p class="first">Infiltratio
 n
 rate [mm
-h:sup:<a href="#id64"><span class="problematic" id="id65">`</span></a>-1
-<a href="#id66"><span class="problematic" id="id67">`</span></a>]</p>
+h:sup:<a href="#id23"><span class="problematic" id="id24">`</span></a>-1
+<a href="#id25"><span class="problematic" id="id26">`</span></a>]</p>
 <ul class="simple">
 <li>Not
 currentl</li>
@@ -14574,7 +12600,7 @@ smd_choi</li>
 2.</dd>
 </dl>
 <ul class="simple">
-<li><a href="#id68"><span class="problematic" id="id69">**</span></a>Use of
+<li><a href="#id27"><span class="problematic" id="id28">**</span></a>Use of
 observed
 soil
 moisture
@@ -14621,7 +12647,7 @@ smd_choi</li>
 2.</dd>
 </dl>
 <ul class="simple">
-<li><a href="#id70"><span class="problematic" id="id71">**</span></a>Use of
+<li><a href="#id29"><span class="problematic" id="id30">**</span></a>Use of
 observed
 soil
 moisture
@@ -14663,7 +12689,7 @@ smd_choi</li>
 2.</dd>
 </dl>
 <ul class="simple">
-<li><a href="#id72"><span class="problematic" id="id73">**</span></a>Use of
+<li><a href="#id31"><span class="problematic" id="id32">**</span></a>Use of
 observed
 soil
 moisture
@@ -14685,7 +12711,7 @@ currentl</li>
 (1976) surface conductance model used in the modelling of evaporation in
 SUEWS. These values should <strong>not</strong> be changed independently of each
 other. The suggested values below have been derived using datasets for
-Los Angeles and Vancouver (see Järvi et al. (2011) <a class="reference internal" href="references.html#j11" id="id74">[J11]</a>) and should be
+Los Angeles and Vancouver (see Järvi et al. (2011) <a class="reference internal" href="references.html#j11" id="id33">[J11]</a>) and should be
 used with <strong>gsModel=1</strong>. An alternative formulation (gsModel=2) uses
 slightly different functional forms and different coefficients (with
 different units).</p>
@@ -14860,7 +12886,7 @@ moisture
 dependenc
 e
 [-]
-<a href="#id75"><span class="problematic" id="id76">*</span></a>These
+<a href="#id34"><span class="problematic" id="id35">*</span></a>These
 will
 change in
 the
@@ -14883,7 +12909,7 @@ moisture
 dependenc
 e
 [mm]
-<a href="#id77"><span class="problematic" id="id78">*</span></a>These
+<a href="#id36"><span class="problematic" id="id37">*</span></a>These
 will
 change in
 the
@@ -14926,12 +12952,12 @@ to use
 Järvi
 et al.
 (2011)
-<a class="reference internal" href="references.html#j11" id="id79">[J11]</a>
+<a class="reference internal" href="references.html#j11" id="id38">[J11]</a>
 -  2 =
 Ward
 et al.
 (2016)
-<a class="reference internal" href="references.html#w16" id="id80">[W16]</a>
+<a class="reference internal" href="references.html#w16" id="id39">[W16]</a>
 <strong>Reco
 mmended.*
 *
@@ -16568,7 +14594,7 @@ codes
 specif
 ied
 in
-<a href="#id96"><span class="problematic" id="id97">SUEWS_</span></a>
+<a href="#id55"><span class="problematic" id="id56">SUEWS_</span></a>
 SiteSelec
 t.txt.</td>
 </tr>
@@ -16833,7 +14859,7 @@ r</td>
 </div>
 <div class="section" id="suews-ohmcoefficients-txt">
 <h3>6.2.12. SUEWS_OHMCoefficients.txt<a class="headerlink" href="#suews-ohmcoefficients-txt" title="Permalink to this headline">¶</a></h3>
-<p>OHM, the Objective Hysteresis Model (Grimmond et al. 1991) <a class="reference internal" href="references.html#g91ohm" id="id81">[G91OHM]</a>
+<p>OHM, the Objective Hysteresis Model (Grimmond et al. 1991) <a class="reference internal" href="references.html#g91ohm" id="id40">[G91OHM]</a>
 calculates the storage heat flux as a function of net all-wave radiation
 and surface characteristics.</p>
 <ul class="simple">
@@ -16942,8 +14968,8 @@ term [h]</td>
 <td>&#160;</td>
 <td>Constant
 term [W
-m:sup:<a href="#id82"><span class="problematic" id="id83">`</span></a>-2
-<a href="#id84"><span class="problematic" id="id85">`</span></a>]</td>
+m:sup:<a href="#id41"><span class="problematic" id="id42">`</span></a>-2
+<a href="#id43"><span class="problematic" id="id44">`</span></a>]</td>
 </tr>
 </tbody>
 </table>
@@ -17642,7 +15668,7 @@ K:sup:`
 </tr>
 <tr class="row-odd"><td>32</td>
 <td>MU</td>
-<td><a href="#id98"><span class="problematic" id="id99">Internal_</span></a>
+<td><a href="#id57"><span class="problematic" id="id58">Internal_</span></a>
 thick1</td>
 <td><ul class="first last simple">
 <li></li>
@@ -17664,7 +15690,7 @@ surfaces</td>
 </tr>
 <tr class="row-even"><td>33</td>
 <td>MU</td>
-<td><a href="#id100"><span class="problematic" id="id101">Internal_</span></a>
+<td><a href="#id59"><span class="problematic" id="id60">Internal_</span></a>
 k1</td>
 <td><ul class="first last simple">
 <li></li>
@@ -17684,7 +15710,7 @@ K:sup:`
 </tr>
 <tr class="row-odd"><td>34</td>
 <td>MU</td>
-<td><a href="#id102"><span class="problematic" id="id103">Internal_</span></a>
+<td><a href="#id61"><span class="problematic" id="id62">Internal_</span></a>
 rhoCp1</td>
 <td><ul class="first last simple">
 <li></li>
@@ -17705,7 +15731,7 @@ K:sup:`
 </tr>
 <tr class="row-even"><td>35</td>
 <td>O</td>
-<td><a href="#id104"><span class="problematic" id="id105">Internal_</span></a>
+<td><a href="#id63"><span class="problematic" id="id64">Internal_</span></a>
 thick2</td>
 <td><ul class="first last simple">
 <li></li>
@@ -17724,7 +15750,7 @@ set to
 </tr>
 <tr class="row-odd"><td>36</td>
 <td>O</td>
-<td><a href="#id106"><span class="problematic" id="id107">Internal_</span></a>
+<td><a href="#id65"><span class="problematic" id="id66">Internal_</span></a>
 k2</td>
 <td><ul class="first last simple">
 <li></li>
@@ -17744,7 +15770,7 @@ K:sup:`
 </tr>
 <tr class="row-even"><td>37</td>
 <td>O</td>
-<td><a href="#id108"><span class="problematic" id="id109">Internal_</span></a>
+<td><a href="#id67"><span class="problematic" id="id68">Internal_</span></a>
 rhoCp2</td>
 <td><ul class="first last simple">
 <li></li>
@@ -17765,7 +15791,7 @@ K:sup:`
 </tr>
 <tr class="row-odd"><td>38</td>
 <td>O</td>
-<td><a href="#id110"><span class="problematic" id="id111">Internal_</span></a>
+<td><a href="#id69"><span class="problematic" id="id70">Internal_</span></a>
 thick3</td>
 <td><ul class="first last simple">
 <li></li>
@@ -17784,7 +15810,7 @@ set to
 </tr>
 <tr class="row-even"><td>39</td>
 <td>O</td>
-<td><a href="#id112"><span class="problematic" id="id113">Internal_</span></a>
+<td><a href="#id71"><span class="problematic" id="id72">Internal_</span></a>
 k3</td>
 <td><ul class="first last simple">
 <li></li>
@@ -17804,7 +15830,7 @@ K:sup:`
 </tr>
 <tr class="row-odd"><td>40</td>
 <td>O</td>
-<td><a href="#id114"><span class="problematic" id="id115">Internal_</span></a>
+<td><a href="#id73"><span class="problematic" id="id74">Internal_</span></a>
 rhoCp3</td>
 <td><ul class="first last simple">
 <li></li>
@@ -17825,7 +15851,7 @@ K:sup:`
 </tr>
 <tr class="row-even"><td>41</td>
 <td>O</td>
-<td><a href="#id116"><span class="problematic" id="id117">Internal_</span></a>
+<td><a href="#id75"><span class="problematic" id="id76">Internal_</span></a>
 thick4</td>
 <td><ul class="first last simple">
 <li></li>
@@ -17844,7 +15870,7 @@ set to
 </tr>
 <tr class="row-odd"><td>42</td>
 <td>O</td>
-<td><a href="#id118"><span class="problematic" id="id119">Internal_</span></a>
+<td><a href="#id77"><span class="problematic" id="id78">Internal_</span></a>
 k4</td>
 <td><ul class="first last simple">
 <li></li>
@@ -17864,7 +15890,7 @@ K:sup:`
 </tr>
 <tr class="row-even"><td>43</td>
 <td>O</td>
-<td><a href="#id120"><span class="problematic" id="id121">Internal_</span></a>
+<td><a href="#id79"><span class="problematic" id="id80">Internal_</span></a>
 rhoCp4</td>
 <td><ul class="first last simple">
 <li></li>
@@ -17885,7 +15911,7 @@ K:sup:`
 </tr>
 <tr class="row-odd"><td>44</td>
 <td>O</td>
-<td><a href="#id122"><span class="problematic" id="id123">Internal_</span></a>
+<td><a href="#id81"><span class="problematic" id="id82">Internal_</span></a>
 thick5</td>
 <td><ul class="first last simple">
 <li></li>
@@ -17904,7 +15930,7 @@ set to
 </tr>
 <tr class="row-even"><td>45</td>
 <td>O</td>
-<td><a href="#id124"><span class="problematic" id="id125">Internal_</span></a>
+<td><a href="#id83"><span class="problematic" id="id84">Internal_</span></a>
 k5</td>
 <td><ul class="first last simple">
 <li></li>
@@ -17924,7 +15950,7 @@ K:sup:`
 </tr>
 <tr class="row-odd"><td>46</td>
 <td>O</td>
-<td><a href="#id126"><span class="problematic" id="id127">Internal_</span></a>
+<td><a href="#id85"><span class="problematic" id="id86">Internal_</span></a>
 rhoCp5</td>
 <td><ul class="first last simple">
 <li></li>
@@ -17960,7 +15986,7 @@ only</td>
 </tr>
 <tr class="row-odd"><td>48</td>
 <td>MU</td>
-<td><a href="#id128"><span class="problematic" id="id129">Internal_</span></a>
+<td><a href="#id87"><span class="problematic" id="id88">Internal_</span></a>
 albedo</td>
 <td><ul class="first last simple">
 <li></li>
@@ -17978,7 +16004,7 @@ only</td>
 </tr>
 <tr class="row-even"><td>49</td>
 <td>MU</td>
-<td><a href="#id130"><span class="problematic" id="id131">Internal_</span></a>
+<td><a href="#id89"><span class="problematic" id="id90">Internal_</span></a>
 emissivit
 y</td>
 <td><ul class="first last simple">
@@ -17998,7 +16024,7 @@ only</td>
 </tr>
 <tr class="row-odd"><td>50</td>
 <td>O</td>
-<td><a href="#id132"><span class="problematic" id="id133">Internal_</span></a>
+<td><a href="#id91"><span class="problematic" id="id92">Internal_</span></a>
 CHwall</td>
 <td>&#160;</td>
 <td>Bulk
@@ -18026,7 +16052,7 @@ put.nml</td>
 </tr>
 <tr class="row-even"><td>51</td>
 <td>O</td>
-<td><a href="#id134"><span class="problematic" id="id135">Internal_</span></a>
+<td><a href="#id93"><span class="problematic" id="id94">Internal_</span></a>
 CHroof</td>
 <td>&#160;</td>
 <td>Bulk
@@ -18054,7 +16080,7 @@ put.nml</td>
 </tr>
 <tr class="row-odd"><td>52</td>
 <td>O</td>
-<td><a href="#id136"><span class="problematic" id="id137">Internal_</span></a>
+<td><a href="#id95"><span class="problematic" id="id96">Internal_</span></a>
 CHbld</td>
 <td>&#160;</td>
 <td>Bulk
@@ -18241,7 +16267,7 @@ d
 in
 [[#SSss
 _YYYY_E
-<a href="#id138"><span class="problematic" id="id139">STM_Ts_</span></a>
+<a href="#id97"><span class="problematic" id="id98">STM_Ts_</span></a>
 data_tt
 .txt</td>
 <td>SSss_YY
@@ -18813,7 +16839,7 @@ based
 on the
 values
 set in
-<a href="#id140"><span class="problematic" id="id141">SUEWS_</span></a>
+<a href="#id99"><span class="problematic" id="id100">SUEWS_</span></a>
 SiteInfo.
 xlsm.
 -  If the
@@ -18846,7 +16872,7 @@ based
 on the
 values
 set in
-<a href="#id142"><span class="problematic" id="id143">SUEWS_</span></a>
+<a href="#id101"><span class="problematic" id="id102">SUEWS_</span></a>
 SiteInfo.
 xlsm.
 -  Not
@@ -19001,7 +17027,7 @@ as
 GDDFul
 l
 in
-<a href="#id144"><span class="problematic" id="id145">SUEWS_</span></a>
+<a href="#id103"><span class="problematic" id="id104">SUEWS_</span></a>
 Veg.txt.
 -  If
 <em>winte
@@ -19081,7 +17107,7 @@ of
 SDDFul
 l
 in
-<a href="#id146"><span class="problematic" id="id147">SUEWS_</span></a>
+<a href="#id105"><span class="problematic" id="id106">SUEWS_</span></a>
 Veg.txt
 to
 guide
@@ -20560,8 +18586,8 @@ implemented</td>
 </div>
 <div class="section" id="cbl-input-files">
 <h2>6.6. CBL input files<a class="headerlink" href="#cbl-input-files" title="Permalink to this headline">¶</a></h2>
-<p>Main references for this part of the model: Onomura et al. (2015) <a class="reference internal" href="references.html#shiho2015" id="id86">[Shiho2015]</a>
-and Cleugh and Grimmond (2001) <a class="reference internal" href="references.html#cg2001" id="id87">[CG2001]</a>.</p>
+<p>Main references for this part of the model: Onomura et al. (2015) <a class="reference internal" href="references.html#shiho2015" id="id45">[Shiho2015]</a>
+and Cleugh and Grimmond (2001) <a class="reference internal" href="references.html#cg2001" id="id46">[CG2001]</a>.</p>
 <p>If CBL slab model is used (CBLuse=1 in
 <a class="reference external" href="#RunControl.nml">RunControl.nml</a>) the following files are needed:</p>
 <table border="1" class="docutils">
@@ -20660,7 +18686,7 @@ CBL (g kg<sup>-1</sup>)</td>
 </table>
 <ul class="simple">
 <li>gamt_Km and gamq_gkgm written to two significant figures are required
-for the model performance in appropriate ranges <a class="reference internal" href="references.html#shiho2015" id="id88">[Shiho2015]</a>.</li>
+for the model performance in appropriate ranges <a class="reference internal" href="references.html#shiho2015" id="id47">[Shiho2015]</a>.</li>
 </ul>
 <table border="1" class="docutils">
 <colgroup>
@@ -20752,7 +18778,7 @@ for the model performance in appropriate ranges <a class="reference internal" hr
 <tr class="row-odd"><td>EntrainmentType</td>
 <td>Determines entrainment scheme.
 See Cleugh and Grimmond
-2000 <a class="reference internal" href="references.html#cg2001" id="id89">[CG2001]</a> for details.</td>
+2000 <a class="reference internal" href="references.html#cg2001" id="id48">[CG2001]</a> for details.</td>
 </tr>
 <tr class="row-even"><td>Value</td>
 <td>Comments</td>
@@ -20789,7 +18815,7 @@ the meteorological input file</td>
 <tr class="row-even"><td>Wsb</td>
 <td>Subsidence velocity (m
 s<sup>-1</sup>) in eq. 1 and 2 of
-Onomura et al. (2015) <a class="reference internal" href="references.html#shiho2015" id="id90">[Shiho2015]</a>.
+Onomura et al. (2015) <a class="reference internal" href="references.html#shiho2015" id="id49">[Shiho2015]</a>.
 (-0.01 m s<sup>-1</sup>
 recommended)</td>
 </tr>
@@ -20953,7 +18979,7 @@ man: 1.1 m</td>
 <tr class="row-even"><td>1</td>
 <td>Vegetation scheme is
 active (Lindberg and
-Grimmond 2011 <a class="reference internal" href="references.html#fl2011" id="id91">[FL2011]</a>)</td>
+Grimmond 2011 <a class="reference internal" href="references.html#fl2011" id="id50">[FL2011]</a>)</td>
 <td>&#160;</td>
 </tr>
 <tr class="row-odd"><td>2</td>
@@ -21002,7 +19028,7 @@ through deciduous
 vegetation (leaf on)
 -  Recommended value:
 0.02 (Konarska et
-al. 2014 <a class="reference internal" href="references.html#ko14" id="id92">[Ko14]</a>)</td>
+al. 2014 <a class="reference internal" href="references.html#ko14" id="id51">[Ko14]</a>)</td>
 </tr>
 <tr class="row-odd"><td>TransMax</td>
 <td><ul class="first last simple">
@@ -21014,7 +19040,7 @@ through deciduous
 vegetation (leaf off)
 -  Recommended value:
 0.50 (Konarska et
-al. 2014 <a class="reference internal" href="references.html#ko14" id="id93">[Ko14]</a>)</td>
+al. 2014 <a class="reference internal" href="references.html#ko14" id="id52">[Ko14]</a>)</td>
 </tr>
 <tr class="row-even"><td>SVFPath</td>
 <td><ul class="first last simple">
@@ -21024,7 +19050,7 @@ al. 2014 <a class="reference internal" href="references.html#ko14" id="id93">[Ko
 <td>Path to SVFs matrices
 (See Lindberg and
 Grimmond
-(2011) <a class="reference internal" href="references.html#fl2011" id="id94">[FL2011]</a> for
+(2011) <a class="reference internal" href="references.html#fl2011" id="id53">[FL2011]</a> for
 details)</td>
 </tr>
 <tr class="row-odd"><td>SVFSuffix</td>
@@ -21086,7 +19112,7 @@ forcing file.</td>
 shortwave radiation
 calculated from
 Reindl et al.
-(1990) <a class="reference internal" href="references.html#re90" id="id95">[Re90]</a></td>
+(1990) <a class="reference internal" href="references.html#re90" id="id54">[Re90]</a></td>
 <td>&#160;</td>
 </tr>
 <tr class="row-even"><td>SOLWEIGpoi_out</td>
