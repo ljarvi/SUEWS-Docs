@@ -92,7 +92,7 @@ html_theme_path = ["_themes"]
 html_static_path = ['_static']
 html_context = {
     'css_files': [
-        '_static/theme_overrides.css'  # override wide tables in RTD theme
+        '_static/theme_overrides.css',  # override wide tables in RTD theme
         ],
      }
 
@@ -138,7 +138,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'SUEWS.tex', u'SUEWS Documentation',
-     u'Sue Grimmond, Ting Sun', 'manual')
+     u'Sue Grimmond, Ting Sun', 'manual'),
 ]
 
 
@@ -148,7 +148,7 @@ latex_documents = [
 # (source start file, name, description, authors, manual section).
 man_pages = [
     (master_doc, 'suews', u'SUEWS Documentation',
-     [author], 1)
+     [author], 1),
 ]
 
 
