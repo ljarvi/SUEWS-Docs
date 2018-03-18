@@ -1,0 +1,1401 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     64001,       1393]
+NotebookOptionsPosition[     58915,       1307]
+NotebookOutlinePosition[     59319,       1324]
+CellTagsIndexPosition[     59276,       1321]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"src", "=", 
+   RowBox[{"StringReplace", "[", 
+    RowBox[{
+     RowBox[{"Import", "[", 
+      RowBox[{
+      "\"\</Users/sunt05/Dropbox/8-Research/98.ReadingWork/SUWES-Docs/docs/\
+wiki_source/SUEWS-manual.wiki\>\"", ",", "\"\<Text\>\""}], "]"}], ",", 
+     RowBox[{
+      RowBox[{"Shortest", "[", 
+       RowBox[{"\"\<<!--T:\>\"", "~~", "__", "~~", "\"\<-->\>\""}], "]"}], 
+      "\[Rule]", "\"\<\>\""}]}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.730309825994169*^9, 3.730309843565984*^9}, {
+  3.7303134522283792`*^9, 3.7303134525291758`*^9}, {3.730347786182782*^9, 
+  3.7303478686893883`*^9}},
+ CellLabel->
+  "In[219]:=",ExpressionUUID->"53e7ab6c-30f7-4830-93bd-6bd8ff2da03e"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"refList", "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"StringCases", "[", 
+       RowBox[{"src", ",", 
+        RowBox[{"Shortest", "[", 
+         RowBox[{"\"\<<ref name=\>\"", "~~", "name__", "~~", "\"\<>\>\""}], 
+         "]"}]}], "]"}], "//", "Sort"}], "//", "DeleteDuplicates"}], "//", 
+    "Sort"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.7303125802808332`*^9, 3.7303127281281633`*^9}, {
+   3.730312865547941*^9, 3.730312867221786*^9}, 3.730312953034453*^9, {
+   3.73031300703407*^9, 3.730313031051519*^9}, 3.730313087954941*^9, {
+   3.730313199122203*^9, 3.730313226929298*^9}, 3.730313288755876*^9, 
+   3.730313353477577*^9, {3.73031340402134*^9, 3.730313428071246*^9}, {
+   3.7303135039655657`*^9, 3.730313579529399*^9}, {3.730315279962366*^9, 
+   3.730315292438571*^9}},
+ CellLabel->
+  "In[220]:=",ExpressionUUID->"d11a97b8-c7a5-470d-9ef9-9565fe93c08f"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"refDef", "=", 
+  RowBox[{"Cases", "[", 
+   RowBox[{"refList", ",", 
+    RowBox[{"_", "?", 
+     RowBox[{"(", 
+      RowBox[{"StringFreeQ", "[", "\"\</>\>\"", "]"}], ")"}]}]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.7303151329957113`*^9, 3.730315221718625*^9}},
+ CellLabel->
+  "In[221]:=",ExpressionUUID->"de849144-5594-40db-9065-40e73dd9d71d"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"<ref name=\\\"AnOHM17\\\">\"\>", 
+   ",", "\<\"<ref name=\\\"Au74\\\">\"\>", 
+   ",", "\<\"<ref name=\\\"B71\\\">\"\>", 
+   ",", "\<\"<ref name=\\\"Best2014\\\">\"\>", 
+   ",", "\<\"<ref name=\\\"Br03\\\">\"\>", 
+   ",", "\<\"<ref name=\\\"CG2001\\\">\"\>", 
+   ",", "\<\"<ref name=\\\"CNstab\\\">\"\>", 
+   ",", "\<\"<ref name=\\\"CW86\\\">\"\>", 
+   ",", "\<\"<ref name=\\\"D74\\\">\"\>", 
+   ",", "\<\"<ref name=\\\"FL2008\\\">\"\>", 
+   ",", "\<\"<ref name=\\\"FL2011\\\">\"\>", 
+   ",", "\<\"<ref name=\\\"FN78\\\">\"\>", 
+   ",", "\<\"<ref name=\\\"G86\\\">\"\>", 
+   ",", "\<\"<ref name=\\\"G91\\\">\"\>", 
+   ",", "\<\"<ref name=\\\"G91OHM\\\">\"\>", 
+   ",", "\<\"<ref name=\\\"GO2002\\\">\"\>", 
+   ",", "\<\"<ref name=\\\"GO99\\\">\"\>", 
+   ",", "\<\"<ref name=\\\"GO99QS\\\">\"\>", 
+   ",", "\<\"<ref name=\\\"H88\\\">\"\>", 
+   ",", "\<\"<ref name=\\\"Ha79\\\">\"\>", 
+   ",", "\<\"<ref name=\\\"I11\\\">\"\>", 
+   ",", "\<\"<ref name=\\\"J11\\\">\"\>", 
+   ",", "\<\"<ref name=\\\"Ja76\\\">\"\>", 
+   ",", "\<\"<ref name=\\\"Ka07\\\">\"\>", 
+   ",", "\<\"<ref name=\\\"Ka09\\\">\"\>", 
+   ",", "\<\"<ref name=\\\"Ko14\\\">\"\>", 
+   ",", "\<\"<ref name=\\\"Ko17\\\">\"\>", 
+   ",", "\<\"<ref name=\\\"L2011\\\">\"\>", 
+   ",", "\<\"<ref name=\\\"Leena2014\\\">\"\>", 
+   ",", "\<\"<ref name=\\\"LG2012\\\">\"\>", ",", "\<\"<ref name=lucy>\"\>", 
+   ",", "\<\"<ref name=lucy2>\"\>", ",", "\<\"<ref name=\\\"Mc98\\\">\"\>", 
+   ",", "\<\"<ref name=\\\"O2003\\\">\"\>", 
+   ",", "\<\"<ref name=\\\"Oaf2005\\\">\"\>", 
+   ",", "\<\"<ref name=\\\"Ok87\\\">\"\>", 
+   ",", "\<\"<ref name=\\\"Re90\\\">\"\>", 
+   ",", "\<\"<ref name=\\\"Shiho2015\\\">\"\>", 
+   ",", "\<\"<ref name=\\\"SV06\\\">\"\>", 
+   ",", "\<\"<ref name=\\\"VG00\\\">\"\>", 
+   ",", "\<\"<ref name=\\\"VUH85\\\">\"\>", 
+   ",", "\<\"<ref name=\\\"W16\\\">\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.7303152299457817`*^9, 3.730315301091568*^9, {3.730347849422573*^9, 
+   3.730347871457951*^9}},
+ CellLabel->
+  "Out[221]=",ExpressionUUID->"8a8f93b3-d14e-40a1-becd-5bc00866d6e8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"refCase", "=", 
+  RowBox[{"Cases", "[", 
+   RowBox[{"refList", ",", 
+    RowBox[{"_", "?", 
+     RowBox[{"(", 
+      RowBox[{"StringContainsQ", "[", "\"\</>\>\"", "]"}], ")"}]}]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.730315241554027*^9, 3.730315253984584*^9}},
+ CellLabel->
+  "In[222]:=",ExpressionUUID->"fd1b92e8-0247-4089-86bf-5914a1553d9c"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"<ref name=\\\"B71\\\"/>\"\>", 
+   ",", "\<\"<ref name=\\\"Br03\\\"/>\"\>", 
+   ",", "\<\"<ref name=\\\"CG2001\\\"/>\"\>", 
+   ",", "\<\"<ref name=\\\"CNstab\\\"/>\"\>", 
+   ",", "\<\"<ref name=\\\"CW86\\\"/>\"\>", 
+   ",", "\<\"<ref name=\\\"D74\\\"/>\"\>", 
+   ",", "\<\"<ref name=\\\"FL2008\\\"/>\"\>", 
+   ",", "\<\"<ref name=\\\"FL2011\\\"/>\"\>", 
+   ",", "\<\"<ref name=\\\"FN78\\\"/>\"\>", 
+   ",", "\<\"<ref name=\\\"G91\\\"/>\"\>", 
+   ",", "\<\"<ref name=\\\"G91OHM\\\"/>\"\>", 
+   ",", "\<\"<ref name=\\\"GO2002\\\"/>\"\>", 
+   ",", "\<\"<ref name=\\\"GO99QS\\\"/>\"\>", 
+   ",", "\<\"<ref name=\\\"H88\\\"/>\"\>", 
+   ",", "\<\"<ref name=\\\"Ha79\\\"/>\"\>", 
+   ",", "\<\"<ref name=\\\"J11\\\"/>\"\>", 
+   ",", "\<\"<ref name=\\\"Ko14\\\"/>\"\>", 
+   ",", "\<\"<ref name=\\\"L2011\\\"/>\"\>", 
+   ",", "\<\"<ref name=\\\"Leena2014\\\"/>\"\>", 
+   ",", "\<\"<ref name=lucy/>\"\>", ",", "\<\"<ref name=lucy2/>\"\>", 
+   ",", "\<\"<ref name=\\\"O2003\\\"/>\"\>", 
+   ",", "\<\"<ref name=\\\"Oaf2005\\\"/>\"\>", 
+   ",", "\<\"<ref name=\\\"Ok87\\\"/>\"\>", 
+   ",", "\<\"<ref name=\\\"Shiho2015\\\"/>\"\>", 
+   ",", "\<\"<ref name=\\\"Shiho2015\\\" />\"\>", 
+   ",", "\<\"<ref name=\\\"W16\\\"/>\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.730315255139985*^9, 3.73031530316088*^9, 
+  3.730347873026421*^9},
+ CellLabel->
+  "Out[222]=",ExpressionUUID->"30f79ca5-1d66-4ac5-8978-bb2c3ce521c0"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"refNames", "=", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"StringCases", "[", 
+     RowBox[{"refDef", ",", 
+      RowBox[{
+       RowBox[{"__", "~~", "\"\<=\>\"", "~~", "name__", "~~", "\"\<>\>\""}], 
+       "\[RuleDelayed]", 
+       RowBox[{"StringDelete", "[", 
+        RowBox[{
+         RowBox[{"StringTrim", "[", "name", "]"}], ",", "\"\<\\\"\>\""}], 
+        "]"}]}]}], "]"}], "//", "Flatten"}], "//", 
+   "DeleteDuplicates"}]}]], "Input",
+ CellChangeTimes->{{3.7303135842887173`*^9, 3.730313704618828*^9}, 
+   3.730315341715445*^9},
+ CellLabel->
+  "In[223]:=",ExpressionUUID->"25a61b95-d974-4c30-8f3c-4218e5fcd75d"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"AnOHM17\"\>", ",", "\<\"Au74\"\>", ",", "\<\"B71\"\>", 
+   ",", "\<\"Best2014\"\>", ",", "\<\"Br03\"\>", ",", "\<\"CG2001\"\>", 
+   ",", "\<\"CNstab\"\>", ",", "\<\"CW86\"\>", ",", "\<\"D74\"\>", 
+   ",", "\<\"FL2008\"\>", ",", "\<\"FL2011\"\>", ",", "\<\"FN78\"\>", 
+   ",", "\<\"G86\"\>", ",", "\<\"G91\"\>", ",", "\<\"G91OHM\"\>", 
+   ",", "\<\"GO2002\"\>", ",", "\<\"GO99\"\>", ",", "\<\"GO99QS\"\>", 
+   ",", "\<\"H88\"\>", ",", "\<\"Ha79\"\>", ",", "\<\"I11\"\>", 
+   ",", "\<\"J11\"\>", ",", "\<\"Ja76\"\>", ",", "\<\"Ka07\"\>", 
+   ",", "\<\"Ka09\"\>", ",", "\<\"Ko14\"\>", ",", "\<\"Ko17\"\>", 
+   ",", "\<\"L2011\"\>", ",", "\<\"Leena2014\"\>", ",", "\<\"LG2012\"\>", 
+   ",", "\<\"lucy\"\>", ",", "\<\"lucy2\"\>", ",", "\<\"Mc98\"\>", 
+   ",", "\<\"O2003\"\>", ",", "\<\"Oaf2005\"\>", ",", "\<\"Ok87\"\>", 
+   ",", "\<\"Re90\"\>", ",", "\<\"Shiho2015\"\>", ",", "\<\"SV06\"\>", 
+   ",", "\<\"VG00\"\>", ",", "\<\"VUH85\"\>", ",", "\<\"W16\"\>"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{{3.730313625534226*^9, 3.730313634218931*^9}, 
+   3.7303136700949993`*^9, 3.7303137053968573`*^9, 3.730315346952087*^9, 
+   3.730347874417938*^9},
+ CellLabel->
+  "Out[223]=",ExpressionUUID->"9c26e02b-7a1e-4408-8fd7-ba7b178d079f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Length", "[", "refNames", "]"}]], "Input",
+ CellChangeTimes->{{3.7303130370999002`*^9, 3.7303130401540623`*^9}},
+ CellLabel->
+  "In[224]:=",ExpressionUUID->"77237b9f-2520-4a6f-8078-5a28ac2e178e"],
+
+Cell[BoxData["42"], "Output",
+ CellChangeTimes->{
+  3.7303130404784317`*^9, 3.730313231787931*^9, 3.7303132949411182`*^9, 
+   3.7303133829865847`*^9, {3.730313430277217*^9, 3.7303134554438868`*^9}, {
+   3.730313520455378*^9, 3.730313548763392*^9}, 3.730313673889702*^9, 
+   3.730313707259264*^9, 3.730315349784225*^9, 3.730347875711052*^9},
+ CellLabel->
+  "Out[224]=",ExpressionUUID->"509d133a-92e3-49be-8de6-f1fa96621914"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"refNames", "//", "showTitle"}]], "Input",
+ CellChangeTimes->{{3.7303130935446653`*^9, 3.730313094649791*^9}, {
+  3.730313235946622*^9, 3.730313236935071*^9}},
+ CellLabel->
+  "In[225]:=",ExpressionUUID->"dc97723f-6ece-4138-9029-ffef81092bd2"],
+
+Cell[BoxData[
+ TagBox[
+  TagBox[GridBox[{
+     {"1", "\<\"AnOHM17\"\>"},
+     {"2", "\<\"Au74\"\>"},
+     {"3", "\<\"B71\"\>"},
+     {"4", "\<\"Best2014\"\>"},
+     {"5", "\<\"Br03\"\>"},
+     {"6", "\<\"CG2001\"\>"},
+     {"7", "\<\"CNstab\"\>"},
+     {"8", "\<\"CW86\"\>"},
+     {"9", "\<\"D74\"\>"},
+     {"10", "\<\"FL2008\"\>"},
+     {"11", "\<\"FL2011\"\>"},
+     {"12", "\<\"FN78\"\>"},
+     {"13", "\<\"G86\"\>"},
+     {"14", "\<\"G91\"\>"},
+     {"15", "\<\"G91OHM\"\>"},
+     {"16", "\<\"GO2002\"\>"},
+     {"17", "\<\"GO99\"\>"},
+     {"18", "\<\"GO99QS\"\>"},
+     {"19", "\<\"H88\"\>"},
+     {"20", "\<\"Ha79\"\>"},
+     {"21", "\<\"I11\"\>"},
+     {"22", "\<\"J11\"\>"},
+     {"23", "\<\"Ja76\"\>"},
+     {"24", "\<\"Ka07\"\>"},
+     {"25", "\<\"Ka09\"\>"},
+     {"26", "\<\"Ko14\"\>"},
+     {"27", "\<\"Ko17\"\>"},
+     {"28", "\<\"L2011\"\>"},
+     {"29", "\<\"Leena2014\"\>"},
+     {"30", "\<\"LG2012\"\>"},
+     {"31", "\<\"lucy\"\>"},
+     {"32", "\<\"lucy2\"\>"},
+     {"33", "\<\"Mc98\"\>"},
+     {"34", "\<\"O2003\"\>"},
+     {"35", "\<\"Oaf2005\"\>"},
+     {"36", "\<\"Ok87\"\>"},
+     {"37", "\<\"Re90\"\>"},
+     {"38", "\<\"Shiho2015\"\>"},
+     {"39", "\<\"SV06\"\>"},
+     {"40", "\<\"VG00\"\>"},
+     {"41", "\<\"VUH85\"\>"},
+     {"42", "\<\"W16\"\>"}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxDividers->{
+     "Columns" -> {False, {True}, False}, "ColumnsIndexed" -> {}, 
+      "Rows" -> {{False}}, "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.5599999999999999]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}],
+   OutputFormsDump`HeadedColumn],
+  Function[BoxForm`e$, 
+   TableForm[BoxForm`e$, TableHeadings -> Automatic]]]], "Output",
+ CellChangeTimes->{
+  3.730313095035447*^9, 3.730313237473742*^9, 3.730313296122272*^9, {
+   3.730313360927911*^9, 3.7303133675503473`*^9}, {3.730313431571766*^9, 
+   3.7303134567447233`*^9}, {3.73031352176301*^9, 3.730313549754075*^9}, 
+   3.730313675382004*^9, 3.730313708034645*^9, 3.730315351137727*^9, 
+   3.730347876704266*^9},
+ CellLabel->
+  "Out[225]//TableForm=",ExpressionUUID->"05a069b6-0875-472d-a4a2-\
+89d515006493"]
+}, Closed]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"refInfo", "=", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"StringDelete", "[", 
+        RowBox[{"name", ",", 
+         RowBox[{"{", 
+          RowBox[{"\"\<<ref name=\>\"", ",", "\"\<>\>\""}], "}"}]}], "]"}], 
+       ",", 
+       RowBox[{
+        RowBox[{"StringCases", "[", 
+         RowBox[{"src", ",", 
+          RowBox[{"Shortest", "[", 
+           RowBox[{"name", "~~", "info__", "~~", "\"\<</ref>\>\""}], "]"}]}], 
+         "]"}], "\[LeftDoubleBracket]", "1", "\[RightDoubleBracket]"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"name", ",", "refDef"}], "}"}]}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.7303098515210333`*^9, 3.7303099934937973`*^9}, {
+   3.73031005533867*^9, 3.7303100855445147`*^9}, {3.730310135021119*^9, 
+   3.730310137018033*^9}, {3.730310195534986*^9, 3.7303102459558897`*^9}, 
+   3.7303104132016582`*^9, {3.730310698066697*^9, 3.7303107111141987`*^9}, {
+   3.7303109644897547`*^9, 3.7303109824563723`*^9}, {3.730311086471856*^9, 
+   3.730311102972556*^9}, {3.730311171342744*^9, 3.7303111840397663`*^9}, {
+   3.730311749391992*^9, 3.730311756365601*^9}, {3.730311819084784*^9, 
+   3.730311840145195*^9}, {3.730311969453916*^9, 3.730311970925634*^9}, {
+   3.7303120213292503`*^9, 3.730312050282654*^9}, {3.730312090659828*^9, 
+   3.7303121152872458`*^9}, {3.730312182270362*^9, 3.730312207313126*^9}, {
+   3.730312259038289*^9, 3.730312286745372*^9}, {3.7303123257932873`*^9, 
+   3.730312333863021*^9}, {3.730313716487916*^9, 3.7303138524877367`*^9}, {
+   3.730314057750794*^9, 3.730314059320269*^9}, {3.730314129682197*^9, 
+   3.7303141526763067`*^9}, {3.730314192613366*^9, 3.730314193140173*^9}, {
+   3.730314262193569*^9, 3.730314336680517*^9}, {3.730314491681995*^9, 
+   3.7303144988830843`*^9}, {3.730314539528798*^9, 3.730314563354949*^9}, {
+   3.7303145990095043`*^9, 3.730314630439282*^9}, 3.730314743232086*^9, {
+   3.730314861201942*^9, 3.7303149260214243`*^9}, {3.730314969051227*^9, 
+   3.730314970905581*^9}, {3.7303153588602247`*^9, 3.7303153732784*^9}, {
+   3.730315487524181*^9, 3.7303155036765537`*^9}, 3.730315596873624*^9},
+ CellLabel->
+  "In[226]:=",ExpressionUUID->"130bed2e-ed11-49fe-bf77-c6cb093353b0"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"refInfoRule", "=", 
+   RowBox[{"Rule", "@@@", "refInfo"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.7303155844177923`*^9, 3.7303156102611837`*^9}},
+ CellLabel->
+  "In[227]:=",ExpressionUUID->"460d14bf-b48d-4f67-ac3a-37a15f60800f"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"refInfo", "//", "showTitle"}]], "Input",
+ CellChangeTimes->{{3.730314751465187*^9, 3.730314757959207*^9}, {
+  3.730315407750834*^9, 3.730315411541917*^9}},
+ CellLabel->
+  "In[228]:=",ExpressionUUID->"9cba0d63-3b06-4027-8bc3-c2cbe2d7b1bf"],
+
+Cell[BoxData[
+ TagBox[
+  TagBox[GridBox[{
+     {
+      StyleBox["\[Null]",
+       ShowStringCharacters->False], "1", "2"},
+     {"1", "\<\"\\\"AnOHM17\\\"\"\>", "\<\"<ref name=\\\"AnOHM17\\\"> Sun T, \
+Wang ZH, Oechel W & Grimmond CSB (2017) The Analytical Objective Hysteresis \
+Model (AnOHM v1.0): Methodology to Determine Bulk Storage Heat Flux \
+Coefficients. Geosci. Model Dev. Discuss. doi: \
+10.5194/gmd-2016-300.</ref>\"\>"},
+     {"2", "\<\"\\\"Au74\\\"\"\>", "\<\"<ref name=\\\"Au74\\\">Auer AH (1974) \
+The rain versus snow threshold temperatures. Weatherwise, 27, \
+67.</ref>\"\>"},
+     {"3", "\<\"\\\"B71\\\"\"\>", "\<\"<ref name=\\\"B71\\\">Businger JA, \
+Wyngaard JC, Izumi Y & Bradley EF (1971) Flux-Profile Relationships in the \
+Atmospheric Surface Layer. J. Atmos. Sci., 28, 181\[Dash]189.</ref>\"\>"},
+     {"4", "\<\"\\\"Best2014\\\"\"\>", "\<\"<ref name=\\\"Best2014\\\"> Best \
+MJ & Grimmond CSB (2014) Importance of initial state and atmospheric \
+conditions for urban land surface models\[CloseCurlyQuote] performance. Urban \
+Climate 10: 387-406. doi: 10.1016/j.uclim.2013.10.006. </ref>\"\>"},
+     {"5", "\<\"\\\"Br03\\\"\"\>", "\<\"<ref name=\\\"Br03\\\">Breuer L, \
+Eckhardt K and Frede H-G (2003) Plant parameter values for models in \
+temperate climates. Ecol. Model. 169, 237-293.</ref>\"\>"},
+     {"6", "\<\"\\\"CG2001\\\"\"\>", "\<\"<ref name=\\\"CG2001\\\"> Cleugh HA \
+& Grimmond CSB (2001) Modelling regional scale surface energy exchanges and \
+CBL growth in a heterogeneous, urban-rural landscape. Bound.-Layer Meteor. \
+98, 1-31.</ref>\"\>"},
+     {"7", "\<\"\\\"CNstab\\\"\"\>", "\<\"<ref name=\\\"CNstab\\\">Campbell \
+GS & Norman JM (1998) Introduction to Environmental Biophysics. Springer \
+Science, US.</ref>\"\>"},
+     {"8", "\<\"\\\"CW86\\\"\"\>", "\<\"<ref name=\\\"CW86\\\">Calder IR and \
+Wright IR (1986) Gamma Ray Attenuation Studies of Interception From Sitka \
+Spruce: Some Evidence for an Additional Transport Mechanism. Water Resour. \
+Res., 22(3), 409\[Dash]417.</ref>\"\>"},
+     {"9", "\<\"\\\"D74\\\"\"\>", "\<\"<ref name=\\\"D74\\\">Dyer AJ (1974) A \
+review of flux-profile relationships. Boundary-Layer Meteorol. 7, \
+363-372.</ref>\"\>"},
+     {"10", "\<\"\\\"FL2008\\\"\"\>", "\<\"<ref name=\\\"FL2008\\\"> Lindberg \
+F, Holmer B & Thorsson S (2008) SOLWEIG 1.0 \[Dash] Modelling spatial \
+variations of 3D radiant fluxes and mean radiant temperature in complex urban \
+settings. International Journal of Biometeorology 52, \
+697\[Dash]713.</ref>\"\>"},
+     {"11", "\<\"\\\"FL2011\\\"\"\>", "\<\"<ref name=\\\"FL2011\\\"> Lindberg \
+F & Grimmond C (2011) The influence of vegetation and building morphology on \
+shadow patterns and mean radiant temperature in urban areas: model \
+development and evaluation. Theoretical and Applied Climatology 105:3, \
+311-323.</ref>\"\>"},
+     {"12", "\<\"\\\"FN78\\\"\"\>", "\<\"<ref name=\\\"FN78\\\">Falk J & \
+Niemczynowicz J, (1978) Characteristics of the above ground runoff in sewered\
+\\ncatchments, in Urban Storm Drainage, edited by Helliwell PR, Pentech, \
+London</ref>\"\>"},
+     {"13", "\<\"\\\"G86\\\"\"\>", "\<\"<ref name=\\\"G86\\\">Grimmond CSB, \
+Oke TR and Steyn DG (1986) Urban water-balance 1. A model for daily totals. \
+Water Resour Res 22: 1397-1403.</ref>\"\>"},
+     {"14", "\<\"\\\"G91\\\"\"\>", "\<\"<ref name=\\\"G91\\\">Grimmond CSB & \
+Oke TR (1991) An Evaporation-Interception Model for Urban Areas. Water \
+Resour. Res. 27, 1739-1755. </ref>\"\>"},
+     {"15", "\<\"\\\"G91OHM\\\"\"\>", "\<\"<ref name=\\\"G91OHM\\\"> Grimmond \
+CSB, Cleugh HA & Oke TR (1991) An objective urban heat storage model and its \
+comparison with other schemes. Atmos. Env. 25B, 311-174.</ref>\"\>"},
+     {"16", "\<\"\\\"GO2002\\\"\"\>", "\<\"<ref name=\\\"GO2002\\\"> Grimmond \
+CSB & Oke TR (2002) Turbulent Heat Fluxes in Urban Areas: Observations and a \
+Local-Scale Urban Meteorological Parameterization Scheme (LUMPS) J. Appl. \
+Meteorol. 41, 792-810.</ref>\"\>"},
+     {"17", "\<\"\\\"GO99\\\"\"\>", "\<\"<ref name=\\\"GO99\\\">Grimmond CSB \
+& Oke TR (1999) Aerodynamic properties of urban areas derived from analysis \
+of surface form. J. Appl. Meteorol. 38, 1262-1292.</ref>\"\>"},
+     {"18", "\<\"\\\"GO99QS\\\"\"\>", "\<\"<ref name=\\\"GO99QS\\\">Grimmond \
+CSB & Oke TR (1999a) Heat storage in urban areas: Local-scale observations \
+and evaluation of a simple model. J. Appl. Meteorol. 38, \
+922-940.</ref>\"\>"},
+     {"19", "\<\"\\\"H88\\\"\"\>", "\<\"<ref \
+name=\\\"H88\\\">H\[ODoubleDot]gstr\[ODoubleDot]m U (1988) Non-dimensional \
+wind and temperature profiles in the atmospheric surface layer: A \
+re-evaluation. Boundary-Layer Meteorol. 42, 55\[Dash]78.</ref>\"\>"},
+     {"20", "\<\"\\\"Ha79\\\"\"\>", "\<\"<ref name=\\\"Ha79\\\">Halldin S, \
+Grip H & Perttu K. (1979) Model for energy exchange of a pine forest canopy. \
+In: Halldin S (Ed.), Comparison of Forest Water and Energy Exchange Models. \
+International Society of Ecological Modeling</ref>\"\>"},
+     {"21", "\<\"\\\"I11\\\"\"\>", "\<\"<ref name=\\\"I11\\\"> Iamarino M, \
+Beevers S & Grimmond CSB (2011) High-resolution (space, time) anthropogenic \
+heat emissions: London 1970-2025. International J. of Climatology. 32, \
+1754-1767.</ref>\"\>"},
+     {"22", "\<\"\\\"J11\\\"\"\>", "\<\"<ref \
+name=\\\"J11\\\">J\[ADoubleDot]rvi L, Grimmond CSB & Christen A (2011) The \
+Surface Urban Energy and Water Balance Scheme (SUEWS): Evaluation in Los \
+Angeles and Vancouver. J. Hydrol. 411, 219-237.</ref>\"\>"},
+     {"23", "\<\"\\\"Ja76\\\"\"\>", "\<\"<ref name=\\\"Ja76\\\">Jarvis PG \
+(1976) The interpretation of the variations in leaf water potential and \
+stomatal\\nconductance found in canopies in the field. Philos. Trans. R. Soc. \
+London, Ser. B., 273, 593-610.</ref>\"\>"},
+     {"24", "\<\"\\\"Ka07\\\"\"\>", "\<\"<ref name=\\\"Ka07\\\">Kanda M, \
+Kanega M, Kawai T, Moriwaki R & Sugawara H (2007). Roughness lengths for \
+momentum and heat derived from outdoor urban scale models. J. Appl. Meteorol. \
+Clim. 46, 1067-1079.</ref>\"\>"},
+     {"25", "\<\"\\\"Ka09\\\"\"\>", "\<\"<ref name=\\\"Ka09\\\">Kawai T, \
+Ridwan MK & Kanda M (2009) Evaluation of the simple urban energy balance \
+model using selected data from 1-yr flux observations at two cities. J. Appl. \
+Meteorol. Clim. 48, 693-715.</ref>\"\>"},
+     {"26", "\<\"\\\"Ko14\\\"\"\>", "\<\"<ref name=\\\"Ko14\\\">Konarska J, \
+Lindberg F, Larsson A, Thorsson S and Holmer B (2014) Transmissivity of solar \
+radiation through crowns of single urban trees\[LongDash]application for \
+outdoor thermal comfort modelling. Theor Appl Climatol \
+117:363\[Dash]376.</ref>\"\>"},
+     {"27", "\<\"\\\"Ko17\\\"\"\>", "\<\"<ref name=\\\"Ko17\\\"> Kokkonen TV, \
+Grimmond CSB, R\[ADoubleDot]ty O, Ward HC, Christen A, Oke TR, Kotthaus S & J\
+\[ADoubleDot]rvi L (in review) Sensitivity of Surface Urban Energy and Water \
+Balance Scheme (SUEWS) to downscaling of reanalysis forcing data. </ref>\"\>"},
+     {"28", "\<\"\\\"L2011\\\"\"\>", "\<\"<ref name=\\\"L2011\\\"> Loridan T, \
+CSB Grimmond, BD Offerle, DT Young, T Smith, L J\[ADoubleDot]rvi, F Lindberg \
+(2011) Local-Scale Urban Meteorological Parameterization Scheme (LUMPS): \
+longwave radiation parameterization & seasonality related developments. \
+Journal of Applied Meteorology & Climatology 50, 185-202, doi: \
+10.1175/2010JAMC2474.1</ref>\"\>"},
+     {"29", "\<\"\\\"Leena2014\\\"\"\>", "\<\"<ref name=\\\"Leena2014\\\">J\
+\[ADoubleDot]rvi L, Grimmond CSB, Taka M, Nordbo A, Set\[ADoubleDot]l\
+\[ADoubleDot] H & Strachan IB (2014) Development of the Surface Urban Energy \
+and Water balance Scheme (SUEWS) for cold climate cities, Geosci. Model Dev. \
+7, 1691-1711, doi:10.5194/gmd-7-1691-2014.</ref>\"\>"},
+     {"30", "\<\"\\\"LG2012\\\"\"\>", "\<\"<ref name=\\\"LG2012\\\"> Loridan \
+T and Grimmond CSB (2012) Characterization of energy flux partitioning in \
+urban environments: links with surface seasonal properties. J. of Applied \
+Meteorology and Climatology 51,219-241 doi: \
+10.1175/JAMC-D-11-038.1</ref>\"\>"},
+     {"31", "\<\"lucy\"\>", "\<\"<ref name=lucy> Allen L, F Lindberg, CSB \
+Grimmond (2011) Global to city scale model for anthropogenic heat flux, \
+International Journal of Climatology, 31, 1990-2005.</ref>\"\>"},
+     {"32", "\<\"lucy2\"\>", "\<\"<ref name=lucy2>Lindberg F, Grimmond CSB, \
+Nithiandamdan Y, Kotthaus S, Allen L (2013) Impact of city changes and \
+weather on anthropogenic heat flux in Europe 1995\[Dash]2015, Urban \
+Climate,4,1-13 [http://dx.doi.org/10.1016/j.uclim.2013.03.002 \
+paper]</ref>\"\>"},
+     {"33", "\<\"\\\"Mc98\\\"\"\>", "\<\"<ref name=\\\"Mc98\\\">MacDonald RW, \
+Griffiths RF & Hall DJ (1998) An improved method for estimation of surface \
+roughness of obstacle arrays. Atmos. Env. 32, 1857-1864.</ref>\"\>"},
+     {"34", "\<\"\\\"O2003\\\"\"\>", "\<\"<ref name=\\\"O2003\\\"> Offerle B, \
+Grimmond CSB & Oke TR (2003) Parameterization of Net All-Wave Radiation for \
+Urban Areas. J. Appl. Meteorol. 42, 1157-1173.</ref>\"\>"},
+     {"35", "\<\"\\\"Oaf2005\\\"\"\>", "\<\"<ref name=\\\"Oaf2005\\\"> \
+Offerle B, CSB Grimmond, K Fortuniak (2005) Heat storage & anthropogenic heat \
+flux in relation to the energy balance of a central European city center. \
+International J. of Climatology. 25: 1405\[Dash]1419 doi: \
+10.1002/joc.1198</ref>\"\>"},
+     {"36", "\<\"\\\"Ok87\\\"\"\>", "\<\"<ref name=\\\"Ok87\\\">Oke TR (1987) \
+Boundary Layer Climates. Routledge, London, UK</ref>\"\>"},
+     {"37", "\<\"\\\"Re90\\\"\"\>", "\<\"<ref name=\\\"Re90\\\"> Reindl DT, \
+Beckman WA and Duffie JA (1990) Diffuse fraction correlation. Sol Energy 45:1\
+\[Dash]7.</ref>\"\>"},
+     {"38", "\<\"\\\"Shiho2015\\\"\"\>", "\<\"<ref name=\\\"Shiho2015\\\"> \
+Onomura S, Grimmond CSB, Lindberg F, Holmer B & Thorsson S (2015) \
+Meteorological forcing data for urban outdoor thermal comfort models from a \
+coupled convective boundary layer and surface energy balance scheme Urban \
+Climate,11, 1-23 doi:10.1016/j.uclim.2014.11.001</ref>\"\>"},
+     {"39", "\<\"\\\"SV06\\\"\"\>", "\<\"<ref name=\\\"SV06\\\">Sailor DJ and \
+Vasireddy C (2006) Correcting aggregate energy consumption data account for \
+variability in local weather. Environ. Modell. Softw. 21, 733-738.</ref>\"\>"},
+     {"40", "\<\"\\\"VG00\\\"\"\>", "\<\"<ref name=\\\"VG00\\\">Voogt JA & \
+Grimmond CSB (2000) Modeling surface sensible heat flux using surface \
+radiative temperatures in a simple urban terrain. J. Appl. Meteorol. 39, \
+1679-1699.</ref>\"\>"},
+     {"41", "\<\"\\\"VUH85\\\"\"\>", "\<\"<ref name=\\\"VUH85\\\">Van Ulden \
+AP & Holtslag AAM (1985) Estimation of atmospheric boundary layer parameters \
+for boundary layer applications. J. Clim. Appl. Meteorol. 24, \
+1196-1207.</ref>\"\>"},
+     {"42", "\<\"\\\"W16\\\"\"\>", "\<\"<ref name=\\\"W16\\\">Ward HC, \
+Kotthaus S, J\[ADoubleDot]rvi L and Grimmond CSB 2016: Surface Urban Energy \
+and Water Balance Scheme (SUEWS): development and evaluation at two UK sites. \
+Urban Climate. 18, 1-32 [https://doi.org/10.1016/j.uclim.2016.05.001 doi: \
+10.1016/j.uclim.2016.05.001]</ref>\"\>"}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxDividers->{
+     "Columns" -> {False, True, {False}, False}, "ColumnsIndexed" -> {}, 
+      "Rows" -> {False, True, {False}, False}, "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[2.0999999999999996`]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}],
+   {OutputFormsDump`HeadedRows, OutputFormsDump`HeadedColumns}],
+  Function[BoxForm`e$, 
+   TableForm[BoxForm`e$, TableHeadings -> Automatic]]]], "Output",
+ CellChangeTimes->{{3.730314751817894*^9, 3.7303147582756567`*^9}, 
+   3.730314874763019*^9, {3.7303154088119373`*^9, 3.730315412053653*^9}, 
+   3.73034788149752*^9},
+ CellLabel->
+  "Out[228]//TableForm=",ExpressionUUID->"4bb56685-3275-4fec-865e-\
+63242e3d4375"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"refRule", "=", 
+  RowBox[{"refCase", "/.", 
+   RowBox[{"name_String", ":>", 
+    RowBox[{"{", 
+     RowBox[{"name", "->", 
+      RowBox[{"StringDelete", "[", 
+       RowBox[{"name", ",", 
+        RowBox[{"{", 
+         RowBox[{"\"\<<ref name=\>\"", ",", "\"\</>\>\""}], "}"}]}], "]"}]}], 
+     "}"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.730315454058715*^9, 3.7303154566628113`*^9}, {
+  3.730315518990141*^9, 3.730315562413536*^9}},
+ CellLabel->
+  "In[229]:=",ExpressionUUID->"b3d8ead7-7665-476a-b0c5-55973282e018"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\<\"<ref name=\\\"B71\\\"/>\"\>", 
+     "\[Rule]", "\<\"\\\"B71\\\"\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"<ref name=\\\"Br03\\\"/>\"\>", 
+     "\[Rule]", "\<\"\\\"Br03\\\"\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"<ref name=\\\"CG2001\\\"/>\"\>", 
+     "\[Rule]", "\<\"\\\"CG2001\\\"\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"<ref name=\\\"CNstab\\\"/>\"\>", 
+     "\[Rule]", "\<\"\\\"CNstab\\\"\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"<ref name=\\\"CW86\\\"/>\"\>", 
+     "\[Rule]", "\<\"\\\"CW86\\\"\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"<ref name=\\\"D74\\\"/>\"\>", 
+     "\[Rule]", "\<\"\\\"D74\\\"\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"<ref name=\\\"FL2008\\\"/>\"\>", 
+     "\[Rule]", "\<\"\\\"FL2008\\\"\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"<ref name=\\\"FL2011\\\"/>\"\>", 
+     "\[Rule]", "\<\"\\\"FL2011\\\"\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"<ref name=\\\"FN78\\\"/>\"\>", 
+     "\[Rule]", "\<\"\\\"FN78\\\"\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"<ref name=\\\"G91\\\"/>\"\>", 
+     "\[Rule]", "\<\"\\\"G91\\\"\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"<ref name=\\\"G91OHM\\\"/>\"\>", 
+     "\[Rule]", "\<\"\\\"G91OHM\\\"\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"<ref name=\\\"GO2002\\\"/>\"\>", 
+     "\[Rule]", "\<\"\\\"GO2002\\\"\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"<ref name=\\\"GO99QS\\\"/>\"\>", 
+     "\[Rule]", "\<\"\\\"GO99QS\\\"\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"<ref name=\\\"H88\\\"/>\"\>", 
+     "\[Rule]", "\<\"\\\"H88\\\"\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"<ref name=\\\"Ha79\\\"/>\"\>", 
+     "\[Rule]", "\<\"\\\"Ha79\\\"\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"<ref name=\\\"J11\\\"/>\"\>", 
+     "\[Rule]", "\<\"\\\"J11\\\"\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"<ref name=\\\"Ko14\\\"/>\"\>", 
+     "\[Rule]", "\<\"\\\"Ko14\\\"\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"<ref name=\\\"L2011\\\"/>\"\>", 
+     "\[Rule]", "\<\"\\\"L2011\\\"\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"<ref name=\\\"Leena2014\\\"/>\"\>", 
+     "\[Rule]", "\<\"\\\"Leena2014\\\"\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"<ref name=lucy/>\"\>", "\[Rule]", "\<\"lucy\"\>"}], "}"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"<ref name=lucy2/>\"\>", "\[Rule]", "\<\"lucy2\"\>"}], "}"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"<ref name=\\\"O2003\\\"/>\"\>", 
+     "\[Rule]", "\<\"\\\"O2003\\\"\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"<ref name=\\\"Oaf2005\\\"/>\"\>", 
+     "\[Rule]", "\<\"\\\"Oaf2005\\\"\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"<ref name=\\\"Ok87\\\"/>\"\>", 
+     "\[Rule]", "\<\"\\\"Ok87\\\"\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"<ref name=\\\"Shiho2015\\\"/>\"\>", 
+     "\[Rule]", "\<\"\\\"Shiho2015\\\"\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"<ref name=\\\"Shiho2015\\\" />\"\>", 
+     "\[Rule]", "\<\"\\\"Shiho2015\\\" \"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"<ref name=\\\"W16\\\"/>\"\>", 
+     "\[Rule]", "\<\"\\\"W16\\\"\"\>"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.730315545605342*^9, 3.7303155628882236`*^9}, 
+   3.73034788453654*^9},
+ CellLabel->
+  "Out[229]=",ExpressionUUID->"87a7fc7f-51ee-4f1b-856d-fda1656120c0"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"refCaseRule", "=", 
+   RowBox[{
+    RowBox[{"Flatten", "@", "refRule"}], "/.", "refInfoRule"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.730347263205727*^9, 3.73034728386217*^9}, {
+  3.730347329490261*^9, 3.730347330851269*^9}},
+ CellLabel->
+  "In[230]:=",ExpressionUUID->"7815b597-d740-46b7-b89c-1789ee1ff46e"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"srcReplace", "=", 
+   RowBox[{"StringReplace", "[", 
+    RowBox[{"src", ",", "refCaseRule"}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.730315443552135*^9, 3.7303154482028227`*^9}, {
+  3.7303472280161943`*^9, 3.7303472306562767`*^9}, {3.730347288121817*^9, 
+  3.7303473418317423`*^9}},
+ CellLabel->
+  "In[231]:=",ExpressionUUID->"f45b018d-e409-4bb5-a462-63696722555e"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{
+  "\"\</Users/sunt05/Dropbox/8-Research/98.ReadingWork/SUWES-Docs/docs/wiki_\
+source/SUEWS-manual-ref.wiki\>\"", ",", "srcReplace", ",", "\"\<Text\>\""}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.73034736338658*^9, 3.730347378999723*^9}},
+ CellLabel->
+  "In[232]:=",ExpressionUUID->"e52397a4-9b30-4629-8aa8-ab8e09e07be7"],
+
+Cell[BoxData["\<\"/Users/sunt05/Dropbox/8-Research/98.ReadingWork/SUWES-Docs/\
+docs/wiki_source/SUEWS-manual-ref.wiki\"\>"], "Output",
+ CellChangeTimes->{3.730347379551075*^9, 3.730347891025815*^9},
+ CellLabel->
+  "Out[232]=",ExpressionUUID->"1dbab1e9-3062-47c0-821c-5d5429b60f99"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["replace refs in the `RST` file", "Subsection",
+ CellChangeTimes->{{3.730348359788809*^9, 3.7303483714073877`*^9}, {
+  3.73034847412015*^9, 
+  3.730348475807378*^9}},ExpressionUUID->"f4b00e4e-a944-4425-9194-\
+76e73ec5ed6f"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+  "fileRST", "=", 
+   "\"\</Users/sunt05/Dropbox/8-Research/98.ReadingWork/SUWES-Docs/docs/wiki_\
+source/SUEWS-manual-ref.wiki.rst\>\""}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"srcRST", "=", 
+   RowBox[{"Import", "[", 
+    RowBox[{"fileRST", ",", "\"\<Text\>\""}], "]"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.730348464249947*^9, 3.730348502998616*^9}, {
+  3.730357020164042*^9, 3.730357039578182*^9}},
+ CellLabel->
+  "In[562]:=",ExpressionUUID->"d47b6745-9ab9-4242-a8e3-46ff81d93ff0"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"srcRSTRefText", "=", 
+   RowBox[{"StringCases", "[", 
+    RowBox[{"srcRST", ",", 
+     RowBox[{"\"\<References\>\"", "~~", "__"}]}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.730348535372859*^9, 3.7303485871598377`*^9}},
+ CellLabel->
+  "In[237]:=",ExpressionUUID->"749805a9-8581-4334-8a98-437d1379a345"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"srcRSTRefs", "=", 
+   RowBox[{
+    RowBox[{"StringCases", "[", 
+     RowBox[{"srcRSTRefText", ",", 
+      RowBox[{
+       RowBox[{"Shortest", "[", 
+        RowBox[{"\"\<.. [\>\"", "~~", "__", "~~", "\"\<\\n\\n\>\""}], "]"}], 
+       "|", 
+       RowBox[{"Shortest", "[", 
+        RowBox[{
+        "\"\<.. [\>\"", "~~", "__", "~~", "\"\<]\\n\>\"", "~~", "__", "~~", 
+         "EndOfString"}], "]"}]}]}], "]"}], "\[LeftDoubleBracket]", "1", 
+    "\[RightDoubleBracket]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.730348590974098*^9, 3.7303485923476067`*^9}, {
+   3.7303486582388277`*^9, 3.730348672501946*^9}, {3.7303487852372293`*^9, 
+   3.7303488047675877`*^9}, 3.730348868322515*^9, 3.730349256196288*^9, {
+   3.7303563890943213`*^9, 3.730356421509653*^9}},
+ CellLabel->
+  "In[528]:=",ExpressionUUID->"837bc923-7803-4f0d-a01e-1efb51fab7e0"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Clear", "[", "conformString", "]"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+   "remove", " ", "linebreaks", " ", "and", " ", "consecutive", " ", 
+    "whitespaces", " ", "in", " ", "a", " ", "string"}], 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"conformString", "[", "s_String", "]"}], ":=", 
+  RowBox[{"StringReplace", "[", 
+   RowBox[{
+    RowBox[{"StringReplace", "[", 
+     RowBox[{
+      RowBox[{"StringTrim", "@", "s"}], ",", 
+      RowBox[{
+       RowBox[{"EndOfLine", "~~", "_", "~~", "StartOfLine"}], "\[Rule]", 
+       "\"\< \>\""}]}], "]"}], ",", 
+    RowBox[{"Whitespace", "\[Rule]", "\"\< \>\""}]}], "]"}]}]}], "Input",
+ CellChangeTimes->{{3.730351840504252*^9, 3.73035184863034*^9}, {
+   3.730351925862824*^9, 3.730351970163699*^9}, {3.7303520575875807`*^9, 
+   3.7303521027121897`*^9}, {3.730352880169276*^9, 3.730352887117416*^9}, 
+   3.730353051798839*^9, {3.730353361929612*^9, 3.7303533863273983`*^9}},
+ CellLabel->
+  "In[529]:=",ExpressionUUID->"05fdcae5-cd99-440b-b5de-03bf73b45ae5"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{"ref", " ", "info"}], " ", "\[Rule]", " ", "position"}], "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"refInfoPosRule", "=", 
+    RowBox[{"SortBy", "[", 
+     RowBox[{
+      RowBox[{"Normal", "@", 
+       RowBox[{
+        RowBox[{"KeyMap", "[", "conformString", "]"}], "@", 
+        RowBox[{"PositionIndex", "[", 
+         RowBox[{
+          RowBox[{"StringSplit", "[", 
+           RowBox[{"srcRSTRefs", ",", "\"\<]\\n\>\""}], "]"}], 
+          "\[LeftDoubleBracket]", 
+          RowBox[{"All", ",", "2"}], "\[RightDoubleBracket]"}], "]"}]}]}], 
+      ",", "First"}], "]"}]}], ";"}]}]], "Input",
+ CellChangeTimes->{{3.730349223289198*^9, 3.7303492281186457`*^9}, {
+   3.7303492591539383`*^9, 3.730349265149424*^9}, {3.730349298563064*^9, 
+   3.7303493093173313`*^9}, {3.7303493416229687`*^9, 3.7303493683010283`*^9}, 
+   3.7303518163345947`*^9, {3.7303520859186897`*^9, 3.730352142290813*^9}, {
+   3.730353114324882*^9, 3.730353122433524*^9}, {3.7303531790134363`*^9, 
+   3.730353179860779*^9}, {3.730353821779587*^9, 3.730353834524314*^9}, {
+   3.7303540711755257`*^9, 3.73035407371597*^9}},
+ CellLabel->
+  "In[531]:=",ExpressionUUID->"047bbee3-39b5-4fe6-a5a4-850ef16464a7"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"key", " ", "\[Rule]", " ", 
+    RowBox[{"ref", " ", "info"}]}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"refKeyInfoRule", "=", 
+    RowBox[{"SortBy", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"refInfoRule", "/.", 
+        RowBox[{"s_String", "\[RuleDelayed]", 
+         RowBox[{"StringDelete", "[", 
+          RowBox[{"s", ",", 
+           RowBox[{"Shortest", "[", 
+            RowBox[{"\"\<<\>\"", "~~", "__", "~~", "\"\<>\>\""}], "]"}]}], 
+          "]"}]}]}], "/.", 
+       RowBox[{"s_String", "\[RuleDelayed]", 
+        RowBox[{"conformString", "@", "s"}]}]}], ",", "Last"}], "]"}]}], " ", 
+   ";"}]}]], "Input",
+ CellChangeTimes->{{3.730349483112008*^9, 3.730349542637926*^9}, {
+  3.7303496538692513`*^9, 3.730349655002323*^9}, {3.73035171900991*^9, 
+  3.730351722271223*^9}, {3.730352165815061*^9, 3.7303521966842623`*^9}, {
+  3.730353095976942*^9, 3.730353109132558*^9}, {3.7303531832683477`*^9, 
+  3.7303531843042994`*^9}, {3.730353855097432*^9, 3.73035386094499*^9}},
+ CellLabel->
+  "In[532]:=",ExpressionUUID->"86eb8db9-d398-4f86-9e03-5ba79d61c13b"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"key", ",", "info"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"info", ",", "pos"}], "}"}]}], "}"}], "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"refKeyPos", "=", 
+    RowBox[{"Table", "[", 
+     RowBox[{
+      RowBox[{"List", "@@@", 
+       RowBox[{"Flatten", "@", 
+        RowBox[{"{", 
+         RowBox[{"ref", ",", 
+          RowBox[{"MaximalBy", "[", 
+           RowBox[{"refInfoPosRule", ",", 
+            RowBox[{
+             RowBox[{"NeedlemanWunschSimilarity", "[", 
+              RowBox[{
+               RowBox[{
+               "#", "\[LeftDoubleBracket]", "1", "\[RightDoubleBracket]"}], 
+               ",", 
+               RowBox[{
+               "ref", "\[LeftDoubleBracket]", "2", 
+                "\[RightDoubleBracket]"}]}], "]"}], "&"}], ",", "1"}], 
+           "]"}]}], "}"}]}]}], ",", 
+      RowBox[{"{", 
+       RowBox[{"ref", ",", "refKeyInfoRule"}], "}"}]}], "]"}]}], 
+   ";"}]}]], "Input",
+ CellChangeTimes->{{3.7303496648342943`*^9, 3.7303496992926273`*^9}, {
+   3.730349742741582*^9, 3.730349767830954*^9}, {3.730350283586803*^9, 
+   3.7303502873519373`*^9}, {3.730350944300551*^9, 3.730350958891275*^9}, 
+   3.730352210938285*^9, {3.7303531583491983`*^9, 3.7303531642088757`*^9}, {
+   3.730353998054001*^9, 3.730354052690921*^9}, {3.730354093406988*^9, 
+   3.7303541952448883`*^9}, {3.7303542642469597`*^9, 
+   3.7303543116200027`*^9}, {3.730354345999968*^9, 3.73035436332543*^9}, {
+   3.730354408814986*^9, 3.73035447314655*^9}, {3.730354691261383*^9, 
+   3.730354692902706*^9}, {3.730354849144794*^9, 3.730354871789936*^9}, {
+   3.730355603660653*^9, 3.73035561407612*^9}},
+ CellLabel->
+  "In[533]:=",ExpressionUUID->"5bed489f-997c-465f-a710-457983484b3c"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"refKeyPosRule", "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Flatten", "[", 
+      RowBox[{"refKeyPos", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "1", "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"2", ",", "3"}], "}"}]}], "}"}]}], "]"}], 
+     "\[LeftDoubleBracket]", 
+     RowBox[{"All", ",", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", 
+        RowBox[{"-", "1"}]}], "}"}]}], "\[RightDoubleBracket]"}], "/.", 
+    RowBox[{"s_String", "\[RuleDelayed]", 
+     RowBox[{"StringDelete", "[", 
+      RowBox[{"s", ",", "\"\<\\\"\>\""}], "]"}]}]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.730354854059037*^9, 3.730354860785501*^9}, {
+  3.730354899656307*^9, 3.730354934034375*^9}, {3.730355103083212*^9, 
+  3.730355128416664*^9}},
+ CellLabel->
+  "In[534]:=",ExpressionUUID->"1713bdd7-1165-4777-9feb-435de503411f"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{"position", " ", "key"}], " ", "\[Rule]", " ", 
+    RowBox[{"named", " ", "key"}]}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"refPosKeyRule", "=", 
+    RowBox[{"Flatten", "[", 
+     RowBox[{"(", 
+      RowBox[{"refKeyPosRule", "/.", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"name_String", ",", "pos_List"}], "}"}], "\[RuleDelayed]", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"StringJoin", "[", 
+              RowBox[{"\"\<[\>\"", ",", 
+               RowBox[{"ToString", "@", "#"}], ",", "\"\<]\>\""}], "]"}], 
+             "\[Rule]", 
+             RowBox[{"StringJoin", "[", 
+              RowBox[{"\"\<[\>\"", ",", "name", ",", "\"\<]\>\""}], "]"}]}], 
+            ")"}], "&"}], "/@", "pos"}], "}"}]}]}], ")"}], "]"}]}], 
+   ";"}]}]], "Input",
+ CellChangeTimes->{{3.730355160254135*^9, 3.7303552687383547`*^9}, {
+  3.730355311296225*^9, 3.730355372101156*^9}, {3.730355410229865*^9, 
+  3.730355488674499*^9}},
+ CellLabel->
+  "In[535]:=",ExpressionUUID->"14a75931-b82e-493b-aacd-74520cf3251d"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"srcRSTRefReplaced", "=", 
+   RowBox[{"StringReplace", "[", 
+    RowBox[{"srcRST", ",", "refPosKeyRule"}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.730355137561325*^9, 3.7303551502393303`*^9}, {
+  3.7303554934784727`*^9, 3.730355508709003*^9}, {3.730356571837916*^9, 
+  3.730356578957292*^9}},
+ CellLabel->
+  "In[538]:=",ExpressionUUID->"ca7b6fd8-d818-4945-9122-e7d3f35d9227"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"delete", " ", "duplicate", " ", "entries"}], "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"srcRSTRefReplacedText", "=", 
+     RowBox[{"StringCases", "[", 
+      RowBox[{"srcRSTRefReplaced", ",", 
+       RowBox[{"\"\<References\>\"", "~~", "__"}]}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"srcRSTRefClean", "=", 
+     RowBox[{"DeleteDuplicates", "@", 
+      RowBox[{
+       RowBox[{"StringCases", "[", 
+        RowBox[{"srcRSTRefReplacedText", ",", 
+         RowBox[{
+          RowBox[{"Shortest", "[", 
+           RowBox[{"\"\<.. [\>\"", "~~", "__", "~~", "\"\<\\n\\n\>\""}], 
+           "]"}], "|", 
+          RowBox[{"Shortest", "[", 
+           RowBox[{
+           "\"\<.. [\>\"", "~~", "__", "~~", "\"\<]\\n\>\"", "~~", "__", "~~",
+             "EndOfString"}], "]"}]}]}], "]"}], "\[LeftDoubleBracket]", "1", 
+       "\[RightDoubleBracket]"}]}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"srcRSTRefTextClean", "=", 
+     RowBox[{"StringRiffle", "[", 
+      RowBox[{"srcRSTRefClean", ",", "\"\<\\n\>\""}], "]"}]}], 
+    ";"}]}]}]], "Input",
+ CellChangeTimes->{
+  3.7303565896701193`*^9, {3.730356622664798*^9, 3.73035664484789*^9}, {
+   3.7303566756753674`*^9, 3.730356678610881*^9}, {3.730356752513286*^9, 
+   3.730356812586196*^9}},ExpressionUUID->"020ae8b3-1bcf-4d8c-969e-\
+a4cf36670759"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"srcRSTRefTextHead", "=", 
+   RowBox[{"StringCases", "[", 
+    RowBox[{"srcRSTRefReplaced", ",", 
+     RowBox[{
+     "\"\<References\>\"", "~~", "__", "~~", "\"\< <references />\>\""}]}], 
+    "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.730356846371458*^9, 3.7303568754074078`*^9}},
+ CellLabel->
+  "In[556]:=",ExpressionUUID->"8a7bfe8e-1fd7-4a18-9032-0da4e0c3f4b4"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"StringJoin", "[", 
+  RowBox[{
+  "srcRSTRefTextHead", ",", "\"\<\\n\\n\>\"", ",", "srcRSTRefTextClean"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.7303568891952343`*^9, 3.730356904851466*^9}},
+ CellLabel->
+  "In[559]:=",ExpressionUUID->"56f3c218-fe71-4008-8386-e22e8a0924db"],
+
+Cell[BoxData["\<\"References\\n==========\\n\\n.. raw:: html\\n\\n   \
+<references />\\n\\n.. [J11]\\n   J\[ADoubleDot]rvi L, Grimmond CSB & \
+Christen A (2011) The Surface Urban Energy\\n   and Water Balance Scheme \
+(SUEWS): Evaluation in Los Angeles and\\n   Vancouver. J. Hydrol. 411, \
+219-237.\\n\\n\\n.. [W16]\\n   Ward HC, Kotthaus S, J\[ADoubleDot]rvi L and \
+Grimmond CSB 2016: Surface Urban\\n   Energy and Water Balance Scheme \
+(SUEWS): development and evaluation\\n   at two UK sites. Urban Climate. 18, \
+1-32 `doi:\\n   10.1016/j.uclim.2016.05.001 \
+<https://doi.org/10.1016/j.uclim.2016.05.001>`__\\n\\n\\n.. [G91]\\n   \
+Grimmond CSB & Oke TR (1991) An Evaporation-Interception Model for\\n   Urban \
+Areas. Water Resour. Res. 27, 1739-1755.\\n\\n\\n.. [O2003]\\n   Offerle B, \
+Grimmond CSB & Oke TR (2003) Parameterization of Net\\n   All-Wave Radiation \
+for Urban Areas. J. Appl. Meteorol. 42, 1157-1173.\\n\\n\\n.. [L2011]\\n   \
+Loridan T, CSB Grimmond, BD Offerle, DT Young, T Smith, L J\[ADoubleDot]rvi, \
+F\\n   Lindberg (2011) Local-Scale Urban Meteorological Parameterization\\n   \
+Scheme (LUMPS): longwave radiation parameterization & seasonality\\n   \
+related developments. Journal of Applied Meteorology & Climatology\\n   50, \
+185-202, doi: 10.1175/2010JAMC2474.1\\n\\n\\n.. [lucy]\\n   Allen L, F \
+Lindberg, CSB Grimmond (2011) Global to city scale model\\n   for \
+anthropogenic heat flux, International Journal of Climatology,\\n   31, \
+1990-2005.\\n\\n\\n.. [lucy2]\\n   Lindberg F, Grimmond CSB, Nithiandamdan Y, \
+Kotthaus S, Allen L (2013)\\n   Impact of city changes and weather on \
+anthropogenic heat flux in\\n   Europe 1995\[Dash]2015, Urban \
+Climate,4,1-13\\n   `paper <http://dx.doi.org/10.1016/j.uclim.2013.03.002>`__\
+\\n\\n\\n.. [I11]\\n   Iamarino M, Beevers S & Grimmond CSB (2011) \
+High-resolution (space,\\n   time) anthropogenic heat emissions: London \
+1970-2025. International\\n   J. of Climatology. 32, 1754-1767.\\n\\n\\n.. \
+[G91OHM]\\n   Grimmond CSB, Cleugh HA & Oke TR (1991) An objective urban heat\
+\\n   storage model and its comparison with other schemes. Atmos. Env. \
+25B,\\n   311-174.\\n\\n\\n.. [GO99QS]\\n   Grimmond CSB & Oke TR (1999a) \
+Heat storage in urban areas:\\n   Local-scale observations and evaluation of \
+a simple model. J. Appl.\\n   Meteorol. 38, 922-940.\\n\\n\\n.. [GO2002]\\n   \
+Grimmond CSB & Oke TR (2002) Turbulent Heat Fluxes in Urban Areas:\\n   \
+Observations and a Local-Scale Urban Meteorological Parameterization\\n   \
+Scheme (LUMPS) J. Appl. Meteorol. 41, 792-810.\\n\\n\\n.. [AnOHM17]\\n   Sun \
+T, Wang ZH, Oechel W & Grimmond CSB (2017) The Analytical\\n   Objective \
+Hysteresis Model (AnOHM v1.0): Methodology to Determine\\n   Bulk Storage \
+Heat Flux Coefficients. Geosci. Model Dev. Discuss. doi:\\n   \
+10.5194/gmd-2016-300.\\n\\n\\n.. [Oaf2005]\\n   Offerle B, CSB Grimmond, K \
+Fortuniak (2005) Heat storage &\\n   anthropogenic heat flux in relation to \
+the energy balance of a\\n   central European city center. International J. \
+of Climatology. 25:\\n   1405\[Dash]1419 doi: 10.1002/joc.1198\\n\\n\\n.. \
+[G86]\\n   Grimmond CSB, Oke TR and Steyn DG (1986) Urban water-balance 1. \
+A\\n   model for daily totals. Water Resour Res 22: 1397-1403.\\n\\n\\n.. \
+[Leena2014]\\n   J\[ADoubleDot]rvi L, Grimmond CSB, Taka M, Nordbo A, Set\
+\[ADoubleDot]l\[ADoubleDot] H & Strachan IB\\n   (2014) Development of the \
+Surface Urban Energy and Water balance\\n   Scheme (SUEWS) for cold climate \
+cities, Geosci. Model Dev. 7,\\n   1691-1711, doi:10.5194/gmd-7-1691-2014.\\n\
+\\n\\n.. [CG2001]\\n   Cleugh HA & Grimmond CSB (2001) Modelling regional \
+scale surface\\n   energy exchanges and CBL growth in a heterogeneous, \
+urban-rural\\n   landscape. Bound.-Layer Meteor. 98, 1-31.\\n\\n\\n.. \
+[Shiho2015]\\n   Onomura S, Grimmond CSB, Lindberg F, Holmer B & Thorsson S \
+(2015)\\n   Meteorological forcing data for urban outdoor thermal comfort \
+models\\n   from a coupled convective boundary layer and surface energy \
+balance\\n   scheme Urban Climate,11, 1-23 doi:10.1016/j.uclim.2014.11.001\\n\
+\\n\\n.. [FL2008]\\n   Lindberg F, Holmer B & Thorsson S (2008) SOLWEIG 1.0 \
+\[Dash] Modelling\\n   spatial variations of 3D radiant fluxes and mean \
+radiant temperature\\n   in complex urban settings. International Journal of \
+Biometeorology\\n   52, 697\[Dash]713.\\n\\n\\n.. [FL2011]\\n   Lindberg F & \
+Grimmond C (2011) The influence of vegetation and\\n   building morphology on \
+shadow patterns and mean radiant temperature\\n   in urban areas: model \
+development and evaluation. Theoretical and\\n   Applied Climatology 105:3, \
+311-323.\\n\\n\\n.. [Ko17]\\n   Kokkonen TV, Grimmond CSB, R\[ADoubleDot]ty \
+O, Ward HC, Christen A, Oke TR,\\n   Kotthaus S & J\[ADoubleDot]rvi L (in \
+review) Sensitivity of Surface Urban Energy\\n   and Water Balance Scheme \
+(SUEWS) to downscaling of reanalysis forcing\\n   data.\\n\\n\\n.. [Best2014]\
+\\n   Best MJ & Grimmond CSB (2014) Importance of initial state and\\n   \
+atmospheric conditions for urban land surface models\[CloseCurlyQuote] \
+performance.\\n   Urban Climate 10: 387-406. doi: \
+10.1016/j.uclim.2013.10.006.\\n\\n\\n.. [D74]\\n   Dyer AJ (1974) A review of \
+flux-profile relationships. Boundary-Layer\\n   Meteorol. 7, \
+363-372.\\n\\n\\n.. [H88]\\n   H\[ODoubleDot]gstr\[ODoubleDot]m U (1988) \
+Non-dimensional wind and temperature profiles in\\n   the atmospheric surface \
+layer: A re-evaluation. Boundary-Layer\\n   Meteorol. 42, \
+55\[Dash]78.\\n\\n\\n.. [VUH85]\\n   Van Ulden AP & Holtslag AAM (1985) \
+Estimation of atmospheric boundary\\n   layer parameters for boundary layer \
+applications. J. Clim. Appl.\\n   Meteorol. 24, 1196-1207.\\n\\n\\n.. \
+[CNstab]\\n   Campbell GS & Norman JM (1998) Introduction to Environmental\\n \
+  Biophysics. Springer Science, US.\\n\\n\\n.. [B71]\\n   Businger JA, \
+Wyngaard JC, Izumi Y & Bradley EF (1971) Flux-Profile\\n   Relationships in \
+the Atmospheric Surface Layer. J. Atmos. Sci., 28,\\n   \
+181\[Dash]189.\\n\\n\\n.. [Ka09]\\n   Kawai T, Ridwan MK & Kanda M (2009) \
+Evaluation of the simple urban\\n   energy balance model using selected data \
+from 1-yr flux observations\\n   at two cities. J. Appl. Meteorol. Clim. 48, \
+693-715.\\n\\n\\n.. [VG00]\\n   Voogt JA & Grimmond CSB (2000) Modeling \
+surface sensible heat flux\\n   using surface radiative temperatures in a \
+simple urban terrain. J.\\n   Appl. Meteorol. 39, 1679-1699.\\n\\n\\n.. \
+[Ka07]\\n   Kanda M, Kanega M, Kawai T, Moriwaki R & Sugawara H (2007). \
+Roughness\\n   lengths for momentum and heat derived from outdoor urban scale\
+\\n   models. J. Appl. Meteorol. Clim. 46, 1067-1079.\\n\\n\\n.. [GO99]\\n   \
+Grimmond CSB & Oke TR (1999) Aerodynamic properties of urban areas\\n   \
+derived from analysis of surface form. J. Appl. Meteorol. 38,\\n   1262-1292.\
+\\n\\n\\n.. [Mc98]\\n   MacDonald RW, Griffiths RF & Hall DJ (1998) An \
+improved method for\\n   estimation of surface roughness of obstacle arrays. \
+Atmos. Env. 32,\\n   1857-1864.\\n\\n\\n.. [FN78]\\n   Falk J & Niemczynowicz \
+J, (1978) Characteristics of the above ground\\n   runoff in sewered \
+catchments, in Urban Storm Drainage, edited by\\n   Helliwell PR, Pentech, \
+London\\n\\n\\n.. [Ha79]\\n   Halldin S, Grip H & Perttu K. (1979) Model for \
+energy exchange of a\\n   pine forest canopy. In: Halldin S (Ed.), Comparison \
+of Forest Water\\n   and Energy Exchange Models. International Society of \
+Ecological\\n   Modeling\\n\\n\\n.. [CW86]\\n   Calder IR and Wright IR \
+(1986) Gamma Ray Attenuation Studies of\\n   Interception From Sitka Spruce: \
+Some Evidence for an Additional\\n   Transport Mechanism. Water Resour. Res., \
+22(3), 409\[Dash]417.\\n\\n\\n.. [Ok87]\\n   Oke TR (1987) Boundary Layer \
+Climates. Routledge, London, UK\\n\\n\\n.. [Br03]\\n   Breuer L, Eckhardt K \
+and Frede H-G (2003) Plant parameter values for\\n   models in temperate \
+climates. Ecol. Model. 169, 237-293.\\n\\n\\n.. [Ja76]\\n   Jarvis PG (1976) \
+The interpretation of the variations in leaf water\\n   potential and \
+stomatal conductance found in canopies in the field.\\n   Philos. Trans. R. \
+Soc. London, Ser. B., 273, 593-610.\\n\\n\\n.. [Au74]\\n   Auer AH (1974) The \
+rain versus snow threshold temperatures.\\n   Weatherwise, 27, 67.\\n\\n\\n.. \
+[SV06]\\n   Sailor DJ and Vasireddy C (2006) Correcting aggregate energy\\n   \
+consumption data account for variability in local weather. Environ.\\n   \
+Modell. Softw. 21, 733-738.\\n\\n\\n.. [Ko14]\\n   Konarska J, Lindberg F, \
+Larsson A, Thorsson S and Holmer B (2014)\\n   Transmissivity of solar \
+radiation through crowns of single urban\\n   trees\[LongDash]application for \
+outdoor thermal comfort modelling. Theor Appl\\n   Climatol \
+117:363\[Dash]376.\\n\\n\\n.. [Re90]\\n   Reindl DT, Beckman WA and Duffie JA \
+(1990) Diffuse fraction\\n   correlation. Sol Energy 45:1\[Dash]7.\\n\\n\\n.. \
+[LG2012]\\n   Loridan T and Grimmond CSB (2012) Characterization of energy \
+flux\\n   partitioning in urban environments: links with surface seasonal\\n  \
+ properties. J. of Applied Meteorology and Climatology 51,219-241 doi:\\n   \
+10.1175/JAMC-D-11-038.1\"\>"], "Output",
+ CellChangeTimes->{{3.730356900796352*^9, 3.730356905345389*^9}},
+ CellLabel->
+  "Out[559]=",ExpressionUUID->"55baa16d-3fed-4e96-8ca5-69845cb30558"]
+}, Closed]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"srcRSTOut", "=", 
+   RowBox[{"StringJoin", "[", 
+    RowBox[{
+     RowBox[{"StringDelete", "[", 
+      RowBox[{"srcRSTRefReplaced", ",", 
+       RowBox[{"\"\<References\>\"", "~~", "__"}]}], "]"}], ",", 
+     "\"\<\\n\\n\>\"", ",", 
+     RowBox[{"StringJoin", "[", 
+      RowBox[{
+      "srcRSTRefTextHead", ",", "\"\<\\n\\n\>\"", ",", "srcRSTRefTextClean"}],
+       "]"}]}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.730356926795651*^9, 3.730356939754264*^9}, {
+  3.730356971054874*^9, 3.730357007145906*^9}},
+ CellLabel->
+  "In[561]:=",ExpressionUUID->"9b37eb2f-ed0f-49d8-a5e9-32b45a81e02b"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{
+   RowBox[{"StringReplace", "[", 
+    RowBox[{"fileRST", ",", 
+     RowBox[{"\"\<.wiki\>\"", "\[Rule]", "\"\<.named_ref\>\""}]}], "]"}], ",",
+    "srcRSTOut", ",", "\"\<Text\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.7303570496578407`*^9, 3.730357088638101*^9}},
+ CellLabel->
+  "In[564]:=",ExpressionUUID->"fca06174-a796-4e04-93c2-4a418ba44d58"],
+
+Cell[BoxData["\<\"/Users/sunt05/Dropbox/8-Research/98.ReadingWork/SUWES-Docs/\
+docs/wiki_source/SUEWS-manual-ref.named_ref.rst\"\>"], "Output",
+ CellChangeTimes->{3.730357091219926*^9},
+ CellLabel->
+  "Out[564]=",ExpressionUUID->"fbec7c97-f863-4ef8-8f00-10007180f59d"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"headSect", "=", 
+   RowBox[{"StringCases", "[", 
+    RowBox[{"srcRSTOut", ",", 
+     RowBox[{"(*", 
+      RowBox[{"Shortest", "[", 
+       RowBox[{"(", 
+        RowBox[{"name__", "/;", 
+         RowBox[{"StringFreeQ", "[", 
+          RowBox[{"name", ",", "\"\<\\n\>\""}], "]"}]}], ")"}], "]"}], "*)"}], 
+     RowBox[{
+      RowBox[{
+       RowBox[{"Except", "[", 
+        RowBox[{"\"\<\\n\>\"", ",", 
+         RowBox[{"(", 
+          RowBox[{"WhitespaceCharacter", "|", "WordCharacter"}], ")"}]}], 
+        "]"}], ".."}], "~~", "\"\<\\n\>\"", "~~", 
+      RowBox[{"Repeated", "[", 
+       RowBox[{"\"\<=\>\"", ",", 
+        RowBox[{"{", 
+         RowBox[{"2", ",", "Infinity"}], "}"}]}], "]"}]}]}], "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.730359797659752*^9, 3.730359879097925*^9}, {
+  3.7303599101976013`*^9, 3.730359922275271*^9}, {3.730359952346883*^9, 
+  3.73035998768156*^9}, {3.730360108035122*^9, 3.730360112040061*^9}, {
+  3.730360150272381*^9, 3.730360162032999*^9}, {3.730360196359786*^9, 
+  3.73036025275394*^9}, {3.730360286190734*^9, 3.730360308092348*^9}, {
+  3.73036038912903*^9, 3.730360424467148*^9}, {3.7303604943947773`*^9, 
+  3.730360530066634*^9}, {3.73036063421351*^9, 3.730360706639234*^9}, {
+  3.73036078338838*^9, 3.730360816566539*^9}, {3.7303608597992887`*^9, 
+  3.730360873948183*^9}, {3.73036091977004*^9, 3.730360930874538*^9}, {
+  3.7303609611616373`*^9, 3.73036096946441*^9}},
+ CellLabel->
+  "In[595]:=",ExpressionUUID->"068fb7b1-a97f-42f3-8358-54dfcc9f7acf"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"srcSectOut", "=", 
+   RowBox[{"MapThread", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"StringTrim", "@", 
+       RowBox[{"StringJoin", "[", 
+        RowBox[{"#1", ",", "\"\<\\n\>\"", ",", "#2"}], "]"}]}], "&"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"headSect", ",", 
+       RowBox[{"StringSplit", "[", 
+        RowBox[{"srcRSTOut", ",", "headSect"}], "]"}]}], "}"}]}], "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{
+  3.7303607108356524`*^9, 3.730360879114458*^9, {3.730360979736368*^9, 
+   3.730361051035448*^9}, {3.730361082157568*^9, 3.730361106935814*^9}, 
+   3.7303611700738583`*^9},
+ CellLabel->
+  "In[605]:=",ExpressionUUID->"17a1907e-daf3-41d7-be9e-883892f0d196"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"titleSect", "=", 
+  RowBox[{"StringDelete", "[", 
+   RowBox[{
+    RowBox[{"StringTrim", "@", "headSect"}], ",", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"\"\<\\n\>\"", "|", "\"\<=\>\""}], ")"}], ".."}]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.730361117589892*^9, 3.730361156829269*^9}},
+ CellLabel->
+  "In[606]:=",ExpressionUUID->"8696a555-da88-483a-bc22-f01d7dd7357c"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"SUEWS v2017b\"\>", ",", "\<\"Recent publications\"\>", 
+   ",", "\<\"Introduction\"\>", ",", "\<\"SUEWS and UMEP\"\>", 
+   ",", "\<\"models within SUEWS\"\>", 
+   ",", "\<\"Preparing to run the model\"\>", ",", "\<\"Input files\"\>", 
+   ",", "\<\"Output files\"\>", ",", "\<\"Troubleshooting\"\>", 
+   ",", "\<\"Acknowledgements\"\>", ",", "\<\"Notation\"\>", 
+   ",", "\<\"Suggestions and Support\"\>", ",", "\<\"Version History\"\>", 
+   ",", "\<\"LUMPS and FRAISE\"\>", ",", "\<\"References\"\>"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{{3.7303611344732227`*^9, 3.730361174982258*^9}},
+ CellLabel->
+  "Out[606]=",ExpressionUUID->"8c51f764-1c9a-4a23-b983-ca7cc7fcb0f9"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Directory", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.73036118475738*^9, 3.730361186241516*^9}},
+ CellLabel->
+  "In[607]:=",ExpressionUUID->"d519c151-ffbe-4ff1-bebb-4b03b0291278"],
+
+Cell[BoxData["\<\"/Users/sunt05\"\>"], "Output",
+ CellChangeTimes->{3.7303611867203207`*^9},
+ CellLabel->
+  "Out[607]=",ExpressionUUID->"3497a481-521c-41f7-a62d-40f627f9de12"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{853, 1395},
+WindowMargins->{{853, Automatic}, {Automatic, 0}},
+SpellingDictionaries->{"CorrectWords"->{"rst"}},
+FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, \
+2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 720, 17, 115, "Input",ExpressionUUID->"53e7ab6c-30f7-4830-93bd-6bd8ff2da03e"],
+Cell[1281, 39, 913, 20, 52, "Input",ExpressionUUID->"d11a97b8-c7a5-470d-9ef9-9565fe93c08f"],
+Cell[CellGroupData[{
+Cell[2219, 63, 373, 10, 30, "Input",ExpressionUUID->"de849144-5594-40db-9065-40e73dd9d71d"],
+Cell[2595, 75, 2107, 46, 245, "Output",ExpressionUUID->"8a8f93b3-d14e-40a1-becd-5bc00866d6e8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4739, 126, 376, 10, 30, "Input",ExpressionUUID->"fd1b92e8-0247-4089-86bf-5914a1553d9c"],
+Cell[5118, 138, 1445, 31, 161, "Output",ExpressionUUID->"30f79ca5-1d66-4ac5-8978-bb2c3ce521c0"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6600, 174, 639, 17, 73, "Input",ExpressionUUID->"25a61b95-d974-4c30-8f3c-4218e5fcd75d"],
+Cell[7242, 193, 1271, 21, 77, "Output",ExpressionUUID->"9c26e02b-7a1e-4408-8fd7-ba7b178d079f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8550, 219, 219, 4, 30, "Input",ExpressionUUID->"77237b9f-2520-4a6f-8078-5a28ac2e178e"],
+Cell[8772, 225, 423, 7, 34, "Output",ExpressionUUID->"509d133a-92e3-49be-8de6-f1fa96621914"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9232, 237, 265, 5, 30, "Input",ExpressionUUID->"dc97723f-6ece-4138-9029-ffef81092bd2"],
+Cell[9500, 244, 2394, 70, 746, "Output",ExpressionUUID->"05a069b6-0875-472d-a4a2-89d515006493"]
+}, Closed]],
+Cell[11909, 317, 2256, 42, 69, "Input",ExpressionUUID->"130bed2e-ed11-49fe-bf77-c6cb093353b0"],
+Cell[14168, 361, 265, 6, 30, "Input",ExpressionUUID->"460d14bf-b48d-4f67-ac3a-37a15f60800f"],
+Cell[CellGroupData[{
+Cell[14458, 371, 262, 5, 30, "Input",ExpressionUUID->"9cba0d63-3b06-4027-8bc3-c2cbe2d7b1bf"],
+Cell[14723, 378, 12099, 192, 850, "Output",ExpressionUUID->"4bb56685-3275-4fec-865e-63242e3d4375"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[26859, 575, 540, 14, 26, "Input",ExpressionUUID->"b3d8ead7-7665-476a-b0c5-55973282e018"],
+Cell[27402, 591, 3520, 87, 266, "Output",ExpressionUUID->"87a7fc7f-51ee-4f1b-856d-fda1656120c0"]
+}, Open  ]],
+Cell[30937, 681, 349, 9, 30, "Input",ExpressionUUID->"7815b597-d740-46b7-b89c-1789ee1ff46e"],
+Cell[31289, 692, 409, 9, 30, "Input",ExpressionUUID->"f45b018d-e409-4bb5-a462-63696722555e"],
+Cell[CellGroupData[{
+Cell[31723, 705, 372, 8, 73, "Input",ExpressionUUID->"e52397a4-9b30-4629-8aa8-ab8e09e07be7"],
+Cell[32098, 715, 281, 4, 56, "Output",ExpressionUUID->"1dbab1e9-3062-47c0-821c-5d5429b60f99"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[32416, 724, 228, 4, 54, "Subsection",ExpressionUUID->"f4b00e4e-a944-4425-9194-76e73ec5ed6f"],
+Cell[32647, 730, 539, 13, 94, "Input",ExpressionUUID->"d47b6745-9ab9-4242-a8e3-46ff81d93ff0"],
+Cell[33189, 745, 344, 8, 30, "Input",ExpressionUUID->"749805a9-8581-4334-8a98-437d1379a345"],
+Cell[33536, 755, 877, 20, 73, "Input",ExpressionUUID->"837bc923-7803-4f0d-a01e-1efb51fab7e0"],
+Cell[34416, 777, 1070, 24, 94, "Input",ExpressionUUID->"05fdcae5-cd99-440b-b5de-03bf73b45ae5"],
+Cell[35489, 803, 1252, 28, 94, "Input",ExpressionUUID->"047bbee3-39b5-4fe6-a5a4-850ef16464a7"],
+Cell[36744, 833, 1134, 26, 94, "Input",ExpressionUUID->"86eb8db9-d398-4f86-9e03-5ba79d61c13b"],
+Cell[37881, 861, 1807, 44, 136, "Input",ExpressionUUID->"5bed489f-997c-465f-a710-457983484b3c"],
+Cell[39691, 907, 878, 24, 52, "Input",ExpressionUUID->"1713bdd7-1165-4777-9feb-435de503411f"],
+Cell[40572, 933, 1173, 31, 115, "Input",ExpressionUUID->"14a75931-b82e-493b-aacd-74520cf3251d"],
+Cell[41748, 966, 417, 9, 30, "Input",ExpressionUUID->"ca7b6fd8-d818-4945-9122-e7d3f35d9227"],
+Cell[42168, 977, 1416, 36, 157, "Input",ExpressionUUID->"020ae8b3-1bcf-4d8c-969e-a4cf36670759"],
+Cell[43587, 1015, 403, 10, 30, "Input",ExpressionUUID->"8a7bfe8e-1fd7-4a18-9032-0da4e0c3f4b4"],
+Cell[CellGroupData[{
+Cell[44015, 1029, 299, 7, 30, "Input",ExpressionUUID->"56f3c218-fe71-4008-8386-e22e8a0924db"],
+Cell[44317, 1038, 9385, 125, 5495, "Output",ExpressionUUID->"55baa16d-3fed-4e96-8ca5-69845cb30558"]
+}, Closed]],
+Cell[53717, 1166, 634, 16, 48, "Input",ExpressionUUID->"9b37eb2f-ed0f-49d8-a5e9-32b45a81e02b"],
+Cell[CellGroupData[{
+Cell[54376, 1186, 399, 9, 30, "Input",ExpressionUUID->"fca06174-a796-4e04-93c2-4a418ba44d58"],
+Cell[54778, 1197, 268, 4, 56, "Output",ExpressionUUID->"fbec7c97-f863-4ef8-8f00-10007180f59d"]
+}, Open  ]],
+Cell[55061, 1204, 1537, 34, 73, "Input",ExpressionUUID->"068fb7b1-a97f-42f3-8358-54dfcc9f7acf"],
+Cell[56601, 1240, 714, 19, 52, "Input",ExpressionUUID->"17a1907e-daf3-41d7-be9e-883892f0d196"],
+Cell[CellGroupData[{
+Cell[57340, 1263, 406, 11, 32, "Input",ExpressionUUID->"8696a555-da88-483a-bc22-f01d7dd7357c"],
+Cell[57749, 1276, 718, 13, 77, "Output",ExpressionUUID->"8c51f764-1c9a-4a23-b983-ca7cc7fcb0f9"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[58504, 1294, 205, 4, 30, "Input",ExpressionUUID->"d519c151-ffbe-4ff1-bebb-4b03b0291278"],
+Cell[58712, 1300, 175, 3, 34, "Output",ExpressionUUID->"3497a481-521c-41f7-a62d-40f627f9de12"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
