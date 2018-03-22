@@ -1,0 +1,137 @@
+Name,Required/Optional,Description
+Model run options,,
+CBLuse,R,Determines whether a CBL slab model is used to calculate temperature and humidity.
+Value,Comments,
+0,CBL modelnotused. SUEWS and LUMPS use temperature and humidity provided in the meteorological forcing file.,
+1,CBL model is used to calculate temperature and humidity used in SUEWS and LUMPS.,
+SnowUse,R,Determines whether the snow part of the model runs.
+Value,Comments,
+0,Snow calculations arenotperformed.,
+1,Snow calculations are performed.,
+SOLWEIGUse,R,Determines whether a high resolution radiation model to calculate mean radiant temperate should be used (SOLWEIG). NOTE: this option will considerably slow down the model since SOLWEIG is a 2D model.
+Value,Comments,
+0,SOLWEIG calculations arenotperformed.,
+1,SOLWEIG calculations are performed. A grid of mean radiant temperature (Tmrt) is calculated based on high resolution digital surface models.,
+NetRadiationMethod (previously NetRadiationChoice),R,Determines method for calculation of radiation fluxes.
+Value,Comments,
+0,Uses observed values of Q* supplied in meteorological forcing file.,
+1,Q* modelled with L↓ observations supplied in meteorological forcing file.Zenith anglenotaccounted for in albedo calculation.,
+2,Q* modelled with L↓ modelled using cloud cover fraction supplied in meteorological forcing file (Loridan et al. 2011[5]).Zenith anglenotaccounted for in albedo calculation.,
+3,Q* modelled with L↓ modelled using air temperature and relative humidity supplied in meteorological forcing file (Loridan et al. 2011[5]).Zenith anglenotaccounted for in albedo calculation.,
+100,Q* modelled with L↓ observations supplied in meteorological forcing file.Zenith angle accounted for in albedo calculation.SSss_YYYY_NARPOut.txt file produced.Not recommended in this release,
+200,Q* modelled with L↓ modelled using cloud cover fraction supplied in meteorological forcing file (Loridan et al. 2011[5]).Zenith angle accounted for in albedo calculation.SSss_YYYY_NARPOut.txt file produced.Not recommended in this release,
+300,Q* modelled with L↓ modelled using air temperature and relative humidity supplied in meteorological forcing file (Loridan et al. 2011[5]).Zenith angle accounted for in albedo calculation.SSss_YYYY_NARPOut.txt file produced.Not recommended in this release,
+AnthropHeatMethod (previously AnthropHeatChoice),R,Determines method for QF calculation.
+Value,Comments,
+0,"Uses values provided in the meteorological forcing file (SSss_YYYY_data_tt.txt).If you do not want to include QF  to the calculation of surface energy balance, you should set values in the meteorological forcing file to zero to prevent calculation of QF.UMEPprovides two methods to calculate QFLQFwhich is simplerGQFwhich is more complete but requires more data inputs",
+1,Currently not recommended!Calculated according to Loridan et al. (2011)[5]using coefficients specified in SUEWS_AnthropogenicHeat.txt.Modelled values will be used even if QF is provided in the meteorological forcing file.,
+2,RecommendedCalculated according to Järvi et al. (2011)[1]using coefficients specified in SUEWS_AnthropogenicHeat.txt and diurnal patterns specified in SUEWS_Profiles.txt.Modelled values will be used even if QF is provided in the meteorological forcing file.,
+AnthropCO2Method,R,Determines method for CO2 calculation.
+Value,Comments,
+1,Not used.,
+2,Under development - not recommended in v2017bCalculate CO2 emissions from traffic based on QF calculation.,
+3,Under development - not recommended in v2017bCalculate CO2 emissions from traffic from input data provided.,
+StorageHeatMethod (previously QSChoice),,Determines method for calculating storage heat flux ΔQS.
+Value,Comments,
+1,ΔQS modelled using the objective hysteresis model (OHM)[9][10][11]using parameters specified for each surface type.,
+2,Uses observed values of ΔQS supplied in meteorological forcing file.,
+3,ΔQS modelled using AnOHM.Not available in v2017b,
+4,ΔQS modelled using the Element Surface Temperature Method (ESTM) (Offerle et al. 2005[13]).Not recommended in v2017b,
+OHMIncQF,R,Determines whether the storage heat flux calculation uses Q* or (Q*+QF).
+Value,Comments,
+0,ΔQS modelled Q* only.,
+1,ΔQS modelled using Q*+QF.,
+StabilityMethod,R,Defines which atmospheric stability functions are  used.
+Value,Comments,
+0,Not used.,
+1,Not used.,
+2,RecommendedMomentum - unstable: Dyer (1974)[22]modified by Högstrom (1988)[23];  stable: Van Ulden and Holtslag (1985)[24]Heat - Dyer (1974)[22]modified by Högstrom (1988)[23],
+3,"Momentum: Campbell and Norman (Eq 7.27, Pg97)[25]Heat - unstable: Campbell and Norman[25]; stable: Dyer (1974)[22]modified by Högstrom (1988)[23]",
+4,Momentum: Businger et al. (1971)[26]modified by Högstrom (1988)[23]Heat: Businger et al. (1971)[26]modified by Högstrom (1988)[23],
+RoughLenHeatMethod (previously RoughLen_heat),R,Determines method for calculating roughness length for heat.
+Value,Comments,
+1,Uses value of 0.1z0m.,
+2,RecommendedCalculated according to Kawai et al. (2009)[27].,
+3,Calculated according to Voogt and Grimmond (2000)[28].,
+4,Calculated according to Kanda et al. (2007)[29].,
+RoughLenMomMethod (previously z0_method),R,Determines how aerodynamic roughness length (z0m) and zero displacement height (zdm) are calculated.
+Value,Comments,
+1,"Values specified in SUEWS_SiteSelect.txtare used. Note that UMEPprovides tools to calculate these]. See Kent et al. (2017a)for recommendations on methods. Kent et al. (2017b) have developed a method to include vegetation which is also avaialble within UMEP.Kent CW, CSB Grimmond, J Barlow, D Gatey, S Kotthaus, F Lindberg, CH Halios 2017a: Evaluation of urban local-scale aerodynamic parameters: implications for the vertical profile of wind and source areas Boundary Layer Meteorology 164,183–213 doi: 10.1007/s10546-017-0248-zKent CW, S Grimmond, D Gatey 2017b: Aerodynamic roughness parameters in cities: inclusion of vegetation Journal of Wind Engineering & Industrial Aerodynamics http://dx.doi.org/10.1016/j.jweia.2017.07.016",
+2,z0m and zd are calculated using 'rule of thumb' (Grimmond and Oke 1999[30]) using mean building and tree height specified in SUEWS_SiteSelect.txt.z0m and zd are adjusted with time to account for seasonal variation in porosity of deciduous trees.,
+3,"z0m and zd are calculated based on the MacDonald et al. (1998)[31]method using mean building and tree heights, plan area fraction and frontal areal index specified in SUEWS_SiteSelect.txt.z0m and zd are adjusted with time to account for seasonal variation in porosity of deciduous trees.",
+SMDMethod (previously SMD_Choice),R,Determines method for calculating soil moisture deficit (SMD).
+Value,Comments,
+0,RecommendedSMD modelled using parameters specified in SUEWS_Soil.txt.,
+1,Not currently implemented - do not use!Observed SM provided in the meteorological forcing file is used.Data are provided asvolumetricsoil moisture content. Metadata must be provided in SUEWS_Soil.txt.,
+2,Not currently implemented - do not use!Observed SM provided in the meteorological forcing file is used.Data are provided asgravimetricsoil moisture content. Metadata must be provided in SUEWS_Soil.txt.,
+WaterUseMethod (previously WUChoice),R,Defines how external water use is calculated.
+Value,Comments,
+0,External water use modelled using parameters specified in SUEWS_Irrigation.txt.,
+1,Observations of external water use provided in the meteorological forcing file are used.,
+File-related options,,
+FileCode,R,"Two-letter site identification code (e.g. He, Sc, Kc)."
+FileInputPath,R,Input directory.
+FileOutputPath,R,Output directory.
+MultipleMetFiles,R,Specifies whether one single meteorological forcing file is used for all grids or a separate met file is provided for each grid.
+Value,Comments,
+0,Single meteorological forcing file used for all grids.No grid number should appear in the file name.,
+1,Separate meteorological forcing files used for each grid.The grid number should appear in the file name.,
+MultipleInitFiles,R,Specifies whether one single initial conditions file is used for all grids at the start of the run or a separate initial conditions file is provided for each grid.
+Value,Comments,
+0,Single initial conditions file used for all grids.No grid number should appear in the file name.,
+1,Separate initial conditions files used for each grid.The grid number should appear in the file name.,
+MultipleESTMFiles,O,Specifies whether one single ESTM forcing file is used for all grids or a separate file is provided for each grid.
+Value,Comments,
+0,Single ESTM forcing file used for all grids.No grid number should appear in the file name.,
+1,Separate ESTM forcing files used for each grid.The grid number should appear in the file name.,
+KeepTstepFilesIn,O,Specifies whether input meteorological forcing files at the resolution of the model time step should be saved.
+Value,Comments,
+0,Meteorological forcing files at model time step are not written out. This is the default optionRecommended to reduce processing time and save disk space as (e.g. 5-min) files can be large.,
+1,Meteorological forcing files at model time step are written out.,
+KeepTstepFilesOut,O,Specifies whether output meteorological forcing files at the resolution of the model time step should be saved.
+Value,Comments,
+0,Output files at model time are not saved. This is the default option.Recommended to save disk space as (e.g. 5-min) files can be large.,
+1,Output files at model time step are written out.,
+WriteOutOption,O,Specifies which variables are written in the output files.
+Value,Comments,
+0,All (except snow-related) output variables written. This is the default option.,
+1,All (including snow-related) output variables written.,
+2,Writes out a minimal set of output variables (use this to save space or if information about the different surfaces is not required).,
+SuppressWarnings,O,Controls whether the warnings.txt file is written or not.
+Value,Comments,
+0,The warnings.txt file is written. This is the default option.,
+1,No warnings.txt file is written. May be useful for large model runs as this file can grow large.,
+Time-related options,,
+Tstep,R,"Specifies the model time step [s]. A value of 300 s (5 min) is strongly recommended. The time step cannot be less than 1 min or greater than 10 min, and must be a whole number of minutes that divide into an hour (i.e. options are 1, 2, 3, 4, 5, 6, 10 min or 60, 120, 180, 240, 300, 360, 600 s)."
+ResolutionFilesIn,R,"Specifies the resolution of the input files [s] which SUEWS will disaggregate to the model time step. 1800 s for 30 min or 3600 s for 60 min are recommended. (N.B. if ResolutionFilesIn is not provided, SUEWS assumes ResolutionFilesIn = Tstep.)"
+ResolutionFilesInESTM,O,Specifies the resolution of the ESTM input files [s] which SUEWS will disaggregate to the model time step.
+ResolutionFilesOut,R,Specifies the resolution of the output files [s]. 1800 s for 30 min or 3600 s for 60 min are recommended.
+Options related to disaggregation of input data,,
+DisaggMethod,O,Specifies how meteorological variables in the input file (except rain and snow) are disaggregated to the model time step.Wind direction is not currently downscaled so non -999 values will cause an error.
+Value,Comments,
+1,"Linear downscaling of averages for all variables, additional zenith check is used for Kdown. This is the default option.",
+2,"Linear downscaling of instantaneous values for all variables, additional zenith check is used for Kdown.",
+3,"WFDEI setting: average Kdown (with additional zenith check); instantaneous for Tair, RH, pres and U. (N.B. WFDEI actually provides Q not RH)",
+KdownZen,O,"Can be used to switch off zenith checking in Kdown disaggregation. Note that the zenith calculation requires location information obtained from SUEWS_SiteSelect.txt. If a single met file is used for all grids, the zenith is calculated for the first grid and the disaggregated data is then applied for all grids."
+Value,Comments,
+0,No zenith angle check is applied.,
+1,Disaggregated Kdown is set to zero when zenith angle exceeds 90 degrees (i.e. sun below horizon) and redistributed over the day. This is the default option.,
+RainDisaggMethod,O,"Specifies how rain in the meteorological forcing file are disaggregated to the model time step.If present in the original met forcing file, snow is currently disaggregated in the same way as rainfall."
+Value,Comments,
+100,Rainfall is evenly distributed among all subintervals in a rainy interval. This is the default option.,
+101,Rainfall is evenly distributed among amongRainAmongNsubintervals in a rainy interval – also requires RainAmongN to be set.,
+102,Rainfall is evenly distributed among amongRainAmongNsubintervals in a rainy interval for different intensity bins – also requires MultRainAmongN and MultRainAmongNUpperI to be set.,
+RainAmongN,O,Specifies the number of subintervals (of length tt) over which to distribute rainfall in each interval (of length TT). Must be an integer value. Use with RainDisaggMethod = 101.
+MultRainAmongN,O,"Specifies the number of subintervals (of length tt) over which to distribute rainfall in each interval (of length TT) for up to 5 intensity bins. Must take integer values. Use with RainDisaggMethod = 102.e.g. MultRainAmongN(1) = 5,  MultRainAmongN(2) = 8, MultRainAmongN(3) = 12"
+MultRainAmongNUpperI,O,"Specifies upper limit for each intensity bin to apply MultRainAmongN. Any intensities above the highest specified intensity will use the last MultRainAmongN value and write a warning to warnings.txt. Use with RainDisaggMethod = 102.e.g. MultRainAmongNUpperI(1) = 0.5,  MultRainAmongNUpperI(2) = 2.0, MultRainAmongNUpperI(3) = 50.0"
+DisaggMethodESTM,O,Specifies how ESTM-related temperatures in the input file are disaggregated to the model time step.
+Value,Comments,
+1,Linear downscaling of averages.,
+2,Linear downscaling of instantaneous values.,
+netCDF-related optionsN.B.: This feature is NOT enabled in the public release due to the dependency of netCDF library.Please contact the development team for assistance in enabling this feature if this feature is needed: SUEWS mail list,,
+ncMode,O,Determine if the output files should be written in netCDF format.
+Value,Comments,
+0,"Output files are kept as plain text files (i.e., .txt).",
+1,"Output files will be written in netCDF format (i.e., .nc).",
+nRow,O,"Number of rows (e.g., 36) in the output layout (only applicable when ncMode=1)."
+nCol,O,"Number of columns (e.g., 47) in the output layout (only applicable when ncMode=1)."

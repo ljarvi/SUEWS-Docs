@@ -40,8 +40,7 @@ Notation
      Evergreen trees and shrubs
 
    ESTM
-     Element Surface Temperature Method
-     (Offerle  et al.,2005 [Oaf2005]_)
+     Element Surface Temperature Method (Offerle et al.,2005 [Oaf2005]_)
 
 
    Grass
@@ -61,12 +60,10 @@ Notation
      (Loridan   et al. 2011 [L2011]_)
 
    NARP
-     Net All-wave  Radiation   Parameterization
-        (Offerle et al. 2003 [O2003]_, Loridan et al. 2011 [L2011]_)
+     Net All-wave  Radiation   Parameterization (Offerle et al. 2003 [O2003]_, Loridan et al. 2011 [L2011]_)
 
    OHM
-     Objective Hysteresis Model
-     (Grimmond   et al.   1991 [G91OHM]_, Grimmond & Oke 1999a [GO99QS]_, 2002 [GO2002]_)
+     Objective Hysteresis Model (Grimmond et al. 1991 [G91OHM]_, Grimmond & Oke 1999a [GO99QS]_, 2002 [GO2002]_)
 
    Paved
      Paved surface
@@ -97,7 +94,7 @@ Notation
      time step of data
 
    UMEP
-     `Urban Multi-scale Environmental Predictor <http://urban-climate.net/umep/UMEP >`__
+     `Urban Multi-scale Environmental Predictor`_
 
    Water
      Water surface
@@ -106,4 +103,7 @@ Notation
      Convective boundary layer height
 
 .. |Qstar| replace:: Q\ :sup:`*`\ 
+
+.. _Urban Multi-scale Environmental Predictor: http://urban-climate.net/umep/UMEP
+
 

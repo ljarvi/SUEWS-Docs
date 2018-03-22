@@ -1,0 +1,9 @@
+"Value","Comments"
+0,"Recommended
+SMD modelled using parameters specified in SUEWS_Soil.txt ."
+1,"Not currently implemented - do not use!
+Observed SM provided in the meteorological forcing file is used.
+Data are provided as volumetric soil moisture content. Metadata must be provided in SUEWS_Soil.txt ."
+2,"Not currently implemented - do not use!
+Observed SM provided in the meteorological forcing file is used.
+Data are provided as gravimetric soil moisture content. Metadata must be provided in SUEWS_Soil.txt ."

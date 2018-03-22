@@ -1,0 +1,1214 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>6.1. RunControl.nml &mdash; SUEWS 2018a documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="SUEWS 2018a documentation" href="../../index.html"/>
+        <link rel="up" title="6. Input files" href="../input-files.html"/>
+        <link rel="next" title="6.2. SUEWS_SiteInfo.xlsm" href="../SUEWS_SiteInfo/SUEWS_SiteInfo.html"/>
+        <link rel="prev" title="6. Input files" href="../input-files.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> SUEWS
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../recent-publications.html">1. Recent publications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction.html">2. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../suews-and-umep.html">3. SUEWS and UMEP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../parameterisations-and-sub-models.html">4. Parameterisations and sub-models within SUEWS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../prepare-to-run-the-model.html">5. Preparing to run the model</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../input-files.html">6. Input files</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">6.1. RunControl.nml</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../SUEWS_SiteInfo/SUEWS_SiteInfo.html">6.2. SUEWS_SiteInfo.xlsm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Initial_Conditions.html">6.3. Initial Conditions file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../met_input.html">6.4. Meteorological Input File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../CBL_input.html">6.5. CBL input files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ESTM_input.html">6.6. ESTM-related files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../SOLWEIG_input.html">6.7. SOLWEIG input files</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../output-files.html">7. Output files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../troubleshooting.html">8. Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../acknowledgement.html">9. Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../notation.html">10. Notation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../development.html">11. Development, Suggestions and Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../version-history.html">12. Version History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../differences-suews-lumps-fraise.html">13. Differences between SUEWS, LUMPS and FRAISE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../references.html">14. References</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">SUEWS</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../input-files.html">6. Input files</a> &raquo;</li>
+        
+      <li>6.1. RunControl.nml</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/input_files/RunControl/RunControl.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="runcontrol-nml">
+<h1>6.1. RunControl.nml<a class="headerlink" href="#runcontrol-nml" title="Permalink to this headline">¶</a></h1>
+<p>The file <strong>RunControl.nml</strong> is a namelist that specifies the options for
+the model run. It must be located in the same directory as the
+executable file.</p>
+<p>A sample file of <strong>RunControl.nml</strong> looks like</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&amp;RunControl
+CBLUse=0
+SnowUse=0
+SOLWEIGUse=0
+NetRadiationMethod=3 
+EmissionsMethod=2
+StorageHeatMethod=3
+OHMIncQF=0
+StabilityMethod=2
+RoughLenHeatMethod=2
+RoughLenMomMethod=2
+SMDMethod=0
+WaterUseMethod=0
+FileCode=&#39;Saeve&#39;
+FileInputPath=&quot;./Input/&quot;
+FileOutputPath=&quot;./Output/&quot;
+MultipleMetFiles=0
+MultipleInitFiles=0
+MultipleESTMFiles=1
+KeepTstepFilesIn=1
+KeepTstepFilesOut=1
+WriteOutOption=2
+ResolutionFilesOut=3600
+Tstep=300
+ResolutionFilesIn=3600
+ResolutionFilesInESTM=3600  !NEW
+DisaggMethod=1          !NEW  (1 = default value, so don&#39;t actually need here)
+RainDisaggMethod=100    !NEW  (100 = default value, so don&#39;t actually need here)
+DisaggMethodESTM=1      !NEW  (1 = default value, so don&#39;t actually need here)
+SuppressWarnings=1      !NEW
+KdownZen=0
+diagnose=0
+/
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>In <em>Linux</em> and <em>Mac</em>, please add an empty line after the end slash.</li>
+<li>The file is not case-sensitive.</li>
+<li>The parameters and variables can appear in any order.</li>
+</ul>
+</div>
+<p>The parameters and their setting instructions are provided in the tables below:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#model-run-options"><span class="std std-numref">6.1 Model run options</span></a></li>
+<li><a class="reference internal" href="#time-related-options"><span class="std std-numref">6.2 Time related options</span></a></li>
+<li><a class="reference internal" href="#file-related-options"><span class="std std-numref">6.3 File related options</span></a></li>
+<li><a class="reference internal" href="#options-related-to-disaggregation-of-input-data"><span class="std std-numref">6.4 Options related to disaggregation of input data</span></a></li>
+<li><a class="reference internal" href="#netcdf-related-options"><span class="std std-numref">6.5 netCDF related options</span></a></li>
+</ul>
+<span id="model-run-options"></span><table border="1" class="colwidths-given docutils" id="id1">
+<caption><span class="caption-number">Table 6.1 </span><span class="caption-text">Model_run_options</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="4%" />
+<col width="4%" />
+<col width="71%" />
+<col width="21%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">R/O</th>
+<th class="head">Description</th>
+<th class="head">Possible Settings</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>CBLuse</td>
+<td>R</td>
+<td>Determines whether a CBL slab model is used to calculate temperature and humidity.</td>
+<td><table border="1" class="colwidths-given first last docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Value</th>
+<th class="head">Comments</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>0</td>
+<td><blockquote class="first last">
+<div>CBL model not used. SUEWS and LUMPS use temperature and humidity provided in the meteorological forcing file.</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td><blockquote class="first last">
+<div>CBL model is used to calculate temperature and humidity used in SUEWS and LUMPS.</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-even"><td>SnowUse</td>
+<td>R</td>
+<td>Determines whether the snow part of the model runs.</td>
+<td><table border="1" class="colwidths-given first last docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Value</th>
+<th class="head">Comments</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>0</td>
+<td><blockquote class="first last">
+<div>Snow calculations are not performed.</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td><blockquote class="first last">
+<div>Snow calculations are performed.</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-even"><td>SOLWEIGUse</td>
+<td>R</td>
+<td>Determines whether a high resolution radiation model to calculate mean radiant temperate should be used (SOLWEIG). NOTE: this option will considerably slow down the model since SOLWEIG is a 2D model.</td>
+<td><table border="1" class="colwidths-given first last docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Value</th>
+<th class="head">Comments</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>0</td>
+<td><blockquote class="first last">
+<div>SOLWEIG calculations are not performed.</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td><blockquote class="first last">
+<div>SOLWEIG calculations are performed. A grid of mean radiant temperature (Tmrt) is calculated based on high resolution digital surface models.</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-even"><td>NetRadiationMethod</td>
+<td>R</td>
+<td>Determines method for calculation of radiation fluxes.</td>
+<td><table border="1" class="colwidths-given first last docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Value</th>
+<th class="head">Comments</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>0</td>
+<td><blockquote class="first last">
+<div>Uses observed values of Q* supplied in meteorological forcing file.</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td>Q* modelled with L↓ observations supplied in meteorological forcing file.
+Zenith angle not accounted for in albedo calculation.</td>
+</tr>
+<tr class="row-even"><td>2</td>
+<td>Q* modelled with L↓ modelled using cloud cover fraction supplied in meteorological forcing file (Loridan et al. 2011 [5] ).
+Zenith angle not accounted for in albedo calculation.</td>
+</tr>
+<tr class="row-odd"><td>3</td>
+<td>Q* modelled with L↓ modelled using air temperature and relative humidity supplied in meteorological forcing file (Loridan et al. 2011 [5] ).
+Zenith angle not accounted for in albedo calculation.</td>
+</tr>
+<tr class="row-even"><td>100</td>
+<td>Q* modelled with L↓ observations supplied in meteorological forcing file.
+Zenith angle accounted for in albedo calculation.
+SSss_YYYY_NARPOut.txt file produced.
+Not recommended in this release</td>
+</tr>
+<tr class="row-odd"><td>200</td>
+<td>Q* modelled with L↓ modelled using cloud cover fraction supplied in meteorological forcing file (Loridan et al. 2011 [5] ).
+Zenith angle accounted for in albedo calculation.
+SSss_YYYY_NARPOut.txt file produced.
+Not recommended in this release</td>
+</tr>
+<tr class="row-even"><td>300</td>
+<td>Q* modelled with L↓ modelled using air temperature and relative humidity supplied in meteorological forcing file (Loridan et al. 2011 [5] ).
+Zenith angle accounted for in albedo calculation.
+SSss_YYYY_NARPOut.txt file produced.
+Not recommended in this release</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-odd"><td>AnthropHeatMethod</td>
+<td>R</td>
+<td>Determines method for QF calculation.</td>
+<td><table border="1" class="colwidths-given first last docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Value</th>
+<th class="head">Comments</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>0</td>
+<td>Uses values provided in the meteorological forcing file (SSss_YYYY_data_tt.txt).
+If you do not want to include QF to the calculation of surface energy balance, you should set values in the meteorological forcing file to zero to prevent calculation of QF.
+UMEP provides two methods to calculate QF
+LQF which is simpler
+GQF which is more complete but requires more data inputs</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td>Currently not recommended!
+Calculated according to Loridan et al. (2011) [5] using coefficients specified in SUEWS_AnthropogenicHeat.txt.
+Modelled values will be used even if QF is provided in the meteorological forcing file.</td>
+</tr>
+<tr class="row-even"><td>2</td>
+<td>Recommended
+Calculated according to Järvi et al. (2011) [1] using coefficients specified in SUEWS_AnthropogenicHeat.txt and diurnal patterns specified in SUEWS_Profiles.txt.
+Modelled values will be used even if QF is provided in the meteorological forcing file.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-odd"><td>AnthropCO2Method</td>
+<td>R</td>
+<td>Determines method for CO2 calculation.</td>
+<td><table border="1" class="colwidths-given first last docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Value</th>
+<th class="head">Comments</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td><blockquote class="first last">
+<div>Not used.</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>Under development - not recommended in v2017b
+Calculate CO2 emissions from traffic based on QF calculation.</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>Under development - not recommended in v2017b
+Calculate CO2 emissions from traffic from input data provided.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-odd"><td>StorageHeatMethod</td>
+<td>R</td>
+<td>Determines method for calculating storage heat flux ΔQS.</td>
+<td><table border="1" class="colwidths-given first last docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Value</th>
+<th class="head">Comments</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>ΔQS modelled using the objective hysteresis model (OHM) [9] [10] [11] using parameters specified for each surface type.</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>Uses observed values of ΔQS supplied in meteorological forcing file.</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>ΔQS modelled using AnOHM.
+Not available in v2017b</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>ΔQS modelled using the Element Surface Temperature Method (ESTM) (Offerle et al. 2005 [13] ).
+Not recommended in v2017b</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-even"><td>OHMIncQF</td>
+<td>R</td>
+<td>Determines whether the storage heat flux calculation uses Q* or (Q*+QF).</td>
+<td><table border="1" class="colwidths-given first last docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Value</th>
+<th class="head">Comments</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>0</td>
+<td><blockquote class="first last">
+<div>ΔQS modelled Q* only.</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td><blockquote class="first last">
+<div>ΔQS modelled using Q*+QF.</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-even"><td>StabilityMethod</td>
+<td>R</td>
+<td>Defines which atmospheric stability functions are used.</td>
+<td><table border="1" class="colwidths-given first last docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Value</th>
+<th class="head">Comments</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>0</td>
+<td><blockquote class="first last">
+<div>Not used.</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td><blockquote class="first last">
+<div>Not used.</div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td>2</td>
+<td>Recommended
+Momentum - unstable: Dyer (1974) [22] modified by Högstrom (1988) [23] ; stable: Van Ulden and Holtslag (1985) [24]
+Heat - Dyer (1974) [22] modified by Högstrom (1988) [23]</td>
+</tr>
+<tr class="row-odd"><td>3</td>
+<td>Momentum: Campbell and Norman (Eq 7.27, Pg97) [25]
+Heat - unstable: Campbell and Norman [25] ; stable: Dyer (1974) [22] modified by Högstrom (1988) [23]</td>
+</tr>
+<tr class="row-even"><td>4</td>
+<td>Momentum: Businger et al. (1971) [26] modified by Högstrom (1988) [23]
+Heat: Businger et al. (1971) [26] modified by Högstrom (1988) [23]</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-odd"><td>RoughLenHeatMethod</td>
+<td>R</td>
+<td>Determines method for calculating roughness length for heat.</td>
+<td><table border="1" class="colwidths-given first last docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Value</th>
+<th class="head">Comments</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>Uses value of 0.1z0m.</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>Recommended
+Calculated according to Kawai et al. (2009) [27] .</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>Calculated according to Voogt and Grimmond (2000) [28] .</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>Calculated according to Kanda et al. (2007) [29] .</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-even"><td>RoughLenMomMethod</td>
+<td>R</td>
+<td>Determines how aerodynamic roughness length (z0m) and zero displacement height (zdm) are calculated.</td>
+<td><table border="1" class="colwidths-given first last docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Value</th>
+<th class="head">Comments</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>Values specified in SUEWS_SiteSelect.txt are used. Note that UMEP provides tools to calculate these]. See Kent et al. (2017a) for recommendations on methods. Kent et al. (2017b) have developed a method to include vegetation which is also avaialble within UMEP.
+Kent CW, CSB Grimmond, J Barlow, D Gatey, S Kotthaus, F Lindberg, CH Halios 2017a: Evaluation of urban local-scale aerodynamic parameters: implications for the vertical profile of wind and source areas Boundary Layer Meteorology 164,183–213 doi: 10.1007/s10546-017-0248-z
+Kent CW, S Grimmond, D Gatey 2017b: Aerodynamic roughness parameters in cities: inclusion of vegetation Journal of Wind Engineering &amp; Industrial Aerodynamics <a class="reference external" href="http://dx.doi.org/10.1016/j.jweia.2017.07.016">http://dx.doi.org/10.1016/j.jweia.2017.07.016</a></td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>z0m and zd are calculated using ‘rule of thumb’ (Grimmond and Oke 1999 [30] ) using mean building and tree height specified in SUEWS_SiteSelect.txt .
+z0m and zd are adjusted with time to account for seasonal variation in porosity of deciduous trees.</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>z0m and zd are calculated based on the MacDonald et al. (1998) [31] method using mean building and tree heights, plan area fraction and frontal areal index specified in SUEWS_SiteSelect.txt .
+z0m and zd are adjusted with time to account for seasonal variation in porosity of deciduous trees.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-odd"><td>SMDMethod</td>
+<td>R</td>
+<td>Determines method for calculating soil moisture deficit (SMD).</td>
+<td><table border="1" class="colwidths-given first last docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Value</th>
+<th class="head">Comments</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>0</td>
+<td>Recommended
+SMD modelled using parameters specified in SUEWS_Soil.txt .</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td>Not currently implemented - do not use!
+Observed SM provided in the meteorological forcing file is used.
+Data are provided as volumetric soil moisture content. Metadata must be provided in SUEWS_Soil.txt .</td>
+</tr>
+<tr class="row-even"><td>2</td>
+<td>Not currently implemented - do not use!
+Observed SM provided in the meteorological forcing file is used.
+Data are provided as gravimetric soil moisture content. Metadata must be provided in SUEWS_Soil.txt .</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-odd"><td>WaterUseMethod</td>
+<td>R</td>
+<td>Defines how external water use is calculated.</td>
+<td><table border="1" class="colwidths-given first last docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Value</th>
+<th class="head">Comments</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>0</td>
+<td><blockquote class="first last">
+<div>External water use modelled using parameters specified in SUEWS_Irrigation.txt .</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td><blockquote class="first last">
+<div>Observations of external water use provided in the meteorological forcing file are used.</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<span id="time-related-options"></span><table border="1" class="docutils" id="id2">
+<caption><span class="caption-number">Table 6.2 </span><span class="caption-text">Time_related_options</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">R/O</th>
+<th class="head">Description</th>
+<th class="head">Possible Settings</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Tstep</td>
+<td>R</td>
+<td>Specifies the model time step [s]. A value of 300 s (5 min) is strongly recommended. The time step cannot be less than 1 min or greater than 10 min, and must be a whole number of minutes that divide into an hour (i.e. options are 1, 2, 3, 4, 5, 6, 10 min or 60, 120, 180, 240, 300, 360, 600 s).</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>ResolutionFilesIn</td>
+<td>R</td>
+<td>Specifies the resolution of the input files [s] which SUEWS will disaggregate to the model time step. 1800 s for 30 min or 3600 s for 60 min are recommended. (N.B. if ResolutionFilesIn is not provided, SUEWS assumes ResolutionFilesIn = Tstep.)</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>ResolutionFilesInESTM</td>
+<td>O</td>
+<td>Specifies the resolution of the ESTM input files [s] which SUEWS will disaggregate to the model time step.</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>ResolutionFilesOut</td>
+<td>R</td>
+<td>Specifies the resolution of the output files [s]. 1800 s for 30 min or 3600 s for 60 min are recommended.</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<span id="file-related-options"></span><table border="1" class="docutils" id="id3">
+<caption><span class="caption-number">Table 6.3 </span><span class="caption-text">File_related_options</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">R/O</th>
+<th class="head">Description</th>
+<th class="head">Possible Settings</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>FileCode</td>
+<td>R</td>
+<td>Two-letter site identification code (e.g. He, Sc, Kc).</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>FileInputPath</td>
+<td>R</td>
+<td>Input directory.</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>FileOutputPath</td>
+<td>R</td>
+<td>Output directory.</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>MultipleMetFiles</td>
+<td>R</td>
+<td>Specifies whether one single meteorological forcing file is used for all grids or a separate met file is provided for each grid.</td>
+<td><table border="1" class="colwidths-given first last docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Value</th>
+<th class="head">Comments</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>0</td>
+<td>Single meteorological forcing file used for all grids.
+No grid number should appear in the file name.</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td>Separate meteorological forcing files used for each grid.
+The grid number should appear in the file name.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-even"><td>MultipleInitFiles</td>
+<td>R</td>
+<td>Specifies whether one single initial conditions file is used for all grids at the start of the run or a separate initial conditions file is provided for each grid.</td>
+<td><table border="1" class="colwidths-given first last docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Value</th>
+<th class="head">Comments</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>0</td>
+<td>Single initial conditions file used for all grids.
+No grid number should appear in the file name.</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td>Separate initial conditions files used for each grid.
+The grid number should appear in the file name.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-even"><td>MultipleESTMFiles</td>
+<td>O</td>
+<td>Specifies whether one single ESTM forcing file is used for all grids or a separate file is provided for each grid.</td>
+<td><table border="1" class="colwidths-given first last docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Value</th>
+<th class="head">Comments</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>0</td>
+<td>Single ESTM forcing file used for all grids.
+No grid number should appear in the file name.</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td>Separate ESTM forcing files used for each grid.
+The grid number should appear in the file name.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-even"><td>KeepTstepFilesIn</td>
+<td>O</td>
+<td>Specifies whether input meteorological forcing files at the resolution of the model time step should be saved.</td>
+<td><table border="1" class="colwidths-given first last docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Value</th>
+<th class="head">Comments</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>0</td>
+<td>Meteorological forcing files at model time step are not written out. This is the default option
+Recommended to reduce processing time and save disk space as (e.g. 5-min) files can be large.</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td>Meteorological forcing files at model time step are written out.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-even"><td>KeepTstepFilesOut</td>
+<td>O</td>
+<td>Specifies whether output meteorological forcing files at the resolution of the model time step should be saved.</td>
+<td><table border="1" class="colwidths-given first last docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Value</th>
+<th class="head">Comments</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>0</td>
+<td>Output files at model time are not saved. This is the default option.
+Recommended to save disk space as (e.g. 5-min) files can be large.</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td>Output files at model time step are written out.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-even"><td>WriteOutOption</td>
+<td>O</td>
+<td>Specifies which variables are written in the output files.</td>
+<td><table border="1" class="colwidths-given first last docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Value</th>
+<th class="head">Comments</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>0</td>
+<td>All (except snow-related) output variables written. This is the default option.</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td>All (including snow-related) output variables written.</td>
+</tr>
+<tr class="row-even"><td>2</td>
+<td>Writes out a minimal set of output variables (use this to save space or if information about the different surfaces is not required).</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-odd"><td>SuppressWarnings</td>
+<td>O</td>
+<td>Controls whether the warnings.txt file is written or not.</td>
+<td><table border="1" class="colwidths-given first last docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Value</th>
+<th class="head">Comments</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>0</td>
+<td>The warnings.txt file is written. This is the default option.</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td>No warnings.txt file is written. May be useful for large model runs as this file can grow large.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<span id="options-related-to-disaggregation-of-input-data"></span><table border="1" class="docutils" id="id4">
+<caption><span class="caption-number">Table 6.4 </span><span class="caption-text">Options_related_to_disaggregation_of_input_data</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">R/O</th>
+<th class="head">Description</th>
+<th class="head">Possible Settings</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>DisaggMethod</td>
+<td>O</td>
+<td>Specifies how meteorological variables in the input file (except rain and snow) are disaggregated to the model time step. Wind direction is not currently downscaled so non -999 values will cause an error.</td>
+<td><table border="1" class="colwidths-given first last docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Value</th>
+<th class="head">Comments</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td><blockquote class="first last">
+<div>Linear downscaling of averages for all variables, additional zenith check is used for Kdown. This is the default option.</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td><blockquote class="first last">
+<div>Linear downscaling of instantaneous values for all variables, additional zenith check is used for Kdown.</div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td><blockquote class="first last">
+<div>WFDEI setting: average Kdown (with additional zenith check); instantaneous for Tair, RH, pres and U. (N.B. WFDEI actually provides Q not RH)</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-odd"><td>KdownZen</td>
+<td>O</td>
+<td>Can be used to switch off zenith checking in Kdown disaggregation. Note that the zenith calculation requires location information obtained from SUEWS_SiteSelect.txt. If a single met file is used for all grids, the zenith is calculated for the first grid and the disaggregated data is then applied for all grids.</td>
+<td><table border="1" class="colwidths-given first last docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Value</th>
+<th class="head">Comments</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>0</td>
+<td><blockquote class="first last">
+<div>No zenith angle check is applied.</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td><blockquote class="first last">
+<div>Disaggregated Kdown is set to zero when zenith angle exceeds 90 degrees (i.e. sun below horizon) and redistributed over the day. This is the default option.</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-even"><td>RainDisaggMethod</td>
+<td>O</td>
+<td>Specifies how rain in the meteorological forcing file are disaggregated to the model time step. If present in the original met forcing file, snow is currently disaggregated in the same way as rainfall.</td>
+<td><table border="1" class="colwidths-given first last docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Value</th>
+<th class="head">Comments</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>100</td>
+<td><blockquote class="first last">
+<div>Rainfall is evenly distributed among all subintervals in a rainy interval. This is the default option.</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td>101</td>
+<td><blockquote class="first last">
+<div>Rainfall is evenly distributed among among RainAmongN subintervals in a rainy interval – also requires RainAmongN to be set.</div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td>102</td>
+<td><blockquote class="first last">
+<div>Rainfall is evenly distributed among among RainAmongN subintervals in a rainy interval for different intensity bins – also requires MultRainAmongN and MultRainAmongNUpperI to be set.</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-odd"><td>RainAmongN</td>
+<td>O</td>
+<td>Specifies the number of subintervals (of length tt) over which to distribute rainfall in each interval (of length TT). Must be an integer value. Use with RainDisaggMethod = 101.</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>MultRainAmongN</td>
+<td>O</td>
+<td>Specifies the number of subintervals (of length tt) over which to distribute rainfall in each interval (of length TT) for up to 5 intensity bins. Must take integer values. Use with RainDisaggMethod = 102. e.g. MultRainAmongN(1) = 5, MultRainAmongN(2) = 8, MultRainAmongN(3) = 12</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>MultRainAmongNUpperI</td>
+<td>O</td>
+<td>Specifies upper limit for each intensity bin to apply MultRainAmongN. Any intensities above the highest specified intensity will use the last MultRainAmongN value and write a warning to warnings.txt. Use with RainDisaggMethod = 102. e.g. MultRainAmongNUpperI(1) = 0.5, MultRainAmongNUpperI(2) = 2.0, MultRainAmongNUpperI(3) = 50.0</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>DisaggMethodESTM</td>
+<td>O</td>
+<td>Specifies how ESTM-related temperatures in the input file are disaggregated to the model time step.</td>
+<td><table border="1" class="colwidths-given first last docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Value</th>
+<th class="head">Comments</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td><blockquote class="first last">
+<div>Linear downscaling of averages.</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td><blockquote class="first last">
+<div>Linear downscaling of instantaneous values.</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<span id="netcdf-related-options"></span><table border="1" class="docutils" id="id5">
+<caption><span class="caption-number">Table 6.5 </span><span class="caption-text">netCDF_related_options</span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">R/O</th>
+<th class="head">Description</th>
+<th class="head">Possible Settings</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>ncMode</td>
+<td>O</td>
+<td>Determine if the output files should be written in netCDF format.</td>
+<td><table border="1" class="colwidths-given first last docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Value</th>
+<th class="head">Comments</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>0</td>
+<td>Output files are kept as plain text files (i.e., .txt).</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td>Output files will be written in netCDF format (i.e., .nc).</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-even"><td>nRow</td>
+<td>O</td>
+<td>Number of rows (e.g., 36) in the output layout (only applicable when ncMode=1).</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>nCol</td>
+<td>O</td>
+<td>Number of columns (e.g., 47) in the output layout (only applicable when ncMode=1).</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../SUEWS_SiteInfo/SUEWS_SiteInfo.html" class="btn btn-neutral float-right" title="6.2. SUEWS_SiteInfo.xlsm" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../input-files.html" class="btn btn-neutral" title="6. Input files" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, micromet@University of Reading, led by Prof Sue Grimmond.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'2018a',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

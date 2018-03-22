@@ -106,7 +106,7 @@ html_static_path = ['_static']
 # 'searchbox.html']``.
 #
 # html_sidebars = {}
-
+numfig = True
 
 # -- Options for HTMLHelp output ---------------------------------------------
 

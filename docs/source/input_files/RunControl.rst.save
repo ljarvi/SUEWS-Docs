@@ -1,0 +1,1472 @@
+RunControl.nml
+--------------
+
+The file **RunControl.nml** is a namelist that specifies the options for
+the model run. It must be located in the same directory as the
+executable file.
+
+The format should be
+
+.. literalinclude:: RunControl.nml
+
+
+
+In *Linux* and *Mac*, please add an empty line after the end slash.
+
+-  The file is not case-sensitive.
+-  The parameters and variables can appear in any order.
+
++-----------------+---------------------+-----------------+-----------------+
+| Name            | Required/Optional   | Description     |                 |
++=================+=====================+=================+=================+
+| *Model run      |                     |                 |                 |
+| options*        |                     |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| CBLuse          | R                   | Determines      |                 |
+|                 |                     | whether a CBL   |                 |
+|                 |                     | slab model is   |                 |
+|                 |                     | used to         |                 |
+|                 |                     | calculate       |                 |
+|                 |                     | temperature and |                 |
+|                 |                     | humidity.       |                 |
++-----------------+---------------------+-----------------+-----------------+
+| Value           | Comments            |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 0               | CBL model           |                 |                 |
+|                 | **not** used.       |                 |                 |
+|                 | SUEWS and LUMPS     |                 |                 |
+|                 | use temperature     |                 |                 |
+|                 | and humidity        |                 |                 |
+|                 | provided in the     |                 |                 |
+|                 | meteorological      |                 |                 |
+|                 | forcing file.       |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 1               | CBL model is        |                 |                 |
+|                 | used to             |                 |                 |
+|                 | calculate           |                 |                 |
+|                 | temperature and     |                 |                 |
+|                 | humidity used       |                 |                 |
+|                 | in SUEWS and        |                 |                 |
+|                 | LUMPS.              |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| SnowUse         | R                   | Determines      |                 |
+|                 |                     | whether the     |                 |
+|                 |                     | snow part of    |                 |
+|                 |                     | the model runs. |                 |
++-----------------+---------------------+-----------------+-----------------+
+| Value           | Comments            |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 0               | Snow                |                 |                 |
+|                 | calculations        |                 |                 |
+|                 | are **not**         |                 |                 |
+|                 | performed.          |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 1               | Snow                |                 |                 |
+|                 | calculations        |                 |                 |
+|                 | are performed.      |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| SOLWEIGUse      | R                   | Determines      |                 |
+|                 |                     | whether a high  |                 |
+|                 |                     | resolution      |                 |
+|                 |                     | radiation model |                 |
+|                 |                     | to calculate    |                 |
+|                 |                     | mean radiant    |                 |
+|                 |                     | temperate       |                 |
+|                 |                     | should be used  |                 |
+|                 |                     | (SOLWEIG).      |                 |
+|                 |                     | NOTE: this      |                 |
+|                 |                     | option will     |                 |
+|                 |                     | considerably    |                 |
+|                 |                     | slow down the   |                 |
+|                 |                     | model since     |                 |
+|                 |                     | SOLWEIG is a 2D |                 |
+|                 |                     | model.          |                 |
++-----------------+---------------------+-----------------+-----------------+
+| Value           | Comments            |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 0               | SOLWEIG             |                 |                 |
+|                 | calculations        |                 |                 |
+|                 | are **not**         |                 |                 |
+|                 | performed.          |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 1               | SOLWEIG             |                 |                 |
+|                 | calculations        |                 |                 |
+|                 | are performed.      |                 |                 |
+|                 | A grid of mean      |                 |                 |
+|                 | radiant             |                 |                 |
+|                 | temperature         |                 |                 |
+|                 | (Tmrt) is           |                 |                 |
+|                 | calculated          |                 |                 |
+|                 | based on high       |                 |                 |
+|                 | resolution          |                 |                 |
+|                 | digital surface     |                 |                 |
+|                 | models.             |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| NetRadiationMet | R                   | Determines      |                 |
+| hod             |                     | method for      |                 |
+| (previously     |                     | calculation of  |                 |
+| NetRadiationCho |                     | radiation       |                 |
+| ice)            |                     | fluxes.         |                 |
++-----------------+---------------------+-----------------+-----------------+
+| Value           | Comments            |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 0               | Uses observed       |                 |                 |
+|                 | values of Q\*       |                 |                 |
+|                 | supplied in         |                 |                 |
+|                 | meteorological      |                 |                 |
+|                 | forcing file.       |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 1               | -  Q\* modelled     |                 |                 |
+|                 | with L↓             |                 |                 |
+|                 | observations        |                 |                 |
+|                 | supplied in         |                 |                 |
+|                 | meteorologic        |                 |                 |
+|                 | al                  |                 |                 |
+|                 | forcing             |                 |                 |
+|                 | file.               |                 |                 |
+|                 | -  Zenith angle     |                 |                 |
+|                 | **not**             |                 |                 |
+|                 | accounted           |                 |                 |
+|                 | for in              |                 |                 |
+|                 | albedo              |                 |                 |
+|                 | calculation.        |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 2               | -  Q\* modelled     |                 |                 |
+|                 | with L↓             |                 |                 |
+|                 | modelled            |                 |                 |
+|                 | using cloud         |                 |                 |
+|                 | cover               |                 |                 |
+|                 | fraction            |                 |                 |
+|                 | supplied in         |                 |                 |
+|                 | meteorologic        |                 |                 |
+|                 | al                  |                 |                 |
+|                 | forcing file        |                 |                 |
+|                 | (Loridan et         |                 |                 |
+|                 | al.                 |                 |                 |
+|                 | 2011 [L2011]_).     |                 |                 |
+|                 | -  Zenith angle     |                 |                 |
+|                 | **not**             |                 |                 |
+|                 | accounted           |                 |                 |
+|                 | for in              |                 |                 |
+|                 | albedo              |                 |                 |
+|                 | calculation.        |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 3               | -  Q\* modelled     |                 |                 |
+|                 | with L↓             |                 |                 |
+|                 | modelled            |                 |                 |
+|                 | using air           |                 |                 |
+|                 | temperature         |                 |                 |
+|                 | and relative        |                 |                 |
+|                 | humidity            |                 |                 |
+|                 | supplied in         |                 |                 |
+|                 | meteorologic        |                 |                 |
+|                 | al                  |                 |                 |
+|                 | forcing file        |                 |                 |
+|                 | (Loridan et         |                 |                 |
+|                 | al.                 |                 |                 |
+|                 | 2011 [L2011]_).     |                 |                 |
+|                 | -  Zenith angle     |                 |                 |
+|                 | **not**             |                 |                 |
+|                 | accounted           |                 |                 |
+|                 | for in              |                 |                 |
+|                 | albedo              |                 |                 |
+|                 | calculation.        |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 100             | -  Q\* modelled     |                 |                 |
+|                 | with L↓             |                 |                 |
+|                 | observations        |                 |                 |
+|                 | supplied in         |                 |                 |
+|                 | meteorologic        |                 |                 |
+|                 | al                  |                 |                 |
+|                 | forcing             |                 |                 |
+|                 | file.               |                 |                 |
+|                 | -  Zenith angle     |                 |                 |
+|                 | accounted           |                 |                 |
+|                 | for in              |                 |                 |
+|                 | albedo              |                 |                 |
+|                 | calculation.        |                 |                 |
+|                 | -  SSss_YYYY_NA     |                 |                 |
+|                 | RPOut.txt           |                 |                 |
+|                 | file                |                 |                 |
+|                 | produced.           |                 |                 |
+|                 | -  **Not            |                 |                 |
+|                 | recommended         |                 |                 |
+|                 | in this             |                 |                 |
+|                 | release**           |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 200             | -  Q\* modelled     |                 |                 |
+|                 | with L↓             |                 |                 |
+|                 | modelled            |                 |                 |
+|                 | using cloud         |                 |                 |
+|                 | cover               |                 |                 |
+|                 | fraction            |                 |                 |
+|                 | supplied in         |                 |                 |
+|                 | meteorologic        |                 |                 |
+|                 | al                  |                 |                 |
+|                 | forcing file        |                 |                 |
+|                 | (Loridan et         |                 |                 |
+|                 | al.                 |                 |                 |
+|                 | 2011 [L2011]_).     |                 |                 |
+|                 | -  Zenith angle     |                 |                 |
+|                 | accounted           |                 |                 |
+|                 | for in              |                 |                 |
+|                 | albedo              |                 |                 |
+|                 | calculation.        |                 |                 |
+|                 | -  SSss_YYYY_NA     |                 |                 |
+|                 | RPOut.txt           |                 |                 |
+|                 | file                |                 |                 |
+|                 | produced.           |                 |                 |
+|                 | -  **Not            |                 |                 |
+|                 | recommended         |                 |                 |
+|                 | in this             |                 |                 |
+|                 | release**           |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 300             | -  Q\* modelled     |                 |                 |
+|                 | with L↓             |                 |                 |
+|                 | modelled            |                 |                 |
+|                 | using air           |                 |                 |
+|                 | temperature         |                 |                 |
+|                 | and relative        |                 |                 |
+|                 | humidity            |                 |                 |
+|                 | supplied in         |                 |                 |
+|                 | meteorologic        |                 |                 |
+|                 | al                  |                 |                 |
+|                 | forcing file        |                 |                 |
+|                 | (Loridan et         |                 |                 |
+|                 | al.                 |                 |                 |
+|                 | 2011 [L2011]_).     |                 |                 |
+|                 | -  Zenith angle     |                 |                 |
+|                 | accounted           |                 |                 |
+|                 | for in              |                 |                 |
+|                 | albedo              |                 |                 |
+|                 | calculation.        |                 |                 |
+|                 | -  SSss_YYYY_NA     |                 |                 |
+|                 | RPOut.txt           |                 |                 |
+|                 | file                |                 |                 |
+|                 | produced.           |                 |                 |
+|                 | -  **Not            |                 |                 |
+|                 | recommended         |                 |                 |
+|                 | in this             |                 |                 |
+|                 | release**           |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| AnthropHeatMeth | R                   | Determines      |                 |
+| od              |                     | method for QF   |                 |
+| (previously     |                     | calculation.    |                 |
+| AnthropHeatChoi |                     |                 |                 |
+| ce)             |                     |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| Value           | Comments            |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 0               | -  Uses values      |                 |                 |
+|                 | provided in         |                 |                 |
+|                 | the                 |                 |                 |
+|                 | meteorologic        |                 |                 |
+|                 | al                  |                 |                 |
+|                 | forcing file        |                 |                 |
+|                 | (SSss_YYYY_d        |                 |                 |
+|                 | ata_tt.txt).        |                 |                 |
+|                 | -  If you do        |                 |                 |
+|                 | not want to         |                 |                 |
+|                 | include QF          |                 |                 |
+|                 | to the              |                 |                 |
+|                 | calculation         |                 |                 |
+|                 | of surface          |                 |                 |
+|                 | energy              |                 |                 |
+|                 | balance, you        |                 |                 |
+|                 | should set          |                 |                 |
+|                 | values in           |                 |                 |
+|                 | the                 |                 |                 |
+|                 | meteorologic        |                 |                 |
+|                 | al                  |                 |                 |
+|                 | forcing file        |                 |                 |
+|                 | to zero to          |                 |                 |
+|                 | prevent             |                 |                 |
+|                 | calculation         |                 |                 |
+|                 | of QF.              |                 |                 |
+|                 | -  `UMEP <http:     |                 |                 |
+|                 | //urban-climate     |                 |                 |
+|                 | .net/umep/UMEP>     |                 |                 |
+|                 | `__                 |                 |                 |
+|                 | provides two        |                 |                 |
+|                 | methods to          |                 |                 |
+|                 | calculate QF        |                 |                 |
+|                 | #. `LQF <http:/     |                 |                 |
+|                 | /urban-climate.     |                 |                 |
+|                 | net/umep/LQF_Ma     |                 |                 |
+|                 | nual>`__            |                 |                 |
+|                 | which is            |                 |                 |
+|                 | simpler             |                 |                 |
+|                 | #. `GQF <http:/     |                 |                 |
+|                 | /urban-climate.     |                 |                 |
+|                 | net/umep/GQF_Ma     |                 |                 |
+|                 | nual>`__            |                 |                 |
+|                 | which is            |                 |                 |
+|                 | more                |                 |                 |
+|                 | complete but        |                 |                 |
+|                 | requires            |                 |                 |
+|                 | more data           |                 |                 |
+|                 | inputs              |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 1               | \*'''Currently      | '''             |                 |
+|                 | not recommended     | -  Calculated   |                 |
+|                 |                     | according to    |                 |
+|                 |                     | Loridan et      |                 |
+|                 |                     | al.             |                 |
+|                 |                     | (2011) [L2011]_ |                 |
+|                 |                     | using           |                 |
+|                 |                     | coefficients    |                 |
+|                 |                     | specified in    |                 |
+|                 |                     | SUEWS_Anthro    |                 |
+|                 |                     | pogenicHeat.txt |                 |
+|                 |                     | .               |                 |
+|                 |                     | -  Modelled     |                 |
+|                 |                     | values will     |                 |
+|                 |                     | be used even    |                 |
+|                 |                     | if QF is        |                 |
+|                 |                     | provided in     |                 |
+|                 |                     | the             |                 |
+|                 |                     | meteorologic    |                 |
+|                 |                     | al              |                 |
+|                 |                     | forcing         |                 |
+|                 |                     | file.           |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 2               | -  **Recommende     |                 |                 |
+|                 | d**                 |                 |                 |
+|                 | -  Calculated       |                 |                 |
+|                 | according to        |                 |                 |
+|                 | Järvi et al.        |                 |                 |
+|                 | (2011) [J11]_       |                 |                 |
+|                 | using               |                 |                 |
+|                 | coefficients        |                 |                 |
+|                 | specified in        |                 |                 |
+|                 | SUEWS_Anthro        |                 |                 |
+|                 | pogenicHeat.txt     |                 |                 |
+|                 | and diurnal         |                 |                 |
+|                 | patterns            |                 |                 |
+|                 | specified in        |                 |                 |
+|                 | SUEWS_Profil        |                 |                 |
+|                 | es.txt.             |                 |                 |
+|                 | -  Modelled         |                 |                 |
+|                 | values will         |                 |                 |
+|                 | be used even        |                 |                 |
+|                 | if QF is            |                 |                 |
+|                 | provided in         |                 |                 |
+|                 | the                 |                 |                 |
+|                 | meteorologic        |                 |                 |
+|                 | al                  |                 |                 |
+|                 | forcing             |                 |                 |
+|                 | file.               |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| AnthropCO2Metho | R                   | Determines      |                 |
+| d               |                     | method for CO2  |                 |
+|                 |                     | calculation.    |                 |
++-----------------+---------------------+-----------------+-----------------+
+| Value           | Comments            |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 1               | Not used.           |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 2               | -  **Under          |                 |                 |
+|                 | development         |                 |                 |
+|                 | - not               |                 |                 |
+|                 | recommended         |                 |                 |
+|                 | in v2017b**         |                 |                 |
+|                 | -  Calculate        |                 |                 |
+|                 | CO2                 |                 |                 |
+|                 | emissions           |                 |                 |
+|                 | from traffic        |                 |                 |
+|                 | based on QF         |                 |                 |
+|                 | calculation.        |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 3               | -  **Under          |                 |                 |
+|                 | development         |                 |                 |
+|                 | - not               |                 |                 |
+|                 | recommended         |                 |                 |
+|                 | in v2017b**         |                 |                 |
+|                 | -  Calculate        |                 |                 |
+|                 | CO2                 |                 |                 |
+|                 | emissions           |                 |                 |
+|                 | from traffic        |                 |                 |
+|                 | from input          |                 |                 |
+|                 | data                |                 |                 |
+|                 | provided.           |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| StorageHeatMeth |                     | Determines      |                 |
+| od              |                     | method for      |                 |
+| (previously     |                     | calculating     |                 |
+| QSChoice)       |                     | storage heat    |                 |
+|                 |                     | flux ΔQS.       |                 |
++-----------------+---------------------+-----------------+-----------------+
+| Value           | Comments            |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 1               | -  ΔQS modelled     |                 |                 |
+|                 | using the           |                 |                 |
+|                 | objective           |                 |                 |
+|                 | hysteresis          |                 |                 |
+|                 | model               |                 |                 |
+|                 | (OHM) [G91OHM]_     |                 |                 |
+|                 | [GO99QS]_ [GO2002]_ |                 |                 |
+|                 | using               |                 |                 |
+|                 | parameters          |                 |                 |
+|                 | specified           |                 |                 |
+|                 | for each            |                 |                 |
+|                 | surface             |                 |                 |
+|                 | type.               |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 2               | -  Uses             |                 |                 |
+|                 | observed            |                 |                 |
+|                 | values of           |                 |                 |
+|                 | ΔQS supplied        |                 |                 |
+|                 | in                  |                 |                 |
+|                 | meteorologic        |                 |                 |
+|                 | al                  |                 |                 |
+|                 | forcing             |                 |                 |
+|                 | file.               |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 3               | -  ΔQS modelled     |                 |                 |
+|                 | using AnOHM.        |                 |                 |
+|                 | -  **Not            |                 |                 |
+|                 | available in        |                 |                 |
+|                 | v2017b**            |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 4               | -  ΔQS modelled     |                 |                 |
+|                 | using the           |                 |                 |
+|                 | Element             |                 |                 |
+|                 | Surface             |                 |                 |
+|                 | Temperature         |                 |                 |
+|                 | Method              |                 |                 |
+|                 | (ESTM)              |                 |                 |
+|                 | (Offerle et         |                 |                 |
+|                 | al.                 |                 |                 |
+|                 | 2005 [Oaf2005]_).   |                 |                 |
+|                 | -  **Not            |                 |                 |
+|                 | recommended         |                 |                 |
+|                 | in v2017b**         |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| OHMIncQF        | R                   | Determines      |                 |
+|                 |                     | whether the     |                 |
+|                 |                     | storage heat    |                 |
+|                 |                     | flux            |                 |
+|                 |                     | calculation     |                 |
+|                 |                     | uses Q\* or     |                 |
+|                 |                     | (Q*+QF).        |                 |
++-----------------+---------------------+-----------------+-----------------+
+| Value           | Comments            |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 0               | ΔQS modelled        |                 |                 |
+|                 | Q\* only.           |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 1               | ΔQS modelled        |                 |                 |
+|                 | using Q*+QF.        |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| StabilityMethod | R                   | Defines which   |                 |
+|                 |                     | atmospheric     |                 |
+|                 |                     | stability       |                 |
+|                 |                     | functions are   |                 |
+|                 |                     | used.           |                 |
++-----------------+---------------------+-----------------+-----------------+
+| Value           | Comments            |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 0               | Not used.           |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 1               | Not used.           |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 2               | -  **Recommende     |                 |                 |
+|                 | d**                 |                 |                 |
+|                 | -  Momentum -       |                 |                 |
+|                 | unstable:           |                 |                 |
+|                 | Dyer                |                 |                 |
+|                 | (1974) [D74]_       |                 |                 |
+|                 | modified by         |                 |                 |
+|                 | Högstrom            |                 |                 |
+|                 | (1988) [H88]_       |                 |                 |
+|                 | ;                   |                 |                 |
+|                 | stable: Van         |                 |                 |
+|                 | Ulden and           |                 |                 |
+|                 | Holtslag            |                 |                 |
+|                 | (1985) [VUH85]_     |                 |                 |
+|                 | -  Heat - Dyer      |                 |                 |
+|                 | (1974) [D74]_       |                 |                 |
+|                 | modified by         |                 |                 |
+|                 | Högstrom            |                 |                 |
+|                 | (1988) [H88]_       |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 3               | -  Momentum:        |                 |                 |
+|                 | Campbell and        |                 |                 |
+|                 | Norman (Eq          |                 |                 |
+|                 | 7.27, Pg97)         |                 |                 |
+|                 | [CNstab]_           |                 |                 |
+|                 | -  Heat -           |                 |                 |
+|                 | unstable:           |                 |                 |
+|                 | Campbell and        |                 |                 |
+|                 | Norman [CNstab]_    |                 |                 |
+|                 | ;                   |                 |                 |
+|                 | stable: Dyer        |                 |                 |
+|                 | (1974) [D74]_       |                 |                 |
+|                 | modified by         |                 |                 |
+|                 | Högstrom            |                 |                 |
+|                 | (1988) [H88]_       |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 4               | -  Momentum:        |                 |                 |
+|                 | Businger et         |                 |                 |
+|                 | al.                 |                 |                 |
+|                 | (1971) [B71]_       |                 |                 |
+|                 | modified by         |                 |                 |
+|                 | Högstrom            |                 |                 |
+|                 | (1988) [H88]_       |                 |                 |
+|                 | -  Heat:            |                 |                 |
+|                 | Businger et         |                 |                 |
+|                 | al.                 |                 |                 |
+|                 | (1971) [B71]_       |                 |                 |
+|                 | modified by         |                 |                 |
+|                 | Högstrom            |                 |                 |
+|                 | (1988) [H88]_       |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| RoughLenHeatMet | R                   | Determines      |                 |
+| hod             |                     | method for      |                 |
+| (previously     |                     | calculating     |                 |
+| RoughLen_heat)  |                     | roughness       |                 |
+|                 |                     | length for      |                 |
+|                 |                     | heat.           |                 |
++-----------------+---------------------+-----------------+-----------------+
+| Value           | Comments            |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 1               | -  Uses value       |                 |                 |
+|                 | of 0.1z0m.          |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 2               | -  **Recommende     |                 |                 |
+|                 | d**                 |                 |                 |
+|                 | -  Calculated       |                 |                 |
+|                 | according to        |                 |                 |
+|                 | Kawai et al.        |                 |                 |
+|                 | (2009) [Ka09]_      |                 |                 |
+|                 | .                   |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 3               | -  Calculated       |                 |                 |
+|                 | according to        |                 |                 |
+|                 | Voogt and           |                 |                 |
+|                 | Grimmond            |                 |                 |
+|                 | (2000) [VG00]_      |                 |                 |
+|                 | .                   |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 4               | -  Calculated       |                 |                 |
+|                 | according to        |                 |                 |
+|                 | Kanda et al.        |                 |                 |
+|                 | (2007) [Ka07]_      |                 |                 |
+|                 | .                   |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| RoughLenMomMeth | R                   | Determines how  |                 |
+| od              |                     | aerodynamic     |                 |
+| (previously     |                     | roughness       |                 |
+| z0_method)      |                     | length (z0m)    |                 |
+|                 |                     | and zero        |                 |
+|                 |                     | displacement    |                 |
+|                 |                     | height (zdm)    |                 |
+|                 |                     | are calculated. |                 |
++-----------------+---------------------+-----------------+-----------------+
+| Value           | Comments            |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 1               | \*Values            | SUEWS_SiteSelec |                 |
+|                 | specified in        | t.txt]]         |                 |
+|                 | [[#SUEWS_SiteSe     | are used. Note  |                 |
+|                 | lect.txt            | that            |                 |
+|                 |                     | `UMEP <http://u |                 |
+|                 |                     | rban-climate.ne |                 |
+|                 |                     | t/umep/UMEP>`__ |                 |
+|                 |                     | provides tools  |                 |
+|                 |                     | to calculate    |                 |
+|                 |                     | these]. See     |                 |
+|                 |                     | `Kent et al.    |                 |
+|                 |                     | (2017a) <https: |                 |
+|                 |                     | //link.springer |                 |
+|                 |                     | .com/article/10 |                 |
+|                 |                     | .1007/s10546-01 |                 |
+|                 |                     | 7-0248-z>`__    |                 |
+|                 |                     | for             |                 |
+|                 |                     | recommendations |                 |
+|                 |                     | on methods.     |                 |
+|                 |                     | Kent et al.     |                 |
+|                 |                     | (2017b) have    |                 |
+|                 |                     | developed a     |                 |
+|                 |                     | method to       |                 |
+|                 |                     | include         |                 |
+|                 |                     | vegetation      |                 |
+|                 |                     | which is also   |                 |
+|                 |                     | avaialble       |                 |
+|                 |                     | within UMEP.    |                 |
+|                 |                     | -  Kent CW, CSB |                 |
+|                 |                     | Grimmond, J     |                 |
+|                 |                     | Barlow, D       |                 |
+|                 |                     | Gatey, S        |                 |
+|                 |                     | Kotthaus, F     |                 |
+|                 |                     | Lindberg, CH    |                 |
+|                 |                     | Halios          |                 |
+|                 |                     | 2017a:          |                 |
+|                 |                     | Evaluation      |                 |
+|                 |                     | of urban        |                 |
+|                 |                     | local-scale     |                 |
+|                 |                     | aerodynamic     |                 |
+|                 |                     | parameters:     |                 |
+|                 |                     | implications    |                 |
+|                 |                     | for the         |                 |
+|                 |                     | vertical        |                 |
+|                 |                     | profile of      |                 |
+|                 |                     | wind and        |                 |
+|                 |                     | source areas    |                 |
+|                 |                     | Boundary        |                 |
+|                 |                     | Layer           |                 |
+|                 |                     | Meteorology     |                 |
+|                 |                     | 164,183–213     |                 |
+|                 |                     | doi:            |                 |
+|                 |                     | 10.1007/s105    |                 |
+|                 |                     | 46-017-0248-z   |                 |
+|                 |                     | -  Kent CW, S   |                 |
+|                 |                     | Grimmond, D     |                 |
+|                 |                     | Gatey 2017b:    |                 |
+|                 |                     | Aerodynamic     |                 |
+|                 |                     | roughness       |                 |
+|                 |                     | parameters      |                 |
+|                 |                     | in cities:      |                 |
+|                 |                     | inclusion of    |                 |
+|                 |                     | vegetation      |                 |
+|                 |                     | Journal of      |                 |
+|                 |                     | Wind            |                 |
+|                 |                     | Engineering     |                 |
+|                 |                     | & Industrial    |                 |
+|                 |                     | Aerodynamics    |                 |
+|                 |                     | http://dx.do    |                 |
+|                 |                     | i.org/10.1016/j |                 |
+|                 |                     | .jweia.2017.07. |                 |
+|                 |                     | 016             |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 2               | \*z0m and zd        | SUEWS_SiteSelec |                 |
+|                 | are calculated      | t.txt]].        |                 |
+|                 | using 'rule of      | -  z0m and zd   |                 |
+|                 | thumb'              | are adjusted    |                 |
+|                 | (Grimmond and       | with time to    |                 |
+|                 | Oke 1999 [GO99]_)   | account for     |                 |
+|                 | using mean          | seasonal        |                 |
+|                 | building and        | variation in    |                 |
+|                 | tree height         | porosity of     |                 |
+|                 | specified in        | deciduous       |                 |
+|                 | [[#SUEWS_SiteSe     | trees.          |                 |
+|                 | lect.txt            |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 3               | \*z0m and zd        | SUEWS_SiteSelec |                 |
+|                 | are calculated      | t.txt]].        |                 |
+|                 | based on the        | -  z0m and zd   |                 |
+|                 | MacDonald et        | are adjusted    |                 |
+|                 | al.                 | with time to    |                 |
+|                 | (1998) [Mc98]_      | account for     |                 |
+|                 | method using        | seasonal        |                 |
+|                 | mean building       | variation in    |                 |
+|                 | and tree            | porosity of     |                 |
+|                 | heights, plan       | deciduous       |                 |
+|                 | area fraction       | trees.          |                 |
+|                 | and frontal         |                 |                 |
+|                 | areal index         |                 |                 |
+|                 | specified in        |                 |                 |
+|                 | [[#SUEWS_SiteSe     |                 |                 |
+|                 | lect.txt            |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| SMDMethod       | R                   | Determines      |                 |
+| (previously     |                     | method for      |                 |
+| SMD_Choice)     |                     | calculating     |                 |
+|                 |                     | soil moisture   |                 |
+|                 |                     | deficit (SMD).  |                 |
++-----------------+---------------------+-----------------+-----------------+
+| Value           | Comments            |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 0               | -  **Recommende     | SUEWS_Soil.txt] |                 |
+|                 | d**                 | ].              |                 |
+|                 | \*SMD modelled      |                 |                 |
+|                 | using               |                 |                 |
+|                 | parameters          |                 |                 |
+|                 | specified in        |                 |                 |
+|                 | [[#SUEWS_Soil.t     |                 |                 |
+|                 | xt                  |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 1               | \*'''Not            | '''             | SUEWS_Soil.txt] |
+|                 | currently           | -  Observed SM  | ].              |
+|                 | implemented -       | provided in     |                 |
+|                 | do not use          | the             |                 |
+|                 |                     | meteorologic    |                 |
+|                 |                     | al              |                 |
+|                 |                     | forcing file    |                 |
+|                 |                     | is used.        |                 |
+|                 |                     | \*Data are      |                 |
+|                 |                     | provided as     |                 |
+|                 |                     | *volumetric*    |                 |
+|                 |                     | soil moisture   |                 |
+|                 |                     | content.        |                 |
+|                 |                     | Metadata must   |                 |
+|                 |                     | be provided in  |                 |
+|                 |                     | [[#SUEWS_Soil.t |                 |
+|                 |                     | xt              |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 2               | \*'''Not            | '''             | SUEWS_Soil.txt] |
+|                 | currently           | -  Observed SM  | ].              |
+|                 | implemented -       | provided in     |                 |
+|                 | do not use          | the             |                 |
+|                 |                     | meteorologic    |                 |
+|                 |                     | al              |                 |
+|                 |                     | forcing file    |                 |
+|                 |                     | is used.        |                 |
+|                 |                     | \*Data are      |                 |
+|                 |                     | provided as     |                 |
+|                 |                     | *gravimetric*   |                 |
+|                 |                     | soil moisture   |                 |
+|                 |                     | content.        |                 |
+|                 |                     | Metadata must   |                 |
+|                 |                     | be provided in  |                 |
+|                 |                     | [[#SUEWS_Soil.t |                 |
+|                 |                     | xt              |                 |
++-----------------+---------------------+-----------------+-----------------+
+| WaterUseMethod  | R                   | Defines how     |                 |
+| (previously     |                     | external water  |                 |
+| WUChoice)       |                     | use is          |                 |
+|                 |                     | calculated.     |                 |
++-----------------+---------------------+-----------------+-----------------+
+| Value           | Comments            |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 0               | External water      | SUEWS_Irrigatio |                 |
+|                 | use modelled        | n.txt]].        |                 |
+|                 | using               |                 |                 |
+|                 | parameters          |                 |                 |
+|                 | specified in        |                 |                 |
+|                 | [[#SUEWS_Irriga     |                 |                 |
+|                 | tion.txt            |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 1               | Observations of     |                 |                 |
+|                 | external water      |                 |                 |
+|                 | use provided in     |                 |                 |
+|                 | the                 |                 |                 |
+|                 | meteorological      |                 |                 |
+|                 | forcing file        |                 |                 |
+|                 | are used.           |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| *File-related   |                     |                 |                 |
+| options*        |                     |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| FileCode        | R                   | Two-letter site |                 |
+|                 |                     | identification  |                 |
+|                 |                     | code (e.g. He,  |                 |
+|                 |                     | Sc, Kc).        |                 |
++-----------------+---------------------+-----------------+-----------------+
+| FileInputPath   | R                   | Input           |                 |
+|                 |                     | directory.      |                 |
++-----------------+---------------------+-----------------+-----------------+
+| FileOutputPath  | R                   | Output          |                 |
+|                 |                     | directory.      |                 |
++-----------------+---------------------+-----------------+-----------------+
+| MultipleMetFile | R                   | Specifies       |                 |
+| s               |                     | whether one     |                 |
+|                 |                     | single          |                 |
+|                 |                     | meteorological  |                 |
+|                 |                     | forcing file is |                 |
+|                 |                     | used for all    |                 |
+|                 |                     | grids or a      |                 |
+|                 |                     | separate met    |                 |
+|                 |                     | file is         |                 |
+|                 |                     | provided for    |                 |
+|                 |                     | each grid.      |                 |
++-----------------+---------------------+-----------------+-----------------+
+| Value           | Comments            |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 0               | -  Single           |                 |                 |
+|                 | meteorologic        |                 |                 |
+|                 | al                  |                 |                 |
+|                 | forcing file        |                 |                 |
+|                 | used for all        |                 |                 |
+|                 | grids.              |                 |                 |
+|                 | -  No grid          |                 |                 |
+|                 | number              |                 |                 |
+|                 | should              |                 |                 |
+|                 | appear in           |                 |                 |
+|                 | the file            |                 |                 |
+|                 | name.               |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 1               | -  Separate         |                 |                 |
+|                 | meteorologic        |                 |                 |
+|                 | al                  |                 |                 |
+|                 | forcing             |                 |                 |
+|                 | files used          |                 |                 |
+|                 | for each            |                 |                 |
+|                 | grid.               |                 |                 |
+|                 | -  The grid         |                 |                 |
+|                 | number              |                 |                 |
+|                 | should              |                 |                 |
+|                 | appear in           |                 |                 |
+|                 | the file            |                 |                 |
+|                 | name.               |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| MultipleInitFil | R                   | Specifies       |                 |
+| es              |                     | whether one     |                 |
+|                 |                     | single initial  |                 |
+|                 |                     | conditions file |                 |
+|                 |                     | is used for all |                 |
+|                 |                     | grids at the    |                 |
+|                 |                     | start of the    |                 |
+|                 |                     | run or a        |                 |
+|                 |                     | separate        |                 |
+|                 |                     | initial         |                 |
+|                 |                     | conditions file |                 |
+|                 |                     | is provided for |                 |
+|                 |                     | each grid.      |                 |
++-----------------+---------------------+-----------------+-----------------+
+| Value           | Comments            |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 0               | -  Single           |                 |                 |
+|                 | initial             |                 |                 |
+|                 | conditions          |                 |                 |
+|                 | file used           |                 |                 |
+|                 | for all             |                 |                 |
+|                 | grids.              |                 |                 |
+|                 | -  No grid          |                 |                 |
+|                 | number              |                 |                 |
+|                 | should              |                 |                 |
+|                 | appear in           |                 |                 |
+|                 | the file            |                 |                 |
+|                 | name.               |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 1               | -  Separate         |                 |                 |
+|                 | initial             |                 |                 |
+|                 | conditions          |                 |                 |
+|                 | files used          |                 |                 |
+|                 | for each            |                 |                 |
+|                 | grid.               |                 |                 |
+|                 | -  The grid         |                 |                 |
+|                 | number              |                 |                 |
+|                 | should              |                 |                 |
+|                 | appear in           |                 |                 |
+|                 | the file            |                 |                 |
+|                 | name.               |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| MultipleESTMFil | O                   | Specifies       |                 |
+| es              |                     | whether one     |                 |
+|                 |                     | single ESTM     |                 |
+|                 |                     | forcing file is |                 |
+|                 |                     | used for all    |                 |
+|                 |                     | grids or a      |                 |
+|                 |                     | separate file   |                 |
+|                 |                     | is provided for |                 |
+|                 |                     | each grid.      |                 |
++-----------------+---------------------+-----------------+-----------------+
+| Value           | Comments            |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 0               | -  Single ESTM      |                 |                 |
+|                 | forcing file        |                 |                 |
+|                 | used for all        |                 |                 |
+|                 | grids.              |                 |                 |
+|                 | -  No grid          |                 |                 |
+|                 | number              |                 |                 |
+|                 | should              |                 |                 |
+|                 | appear in           |                 |                 |
+|                 | the file            |                 |                 |
+|                 | name.               |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 1               | -  Separate         |                 |                 |
+|                 | ESTM forcing        |                 |                 |
+|                 | files used          |                 |                 |
+|                 | for each            |                 |                 |
+|                 | grid.               |                 |                 |
+|                 | -  The grid         |                 |                 |
+|                 | number              |                 |                 |
+|                 | should              |                 |                 |
+|                 | appear in           |                 |                 |
+|                 | the file            |                 |                 |
+|                 | name.               |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| KeepTstepFilesI | O                   | Specifies       |                 |
+| n               |                     | whether input   |                 |
+|                 |                     | meteorological  |                 |
+|                 |                     | forcing files   |                 |
+|                 |                     | at the          |                 |
+|                 |                     | resolution of   |                 |
+|                 |                     | the model time  |                 |
+|                 |                     | step should be  |                 |
+|                 |                     | saved.          |                 |
++-----------------+---------------------+-----------------+-----------------+
+| Value           | Comments            |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 0               | -  Meteorologic     |                 |                 |
+|                 | al                  |                 |                 |
+|                 | forcing             |                 |                 |
+|                 | files at            |                 |                 |
+|                 | model time          |                 |                 |
+|                 | step are not        |                 |                 |
+|                 | written out.        |                 |                 |
+|                 | This is the         |                 |                 |
+|                 | default             |                 |                 |
+|                 | option              |                 |                 |
+|                 | -  Recommended      |                 |                 |
+|                 | to reduce           |                 |                 |
+|                 | processing          |                 |                 |
+|                 | time and            |                 |                 |
+|                 | save disk           |                 |                 |
+|                 | space as            |                 |                 |
+|                 | (e.g. 5-min)        |                 |                 |
+|                 | files can be        |                 |                 |
+|                 | large.              |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 1               | -  Meteorologic     |                 |                 |
+|                 | al                  |                 |                 |
+|                 | forcing             |                 |                 |
+|                 | files at            |                 |                 |
+|                 | model time          |                 |                 |
+|                 | step are            |                 |                 |
+|                 | written out.        |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| KeepTstepFilesO | O                   | Specifies       |                 |
+| ut              |                     | whether output  |                 |
+|                 |                     | meteorological  |                 |
+|                 |                     | forcing files   |                 |
+|                 |                     | at the          |                 |
+|                 |                     | resolution of   |                 |
+|                 |                     | the model time  |                 |
+|                 |                     | step should be  |                 |
+|                 |                     | saved.          |                 |
++-----------------+---------------------+-----------------+-----------------+
+| Value           | Comments            |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 0               | -  Output files     |                 |                 |
+|                 | at model            |                 |                 |
+|                 | time are not        |                 |                 |
+|                 | saved. This         |                 |                 |
+|                 | is the              |                 |                 |
+|                 | default             |                 |                 |
+|                 | option.             |                 |                 |
+|                 | -  Recommended      |                 |                 |
+|                 | to save disk        |                 |                 |
+|                 | space as            |                 |                 |
+|                 | (e.g. 5-min)        |                 |                 |
+|                 | files can be        |                 |                 |
+|                 | large.              |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 1               | -  Output files     |                 |                 |
+|                 | at model            |                 |                 |
+|                 | time step           |                 |                 |
+|                 | are written         |                 |                 |
+|                 | out.                |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| WriteOutOption  | O                   | Specifies which |                 |
+|                 |                     | variables are   |                 |
+|                 |                     | written in the  |                 |
+|                 |                     | output files.   |                 |
++-----------------+---------------------+-----------------+-----------------+
+| Value           | Comments            |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 0               | -  All (except      |                 |                 |
+|                 | snow-related        |                 |                 |
+|                 | )                   |                 |                 |
+|                 | output              |                 |                 |
+|                 | variables           |                 |                 |
+|                 | written.            |                 |                 |
+|                 | This is the         |                 |                 |
+|                 | default             |                 |                 |
+|                 | option.             |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 1               | -  All              |                 |                 |
+|                 | (including          |                 |                 |
+|                 | snow-related        |                 |                 |
+|                 | )                   |                 |                 |
+|                 | output              |                 |                 |
+|                 | variables           |                 |                 |
+|                 | written.            |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 2               | -  Writes out a     |                 |                 |
+|                 | minimal set         |                 |                 |
+|                 | of output           |                 |                 |
+|                 | variables           |                 |                 |
+|                 | (use this to        |                 |                 |
+|                 | save space          |                 |                 |
+|                 | or if               |                 |                 |
+|                 | information         |                 |                 |
+|                 | about the           |                 |                 |
+|                 | different           |                 |                 |
+|                 | surfaces is         |                 |                 |
+|                 | not                 |                 |                 |
+|                 | required).          |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| SuppressWarning | O                   | Controls        |                 |
+| s               |                     | whether the     |                 |
+|                 |                     | warnings.txt    |                 |
+|                 |                     | file is written |                 |
+|                 |                     | or not.         |                 |
++-----------------+---------------------+-----------------+-----------------+
+| Value           | Comments            |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 0               | -  The              |                 |                 |
+|                 | warnings.txt        |                 |                 |
+|                 | file is             |                 |                 |
+|                 | written.            |                 |                 |
+|                 | This is the         |                 |                 |
+|                 | default             |                 |                 |
+|                 | option.             |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 1               | -  No               |                 |                 |
+|                 | warnings.txt        |                 |                 |
+|                 | file is             |                 |                 |
+|                 | written. May        |                 |                 |
+|                 | be useful           |                 |                 |
+|                 | for large           |                 |                 |
+|                 | model runs          |                 |                 |
+|                 | as this file        |                 |                 |
+|                 | can grow            |                 |                 |
+|                 | large.              |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| *Time-related   |                     |                 |                 |
+| options*        |                     |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| Tstep           | R                   | Specifies the   |                 |
+|                 |                     | model time step |                 |
+|                 |                     | [s]. A value of |                 |
+|                 |                     | 300 s (5 min)   |                 |
+|                 |                     | is strongly     |                 |
+|                 |                     | recommended.    |                 |
+|                 |                     | The time step   |                 |
+|                 |                     | cannot be less  |                 |
+|                 |                     | than 1 min or   |                 |
+|                 |                     | greater than 10 |                 |
+|                 |                     | min, and must   |                 |
+|                 |                     | be a whole      |                 |
+|                 |                     | number of       |                 |
+|                 |                     | minutes that    |                 |
+|                 |                     | divide into an  |                 |
+|                 |                     | hour (i.e.      |                 |
+|                 |                     | options are 1,  |                 |
+|                 |                     | 2, 3, 4, 5, 6,  |                 |
+|                 |                     | 10 min or 60,   |                 |
+|                 |                     | 120, 180, 240,  |                 |
+|                 |                     | 300, 360, 600   |                 |
+|                 |                     | s).             |                 |
++-----------------+---------------------+-----------------+-----------------+
+| ResolutionFiles | R                   | Specifies the   |                 |
+| In              |                     | resolution of   |                 |
+|                 |                     | the input files |                 |
+|                 |                     | [s] which SUEWS |                 |
+|                 |                     | will            |                 |
+|                 |                     | disaggregate to |                 |
+|                 |                     | the model time  |                 |
+|                 |                     | step. 1800 s    |                 |
+|                 |                     | for 30 min or   |                 |
+|                 |                     | 3600 s for 60   |                 |
+|                 |                     | min are         |                 |
+|                 |                     | recommended.    |                 |
+|                 |                     | (N.B. if        |                 |
+|                 |                     | ResolutionFiles |                 |
+|                 |                     | In              |                 |
+|                 |                     | is not          |                 |
+|                 |                     | provided, SUEWS |                 |
+|                 |                     | assumes         |                 |
+|                 |                     | ResolutionFiles |                 |
+|                 |                     | In              |                 |
+|                 |                     | = Tstep.)       |                 |
++-----------------+---------------------+-----------------+-----------------+
+| ResolutionFiles | O                   | Specifies the   |                 |
+| InESTM          |                     | resolution of   |                 |
+|                 |                     | the ESTM input  |                 |
+|                 |                     | files [s] which |                 |
+|                 |                     | SUEWS will      |                 |
+|                 |                     | disaggregate to |                 |
+|                 |                     | the model time  |                 |
+|                 |                     | step.           |                 |
++-----------------+---------------------+-----------------+-----------------+
+| ResolutionFiles | R                   | Specifies the   |                 |
+| Out             |                     | resolution of   |                 |
+|                 |                     | the output      |                 |
+|                 |                     | files [s]. 1800 |                 |
+|                 |                     | s for 30 min or |                 |
+|                 |                     | 3600 s for 60   |                 |
+|                 |                     | min are         |                 |
+|                 |                     | recommended.    |                 |
++-----------------+---------------------+-----------------+-----------------+
+| *Options        |                     |                 |                 |
+| related to      |                     |                 |                 |
+| disaggregation  |                     |                 |                 |
+| of input data*  |                     |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| DisaggMethod    | O                   | Specifies how   |                 |
+|                 |                     | meteorological  |                 |
+|                 |                     | variables in    |                 |
+|                 |                     | the input file  |                 |
+|                 |                     | (except rain    |                 |
+|                 |                     | and snow) are   |                 |
+|                 |                     | disaggregated   |                 |
+|                 |                     | to the model    |                 |
+|                 |                     | time step.      |                 |
+|                 |                     | **Wind          |                 |
+|                 |                     | direction is    |                 |
+|                 |                     | not currently   |                 |
+|                 |                     | downscaled so   |                 |
+|                 |                     | non -999 values |                 |
+|                 |                     | will cause an   |                 |
+|                 |                     | error.**        |                 |
++-----------------+---------------------+-----------------+-----------------+
+| Value           | Comments            |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 1               | Linear              |                 |                 |
+|                 | downscaling of      |                 |                 |
+|                 | averages for        |                 |                 |
+|                 | all variables,      |                 |                 |
+|                 | additional          |                 |                 |
+|                 | zenith check is     |                 |                 |
+|                 | used for Kdown.     |                 |                 |
+|                 | This is the         |                 |                 |
+|                 | default option.     |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 2               | Linear              |                 |                 |
+|                 | downscaling of      |                 |                 |
+|                 | instantaneous       |                 |                 |
+|                 | values for all      |                 |                 |
+|                 | variables,          |                 |                 |
+|                 | additional          |                 |                 |
+|                 | zenith check is     |                 |                 |
+|                 | used for Kdown.     |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 3               | WFDEI setting:      |                 |                 |
+|                 | average Kdown       |                 |                 |
+|                 | (with               |                 |                 |
+|                 | additional          |                 |                 |
+|                 | zenith check);      |                 |                 |
+|                 | instantaneous       |                 |                 |
+|                 | for Tair, RH,       |                 |                 |
+|                 | pres and U.         |                 |                 |
+|                 | (N.B. WFDEI         |                 |                 |
+|                 | actually            |                 |                 |
+|                 | provides Q not      |                 |                 |
+|                 | RH)                 |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| KdownZen        | O                   | Can be used to  |                 |
+|                 |                     | switch off      |                 |
+|                 |                     | zenith checking |                 |
+|                 |                     | in Kdown        |                 |
+|                 |                     | disaggregation. |                 |
+|                 |                     | Note that the   |                 |
+|                 |                     | zenith          |                 |
+|                 |                     | calculation     |                 |
+|                 |                     | requires        |                 |
+|                 |                     | location        |                 |
+|                 |                     | information     |                 |
+|                 |                     | obtained from   |                 |
+|                 |                     | SUEWS_SiteSelec |                 |
+|                 |                     | t.txt.          |                 |
+|                 |                     | If a single met |                 |
+|                 |                     | file is used    |                 |
+|                 |                     | for all grids,  |                 |
+|                 |                     | the zenith is   |                 |
+|                 |                     | calculated for  |                 |
+|                 |                     | the first grid  |                 |
+|                 |                     | and the         |                 |
+|                 |                     | disaggregated   |                 |
+|                 |                     | data is then    |                 |
+|                 |                     | applied for all |                 |
+|                 |                     | grids.          |                 |
++-----------------+---------------------+-----------------+-----------------+
+| Value           | Comments            |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 0               | No zenith angle     |                 |                 |
+|                 | check is            |                 |                 |
+|                 | applied.            |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 1               | Disaggregated       |                 |                 |
+|                 | Kdown is set to     |                 |                 |
+|                 | zero when           |                 |                 |
+|                 | zenith angle        |                 |                 |
+|                 | exceeds 90          |                 |                 |
+|                 | degrees (i.e.       |                 |                 |
+|                 | sun below           |                 |                 |
+|                 | horizon) and        |                 |                 |
+|                 | redistributed       |                 |                 |
+|                 | over the day.       |                 |                 |
+|                 | This is the         |                 |                 |
+|                 | default option.     |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| RainDisaggMetho | O                   | Specifies how   |                 |
+| d               |                     | rain in the     |                 |
+|                 |                     | meteorological  |                 |
+|                 |                     | forcing file    |                 |
+|                 |                     | are             |                 |
+|                 |                     | disaggregated   |                 |
+|                 |                     | to the model    |                 |
+|                 |                     | time step. **If |                 |
+|                 |                     | present in the  |                 |
+|                 |                     | original met    |                 |
+|                 |                     | forcing file,   |                 |
+|                 |                     | snow is         |                 |
+|                 |                     | currently       |                 |
+|                 |                     | disaggregated   |                 |
+|                 |                     | in the same way |                 |
+|                 |                     | as rainfall.**  |                 |
++-----------------+---------------------+-----------------+-----------------+
+| Value           | Comments            |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 100             | Rainfall is         |                 |                 |
+|                 | evenly              |                 |                 |
+|                 | distributed         |                 |                 |
+|                 | among all           |                 |                 |
+|                 | subintervals in     |                 |                 |
+|                 | a rainy             |                 |                 |
+|                 | interval. This      |                 |                 |
+|                 | is the default      |                 |                 |
+|                 | option.             |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 101             | Rainfall is         |                 |                 |
+|                 | evenly              |                 |                 |
+|                 | distributed         |                 |                 |
+|                 | among among         |                 |                 |
+|                 | **RainAmongN**      |                 |                 |
+|                 | subintervals in     |                 |                 |
+|                 | a rainy             |                 |                 |
+|                 | interval – also     |                 |                 |
+|                 | requires            |                 |                 |
+|                 | RainAmongN to       |                 |                 |
+|                 | be set.             |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 102             | Rainfall is         |                 |                 |
+|                 | evenly              |                 |                 |
+|                 | distributed         |                 |                 |
+|                 | among among         |                 |                 |
+|                 | **RainAmongN**      |                 |                 |
+|                 | subintervals in     |                 |                 |
+|                 | a rainy             |                 |                 |
+|                 | interval for        |                 |                 |
+|                 | different           |                 |                 |
+|                 | intensity bins      |                 |                 |
+|                 | – also requires     |                 |                 |
+|                 | MultRainAmongN      |                 |                 |
+|                 | and                 |                 |                 |
+|                 | MultRainAmongNU     |                 |                 |
+|                 | pperI               |                 |                 |
+|                 | to be set.          |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| RainAmongN      | O                   | Specifies the   |                 |
+|                 |                     | number of       |                 |
+|                 |                     | subintervals    |                 |
+|                 |                     | (of length tt)  |                 |
+|                 |                     | over which to   |                 |
+|                 |                     | distribute      |                 |
+|                 |                     | rainfall in     |                 |
+|                 |                     | each interval   |                 |
+|                 |                     | (of length TT). |                 |
+|                 |                     | Must be an      |                 |
+|                 |                     | integer value.  |                 |
+|                 |                     | Use with        |                 |
+|                 |                     | RainDisaggMetho |                 |
+|                 |                     | d               |                 |
+|                 |                     | = 101.          |                 |
++-----------------+---------------------+-----------------+-----------------+
+| MultRainAmongN  | O                   | Specifies the   |                 |
+|                 |                     | number of       |                 |
+|                 |                     | subintervals    |                 |
+|                 |                     | (of length tt)  |                 |
+|                 |                     | over which to   |                 |
+|                 |                     | distribute      |                 |
+|                 |                     | rainfall in     |                 |
+|                 |                     | each interval   |                 |
+|                 |                     | (of length TT)  |                 |
+|                 |                     | for up to 5     |                 |
+|                 |                     | intensity bins. |                 |
+|                 |                     | Must take       |                 |
+|                 |                     | integer values. |                 |
+|                 |                     | Use with        |                 |
+|                 |                     | RainDisaggMetho |                 |
+|                 |                     | d               |                 |
+|                 |                     | = 102. e.g.     |                 |
+|                 |                     | MultRainAmongN( |                 |
+|                 |                     | 1)              |                 |
+|                 |                     | = 5,            |                 |
+|                 |                     | MultRainAmongN( |                 |
+|                 |                     | 2)              |                 |
+|                 |                     | = 8,            |                 |
+|                 |                     | MultRainAmongN( |                 |
+|                 |                     | 3)              |                 |
+|                 |                     | = 12            |                 |
++-----------------+---------------------+-----------------+-----------------+
+| MultRainAmongNU | O                   | Specifies upper |                 |
+| pperI           |                     | limit for each  |                 |
+|                 |                     | intensity bin   |                 |
+|                 |                     | to apply        |                 |
+|                 |                     | MultRainAmongN. |                 |
+|                 |                     | Any intensities |                 |
+|                 |                     | above the       |                 |
+|                 |                     | highest         |                 |
+|                 |                     | specified       |                 |
+|                 |                     | intensity will  |                 |
+|                 |                     | use the last    |                 |
+|                 |                     | MultRainAmongN  |                 |
+|                 |                     | value and write |                 |
+|                 |                     | a warning to    |                 |
+|                 |                     | warnings.txt.   |                 |
+|                 |                     | Use with        |                 |
+|                 |                     | RainDisaggMetho |                 |
+|                 |                     | d               |                 |
+|                 |                     | = 102. e.g.     |                 |
+|                 |                     | MultRainAmongNU |                 |
+|                 |                     | pperI(1)        |                 |
+|                 |                     | = 0.5,          |                 |
+|                 |                     | MultRainAmongNU |                 |
+|                 |                     | pperI(2)        |                 |
+|                 |                     | = 2.0,          |                 |
+|                 |                     | MultRainAmongNU |                 |
+|                 |                     | pperI(3)        |                 |
+|                 |                     | = 50.0          |                 |
++-----------------+---------------------+-----------------+-----------------+
+| DisaggMethodEST | O                   | Specifies how   |                 |
+| M               |                     | ESTM-related    |                 |
+|                 |                     | temperatures in |                 |
+|                 |                     | the input file  |                 |
+|                 |                     | are             |                 |
+|                 |                     | disaggregated   |                 |
+|                 |                     | to the model    |                 |
+|                 |                     | time step.      |                 |
++-----------------+---------------------+-----------------+-----------------+
+| Value           | Comments            |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 1               | Linear              |                 |                 |
+|                 | downscaling of      |                 |                 |
+|                 | averages.           |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 2               | Linear              |                 |                 |
+|                 | downscaling of      |                 |                 |
+|                 | instantaneous       |                 |                 |
+|                 | values.             |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| *netCDF-related |                     |                 |                 |
+| options*        |                     |                 |                 |
+| '''N.B.: This   |                     |                 |                 |
+| feature is NOT  |                     |                 |                 |
+| enabled in the  |                     |                 |                 |
+| public release  |                     |                 |                 |
+| due to the      |                     |                 |                 |
+| dependency of   |                     |                 |                 |
+| netCDF library. |                     |                 |                 |
+| Please contact  |                     |                 |                 |
+| the development |                     |                 |                 |
+| team for        |                     |                 |                 |
+| assistance in   |                     |                 |                 |
+| enabling this   |                     |                 |                 |
+| feature if this |                     |                 |                 |
+| feature is      |                     |                 |                 |
+| needed: `SUEWS  |                     |                 |                 |
+| mail            |                     |                 |                 |
+| list <https://w |                     |                 |                 |
+| ww.lists.readin |                     |                 |                 |
+| g.ac.uk/mailman |                     |                 |                 |
+| /listinfo/met-s |                     |                 |                 |
+| uews>`__        |                     |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| ncMode          | O                   | Determine if    |                 |
+|                 |                     | the output      |                 |
+|                 |                     | files should be |                 |
+|                 |                     | written in      |                 |
+|                 |                     | netCDF format.  |                 |
++-----------------+---------------------+-----------------+-----------------+
+| Value           | Comments            |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 0               | -  Output files     |                 |                 |
+|                 | are kept as         |                 |                 |
+|                 | plain text          |                 |                 |
+|                 | files (i.e.,        |                 |                 |
+|                 | .txt).              |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| 1               | -  Output files     |                 |                 |
+|                 | will be             |                 |                 |
+|                 | written in          |                 |                 |
+|                 | netCDF              |                 |                 |
+|                 | format              |                 |                 |
+|                 | (i.e., .nc).        |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+| nRow            | O                   | Number of rows  |                 |
+|                 |                     | (e.g., 36) in   |                 |
+|                 |                     | the output      |                 |
+|                 |                     | layout (only    |                 |
+|                 |                     | applicable when |                 |
+|                 |                     | ncMode=1).      |                 |
++-----------------+---------------------+-----------------+-----------------+
+| nCol            | O                   | Number of       |                 |
+|                 |                     | columns (e.g.,  |                 |
+|                 |                     | 47) in the      |                 |
+|                 |                     | output layout   |                 |
+|                 |                     | (only           |                 |
+|                 |                     | applicable when |                 |
+|                 |                     | ncMode=1).      |                 |
++-----------------+---------------------+-----------------+-----------------+
+|                 |                     |                 |                 |
++-----------------+---------------------+-----------------+-----------------+
+
+
+
+
+Depending on how the storage heat flux is calculated (specified by
+StorageHeatMethod in `RunControl.nml <#RunControl.nml>`__), different
+input files are required:
+
++---------+---------+---------+---------+---------+---------+---------+
+| Option  | Storage | Files   |         |         |         |         |
+|         | HeatMet | needed  |         |         |         |         |
+|         | hod     |         |         |         |         |         |
++=========+=========+=========+=========+=========+=========+=========+
+| OHM     | 1       | \*Coeff | SUEWS_O |         |         |         |
+|         |         | icients | HMCoeff |         |         |         |
+|         |         | a1, a2, | icients |         |         |         |
+|         |         | a3      | .txt]]  |         |         |         |
+|         |         | specifi |         |         |         |         |
+|         |         | ed      |         |         |         |         |
+|         |         | in      |         |         |         |         |
+|         |         | [[#SUEW |         |         |         |         |
+|         |         | S_OHMCo |         |         |         |         |
+|         |         | efficie |         |         |         |         |
+|         |         | nts.txt |         |         |         |         |
++---------+---------+---------+---------+---------+---------+---------+
+| Observa | 2       | -  Stor |         |         |         |         |
+| tions   |         | age     |         |         |         |         |
+|         |         | heat    |         |         |         |         |
+|         |         | flux    |         |         |         |         |
+|         |         | is      |         |         |         |         |
+|         |         | prov    |         |         |         |         |
+|         |         | ide     |         |         |         |         |
+|         |         | in      |         |         |         |         |
+|         |         | mete    |         |         |         |         |
+|         |         | orologi |         |         |         |         |
+|         |         | cal     |         |         |         |         |
+|         |         | forc    |         |         |         |         |
+|         |         | ing     |         |         |         |         |
+|         |         | file    |         |         |         |         |
++---------+---------+---------+---------+---------+---------+---------+
+| AnOHM   | 3       | \*Therm | SUEWS_N | SUEWS_V | SUEWS_W | SUEWS_S |
+|         |         | al      | onVeg.t | eg.txt] | ater.tx | now.txt |
+|         |         | propert | xt]],   | ],[[#SU | t]]     | ]]      |
+|         |         | ies     | [[#SUEW | EWS_Wat | and     |         |
+|         |         | specifi | S_Veg.t | er.txt  | [[#SUEW |         |
+|         |         | ed      | xt      |         | S_Snow. |         |
+|         |         | with    |         |         | txt     |         |
+|         |         | other   |         |         |         |         |
+|         |         | site    |         |         |         |         |
+|         |         | charact |         |         |         |         |
+|         |         | eristic |         |         |         |         |
+|         |         | s       |         |         |         |         |
+|         |         | in      |         |         |         |         |
+|         |         | [[#SUEW |         |         |         |         |
+|         |         | S_NonVe |         |         |         |         |
+|         |         | g.txt   |         |         |         |         |
++---------+---------+---------+---------+---------+---------+---------+
+| ESTM    | 4       | \*Prope | SUEWS_E | ESTMinp | SSss_YY |         |
+|         |         | rties   | STMCoef | ut.nml] | YY_ESTM |         |
+|         |         | of each | ficient | ]       | _Ts_dat |         |
+|         |         | element | s.txt]] | \*Time- | a_tt.tx |         |
+|         |         | specifi | \*Model | series  | t]]     |         |
+|         |         | ed      | options | of      |         |         |
+|         |         | in      | specifi | surface |         |         |
+|         |         | [[#SUEW | ed      | tempera |         |         |
+|         |         | S_ESTMC | in      | tures   |         |         |
+|         |         | oeffici | [[#ESTM | provide |         |         |
+|         |         | ents.tx | input.n | d       |         |         |
+|         |         | t       | ml      | in      |         |         |
+|         |         |         |         | [[#SSss |         |         |
+|         |         |         |         | _YYYY_E |         |         |
+|         |         |         |         | STM_Ts_ |         |         |
+|         |         |         |         | data_tt |         |         |
+|         |         |         |         | .txt    |         |         |
++---------+---------+---------+---------+---------+---------+---------+
+|         |         |         |         |         |         |         |
++---------+---------+---------+---------+---------+---------+---------+

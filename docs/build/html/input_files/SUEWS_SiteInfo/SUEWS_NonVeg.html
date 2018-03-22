@@ -1,0 +1,2327 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>6.2.4. SUEWS_NonVeg.txt &mdash; SUEWS 2018a documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="SUEWS 2018a documentation" href="../../index.html"/>
+        <link rel="up" title="6.2. SUEWS_SiteInfo.xlsm" href="SUEWS_SiteInfo.html"/>
+        <link rel="next" title="6.2.5. SUEWS_OHMCoefficients.txt" href="SUEWS_OHMCoefficients.html"/>
+        <link rel="prev" title="6.2.3. SUEWS_Irrigation.txt" href="SUEWS_Irrigation.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> SUEWS
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../recent-publications.html">1. Recent publications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction.html">2. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../suews-and-umep.html">3. SUEWS and UMEP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../parameterisations-and-sub-models.html">4. Parameterisations and sub-models within SUEWS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../prepare-to-run-the-model.html">5. Preparing to run the model</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../input-files.html">6. Input files</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../RunControl/RunControl.html">6.1. RunControl.nml</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="SUEWS_SiteInfo.html">6.2. SUEWS_SiteInfo.xlsm</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="SUEWS_AnthropogenicHeat.html">6.2.1. SUEWS_AnthropogenicHeat.txt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SUEWS_Conductance.html">6.2.2. SUEWS_Conductance.txt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SUEWS_Irrigation.html">6.2.3. SUEWS_Irrigation.txt</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">6.2.4. SUEWS_NonVeg.txt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SUEWS_OHMCoefficients.html">6.2.5. SUEWS_OHMCoefficients.txt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SUEWS_Profiles.html">6.2.6. SUEWS_Profiles.txt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SUEWS_SiteSelect.html">6.2.7. SUEWS_SiteSelect.txt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SUEWS_Snow.html">6.2.8. SUEWS_Snow.txt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SUEWS_Soil.html">6.2.9. SUEWS_Soil.txt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SUEWS_Veg.html">6.2.10. SUEWS_Veg.txt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SUEWS_Water.html">6.2.11. SUEWS_Water.txt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SUEWS_WithinGridWaterDist.html">6.2.12. SUEWS_WithinGridWaterDist.txt</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Initial_Conditions.html">6.3. Initial Conditions file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../met_input.html">6.4. Meteorological Input File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../CBL_input.html">6.5. CBL input files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ESTM_input.html">6.6. ESTM-related files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../SOLWEIG_input.html">6.7. SOLWEIG input files</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../output-files.html">7. Output files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../troubleshooting.html">8. Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../acknowledgement.html">9. Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../notation.html">10. Notation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../development.html">11. Development, Suggestions and Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../version-history.html">12. Version History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../differences-suews-lumps-fraise.html">13. Differences between SUEWS, LUMPS and FRAISE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../references.html">14. References</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">SUEWS</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../input-files.html">6. Input files</a> &raquo;</li>
+        
+          <li><a href="SUEWS_SiteInfo.html">6.2. SUEWS_SiteInfo.xlsm</a> &raquo;</li>
+        
+      <li>6.2.4. SUEWS_NonVeg.txt</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/input_files/SUEWS_SiteInfo/SUEWS_NonVeg.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="suews-nonveg-txt">
+<h1>6.2.4. SUEWS_NonVeg.txt<a class="headerlink" href="#suews-nonveg-txt" title="Permalink to this headline">¶</a></h1>
+<p>SUEWS_NonVeg.txt specifies the characteristics for the non-vegetated
+surface cover types (Paved, Bldgs, BSoil) by linking codes in column 1
+of SUEWS_NonVeg.txt to the codes specified in SUEWS_SiteSelect.txt
+(Code_Paved, Code_Bldgs, Code_BSoil). Each row should correspond to a
+particular surface type. For suggestions on how to complete this table,
+see: <a class="reference external" href="http://urban-climate.net/umep/TypicalValues#Typical_Values">Typical
+Values</a>.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="16%" />
+<col width="16%" />
+<col width="16%" />
+<col width="16%" />
+<col width="16%" />
+<col width="5%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">No.</th>
+<th class="head">Use</th>
+<th class="head">Column
+name</th>
+<th class="head">Example</th>
+<th class="head">Descrip
+tion</th>
+<th class="head">&#160;</th>
+<th class="head">&#160;</th>
+<th class="head">&#160;</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>L</td>
+<td>Code</td>
+<td>333</td>
+<td>Code
+linking
+to
+SUEWS_S
+iteSele
+ct.txt
+for
+paved
+surface
+s
+(Code_P
+aved),
+buildin
+gs
+(Code_B
+ldgs)
+and
+bare
+soil
+surface
+s
+(Code_B
+Soil).
+Value
+of
+integer
+is
+arbitra
+ry
+but
+must
+match
+codes
+specifi
+ed
+in
+SUEWS_S
+iteSele
+ct.txt.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>MU</td>
+<td>AlbedoM
+in</td>
+<td>0-1</td>
+<td>Minumum
+albedo
+of this
+surface
+[-]
+-  Effe
+ctive
+surf
+ace
+albe
+do
+(mid
+dle
+of
+the
+day
+valu
+e)
+for
+wint
+ertime
+(not
+incl
+uding
+snow
+).
+-  View
+fact
+ors
+shou
+ld
+be
+take
+n
+into
+acco
+unt.
+-  Not
+curr
+ently
+used
+for
+non-
+vegetat
+ed
+surf
+aces
+–
+set
+the
+same
+as
+Albe
+doMax.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>MU</td>
+<td>AlbedoM
+ax</td>
+<td>0-1</td>
+<td>Maximum
+albedo
+of this
+surface
+[-]
+-  Effe
+ctive
+surf
+ace
+albe
+do
+(mid
+dle
+of
+the
+day
+valu
+e)
+for
+summ
+ertime.
+-  View
+fact
+ors
+shou
+ld
+be
+take
+n
+into
+acco
+unt.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>MU</td>
+<td>Emissiv
+ity</td>
+<td>0-1</td>
+<td>Emissiv
+ity
+of this
+surface
+[-]
+-  Effe
+ctive
+surf
+ace
+emis
+sivity.
+-  View
+fact
+ors
+shou
+ld
+be
+take
+n
+into
+acco
+unt.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>5</td>
+<td>MD</td>
+<td>Storage
+Min</td>
+<td>&#160;</td>
+<td>Minimum
+water
+storage
+capacit
+y
+of this
+surface
+[mm]
+-  Mini
+mum
+wate
+r
+stor
+age
+capa
+city
+for
+uppe
+r
+surf
+aces
+(i.e
+.
+cano
+py).
+-  Min/
+max
+valu
+es
+are
+to
+acco
+unt
+for
+seas
+onal
+vari
+ation
+(e.g
+.
+leaf
+-on/lea
+f-off
+diff
+erences
+for
+vege
+tated
+surf
+aces).
+-  Not
+curr
+ently
+used
+for
+non-
+vegetat
+ed
+surf
+aces
+-
+set
+the
+same
+as
+Stor
+ageMax.
++—+–
+-+
++===+==
+=+
++—+–
+-+
++—+–
+-+
++—+–
+-+</td>
+<td>E
+x
+a
+m
+p
+l
+e
+v
+a
+l
+u
+e
+s
+[
+m
+m
+]
+0
+.
+4
+8
+0
+.
+2
+5
+0
+.
+8
+0</td>
+<td>P
+a
+v
+e
+d
+B
+l
+d
+g
+s
+B
+S
+o
+i
+l</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>6</td>
+<td>MD</td>
+<td>Storage
+Max</td>
+<td>&#160;</td>
+<td>Maximum
+water
+storage
+capacit
+y
+of this
+surface
+[mm]
+-  Maxi
+mum
+wate
+r
+stor
+age
+capa
+city
+for
+uppe
+r
+surf
+aces
+(i.e
+.
+cano
+py)
+-  Min
+and
+max
+valu
+es
+are
+to
+acco
+unt
+for
+seas
+onal
+vari
+ation
+(e.g
+.
+leaf
+-on/lea
+f-off
+diff
+erences
+for
+vege
+tated
+surf
+aces).
+-  Not
+curr
+ently
+used
+for
+non-
+vegetat
+ed
+surf
+aces
+-
+set
+the
+same
+as
+Stor
+ageMin.
++—+–
+-+
++===+==
+=+
++—+–
+-+
++—+–
+-+
++—+–
+-+</td>
+<td>E
+x
+a
+m
+p
+l
+e
+v
+a
+l
+u
+e
+s
+[
+m
+m
+]
+0
+.
+4
+8
+0
+.
+2
+5
+0
+.
+8
+0</td>
+<td>P
+a
+v
+e
+d
+B
+l
+d
+g
+s
+B
+S
+o
+i
+l</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>7</td>
+<td>MD</td>
+<td>WetThre
+shold</td>
+<td>&#160;</td>
+<td>Thresho
+ld
+for a
+complet
+ely
+wet
+surface
+[mm]
+-  Dept
+h
+of
+wate
+r
+whic
+h
+dete
+rmines
+whet
+her
+evap
+oration
+occu
+rs
+from
+a
+part
+ially
+wet
+or
+comp
+letely
+wet
+surf
+ace.
++—+–
+-+
++===+==
+=+
++—+–
+-+
++—+–
+-+
++—+–
+-+</td>
+<td>E
+x
+a
+m
+p
+l
+e
+v
+a
+l
+u
+e
+s
+[
+m
+m
+]
+0
+.
+6
+0
+.
+6
+1
+.
+0</td>
+<td>P
+a
+v
+e
+d
+B
+l
+d
+g
+s
+B
+S
+o
+i
+l</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>8</td>
+<td>MD</td>
+<td>StateLi
+mit</td>
+<td>&#160;</td>
+<td>Upper
+limit
+to the
+surface
+state
+[mm]
+-  <strong>Cu
+rrently
+only
+used
+for
+the
+wate
+r
+surf
+ace</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>9</td>
+<td>MD</td>
+<td>Drainag
+eEq</td>
+<td>1, 2, 3</td>
+<td>Drainag
+e
+equatio
+n
+to use
+for
+this
+surface
+.
++—+–
+-+—+
++===+
++—+–
+-+—+
++—+–
+-+—+
++—+–
+-+—+
+-  Coef
+ficient
+s
+are
+spec
+ified
+in
+the
+foll
+owing
+two
+colu
+mns.</td>
+<td>O
+p
+t
+i
+o
+n
+s
+1
+2
+R
+e
+c
+o
+m
+m
+e
+n
+d
+e
+d
+[
+1
+3
+1
+]
+_
+f
+o
+r
+B
+S
+o
+i
+l
+3
+R
+e
+c
+o
+m
+m
+e
+n
+d
+e
+d
+[
+1
+3
+3
+]
+_
+f
+o
+r
+P
+a
+v
+e
+d
+a
+n
+d
+B
+l
+d
+g
+s</td>
+<td>F
+a
+l
+k
+a
+n
+d
+N
+i
+e
+m
+c
+z
+y
+n
+o
+w
+i
+c
+z
+(
+1
+9
+7
+8
+)
+[
+1
+2
+8
+]
+_
+H
+a
+l
+l
+d
+i
+n
+e
+t
+a
+l
+.
+(
+1
+9
+7
+9
+)
+[
+1
+2
+9
+]
+_
+(
+R
+u
+t
+t
+e
+r
+e
+q
+n
+c
+o
+r
+r
+e
+c
+t
+e
+d
+f
+o
+r
+c
+=
+0
+,
+s
+e
+e
+C
+a
+l
+d
+e
+r
+&amp;
+W
+r
+i
+g
+h
+t
+(
+1
+9
+8
+6
+)
+[
+1
+3
+0
+]
+_
+)
+F
+a
+l
+k
+a
+n
+d
+N
+i
+e
+m
+c
+z
+y
+n
+o
+w
+i
+c
+z
+(
+1
+9
+7
+8
+)
+[
+1
+3
+2
+]
+_</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>10</td>
+<td>MD</td>
+<td>Drainag
+eCoef1</td>
+<td>&#160;</td>
+<td>Coeffic
+ient
+for
+drainag
+e
+equatio
+n
+[units
+vary
+accordi
+ng
+to
+Drainag
+eEq
+specifi
+ed
+in
+previou
+s
+column]
++—+–
+-+—+-
+–+
++===+==
+=+===+
+R
+e
+c
+o
+m
+m
+e
+n
+d
+e
+d
+[
+1
+3
+6
+]
+_
+f
+o
+r
+P
+a
+v
+e
+d
+a
+n
+d
+B
+l
+d
+g
+s
++—+–
+-+—+-
+–+
+R
+e
+c
+o
+m
+m
+e
+n
+d
+e
+d
+[
+1
+3
+7
+]
+_
+f
+o
+r
+B
+S
+o
+i
+l
++—+–
+-+—+-
+–+</td>
+<td>E
+x
+a
+m
+p
+l
+e
+v
+a
+l
+u
+e
+s
+1
+3
+0
+0
+2
+.
+0
+1
+3</td>
+<td>D
+r
+a
+i
+n
+a
+g
+e
+E
+q
+C
+o
+e
+f
+f
+i
+c
+i
+e
+n
+t
+D
+0
+[
+m
+m
+h
+:
+s
+u
+p
+:
+`
+-
+1
+`
+]
+C
+o
+e
+f
+f
+i
+c
+i
+e
+n
+t
+D
+0
+[
+m
+m
+h
+:
+s
+u
+p
+:
+`
+-
+1
+`
+]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>11</td>
+<td>MD</td>
+<td>Drainag
+eCoef2</td>
+<td>&#160;</td>
+<td>Coeffic
+ient
+for
+drainag
+e
+equatio
+n
+[units
+vary
+accordi
+ng
+to
+Drainag
+eEq
+specifi
+ed
+in
+previou
+s
+column]
++—+–
+-+—+-
+–+
++===+==
+=+===+
+R
+e
+c
+o
+m
+m
+e
+n
+d
+e
+d
+[
+1
+4
+0
+]
+_
+f
+o
+r
+P
+a
+v
+e
+d
+a
+n
+d
+B
+l
+d
+g
+s
++—+–
+-+—+-
+–+
+R
+e
+c
+o
+m
+m
+e
+n
+d
+e
+d
+[
+1
+4
+1
+]
+_
+f
+o
+r
+B
+S
+o
+i
+l
++—+–
+-+—+-
+–+</td>
+<td>E
+x
+a
+m
+p
+l
+e
+v
+a
+l
+u
+e
+s
+3
+3
+1
+2
+.
+7
+1</td>
+<td>D
+r
+a
+i
+n
+a
+g
+e
+E
+q
+C
+o
+e
+f
+f
+i
+c
+i
+e
+n
+t
+b
+[
+-
+]
+C
+o
+e
+f
+f
+i
+c
+i
+e
+n
+t
+b
+[
+m
+m
+:
+s
+u
+p
+:
+`
+-
+1
+`
+]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>12</td>
+<td>L</td>
+<td>SoilTyp
+eCode</td>
+<td>&#160;</td>
+<td>Code
+for
+soil
+charact
+eristic
+s
+below
+this
+surface
+Provide
+s
+the
+link to
+column
+1 of
+[[#SUEW
+S_Soil.
+txt</td>
+<td>SUEWS_S
+oil.txt
+]],
+which
+contain
+s
+the
+attribu
+tes
+describ
+ing
+sub-sur
+face
+soil
+for
+this
+surface
+type.
+Value
+of
+integer
+is
+arbitra
+ry
+but
+must
+match
+code
+specifi
+ed
+in
+column
+1 of
+SUEWS_S
+oil.txt
+.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>13</td>
+<td>O</td>
+<td>SnowLim
+Patch</td>
+<td>&#160;</td>
+<td>Maximum
+SWE
+[mm]
+Limit
+of snow
+water
+equival
+ent
+when
+the
+surface
+is
+fully
+covered
+with
+snow.
+* Not
+needed
+if
+SnowUse
+= 0 in
+[[#RunC
+ontrol.
+nml</td>
+<td>RunCont
+rol.nml
+]].
++—+–
+-+—+
++===+==
+=+
++—+–
+-+—+
++—+–
+-+—+
++—+–
+-+—+</td>
+<td>E
+x
+a
+m
+p
+l
+e
+v
+a
+l
+u
+e
+s
+[
+m
+m
+]
+1
+J
+9
+ä
+0
+r
+v
+i
+e
+t
+a
+l
+.
+(
+2
+0
+1
+4
+)
+[
+1
+4
+5
+]
+_
+1
+J
+9
+ä
+0
+r
+v
+i
+e
+t
+a
+l
+.
+(
+2
+0
+1
+4
+)
+[
+1
+4
+6
+]
+_
+1
+J
+9
+ä
+0
+r
+v
+i
+e
+t
+a
+l
+.
+(
+2
+0
+1
+4
+)
+[
+1
+4
+7
+]
+_</td>
+<td>P
+a
+v
+e
+d
+B
+l
+d
+g
+s
+B
+S
+o
+i
+l</td>
+</tr>
+<tr class="row-odd"><td>14</td>
+<td>O</td>
+<td>SnowLim
+Remove</td>
+<td>&#160;</td>
+<td>SWE
+when
+snow is
+removed
+from
+this
+surface
+[mm]
+Limit
+of snow
+water
+equival
+ent
+when
+snow is
+removed
+from
+paved
+surface
+s
+and
+buildin
+gs
+* Not
+needed
+if
+SnowUse
+= 0 in
+[[#RunC
+ontrol.
+nml</td>
+<td>RunCont
+rol.nml
+]].
+-  <strong>Cu
+rrently
+not
+impl
+emented
+for
+BSoi
+l
+surf
+ace</strong>
++—+–
+-+—+
++===+==
+=+
++—+–
+-+—+
++—+–
+-+—+</td>
+<td>E
+x
+a
+m
+p
+l
+e
+v
+a
+l
+u
+e
+s
+[
+m
+m
+]
+4
+J
+0
+ä
+r
+v
+i
+e
+t
+a
+l
+.
+(
+2
+0
+1
+4
+)
+[
+1
+5
+0
+]
+_
+1
+J
+0
+ä
+0
+r
+v
+i
+e
+t
+a
+l
+.
+(
+2
+0
+1
+4
+)
+[
+1
+5
+1
+]
+_</td>
+<td>P
+a
+v
+e
+d
+B
+l
+d
+g
+s</td>
+</tr>
+<tr class="row-even"><td>15</td>
+<td>L</td>
+<td>OHMCode
+_Summer
+Wet</td>
+<td>&#160;</td>
+<td>Code
+for OHM
+coeffic
+ients
+to use
+for
+this
+surface
+during
+wet
+conditi
+ons
+in
+summer.
+Links
+to
+[[#SUEW
+S_OHMCo
+efficie
+nts.txt</td>
+<td>SUEWS_O
+HMCoeff
+icients
+.txt]].
+Value
+of
+integer
+is
+arbitra
+ry
+but
+must
+match
+code
+specifi
+ed
+in
+column
+1 of
+SUEWS_O
+HMCoeff
+icients
+.txt.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>16</td>
+<td>L</td>
+<td>OHMCode
+_Summer
+Dry</td>
+<td>&#160;</td>
+<td>Code
+for OHM
+coeffic
+ients
+to use
+for
+this
+surface
+during
+dry
+conditi
+ons
+in
+summer.
+Links
+to
+[[#SUEW
+S_OHMCo
+efficie
+nts.txt</td>
+<td>SUEWS_O
+HMCoeff
+icients
+.txt]].
+Value
+of
+integer
+is
+arbitra
+ry
+but
+must
+match
+code
+specifi
+ed
+in
+column
+1 of
+SUEWS_O
+HMCoeff
+icients
+.txt.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>17</td>
+<td>L</td>
+<td>OHMCode
+_Winter
+Wet</td>
+<td>&#160;</td>
+<td>Code
+for OHM
+coeffic
+ients
+to use
+for
+this
+surface
+during
+wet
+conditi
+ons
+in
+winter.
+Links
+to
+[[#SUEW
+S_OHMCo
+efficie
+nts.txt</td>
+<td>SUEWS_O
+HMCoeff
+icients
+.txt]].
+Value
+of
+integer
+is
+arbitra
+ry
+but
+must
+match
+code
+specifi
+ed
+in
+column
+1 of
+SUEWS_O
+HMCoeff
+icients
+.txt.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>18</td>
+<td>L</td>
+<td>OHMCode
+_Winter
+Dry</td>
+<td>&#160;</td>
+<td>Code
+for OHM
+coeffic
+ients
+to use
+for
+this
+surface
+during
+dry
+conditi
+ons
+in
+winter.
+Links
+to
+[[#SUEW
+S_OHMCo
+efficie
+nts.txt</td>
+<td>SUEWS_O
+HMCoeff
+icients
+.txt]].
+Value
+of
+integer
+is
+arbitra
+ry
+but
+must
+match
+code
+specifi
+ed
+in
+column
+1 of
+SUEWS_O
+HMCoeff
+icients
+.txt.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>19</td>
+<td>MD</td>
+<td>OHMThre
+sh_SW</td>
+<td>10</td>
+<td>Tempera
+ture
+thresho
+ld
+determi
+ning
+whether
+summer/
+winter
+OHM
+coeffic
+ients
+are
+applied
+[deg C]
+If
+5-day
+running
+mean
+air
+tempera
+ture
+is
+greater
+than or
+equal
+to this
+thresho
+ld,
+OHM
+coeffic
+ients
+for
+summert
+ime
+are
+applied
+;
+otherwi
+se
+coeffic
+ients
+for
+wintert
+ime
+are
+applied
+.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>20</td>
+<td>MD</td>
+<td>OHMThre
+sh_WD</td>
+<td>0.9</td>
+<td>Soil
+moistur
+e
+thresho
+ld
+determi
+ning
+whether
+wet/dry
+OHM
+coeffic
+ients
+are
+applied
+[-] If
+soil
+moistur
+e
+(as a
+proport
+ion
+of
+maximum
+soil
+moistur
+e
+capacit
+y)
+exceeds
+this
+thresho
+ld
+for
+bare
+soil
+and
+vegetat
+ed
+surface
+s,
+OHM
+coeffic
+ients
+for wet
+conditi
+ons
+are
+applied
+;
+otherwi
+se
+coeffic
+ients
+for dry
+coeffic
+ients
+are
+applied
+.
+Note
+that
+OHM
+coeffic
+ients
+for wet
+conditi
+ons
+are
+applied
+if the
+surface
+is wet.
+<strong>Not
+actuall
+y
+used
+for
+buildin
+g
+and
+paved
+surface
+s
+(as
+impervi
+ous).</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>21</td>
+<td>L</td>
+<td>ESTMCod
+e</td>
+<td>&#160;</td>
+<td>Code
+for
+ESTM
+coeffic
+ients
+to use
+for
+this
+surface
+.
+Links
+to
+[[#SUEW
+S_ESTMC
+oeffici
+ents.tx
+t</td>
+<td>SUEWS_E
+STMCoef
+ficient
+s.txt]]
+.
+Value
+of
+integer
+is
+arbitra
+ry
+but
+must
+match
+code
+specifi
+ed
+in
+column
+1 of
+SUEWS_E
+STMCoef
+ficient
+s.txt.
+*For
+paved
+and
+buildin
+g
+surface
+s,
+it is
+possibl
+e
+to
+specify
+multipl
+e
+codes
+per
+grid (3
+for
+paved,
+5 for
+buildin
+gs)
+using
+[[#SUEW
+S_SiteS
+elect.t
+xt</td>
+<td>SUEWS_S
+iteSele
+ct.txt]
+].
+In this
+case,
+set
+ESTMCod
+e
+here to
+zero.</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>22</td>
+<td>MU</td>
+<td>AnOHM_C
+p</td>
+<td>&#160;</td>
+<td>Volumet
+ric
+heat
+capacit
+y
+for
+this
+surface
+to use
+in
+AnOHM
+[J
+m:sup
+:<cite>-3</cite>]</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>23</td>
+<td>MU</td>
+<td>AnOHM_K
+k</td>
+<td>&#160;</td>
+<td>Thermal
+conduct
+ivity
+for
+this
+surface
+to use
+in
+AnOHM
+[W m
+K:sup
+:<cite>-1</cite>]</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>24</td>
+<td>MU</td>
+<td>AnOHM_C
+h</td>
+<td>&#160;</td>
+<td>Bulk
+transfe
+r
+coeffic
+ient
+for
+this
+surface
+to use
+in
+AnOHM
+[-]</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="SUEWS_OHMCoefficients.html" class="btn btn-neutral float-right" title="6.2.5. SUEWS_OHMCoefficients.txt" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="SUEWS_Irrigation.html" class="btn btn-neutral" title="6.2.3. SUEWS_Irrigation.txt" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, micromet@University of Reading, led by Prof Sue Grimmond.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'2018a',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -1,0 +1,566 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>6.5. CBL input files &mdash; SUEWS 2018a documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="SUEWS 2018a documentation" href="../index.html"/>
+        <link rel="up" title="6. Input files" href="input-files.html"/>
+        <link rel="next" title="6.6. ESTM-related files" href="ESTM_input.html"/>
+        <link rel="prev" title="6.4. Meteorological Input File" href="met_input.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> SUEWS
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../recent-publications.html">1. Recent publications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">2. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../suews-and-umep.html">3. SUEWS and UMEP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../parameterisations-and-sub-models.html">4. Parameterisations and sub-models within SUEWS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../prepare-to-run-the-model.html">5. Preparing to run the model</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="input-files.html">6. Input files</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="RunControl/RunControl.html">6.1. RunControl.nml</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SUEWS_SiteInfo/SUEWS_SiteInfo.html">6.2. SUEWS_SiteInfo.xlsm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Initial_Conditions.html">6.3. Initial Conditions file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="met_input.html">6.4. Meteorological Input File</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">6.5. CBL input files</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#cbl-initial-data-txt">6.5.1. CBL_initial_data.txt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cbl-input-nml">6.5.2. CBL_Input.nml</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ESTM_input.html">6.6. ESTM-related files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SOLWEIG_input.html">6.7. SOLWEIG input files</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../output-files.html">7. Output files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting.html">8. Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../acknowledgement.html">9. Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notation.html">10. Notation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development.html">11. Development, Suggestions and Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-history.html">12. Version History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../differences-suews-lumps-fraise.html">13. Differences between SUEWS, LUMPS and FRAISE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../references.html">14. References</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">SUEWS</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="input-files.html">6. Input files</a> &raquo;</li>
+        
+      <li>6.5. CBL input files</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/input_files/CBL_input.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="cbl-input-files">
+<h1>6.5. CBL input files<a class="headerlink" href="#cbl-input-files" title="Permalink to this headline">¶</a></h1>
+<p>Main references for this part of the model: Onomura et al. (2015) <a class="reference internal" href="../references.html#shiho2015" id="id1">[Shiho2015]</a>
+and Cleugh and Grimmond (2001) <a class="reference internal" href="../references.html#cg2001" id="id2">[CG2001]</a>.</p>
+<p>If CBL slab model is used (CBLuse=1 in
+<a class="reference external" href="#RunControl.nml">RunControl.nml</a>) the following files are needed:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="39%" />
+<col width="61%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Filename</th>
+<th class="head">Purpose</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>CBL_initial_data.txt</td>
+<td>Gives initial data every morning
+when CBL slab model starts
+running.
+-  filename must match the
+InitialData_FileName in
+CBLInput.nml.
+-  fixed format.</td>
+</tr>
+<tr class="row-odd"><td>CBLInput.nml</td>
+<td>Specifies run options, parameters
+and input file names.
+-  Can be in any order</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="cbl-initial-data-txt">
+<h2>6.5.1. CBL_initial_data.txt<a class="headerlink" href="#cbl-initial-data-txt" title="Permalink to this headline">¶</a></h2>
+<p>This file should give initial data every morning when CBL slab model
+starts running. The file name should match the InitialData_FileName in
+CBLInput.nml.</p>
+<p>Definitions and example file of initial values prepared for Sacramento.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">No.</th>
+<th class="head">Column name</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>id</td>
+<td>Day of year [DOY]</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>zi0</td>
+<td>initial convective
+boundary layer height
+(m)</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>gamt_Km</td>
+<td>vertical gradient of
+potential temperature
+(K m<sup>-1</sup>)
+strength of the
+inversion</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>gamq_gkgm</td>
+<td>vertical gradient of
+specific humidity (g
+kg<sup>-1</sup>
+m<sup>-1</sup>)</td>
+</tr>
+<tr class="row-even"><td>5</td>
+<td>Theta+_K</td>
+<td>potential temperature
+at the top of CBL (K)</td>
+</tr>
+<tr class="row-odd"><td>6</td>
+<td>q+_gkg</td>
+<td>specific humidity at
+the top of CBL (g
+kg<sup>-1</sup>)</td>
+</tr>
+<tr class="row-even"><td>7</td>
+<td>Theta_K</td>
+<td>potential temperature
+in CBL (K)</td>
+</tr>
+<tr class="row-odd"><td>8</td>
+<td>q_gkg</td>
+<td>specific humidiy in
+CBL (g kg<sup>-1</sup>)</td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li>gamt_Km and gamq_gkgm written to two significant figures are required
+for the model performance in appropriate ranges <a class="reference internal" href="../references.html#shiho2015" id="id3">[Shiho2015]</a>.</li>
+</ul>
+<table border="1" class="docutils">
+<colgroup>
+<col width="8%" />
+<col width="8%" />
+<col width="14%" />
+<col width="17%" />
+<col width="16%" />
+<col width="13%" />
+<col width="14%" />
+<col width="11%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">id</th>
+<th class="head">zi0</th>
+<th class="head">gamt_Km</th>
+<th class="head">gamq_gkgm</th>
+<th class="head">Theta+_K</th>
+<th class="head">q+_gkg</th>
+<th class="head">theta_K</th>
+<th class="head">q_gkg</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>234</td>
+<td>188</td>
+<td>0.0032</td>
+<td>0.00082</td>
+<td>290.4</td>
+<td>9.6</td>
+<td>288.7</td>
+<td>8.3</td>
+</tr>
+<tr class="row-odd"><td>235</td>
+<td>197</td>
+<td>0.0089</td>
+<td>0.089</td>
+<td>290.2</td>
+<td>8.4</td>
+<td>288.3</td>
+<td>8.7</td>
+</tr>
+<tr class="row-even"><td>⁞</td>
+<td>⁞</td>
+<td>⁞</td>
+<td>⁞</td>
+<td>⁞</td>
+<td>⁞</td>
+<td>⁞</td>
+<td>⁞</td>
+</tr>
+<tr class="row-odd"><td>⁞</td>
+<td>⁞</td>
+<td>⁞</td>
+<td>⁞</td>
+<td>⁞</td>
+<td>⁞</td>
+<td>⁞</td>
+<td>⁞</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="cbl-input-nml">
+<h2>6.5.2. CBL_Input.nml<a class="headerlink" href="#cbl-input-nml" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="36%" />
+<col width="64%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>EntrainmentType</td>
+<td>Determines entrainment scheme.
+See Cleugh and Grimmond
+2000 <a class="reference internal" href="../references.html#cg2001" id="id4">[CG2001]</a> for details.</td>
+</tr>
+<tr class="row-even"><td>Value</td>
+<td>Comments</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td>Tennekes and Driedonks (1981) -
+<strong>Recommended</strong></td>
+</tr>
+<tr class="row-even"><td>2</td>
+<td>McNaughton and Springs (1986)</td>
+</tr>
+<tr class="row-odd"><td>3</td>
+<td>Rayner and Watson (1991)</td>
+</tr>
+<tr class="row-even"><td>4</td>
+<td>Tennekes (1973)</td>
+</tr>
+<tr class="row-odd"><td>QH_Choice</td>
+<td>Determines QH used for CBL model.</td>
+</tr>
+<tr class="row-even"><td>Value</td>
+<td>Comments</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td>QH modelled by SUEWS</td>
+</tr>
+<tr class="row-even"><td>2</td>
+<td>QH modelled by LUMPS</td>
+</tr>
+<tr class="row-odd"><td>3</td>
+<td>Observed QH values are used from
+the meteorological input file</td>
+</tr>
+<tr class="row-even"><td>Wsb</td>
+<td>Subsidence velocity (m
+s<sup>-1</sup>) in eq. 1 and 2 of
+Onomura et al. (2015) <a class="reference internal" href="../references.html#shiho2015" id="id5">[Shiho2015]</a>.
+(-0.01 m s<sup>-1</sup>
+recommended)</td>
+</tr>
+<tr class="row-odd"><td>CBLday(id)</td>
+<td>CBL model is used for the days
+you choose.
+-  Set CBLday(id) = 1
+-  If CBL model is set to run for
+DOY 175–177, CBLday(175) = 1,
+CBLday(176) = 1, CBLday(177) =
+1</td>
+</tr>
+<tr class="row-even"><td>CO2_included</td>
+<td>Set to zero in current version</td>
+</tr>
+<tr class="row-odd"><td>InitialData_use</td>
+<td>Determines initial values (see
+CBL_Initial_data.txt)</td>
+</tr>
+<tr class="row-even"><td>Value</td>
+<td>Comments</td>
+</tr>
+<tr class="row-odd"><td>0</td>
+<td>All initial values are
+calculated. (Not available in
+current release.)</td>
+</tr>
+<tr class="row-even"><td>1</td>
+<td>Take zi0, gamt_Km and gamq_gkgm
+from input data file. Theta+_K,
+q+_gkg, Theta_K and q_gkg are
+calculated using Temp_C, avrh and
+Pres_kPa in meteorological input
+file.</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>Take all initial values from
+input data file (see
+CBL_Initial_data.txt).</td>
+</tr>
+<tr class="row-even"><td>InitialDataFileName</td>
+<td>If InitialData_use ≥ 1, write the
+file name including the path from
+site directory e.g.
+InitialDataFileName=’CBLinputfile
+sCBL_initial_data.txt’</td>
+</tr>
+<tr class="row-odd"><td>Sondeflag</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Value</td>
+<td>Comments</td>
+</tr>
+<tr class="row-odd"><td>0</td>
+<td>Does not read radiosonde vertical
+profile data -<strong>recommended</strong></td>
+</tr>
+<tr class="row-even"><td>1</td>
+<td>Reads radiosonde vertical profile
+data</td>
+</tr>
+<tr class="row-odd"><td>FileSonde(id)</td>
+<td>If Sondeflag=1, write the file
+name including the path from site
+directory e.g. FileSonde(id)=
+‘CBLinputfilesXXX.txt’, XXX is
+an arbitrary name.</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ESTM_input.html" class="btn btn-neutral float-right" title="6.6. ESTM-related files" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="met_input.html" class="btn btn-neutral" title="6.4. Meteorological Input File" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, micromet@University of Reading, led by Prof Sue Grimmond.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'2018a',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

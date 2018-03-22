@@ -1,0 +1,187 @@
+
+RunControl.nml
+--------------
+
+The file **RunControl.nml** is a namelist that specifies the options for
+the model run. It must be located in the same directory as the
+executable file.
+
+A sample file of **RunControl.nml** looks like
+
+.. literalinclude:: RunControl.nml
+
+
+.. note:: 
+     - In *Linux* and *Mac*, please add an empty line after the end slash.
+     - The file is not case-sensitive.
+     - The parameters and variables can appear in any order.
+
+
+
+.. csv-table:: Model_run_options
+
+     :file: Model_run_options.csv
+
+
+.. csv-table:: Time_related_options
+
+     :file: Time_related_options.csv
+
+
+.. csv-table:: File_related_options
+
+     :file: File_related_options.csv
+
+.. csv-table:: Options_related_to_disaggregation_of_input_data
+
+     :file: Options_related_to_disaggregation_of_input_data.csv
+
+
+.. csv-table:: netCDF_related_options
+
+     :file: netCDF_related_options.csv
+
+
+
+
+.. list-table:: Model run options
+     :widths: auto
+     :header-rows: 1
+     :stub-columns: 1
+     :align: left
+
+     * - Name
+       - Requirement
+       - Description
+       - Possible settings
+
+     * - CBLuse
+       - R
+       - Determines whether a CBL slab model is used to calculate temperature and humidity.
+       - .. csv-table:: 
+          :widths: 20 80
+          :header: value, meaning
+
+          0,  disable 
+          1,  enable 
+               
+     * - SnowUse
+       - R
+       - Determines whether the snow part of the model runs.
+       -  .. csv-table:: 
+            :widths: 20 80
+            :header: value, meaning
+
+               value, meaning  
+                 0,  disable 
+                 1,  enable 
+     
+     * - SOLWEIGUse
+       - R
+       - Determines whether a high resolution radiation model to calculate mean radiant temperate should be used (SOLWEIG). NOTE: this option will considerably slow down the model since SOLWEIG is a 2D model.
+       - .. csv-table:: 
+            :widths: 20 80
+            :header: value, meaning
+
+               0,  disable 
+               1,  enable 
+   
+     * - NetRadiationMethod
+       - R
+       - Determines method for calculation of radiation fluxes.
+       - .. csv-table:: 
+            :widths: 20 80
+            :header: value, meaning
+
+               0,  Uses observed values of Q* supplied in meteorological forcing file.
+               1,   " 
+               * Q* modelled with L↓ observations supplied in meteorological forcing file. 
+               * Zenith angle not accounted for in albedo calculation."
+               2,   "
+               * Q* modelled with L↓ modelled using cloud cover fraction supplied in meteorological forcing file. 
+               * Zenith angle not accounted for in albedo calculation."
+               3,   "
+               * Q* modelled with L↓ modelled using air temperature and relative humidity supplied in meteorological forcing file (Loridan et al. 2011 [L2011]_). 
+               * Zenith angle not accounted for in albedo calculation."
+               100, "
+               * Q* modelled with L↓ observations supplied in meteorological forcing file.
+               * Zenith angle accounted for in albedo calculation.
+               * SSss_YYYY_NARPOut.txt file produced.
+               * .. warning:: Not recommended in this release"
+               200, "
+               * Q* modelled with L↓ modelled using cloud cover fraction supplied in meteorological forcing file (Loridan et al. 2011[5]).
+               * Zenith angle accounted for in albedo calculation.
+               * SSss_YYYY_NARPOut.txt file produced.
+               * .. warning:: Not recommended in this release
+               "
+               300, "
+               * Q* modelled with L↓ modelled using air temperature and relative humidity supplied in meteorological forcing file (Loridan et al. 2011[5]).
+               * Zenith angle accounted for in albedo calculation.
+               * SSss_YYYY_NARPOut.txt file produced.
+               * .. warning:: Not recommended in this release"
+
+     * - NetRadiationMethod new
+       - R
+       - Determines method for calculation of radiation fluxes.
+       - .. csv-table:: 
+          :file: netradiationmethod.csv
+
+
+     * - AnthropHeatMethod 
+       - R
+       - Determines method for calculation of radiation fluxes.
+       - .. csv-table:: 
+            :widths: 20 80
+            :header: value, meaning
+
+               0,   " 
+               * Uses values provided in the meteorological forcing file (SSss_YYYY_data_tt.txt).
+               * If you do not want to include QF to the calculation of surface energy balance, you should set values in the meteorological forcing file to zero to prevent calculation of QF.
+               * .. tip:: 
+                    UMEP provides two methods to calculate QF
+                         1. LQF which is simpler
+                         2. GQF which is more complete but requires more data inputs"
+               1,   "
+               * Calculated according to Loridan et al. (2011)[5] using coefficients specified in SUEWS_AnthropogenicHeat.txt.
+               * Modelled values will be used even if QF is provided in the meteorological forcing file.
+               * .. warning:: Not recommended in this release"
+               2, "
+               * Calculated according to Järvi et al. (2011) [J11]_ using coefficients specified in SUEWS_AnthropogenicHeat.txt and diurnal patterns specified in SUEWS_Profiles.txt.
+               * Modelled values will be used even if QF is provided in the meteorological forcing file.
+               * .. note:: recommended in this release"
+     
+     * - AnthropCO2Method 
+       - R
+       - Determines method for calculation of radiation fluxes.
+       - .. csv-table:: 
+            :widths: 20 80
+            :header: value, meaning
+
+               0,   " 
+               * Uses values provided in the meteorological forcing file (SSss_YYYY_data_tt.txt).
+               * If you do not want to include QF to the calculation of surface energy balance, you should set values in the meteorological forcing file to zero to prevent calculation of QF.
+               * .. tip:: 
+                    UMEP provides two methods to calculate QF
+                    1. LQF which is simpler
+                    2. GQF which is more complete but requires more data inputs"
+               1,   "
+               * Calculated according to Loridan et al. (2011)[5] using coefficients specified in SUEWS_AnthropogenicHeat.txt.
+               * Modelled values will be used even if QF is provided in the meteorological forcing file.
+               * .. warning:: Not recommended in this release"
+               2, "
+               * Calculated according to Järvi et al. (2011) [J11]_ using coefficients specified in SUEWS_AnthropogenicHeat.txt and diurnal patterns specified in SUEWS_Profiles.txt.
+               * Modelled values will be used even if QF is provided in the meteorological forcing file.
+               * .. note:: recommended in this release"
+
+               
+
+
+
+
+
+
+
+Depending on how the storage heat flux is calculated (specified by
+StorageHeatMethod in `RunControl.nml <#RunControl.nml>`__), different
+input files are required:
+

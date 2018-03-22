@@ -1,0 +1,434 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>3. SUEWS and UMEP &mdash; SUEWS 2018a documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="SUEWS 2018a documentation" href="index.html"/>
+        <link rel="next" title="4. Parameterisations and sub-models within SUEWS" href="parameterisations-and-sub-models.html"/>
+        <link rel="prev" title="2. Introduction" href="introduction.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> SUEWS
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="recent-publications.html">1. Recent publications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">2. Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">3. SUEWS and UMEP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="parameterisations-and-sub-models.html">4. Parameterisations and sub-models within SUEWS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prepare-to-run-the-model.html">5. Preparing to run the model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input_files/input-files.html">6. Input files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="output-files.html">7. Output files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">8. Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acknowledgement.html">9. Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notation.html">10. Notation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development.html">11. Development, Suggestions and Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="version-history.html">12. Version History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="differences-suews-lumps-fraise.html">13. Differences between SUEWS, LUMPS and FRAISE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">14. References</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">SUEWS</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>3. SUEWS and UMEP</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/suews-and-umep.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="suews-and-umep">
+<h1>3. SUEWS and UMEP<a class="headerlink" href="#suews-and-umep" title="Permalink to this headline">¶</a></h1>
+<p>SUEWS can be run as a standalone model but also can be used within
+<a class="reference external" href="http://urban-climate.net/umep/UMEP_Manual">UMEP</a>. There are numerous
+tools included within UMEP to help a user get started. The <a class="reference external" href="http://urban-climate.net/umep/UMEP_Manual#Urban_Energy_Balance:_Urban_Energy_Balance_.28SUEWS.2C_simple.29">SUEWS
+simple</a>
+within UMEP is a fast way to start using SUEWS.</p>
+<p>The version of SUEWS within UMEP is the complete model. Thus all options
+that are listed in this manual are available to the user. In the UMEP
+<a class="reference external" href="http://urban-climate.net/umep/UMEP_Manual#Urban_Energy_Balance:_Urban_Energy_Balance_.28SUEWS.2C_simple.29">SUEWS
+simple</a>
+runs all options are set to values to allow intial exploration of the
+model behaviour.</p>
+<p>The version of SUEWS within UMEP is a more recent release of the model
+than the independent SUEWS release.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head" colspan="3">UMEP</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td rowspan="11"><strong>Pre-Processor</strong></td>
+<td rowspan="2">Meteorological
+Data</td>
+<td><a class="reference external" href="http://urban-climate.net/umep/UMEP_Manual#Meteorological_Data:_MetPreprocessor">Prepare
+Existing
+Data</a></td>
+<td>Transforms
+meteorological
+data into UMEP
+format</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://www.urban-climate.net/umep/UMEP_Manual#Meteorological_Data:_Download_data_.28WATCH.29">Download data
+(WATCH)</a></td>
+<td>Prepare
+meteorological
+dataset from
+<a class="reference external" href="http://www.eu-watch.org/data_availability">WATCH</a></td>
+</tr>
+<tr class="row-even"><td rowspan="2">Spatial Data</td>
+<td><a class="reference external" href="http://www.urban-climate.net/umep/UMEP_Manual#Spatial_Data:_Spatial_Data_Downloader">Spatial Data
+Downloader</a></td>
+<td>Plugin for
+retrieving
+geodata from
+online services
+suitable for
+various UMEP
+related tools</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://www.urban-climate.net/umep/UMEP_Manual#Spatial_Data:_LCZ_Converter">LCZ
+Converter</a></td>
+<td>Conversion from
+Local Climate
+Zones (LCZs) in
+the WUDAPT
+database into
+SUEWS input
+data</td>
+</tr>
+<tr class="row-even"><td rowspan="3">Urban land
+cover</td>
+<td><a class="reference external" href="http://urban-climate.net/umep/UMEP_Manual#Urban_Land_Cover:_Land_Cover_Reclassifier">Land Cover
+Reclassifier</a></td>
+<td>Reclassifies a
+grid into UMEP
+format land
+cover grid.
+<em>Land surface
+models</em></td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://urban-climate.net/umep/UMEP_Manual#Urban_Land_Cover:_Land_Cover_Reclassifier">Land Cover
+Fraction
+(Point)</a></td>
+<td>Land cover
+fractions
+estimates from
+a land cover
+grid based on a
+specific point
+in space</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://urban-climate.net/umep/UMEP_Mnual#Urban_Land_Cover:_Land_Cover_Fraction_.28Grid.29">Land Cover
+Fraction
+(Grid)</a></td>
+<td>Land cover
+fractions
+estimates from
+a land cover
+grid based on a
+polygon grid</td>
+</tr>
+<tr class="row-odd"><td rowspan="3">Urban
+Morphology</td>
+<td><a class="reference external" href="http://urban-climate.net/umep/UMEP_Manual#Urban_Morphology:_Morphometric_Calculator_.28Point">Morphometric
+Calculator (Poi
+nt)</a></td>
+<td>Morphometric
+parameters from
+a DSM based on
+a specific
+point in space</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://urban-climate.net/umep/UMEP_Manual#Urban_Morphology:_Morphometric_Calculator_.28Grid.29">Morphometric
+Calculator
+(Grid)</a></td>
+<td>Morphometric
+parameters
+estimated from
+a DSM based on
+a polygon grid</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://urban-climate.net/umep/UMEP_Manual#Urban_Morphology:_Source_Area_.28Point.29">Source Area
+Model
+(Point)</a></td>
+<td>Source area
+calculated from
+a DSM based on
+a specific
+point in space.</td>
+</tr>
+<tr class="row-even"><td colspan="2"><a class="reference external" href="http://urban-climate.net/umep/UMEP_Manual#Pre-Processor:_SUEWS_Prepare">SUEWS
+Prepare</a></td>
+<td>Preprocessing
+and preparing
+input data for
+the SUEWS model</td>
+</tr>
+<tr class="row-odd"><td rowspan="4"><strong>Processor</strong></td>
+<td rowspan="4">Urban Energy
+Balance</td>
+<td>Anthropogenic
+Heat
+(Q:sub:<cite>F</cite>)
+(LQF)</td>
+<td>Spatial
+variations
+anthropogenic
+heat release
+for urban areas</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://www.urban-climate.net/umep/UMEP_Manual#Urban_Energy_Balance:_GQF">GQF</a></td>
+<td>Anthropogenic
+Heat
+(Q :sub:<cite>F</cite>).</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="http://urban-climate.net/umep/UMEP_Manual#Urban_Energy_Balance:_Urban_Energy_Balance_.28SUEWS.2C_simple.29">SUEWS
+(Simple)</a></td>
+<td>Urban Energy
+and Water
+Balance.</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="http://urban-climate.net/umep/UMEP_Manual#Urban_Energy_Balance:_Urban_Energy_Balance_.28SUEWS.2FBLUEWS.2C_advanced.29">SUEWS
+(Advanced)</a></td>
+<td>Urban Energy
+and Water
+Balance.</td>
+</tr>
+<tr class="row-odd"><td><strong>Post-Processo
+r</strong></td>
+<td>Urban Energy
+Balance</td>
+<td><a class="reference external" href="http://urban-climate.net/umep/UMEP_Manual#Urban_Energy_Balance:_SUEWS_Analyser">SUEWS analyser</a></td>
+<td>Plugin for
+plotting and
+statistical
+analysis of
+model results
+from SUEWS
+simple and
+SUEWS advanced</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>Benchmark</td>
+<td><a class="reference external" href="http://urban-climate.net/umep/UMEP_Manual#Benchmark_System">Benchmark
+System</a></td>
+<td>For statistical
+analysis of
+model results,
+such as SUEWS</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="parameterisations-and-sub-models.html" class="btn btn-neutral float-right" title="4. Parameterisations and sub-models within SUEWS" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="introduction.html" class="btn btn-neutral" title="2. Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, micromet@University of Reading, led by Prof Sue Grimmond.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'2018a',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

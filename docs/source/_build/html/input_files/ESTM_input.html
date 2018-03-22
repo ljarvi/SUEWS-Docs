@@ -1,0 +1,1657 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>6.6. ESTM-related files &mdash; SUEWS 2018a documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="SUEWS 2018a documentation" href="../index.html"/>
+        <link rel="up" title="6. Input files" href="input-files.html"/>
+        <link rel="next" title="6.7. SOLWEIG input files" href="SOLWEIG_input.html"/>
+        <link rel="prev" title="6.5. CBL input files" href="CBL_input.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> SUEWS
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../recent-publications.html">1. Recent publications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">2. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../suews-and-umep.html">3. SUEWS and UMEP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../parameterisations-and-sub-models.html">4. Parameterisations and sub-models within SUEWS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../prepare-to-run-the-model.html">5. Preparing to run the model</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="input-files.html">6. Input files</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="RunControl/RunControl.html">6.1. RunControl.nml</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SUEWS_SiteInfo/SUEWS_SiteInfo.html">6.2. SUEWS_SiteInfo.xlsm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Initial_Conditions.html">6.3. Initial Conditions file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="met_input.html">6.4. Meteorological Input File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CBL_input.html">6.5. CBL input files</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">6.6. ESTM-related files</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#suews-estmcoefficients-txt">6.6.1. SUEWS_ESTMCoefficients.txt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#estminput-nml">6.6.2. ESTMinput.nml</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ssss-yyyy-estm-ts-data-tt-txt">6.6.3. SSss_YYYY_ESTM_Ts_data_tt.txt</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="SOLWEIG_input.html">6.7. SOLWEIG input files</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../output-files.html">7. Output files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting.html">8. Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../acknowledgement.html">9. Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notation.html">10. Notation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development.html">11. Development, Suggestions and Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-history.html">12. Version History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../differences-suews-lumps-fraise.html">13. Differences between SUEWS, LUMPS and FRAISE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../references.html">14. References</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">SUEWS</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="input-files.html">6. Input files</a> &raquo;</li>
+        
+      <li>6.6. ESTM-related files</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/input_files/ESTM_input.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="estm-related-files">
+<h1>6.6. ESTM-related files<a class="headerlink" href="#estm-related-files" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="suews-estmcoefficients-txt">
+<h2>6.6.1. SUEWS_ESTMCoefficients.txt<a class="headerlink" href="#suews-estmcoefficients-txt" title="Permalink to this headline">¶</a></h2>
+<p><strong>Note ESTM is under development in v2017a and should not be used!</strong></p>
+<p>The Element Surface Temperature Method (ESTM) (Offerle et al., 2005)
+calculates the net storage heat flux from surface temperatures. In the
+method the three-dimensional urban volume is reduced to four 1-d
+elements (i.e. building roofs, walls, and internal mass and ground
+(road, vegetation, etc)). The storage heat flux is calculated from the
+heat conduction through the different elements. For the inside surfaces
+of the roof and walls, and both surfaces for the internal mass
+(ceilings/floors, internal walls), the surface temperature of the
+element is determined by setting the conductive heat transfer out of (in
+to) the surface equal to the radiative and convective heat losses
+(gains). Each element (roof, wall, internal element and ground) can have
+maximum five layers and each layer has three parameters tied to it:
+thickness (x), thermal conductivity (k), volumetric heat capacity
+(rhoCp).</p>
+<p>If ESTM is used (QSchoice=4), the files
+<a class="reference external" href="#SUEWS_ESTMCoefficients.txt">SUEWS_ESTMCoefficients.txt</a>,
+<a class="reference external" href="#ESTMinput.nml">ESTMinput.nml</a> and
+<a class="reference external" href="#SS_YYYY_ESTM_Ts_data_tt.txt">SS_YYYY_ESTM_Ts_data_tt.txt</a> should be
+prepared.</p>
+<p>SUEWS_ESTMCoefficients.txt contains the parameters for the layers of
+each of the elements (roofs, wall, ground, internal mass).</p>
+<ul class="simple">
+<li>If less than five layers are used, the parameters for unused layers
+should be set to -999.</li>
+<li>The ESTM coefficients with the prefix <em>Surf_</em> must be specified for
+each surface type (plus snow) but the <em>Wall_</em> and <em>Internal_</em>
+variables apply to the building surfaces only.</li>
+<li>For each grid, one set of ESTM coefficients must be specified for
+each surface type; for paved and building surfaces it is possible to
+specify up to three and five sets of coefficients per grid (e.g. to
+represent different building materials) using the relevant columns in
+<a class="reference external" href="#SUEWS_SiteSelect.txt">SUEWS_SiteSelect.txt</a>. For the model to
+use these columns in site select, the ESTMCode column in
+<a class="reference external" href="#SUEWS_NonVeg.txt">SUEWS_NonVeg.txt</a> should be set to zero.</li>
+</ul>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="10%" />
+<col width="21%" />
+<col width="17%" />
+<col width="21%" />
+<col width="21%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">No.</th>
+<th class="head">Use</th>
+<th class="head">Column
+name</th>
+<th class="head">Example</th>
+<th class="head">Descripti
+on</th>
+<th class="head">&#160;</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>L</td>
+<td>Code</td>
+<td>331</td>
+<td>Code
+linking
+to the
+ESTMCode
+column in
+SUEWS_Non
+Veg.txt,
+SUEWS_Veg
+,txt,
+SUEWS_Wat
+er.txt
+and
+SUEWS_Sno
+w.txt
+files.
+* For
+buildings
+and paved
+surfaces,
+<strong>set to
+zero</strong> if
+there is
+more than
+one ESTM
+class per
+grid and
+the codes
+and
+surface
+fractions
+specified
+in
+[[#SUEWS_
+SiteSelec
+t.txt</td>
+<td>SUEWS_Sit
+eSelect.t
+xt]]
+will be
+used
+instead.</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>MU</td>
+<td>Surf_thic
+k1</td>
+<td>0.2</td>
+<td>Thickness
+of the
+first
+layer [m]
+for roofs
+(building
+surfaces)
+and
+ground
+(all
+other
+surfaces)</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>MU</td>
+<td>Surf_k1</td>
+<td>0.5</td>
+<td>Thermal
+conductiv
+ity
+of the
+first
+layer [W
+m:sup:`
+-1`
+K:sup:`
+-1`]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>MU</td>
+<td>Surf_rhoC
+p1</td>
+<td>840000</td>
+<td>Volumetri
+c
+heat
+capacity
+of the
+first
+layer [J
+m:sup:`
+-3`
+K:sup:`
+-1`]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>5</td>
+<td>O</td>
+<td>Surf_thic
+k2</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Thickness
+of the
+second
+layer [m]
+(if no
+second
+layer,
+set to
+-999.)</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>6</td>
+<td>O</td>
+<td>Surf_k2</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Thermal
+conductiv
+ity
+of the
+second
+layer [W
+m:sup:`
+-1`
+K:sup:`
+-1`]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>7</td>
+<td>O</td>
+<td>Surf_rhoC
+p2</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Volumetri
+c
+heat
+capacity
+of the
+second
+layer [J
+m:sup:`
+-3`
+K:sup:`
+-1`]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>8</td>
+<td>O</td>
+<td>Surf_thic
+k3</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Thickness
+of the
+third
+layer [m]
+(if no
+third
+layer,
+set to
+-999.)</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>9</td>
+<td>O</td>
+<td>Surf_k3</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Thermal
+conductiv
+ity
+of the
+third
+layer[W
+m:sup:`
+-1`
+K:sup:`
+-1`]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>10</td>
+<td>O</td>
+<td>Surf_rhoC
+p3</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Volumetri
+c
+heat
+capacity
+of the
+third
+layer[J
+m:sup:`
+-3`
+K:sup:`
+-1`]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>11</td>
+<td>O</td>
+<td>Surf_thic
+k4</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Thickness
+of the
+fourth
+layer [m]
+(if no
+fourth
+layer,
+set to
+-999.)</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>12</td>
+<td>O</td>
+<td>Surf_k4</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Thermal
+conductiv
+ity
+of the
+fourth
+layer[W
+m:sup:`
+-1`
+K:sup:`
+-1`]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>13</td>
+<td>O</td>
+<td>Surf_rhoC
+p4</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Volumetri
+c
+heat
+capacity
+of the
+fourth
+layer [J
+m:sup:`
+-3`
+K:sup:`
+-1`]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>14</td>
+<td>O</td>
+<td>Surf_thic
+k5</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Thickness
+of the
+fifth
+layer [m]
+(if no
+fifth
+layer,
+set to
+-999.)</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>15</td>
+<td>O</td>
+<td>Surf_k5</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Thermal
+conductiv
+ity
+of the
+fifth
+layer [W
+m:sup:`
+-1`
+K:sup:`
+-1`]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>16</td>
+<td>O</td>
+<td>Surf_rhoC
+p5</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Volumetri
+c
+heat
+capacity
+of the
+fifth
+layer [J
+m:sup:`
+-3`
+K:sup:`
+-1`]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>17</td>
+<td>MU</td>
+<td>Wall_thic
+k1</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Thickness
+of the
+first
+layer [m]
+for
+building
+surfaces
+only; set
+to -999
+for all
+other
+surfaces</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>18</td>
+<td>MU</td>
+<td>Wall_k1</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Thermal
+conductiv
+ity
+of the
+first
+layer [W
+m:sup:`
+-1`
+K:sup:`
+-1`]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>19</td>
+<td>MU</td>
+<td>Wall_rhoC
+p1</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Volumetri
+c
+heat
+capacity
+of the
+first
+layer [J
+m:sup:`
+-3`
+K:sup:`
+-1`]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>20</td>
+<td>O</td>
+<td>Wall_thic
+k2</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Thickness
+of the
+second
+layer [m]
+(if no
+second
+layer,
+set to
+-999.)</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>21</td>
+<td>O</td>
+<td>Wall_k2</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Thermal
+conductiv
+ity
+of the
+second
+layer [W
+m:sup:`
+-1`
+K:sup:`
+-1`]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>22</td>
+<td>O</td>
+<td>Wall_rhoC
+p2</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Volumetri
+c
+heat
+capacity
+of the
+second
+layer [J
+m:sup:`
+-3`
+K:sup:`
+-1`]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>23</td>
+<td>O</td>
+<td>Wall_thic
+k3</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Thickness
+of the
+third
+layer [m]
+(if no
+third
+layer,
+set to
+-999.)</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>24</td>
+<td>O</td>
+<td>Wall_k3</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Thermal
+conductiv
+ity
+of the
+third
+layer [W
+m:sup:`
+-1`
+K:sup:`
+-1`]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>25</td>
+<td>O</td>
+<td>Wall_rhoC
+p3</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Volumetri
+c
+heat
+capacity
+of the
+third
+layer [J
+m:sup:`
+-3`
+K:sup:`
+-1`]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>26</td>
+<td>O</td>
+<td>Wall_thic
+k4</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Thickness
+of the
+fourth
+layer [m]
+(if no
+fourth
+layer,
+set to
+-999.)</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>27</td>
+<td>O</td>
+<td>Wall_k4</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Thermal
+conductiv
+ity
+of the
+fourth
+layer[W
+m:sup:`
+-1`
+K:sup:`
+-1`]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>28</td>
+<td>O</td>
+<td>Wall_rhoC
+p4</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Volumetri
+c
+heat
+capacity
+of the
+fourth
+layer [J
+m:sup:`
+-3`
+K:sup:`
+-1`]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>29</td>
+<td>O</td>
+<td>Wall_thic
+k5</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Thickness
+of the
+fifth
+layer [m]
+(if no
+fifth
+layer,
+set to
+-999.)</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>30</td>
+<td>O</td>
+<td>Wall_k5</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Thermal
+conductiv
+ity
+of the
+fifth
+layer[W
+m:sup:`
+-1`
+K:sup:`
+-1`]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>31</td>
+<td>O</td>
+<td>Wall_rhoC
+p5</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Volumetri
+c
+heat
+capacity
+of the
+fifth
+layer [J
+m:sup:`
+-3`
+K:sup:`
+-1`]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>32</td>
+<td>MU</td>
+<td><a href="#id1"><span class="problematic" id="id2">Internal_</span></a>
+thick1</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Thickness
+of the
+first
+layer [m]
+for
+building
+surfaces
+only; set
+to -999
+for all
+other
+surfaces</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>33</td>
+<td>MU</td>
+<td><a href="#id3"><span class="problematic" id="id4">Internal_</span></a>
+k1</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Thermal
+conductiv
+ity
+of the
+first
+layer [W
+m:sup:`
+-1`
+K:sup:`
+-1`]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>34</td>
+<td>MU</td>
+<td><a href="#id5"><span class="problematic" id="id6">Internal_</span></a>
+rhoCp1</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Volumetri
+c
+heat
+capacity
+of the
+first
+layer[J
+m:sup:`
+-3`
+K:sup:`
+-1`]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>35</td>
+<td>O</td>
+<td><a href="#id7"><span class="problematic" id="id8">Internal_</span></a>
+thick2</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Thickness
+of the
+second
+layer [m]
+(if no
+second
+layer,
+set to
+-999.)</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>36</td>
+<td>O</td>
+<td><a href="#id9"><span class="problematic" id="id10">Internal_</span></a>
+k2</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Thermal
+conductiv
+ity
+of the
+second
+layer [W
+m:sup:`
+-1`
+K:sup:`
+-1`]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>37</td>
+<td>O</td>
+<td><a href="#id11"><span class="problematic" id="id12">Internal_</span></a>
+rhoCp2</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Volumetri
+c
+heat
+capacity
+of the
+second
+layer [J
+m:sup:`
+-3`
+K:sup:`
+-1`]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>38</td>
+<td>O</td>
+<td><a href="#id13"><span class="problematic" id="id14">Internal_</span></a>
+thick3</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Thickness
+of the
+third
+layer [m]
+(if no
+third
+layer,
+set to
+-999.)</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>39</td>
+<td>O</td>
+<td><a href="#id15"><span class="problematic" id="id16">Internal_</span></a>
+k3</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Thermal
+conductiv
+ity
+of the
+third
+layer [W
+m:sup:`
+-1`
+K:sup:`
+-1`]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>40</td>
+<td>O</td>
+<td><a href="#id17"><span class="problematic" id="id18">Internal_</span></a>
+rhoCp3</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Volumetri
+c
+heat
+capacity
+of the
+third
+layer[J
+m:sup:`
+-3`
+K:sup:`
+-1`]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>41</td>
+<td>O</td>
+<td><a href="#id19"><span class="problematic" id="id20">Internal_</span></a>
+thick4</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Thickness
+of the
+fourth
+layer [m]
+(if no
+fourth
+layer,
+set to
+-999.)</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>42</td>
+<td>O</td>
+<td><a href="#id21"><span class="problematic" id="id22">Internal_</span></a>
+k4</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Thermal
+conductiv
+ity
+of the
+fourth
+layer [W
+m:sup:`
+-1`
+K:sup:`
+-1`]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>43</td>
+<td>O</td>
+<td><a href="#id23"><span class="problematic" id="id24">Internal_</span></a>
+rhoCp4</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Volumetri
+c
+heat
+capacity
+of the
+fourth
+layer [J
+m:sup:`
+-3`
+K:sup:`
+-1`]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>44</td>
+<td>O</td>
+<td><a href="#id25"><span class="problematic" id="id26">Internal_</span></a>
+thick5</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Thickness
+of the
+fifth
+layer [m]
+(if no
+fifth
+layer,
+set to
+-999.)</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>45</td>
+<td>O</td>
+<td><a href="#id27"><span class="problematic" id="id28">Internal_</span></a>
+k5</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Thermal
+conductiv
+ity
+of the
+fifth
+layer [W
+m:sup:`
+-1`
+K:sup:`
+-1`]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>46</td>
+<td>O</td>
+<td><a href="#id29"><span class="problematic" id="id30">Internal_</span></a>
+rhoCp5</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Volumetri
+c
+heat
+capacity
+of the
+fifth
+layer [J
+m:sup:`
+-3`
+K:sup:`
+-1`]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>47</td>
+<td>MU</td>
+<td>nroom</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Number of
+rooms per
+floor for
+building
+surfaces
+only</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>48</td>
+<td>MU</td>
+<td><a href="#id31"><span class="problematic" id="id32">Internal_</span></a>
+albedo</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Albedo of
+all
+internal
+elements
+for
+building
+surfaces
+only</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>49</td>
+<td>MU</td>
+<td><a href="#id33"><span class="problematic" id="id34">Internal_</span></a>
+emissivit
+y</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Emissivit
+y
+of all
+internal
+elements
+for
+building
+surfaces
+only</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>50</td>
+<td>O</td>
+<td><a href="#id35"><span class="problematic" id="id36">Internal_</span></a>
+CHwall</td>
+<td>&#160;</td>
+<td>Bulk
+transfer
+coefficie
+nt
+of
+internal
+wall [W
+m:sup:`
+-2`
+K:sup:`
+-1`]
+(for
+building
+surfaces
+only and
+if
+IbldCHmod
+== 0 in
+[[#ESTMin
+put.nml</td>
+<td>ESTMinput
+.nml]]</td>
+</tr>
+<tr class="row-even"><td>51</td>
+<td>O</td>
+<td><a href="#id37"><span class="problematic" id="id38">Internal_</span></a>
+CHroof</td>
+<td>&#160;</td>
+<td>Bulk
+transfer
+coefficie
+nt
+of
+internal
+roof [W
+m:sup:`
+-2`
+K:sup:`
+-1`]
+(for
+building
+surfaces
+only and
+if
+IbldCHmod
+== 0 in
+[[#ESTMin
+put.nml</td>
+<td>ESTMinput
+.nml]]</td>
+</tr>
+<tr class="row-odd"><td>52</td>
+<td>O</td>
+<td><a href="#id39"><span class="problematic" id="id40">Internal_</span></a>
+CHbld</td>
+<td>&#160;</td>
+<td>Bulk
+transfer
+coefficie
+nt
+of
+internal
+building
+elements
+[W
+m:sup:`
+-2`
+K:sup:`
+-1`]
+(for
+building
+surfaces
+only and
+if
+IbldCHmod
+== 0 in
+[[#ESTMin
+put.nml</td>
+<td>ESTMinput
+.nml]]</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note ESTM is under development in v2017a and should not be used!</strong></p>
+<p>The following input files are required if ESTM is used to calculate the
+storage heat flux.</p>
+</div>
+<div class="section" id="estminput-nml">
+<h2>6.6.2. ESTMinput.nml<a class="headerlink" href="#estminput-nml" title="Permalink to this headline">¶</a></h2>
+<p>ESTMinput.nml specifies the model settings and default values.</p>
+<ul class="simple">
+<li>The file contents can be in any order.</li>
+</ul>
+<table border="1" class="docutils">
+<colgroup>
+<col width="22%" />
+<col width="39%" />
+<col width="39%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Description</th>
+<th class="head">&#160;</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>TsurfChoice</td>
+<td>Source of surface
+temperature data
+used.</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>0</td>
+<td>*Tsurf in
+[[#SSss_YYYY_ESTM_Ts_
+data_tt.txt</td>
+<td>SSss_YYYY_ESTM_Ts_dat
+a_tt.txt]]
+used for <strong>all</strong>
+surface elements.</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td>*Tground, Troof and
+Twall in
+[[#SSss_YYYY_ESTM_Ts_
+data_tt.txt</td>
+<td>SSss_YYYY_ESTM_Ts_dat
+a_tt.txt]]
+used.
+-  Input surface
+temperature are
+different for
+ground, roof and
+wall.</td>
+</tr>
+<tr class="row-even"><td>2</td>
+<td>*Tground, Troof,
+Twall_n, Twall_e,
+Twall_s and Twall_w
+in
+[[#SSss_YYYY_ESTM_Ts_
+data_tt.txt</td>
+<td>SSss_YYYY_ESTM_Ts_dat
+a_tt.txt]]
+used.
+-  Wall surface
+temperature is
+different for four
+directions.</td>
+</tr>
+<tr class="row-odd"><td>evolveTibld</td>
+<td>Source of internal
+building temperature
+(Tibld)</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>0</td>
+<td>*Tiair in
+[[#SSss_YYYY_ESTM_Ts_
+data_tt.txt</td>
+<td>SSss_YYYY_ESTM_Ts_dat
+a_tt.txt]]
+used.</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td>*Tibld calculated
+considering the
+effect of
+anthropogenic heat
+from HVAC</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>2</td>
+<td>*Tibld calculated
+without considering
+the influence of
+HVAC.</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>IbldCHmod</td>
+<td>Method to calculate
+internal convective
+heat exchange
+coefficients (CH) for
+internal building,
+wall and roof if
+evolveTibld is 1 or
+2.</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>0</td>
+<td>CHs are read from
+SUEWS_ESTMcoefficient
+s.txt.</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td>CHs are calculated
+based on ASHRAE
+(2001)</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>2</td>
+<td>CHs are calculated
+based on Awbi (1998).</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>LBC_soil</td>
+<td>Soil temperature at
+lowest boundary
+condition [˚C]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Theat_on</td>
+<td>Temperature at which
+heat control is
+turned on (used when
+evolveTibld =1) [˚C]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Theat_off</td>
+<td>Temperature at which
+heat control is
+turned off (used when
+evolveTibld=1) [˚C]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Theat_fix</td>
+<td>Ideal internal
+building temperature
+[˚C]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="ssss-yyyy-estm-ts-data-tt-txt">
+<h2>6.6.3. SSss_YYYY_ESTM_Ts_data_tt.txt<a class="headerlink" href="#ssss-yyyy-estm-ts-data-tt-txt" title="Permalink to this headline">¶</a></h2>
+<p>SSss_YYYY_ESTM_Ts_data_tt.txt contains a time-series of input surface
+temperature for roof, wall, ground and internal elements.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">No.</th>
+<th class="head">Column name</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>iy</td>
+<td>Year [YYYY]</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>id</td>
+<td>Day of year [DOY]</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>it</td>
+<td>Hour [H]</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>imin</td>
+<td>Minute [M]</td>
+</tr>
+<tr class="row-even"><td>5</td>
+<td>Tiair</td>
+<td>Indoor air
+temperature [˚C]</td>
+</tr>
+<tr class="row-odd"><td>6</td>
+<td>Tsurf</td>
+<td>Bulk surface
+temperature [˚C]
+(used when TsurfCoice
+= 0)</td>
+</tr>
+<tr class="row-even"><td>7</td>
+<td>Troof</td>
+<td>Roof surface
+temperature [˚C]
+(used when
+TsurfChoice = 1 or 2)</td>
+</tr>
+<tr class="row-odd"><td>8</td>
+<td>Troad</td>
+<td>Ground surface
+temperature [˚C]
+(used when
+TsurfChoice = 1 or 2)</td>
+</tr>
+<tr class="row-even"><td>9</td>
+<td>Twall</td>
+<td>Wall surface
+temperature [˚C]
+(used when
+TsurfChoice = 1)</td>
+</tr>
+<tr class="row-odd"><td>10</td>
+<td>Twall_n</td>
+<td>North-facing wall
+surface temperature
+[˚C] (used when
+TsurfChoice = 2)</td>
+</tr>
+<tr class="row-even"><td>11</td>
+<td>Twall_e</td>
+<td>East-facing wall
+surface temperature
+[˚C] (used when
+TsurfChoice = 2)</td>
+</tr>
+<tr class="row-odd"><td>12</td>
+<td>Twall_s</td>
+<td>South-facing wall
+surface temperature
+[˚C] (used when
+TsurfChoice = 2)</td>
+</tr>
+<tr class="row-even"><td>13</td>
+<td>Twall_w</td>
+<td>West-facing wall
+surface temperature
+[˚C] (used when
+TsurfChoice = 2)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="SOLWEIG_input.html" class="btn btn-neutral float-right" title="6.7. SOLWEIG input files" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="CBL_input.html" class="btn btn-neutral" title="6.5. CBL input files" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, micromet@University of Reading, led by Prof Sue Grimmond.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'2018a',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

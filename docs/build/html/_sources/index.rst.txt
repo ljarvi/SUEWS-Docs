@@ -54,7 +54,7 @@ further details v2017a:
    suews-and-umep
    parameterisations-and-sub-models
    prepare-to-run-the-model
-   input-files
+   input_files/input-files
    output-files
    troubleshooting
    acknowledgement

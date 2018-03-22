@@ -1,0 +1,758 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>RunControl.nml &mdash; SUEWS 2018a documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="SUEWS 2018a documentation" href="../index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> SUEWS
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../recent-publications.html">1. Recent publications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">2. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../suews-and-umep.html">3. SUEWS and UMEP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../parameterisations-and-sub-models.html">4. Parameterisations and sub-models within SUEWS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../prepare-to-run-the-model.html">5. Preparing to run the model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input-files.html">6. Input files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../output-files.html">7. Output files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting.html">8. Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../acknowledgement.html">9. Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notation.html">10. Notation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development.html">11. Development, Suggestions and Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-history.html">12. Version History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../differences-suews-lumps-fraise.html">13. Differences between SUEWS, LUMPS and FRAISE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../references.html">14. References</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">SUEWS</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>RunControl.nml</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/input_files/RunControl.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="runcontrol-nml">
+<h1>RunControl.nml<a class="headerlink" href="#runcontrol-nml" title="Permalink to this headline">¶</a></h1>
+<p>The file <strong>RunControl.nml</strong> is a namelist that specifies the options for
+the model run. It must be located in the same directory as the
+executable file.</p>
+<p>A sample file of <strong>RunControl.nml</strong> looks like</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>In <em>Linux</em> and <em>Mac</em>, please add an empty line after the end slash.</li>
+<li>The file is not case-sensitive.</li>
+<li>The parameters and variables can appear in any order.</li>
+</ul>
+</div>
+<table border="1" class="docutils" id="id6">
+<caption><span class="caption-text">Model_run_options</span><a class="headerlink" href="#id6" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">file:</th><td class="field-body">Model_run_options.csv</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils" id="id7">
+<caption><span class="caption-text">Time_related_options</span><a class="headerlink" href="#id7" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">file:</th><td class="field-body">Time_related_options.csv</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils" id="id8">
+<caption><span class="caption-text">File_related_options</span><a class="headerlink" href="#id8" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">file:</th><td class="field-body">File_related_options.csv</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils" id="id9">
+<caption><span class="caption-text">Options_related_to_disaggregation_of_input_data</span><a class="headerlink" href="#id9" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">file:</th><td class="field-body">Options_related_to_disaggregation_of_input_data.csv</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils" id="id10">
+<caption><span class="caption-text">netCDF_related_options</span><a class="headerlink" href="#id10" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">file:</th><td class="field-body">netCDF_related_options.csv</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-auto docutils align-left" id="id11">
+<caption><span class="caption-text">Model run options</span><a class="headerlink" href="#id11" title="Permalink to this table">¶</a></caption>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head stub">Name</th>
+<th class="head">Requirement</th>
+<th class="head">Description</th>
+<th class="head">Possible settings</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><th class="stub">CBLuse</th>
+<td>R</td>
+<td>Determines whether a CBL slab model is used to calculate temperature and humidity.</td>
+<td><table border="1" class="colwidths-given first last docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">value</th>
+<th class="head">meaning</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>0</td>
+<td>disable</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td>enable</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-even"><th class="stub">SnowUse</th>
+<td>R</td>
+<td>Determines whether the snow part of the model runs.</td>
+<td><table border="1" class="colwidths-given first last docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">value</th>
+<th class="head">meaning</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>value</td>
+<td>meaning</td>
+</tr>
+<tr class="row-odd"><td>0</td>
+<td>disable</td>
+</tr>
+<tr class="row-even"><td>1</td>
+<td>enable</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-odd"><th class="stub">SOLWEIGUse</th>
+<td>R</td>
+<td>Determines whether a high resolution radiation model to calculate mean radiant temperate should be used (SOLWEIG). NOTE: this option will considerably slow down the model since SOLWEIG is a 2D model.</td>
+<td><table border="1" class="colwidths-given first last docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">value</th>
+<th class="head">meaning</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>0</td>
+<td>disable</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td>enable</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-even"><th class="stub">NetRadiationMethod</th>
+<td>R</td>
+<td>Determines method for calculation of radiation fluxes.</td>
+<td><table border="1" class="colwidths-given first last docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">value</th>
+<th class="head">meaning</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>0</td>
+<td>Uses observed values of Q* supplied in meteorological forcing file.</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td><blockquote class="first last">
+<div><ul class="simple">
+<li>Q* modelled with L↓ observations supplied in meteorological forcing file.</li>
+<li>Zenith angle not accounted for in albedo calculation.</li>
+</ul>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td>2</td>
+<td><blockquote class="first last">
+<div><ul class="simple">
+<li>Q* modelled with L↓ modelled using cloud cover fraction supplied in meteorological forcing file.</li>
+<li>Zenith angle not accounted for in albedo calculation.</li>
+</ul>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td>3</td>
+<td><blockquote class="first last">
+<div><ul class="simple">
+<li>Q* modelled with L↓ modelled using air temperature and relative humidity supplied in meteorological forcing file (Loridan et al. 2011 <a class="reference internal" href="../references.html#l2011" id="id1">[L2011]</a>).</li>
+<li>Zenith angle not accounted for in albedo calculation.</li>
+</ul>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td>100</td>
+<td><blockquote class="first last">
+<div><ul>
+<li><p class="first">Q* modelled with L↓ observations supplied in meteorological forcing file.</p>
+</li>
+<li><p class="first">Zenith angle accounted for in albedo calculation.</p>
+</li>
+<li><p class="first">SSss_YYYY_NARPOut.txt file produced.</p>
+</li>
+<li><div class="first admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Not recommended in this release</p>
+</div>
+</li>
+</ul>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td>200</td>
+<td><blockquote class="first last">
+<div><ul>
+<li><p class="first">Q* modelled with L↓ modelled using cloud cover fraction supplied in meteorological forcing file (Loridan et al. 2011[5]).</p>
+</li>
+<li><p class="first">Zenith angle accounted for in albedo calculation.</p>
+</li>
+<li><p class="first">SSss_YYYY_NARPOut.txt file produced.</p>
+</li>
+<li><div class="first admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Not recommended in this release</p>
+</div>
+</li>
+</ul>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td>300</td>
+<td><blockquote class="first last">
+<div><ul>
+<li><p class="first">Q* modelled with L↓ modelled using air temperature and relative humidity supplied in meteorological forcing file (Loridan et al. 2011[5]).</p>
+</li>
+<li><p class="first">Zenith angle accounted for in albedo calculation.</p>
+</li>
+<li><p class="first">SSss_YYYY_NARPOut.txt file produced.</p>
+</li>
+<li><div class="first admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Not recommended in this release</p>
+</div>
+</li>
+</ul>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-odd"><th class="stub">NetRadiationMethod new</th>
+<td>R</td>
+<td>Determines method for calculation of radiation fluxes.</td>
+<td><table border="1" class="first last docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>value</td>
+<td>meaning</td>
+</tr>
+<tr class="row-even"><td>0</td>
+<td>Uses observed values of Q* supplied in meteorological forcing file.</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td><ul class="first last simple">
+<li>Q* modelled with L↓ observations supplied in meteorological forcing file.</li>
+<li>Zenith angle not accounted for in albedo calculation.</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td>2</td>
+<td><ul class="first last simple">
+<li>Q* modelled with L↓ modelled using cloud cover fraction supplied in meteorological forcing file.</li>
+<li>Zenith angle not accounted for in albedo calculation.</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>3</td>
+<td><ul class="first last simple">
+<li>Q* modelled with L↓ modelled using air temperature and relative humidity supplied in meteorological forcing file (Loridan et al. 2011 <a class="reference internal" href="../references.html#l2011" id="id2">[L2011]</a>).</li>
+<li>Zenith angle not accounted for in albedo calculation.</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td>100</td>
+<td><ul class="first last">
+<li><p class="first">Q* modelled with L↓ observations supplied in meteorological forcing file.</p>
+</li>
+<li><p class="first">Zenith angle accounted for in albedo calculation.</p>
+</li>
+<li><p class="first">SSss_YYYY_NARPOut.txt file produced.</p>
+</li>
+<li><div class="first admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Not recommended in this release</p>
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>200</td>
+<td><ul class="first last">
+<li><p class="first">Q* modelled with L↓ modelled using cloud cover fraction supplied in meteorological forcing file (Loridan et al. 2011[5]).</p>
+</li>
+<li><p class="first">Zenith angle accounted for in albedo calculation.</p>
+</li>
+<li><p class="first">SSss_YYYY_NARPOut.txt file produced.</p>
+</li>
+<li><div class="first admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Not recommended in this release</p>
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td>300</td>
+<td><ul class="first last">
+<li><p class="first">Q* modelled with L↓ modelled using air temperature and relative humidity supplied in meteorological forcing file (Loridan et al. 2011 <a class="reference internal" href="../references.html#l2011" id="id3">[L2011]</a>).</p>
+</li>
+<li><p class="first">Zenith angle accounted for in albedo calculation.</p>
+</li>
+<li><p class="first">SSss_YYYY_NARPOut.txt file produced.</p>
+</li>
+<li><div class="first admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Not recommended in this release</p>
+</div>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-odd"><th class="stub">AnthropHeatMethod</th>
+<td>R</td>
+<td>Determines method for calculation of radiation fluxes.</td>
+<td><table border="1" class="colwidths-given first last docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">value</th>
+<th class="head">meaning</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>0</td>
+<td><blockquote class="first last">
+<div><ul>
+<li><p class="first">Uses values provided in the meteorological forcing file (SSss_YYYY_data_tt.txt).</p>
+</li>
+<li><p class="first">If you do not want to include QF to the calculation of surface energy balance, you should set values in the meteorological forcing file to zero to prevent calculation of QF.</p>
+</li>
+<li><div class="first admonition tip">
+<p class="first admonition-title">Tip</p>
+<dl class="last docutils">
+<dt>UMEP provides two methods to calculate QF</dt>
+<dd><ol class="first last arabic simple">
+<li>LQF which is simpler</li>
+<li>GQF which is more complete but requires more data inputs</li>
+</ol>
+</dd>
+</dl>
+</div>
+</li>
+</ul>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td><blockquote class="first last">
+<div><ul>
+<li><p class="first">Calculated according to Loridan et al. (2011)[5] using coefficients specified in SUEWS_AnthropogenicHeat.txt.</p>
+</li>
+<li><p class="first">Modelled values will be used even if QF is provided in the meteorological forcing file.</p>
+</li>
+<li><div class="first admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Not recommended in this release</p>
+</div>
+</li>
+</ul>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td>2</td>
+<td><blockquote class="first last">
+<div><ul>
+<li><p class="first">Calculated according to Järvi et al. (2011) <a class="reference internal" href="../references.html#j11" id="id4">[J11]</a> using coefficients specified in SUEWS_AnthropogenicHeat.txt and diurnal patterns specified in SUEWS_Profiles.txt.</p>
+</li>
+<li><p class="first">Modelled values will be used even if QF is provided in the meteorological forcing file.</p>
+</li>
+<li><div class="first admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">recommended in this release</p>
+</div>
+</li>
+</ul>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-odd"><th class="stub">AnthropCO2Method</th>
+<td>R</td>
+<td>Determines method for calculation of radiation fluxes.</td>
+<td><table border="1" class="colwidths-given first last docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">value</th>
+<th class="head">meaning</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>0</td>
+<td><blockquote class="first last">
+<div><ul>
+<li><p class="first">Uses values provided in the meteorological forcing file (SSss_YYYY_data_tt.txt).</p>
+</li>
+<li><p class="first">If you do not want to include QF to the calculation of surface energy balance, you should set values in the meteorological forcing file to zero to prevent calculation of QF.</p>
+</li>
+<li><div class="first admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">UMEP provides two methods to calculate QF
+1. LQF which is simpler
+2. GQF which is more complete but requires more data inputs</p>
+</div>
+</li>
+</ul>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td><blockquote class="first last">
+<div><ul>
+<li><p class="first">Calculated according to Loridan et al. (2011)[5] using coefficients specified in SUEWS_AnthropogenicHeat.txt.</p>
+</li>
+<li><p class="first">Modelled values will be used even if QF is provided in the meteorological forcing file.</p>
+</li>
+<li><div class="first admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Not recommended in this release</p>
+</div>
+</li>
+</ul>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td>2</td>
+<td><blockquote class="first last">
+<div><ul>
+<li><p class="first">Calculated according to Järvi et al. (2011) <a class="reference internal" href="../references.html#j11" id="id5">[J11]</a> using coefficients specified in SUEWS_AnthropogenicHeat.txt and diurnal patterns specified in SUEWS_Profiles.txt.</p>
+</li>
+<li><p class="first">Modelled values will be used even if QF is provided in the meteorological forcing file.</p>
+</li>
+<li><div class="first admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">recommended in this release</p>
+</div>
+</li>
+</ul>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Depending on how the storage heat flux is calculated (specified by
+StorageHeatMethod in <a class="reference external" href="#RunControl.nml">RunControl.nml</a>), different
+input files are required:</p>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, micromet@University of Reading, led by Prof Sue Grimmond.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'2018a',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

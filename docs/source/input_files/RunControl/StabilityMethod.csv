@@ -1,0 +1,10 @@
+"Value","Comments"
+0," Not used. "
+1," Not used. "
+2,"Recommended
+Momentum - unstable: Dyer (1974) [22] modified by Högstrom (1988) [23] ; stable: Van Ulden and Holtslag (1985) [24]
+Heat - Dyer (1974) [22] modified by Högstrom (1988) [23]"
+3,"Momentum: Campbell and Norman (Eq 7.27, Pg97) [25]
+Heat - unstable: Campbell and Norman [25] ; stable: Dyer (1974) [22] modified by Högstrom (1988) [23]"
+4,"Momentum: Businger et al. (1971) [26] modified by Högstrom (1988) [23]
+Heat: Businger et al. (1971) [26] modified by Högstrom (1988) [23]"

@@ -1,0 +1,544 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>12. Version History &mdash; SUEWS 2018a documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="SUEWS 2018a documentation" href="index.html"/>
+        <link rel="next" title="13. Differences between SUEWS, LUMPS and FRAISE" href="differences-suews-lumps-fraise.html"/>
+        <link rel="prev" title="11. Development, Suggestions and Support" href="development.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> SUEWS
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="recent-publications.html">1. Recent publications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">2. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="suews-and-umep.html">3. SUEWS and UMEP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="parameterisations-and-sub-models.html">4. Parameterisations and sub-models within SUEWS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prepare-to-run-the-model.html">5. Preparing to run the model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input_files/input-files.html">6. Input files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="output-files.html">7. Output files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">8. Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acknowledgement.html">9. Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notation.html">10. Notation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development.html">11. Development, Suggestions and Support</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">12. Version History</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#new-in-suews-version-2018a">12.1. New in SUEWS Version 2018a</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#new-in-suews-version-2017b-released-2-august-2017">12.2. New in SUEWS Version 2017b (released 2 August 2017)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#new-in-suews-version-2017a-feb-2017">12.3. New in SUEWS Version 2017a (Feb 2017)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#new-in-suews-version-2016a-released-21-june-2016">12.4. New in SUEWS Version 2016a (released 21 June 2016)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#new-in-suews-version-2014b-released-8-october-2014">12.5. New in SUEWS Version 2014b (released 8 October 2014)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#new-in-suews-version-2014a-1-released-26-february-2014">12.6. New in SUEWS Version 2014a.1 (released 26 February 2014)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#new-in-suews-version-2014a-released-21-february-2014">12.7. New in SUEWS Version 2014a (released 21 February 2014)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#new-in-suews-version-2013a">12.8. New in SUEWS Version 2013a</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#new-in-suews-version-2012b">12.9. New in SUEWS Version 2012b</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#new-in-suews-version-2012a">12.10. New in SUEWS Version 2012a</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#new-in-suews-version2011b">12.11. New in SUEWS Version2011b</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="differences-suews-lumps-fraise.html">13. Differences between SUEWS, LUMPS and FRAISE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">14. References</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">SUEWS</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>12. Version History</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/version-history.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="version-history">
+<span id="ch-ver-history"></span><h1>12. Version History<a class="headerlink" href="#version-history" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="new-in-suews-version-2018a">
+<span id="new-latest"></span><h2>12.1. New in SUEWS Version 2018a<a class="headerlink" href="#new-in-suews-version-2018a" title="Permalink to this headline">¶</a></h2>
+<p>see <a class="reference internal" href="#ch-ver-history"><span class="std std-ref">Version History</span></a>.</p>
+</div>
+<div class="section" id="new-in-suews-version-2017b-released-2-august-2017">
+<h2>12.2. New in SUEWS Version 2017b (released 2 August 2017)<a class="headerlink" href="#new-in-suews-version-2017b-released-2-august-2017" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href=":File:SUEWS_V2017b_Manual.pdf">PDF Manual for v2017b</a></p>
+<ol class="arabic simple">
+<li>Surface-level diagnostics: T2 (air temperature at 2 m agl), Q2 (air
+specific humidity at 2 m agl) and U10 (wind speed at 10 m agl) added
+as default output.</li>
+<li>Output in netCDF format. Please note this feature is <strong>NOT</strong> enabled
+in the public release due to the dependency of netCDF library.
+Assistance in enabling this feature may be requested to the
+development team via <a class="reference external" href="https://www.lists.reading.ac.uk/mailman/listinfo/met-suews">SUEWS mail
+list</a>.</li>
+<li>Edits to the manual.</li>
+<li>New capabilities being developed, including two new options for
+calculating storage heat flux (AnOHM, ESTM) and modelling of carbon
+dioxide fluxes. These are currently under development and <strong>should
+not be used</strong> in v2017b.</li>
+<li>Known issues<ol class="arabic">
+<li>BLUEWS parameters need to be checked</li>
+<li>Observed soil moisture can not be used as an input</li>
+<li>Wind direction is not currently downscaled so non -999 values will
+cause an error.</li>
+</ol>
+</li>
+</ol>
+</div>
+<div class="section" id="new-in-suews-version-2017a-feb-2017">
+<h2>12.3. New in SUEWS Version 2017a (Feb 2017)<a class="headerlink" href="#new-in-suews-version-2017a-feb-2017" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Changes to input file formats (including RunControl.nml and
+InitialConditions files) to facilitate setting up and running the
+model. Met forcing files no longer need two rows of -9 at the end to
+indicate the end of the file.</li>
+<li>Changes to output file formats (now option to write out only a subset
+of variables, rather than all variables).</li>
+<li>SUEWS can now disaggregate forcing files to the model time-step and
+aggregate output at the model time-step to lower resolution. This
+removes the need for the python wrapper used with previous versions.</li>
+<li>InitialConditions format and requirements changed. A single file can
+now be provided for multiple grids. SUEWS will approximate most (but
+not all) of the required initial conditions if values are unknown.
+(However, if detailed information about the initial conditions is
+known, this can still be provided to and used by SUEWS.)</li>
+<li>Leaf area index calculations now use parameters provided for each
+vegetated surface (previously only the deciduous tree LAI development
+parameters were applied to all vegetated surfaces).</li>
+<li>For compatibility with GIS, <strong>the sign convention for longitude has
+been changed</strong>. Now negative values are to the west, positive values
+are to the east. Note this appears to have been incorrectly coded in
+previous versions (but may not necessarily have been problematic).</li>
+<li>Storage heat flux calculation adapted for shorter (sub-hourly) model
+time-step: hysteresis calculation now based on running means over the
+previous hour.</li>
+<li>Improved error handling, including separate files for serious errors
+(problems.txt) and less critical issues (warnings.txt).</li>
+<li>Edits to the manual.</li>
+<li>New capabilities being developed, including two new options for
+calculating storage heat flux (AnOHM, ESTM) and modelling of carbon
+dioxide fluxes. These are currently under development and <strong>should
+not be used</strong> in v2017a.</li>
+</ol>
+</div>
+<div class="section" id="new-in-suews-version-2016a-released-21-june-2016">
+<h2>12.4. New in SUEWS Version 2016a (released 21 June 2016)<a class="headerlink" href="#new-in-suews-version-2016a-released-21-june-2016" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href=":File:SUEWS_V2016a_Manual.pdf">PDF Manual for v2016a</a></p>
+<ol class="arabic simple">
+<li>Major changes to the input file formats to facilitate the running of
+multiple grids and multiple years. Surface characteristics are
+provided in SiteSelect.txt and other input files are cross-referenced
+via codes or profile types.</li>
+<li>The surface types have been altered:<ul>
+<li>Previously, grass surfaces were entered separately as irrigated
+grass and unirrigated grass surfaces, whilst the ‘unmanaged’ land
+cover fraction was assumed by the model to behave as unirrigated
+grass. There is now a single surface type for grass (total for
+irrigated plus unirrigated) and a new bare soil surface type.</li>
+<li>The proportion of irrigated vegetation must now be specified for
+grass, evergreen trees and deciduous trees individually.</li>
+</ul>
+</li>
+<li>The entire model now runs at a time step specified by the user. Note
+that 5 min is strongly recommended. (Previously only the water
+balance calculations were done at 5 min with the energy balance
+calculations at 60 min).</li>
+<li>Surface conductance now depends on the soil moisture under the
+vegetated surfaces only (rather than the total soil moisture for the
+whole study area as previously).</li>
+<li>Albedo of evergreen trees and grass surfaces can now change with leaf
+area index as was previously possible for deciduous trees only.</li>
+<li>New suggestions in Troubleshooting section.</li>
+<li>Edits to the manual.</li>
+<li>CBL model included.</li>
+<li>SUEWS has been incorporated into
+<a class="reference external" href="http://urban-climate.net/umep/UMEP">UMEP</a></li>
+</ol>
+</div>
+<div class="section" id="new-in-suews-version-2014b-released-8-october-2014">
+<h2>12.5. New in SUEWS Version 2014b (released 8 October 2014)<a class="headerlink" href="#new-in-suews-version-2014b-released-8-october-2014" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://www.met.rdg.ac.uk/micromet/documents/SUEWS_Manual.pdf">V2014
+manual</a>
+These affect the run configuration if previously run with older versions
+of the model:</p>
+<ol class="arabic simple">
+<li>New input of three additional columns in the Meteorological input
+file (diffusive and direct solar radiation, and wind direction)</li>
+<li>Change of input variables in InitialConditions.nml file. Note we now
+refer to CT as ET (ie. Evergreen trees rather than coniferous trees)</li>
+<li>In GridConnectionsYYYY.txt, the site names should now be without the
+underscore (e.g “Sm” and not “<a href="#id1"><span class="problematic" id="id2">Sm_</span></a>”)</li>
+</ol>
+<p>Other issues:</p>
+<ol class="arabic simple">
+<li>Number of grid areas that can be modelled (for one grid, one year
+120; for one grid two years 80)</li>
+<li>Comment about Time interval of input data</li>
+<li>Bug fix: Column headers corrected in 5 min file</li>
+<li>Bug fix: Surface state 60 min file - corrected to give the last 5 min
+of the hour (rather than cumulating through the hour)</li>
+<li>Bug fix: units in the Horizontal soil water transfer</li>
+<li>ErrorHints: More have been added to the problems.txt file.</li>
+<li>Manual: new section on running the model appropriately</li>
+<li>Manual: notation table updated</li>
+<li>Possibility to add snow accumulation and melt: new paper</li>
+</ol>
+<p>Järvi L, Grimmond CSB, Taka M, Nordbo A, Setälä H, and Strachan IB 2014:
+Development of the Surface Urban Energy and Water balance Scheme (SUEWS)
+for cold climate cities, Geosci. Model Dev. 7, 1691-1711,
+doi:10.5194/gmd-7-1691-2014.</p>
+</div>
+<div class="section" id="new-in-suews-version-2014a-1-released-26-february-2014">
+<h2>12.6. New in SUEWS Version 2014a.1 (released 26 February 2014)<a class="headerlink" href="#new-in-suews-version-2014a-1-released-26-february-2014" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Please see the large number of changes made in the 2014a release.</li>
+<li>This is a minor change to address installing the software.</li>
+<li>Minor updates to the manual</li>
+</ol>
+</div>
+<div class="section" id="new-in-suews-version-2014a-released-21-february-2014">
+<h2>12.7. New in SUEWS Version 2014a (released 21 February 2014)<a class="headerlink" href="#new-in-suews-version-2014a-released-21-february-2014" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Bug fix: External irrigation is calculated as combined from automatic
+and manual irrigation and during precipitation events the manual
+irrigation is reduced to 60% of the calculated values. In previous
+version of the model, the irrigation was in all cases taken 60% of
+the calculated value, but now this has been fixed.</li>
+<li>In previous versions of the model, irrigation was only allowed on the
+irrigated grass surface type. Now, irrigation is also allowed on
+evergreen and deciduous trees/shrubs surfaces. These are not however
+treated as separate surfaces, but the amount of irrigation is evenly
+distributed to the whole surface type in the modelled area. The
+amount of water is calculated using same equation as for grass
+surface (equation 5 in Järvi et al. 2011), and the fraction of
+irrigated trees/shrubs (relative to the area of tree/shrubs surface)
+is set in the gis file (See Table 4.11: SSss_YYYY.gis)</li>
+<li>In the current version of the model, the user is able to adjust the
+leaf-on and leaf-off lengths in the FunctionalTypes. nml file. In
+addition, user can choose whether to use temperature dependent
+functions or combination of temperature and day length (advised to be
+used at high-latitudes)</li>
+<li>In the gis-file, there is a new variable Alt that is the area
+altitude above sea level. If not known exactly use an approximate
+value.</li>
+<li>Snow removal profile has been added to the
+HourlyProfileSSss_YYYY.txt. Not yet used!</li>
+<li>Model time interval has been changed from minutes to seconds.
+Preferred interval is 3600 seconds (1 hour)</li>
+<li>Manual correction: input variable Soil moisture said soil moisture
+deficit in the manual – word removed</li>
+<li>Multiple compiled versions of SUEWS released. There are now users in
+Apple, Linux and Windows environments. So we will now release
+compiled versions for more operating systems (section 3).</li>
+<li>There are some changes in the output file columns so please, check
+the respective table of each used output file.</li>
+<li>Bug fix: with very small amount of vegetation in an area – impacted
+Phenology for LUMPS</li>
+</ol>
+</div>
+<div class="section" id="new-in-suews-version-2013a">
+<h2>12.8. New in SUEWS Version 2013a<a class="headerlink" href="#new-in-suews-version-2013a" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Radiation selection bug fixed</li>
+<li>Aerodynamic resistance – when very low - no longer reverts to neutral
+(which caused a large jump) – but stays low</li>
+<li>Irrigation day of week fixed</li>
+<li>New error messages</li>
+<li>min file – now includes a decimal time column – see Section 5.4 –
+Table 5.3</li>
+</ol>
+</div>
+<div class="section" id="new-in-suews-version-2012b">
+<h2>12.9. New in SUEWS Version 2012b<a class="headerlink" href="#new-in-suews-version-2012b" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Error message generated if all the data are not available for the
+surface resistance calculations</li>
+<li>Error message generated if wind data are below zero plane
+displacement height.</li>
+<li>All error messages now written to ‘Problem.txt’ rather than embedded
+in an ErrorFile. Note some errors will be written and the program
+will continue others will stop the program.</li>
+<li>Default variables removed (see below). Model will stop if any data
+are problematic. File should be checked to ensure that reasonable
+data are being used. If an error occurs when there should not be one
+let us know as it may mean we have made the limits too restrictive.</li>
+</ol>
+<p>Contents no longer used File defaultFcld=0.1 defaultPres=1013
+defaultRH=50 defaultT=10 defaultU=3 RunControl.nml</p>
+<ul class="simple">
+<li>Just delete lines from file</li>
+<li>Values you had were likely different from these example value shown
+here</li>
+</ul>
+</div>
+<div class="section" id="new-in-suews-version-2012a">
+<h2>12.10. New in SUEWS Version 2012a<a class="headerlink" href="#new-in-suews-version-2012a" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Improved error messages when an error is encountered. Error message
+will generally be written to the screen and to the file
+‘problems.txt’</li>
+<li>Format of all input files have changed.</li>
+<li>New excel spreadsheet and R programme to help prepare required data
+files. (Not required)</li>
+<li>Format of coef flux (OHM) input files have changed.<ul>
+<li>This allows for clearer identification for users of the
+coefficients that are actually to be used</li>
+<li>This requires an additional file with coefficients. These do not
+need to be adjusted but new coefficients can be added. We would
+appreciate receiving additional coefficients so they can be
+included in future releases – Please email Sue.</li>
+</ul>
+</li>
+<li>Storage heat flux (OHM) coefficients can be changed by<ul>
+<li>time of year (summer, winter)</li>
+<li>surface wetness state</li>
+</ul>
+</li>
+<li>New files are written: DailyState.txt<ul>
+<li>Provides the status of variables that are updated on a daily or
+basis or a snapshot at the end of each day.</li>
+</ul>
+</li>
+<li>Surface Types<ul>
+<li>Clarification of surface types has been made. See GIS and OHM
+related files</li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="new-in-suews-version2011b">
+<h2>12.11. New in SUEWS Version2011b<a class="headerlink" href="#new-in-suews-version2011b" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Storage heat flux (ΔQs) and anthropogenic heat flux (QF) can be set
+to be 0 W m<sup>-2</sup></li>
+<li>Calculation of hydraulic conductivity in soil has been improved and
+HydraulicConduct in SUEWSInput.nml is replaced with name
+SatHydraulicConduct</li>
+<li>Following removed from HeaderInput.nml<ul>
+<li>HydraulicConduct</li>
+<li>GrassFractionIrrigated</li>
+<li>PavedFractionIrrigated</li>
+<li>TreeFractionIrrigated</li>
+</ul>
+</li>
+</ol>
+<p>The lower three are now determined from the water use behaviour used in
+SUEWS</p>
+<ol class="arabic simple">
+<li>Following added to HeaderInput.nml<ul>
+<li>SatHydraulicConduct</li>
+<li>defaultQf</li>
+<li>defaultQs</li>
+</ul>
+</li>
+<li>If ΔQs and QF are not calculated in the model but are given as an
+input, the missing data is replaced with the default values.</li>
+<li>Added to SAHP input file<ul>
+<li>AHDIUPRF – diurnal profile used if AnthropHeatChoice = 1</li>
+</ul>
+</li>
+</ol>
+<p>V2012a this became obsolete OHM file (SSss_YYYY.ohm)</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="differences-suews-lumps-fraise.html" class="btn btn-neutral float-right" title="13. Differences between SUEWS, LUMPS and FRAISE" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="development.html" class="btn btn-neutral" title="11. Development, Suggestions and Support" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, micromet@University of Reading, led by Prof Sue Grimmond.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'2018a',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

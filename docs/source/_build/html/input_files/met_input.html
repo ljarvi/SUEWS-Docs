@@ -1,0 +1,538 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>6.4. Meteorological Input File &mdash; SUEWS 2018a documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="SUEWS 2018a documentation" href="../index.html"/>
+        <link rel="up" title="6. Input files" href="input-files.html"/>
+        <link rel="next" title="6.5. CBL input files" href="CBL_input.html"/>
+        <link rel="prev" title="6.3. Initial Conditions file" href="Initial_Conditions.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> SUEWS
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../recent-publications.html">1. Recent publications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">2. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../suews-and-umep.html">3. SUEWS and UMEP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../parameterisations-and-sub-models.html">4. Parameterisations and sub-models within SUEWS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../prepare-to-run-the-model.html">5. Preparing to run the model</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="input-files.html">6. Input files</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="RunControl/RunControl.html">6.1. RunControl.nml</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SUEWS_SiteInfo/SUEWS_SiteInfo.html">6.2. SUEWS_SiteInfo.xlsm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Initial_Conditions.html">6.3. Initial Conditions file</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">6.4. Meteorological Input File</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ssss-yyyy-data-tt-txt">6.4.1. SSss_YYYY_data_tt.txt</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="CBL_input.html">6.5. CBL input files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ESTM_input.html">6.6. ESTM-related files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SOLWEIG_input.html">6.7. SOLWEIG input files</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../output-files.html">7. Output files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting.html">8. Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../acknowledgement.html">9. Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notation.html">10. Notation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development.html">11. Development, Suggestions and Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-history.html">12. Version History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../differences-suews-lumps-fraise.html">13. Differences between SUEWS, LUMPS and FRAISE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../references.html">14. References</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">SUEWS</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="input-files.html">6. Input files</a> &raquo;</li>
+        
+      <li>6.4. Meteorological Input File</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/input_files/met_input.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="meteorological-input-file">
+<h1>6.4. Meteorological Input File<a class="headerlink" href="#meteorological-input-file" title="Permalink to this headline">¶</a></h1>
+<p>SUEWS is designed to run using commonly measured meteorological
+variables.</p>
+<ul class="simple">
+<li>Required inputs must be continuous – i.e. <strong>gap fill</strong> any missing
+data.</li>
+<li>The table below gives the required (R) and optional (O) additional
+input variables.</li>
+<li>If an optional input variable is not available or will not be used by
+the model, enter ‘-999.0’ for this column.</li>
+<li>Since v2017a forcing files no longer need to end with two rows
+containing ‘-9’ in the first column.</li>
+<li>One single meteorological file can be used for all grids
+(<strong>MultipleMetFiles=0</strong> in <a class="reference external" href="#RunControl.nml">RunControl.nml</a>, no
+grid number in file name) if appropriate for the study area, or</li>
+<li>separate met files can be used for each grid if data are available
+(<strong>MultipleMetFiles=1</strong> in <a class="reference external" href="#RunControl.nml">RunControl.nml</a>,
+filename includes grid number).</li>
+<li>The meteorological forcing file names should be appended with the
+temporal resolution in minutes (SS_YYYY_data_tt.txt, or
+SSss_YYYY_data_tt.txt for multiple grids).</li>
+<li>Separate met forcing files should be provided for each year.</li>
+<li>Files do not need to start/end at the start/end of the year, but they
+must contain a whole number of days.</li>
+<li>The meteorological input file should match the information given in
+<a class="reference external" href="#SUEWS_SiteSelect.txt">SUEWS_SiteSelect.txt</a>.</li>
+<li>If a <em>partial year</em> is used that specific year must be given in
+SUEWS_SiteSelect.txt.</li>
+<li>If <em>multiple years</em> are used, all years should be included in
+SUEWS_SiteSelect.txt.</li>
+<li>If a <em>whole year</em> (e.g. 2011) is intended to be modelled using and
+hourly resolution dataset, the number of lines in the met data file
+should be 8760 and begin and end with:</li>
+</ul>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">iy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id&nbsp;&nbsp;it&nbsp;&nbsp;imin</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">2011&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;0&nbsp;…</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">…</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">2012&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;0&nbsp;…</span></code></div>
+</div>
+<div class="section" id="ssss-yyyy-data-tt-txt">
+<h2>6.4.1. SSss_YYYY_data_tt.txt<a class="headerlink" href="#ssss-yyyy-data-tt-txt" title="Permalink to this headline">¶</a></h2>
+<p>Main meteorological data file.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="12%" />
+<col width="12%" />
+<col width="32%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">No.</th>
+<th class="head">Use</th>
+<th class="head">Column name</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>R</td>
+<td>iy</td>
+<td>Year [YYYY]</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>R</td>
+<td>id</td>
+<td>Day of year
+[DOY]</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>R</td>
+<td>it</td>
+<td>Hour [H]</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>R</td>
+<td>imin</td>
+<td>Minute [M]</td>
+</tr>
+<tr class="row-even"><td>5</td>
+<td>O</td>
+<td>qn</td>
+<td>Net
+all-wave
+radiation
+[W
+m <sup>-2</sup>
+]
+-  Required
+if
+<strong>NetRad
+iationMetho
+d</strong>
+= 1.</td>
+</tr>
+<tr class="row-odd"><td>6</td>
+<td>O</td>
+<td>qh</td>
+<td>Sensible
+heat flux
+[W
+m <sup>-2</sup>
+]</td>
+</tr>
+<tr class="row-even"><td>7</td>
+<td>O</td>
+<td>qe</td>
+<td>Latent heat
+flux [W
+m <sup>-2</sup>
+]</td>
+</tr>
+<tr class="row-odd"><td>8</td>
+<td>O</td>
+<td>qs</td>
+<td>Storage
+heat flux
+[W
+m <sup>-2</sup>
+]</td>
+</tr>
+<tr class="row-even"><td>9</td>
+<td>O</td>
+<td>qf</td>
+<td>Anthropogen
+ic
+heat flux
+[W
+m <sup>-2</sup>
+]</td>
+</tr>
+<tr class="row-odd"><td>10</td>
+<td>R</td>
+<td>U</td>
+<td>Wind speed
+[m
+s <sup>-1</sup>
+]
+*Height of
+the wind
+speed
+measurement
+(z) is
+needed in
+[[#SUEWS_Si
+teSelect.tx
+t]</td>
+</tr>
+<tr class="row-even"><td>11</td>
+<td>R</td>
+<td>RH</td>
+<td>Relative
+Humidity
+[%]</td>
+</tr>
+<tr class="row-odd"><td>12</td>
+<td>R</td>
+<td>Tair</td>
+<td>Air
+temperature
+[°C]</td>
+</tr>
+<tr class="row-even"><td>13</td>
+<td>R</td>
+<td>pres</td>
+<td>Barometric
+pressure
+[kPa]</td>
+</tr>
+<tr class="row-odd"><td>14</td>
+<td>R</td>
+<td>rain</td>
+<td>Rainfall
+[mm]</td>
+</tr>
+<tr class="row-even"><td>15</td>
+<td>R</td>
+<td>kdown</td>
+<td>Incoming
+shortwave
+radiation
+[W
+m<sup>-2</sup>
+]
+-  Must be &gt; 0 W
+m:sup: <cite>-2</cite>.</td>
+</tr>
+<tr class="row-odd"><td>16</td>
+<td>O</td>
+<td>snow</td>
+<td>Snow [mm]
+-  Required
+if
+<strong>SnowUs
+e</strong>
+= 1</td>
+</tr>
+<tr class="row-even"><td>17</td>
+<td>O</td>
+<td>ldown</td>
+<td>Incoming
+longwave
+radiation
+[W
+m<sup>-2</sup>]</td>
+</tr>
+<tr class="row-odd"><td>18</td>
+<td>O</td>
+<td>fcld</td>
+<td>Cloud
+fraction
+[tenths]</td>
+</tr>
+<tr class="row-even"><td>19</td>
+<td>O</td>
+<td>Wuh</td>
+<td>External
+water use
+[m :sup:<cite>3</cite>]</td>
+</tr>
+<tr class="row-odd"><td>20</td>
+<td>O</td>
+<td>xsmd</td>
+<td>Observed
+soil
+moisture
+[m :sup:<cite>3</cite>m
+:sup:<cite>-3</cite>]
+or [kg
+kg :sup:<cite>-1</cite>
+]</td>
+</tr>
+<tr class="row-even"><td>21</td>
+<td>O</td>
+<td>lai</td>
+<td>Observed
+leaf area
+index
+[m :sup:<cite>-2</cite>m<sup>-2</sup>]</td>
+</tr>
+<tr class="row-odd"><td>22</td>
+<td>O</td>
+<td>kdiff</td>
+<td>Diffuse
+radiation
+[W
+m <sup>-2</sup>]
+-  Recommended
+if
+<strong>SOLWEIGUse</strong>
+= 1</td>
+</tr>
+<tr class="row-even"><td>23</td>
+<td>O</td>
+<td>kdir</td>
+<td>Direct
+radiation
+[W
+m <sup>-2</sup>
+]
+-  Recommended
+if
+<strong>SOLWEIGUse</strong>
+= 1</td>
+</tr>
+<tr class="row-odd"><td>24</td>
+<td>O</td>
+<td>wdir</td>
+<td>Wind
+direction
+[°]
+-  Currently
+not
+implemented</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="CBL_input.html" class="btn btn-neutral float-right" title="6.5. CBL input files" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Initial_Conditions.html" class="btn btn-neutral" title="6.3. Initial Conditions file" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, micromet@University of Reading, led by Prof Sue Grimmond.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'2018a',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
