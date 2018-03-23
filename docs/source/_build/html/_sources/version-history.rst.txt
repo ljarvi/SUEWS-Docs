@@ -1,4 +1,4 @@
-.. _ch_ver_history:
+.. _version_history:
 
 Version History
 ===============
@@ -8,7 +8,7 @@ Version History
 New in SUEWS Version 2018a
 --------------------------
 
-see :ref:`ch_ver_history`.
+see :ref:`version_history`.
 
 
 New in SUEWS Version 2017b (released 2 August 2017)

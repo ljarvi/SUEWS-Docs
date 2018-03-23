@@ -17,42 +17,107 @@ A sample file of **RunControl.nml** looks like
      - The parameters and variables can appear in any order.
 
 
-The parameters and their setting instructions are provided in the tables below:
-
-* :numref:`{number} Model run options <Model_run_options>`
-* :numref:`{number} Time related options <Time_related_options>`
-* :numref:`{number} File related options <File_related_options>`
-* :numref:`{number} Options related to disaggregation of input data <Options_related_to_disaggregation_of_input_data>`
-* :numref:`{number} netCDF related options <netCDF_related_options>`
-
-.. _Model_run_options:
-.. csv-table:: Model_run_options
-  :widths: 5 5 100 30
-  :header-rows: 1
-  :file: Model_run_options.csv
+The parameters and their setting instructions are provided through the links below:
 
 
-.. _Time_related_options:
-.. csv-table:: Time_related_options
-  :header-rows: 1
-  :file: Time_related_options.csv
+.. list-table:: RunControl options
+    :widths: 20 80 
+    :header-rows: 1
+
+    * - Section
+
+      - Options
+
+    * - :ref:`Model_run_options`
+
+      - .. hlist::
+        + :option:`CBLuse`
+        + :option:`SnowUse`
+        + :option:`SOLWEIGUse`
+        + :option:`NetRadiationMethod`
+        + :option:`AnthropHeatMethod`
+        + :option:`AnthropCO2Method`
+        + :option:`StorageHeatMethod`
+        + :option:`OHMIncQF`
+        + :option:`StabilityMethod`
+        + :option:`RoughLenHeatMethod`
+        + :option:`RoughLenMomMethod`
+        + :option:`SMDMethod`
+        + :option:`WaterUseMethod`
 
 
-.. _File_related_options:
-.. csv-table:: File_related_options
-  :header-rows: 1
-  :file: File_related_options.csv
+    * - :ref:`Model_run_options`
+
+      - .. hlist::
+          + :option:`CBLuse`
+          + :option:`SnowUse`
+          + :option:`SOLWEIGUse`
+          + :option:`NetRadiationMethod`
+          + :option:`AnthropHeatMethod`
+          + :option:`AnthropCO2Method`
+          + :option:`StorageHeatMethod`
+          + :option:`OHMIncQF`
+          + :option:`StabilityMethod`
+          + :option:`RoughLenHeatMethod`
+          + :option:`RoughLenMomMethod`
+          + :option:`SMDMethod`
+          + :option:`WaterUseMethod`
 
 
-.. _Options_related_to_disaggregation_of_input_data :
-.. csv-table:: Options_related_to_disaggregation_of_input_data
-  :header-rows: 1
-  :file: Options_related_to_disaggregation_of_input_data.csv
+
+    * - :ref:`File_related_options`
+
+      - .. hlist::
+        + :option:`FileCode`
+        + :option:`FileInputPath`
+        + :option:`FileOutputPath`
+        + :option:`MultipleMetFiles`
+        + :option:`MultipleInitFiles`
+        + :option:`MultipleESTMFiles`
+        + :option:`KeepTstepFilesIn`
+        + :option:`KeepTstepFilesOut`
+        + :option:`WriteOutOption`
+        + :option:`SuppressWarnings`
+
+    * - :ref:`Time_related_options`
+
+      - .. hlist::
+        + :option:`Tstep`
+        + :option:`ResolutionFilesIn`
+        + :option:`ResolutionFilesInESTM`
+        + :option:`ResolutionFilesOut`
+
+    * - :ref:`Options_related_to_disaggregation_of_input_data`
+
+      - .. hlist::
+        + :option:`DisaggMethod`
+        + :option:`KdownZen`
+        + :option:`RainDisaggMethod`
+        + :option:`RainAmongN`
+        + :option:`MultRainAmongN`
+        + :option:`MultRainAmongNUpperI`
+        + :option:`DisaggMethodESTM`
+
+    * - :ref:`netCDF_related_options`
+
+      - .. hlist::
+        + :option:`ncMode`
+        + :option:`nRow`
+        + :option:`nCol`
 
 
-.. _netCDF_related_options:
-.. csv-table:: netCDF_related_options
-  :header-rows: 1
-  :file: netCDF_related_options.csv
 
+
+
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+
+   Model_run_options
+   Time_related_options
+   File_related_options
+   Options_related_to_disaggregation_of_input_data
+   netCDF_related_options
+   
 

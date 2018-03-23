@@ -1,0 +1,595 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>6.1.3. File related options &mdash; SUEWS 2018a documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="SUEWS 2018a documentation" href="../../index.html"/>
+        <link rel="up" title="6.1. RunControl.nml" href="RunControl.html"/>
+        <link rel="next" title="6.1.4. Options related to disaggregation of input data" href="Options_related_to_disaggregation_of_input_data.html"/>
+        <link rel="prev" title="6.1.2. Time related options" href="Time_related_options.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> SUEWS
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../recent-publications.html">1. Recent publications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction.html">2. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../suews-and-umep.html">3. SUEWS and UMEP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../parameterisations-and-sub-models.html">4. Parameterisations and sub-models within SUEWS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../prepare-to-run-the-model.html">5. Preparing to run the model</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../input-files.html">6. Input files</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="RunControl.html">6.1. RunControl.nml</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Model_run_options.html">6.1.1. Model run options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Time_related_options.html">6.1.2. Time related options</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">6.1.3. File related options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Options_related_to_disaggregation_of_input_data.html">6.1.4. Options related to disaggregation of input data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="netCDF_related_options.html">6.1.5. netCDF related options</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../SUEWS_SiteInfo/SUEWS_SiteInfo.html">6.2. SUEWS_SiteInfo.xlsm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Initial_Conditions.html">6.3. Initial Conditions file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../met_input.html">6.4. Meteorological Input File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../CBL_input.html">6.5. CBL input files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ESTM_input.html">6.6. ESTM-related files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../SOLWEIG_input.html">6.7. SOLWEIG input files</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../output-files.html">7. Output files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../troubleshooting.html">8. Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../acknowledgement.html">9. Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../notation.html">10. Notation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../development.html">11. Development, Suggestions and Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../version-history.html">12. Version History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../differences-suews-lumps-fraise.html">13. Differences between SUEWS, LUMPS and FRAISE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../references.html">14. References</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">SUEWS</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../input-files.html">6. Input files</a> &raquo;</li>
+        
+          <li><a href="RunControl.html">6.1. RunControl.nml</a> &raquo;</li>
+        
+      <li>6.1.3. File related options</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/input_files/RunControl/File_related_options.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="file-related-options">
+<span id="id1"></span><h1>6.1.3. File related options<a class="headerlink" href="#file-related-options" title="Permalink to this headline">¶</a></h1>
+<dl class="option">
+<dt id="cmdoption-arg-filecode">
+<code class="descname">FileCode</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-arg-filecode" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Requirement:</th><td class="field-body">Required</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Description:</th><td class="field-body">Two-letter site identification code (e.g. He, Sc, Kc).</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Configuration:</th><td class="field-body">to fill</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-arg-fileinputpath">
+<code class="descname">FileInputPath</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-arg-fileinputpath" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Requirement:</th><td class="field-body">Required</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Description:</th><td class="field-body">Input directory.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Configuration:</th><td class="field-body">to fill</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-arg-fileoutputpath">
+<code class="descname">FileOutputPath</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-arg-fileoutputpath" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Requirement:</th><td class="field-body">Required</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Description:</th><td class="field-body">Output directory.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Configuration:</th><td class="field-body">to fill</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-arg-multiplemetfiles">
+<code class="descname">MultipleMetFiles</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-arg-multiplemetfiles" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Requirement:</th><td class="field-body"><p class="first">Required</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Description:</th><td class="field-body"><p class="first">Specifies whether one single meteorological forcing file is used for all grids or a separate met file is provided for each grid.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Configuration:</th><td class="field-body"><table border="1" class="colwidths-given first last docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Value</th>
+<th class="head">Comments</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>0</td>
+<td>Single meteorological forcing file used for all grids.
+No grid number should appear in the file name.</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td>Separate meteorological forcing files used for each grid.
+The grid number should appear in the file name.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-arg-multipleinitfiles">
+<code class="descname">MultipleInitFiles</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-arg-multipleinitfiles" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Requirement:</th><td class="field-body"><p class="first">Required</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Description:</th><td class="field-body"><p class="first">Specifies whether one single initial conditions file is used for all grids at the start of the run or a separate initial conditions file is provided for each grid.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Configuration:</th><td class="field-body"><table border="1" class="colwidths-given first last docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Value</th>
+<th class="head">Comments</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>0</td>
+<td>Single initial conditions file used for all grids.
+No grid number should appear in the file name.</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td>Separate initial conditions files used for each grid.
+The grid number should appear in the file name.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-arg-multipleestmfiles">
+<code class="descname">MultipleESTMFiles</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-arg-multipleestmfiles" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Requirement:</th><td class="field-body"><p class="first">Optional</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Description:</th><td class="field-body"><p class="first">Specifies whether one single ESTM forcing file is used for all grids or a separate file is provided for each grid.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Configuration:</th><td class="field-body"><table border="1" class="colwidths-given first last docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Value</th>
+<th class="head">Comments</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>0</td>
+<td>Single ESTM forcing file used for all grids.
+No grid number should appear in the file name.</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td>Separate ESTM forcing files used for each grid.
+The grid number should appear in the file name.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-arg-keeptstepfilesin">
+<code class="descname">KeepTstepFilesIn</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-arg-keeptstepfilesin" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Requirement:</th><td class="field-body"><p class="first">Optional</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Description:</th><td class="field-body"><p class="first">Specifies whether input meteorological forcing files at the resolution of the model time step should be saved.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Configuration:</th><td class="field-body"><table border="1" class="colwidths-given first last docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Value</th>
+<th class="head">Comments</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>0</td>
+<td>Meteorological forcing files at model time step are not written out. This is the default option
+Recommended to reduce processing time and save disk space as (e.g. 5-min) files can be large.</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td>Meteorological forcing files at model time step are written out.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-arg-keeptstepfilesout">
+<code class="descname">KeepTstepFilesOut</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-arg-keeptstepfilesout" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Requirement:</th><td class="field-body"><p class="first">Optional</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Description:</th><td class="field-body"><p class="first">Specifies whether output meteorological forcing files at the resolution of the model time step should be saved.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Configuration:</th><td class="field-body"><table border="1" class="colwidths-given first last docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Value</th>
+<th class="head">Comments</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>0</td>
+<td>Output files at model time are not saved. This is the default option.
+Recommended to save disk space as (e.g. 5-min) files can be large.</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td>Output files at model time step are written out.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-arg-writeoutoption">
+<code class="descname">WriteOutOption</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-arg-writeoutoption" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Requirement:</th><td class="field-body"><p class="first">Optional</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Description:</th><td class="field-body"><p class="first">Specifies which variables are written in the output files.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Configuration:</th><td class="field-body"><table border="1" class="colwidths-given first last docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Value</th>
+<th class="head">Comments</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>0</td>
+<td>All (except snow-related) output variables written. This is the default option.</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td>All (including snow-related) output variables written.</td>
+</tr>
+<tr class="row-even"><td>2</td>
+<td>Writes out a minimal set of output variables (use this to save space or if information about the different surfaces is not required).</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-arg-suppresswarnings">
+<code class="descname">SuppressWarnings</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-arg-suppresswarnings" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Requirement:</th><td class="field-body"><p class="first">Optional</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Description:</th><td class="field-body"><p class="first">Controls whether the warnings.txt file is written or not.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Configuration:</th><td class="field-body"><table border="1" class="colwidths-given first last docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Value</th>
+<th class="head">Comments</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>0</td>
+<td>The warnings.txt file is written. This is the default option.</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td>No warnings.txt file is written. May be useful for large model runs as this file can grow large.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Options_related_to_disaggregation_of_input_data.html" class="btn btn-neutral float-right" title="6.1.4. Options related to disaggregation of input data" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Time_related_options.html" class="btn btn-neutral" title="6.1.2. Time related options" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, micromet@University of Reading, led by Prof Sue Grimmond.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'2018a',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

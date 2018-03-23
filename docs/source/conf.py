@@ -42,7 +42,11 @@ extensions = [
     'sphinx.ext.mathjax',
     'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
+    # 'rinoh.frontend.sphinx',
+    # 'sphinxfortran.fortran_autodoc',
+    # 'sphinxfortran.fortran_domain',
     'sphinx.ext.githubpages'
+
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -187,7 +191,10 @@ epub_exclude_files = ['search.html']
 
 
 # -- Extension configuration -------------------------------------------------
-
+# rinoh_documents = [('index',            # top-level file (index.rst)
+#                     'target',           # output (target.pdf)
+#                     'Document Title',   # document title
+#                     'John A. Uthor')]   # document author
 
 # Fix for scrolling tables in the RTD-theme
 # https://rackerlabs.github.io/docs-rackspace/tools/rtd-tables.html
