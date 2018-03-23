@@ -45,7 +45,7 @@ further details v2017a:
 
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :numbered:
    :hidden:
 

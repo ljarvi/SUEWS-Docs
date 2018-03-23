@@ -119,7 +119,8 @@ htmlhelp_basename = 'SUEWSdoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
-
+# this can be one of ['pdflatex', 'xelatex', 'lualatex', 'platex']
+latex_engine = 'lualatex'
 latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').
     #
@@ -132,6 +133,7 @@ latex_elements = {
     # Additional stuff for the LaTeX preamble.
     #
     # 'preamble': '',
+
 
     # Latex figure (float) alignment
     #

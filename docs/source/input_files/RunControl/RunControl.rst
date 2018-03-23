@@ -20,17 +20,9 @@ A sample file of **RunControl.nml** looks like
 The parameters and their setting instructions are provided through the links below:
 
 
-.. list-table:: RunControl options
-    :widths: 20 80 
-    :header-rows: 1
+* :ref:`Model_run_options`
 
-    * - Section
-
-      - Options
-
-    * - :ref:`Model_run_options`
-
-      - .. hlist::
+      .. hlist::
         + :option:`CBLuse`
         + :option:`SnowUse`
         + :option:`SOLWEIGUse`
@@ -46,28 +38,9 @@ The parameters and their setting instructions are provided through the links bel
         + :option:`WaterUseMethod`
 
 
-    * - :ref:`Model_run_options`
+* :ref:`File_related_options`
 
-      - .. hlist::
-          + :option:`CBLuse`
-          + :option:`SnowUse`
-          + :option:`SOLWEIGUse`
-          + :option:`NetRadiationMethod`
-          + :option:`AnthropHeatMethod`
-          + :option:`AnthropCO2Method`
-          + :option:`StorageHeatMethod`
-          + :option:`OHMIncQF`
-          + :option:`StabilityMethod`
-          + :option:`RoughLenHeatMethod`
-          + :option:`RoughLenMomMethod`
-          + :option:`SMDMethod`
-          + :option:`WaterUseMethod`
-
-
-
-    * - :ref:`File_related_options`
-
-      - .. hlist::
+      .. hlist::
         + :option:`FileCode`
         + :option:`FileInputPath`
         + :option:`FileOutputPath`
@@ -79,17 +52,19 @@ The parameters and their setting instructions are provided through the links bel
         + :option:`WriteOutOption`
         + :option:`SuppressWarnings`
 
-    * - :ref:`Time_related_options`
 
-      - .. hlist::
+* :ref:`Time_related_options`
+
+      .. hlist::
         + :option:`Tstep`
         + :option:`ResolutionFilesIn`
         + :option:`ResolutionFilesInESTM`
         + :option:`ResolutionFilesOut`
 
-    * - :ref:`Options_related_to_disaggregation_of_input_data`
 
-      - .. hlist::
+* :ref:`Options_related_to_disaggregation_of_input_data`
+
+      .. hlist::
         + :option:`DisaggMethod`
         + :option:`KdownZen`
         + :option:`RainDisaggMethod`
@@ -98,9 +73,9 @@ The parameters and their setting instructions are provided through the links bel
         + :option:`MultRainAmongNUpperI`
         + :option:`DisaggMethodESTM`
 
-    * - :ref:`netCDF_related_options`
+* :ref:`netCDF_related_options`
 
-      - .. hlist::
+      .. hlist::
         + :option:`ncMode`
         + :option:`nRow`
         + :option:`nCol`
