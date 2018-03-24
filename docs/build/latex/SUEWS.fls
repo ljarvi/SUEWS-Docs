@@ -213,6 +213,8 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/hypcap.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/hypcap.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/tocloft/tocloft.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/tocloft/tocloft.sty
 OUTPUT SUEWS.idx
 INPUT ./SUEWS.aux
 INPUT ./SUEWS.aux

@@ -2,8 +2,8 @@
 \def\bigletter#1{{\Large\sffamily#1}\nopagebreak\vspace{1mm}}
 
   \bigletter {Symbols}
-  \item \(\Delta \)QS*, \hyperindexformat{\textbf}{95}
-  \item \(\lambda \)F, \hyperindexformat{\textbf}{95}
+  \item \(\Delta \)QS*, \hyperindexformat{\textbf}{97}
+  \item \(\lambda \)F, \hyperindexformat{\textbf}{97}
 
   \indexspace
   \bigletter A
@@ -14,13 +14,13 @@
 
   \indexspace
   \bigletter B
-  \item Bldgs, \hyperindexformat{\textbf}{95}
-  \item BLUEWS, \hyperindexformat{\textbf}{95}
-  \item BSoil, \hyperindexformat{\textbf}{96}
+  \item Bldgs, \hyperindexformat{\textbf}{97}
+  \item BLUEWS, \hyperindexformat{\textbf}{97}
+  \item BSoil, \hyperindexformat{\textbf}{98}
 
   \indexspace
   \bigletter C
-  \item CBL, \hyperindexformat{\textbf}{95}
+  \item CBL, \hyperindexformat{\textbf}{97}
   \item CBLuse
     \subitem command line option, \hyperpage{25}
   \item command line option
@@ -64,19 +64,19 @@
 
   \indexspace
   \bigletter D
-  \item DecTr, \hyperindexformat{\textbf}{95}
-  \item DEM, \hyperindexformat{\textbf}{95}
+  \item DecTr, \hyperindexformat{\textbf}{97}
+  \item DEM, \hyperindexformat{\textbf}{97}
   \item DisaggMethod
     \subitem command line option, \hyperpage{33}
   \item DisaggMethodESTM
     \subitem command line option, \hyperpage{34}
-  \item DSM, \hyperindexformat{\textbf}{95}
-  \item DTM, \hyperindexformat{\textbf}{95}
+  \item DSM, \hyperindexformat{\textbf}{97}
+  \item DTM, \hyperindexformat{\textbf}{97}
 
   \indexspace
   \bigletter E
-  \item ESTM, \hyperindexformat{\textbf}{95}
-  \item EveTr, \hyperindexformat{\textbf}{95}
+  \item ESTM, \hyperindexformat{\textbf}{97}
+  \item EveTr, \hyperindexformat{\textbf}{97}
 
   \indexspace
   \bigletter F
@@ -89,7 +89,7 @@
 
   \indexspace
   \bigletter G
-  \item Grass, \hyperindexformat{\textbf}{95}
+  \item Grass, \hyperindexformat{\textbf}{97}
 
   \indexspace
   \bigletter K
@@ -102,9 +102,9 @@
 
   \indexspace
   \bigletter L
-  \item LAI, \hyperindexformat{\textbf}{96}
-  \item LUMPS, \hyperindexformat{\textbf}{96}
-  \item L↓, \hyperindexformat{\textbf}{96}
+  \item LAI, \hyperindexformat{\textbf}{98}
+  \item LUMPS, \hyperindexformat{\textbf}{98}
+  \item L↓, \hyperindexformat{\textbf}{98}
 
   \indexspace
   \bigletter M
@@ -121,7 +121,7 @@
 
   \indexspace
   \bigletter N
-  \item NARP, \hyperindexformat{\textbf}{96}
+  \item NARP, \hyperindexformat{\textbf}{98}
   \item ncMode
     \subitem command line option, \hyperpage{35}
   \item nCol
@@ -133,20 +133,20 @@
 
   \indexspace
   \bigletter O
-  \item OHM, \hyperindexformat{\textbf}{96}
+  \item OHM, \hyperindexformat{\textbf}{98}
   \item OHMIncQF
     \subitem command line option, \hyperpage{27}
 
   \indexspace
   \bigletter P
-  \item Paved, \hyperindexformat{\textbf}{96}
+  \item Paved, \hyperindexformat{\textbf}{98}
 
   \indexspace
   \bigletter Q
-  \item QE, \hyperindexformat{\textbf}{96}
-  \item QF, \hyperindexformat{\textbf}{96}
-  \item QH, \hyperindexformat{\textbf}{96}
-  \item Qstar, \hyperindexformat{\textbf}{96}
+  \item QE, \hyperindexformat{\textbf}{98}
+  \item QF, \hyperindexformat{\textbf}{98}
+  \item QH, \hyperindexformat{\textbf}{98}
+  \item Qstar, \hyperindexformat{\textbf}{98}
 
   \indexspace
   \bigletter R
@@ -171,7 +171,7 @@
     \subitem command line option, \hyperpage{29}
   \item SnowUse
     \subitem command line option, \hyperpage{25}
-  \item SOLWEIG, \hyperindexformat{\textbf}{96}
+  \item SOLWEIG, \hyperindexformat{\textbf}{98}
   \item SOLWEIGUse
     \subitem command line option, \hyperpage{25}
   \item StabilityMethod
@@ -180,22 +180,22 @@
     \subitem command line option, \hyperpage{27}
   \item SuppressWarnings
     \subitem command line option, \hyperpage{32}
-  \item SVF, \hyperindexformat{\textbf}{96}
+  \item SVF, \hyperindexformat{\textbf}{98}
 
   \indexspace
   \bigletter T
-  \item theta, \hyperindexformat{\textbf}{96}
+  \item theta, \hyperindexformat{\textbf}{98}
   \item Tstep
     \subitem command line option, \hyperpage{30}
-  \item tt, \hyperindexformat{\textbf}{96}
+  \item tt, \hyperindexformat{\textbf}{98}
 
   \indexspace
   \bigletter U
-  \item UMEP, \hyperindexformat{\textbf}{96}
+  \item UMEP, \hyperindexformat{\textbf}{98}
 
   \indexspace
   \bigletter W
-  \item Water, \hyperindexformat{\textbf}{96}
+  \item Water, \hyperindexformat{\textbf}{98}
   \item WaterUseMethod
     \subitem command line option, \hyperpage{29}
   \item WriteOutOption
@@ -203,6 +203,6 @@
 
   \indexspace
   \bigletter Z
-  \item zi, \hyperindexformat{\textbf}{96}
+  \item zi, \hyperindexformat{\textbf}{98}
 
 \end{sphinxtheindex}

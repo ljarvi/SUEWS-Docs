@@ -45,9 +45,16 @@
 \setcounter{tocdepth}{1}
 
 
+\usepackage[titles]{tocloft}
+\addto\captionsenglish{\renewcommand{\bibname}{References}}
+\cftsetpnumwidth {1.25cm}\cftsetrmarg{1.5cm}
+\setlength{\cftchapnumwidth}{0.75cm}
+\setlength{\cftsecindent}{\cftchapnumwidth}
+\setlength{\cftsecnumwidth}{1.25cm}
+
 
 \title{SUEWS Documentation}
-\date{Mar 23, 2018}
+\date{Mar 24, 2018}
 \release{2018a}
 \author{Sue Grimmond, Ting Sun}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -64,8 +71,8 @@
 The current version of SUEWS is v2017b. The software can be downloaded
 by completing \sphinxhref{http://micromet.reading.ac.uk/software/}{this form}.
 
-{\hyperref[\detokenize{index:index-page}]{\sphinxcrossref{\DUrole{std,std-ref}{This documentation site}}}} is regularly
-updated with new developments. For what’s new in this version, see {\hyperref[\detokenize{version-history:new-latest}]{\sphinxcrossref{\DUrole{std,std-ref}{New in SUEWS Version 2018a}}}}.
+\DUrole{xref,std,std-ref}{This documentation site} is regularly
+updated with new developments. For what’s new in this version, see {\hyperref[\detokenize{version-history:new-latest}]{\sphinxcrossref{\DUrole{std,std-ref}{New in SUEWS Version 2018a}}}} (\autopageref*{\detokenize{version-history:new-latest}}).
 
 The \sphinxstylestrong{latest formal} release of SUEWS is \sphinxstylestrong{v2017b} (released 1 August
 2017).
@@ -236,11 +243,11 @@ Geosci. Model Dev. 7, 1691-1711
 \caption{Overview of SUEWS}\label{\detokenize{introduction:id4}}\end{figure}
 
 Surface Urban Energy and Water Balance Scheme (\sphinxstylestrong{SUEWS}) (Järvi et al.
-2011 \phantomsection\label{\detokenize{introduction:id1}}{\hyperref[\detokenize{references:j11}]{\sphinxcrossref{{[}J11{]}}}}, Ward et al. 2016 \phantomsection\label{\detokenize{introduction:id2}}{\hyperref[\detokenize{references:w16}]{\sphinxcrossref{{[}W16{]}}}}) is able to simulate the urban
+2011 \phantomsection\label{\detokenize{introduction:id1}}{\hyperref[\detokenize{references:j11}]{\sphinxcrossref{{[}J11{]}}}} (\autopageref*{\detokenize{references:j11}}), Ward et al. 2016 \phantomsection\label{\detokenize{introduction:id2}}{\hyperref[\detokenize{references:w16}]{\sphinxcrossref{{[}W16{]}}}} (\autopageref*{\detokenize{references:w16}})) is able to simulate the urban
 radiation, energy and water balances using only commonly measured
 meteorological variables and information about the surface cover. SUEWS
 utilizes an evaporation-interception approach (Grimmond et al.
-1991 \phantomsection\label{\detokenize{introduction:id3}}{\hyperref[\detokenize{references:g91}]{\sphinxcrossref{{[}G91{]}}}}), similar to that used in forests, to model evaporation from
+1991 \phantomsection\label{\detokenize{introduction:id3}}{\hyperref[\detokenize{references:g91}]{\sphinxcrossref{{[}G91{]}}}} (\autopageref*{\detokenize{references:g91}})), similar to that used in forests, to model evaporation from
 urban surfaces.
 
 \begin{figure}[htbp]
@@ -562,11 +569,11 @@ the model.
 
 \item {} 
 Other data can be provided as input, such as cloud fraction (see
-options in {\hyperref[\detokenize{parameterisations-and-sub-models:RunControl.nml}]{\emph{RunControl}}}).
+options in {\hyperref[\detokenize{parameterisations-and-sub-models:RunControl.nml}]{\emph{RunControl}}} (\autopageref*{\detokenize{parameterisations-and-sub-models:RunControl.nml}})).
 
 \item {} 
 \sphinxstylestrong{NARP} (Net All-wave Radiation Parameterization, Offerle et al.
-2003 \phantomsection\label{\detokenize{parameterisations-and-sub-models:id1}}{\hyperref[\detokenize{references:o2003}]{\sphinxcrossref{{[}O2003{]}}}} , Loridan et al. 2011 \phantomsection\label{\detokenize{parameterisations-and-sub-models:id2}}{\hyperref[\detokenize{references:l2011}]{\sphinxcrossref{{[}L2011{]}}}} ) scheme calculates outgoing
+2003 \phantomsection\label{\detokenize{parameterisations-and-sub-models:id1}}{\hyperref[\detokenize{references:o2003}]{\sphinxcrossref{{[}O2003{]}}}} (\autopageref*{\detokenize{references:o2003}}) , Loridan et al. 2011 \phantomsection\label{\detokenize{parameterisations-and-sub-models:id2}}{\hyperref[\detokenize{references:l2011}]{\sphinxcrossref{{[}L2011{]}}}} (\autopageref*{\detokenize{references:l2011}}) ) scheme calculates outgoing
 shortwave and incoming and outgoing longwave radiation components
 based on incoming shortwave radiation, temperature, relative humidity
 and surface characteristics (albedo, emissivity).
@@ -580,12 +587,12 @@ and surface characteristics (albedo, emissivity).
 Two simple anthropogenic heat flux sub-models exist within SUEWS:
 \begin{itemize}
 \item {} 
-Järvi et al. (2011) \phantomsection\label{\detokenize{parameterisations-and-sub-models:id3}}{\hyperref[\detokenize{references:j11}]{\sphinxcrossref{{[}J11{]}}}} approach, based on heating and cooling
+Järvi et al. (2011) \phantomsection\label{\detokenize{parameterisations-and-sub-models:id3}}{\hyperref[\detokenize{references:j11}]{\sphinxcrossref{{[}J11{]}}}} (\autopageref*{\detokenize{references:j11}}) approach, based on heating and cooling
 degree days and population density (allows distinction between
 weekdays and weekends).
 
 \item {} 
-Loridan et al. (2011) \phantomsection\label{\detokenize{parameterisations-and-sub-models:id4}}{\hyperref[\detokenize{references:l2011}]{\sphinxcrossref{{[}L2011{]}}}} approach, based on a linear piece-wise
+Loridan et al. (2011) \phantomsection\label{\detokenize{parameterisations-and-sub-models:id4}}{\hyperref[\detokenize{references:l2011}]{\sphinxcrossref{{[}L2011{]}}}} (\autopageref*{\detokenize{references:l2011}}) approach, based on a linear piece-wise
 relation with air temperature.
 
 \end{itemize}
@@ -596,13 +603,13 @@ data, either derived from knowledge of the study site, or obtained
 from other models, for example:
 \begin{itemize}
 \item {} 
-\sphinxstylestrong{LUCY} (Allen et al. 2011 \phantomsection\label{\detokenize{parameterisations-and-sub-models:id5}}{\hyperref[\detokenize{references:lucy}]{\sphinxcrossref{{[}lucy{]}}}}, Lindberg et al. 2013 \phantomsection\label{\detokenize{parameterisations-and-sub-models:id6}}{\hyperref[\detokenize{references:lucy2}]{\sphinxcrossref{{[}lucy2{]}}}}). A
+\sphinxstylestrong{LUCY} (Allen et al. 2011 \phantomsection\label{\detokenize{parameterisations-and-sub-models:id5}}{\hyperref[\detokenize{references:lucy}]{\sphinxcrossref{{[}lucy{]}}}} (\autopageref*{\detokenize{references:lucy}}), Lindberg et al. 2013 \phantomsection\label{\detokenize{parameterisations-and-sub-models:id6}}{\hyperref[\detokenize{references:lucy2}]{\sphinxcrossref{{[}lucy2{]}}}} (\autopageref*{\detokenize{references:lucy2}})). A
 new version has been now included in UMEP. To distinguish it is
 referred to as
 \sphinxhref{http://urban-climate.net/umep/LQF\_Manual}{**LQF**}
 
 \item {} 
-\sphinxstylestrong{GreaterQF} (Iamarino et al. 2011 \phantomsection\label{\detokenize{parameterisations-and-sub-models:id7}}{\hyperref[\detokenize{references:i11}]{\sphinxcrossref{{[}I11{]}}}}). A new version has been
+\sphinxstylestrong{GreaterQF} (Iamarino et al. 2011 \phantomsection\label{\detokenize{parameterisations-and-sub-models:id7}}{\hyperref[\detokenize{references:i11}]{\sphinxcrossref{{[}I11{]}}}} (\autopageref*{\detokenize{references:i11}})). A new version has been
 now included in UMEP. To distinguish it is referred to as
 \sphinxhref{http://urban-climate.net/umep/GQF\_Manual}{**GQF**}
 
@@ -617,19 +624,19 @@ now included in UMEP. To distinguish it is referred to as
 Three sub-models are available to estimate the storage heat flux:
 \begin{itemize}
 \item {} 
-\sphinxstylestrong{OHM} (Objective Hysteresis Model, Grimmond et al. 1991 \phantomsection\label{\detokenize{parameterisations-and-sub-models:id8}}{\hyperref[\detokenize{references:g91ohm}]{\sphinxcrossref{{[}G91OHM{]}}}},
-Grimmond \& Oke 1999a \phantomsection\label{\detokenize{parameterisations-and-sub-models:id9}}{\hyperref[\detokenize{references:go99qs}]{\sphinxcrossref{{[}GO99QS{]}}}}, 2002 \phantomsection\label{\detokenize{parameterisations-and-sub-models:id10}}{\hyperref[\detokenize{references:go2002}]{\sphinxcrossref{{[}GO2002{]}}}}). Storage heat heat flux is
+\sphinxstylestrong{OHM} (Objective Hysteresis Model, Grimmond et al. 1991 \phantomsection\label{\detokenize{parameterisations-and-sub-models:id8}}{\hyperref[\detokenize{references:g91ohm}]{\sphinxcrossref{{[}G91OHM{]}}}} (\autopageref*{\detokenize{references:g91ohm}}),
+Grimmond \& Oke 1999a \phantomsection\label{\detokenize{parameterisations-and-sub-models:id9}}{\hyperref[\detokenize{references:go99qs}]{\sphinxcrossref{{[}GO99QS{]}}}} (\autopageref*{\detokenize{references:go99qs}}), 2002 \phantomsection\label{\detokenize{parameterisations-and-sub-models:id10}}{\hyperref[\detokenize{references:go2002}]{\sphinxcrossref{{[}GO2002{]}}}} (\autopageref*{\detokenize{references:go2002}})). Storage heat heat flux is
 calculated using empirically-fitted relations with net all-wave
 radiation and the rate of change in net all-wave radiation.
 
 \item {} 
 \sphinxstylestrong{AnOHM} (Analytical Objective Hysteresis Model, Sun et al.
-2017 \phantomsection\label{\detokenize{parameterisations-and-sub-models:id11}}{\hyperref[\detokenize{references:anohm17}]{\sphinxcrossref{{[}AnOHM17{]}}}}). OHM approach using analytically-derived coefficients.
+2017 \phantomsection\label{\detokenize{parameterisations-and-sub-models:id11}}{\hyperref[\detokenize{references:anohm17}]{\sphinxcrossref{{[}AnOHM17{]}}}} (\autopageref*{\detokenize{references:anohm17}})). OHM approach using analytically-derived coefficients.
 (\sphinxstylestrong{Not recommended in v2017b})
 
 \item {} 
 \sphinxstylestrong{ESTM} (Element Surface Temperature Method, Offerle et al.
-2005 \phantomsection\label{\detokenize{parameterisations-and-sub-models:id12}}{\hyperref[\detokenize{references:oaf2005}]{\sphinxcrossref{{[}Oaf2005{]}}}}). Heat transfer through urban facets (roof, wall, road,
+2005 \phantomsection\label{\detokenize{parameterisations-and-sub-models:id12}}{\hyperref[\detokenize{references:oaf2005}]{\sphinxcrossref{{[}Oaf2005{]}}}} (\autopageref*{\detokenize{references:oaf2005}})). Heat transfer through urban facets (roof, wall, road,
 interior) is calculated from surface temperature measurements and
 knowledge of material properties. (\sphinxstylestrong{Not recommended in v2017b})
 
@@ -646,7 +653,7 @@ meteorological forcing data.
 \label{\detokenize{parameterisations-and-sub-models:turbulent-heat-fluxes-qh-and-qe}}\begin{enumerate}
 \item {} 
 \sphinxstylestrong{LUMPS} (Local-scale Urban Meteorological Parameterization Scheme,
-Grimmond \& Oke 2002 \phantomsection\label{\detokenize{parameterisations-and-sub-models:id13}}{\hyperref[\detokenize{references:go2002}]{\sphinxcrossref{{[}GO2002{]}}}}) provides a simple means of estimating
+Grimmond \& Oke 2002 \phantomsection\label{\detokenize{parameterisations-and-sub-models:id13}}{\hyperref[\detokenize{references:go2002}]{\sphinxcrossref{{[}GO2002{]}}}} (\autopageref*{\detokenize{references:go2002}})) provides a simple means of estimating
 sensible and latent heat fluxes based on the proportion of vegetation
 in the study area.
 
@@ -661,26 +668,26 @@ options.
 \end{enumerate}
 
 Sensible and latent heat fluxes from both LUMPS and SUEWS are provided
-in the {\hyperref[\detokenize{output-files:output-files}]{\sphinxcrossref{\DUrole{std,std-ref}{Output files}}}}. Whether the turbulent heat
+in the {\hyperref[\detokenize{output-files:output-files}]{\sphinxcrossref{\DUrole{std,std-ref}{Output files}}}} (\autopageref*{\detokenize{output-files:output-files}}). Whether the turbulent heat
 fluxes are calculated using LUMPS or SUEWS can have a major impact on
 the results. For SUEWS, an appropriate surface conductance
-parameterisation is also critical \phantomsection\label{\detokenize{parameterisations-and-sub-models:id14}}{\hyperref[\detokenize{references:j11}]{\sphinxcrossref{{[}J11{]}}}} \phantomsection\label{\detokenize{parameterisations-and-sub-models:id15}}{\hyperref[\detokenize{references:w16}]{\sphinxcrossref{{[}W16{]}}}}. For more details see
+parameterisation is also critical \phantomsection\label{\detokenize{parameterisations-and-sub-models:id14}}{\hyperref[\detokenize{references:j11}]{\sphinxcrossref{{[}J11{]}}}} (\autopageref*{\detokenize{references:j11}}) \phantomsection\label{\detokenize{parameterisations-and-sub-models:id15}}{\hyperref[\detokenize{references:w16}]{\sphinxcrossref{{[}W16{]}}}} (\autopageref*{\detokenize{references:w16}}). For more details see
 {\hyperref[\detokenize{parameterisations-and-sub-models:Differences_between_SUEWS,_LUMPS_and_FRAISE}]{\emph{Differences between SUEWS, LUMPS and
-FRAISE}}}.
+FRAISE}}} (\autopageref*{\detokenize{parameterisations-and-sub-models:Differences_between_SUEWS,_LUMPS_and_FRAISE}}).
 
 
 \section{Water balance}
 \label{\detokenize{parameterisations-and-sub-models:water-balance}}
 The running water balance at each time step is based on the urban water
-balance model of Grimmond et al. (1986) \phantomsection\label{\detokenize{parameterisations-and-sub-models:id16}}{\hyperref[\detokenize{references:g86}]{\sphinxcrossref{{[}G86{]}}}} and urban
-evaporation-interception scheme of Grimmond and Oke (1991) \phantomsection\label{\detokenize{parameterisations-and-sub-models:id17}}{\hyperref[\detokenize{references:g91}]{\sphinxcrossref{{[}G91{]}}}}.
+balance model of Grimmond et al. (1986) \phantomsection\label{\detokenize{parameterisations-and-sub-models:id16}}{\hyperref[\detokenize{references:g86}]{\sphinxcrossref{{[}G86{]}}}} (\autopageref*{\detokenize{references:g86}}) and urban
+evaporation-interception scheme of Grimmond and Oke (1991) \phantomsection\label{\detokenize{parameterisations-and-sub-models:id17}}{\hyperref[\detokenize{references:g91}]{\sphinxcrossref{{[}G91{]}}}} (\autopageref*{\detokenize{references:g91}}).
 \begin{itemize}
 \item {} 
 Precipitation is a required variable in the meteorological forcing
 file.
 
 \item {} 
-Irrigation can be modelled \phantomsection\label{\detokenize{parameterisations-and-sub-models:id18}}{\hyperref[\detokenize{references:j11}]{\sphinxcrossref{{[}J11{]}}}} or observed values can be provided
+Irrigation can be modelled \phantomsection\label{\detokenize{parameterisations-and-sub-models:id18}}{\hyperref[\detokenize{references:j11}]{\sphinxcrossref{{[}J11{]}}}} (\autopageref*{\detokenize{references:j11}}) or observed values can be provided
 if data are available.
 
 \item {} 
@@ -714,26 +721,26 @@ to pipes.
 \section{Snowmelt}
 \label{\detokenize{parameterisations-and-sub-models:snowmelt}}
 The snowmelt model within SUEWS is described in Järvi et al.
-(2014) \phantomsection\label{\detokenize{parameterisations-and-sub-models:id19}}{\hyperref[\detokenize{references:leena2014}]{\sphinxcrossref{{[}Leena2014{]}}}}. Due to changes in the new model version (since v2016a)
+(2014) \phantomsection\label{\detokenize{parameterisations-and-sub-models:id19}}{\hyperref[\detokenize{references:leena2014}]{\sphinxcrossref{{[}Leena2014{]}}}} (\autopageref*{\detokenize{references:leena2014}}). Due to changes in the new model version (since v2016a)
 when compared to the older versions, the snow calculation has slightly
 changed. The main difference is that previously all surface state could
 freeze in 1-h time step but now the amount of freezing surface state is
 calculated similar way as melt water can freeze within the snow pack.
 Also the snowmelt-related coefficients have slightly changed (see
-{\hyperref[\detokenize{parameterisations-and-sub-models:SUEWS_Snow.txt}]{\emph{SUEWS\_Snow.txt}}}).
+{\hyperref[\detokenize{parameterisations-and-sub-models:SUEWS_Snow.txt}]{\emph{SUEWS\_Snow.txt}}} (\autopageref*{\detokenize{parameterisations-and-sub-models:SUEWS_Snow.txt}})).
 
 
 \section{Convective boundary layer}
 \label{\detokenize{parameterisations-and-sub-models:convective-boundary-layer}}
 A convective boundary layer (CBL) slab model (Cleugh and Grimmond
-2001 \phantomsection\label{\detokenize{parameterisations-and-sub-models:id20}}{\hyperref[\detokenize{references:cg2001}]{\sphinxcrossref{{[}CG2001{]}}}}) calculates the CBL height, temperature and humidity during
-daytime (Onomura et al. 2015 \phantomsection\label{\detokenize{parameterisations-and-sub-models:id21}}{\hyperref[\detokenize{references:shiho2015}]{\sphinxcrossref{{[}Shiho2015{]}}}}).
+2001 \phantomsection\label{\detokenize{parameterisations-and-sub-models:id20}}{\hyperref[\detokenize{references:cg2001}]{\sphinxcrossref{{[}CG2001{]}}}} (\autopageref*{\detokenize{references:cg2001}})) calculates the CBL height, temperature and humidity during
+daytime (Onomura et al. 2015 \phantomsection\label{\detokenize{parameterisations-and-sub-models:id21}}{\hyperref[\detokenize{references:shiho2015}]{\sphinxcrossref{{[}Shiho2015{]}}}} (\autopageref*{\detokenize{references:shiho2015}})).
 
 
 \section{Thermal comfort}
 \label{\detokenize{parameterisations-and-sub-models:thermal-comfort}}
 \sphinxstylestrong{SOLWEIG} (Solar and longwave environmental irradiance geometry model,
-Lindberg et al. 2008 \phantomsection\label{\detokenize{parameterisations-and-sub-models:id22}}{\hyperref[\detokenize{references:fl2008}]{\sphinxcrossref{{[}FL2008{]}}}}, Lindberg and Grimmond 2011 \phantomsection\label{\detokenize{parameterisations-and-sub-models:id23}}{\hyperref[\detokenize{references:fl2011}]{\sphinxcrossref{{[}FL2011{]}}}}) is a 2D
+Lindberg et al. 2008 \phantomsection\label{\detokenize{parameterisations-and-sub-models:id22}}{\hyperref[\detokenize{references:fl2008}]{\sphinxcrossref{{[}FL2008{]}}}} (\autopageref*{\detokenize{references:fl2008}}), Lindberg and Grimmond 2011 \phantomsection\label{\detokenize{parameterisations-and-sub-models:id23}}{\hyperref[\detokenize{references:fl2011}]{\sphinxcrossref{{[}FL2011{]}}}} (\autopageref*{\detokenize{references:fl2011}})) is a 2D
 radiation model to estimate mean radiant temperature.
 
 \begin{figure}[htbp]
@@ -968,7 +975,7 @@ To run the model you can use \sphinxstylestrong{Command Prompt} (in the director
 the programme is located type the model name) or just double click the
 executable file.
 
-Please see {\hyperref[\detokenize{prepare-to-run-the-model:Troubleshooting}]{\emph{Troubleshooting}}} if you have problems
+Please see {\hyperref[\detokenize{prepare-to-run-the-model:Troubleshooting}]{\emph{Troubleshooting}}} (\autopageref*{\detokenize{prepare-to-run-the-model:Troubleshooting}}) if you have problems
 running the model.
 
 
@@ -1018,19 +1025,19 @@ is appropriate and representative of the site:
 \begin{itemize}
 \item {} 
 Fractions of different land cover types and (less so) heights of
-buildings \phantomsection\label{\detokenize{prepare-to-run-the-model:id1}}{\hyperref[\detokenize{references:w16}]{\sphinxcrossref{{[}W16{]}}}}
+buildings \phantomsection\label{\detokenize{prepare-to-run-the-model:id1}}{\hyperref[\detokenize{references:w16}]{\sphinxcrossref{{[}W16{]}}}} (\autopageref*{\detokenize{references:w16}})
 
 \item {} 
 Accurate meteorological forcing data, particularly precipitation and
-incoming shortwave radiation \phantomsection\label{\detokenize{prepare-to-run-the-model:id2}}{\hyperref[\detokenize{references:ko17}]{\sphinxcrossref{{[}Ko17{]}}}}
+incoming shortwave radiation \phantomsection\label{\detokenize{prepare-to-run-the-model:id2}}{\hyperref[\detokenize{references:ko17}]{\sphinxcrossref{{[}Ko17{]}}}} (\autopageref*{\detokenize{references:ko17}})
 
 \item {} 
-Initial soil moisture conditions \phantomsection\label{\detokenize{prepare-to-run-the-model:id3}}{\hyperref[\detokenize{references:best2014}]{\sphinxcrossref{{[}Best2014{]}}}}
+Initial soil moisture conditions \phantomsection\label{\detokenize{prepare-to-run-the-model:id3}}{\hyperref[\detokenize{references:best2014}]{\sphinxcrossref{{[}Best2014{]}}}} (\autopageref*{\detokenize{references:best2014}})
 
 \item {} 
 Anthropogenic heat flux parameters, particularly if there are
 considerable energy emissions from transport, buildings, metabolism,
-etc \phantomsection\label{\detokenize{prepare-to-run-the-model:id4}}{\hyperref[\detokenize{references:w16}]{\sphinxcrossref{{[}W16{]}}}}
+etc \phantomsection\label{\detokenize{prepare-to-run-the-model:id4}}{\hyperref[\detokenize{references:w16}]{\sphinxcrossref{{[}W16{]}}}} (\autopageref*{\detokenize{references:w16}})
 
 \item {} 
 External water use (if irrigation or street cleaning occurs)
@@ -1039,7 +1046,7 @@ External water use (if irrigation or street cleaning occurs)
 Snow clearing (if running the snow option)
 
 \item {} 
-Surface conductance parameterisation \phantomsection\label{\detokenize{prepare-to-run-the-model:id5}}{\hyperref[\detokenize{references:j11}]{\sphinxcrossref{{[}J11{]}}}} \phantomsection\label{\detokenize{prepare-to-run-the-model:id6}}{\hyperref[\detokenize{references:w16}]{\sphinxcrossref{{[}W16{]}}}}
+Surface conductance parameterisation \phantomsection\label{\detokenize{prepare-to-run-the-model:id5}}{\hyperref[\detokenize{references:j11}]{\sphinxcrossref{{[}J11{]}}}} (\autopageref*{\detokenize{references:j11}}) \phantomsection\label{\detokenize{prepare-to-run-the-model:id6}}{\hyperref[\detokenize{references:w16}]{\sphinxcrossref{{[}W16{]}}}} (\autopageref*{\detokenize{references:w16}})
 
 \end{itemize}
 
@@ -1051,20 +1058,20 @@ here we refer to them as model ‘grids’.
 \subsection{Preparation of site characteristics and model parameters}
 \label{\detokenize{prepare-to-run-the-model:preparation-of-site-characteristics-and-model-parameters}}
 The area to be modelled is described by a set of characteristics that
-are specified in the {\hyperref[\detokenize{prepare-to-run-the-model:SUEWS_SiteSelect.txt}]{\emph{SUEWS\_SiteSelect.txt}}}
+are specified in the {\hyperref[\detokenize{prepare-to-run-the-model:SUEWS_SiteSelect.txt}]{\emph{SUEWS\_SiteSelect.txt}}} (\autopageref*{\detokenize{prepare-to-run-the-model:SUEWS_SiteSelect.txt}})
 file. Each row corresponds to one model grid for one year (i.e. running
 a single grid over three years would require three rows; running two
 grids over two years would require four rows). Characteristics are often
 selected by a code for a particular set of conditions. For example, a
-specific soil type (links to {\hyperref[\detokenize{prepare-to-run-the-model:SUEWS_Soil.txt}]{\emph{SUEWS\_Soil.txt}}}) or
+specific soil type (links to {\hyperref[\detokenize{prepare-to-run-the-model:SUEWS_Soil.txt}]{\emph{SUEWS\_Soil.txt}}} (\autopageref*{\detokenize{prepare-to-run-the-model:SUEWS_Soil.txt}})) or
 characteristics of deciduous trees in a particular region (links to
-{\hyperref[\detokenize{prepare-to-run-the-model:SUEWS_Veg.txt}]{\emph{SUEWS\_Veg.txt}}}). The intent is to build a library of
+{\hyperref[\detokenize{prepare-to-run-the-model:SUEWS_Veg.txt}]{\emph{SUEWS\_Veg.txt}}} (\autopageref*{\detokenize{prepare-to-run-the-model:SUEWS_Veg.txt}})). The intent is to build a library of
 characteristics for different types of urban areas. The codes are
 specified by the user, must be integer values and must be unique within
 the first column of each input file, otherwise the model will return an
-error. (Note in {\hyperref[\detokenize{prepare-to-run-the-model:SUEWS_SiteSelect.txt}]{\emph{SUEWS\_SiteSelect.txt}}} the
+error. (Note in {\hyperref[\detokenize{prepare-to-run-the-model:SUEWS_SiteSelect.txt}]{\emph{SUEWS\_SiteSelect.txt}}} (\autopageref*{\detokenize{prepare-to-run-the-model:SUEWS_SiteSelect.txt}}) the
 first column is labelled ‘Grid’ and can contain repeat values for
-different years.) See {\hyperref[\detokenize{prepare-to-run-the-model:Input_files}]{\emph{Input files}}} for details. Note
+different years.) See {\hyperref[\detokenize{prepare-to-run-the-model:Input_files}]{\emph{Input files}}} (\autopageref*{\detokenize{prepare-to-run-the-model:Input_files}}) for details. Note
 \sphinxhref{http://urban-climate.net/umep/UMEP}{UMEP} maybe helpful for
 components of this.
 
@@ -1177,7 +1184,7 @@ SUEWS\_Snow.txt{]}
 
 The surface cover fractions (i.e. proportion of the grid taken up by
 each surface) must be specified in
-{\hyperref[\detokenize{prepare-to-run-the-model:SUEWS_SiteSelect.txt}]{\emph{SUEWS\_SiteSelect.txt}}}. The surface cover
+{\hyperref[\detokenize{prepare-to-run-the-model:SUEWS_SiteSelect.txt}]{\emph{SUEWS\_SiteSelect.txt}}} (\autopageref*{\detokenize{prepare-to-run-the-model:SUEWS_SiteSelect.txt}}). The surface cover
 fractions are \sphinxstylestrong{critical}, so make certain that the different surface
 cover fractions are appropriate for your site.
 
@@ -1200,7 +1207,7 @@ SUEWS to calculate Q$_{\text{F}}$.
 
 \item {} 
 If you have no information about the population of the site we
-recommend that you use the LUCY model \phantomsection\label{\detokenize{prepare-to-run-the-model:id7}}{\hyperref[\detokenize{references:lucy}]{\sphinxcrossref{{[}lucy{]}}}}  \phantomsection\label{\detokenize{prepare-to-run-the-model:id8}}{\hyperref[\detokenize{references:lucy2}]{\sphinxcrossref{{[}lucy2{]}}}} to estimate the
+recommend that you use the LUCY model \phantomsection\label{\detokenize{prepare-to-run-the-model:id7}}{\hyperref[\detokenize{references:lucy}]{\sphinxcrossref{{[}lucy{]}}}} (\autopageref*{\detokenize{references:lucy}})  \phantomsection\label{\detokenize{prepare-to-run-the-model:id8}}{\hyperref[\detokenize{references:lucy2}]{\sphinxcrossref{{[}lucy2{]}}}} (\autopageref*{\detokenize{references:lucy2}}) to estimate the
 anthropogenic heat flux which can then be provided as input SUEWS
 along with the meteorological forcing data. The LUCY model can be
 downloaded from \sphinxhref{http://micromet.reading.ac.uk/}{here}.
@@ -1219,7 +1226,7 @@ impact on the model output. However, it is important to consider the
 suitability of all parameters for your site. Using inappropriate
 parameters may result in the model returning an error or, worse,
 generating output that is simply not representative of your site. Please
-read the section on {\hyperref[\detokenize{prepare-to-run-the-model:Input_files}]{\emph{Input files}}}. Recommended or
+read the section on {\hyperref[\detokenize{prepare-to-run-the-model:Input_files}]{\emph{Input files}}} (\autopageref*{\detokenize{prepare-to-run-the-model:Input_files}}). Recommended or
 reasonable ranges of values are suggested for some parameters, along
 with important considerations for how to select appropriate values for
 your site.
@@ -1233,7 +1240,7 @@ of your site, there are three options:
 \item {} 
 Data can be entered directly into the input text files. The example
 (.txt) files provide a template to create your own files which can be
-edited with a {\hyperref[\detokenize{prepare-to-run-the-model:A_text_editor}]{\emph{text editor}}} directly.
+edited with a {\hyperref[\detokenize{prepare-to-run-the-model:A_text_editor}]{\emph{text editor}}} (\autopageref*{\detokenize{prepare-to-run-the-model:A_text_editor}}) directly.
 
 \item {} 
 Data can be entered into the spreadsheet \sphinxstylestrong{SUEWS\_SiteInfo.xlsm} and
@@ -1284,7 +1291,7 @@ correct place in the input file.
 
 \item {} 
 Ensure the units are correct for all input information. See {\hyperref[\detokenize{prepare-to-run-the-model:Input_files}]{\emph{Input
-files}}} for a description of parameters.
+files}}} (\autopageref*{\detokenize{prepare-to-run-the-model:Input_files}}) for a description of parameters.
 
 \end{itemize}
 
@@ -1300,7 +1307,7 @@ model (even the with the example datasets) you must either
 \begin{enumerate}
 \item {} 
 open the RunControl.nml file and edit the input and output file paths
-and the site name (with a {\hyperref[\detokenize{prepare-to-run-the-model:A_text_editor}]{\emph{text editor}}}) so that
+and the site name (with a {\hyperref[\detokenize{prepare-to-run-the-model:A_text_editor}]{\emph{text editor}}} (\autopageref*{\detokenize{prepare-to-run-the-model:A_text_editor}})) so that
 they are correct for your setup, or
 
 \item {} 
@@ -1317,17 +1324,17 @@ and generates the output files. For example if you specify
 \end{DUlineblock}
 
 If the file paths are not correct the program will return an error when
-run (see {\hyperref[\detokenize{prepare-to-run-the-model:Error_messages:_problems.txt}]{\emph{error messages}}}) and write
+run (see {\hyperref[\detokenize{prepare-to-run-the-model:Error_messages:_problems.txt}]{\emph{error messages}}} (\autopageref*{\detokenize{prepare-to-run-the-model:Error_messages:_problems.txt}})) and write
 the error to the problems.txt file.
 
 
 \subsection{Preparation of the Meteorological forcing data}
 \label{\detokenize{prepare-to-run-the-model:preparation-of-the-meteorological-forcing-data}}
-The model time-step is specified in {\hyperref[\detokenize{prepare-to-run-the-model:RunControl.nml}]{\emph{RunControl.nml}}}
+The model time-step is specified in {\hyperref[\detokenize{prepare-to-run-the-model:RunControl.nml}]{\emph{RunControl.nml}}} (\autopageref*{\detokenize{prepare-to-run-the-model:RunControl.nml}})
 (5 min is highly recommended). If meteorological forcing data are not
 available at this resolution, SUEWS has the option to downscale (e.g.
 hourly) data to the time-step required. See details about the
-{\hyperref[\detokenize{prepare-to-run-the-model:SSss_YYYY_data_tt.txt}]{\emph{meteorological forcing data}}} to learn more
+{\hyperref[\detokenize{prepare-to-run-the-model:SSss_YYYY_data_tt.txt}]{\emph{meteorological forcing data}}} (\autopageref*{\detokenize{prepare-to-run-the-model:SSss_YYYY_data_tt.txt}}) to learn more
 about choices of data input. Each grid can have its own meteorological
 forcing file, or a single file can be used for all grids. The forcing
 data should be representative of the local-scale, i.e. collected (or
@@ -1341,7 +1348,7 @@ Information about the surface state and meteorological conditions just
 before the start of the run are provided in the Initial Conditions file.
 At the very start of the run, each grid can have its own Initial
 Conditions file, or a single file can be used for all grids. For details
-see {\hyperref[\detokenize{prepare-to-run-the-model:InitialConditions}]{\emph{InitialConditions}}}.
+see {\hyperref[\detokenize{prepare-to-run-the-model:InitialConditions}]{\emph{InitialConditions}}} (\autopageref*{\detokenize{prepare-to-run-the-model:InitialConditions}}).
 
 
 \section{Run the model for your site}
@@ -1350,7 +1357,7 @@ To run the model you can use \sphinxstylestrong{Command Prompt} (in the director
 the programme is located type the model name) or just double click the
 executable file.
 
-Please see {\hyperref[\detokenize{prepare-to-run-the-model:Troubleshooting}]{\emph{Troubleshooting}}} if you have problems
+Please see {\hyperref[\detokenize{prepare-to-run-the-model:Troubleshooting}]{\emph{Troubleshooting}}} (\autopageref*{\detokenize{prepare-to-run-the-model:Troubleshooting}}) if you have problems
 running the model.
 
 
@@ -2070,7 +2077,7 @@ example) for your site/model domain.
 
 
 \section{RunControl.nml}
-\label{\detokenize{input_files/RunControl/RunControl:runcontrol-nml}}\label{\detokenize{input_files/RunControl/RunControl::doc}}
+\label{\detokenize{input_files/RunControl/RunControl:runcontrol}}\label{\detokenize{input_files/RunControl/RunControl:runcontrol-nml}}\label{\detokenize{input_files/RunControl/RunControl::doc}}
 The file \sphinxstylestrong{RunControl.nml} is a namelist that specifies the options for
 the model run. It must be located in the same directory as the
 executable file.
@@ -2130,147 +2137,147 @@ The parameters and variables can appear in any order.
 The parameters and their setting instructions are provided through the links below:
 \begin{itemize}
 \item {} 
-{\hyperref[\detokenize{input_files/RunControl/Model_run_options:model-run-options}]{\sphinxcrossref{\DUrole{std,std-ref}{Model run options}}}}
+{\hyperref[\detokenize{input_files/RunControl/Model_run_options:model-run-options}]{\sphinxcrossref{\DUrole{std,std-ref}{Model run options}}}} (\autopageref*{\detokenize{input_files/RunControl/Model_run_options:model-run-options}})
 \begin{quote}
 \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}
 \item {} 
-{\hyperref[\detokenize{input_files/RunControl/Model_run_options:cmdoption-arg-cbluse}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{CBLuse}}}}}
+{\hyperref[\detokenize{input_files/RunControl/Model_run_options:cmdoption-arg-cbluse}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{CBLuse}}}}} (\autopageref*{\detokenize{input_files/RunControl/Model_run_options:cmdoption-arg-cbluse}})
 
 \item {} 
-{\hyperref[\detokenize{input_files/RunControl/Model_run_options:cmdoption-arg-snowuse}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{SnowUse}}}}}
+{\hyperref[\detokenize{input_files/RunControl/Model_run_options:cmdoption-arg-snowuse}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{SnowUse}}}}} (\autopageref*{\detokenize{input_files/RunControl/Model_run_options:cmdoption-arg-snowuse}})
 
 \item {} 
-{\hyperref[\detokenize{input_files/RunControl/Model_run_options:cmdoption-arg-solweiguse}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{SOLWEIGUse}}}}}
+{\hyperref[\detokenize{input_files/RunControl/Model_run_options:cmdoption-arg-solweiguse}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{SOLWEIGUse}}}}} (\autopageref*{\detokenize{input_files/RunControl/Model_run_options:cmdoption-arg-solweiguse}})
 
 \item {} 
-{\hyperref[\detokenize{input_files/RunControl/Model_run_options:cmdoption-arg-netradiationmethod}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{NetRadiationMethod}}}}}
+{\hyperref[\detokenize{input_files/RunControl/Model_run_options:cmdoption-arg-netradiationmethod}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{NetRadiationMethod}}}}} (\autopageref*{\detokenize{input_files/RunControl/Model_run_options:cmdoption-arg-netradiationmethod}})
 
 \item {} 
-{\hyperref[\detokenize{input_files/RunControl/Model_run_options:cmdoption-arg-anthropheatmethod}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{AnthropHeatMethod}}}}}
+{\hyperref[\detokenize{input_files/RunControl/Model_run_options:cmdoption-arg-anthropheatmethod}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{AnthropHeatMethod}}}}} (\autopageref*{\detokenize{input_files/RunControl/Model_run_options:cmdoption-arg-anthropheatmethod}})
 
 \item {} 
-{\hyperref[\detokenize{input_files/RunControl/Model_run_options:cmdoption-arg-anthropco2method}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{AnthropCO2Method}}}}}
+{\hyperref[\detokenize{input_files/RunControl/Model_run_options:cmdoption-arg-anthropco2method}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{AnthropCO2Method}}}}} (\autopageref*{\detokenize{input_files/RunControl/Model_run_options:cmdoption-arg-anthropco2method}})
 
 \item {} 
-{\hyperref[\detokenize{input_files/RunControl/Model_run_options:cmdoption-arg-storageheatmethod}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{StorageHeatMethod}}}}}
+{\hyperref[\detokenize{input_files/RunControl/Model_run_options:cmdoption-arg-storageheatmethod}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{StorageHeatMethod}}}}} (\autopageref*{\detokenize{input_files/RunControl/Model_run_options:cmdoption-arg-storageheatmethod}})
 
 \item {} 
-{\hyperref[\detokenize{input_files/RunControl/Model_run_options:cmdoption-arg-ohmincqf}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{OHMIncQF}}}}}
+{\hyperref[\detokenize{input_files/RunControl/Model_run_options:cmdoption-arg-ohmincqf}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{OHMIncQF}}}}} (\autopageref*{\detokenize{input_files/RunControl/Model_run_options:cmdoption-arg-ohmincqf}})
 
 \item {} 
-{\hyperref[\detokenize{input_files/RunControl/Model_run_options:cmdoption-arg-stabilitymethod}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{StabilityMethod}}}}}
+{\hyperref[\detokenize{input_files/RunControl/Model_run_options:cmdoption-arg-stabilitymethod}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{StabilityMethod}}}}} (\autopageref*{\detokenize{input_files/RunControl/Model_run_options:cmdoption-arg-stabilitymethod}})
 
 \item {} 
-{\hyperref[\detokenize{input_files/RunControl/Model_run_options:cmdoption-arg-roughlenheatmethod}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{RoughLenHeatMethod}}}}}
+{\hyperref[\detokenize{input_files/RunControl/Model_run_options:cmdoption-arg-roughlenheatmethod}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{RoughLenHeatMethod}}}}} (\autopageref*{\detokenize{input_files/RunControl/Model_run_options:cmdoption-arg-roughlenheatmethod}})
 
 \item {} 
-{\hyperref[\detokenize{input_files/RunControl/Model_run_options:cmdoption-arg-roughlenmommethod}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{RoughLenMomMethod}}}}}
+{\hyperref[\detokenize{input_files/RunControl/Model_run_options:cmdoption-arg-roughlenmommethod}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{RoughLenMomMethod}}}}} (\autopageref*{\detokenize{input_files/RunControl/Model_run_options:cmdoption-arg-roughlenmommethod}})
 
 \item {} 
-{\hyperref[\detokenize{input_files/RunControl/Model_run_options:cmdoption-arg-smdmethod}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{SMDMethod}}}}}
+{\hyperref[\detokenize{input_files/RunControl/Model_run_options:cmdoption-arg-smdmethod}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{SMDMethod}}}}} (\autopageref*{\detokenize{input_files/RunControl/Model_run_options:cmdoption-arg-smdmethod}})
 
 \item {} 
-{\hyperref[\detokenize{input_files/RunControl/Model_run_options:cmdoption-arg-waterusemethod}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{WaterUseMethod}}}}}
+{\hyperref[\detokenize{input_files/RunControl/Model_run_options:cmdoption-arg-waterusemethod}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{WaterUseMethod}}}}} (\autopageref*{\detokenize{input_files/RunControl/Model_run_options:cmdoption-arg-waterusemethod}})
 
 \end{itemize}
 \end{quote}
 
 \item {} 
-{\hyperref[\detokenize{input_files/RunControl/File_related_options:file-related-options}]{\sphinxcrossref{\DUrole{std,std-ref}{File related options}}}}
+{\hyperref[\detokenize{input_files/RunControl/File_related_options:file-related-options}]{\sphinxcrossref{\DUrole{std,std-ref}{File related options}}}} (\autopageref*{\detokenize{input_files/RunControl/File_related_options:file-related-options}})
 \begin{quote}
 \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}
 \item {} 
-{\hyperref[\detokenize{input_files/RunControl/File_related_options:cmdoption-arg-filecode}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{FileCode}}}}}
+{\hyperref[\detokenize{input_files/RunControl/File_related_options:cmdoption-arg-filecode}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{FileCode}}}}} (\autopageref*{\detokenize{input_files/RunControl/File_related_options:cmdoption-arg-filecode}})
 
 \item {} 
-{\hyperref[\detokenize{input_files/RunControl/File_related_options:cmdoption-arg-fileinputpath}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{FileInputPath}}}}}
+{\hyperref[\detokenize{input_files/RunControl/File_related_options:cmdoption-arg-fileinputpath}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{FileInputPath}}}}} (\autopageref*{\detokenize{input_files/RunControl/File_related_options:cmdoption-arg-fileinputpath}})
 
 \item {} 
-{\hyperref[\detokenize{input_files/RunControl/File_related_options:cmdoption-arg-fileoutputpath}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{FileOutputPath}}}}}
+{\hyperref[\detokenize{input_files/RunControl/File_related_options:cmdoption-arg-fileoutputpath}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{FileOutputPath}}}}} (\autopageref*{\detokenize{input_files/RunControl/File_related_options:cmdoption-arg-fileoutputpath}})
 
 \item {} 
-{\hyperref[\detokenize{input_files/RunControl/File_related_options:cmdoption-arg-multiplemetfiles}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{MultipleMetFiles}}}}}
+{\hyperref[\detokenize{input_files/RunControl/File_related_options:cmdoption-arg-multiplemetfiles}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{MultipleMetFiles}}}}} (\autopageref*{\detokenize{input_files/RunControl/File_related_options:cmdoption-arg-multiplemetfiles}})
 
 \item {} 
-{\hyperref[\detokenize{input_files/RunControl/File_related_options:cmdoption-arg-multipleinitfiles}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{MultipleInitFiles}}}}}
+{\hyperref[\detokenize{input_files/RunControl/File_related_options:cmdoption-arg-multipleinitfiles}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{MultipleInitFiles}}}}} (\autopageref*{\detokenize{input_files/RunControl/File_related_options:cmdoption-arg-multipleinitfiles}})
 
 \item {} 
-{\hyperref[\detokenize{input_files/RunControl/File_related_options:cmdoption-arg-multipleestmfiles}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{MultipleESTMFiles}}}}}
+{\hyperref[\detokenize{input_files/RunControl/File_related_options:cmdoption-arg-multipleestmfiles}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{MultipleESTMFiles}}}}} (\autopageref*{\detokenize{input_files/RunControl/File_related_options:cmdoption-arg-multipleestmfiles}})
 
 \item {} 
-{\hyperref[\detokenize{input_files/RunControl/File_related_options:cmdoption-arg-keeptstepfilesin}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{KeepTstepFilesIn}}}}}
+{\hyperref[\detokenize{input_files/RunControl/File_related_options:cmdoption-arg-keeptstepfilesin}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{KeepTstepFilesIn}}}}} (\autopageref*{\detokenize{input_files/RunControl/File_related_options:cmdoption-arg-keeptstepfilesin}})
 
 \item {} 
-{\hyperref[\detokenize{input_files/RunControl/File_related_options:cmdoption-arg-keeptstepfilesout}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{KeepTstepFilesOut}}}}}
+{\hyperref[\detokenize{input_files/RunControl/File_related_options:cmdoption-arg-keeptstepfilesout}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{KeepTstepFilesOut}}}}} (\autopageref*{\detokenize{input_files/RunControl/File_related_options:cmdoption-arg-keeptstepfilesout}})
 
 \item {} 
-{\hyperref[\detokenize{input_files/RunControl/File_related_options:cmdoption-arg-writeoutoption}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{WriteOutOption}}}}}
+{\hyperref[\detokenize{input_files/RunControl/File_related_options:cmdoption-arg-writeoutoption}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{WriteOutOption}}}}} (\autopageref*{\detokenize{input_files/RunControl/File_related_options:cmdoption-arg-writeoutoption}})
 
 \item {} 
-{\hyperref[\detokenize{input_files/RunControl/File_related_options:cmdoption-arg-suppresswarnings}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{SuppressWarnings}}}}}
+{\hyperref[\detokenize{input_files/RunControl/File_related_options:cmdoption-arg-suppresswarnings}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{SuppressWarnings}}}}} (\autopageref*{\detokenize{input_files/RunControl/File_related_options:cmdoption-arg-suppresswarnings}})
 
 \end{itemize}
 \end{quote}
 
 \item {} 
-{\hyperref[\detokenize{input_files/RunControl/Time_related_options:time-related-options}]{\sphinxcrossref{\DUrole{std,std-ref}{Time related options}}}}
+{\hyperref[\detokenize{input_files/RunControl/Time_related_options:time-related-options}]{\sphinxcrossref{\DUrole{std,std-ref}{Time related options}}}} (\autopageref*{\detokenize{input_files/RunControl/Time_related_options:time-related-options}})
 \begin{quote}
 \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}
 \item {} 
-{\hyperref[\detokenize{input_files/RunControl/Time_related_options:cmdoption-arg-tstep}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{Tstep}}}}}
+{\hyperref[\detokenize{input_files/RunControl/Time_related_options:cmdoption-arg-tstep}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{Tstep}}}}} (\autopageref*{\detokenize{input_files/RunControl/Time_related_options:cmdoption-arg-tstep}})
 
 \item {} 
-{\hyperref[\detokenize{input_files/RunControl/Time_related_options:cmdoption-arg-resolutionfilesin}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{ResolutionFilesIn}}}}}
+{\hyperref[\detokenize{input_files/RunControl/Time_related_options:cmdoption-arg-resolutionfilesin}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{ResolutionFilesIn}}}}} (\autopageref*{\detokenize{input_files/RunControl/Time_related_options:cmdoption-arg-resolutionfilesin}})
 
 \item {} 
-{\hyperref[\detokenize{input_files/RunControl/Time_related_options:cmdoption-arg-resolutionfilesinestm}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{ResolutionFilesInESTM}}}}}
+{\hyperref[\detokenize{input_files/RunControl/Time_related_options:cmdoption-arg-resolutionfilesinestm}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{ResolutionFilesInESTM}}}}} (\autopageref*{\detokenize{input_files/RunControl/Time_related_options:cmdoption-arg-resolutionfilesinestm}})
 
 \item {} 
-{\hyperref[\detokenize{input_files/RunControl/Time_related_options:cmdoption-arg-resolutionfilesout}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{ResolutionFilesOut}}}}}
+{\hyperref[\detokenize{input_files/RunControl/Time_related_options:cmdoption-arg-resolutionfilesout}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{ResolutionFilesOut}}}}} (\autopageref*{\detokenize{input_files/RunControl/Time_related_options:cmdoption-arg-resolutionfilesout}})
 
 \end{itemize}
 \end{quote}
 
 \item {} 
-{\hyperref[\detokenize{input_files/RunControl/Options_related_to_disaggregation_of_input_data:options-related-to-disaggregation-of-input-data}]{\sphinxcrossref{\DUrole{std,std-ref}{Options related to disaggregation of input data}}}}
+{\hyperref[\detokenize{input_files/RunControl/Options_related_to_disaggregation_of_input_data:options-related-to-disaggregation-of-input-data}]{\sphinxcrossref{\DUrole{std,std-ref}{Options related to disaggregation of input data}}}} (\autopageref*{\detokenize{input_files/RunControl/Options_related_to_disaggregation_of_input_data:options-related-to-disaggregation-of-input-data}})
 \begin{quote}
 \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}
 \item {} 
-{\hyperref[\detokenize{input_files/RunControl/Options_related_to_disaggregation_of_input_data:cmdoption-arg-disaggmethod}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{DisaggMethod}}}}}
+{\hyperref[\detokenize{input_files/RunControl/Options_related_to_disaggregation_of_input_data:cmdoption-arg-disaggmethod}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{DisaggMethod}}}}} (\autopageref*{\detokenize{input_files/RunControl/Options_related_to_disaggregation_of_input_data:cmdoption-arg-disaggmethod}})
 
 \item {} 
-{\hyperref[\detokenize{input_files/RunControl/Options_related_to_disaggregation_of_input_data:cmdoption-arg-kdownzen}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{KdownZen}}}}}
+{\hyperref[\detokenize{input_files/RunControl/Options_related_to_disaggregation_of_input_data:cmdoption-arg-kdownzen}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{KdownZen}}}}} (\autopageref*{\detokenize{input_files/RunControl/Options_related_to_disaggregation_of_input_data:cmdoption-arg-kdownzen}})
 
 \item {} 
-{\hyperref[\detokenize{input_files/RunControl/Options_related_to_disaggregation_of_input_data:cmdoption-arg-raindisaggmethod}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{RainDisaggMethod}}}}}
+{\hyperref[\detokenize{input_files/RunControl/Options_related_to_disaggregation_of_input_data:cmdoption-arg-raindisaggmethod}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{RainDisaggMethod}}}}} (\autopageref*{\detokenize{input_files/RunControl/Options_related_to_disaggregation_of_input_data:cmdoption-arg-raindisaggmethod}})
 
 \item {} 
-{\hyperref[\detokenize{input_files/RunControl/Options_related_to_disaggregation_of_input_data:cmdoption-arg-rainamongn}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{RainAmongN}}}}}
+{\hyperref[\detokenize{input_files/RunControl/Options_related_to_disaggregation_of_input_data:cmdoption-arg-rainamongn}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{RainAmongN}}}}} (\autopageref*{\detokenize{input_files/RunControl/Options_related_to_disaggregation_of_input_data:cmdoption-arg-rainamongn}})
 
 \item {} 
-{\hyperref[\detokenize{input_files/RunControl/Options_related_to_disaggregation_of_input_data:cmdoption-arg-multrainamongn}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{MultRainAmongN}}}}}
+{\hyperref[\detokenize{input_files/RunControl/Options_related_to_disaggregation_of_input_data:cmdoption-arg-multrainamongn}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{MultRainAmongN}}}}} (\autopageref*{\detokenize{input_files/RunControl/Options_related_to_disaggregation_of_input_data:cmdoption-arg-multrainamongn}})
 
 \item {} 
-{\hyperref[\detokenize{input_files/RunControl/Options_related_to_disaggregation_of_input_data:cmdoption-arg-multrainamongnupperi}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{MultRainAmongNUpperI}}}}}
+{\hyperref[\detokenize{input_files/RunControl/Options_related_to_disaggregation_of_input_data:cmdoption-arg-multrainamongnupperi}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{MultRainAmongNUpperI}}}}} (\autopageref*{\detokenize{input_files/RunControl/Options_related_to_disaggregation_of_input_data:cmdoption-arg-multrainamongnupperi}})
 
 \item {} 
-{\hyperref[\detokenize{input_files/RunControl/Options_related_to_disaggregation_of_input_data:cmdoption-arg-disaggmethodestm}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{DisaggMethodESTM}}}}}
+{\hyperref[\detokenize{input_files/RunControl/Options_related_to_disaggregation_of_input_data:cmdoption-arg-disaggmethodestm}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{DisaggMethodESTM}}}}} (\autopageref*{\detokenize{input_files/RunControl/Options_related_to_disaggregation_of_input_data:cmdoption-arg-disaggmethodestm}})
 
 \end{itemize}
 \end{quote}
 
 \item {} 
-{\hyperref[\detokenize{input_files/RunControl/netCDF_related_options:netcdf-related-options}]{\sphinxcrossref{\DUrole{std,std-ref}{netCDF related options}}}}
+{\hyperref[\detokenize{input_files/RunControl/netCDF_related_options:netcdf-related-options}]{\sphinxcrossref{\DUrole{std,std-ref}{netCDF related options}}}} (\autopageref*{\detokenize{input_files/RunControl/netCDF_related_options:netcdf-related-options}})
 \begin{quote}
 \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}
 \item {} 
-{\hyperref[\detokenize{input_files/RunControl/netCDF_related_options:cmdoption-arg-ncmode}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{ncMode}}}}}
+{\hyperref[\detokenize{input_files/RunControl/netCDF_related_options:cmdoption-arg-ncmode}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{ncMode}}}}} (\autopageref*{\detokenize{input_files/RunControl/netCDF_related_options:cmdoption-arg-ncmode}})
 
 \item {} 
-{\hyperref[\detokenize{input_files/RunControl/netCDF_related_options:cmdoption-arg-nrow}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{nRow}}}}}
+{\hyperref[\detokenize{input_files/RunControl/netCDF_related_options:cmdoption-arg-nrow}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{nRow}}}}} (\autopageref*{\detokenize{input_files/RunControl/netCDF_related_options:cmdoption-arg-nrow}})
 
 \item {} 
-{\hyperref[\detokenize{input_files/RunControl/netCDF_related_options:cmdoption-arg-ncol}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{nCol}}}}}
+{\hyperref[\detokenize{input_files/RunControl/netCDF_related_options:cmdoption-arg-ncol}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{nCol}}}}} (\autopageref*{\detokenize{input_files/RunControl/netCDF_related_options:cmdoption-arg-ncol}})
 
 \end{itemize}
 \end{quote}
@@ -3697,13 +3704,13 @@ area.
 SUEWS\_AnthropogenicHeatFlux.txt provides the parameters needed to model
 the anthropogenic heat flux using either the method of Järvi et al.
 (2011) based on heating and cooling degree days (AnthropHeatMethod = 2
-in 4.1 {\hyperref[\detokenize{input_files/SUEWS_SiteInfo/SUEWS_AnthropogenicHeat:RunControl.nml}]{\emph{RunControl.nml}}}) or the method of Loridan et
+in 4.1 {\hyperref[\detokenize{input_files/SUEWS_SiteInfo/SUEWS_AnthropogenicHeat:RunControl.nml}]{\emph{RunControl.nml}}} (\autopageref*{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_AnthropogenicHeat:RunControl.nml}})) or the method of Loridan et
 al. (2011) based on air temperature (AnthropHeatMethod = 1 in
-{\hyperref[\detokenize{input_files/SUEWS_SiteInfo/SUEWS_AnthropogenicHeat:RunControl.nml}]{\emph{RunControl.nml}}}). The sub-daily variation in
+{\hyperref[\detokenize{input_files/SUEWS_SiteInfo/SUEWS_AnthropogenicHeat:RunControl.nml}]{\emph{RunControl.nml}}} (\autopageref*{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_AnthropogenicHeat:RunControl.nml}})). The sub-daily variation in
 anthropogenic heat flux is modelled according to the daily cycles
 specified in SUEWS\_Profiles.txt. Alternatively, if available, the
 anthropogenic heat flux can be provided in the met forcing file (and set
-AnthropHeatMethod = 0 in {\hyperref[\detokenize{input_files/SUEWS_SiteInfo/SUEWS_AnthropogenicHeat:RunControl.nml}]{\emph{RunControl.nml}}}), in which
+AnthropHeatMethod = 0 in {\hyperref[\detokenize{input_files/SUEWS_SiteInfo/SUEWS_AnthropogenicHeat:RunControl.nml}]{\emph{RunControl.nml}}} (\autopageref*{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_AnthropogenicHeat:RunControl.nml}})), in which
 case all columns here except Code and BaseTHDD should be set to ’-999’.
 
 
@@ -4769,7 +4776,7 @@ SUEWS\_Conductance.txt contains the parameters needed for the Jarvis
 (1976) surface conductance model used in the modelling of evaporation in
 SUEWS. These values should \sphinxstylestrong{not} be changed independently of each
 other. The suggested values below have been derived using datasets for
-Los Angeles and Vancouver (see Järvi et al. (2011) \phantomsection\label{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Conductance:id1}}{\hyperref[\detokenize{references:j11}]{\sphinxcrossref{{[}J11{]}}}}) and should be
+Los Angeles and Vancouver (see Järvi et al. (2011) \phantomsection\label{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Conductance:id1}}{\hyperref[\detokenize{references:j11}]{\sphinxcrossref{{[}J11{]}}}} (\autopageref*{\detokenize{references:j11}})) and should be
 used with \sphinxstylestrong{gsModel=1}. An alternative formulation (gsModel=2) uses
 slightly different functional forms and different coefficients (with
 different units).
@@ -5065,12 +5072,12 @@ to use
 Järvi
 et al.
 (2011)
-\phantomsection\label{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Conductance:id6}}{\hyperref[\detokenize{references:j11}]{\sphinxcrossref{{[}J11{]}}}}
+\phantomsection\label{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Conductance:id6}}{\hyperref[\detokenize{references:j11}]{\sphinxcrossref{{[}J11{]}}}} (\autopageref*{\detokenize{references:j11}})
 -  2 =
 Ward
 et al.
 (2016)
-\phantomsection\label{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Conductance:id7}}{\hyperref[\detokenize{references:w16}]{\sphinxcrossref{{[}W16{]}}}}
+\phantomsection\label{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Conductance:id7}}{\hyperref[\detokenize{references:w16}]{\sphinxcrossref{{[}W16{]}}}} (\autopageref*{\detokenize{references:w16}})
 \sphinxstylestrong{Reco
 mmended.*
 *
@@ -5104,11 +5111,11 @@ are not available. The model calculates daily water use from the mean
 daily air temperature, number of days since rain and fraction of
 irrigated area using automatic/manual irrigation. The sub-daily pattern
 of water use is modelled according to the daily cycles specified in
-{\hyperref[\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Irrigation:SUEWS_Profiles.txt}]{\emph{SUEWS\_Profiles.txt}}}.
+{\hyperref[\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Irrigation:SUEWS_Profiles.txt}]{\emph{SUEWS\_Profiles.txt}}} (\autopageref*{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Irrigation:SUEWS_Profiles.txt}}).
 
 Alternatively, if available, the external water use can be provided in
 the met forcing file (and set WaterUseMethod = 1 in
-{\hyperref[\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Irrigation:RunControl.nml}]{\emph{RunControl.nml}}}), in which case all columns here
+{\hyperref[\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Irrigation:RunControl.nml}]{\emph{RunControl.nml}}} (\autopageref*{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Irrigation:RunControl.nml}})), in which case all columns here
 except Code should be set to ‘-999’.
 
 
@@ -7736,7 +7743,7 @@ AnOHM
 
 \subsection{SUEWS\_OHMCoefficients.txt}
 \label{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_OHMCoefficients::doc}}\label{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_OHMCoefficients:suews-ohmcoefficients-txt}}
-OHM, the Objective Hysteresis Model (Grimmond et al. 1991) \phantomsection\label{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_OHMCoefficients:id1}}{\hyperref[\detokenize{references:g91ohm}]{\sphinxcrossref{{[}G91OHM{]}}}}
+OHM, the Objective Hysteresis Model (Grimmond et al. 1991) \phantomsection\label{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_OHMCoefficients:id1}}{\hyperref[\detokenize{references:g91ohm}]{\sphinxcrossref{{[}G91OHM{]}}}} (\autopageref*{\detokenize{references:g91ohm}})
 calculates the storage heat flux as a function of net all-wave radiation
 and surface characteristics.
 \begin{itemize}
@@ -7776,10 +7783,10 @@ Note, \sphinxstylestrong{AnOHM} does not use the coefficients specified in
 SUEWS\_OHMCoefficients.txt but instead requires three parameters to be
 specified for each surface type (including snow): heat capacity, thermal
 conductivity and bulk transfer coefficient. These are specified in
-{\hyperref[\detokenize{input_files/SUEWS_SiteInfo/SUEWS_OHMCoefficients:SUEWS_NonVeg.txt}]{\emph{SUEWS\_NonVeg.txt}}},
-{\hyperref[\detokenize{input_files/SUEWS_SiteInfo/SUEWS_OHMCoefficients:SUEWS_Veg.txt}]{\emph{SUEWS\_Veg.txt}}},
-{\hyperref[\detokenize{input_files/SUEWS_SiteInfo/SUEWS_OHMCoefficients:SUEWS_Water.txt}]{\emph{SUEWS\_Water.txt}}} and
-{\hyperref[\detokenize{input_files/SUEWS_SiteInfo/SUEWS_OHMCoefficients:SUEWS_Snow.txt}]{\emph{SUEWS\_Snow.txt}}}. No additional files are required
+{\hyperref[\detokenize{input_files/SUEWS_SiteInfo/SUEWS_OHMCoefficients:SUEWS_NonVeg.txt}]{\emph{SUEWS\_NonVeg.txt}}} (\autopageref*{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_OHMCoefficients:SUEWS_NonVeg.txt}}),
+{\hyperref[\detokenize{input_files/SUEWS_SiteInfo/SUEWS_OHMCoefficients:SUEWS_Veg.txt}]{\emph{SUEWS\_Veg.txt}}} (\autopageref*{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_OHMCoefficients:SUEWS_Veg.txt}}),
+{\hyperref[\detokenize{input_files/SUEWS_SiteInfo/SUEWS_OHMCoefficients:SUEWS_Water.txt}]{\emph{SUEWS\_Water.txt}}} (\autopageref*{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_OHMCoefficients:SUEWS_Water.txt}}) and
+{\hyperref[\detokenize{input_files/SUEWS_SiteInfo/SUEWS_OHMCoefficients:SUEWS_Snow.txt}]{\emph{SUEWS\_Snow.txt}}} (\autopageref*{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_OHMCoefficients:SUEWS_Snow.txt}}). No additional files are required
 for AnOHM.
 
 \sphinxstylestrong{Note AnOHM is under development in v2017a and should not be used!}
@@ -9988,7 +9995,7 @@ from
 Loridan
 et al.
 (2011)
-\phantomsection\label{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_SiteSelect:id1}}{\hyperref[\detokenize{references:l2011}]{\sphinxcrossref{{[}L2011{]}}}}.
+\phantomsection\label{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_SiteSelect:id1}}{\hyperref[\detokenize{references:l2011}]{\sphinxcrossref{{[}L2011{]}}}} (\autopageref*{\detokenize{references:l2011}}).
 &&\\
 \hline
 44
@@ -10024,7 +10031,7 @@ from
 Loridan
 et al.
 (2011)
-\phantomsection\label{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_SiteSelect:id2}}{\hyperref[\detokenize{references:l2011}]{\sphinxcrossref{{[}L2011{]}}}}.
+\phantomsection\label{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_SiteSelect:id2}}{\hyperref[\detokenize{references:l2011}]{\sphinxcrossref{{[}L2011{]}}}} (\autopageref*{\detokenize{references:l2011}}).
 &&\\
 \hline
 45
@@ -10058,7 +10065,7 @@ mm from
 Loridan
 et al.
 (2011)
-\phantomsection\label{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_SiteSelect:id3}}{\hyperref[\detokenize{references:l2011}]{\sphinxcrossref{{[}L2011{]}}}}.
+\phantomsection\label{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_SiteSelect:id3}}{\hyperref[\detokenize{references:l2011}]{\sphinxcrossref{{[}L2011{]}}}} (\autopageref*{\detokenize{references:l2011}}).
 &&\\
 \hline
 46
@@ -12535,7 +12542,7 @@ in Canada)
 \subsubsection{Grid Connections (water flow between grids)}
 \label{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_SiteSelect:grid-connections-water-flow-between-grids}}
 \sphinxstylestrong{N.B. not currently implemented} - columns 64-79 of
-{\hyperref[\detokenize{input_files/SUEWS_SiteInfo/SUEWS_SiteSelect:SUEWS_SiteSelect.txt}]{\emph{SUEWS\_SiteSelect.txt}}} can be set to zero.
+{\hyperref[\detokenize{input_files/SUEWS_SiteInfo/SUEWS_SiteSelect:SUEWS_SiteSelect.txt}]{\emph{SUEWS\_SiteSelect.txt}}} (\autopageref*{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_SiteSelect:SUEWS_SiteSelect.txt}}) can be set to zero.
 
 This section gives an example of water flow between grids, calculated
 based on the relative elevation of the grids and length of the
@@ -12545,7 +12552,7 @@ grids, as the length of connecting surface linking the grids is very
 small. Model grids need not be square or the same size.
 
 The table gives example values for the grid connections part of
-{\hyperref[\detokenize{input_files/SUEWS_SiteInfo/SUEWS_SiteSelect:SUEWS_SiteSelect.txt}]{\emph{SUEWS\_SiteSelect.txt}}} for the grids shown in
+{\hyperref[\detokenize{input_files/SUEWS_SiteInfo/SUEWS_SiteSelect:SUEWS_SiteSelect.txt}]{\emph{SUEWS\_SiteSelect.txt}}} (\autopageref*{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_SiteSelect:SUEWS_SiteSelect.txt}}) for the grids shown in
 the figure. For each row, only water flowing out of the current grid is
 entered (e.g. water flows from 234 to 236 and 237, with a larger
 proportion of water flowing to 237 because of the greater length of
@@ -12570,11 +12577,11 @@ more elevated.
 \subsection{SUEWS\_Snow.txt}
 \label{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Snow:suews-snow-txt}}\label{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Snow::doc}}
 SUEWS\_Snow.txt specifies the characteristics for snow surfaces when
-SnowUse=1 in {\hyperref[\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Snow:RunControl.nml}]{\emph{RunControl.nml}}}. If the snow part of
+SnowUse=1 in {\hyperref[\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Snow:RunControl.nml}]{\emph{RunControl.nml}}} (\autopageref*{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Snow:RunControl.nml}}). If the snow part of
 the model is not run, fill this table with ‘-999’ except for the first
-(Code) column and set SnowUse=0 in {\hyperref[\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Snow:RunControl.nml}]{\emph{RunControl.nml}}}.
+(Code) column and set SnowUse=0 in {\hyperref[\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Snow:RunControl.nml}]{\emph{RunControl.nml}}} (\autopageref*{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Snow:RunControl.nml}}).
 For a detailed description of the variables, see Järvi et al.
-(2014) \phantomsection\label{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Snow:id1}}{\hyperref[\detokenize{references:leena2014}]{\sphinxcrossref{{[}Leena2014{]}}}}. \sphinxstyleemphasis{In the current release SnowUse should be set to 0.}
+(2014) \phantomsection\label{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Snow:id1}}{\hyperref[\detokenize{references:leena2014}]{\sphinxcrossref{{[}Leena2014{]}}}} (\autopageref*{\detokenize{references:leena2014}}). \sphinxstyleemphasis{In the current release SnowUse should be set to 0.}
 
 
 \begin{savenotes}\sphinxattablestart
@@ -13657,14 +13664,14 @@ bare soil/unmamnaged surface cover type. Each of the non-water surface
 types need to link to soil characteristics specified here. If the soil
 characteristics are assumed to be the same for all surface types, use a
 single code value to link the characteristics here with the SoilTypeCode
-columns in {\hyperref[\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Soil:SUEWS_NonVeg.txt}]{\emph{SUEWS\_NonVeg.txt}}} and
-{\hyperref[\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Soil:SUEWS_Veg.txt}]{\emph{SUEWS\_Veg.txt}}}.
+columns in {\hyperref[\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Soil:SUEWS_NonVeg.txt}]{\emph{SUEWS\_NonVeg.txt}}} (\autopageref*{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Soil:SUEWS_NonVeg.txt}}) and
+{\hyperref[\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Soil:SUEWS_Veg.txt}]{\emph{SUEWS\_Veg.txt}}} (\autopageref*{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Soil:SUEWS_Veg.txt}}).
 
 Soil moisture can either be provided using observational data in the met
 forcing file (smd\_choice = 1 or 2 in
-{\hyperref[\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Soil:RunControl.nml}]{\emph{RunControl.nml}}}) and providing some metadata
+{\hyperref[\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Soil:RunControl.nml}]{\emph{RunControl.nml}}} (\autopageref*{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Soil:RunControl.nml}})) and providing some metadata
 information here (OBS\_ columns), or modelled by SUEWS (smd\_choice = 0
-in {\hyperref[\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Soil:RunControl.nml}]{\emph{RunControl.nml}}}). \sphinxstylestrong{- Note, the option to use
+in {\hyperref[\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Soil:RunControl.nml}]{\emph{RunControl.nml}}} (\autopageref*{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Soil:RunControl.nml}})). \sphinxstylestrong{- Note, the option to use
 observational data is not operational in the current release!}
 
 
@@ -14007,7 +14014,7 @@ tested**
 SUEWS\_Veg.txt specifies the characteristics for the vegetated surface
 cover types (EveTr, DecTr, Grass) by linking codes in column 1 of
 SUEWS\_Veg.txt to the codes specified in
-{\hyperref[\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Veg:SUEWS_SiteSelect.txt}]{\emph{SUEWS\_SiteSelect.txt}}} (Code\_EveTr,
+{\hyperref[\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Veg:SUEWS_SiteSelect.txt}]{\emph{SUEWS\_SiteSelect.txt}}} (\autopageref*{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Veg:SUEWS_SiteSelect.txt}}) (Code\_EveTr,
 Code\_DecTr, Code\_Grass). Each row should correspond to a particular
 surface type. For suggestions on how to complete this table, see:
 \sphinxhref{http://urban-climate.net/umep/TypicalValues\#Typical\_Values}{Typical
@@ -16040,14 +16047,14 @@ n
 Järvi
 et al.
 (2011)
-\phantomsection\label{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Veg:id1}}{\hyperref[\detokenize{references:j11}]{\sphinxcrossref{{[}J11{]}}}};
+\phantomsection\label{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Veg:id1}}{\hyperref[\detokenize{references:j11}]{\sphinxcrossref{{[}J11{]}}}} (\autopageref*{\detokenize{references:j11}});
 Append
 ix
 A
 Järvi
 et al.
 (2014)
-\phantomsection\label{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Veg:id2}}{\hyperref[\detokenize{references:leena2014}]{\sphinxcrossref{{[}Leena2014{]}}}}.
+\phantomsection\label{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Veg:id2}}{\hyperref[\detokenize{references:leena2014}]{\sphinxcrossref{{[}Leena2014{]}}}} (\autopageref*{\detokenize{references:leena2014}}).
 +—+—+
 —+
 +===+
@@ -16213,14 +16220,14 @@ n
 Järvi
 et al.
 (2011)
-\phantomsection\label{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Veg:id3}}{\hyperref[\detokenize{references:j11}]{\sphinxcrossref{{[}J11{]}}}};
+\phantomsection\label{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Veg:id3}}{\hyperref[\detokenize{references:j11}]{\sphinxcrossref{{[}J11{]}}}} (\autopageref*{\detokenize{references:j11}});
 Append
 ix
 A
 Järvi
 et al.
 (2014)
-\phantomsection\label{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Veg:id4}}{\hyperref[\detokenize{references:leena2014}]{\sphinxcrossref{{[}Leena2014{]}}}}
+\phantomsection\label{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Veg:id4}}{\hyperref[\detokenize{references:leena2014}]{\sphinxcrossref{{[}Leena2014{]}}}} (\autopageref*{\detokenize{references:leena2014}})
 for
 more
 detail
@@ -16391,14 +16398,14 @@ n
 Järvi
 et al.
 (2011)
-\phantomsection\label{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Veg:id5}}{\hyperref[\detokenize{references:j11}]{\sphinxcrossref{{[}J11{]}}}};
+\phantomsection\label{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Veg:id5}}{\hyperref[\detokenize{references:j11}]{\sphinxcrossref{{[}J11{]}}}} (\autopageref*{\detokenize{references:j11}});
 Append
 ix
 A
 Järvi
 et al.
 (2014)
-\phantomsection\label{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Veg:id6}}{\hyperref[\detokenize{references:leena2014}]{\sphinxcrossref{{[}Leena2014{]}}}}
+\phantomsection\label{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_Veg:id6}}{\hyperref[\detokenize{references:leena2014}]{\sphinxcrossref{{[}Leena2014{]}}}} (\autopageref*{\detokenize{references:leena2014}})
 for
 more
 detail
@@ -19143,7 +19150,7 @@ surfaces within a grid/area. It allows impervious connectivity to be
 taken into account.
 
 Each row corresponds to a surface type (linked by the Code in column 1
-to the {\hyperref[\detokenize{input_files/SUEWS_SiteInfo/SUEWS_WithinGridWaterDist:SiteSelect.txt}]{\emph{SiteSelect.txt}}} columns:
+to the {\hyperref[\detokenize{input_files/SUEWS_SiteInfo/SUEWS_WithinGridWaterDist:SiteSelect.txt}]{\emph{SiteSelect.txt}}} (\autopageref*{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_WithinGridWaterDist:SiteSelect.txt}}) columns:
 WithinGridPavedCode, WithinGridBldgsCode, …, WithinGridWaterCode). Each
 column contains the fraction of water flowing from the surface type to
 each of the other surface types or to runoff or the sub-surface soil
@@ -19456,7 +19463,7 @@ r
 These text files are stored as worksheets in
 \sphinxstylestrong{SUEWS\_SiteInfo.xlsm} and can be either edited using Excel and then
 generated using the macro, or edited directly (see {\hyperref[\detokenize{input_files/SUEWS_SiteInfo/SUEWS_SiteInfo:Data_Entry}]{\emph{Data
-Entry}}}). Please note this file is subject to possible
+Entry}}} (\autopageref*{\detokenize{input_files/SUEWS_SiteInfo/SUEWS_SiteInfo:Data_Entry}})). Please note this file is subject to possible
 changes from version to version due to new features, modifications, etc.
 Please be aware of using the correct copy of this worksheet that are
 always shipped with the SUEWS public release.
@@ -19534,9 +19541,9 @@ fail.
 To start the model, information about the conditions at the start of the
 run is required. This information is provided in initial conditions
 file. One file can be specified for each grid (MultipleInitFiles=1 in
-{\hyperref[\detokenize{input_files/Initial_Conditions:RunControl.nml}]{\emph{RunControl.nml}}}, filename includes grid number) or,
+{\hyperref[\detokenize{input_files/Initial_Conditions:RunControl.nml}]{\emph{RunControl.nml}}} (\autopageref*{\detokenize{input_files/Initial_Conditions:RunControl.nml}}), filename includes grid number) or,
 alternatively, a single file can be specified for all grids
-(MultipleInitFiles=0 in {\hyperref[\detokenize{input_files/Initial_Conditions:RunControl.nml}]{\emph{RunControl.nml}}}, no grid
+(MultipleInitFiles=0 in {\hyperref[\detokenize{input_files/Initial_Conditions:RunControl.nml}]{\emph{RunControl.nml}}} (\autopageref*{\detokenize{input_files/Initial_Conditions:RunControl.nml}}), no grid
 number in the filename). After that, a new
 InitialConditionsSSss\_YYYY.nml file will be written for each grid for
 the following years. It is recommended that you look at these files
@@ -21420,12 +21427,12 @@ containing ‘-9’ in the first column.
 
 \item {} 
 One single meteorological file can be used for all grids
-(\sphinxstylestrong{MultipleMetFiles=0} in {\hyperref[\detokenize{input_files/met_input:RunControl.nml}]{\emph{RunControl.nml}}}, no
+(\sphinxstylestrong{MultipleMetFiles=0} in {\hyperref[\detokenize{input_files/met_input:RunControl.nml}]{\emph{RunControl.nml}}} (\autopageref*{\detokenize{input_files/met_input:RunControl.nml}}), no
 grid number in file name) if appropriate for the study area, or
 
 \item {} 
 separate met files can be used for each grid if data are available
-(\sphinxstylestrong{MultipleMetFiles=1} in {\hyperref[\detokenize{input_files/met_input:RunControl.nml}]{\emph{RunControl.nml}}},
+(\sphinxstylestrong{MultipleMetFiles=1} in {\hyperref[\detokenize{input_files/met_input:RunControl.nml}]{\emph{RunControl.nml}}} (\autopageref*{\detokenize{input_files/met_input:RunControl.nml}}),
 filename includes grid number).
 
 \item {} 
@@ -21442,7 +21449,7 @@ must contain a whole number of days.
 
 \item {} 
 The meteorological input file should match the information given in
-{\hyperref[\detokenize{input_files/met_input:SUEWS_SiteSelect.txt}]{\emph{SUEWS\_SiteSelect.txt}}}.
+{\hyperref[\detokenize{input_files/met_input:SUEWS_SiteSelect.txt}]{\emph{SUEWS\_SiteSelect.txt}}} (\autopageref*{\detokenize{input_files/met_input:SUEWS_SiteSelect.txt}}).
 
 \item {} 
 If a \sphinxstyleemphasis{partial year} is used that specific year must be given in
@@ -21806,11 +21813,11 @@ implemented
 
 \section{CBL input files}
 \label{\detokenize{input_files/CBL_input::doc}}\label{\detokenize{input_files/CBL_input:cbl-input-files}}
-Main references for this part of the model: Onomura et al. (2015) \phantomsection\label{\detokenize{input_files/CBL_input:id1}}{\hyperref[\detokenize{references:shiho2015}]{\sphinxcrossref{{[}Shiho2015{]}}}}
-and Cleugh and Grimmond (2001) \phantomsection\label{\detokenize{input_files/CBL_input:id2}}{\hyperref[\detokenize{references:cg2001}]{\sphinxcrossref{{[}CG2001{]}}}}.
+Main references for this part of the model: Onomura et al. (2015) \phantomsection\label{\detokenize{input_files/CBL_input:id1}}{\hyperref[\detokenize{references:shiho2015}]{\sphinxcrossref{{[}Shiho2015{]}}}} (\autopageref*{\detokenize{references:shiho2015}})
+and Cleugh and Grimmond (2001) \phantomsection\label{\detokenize{input_files/CBL_input:id2}}{\hyperref[\detokenize{references:cg2001}]{\sphinxcrossref{{[}CG2001{]}}}} (\autopageref*{\detokenize{references:cg2001}}).
 
-If CBL slab model is used (CBLuse=1 in
-{\hyperref[\detokenize{input_files/CBL_input:RunControl.nml}]{\emph{RunControl.nml}}}) the following files are needed:
+If CBL slab model is used ({\hyperref[\detokenize{input_files/RunControl/Model_run_options:cmdoption-arg-cbluse}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{CBLuse = 1}}}}} (\autopageref*{\detokenize{input_files/RunControl/Model_run_options:cmdoption-arg-cbluse}}) in
+{\hyperref[\detokenize{input_files/RunControl/RunControl:runcontrol}]{\sphinxcrossref{\DUrole{std,std-ref}{RunControl.nml}}}} (\autopageref*{\detokenize{input_files/RunControl/RunControl:runcontrol}})) the following files are needed:
 
 
 \begin{savenotes}\sphinxattablestart
@@ -21943,9 +21950,105 @@ CBL (g kg$^{\text{-1}}$)
 \begin{itemize}
 \item {} 
 gamt\_Km and gamq\_gkgm written to two significant figures are required
-for the model performance in appropriate ranges \phantomsection\label{\detokenize{input_files/CBL_input:id3}}{\hyperref[\detokenize{references:shiho2015}]{\sphinxcrossref{{[}Shiho2015{]}}}}.
+for the model performance in appropriate ranges \phantomsection\label{\detokenize{input_files/CBL_input:id3}}{\hyperref[\detokenize{references:shiho2015}]{\sphinxcrossref{{[}Shiho2015{]}}}} (\autopageref*{\detokenize{references:shiho2015}}).
 
 \end{itemize}
+
+
+\begin{savenotes}\sphinxattablestart
+\centering
+\begin{tabulary}{\linewidth}[t]{|T|T|T|T|T|T|T|T|}
+\hline
+\sphinxstyletheadfamily 
+id
+&\sphinxstyletheadfamily 
+zi0
+&\sphinxstyletheadfamily 
+gamt\_Km
+&\sphinxstyletheadfamily 
+gamq\_gkgm
+&\sphinxstyletheadfamily 
+Theta+\_K
+&\sphinxstyletheadfamily 
+q+\_gkg
+&\sphinxstyletheadfamily 
+theta\_K
+&\sphinxstyletheadfamily 
+q\_gkg
+\\
+\hline
+234
+&
+188
+&
+0.0032
+&
+0.00082
+&
+290.4
+&
+9.6
+&
+288.7
+&
+8.3
+\\
+\hline
+235
+&
+197
+&
+0.0089
+&
+0.089
+&
+290.2
+&
+8.4
+&
+288.3
+&
+8.7
+\\
+\hline
+︙
+&
+︙
+&
+︙
+&
+︙
+&
+︙
+&
+︙
+&
+︙
+&
+︙
+\\
+\hline
+︙
+&
+︙
+&
+︙
+&
+︙
+&
+︙
+&
+︙
+&
+︙
+&
+︙
+\\
+\hline&&&&&&&\\
+\hline
+\end{tabulary}
+\par
+\sphinxattableend\end{savenotes}
 
 
 \subsection{CBL\_Input.nml}
@@ -21966,7 +22069,7 @@ EntrainmentType
 &
 Determines entrainment scheme.
 See Cleugh and Grimmond
-2000 \phantomsection\label{\detokenize{input_files/CBL_input:id4}}{\hyperref[\detokenize{references:cg2001}]{\sphinxcrossref{{[}CG2001{]}}}} for details.
+2000 \phantomsection\label{\detokenize{input_files/CBL_input:id4}}{\hyperref[\detokenize{references:cg2001}]{\sphinxcrossref{{[}CG2001{]}}}} (\autopageref*{\detokenize{references:cg2001}}) for details.
 \\
 \hline
 Value
@@ -22025,7 +22128,7 @@ Wsb
 &
 Subsidence velocity (m
 s$^{\text{-1}}$) in eq. 1 and 2 of
-Onomura et al. (2015) \phantomsection\label{\detokenize{input_files/CBL_input:id5}}{\hyperref[\detokenize{references:shiho2015}]{\sphinxcrossref{{[}Shiho2015{]}}}}.
+Onomura et al. (2015) \phantomsection\label{\detokenize{input_files/CBL_input:id5}}{\hyperref[\detokenize{references:shiho2015}]{\sphinxcrossref{{[}Shiho2015{]}}}} (\autopageref*{\detokenize{references:shiho2015}}).
 (-0.01 m s$^{\text{-1}}$
 recommended)
 \\
@@ -22148,9 +22251,9 @@ thickness (x), thermal conductivity (k), volumetric heat capacity
 (rhoCp).
 
 If ESTM is used (QSchoice=4), the files
-{\hyperref[\detokenize{input_files/ESTM_input:SUEWS_ESTMCoefficients.txt}]{\emph{SUEWS\_ESTMCoefficients.txt}}},
-{\hyperref[\detokenize{input_files/ESTM_input:ESTMinput.nml}]{\emph{ESTMinput.nml}}} and
-{\hyperref[\detokenize{input_files/ESTM_input:SS_YYYY_ESTM_Ts_data_tt.txt}]{\emph{SS\_YYYY\_ESTM\_Ts\_data\_tt.txt}}} should be
+{\hyperref[\detokenize{input_files/ESTM_input:SUEWS_ESTMCoefficients.txt}]{\emph{SUEWS\_ESTMCoefficients.txt}}} (\autopageref*{\detokenize{input_files/ESTM_input:SUEWS_ESTMCoefficients.txt}}),
+{\hyperref[\detokenize{input_files/ESTM_input:ESTMinput.nml}]{\emph{ESTMinput.nml}}} (\autopageref*{\detokenize{input_files/ESTM_input:ESTMinput.nml}}) and
+{\hyperref[\detokenize{input_files/ESTM_input:SS_YYYY_ESTM_Ts_data_tt.txt}]{\emph{SS\_YYYY\_ESTM\_Ts\_data\_tt.txt}}} (\autopageref*{\detokenize{input_files/ESTM_input:SS_YYYY_ESTM_Ts_data_tt.txt}}) should be
 prepared.
 
 SUEWS\_ESTMCoefficients.txt contains the parameters for the layers of
@@ -22170,9 +22273,9 @@ For each grid, one set of ESTM coefficients must be specified for
 each surface type; for paved and building surfaces it is possible to
 specify up to three and five sets of coefficients per grid (e.g. to
 represent different building materials) using the relevant columns in
-{\hyperref[\detokenize{input_files/ESTM_input:SUEWS_SiteSelect.txt}]{\emph{SUEWS\_SiteSelect.txt}}}. For the model to
+{\hyperref[\detokenize{input_files/ESTM_input:SUEWS_SiteSelect.txt}]{\emph{SUEWS\_SiteSelect.txt}}} (\autopageref*{\detokenize{input_files/ESTM_input:SUEWS_SiteSelect.txt}}). For the model to
 use these columns in site select, the ESTMCode column in
-{\hyperref[\detokenize{input_files/ESTM_input:SUEWS_NonVeg.txt}]{\emph{SUEWS\_NonVeg.txt}}} should be set to zero.
+{\hyperref[\detokenize{input_files/ESTM_input:SUEWS_NonVeg.txt}]{\emph{SUEWS\_NonVeg.txt}}} (\autopageref*{\detokenize{input_files/ESTM_input:SUEWS_NonVeg.txt}}) should be set to zero.
 
 \end{itemize}
 
@@ -23856,7 +23959,7 @@ Vegetation scheme
 &
 Vegetation scheme is
 active (Lindberg and
-Grimmond 2011 \phantomsection\label{\detokenize{input_files/SOLWEIG_input:id1}}{\hyperref[\detokenize{references:fl2011}]{\sphinxcrossref{{[}FL2011{]}}}})
+Grimmond 2011 \phantomsection\label{\detokenize{input_files/SOLWEIG_input:id1}}{\hyperref[\detokenize{references:fl2011}]{\sphinxcrossref{{[}FL2011{]}}}} (\autopageref*{\detokenize{references:fl2011}}))
 &\\
 \hline
 2
@@ -23910,7 +24013,7 @@ through deciduous
 vegetation (leaf on)
 -  Recommended value:
 0.02 (Konarska et
-al. 2014 \phantomsection\label{\detokenize{input_files/SOLWEIG_input:id2}}{\hyperref[\detokenize{references:ko14}]{\sphinxcrossref{{[}Ko14{]}}}})
+al. 2014 \phantomsection\label{\detokenize{input_files/SOLWEIG_input:id2}}{\hyperref[\detokenize{references:ko14}]{\sphinxcrossref{{[}Ko14{]}}}} (\autopageref*{\detokenize{references:ko14}}))
 \\
 \hline
 TransMax
@@ -23923,7 +24026,7 @@ through deciduous
 vegetation (leaf off)
 -  Recommended value:
 0.50 (Konarska et
-al. 2014 \phantomsection\label{\detokenize{input_files/SOLWEIG_input:id3}}{\hyperref[\detokenize{references:ko14}]{\sphinxcrossref{{[}Ko14{]}}}})
+al. 2014 \phantomsection\label{\detokenize{input_files/SOLWEIG_input:id3}}{\hyperref[\detokenize{references:ko14}]{\sphinxcrossref{{[}Ko14{]}}}} (\autopageref*{\detokenize{references:ko14}}))
 \\
 \hline
 SVFPath
@@ -23934,7 +24037,7 @@ SVFPath
 Path to SVFs matrices
 (See Lindberg and
 Grimmond
-(2011) \phantomsection\label{\detokenize{input_files/SOLWEIG_input:id4}}{\hyperref[\detokenize{references:fl2011}]{\sphinxcrossref{{[}FL2011{]}}}} for
+(2011) \phantomsection\label{\detokenize{input_files/SOLWEIG_input:id4}}{\hyperref[\detokenize{references:fl2011}]{\sphinxcrossref{{[}FL2011{]}}}} (\autopageref*{\detokenize{references:fl2011}}) for
 details)
 \\
 \hline
@@ -24004,7 +24107,7 @@ Diffuse and direct
 shortwave radiation
 calculated from
 Reindl et al.
-(1990) \phantomsection\label{\detokenize{input_files/SOLWEIG_input:id5}}{\hyperref[\detokenize{references:re90}]{\sphinxcrossref{{[}Re90{]}}}}
+(1990) \phantomsection\label{\detokenize{input_files/SOLWEIG_input:id5}}{\hyperref[\detokenize{references:re90}]{\sphinxcrossref{{[}Re90{]}}}} (\autopageref*{\detokenize{references:re90}})
 &\\
 \hline
 SOLWEIGpoi\_out
@@ -24187,7 +24290,7 @@ care)
 
 \subsection{Error messages: problems.txt}
 \label{\detokenize{output-files:error-messages-problems-txt}}
-see this {\hyperref[\detokenize{output-files:output-files}]{\sphinxcrossref{\DUrole{std,std-ref}{Output files}}}}
+see this {\hyperref[\detokenize{output-files:output-files}]{\sphinxcrossref{\DUrole{std,std-ref}{Output files}}}} (\autopageref*{\detokenize{output-files:output-files}})
 
 If there are problems running the program serious error messages will be
 written to problems.txt.
@@ -24212,10 +24315,10 @@ common errors to help the user determine what the problem is. If you
 encounter an error that does not provide an error message please capture
 the details so we can hopefully provide better error messages in future.
 
-See {\hyperref[\detokenize{output-files:Troubleshooting}]{\emph{Troubleshooting}}} section for help solving
+See {\hyperref[\detokenize{output-files:Troubleshooting}]{\emph{Troubleshooting}}} (\autopageref*{\detokenize{output-files:Troubleshooting}}) section for help solving
 problems. If the file paths are not correct the program will return an
 error when run (see {\hyperref[\detokenize{output-files:Preparing_to_run_the_model}]{\emph{Preparing to run the
-model}}}).
+model}}} (\autopageref*{\detokenize{output-files:Preparing_to_run_the_model}})).
 
 
 \subsection{Warning messages: warnings.txt}
@@ -24234,7 +24337,7 @@ down your system.
 
 \item {} 
 To prevent warnings.txt from being written, set \sphinxstylestrong{SuppressWarnings}
-to 1 in {\hyperref[\detokenize{output-files:RunControl.nml}]{\emph{RunControl.nml}}}.
+to 1 in {\hyperref[\detokenize{output-files:RunControl.nml}]{\emph{RunControl.nml}}} (\autopageref*{\detokenize{output-files:RunControl.nml}}).
 
 \item {} 
 Warning messages are usually written with a grid number, timestamp
@@ -24258,14 +24361,14 @@ written out to the file SS\_FileChoices.txt.
 \label{\detokenize{output-files:ssss-yyyy-tt-txt}}
 SUEWS produces the main output file (SSss\_YYYY\_tt.txt) with time
 resolution (TT min) set by \sphinxstylestrong{ResolutionFilesOut} in
-{\hyperref[\detokenize{output-files:RunControl}]{\emph{RunControl}}}.
+{\hyperref[\detokenize{output-files:RunControl}]{\emph{RunControl}}} (\autopageref*{\detokenize{output-files:RunControl}}).
 
 Before these main data files are written out, SUEWS provides a summary
 of the column names, units and variables included in the file
 Ss\_YYYY\_TT\_OutputFormat.txt (one file per run).
 
 The variables included in the main output file are determined according
-to \sphinxstylestrong{WriteOutOption} set in {\hyperref[\detokenize{output-files:RunControl.nml}]{\emph{RunControl.nml}}}.
+to \sphinxstylestrong{WriteOutOption} set in {\hyperref[\detokenize{output-files:RunControl.nml}]{\emph{RunControl.nml}}} (\autopageref*{\detokenize{output-files:RunControl.nml}}).
 
 
 \begin{savenotes}\sphinxatlongtablestart\begin{longtable}{|l|l|l|l|}
@@ -25365,7 +25468,7 @@ s$^{\text{-1}}${]}
 
 \subsection{SSss\_YYYY\_nn\_TT.nc}
 \label{\detokenize{output-files:ssss-yyyy-nn-tt-nc}}
-UEWS can also produce the main output file in netCDF format by setting ncMode=1 (set in {\hyperref[\detokenize{output-files:RunControl}]{\emph{RunControl}}}).
+UEWS can also produce the main output file in netCDF format by setting ncMode=1 (set in {\hyperref[\detokenize{output-files:RunControl}]{\emph{RunControl}}} (\autopageref*{\detokenize{output-files:RunControl}})).
 
 As the date and time information is incorporated in the netCDF output as
 separate dimension, the first five variables in the normal text output
@@ -25755,7 +25858,7 @@ m$^{\text{-3}}${]}
 At the end of the model run (or the end of each year in the model run) a
 new InitialConditions file is written out (to the input folder) for each
 grid, see
-{\hyperref[\detokenize{output-files:InitialConditionsSSss_YYYY.nml}]{\emph{InitialConditionsSSss\_YYYY.nml}}}
+{\hyperref[\detokenize{output-files:InitialConditionsSSss_YYYY.nml}]{\emph{InitialConditionsSSss\_YYYY.nml}}} (\autopageref*{\detokenize{output-files:InitialConditionsSSss_YYYY.nml}})
 
 
 \subsection{SSss\_YYYY\_snow\_TT.txt}
@@ -27954,7 +28057,7 @@ deciduous trees and shrubs
 Evergreen trees and shrubs
 
 \item[{ESTM\index{ESTM|textbf}}] \leavevmode\phantomsection\label{\detokenize{notation:term-estm}}
-Element Surface Temperature Method (Offerle et al.,2005 \phantomsection\label{\detokenize{notation:id1}}{\hyperref[\detokenize{references:oaf2005}]{\sphinxcrossref{{[}Oaf2005{]}}}})
+Element Surface Temperature Method (Offerle et al.,2005 \phantomsection\label{\detokenize{notation:id1}}{\hyperref[\detokenize{references:oaf2005}]{\sphinxcrossref{{[}Oaf2005{]}}}} (\autopageref*{\detokenize{references:oaf2005}}))
 
 \item[{Grass\index{Grass|textbf}}] \leavevmode\phantomsection\label{\detokenize{notation:term-grass}}
 Grass surface
@@ -27970,13 +28073,13 @@ Leaf area index
 
 \item[{LUMPS\index{LUMPS|textbf}}] \leavevmode\phantomsection\label{\detokenize{notation:term-lumps}}
 Local-scale Urban Meteorological Parameterization Scheme
-(Loridan   et al. 2011 \phantomsection\label{\detokenize{notation:id2}}{\hyperref[\detokenize{references:l2011}]{\sphinxcrossref{{[}L2011{]}}}})
+(Loridan   et al. 2011 \phantomsection\label{\detokenize{notation:id2}}{\hyperref[\detokenize{references:l2011}]{\sphinxcrossref{{[}L2011{]}}}} (\autopageref*{\detokenize{references:l2011}}))
 
 \item[{NARP\index{NARP|textbf}}] \leavevmode\phantomsection\label{\detokenize{notation:term-narp}}
-Net All-wave  Radiation   Parameterization (Offerle et al. 2003 \phantomsection\label{\detokenize{notation:id3}}{\hyperref[\detokenize{references:o2003}]{\sphinxcrossref{{[}O2003{]}}}}, Loridan et al. 2011 \phantomsection\label{\detokenize{notation:id4}}{\hyperref[\detokenize{references:l2011}]{\sphinxcrossref{{[}L2011{]}}}})
+Net All-wave  Radiation   Parameterization (Offerle et al. 2003 \phantomsection\label{\detokenize{notation:id3}}{\hyperref[\detokenize{references:o2003}]{\sphinxcrossref{{[}O2003{]}}}} (\autopageref*{\detokenize{references:o2003}}), Loridan et al. 2011 \phantomsection\label{\detokenize{notation:id4}}{\hyperref[\detokenize{references:l2011}]{\sphinxcrossref{{[}L2011{]}}}} (\autopageref*{\detokenize{references:l2011}}))
 
 \item[{OHM\index{OHM|textbf}}] \leavevmode\phantomsection\label{\detokenize{notation:term-ohm}}
-Objective Hysteresis Model (Grimmond et al. 1991 \phantomsection\label{\detokenize{notation:id5}}{\hyperref[\detokenize{references:g91ohm}]{\sphinxcrossref{{[}G91OHM{]}}}}, Grimmond \& Oke 1999a \phantomsection\label{\detokenize{notation:id6}}{\hyperref[\detokenize{references:go99qs}]{\sphinxcrossref{{[}GO99QS{]}}}}, 2002 \phantomsection\label{\detokenize{notation:id7}}{\hyperref[\detokenize{references:go2002}]{\sphinxcrossref{{[}GO2002{]}}}})
+Objective Hysteresis Model (Grimmond et al. 1991 \phantomsection\label{\detokenize{notation:id5}}{\hyperref[\detokenize{references:g91ohm}]{\sphinxcrossref{{[}G91OHM{]}}}} (\autopageref*{\detokenize{references:g91ohm}}), Grimmond \& Oke 1999a \phantomsection\label{\detokenize{notation:id6}}{\hyperref[\detokenize{references:go99qs}]{\sphinxcrossref{{[}GO99QS{]}}}} (\autopageref*{\detokenize{references:go99qs}}), 2002 \phantomsection\label{\detokenize{notation:id7}}{\hyperref[\detokenize{references:go2002}]{\sphinxcrossref{{[}GO2002{]}}}} (\autopageref*{\detokenize{references:go2002}}))
 
 \item[{Paved\index{Paved|textbf}}] \leavevmode\phantomsection\label{\detokenize{notation:term-paved}}
 Paved surface
@@ -27995,7 +28098,7 @@ sensible heat  flux
 
 \item[{SOLWEIG\index{SOLWEIG|textbf}}] \leavevmode\phantomsection\label{\detokenize{notation:term-solweig}}
 The solar and longwave environmental irradiance geometry model
-(Lindberg et al. 2008 \phantomsection\label{\detokenize{notation:id8}}{\hyperref[\detokenize{references:fl2008}]{\sphinxcrossref{{[}FL2008{]}}}},   Lindberg and Grimmond 2011 \phantomsection\label{\detokenize{notation:id9}}{\hyperref[\detokenize{references:fl2011}]{\sphinxcrossref{{[}FL2011{]}}}})
+(Lindberg et al. 2008 \phantomsection\label{\detokenize{notation:id8}}{\hyperref[\detokenize{references:fl2008}]{\sphinxcrossref{{[}FL2008{]}}}} (\autopageref*{\detokenize{references:fl2008}}),   Lindberg and Grimmond 2011 \phantomsection\label{\detokenize{notation:id9}}{\hyperref[\detokenize{references:fl2011}]{\sphinxcrossref{{[}FL2011{]}}}} (\autopageref*{\detokenize{references:fl2011}}))
 
 \item[{SVF\index{SVF|textbf}}] \leavevmode\phantomsection\label{\detokenize{notation:term-svf}}
 Sky view factor
@@ -28045,7 +28148,7 @@ join that list also
 
 \section{New in SUEWS Version 2018a}
 \label{\detokenize{version-history:new-latest}}\label{\detokenize{version-history:new-in-suews-version-2018a}}
-see {\hyperref[\detokenize{version-history:version-history}]{\sphinxcrossref{\DUrole{std,std-ref}{Version History}}}}.
+see {\hyperref[\detokenize{version-history:version-history}]{\sphinxcrossref{\DUrole{std,std-ref}{Version History}}}} (\autopageref*{\detokenize{version-history:version-history}}).
 
 
 \section{New in SUEWS Version 2017b (released 2 August 2017)}
@@ -28648,7 +28751,7 @@ unirrigated grass
 FRAISE provides an estimate of mean midday (\(\pm\)3 h around solar noon)
 energy partitioning from information on the surface characteristics and
 estimates of the mean midday incoming radiative energy and anthropogenic
-heat release. Please refer to Loridan and Grimmond (2012) \phantomsection\label{\detokenize{differences-suews-lumps-fraise:id1}}{\hyperref[\detokenize{references:lg2012}]{\sphinxcrossref{{[}LG2012{]}}}} for
+heat release. Please refer to Loridan and Grimmond (2012) \phantomsection\label{\detokenize{differences-suews-lumps-fraise:id1}}{\hyperref[\detokenize{references:lg2012}]{\sphinxcrossref{{[}LG2012{]}}}} (\autopageref*{\detokenize{references:lg2012}}) for
 further details.
 
 
@@ -28729,7 +28832,7 @@ LUMPS)
 
 
 \chapter{References}
-\label{\detokenize{references:references}}\label{\detokenize{references::doc}}
+\label{\detokenize{references:references}}\label{\detokenize{references:refs}}\label{\detokenize{references::doc}}
 \begin{sphinxthebibliography}{Leena2014}
 \bibitem[J11]{\detokenize{J11}}{\phantomsection\label{\detokenize{references:j11}} 
 Järvi L, Grimmond CSB \& Christen A (2011) The Surface Urban Energy

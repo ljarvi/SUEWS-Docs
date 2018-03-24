@@ -1,3 +1,4 @@
+.. _RunControl:
 
 RunControl.nml
 --------------
@@ -11,7 +12,7 @@ A sample file of **RunControl.nml** looks like
 .. literalinclude:: RunControl.nml
 
 
-.. note:: 
+.. note::
      - In *Linux* and *Mac*, please add an empty line after the end slash.
      - The file is not case-sensitive.
      - The parameters and variables can appear in any order.
@@ -65,8 +66,6 @@ The parameters and their setting instructions are provided through the links bel
 * :ref:`Options_related_to_disaggregation_of_input_data`
 
       .. hlist::
-        :columns: 3
-
         + :option:`DisaggMethod`
         + :option:`KdownZen`
         + :option:`RainDisaggMethod`
@@ -96,5 +95,3 @@ The parameters and their setting instructions are provided through the links bel
    File_related_options
    Options_related_to_disaggregation_of_input_data
    netCDF_related_options
-   
-
