@@ -1,3 +1,4 @@
+.. _input_files:
 
 Input files
 ===========
@@ -17,37 +18,8 @@ example) for your site/model domain.
 
    RunControl/RunControl
    SUEWS_SiteInfo/SUEWS_SiteInfo
-   Initial_Conditions
+   Initial_Conditions/Initial_Conditions
    met_input
    CBL_input
    ESTM_input
    SOLWEIG_input
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

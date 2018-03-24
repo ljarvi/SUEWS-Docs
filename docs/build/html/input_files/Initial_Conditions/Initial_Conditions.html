@@ -1,0 +1,398 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>6.3. Initial Conditions file &mdash; SUEWS 2018a documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="SUEWS 2018a documentation" href="../../index.html"/>
+        <link rel="up" title="6. Input files" href="../input_files.html"/>
+        <link rel="next" title="6.3.1. Soil moisture states" href="Soil_moisture_states.html"/>
+        <link rel="prev" title="6.2.12. SUEWS_WithinGridWaterDist.txt" href="../SUEWS_SiteInfo/SUEWS_WithinGridWaterDist.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> SUEWS
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../recent-publications.html">1. Recent publications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction.html">2. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../suews-and-umep.html">3. SUEWS and UMEP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../parameterisations-and-sub-models.html">4. Parameterisations and sub-models within SUEWS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../prepare-to-run-the-model.html">5. Preparing to run the model</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../input_files.html">6. Input files</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../RunControl/RunControl.html">6.1. RunControl.nml</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../SUEWS_SiteInfo/SUEWS_SiteInfo.html">6.2. SUEWS_SiteInfo.xlsm</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">6.3. Initial Conditions file</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Soil_moisture_states.html">6.3.1. Soil moisture states</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Vegetation_parameters.html">6.3.2. Vegetation parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Recent_meteorology.html">6.3.3. Recent meteorology</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Above_Ground_State.html">6.3.4. Above Ground State</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Snow_related_parameters.html">6.3.5. Snow related parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../met_input.html">6.4. Meteorological Input File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../CBL_input.html">6.5. CBL input files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ESTM_input.html">6.6. ESTM-related files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../SOLWEIG_input.html">6.7. SOLWEIG input files</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../output-files.html">7. Output files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../troubleshooting.html">8. Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../acknowledgement.html">9. Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../notation.html">10. Notation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../development.html">11. Development, Suggestions and Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../version-history.html">12. Version History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../differences-suews-lumps-fraise.html">13. Differences between SUEWS, LUMPS and FRAISE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../references.html">14. References</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">SUEWS</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../input_files.html">6. Input files</a> &raquo;</li>
+        
+      <li>6.3. Initial Conditions file</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/input_files/Initial_Conditions/Initial_Conditions.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="initial-conditions-file">
+<span id="initial-conditions"></span><h1>6.3. Initial Conditions file<a class="headerlink" href="#initial-conditions-file" title="Permalink to this headline">¶</a></h1>
+<p>To start the model, information about the conditions at the start of the
+run is required. This information is provided in initial conditions
+file. One file can be specified for each grid
+(<a class="reference internal" href="../RunControl/File_related_options.html#cmdoption-arg-multipleinitfiles"><code class="xref std std-option docutils literal notranslate"><span class="pre">MultipleInitFiles=1</span></code></a> in
+<span class="xref std std-ref">RunControl.nml</span>, filename includes grid number) or,
+alternatively, a single file can be specified for all grids
+(MultipleInitFiles=0 in <span class="xref std std-ref">RunControl.nml</span>, no grid
+number in the filename). After that, a new
+InitialConditionsSSss_YYYY.nml file will be written for each grid for
+the following years. It is recommended that you look at these files
+(written to the input directory) to check the status of various surfaces
+at the end or the run. This may help you get more realistic starting
+values if you are uncertain what they should be. Note this file will be
+created for each year for multiyear runs for each grid. If the run
+finishes before the end of the year the InitialConditions file is still
+written and the file name is appended with ‘_EndofRun’.</p>
+<p>A sample file of <strong>InitialConditionsSSss_YYYY.nml</strong> looks like</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&amp;</span><span class="n">InitialConditions</span>
+<span class="n">LeavesOutInitially</span><span class="o">=</span><span class="mi">0</span>
+<span class="n">SoilstorePavedState</span><span class="o">=</span><span class="mi">150</span>
+<span class="n">SoilstoreBldgsState</span><span class="o">=</span><span class="mi">150</span>
+<span class="n">SoilstoreEveTrstate</span><span class="o">=</span><span class="mi">150</span>
+<span class="n">SoilstoreDecTrState</span><span class="o">=</span><span class="mi">150</span>
+<span class="n">SoilstoreGrassState</span><span class="o">=</span><span class="mi">150</span>
+<span class="n">SoilstoreBSoilState</span><span class="o">=</span><span class="mi">150</span>
+<span class="n">BoInit</span><span class="o">=</span><span class="mi">10</span>
+<span class="o">/</span>
+</pre></div>
+</div>
+<p>The two most important pieces of information in the initial conditions
+file is the soil moisture and state of vegetation at the start of the
+run. This is the minimal information required; other information can be
+provided if known, otherwise SUEWS will make an estimate of initial
+conditions.</p>
+<p>The parameters and their setting instructions are provided through the links below:</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Variables can be in any order</p>
+</div>
+<ul>
+<li><p class="first"><a class="reference internal" href="Soil_moisture_states.html#soil-moisture-states"><span class="std std-ref">Soil moisture states</span></a></p>
+<table class="hlist"><tr><td><ul class="simple">
+<li><a class="reference internal" href="Soil_moisture_states.html#cmdoption-arg-soilstorepavedstate"><code class="xref std std-option docutils literal notranslate"><span class="pre">SoilstorePavedState</span></code></a></li>
+<li><a class="reference internal" href="Soil_moisture_states.html#cmdoption-arg-soilstorebldgsstate"><code class="xref std std-option docutils literal notranslate"><span class="pre">SoilstoreBldgsState</span></code></a></li>
+<li><a class="reference internal" href="Soil_moisture_states.html#cmdoption-arg-soilstoreevetrstate"><code class="xref std std-option docutils literal notranslate"><span class="pre">SoilstoreEveTrState</span></code></a></li>
+</ul>
+</td><td><ul class="simple">
+<li><a class="reference internal" href="Soil_moisture_states.html#cmdoption-arg-soilstoredectrstate"><code class="xref std std-option docutils literal notranslate"><span class="pre">SoilstoreDecTrState</span></code></a></li>
+<li><a class="reference internal" href="Soil_moisture_states.html#cmdoption-arg-soilstoregrassstate"><code class="xref std std-option docutils literal notranslate"><span class="pre">SoilstoreGrassState</span></code></a></li>
+<li><a class="reference internal" href="Soil_moisture_states.html#cmdoption-arg-soilstorebsoilstate"><code class="xref std std-option docutils literal notranslate"><span class="pre">SoilstoreBSoilState</span></code></a></li>
+</ul>
+</td></tr></table>
+</li>
+<li><p class="first"><a class="reference internal" href="Vegetation_parameters.html#vegetation-parameters"><span class="std std-ref">Vegetation parameters</span></a></p>
+<table class="hlist"><tr><td><ul class="simple">
+<li><a class="reference internal" href="Vegetation_parameters.html#cmdoption-arg-leavesoutintially"><code class="xref std std-option docutils literal notranslate"><span class="pre">LeavesOutIntially</span></code></a></li>
+<li><a class="reference internal" href="Vegetation_parameters.html#cmdoption-arg-gdd-1-0"><code class="xref std std-option docutils literal notranslate"><span class="pre">GDD_1_0</span></code></a></li>
+<li><a class="reference internal" href="Vegetation_parameters.html#cmdoption-arg-gdd-2-0"><code class="xref std std-option docutils literal notranslate"><span class="pre">GDD_2_0</span></code></a></li>
+<li><a class="reference internal" href="Vegetation_parameters.html#cmdoption-arg-laiinitialevetr"><code class="xref std std-option docutils literal notranslate"><span class="pre">LAIinitialEveTr</span></code></a></li>
+<li><a class="reference internal" href="Vegetation_parameters.html#cmdoption-arg-laiinitialdectr"><code class="xref std std-option docutils literal notranslate"><span class="pre">LAIinitialDecTr</span></code></a></li>
+<li><a class="reference internal" href="Vegetation_parameters.html#cmdoption-arg-laiinitialgrass"><code class="xref std std-option docutils literal notranslate"><span class="pre">LAIinitialGrass</span></code></a></li>
+</ul>
+</td><td><ul class="simple">
+<li><a class="reference internal" href="Vegetation_parameters.html#cmdoption-arg-albevetr0"><code class="xref std std-option docutils literal notranslate"><span class="pre">albEveTr0</span></code></a></li>
+<li><a class="reference internal" href="Vegetation_parameters.html#cmdoption-arg-albdectr0"><code class="xref std std-option docutils literal notranslate"><span class="pre">albDecTr0</span></code></a></li>
+<li><a class="reference internal" href="Vegetation_parameters.html#cmdoption-arg-albgrass0"><code class="xref std std-option docutils literal notranslate"><span class="pre">albGrass0</span></code></a></li>
+<li><a class="reference internal" href="Vegetation_parameters.html#cmdoption-arg-decidcap0"><code class="xref std std-option docutils literal notranslate"><span class="pre">decidCap0</span></code></a></li>
+<li><a class="reference internal" href="Vegetation_parameters.html#cmdoption-arg-porosity0"><code class="xref std std-option docutils literal notranslate"><span class="pre">porosity0</span></code></a></li>
+</ul>
+</td></tr></table>
+</li>
+<li><p class="first"><a class="reference internal" href="Recent_meteorology.html#recent-meteorology"><span class="std std-ref">Recent meteorology</span></a></p>
+<table class="hlist"><tr><td><ul class="simple">
+<li><a class="reference internal" href="Recent_meteorology.html#cmdoption-arg-dayssincerain"><code class="xref std std-option docutils literal notranslate"><span class="pre">DaysSinceRain</span></code></a></li>
+</ul>
+</td><td><ul class="simple">
+<li><a class="reference internal" href="Recent_meteorology.html#cmdoption-arg-temp-c0"><code class="xref std std-option docutils literal notranslate"><span class="pre">Temp_C0</span></code></a></li>
+</ul>
+</td></tr></table>
+</li>
+<li><p class="first"><a class="reference internal" href="Above_Ground_State.html#above-ground-state"><span class="std std-ref">Above Ground State</span></a></p>
+<table class="hlist"><tr><td><ul class="simple">
+<li><a class="reference internal" href="Above_Ground_State.html#cmdoption-arg-pavedstate"><code class="xref std std-option docutils literal notranslate"><span class="pre">PavedState</span></code></a></li>
+<li><a class="reference internal" href="Above_Ground_State.html#cmdoption-arg-bldgsstate"><code class="xref std std-option docutils literal notranslate"><span class="pre">BldgsState</span></code></a></li>
+<li><a class="reference internal" href="Above_Ground_State.html#cmdoption-arg-evetrstate"><code class="xref std std-option docutils literal notranslate"><span class="pre">EveTrState</span></code></a></li>
+<li><a class="reference internal" href="Above_Ground_State.html#cmdoption-arg-dectrstate"><code class="xref std std-option docutils literal notranslate"><span class="pre">DecTrState</span></code></a></li>
+</ul>
+</td><td><ul class="simple">
+<li><a class="reference internal" href="Above_Ground_State.html#cmdoption-arg-grassstate"><code class="xref std std-option docutils literal notranslate"><span class="pre">GrassState</span></code></a></li>
+<li><a class="reference internal" href="Above_Ground_State.html#cmdoption-arg-bsoilstate"><code class="xref std std-option docutils literal notranslate"><span class="pre">BSoilState</span></code></a></li>
+<li><a class="reference internal" href="Above_Ground_State.html#cmdoption-arg-waterstate"><code class="xref std std-option docutils literal notranslate"><span class="pre">WaterState</span></code></a></li>
+</ul>
+</td></tr></table>
+</li>
+<li><p class="first"><a class="reference internal" href="Snow_related_parameters.html#snow-related-parameters"><span class="std std-ref">Snow related parameters</span></a></p>
+<table class="hlist"><tr><td><ul class="simple">
+<li><a class="reference internal" href="Snow_related_parameters.html#cmdoption-arg-snowintially"><code class="xref std std-option docutils literal notranslate"><span class="pre">SnowIntially</span></code></a></li>
+<li><a class="reference internal" href="Snow_related_parameters.html#cmdoption-arg-snowwaterpavedstate"><code class="xref std std-option docutils literal notranslate"><span class="pre">SnowWaterPavedState</span></code></a></li>
+<li><a class="reference internal" href="Snow_related_parameters.html#cmdoption-arg-snowwaterbldgsstate"><code class="xref std std-option docutils literal notranslate"><span class="pre">SnowWaterBldgsState</span></code></a></li>
+<li><a class="reference internal" href="Snow_related_parameters.html#cmdoption-arg-snowwaterevetrstate"><code class="xref std std-option docutils literal notranslate"><span class="pre">SnowWaterEveTrState</span></code></a></li>
+<li><a class="reference internal" href="Snow_related_parameters.html#cmdoption-arg-snowwaterdectrstate"><code class="xref std std-option docutils literal notranslate"><span class="pre">SnowWaterDecTrState</span></code></a></li>
+<li><a class="reference internal" href="Snow_related_parameters.html#cmdoption-arg-snowwatergrassstate"><code class="xref std std-option docutils literal notranslate"><span class="pre">SnowWaterGrassState</span></code></a></li>
+<li><a class="reference internal" href="Snow_related_parameters.html#cmdoption-arg-snowwaterbsoilstate"><code class="xref std std-option docutils literal notranslate"><span class="pre">SnowWaterBSoilState</span></code></a></li>
+<li><a class="reference internal" href="Snow_related_parameters.html#cmdoption-arg-snowwaterwaterstate"><code class="xref std std-option docutils literal notranslate"><span class="pre">SnowWaterWaterState</span></code></a></li>
+<li><a class="reference internal" href="Snow_related_parameters.html#cmdoption-arg-snowpackpaved"><code class="xref std std-option docutils literal notranslate"><span class="pre">SnowPackPaved</span></code></a></li>
+<li><a class="reference internal" href="Snow_related_parameters.html#cmdoption-arg-snowpackbldgs"><code class="xref std std-option docutils literal notranslate"><span class="pre">SnowPackBldgs</span></code></a></li>
+<li><a class="reference internal" href="Snow_related_parameters.html#cmdoption-arg-snowpackevetr"><code class="xref std std-option docutils literal notranslate"><span class="pre">SnowPackEveTr</span></code></a></li>
+<li><a class="reference internal" href="Snow_related_parameters.html#cmdoption-arg-snowpackdectr"><code class="xref std std-option docutils literal notranslate"><span class="pre">SnowPackDecTr</span></code></a></li>
+<li><a class="reference internal" href="Snow_related_parameters.html#cmdoption-arg-snowpackgrass"><code class="xref std std-option docutils literal notranslate"><span class="pre">SnowPackGrass</span></code></a></li>
+<li><a class="reference internal" href="Snow_related_parameters.html#cmdoption-arg-snowpackbsoil"><code class="xref std std-option docutils literal notranslate"><span class="pre">SnowPackBSoil</span></code></a></li>
+<li><a class="reference internal" href="Snow_related_parameters.html#cmdoption-arg-snowpackwater"><code class="xref std std-option docutils literal notranslate"><span class="pre">SnowPackWater</span></code></a></li>
+</ul>
+</td><td><ul class="simple">
+<li><a class="reference internal" href="Snow_related_parameters.html#cmdoption-arg-snowfracpaved"><code class="xref std std-option docutils literal notranslate"><span class="pre">SnowFracPaved</span></code></a></li>
+<li><a class="reference internal" href="Snow_related_parameters.html#cmdoption-arg-snowfracbldgs"><code class="xref std std-option docutils literal notranslate"><span class="pre">SnowFracBldgs</span></code></a></li>
+<li><a class="reference internal" href="Snow_related_parameters.html#cmdoption-arg-snowfracevetr"><code class="xref std std-option docutils literal notranslate"><span class="pre">SnowFracEveTr</span></code></a></li>
+<li><a class="reference internal" href="Snow_related_parameters.html#cmdoption-arg-snowfracdectr"><code class="xref std std-option docutils literal notranslate"><span class="pre">SnowFracDecTr</span></code></a></li>
+<li><a class="reference internal" href="Snow_related_parameters.html#cmdoption-arg-snowfracgras"><code class="xref std std-option docutils literal notranslate"><span class="pre">SnowFracGras</span></code></a></li>
+<li><a class="reference internal" href="Snow_related_parameters.html#cmdoption-arg-snowfracbsoil"><code class="xref std std-option docutils literal notranslate"><span class="pre">SnowFracBSoil</span></code></a></li>
+<li><a class="reference internal" href="Snow_related_parameters.html#cmdoption-arg-snowfracwater"><code class="xref std std-option docutils literal notranslate"><span class="pre">SnowFracWater</span></code></a></li>
+<li><a class="reference internal" href="Snow_related_parameters.html#cmdoption-arg-snowdenspaved"><code class="xref std std-option docutils literal notranslate"><span class="pre">SnowDensPaved</span></code></a></li>
+<li><a class="reference internal" href="Snow_related_parameters.html#cmdoption-arg-snowdensbldgs"><code class="xref std std-option docutils literal notranslate"><span class="pre">SnowDensBldgs</span></code></a></li>
+<li><a class="reference internal" href="Snow_related_parameters.html#cmdoption-arg-snowdensevetr"><code class="xref std std-option docutils literal notranslate"><span class="pre">SnowDensEveTr</span></code></a></li>
+<li><a class="reference internal" href="Snow_related_parameters.html#cmdoption-arg-snowdensdectr"><code class="xref std std-option docutils literal notranslate"><span class="pre">SnowDensDecTr</span></code></a></li>
+<li><a class="reference internal" href="Snow_related_parameters.html#cmdoption-arg-snowdensgrass"><code class="xref std std-option docutils literal notranslate"><span class="pre">SnowDensGrass</span></code></a></li>
+<li><a class="reference internal" href="Snow_related_parameters.html#cmdoption-arg-snowdensbsoil"><code class="xref std std-option docutils literal notranslate"><span class="pre">SnowDensBSoil</span></code></a></li>
+<li><a class="reference internal" href="Snow_related_parameters.html#cmdoption-arg-snowdenswater"><code class="xref std std-option docutils literal notranslate"><span class="pre">SnowDensWater</span></code></a></li>
+</ul>
+</td></tr></table>
+</li>
+</ul>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Soil_moisture_states.html" class="btn btn-neutral float-right" title="6.3.1. Soil moisture states" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../SUEWS_SiteInfo/SUEWS_WithinGridWaterDist.html" class="btn btn-neutral" title="6.2.12. SUEWS_WithinGridWaterDist.txt" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, micromet@University of Reading, led by Prof Sue Grimmond.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'2018a',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

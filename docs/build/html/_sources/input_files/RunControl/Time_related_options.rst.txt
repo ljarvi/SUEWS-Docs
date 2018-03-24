@@ -3,7 +3,7 @@
 Time related options
 ~~~~~~~~~~~~~~~~~~~~
 
-.. option_nml:: Tstep
+.. option:: Tstep
 
 	:Requirement:
 		Required
@@ -14,7 +14,7 @@ Time related options
 		to fill
 
 
-.. option_nml:: ResolutionFilesIn
+.. option:: ResolutionFilesIn
 
 	:Requirement:
 		Required
@@ -25,7 +25,7 @@ Time related options
 		to fill
 
 
-.. option_nml:: ResolutionFilesInESTM
+.. option:: ResolutionFilesInESTM
 
 	:Requirement:
 		Optional
@@ -36,7 +36,7 @@ Time related options
 		to fill
 
 
-.. option_nml:: ResolutionFilesOut
+.. option:: ResolutionFilesOut
 
 	:Requirement:
 		Required
