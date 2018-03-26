@@ -17,10 +17,10 @@ written to problems.txt.
 -  Serious problems will usually cause the program to stop after writing
    the error message. If this is the case, the last line of problems.txt
    will contain a non-zero number (the error code).
--  If the program runs successfully, problems.txt file ends with
+-  If the program runs successfully, problems.txt file ends with::
 
-| ``Run completed.``
-| ``0``
+    Run completed.
+    0
 
 SUEWS has a large number of error messages included to try to capture
 common errors to help the user determine what the problem is. If you
@@ -71,7 +71,7 @@ of the column names, units and variables included in the file
 Ss_YYYY_TT_OutputFormat.txt (one file per run).
 
 The variables included in the main output file are determined according
-to **WriteOutOption** set in `RunControl.nml <#RunControl.nml>`__.
+to :option:`WriteOutOption` set in :ref:`RunControl.nml`.
 
 +--------+------------+----------------+-------------------+
 | Column | Name       | WriteOutOption | Description       |

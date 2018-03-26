@@ -1,0 +1,151 @@
+ESTM-related files
+-----------------------------
+
+
+
+
+
+SUEWS_ESTMCoefficients.txt
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**Note ESTM is under development in v2017a and should not be used!**
+
+The Element Surface Temperature Method (ESTM) (Offerle et al., 2005)
+calculates the net storage heat flux from surface temperatures. In the
+method the three-dimensional urban volume is reduced to four 1-d
+elements (i.e. building roofs, walls, and internal mass and ground
+(road, vegetation, etc)). The storage heat flux is calculated from the
+heat conduction through the different elements. For the inside surfaces
+of the roof and walls, and both surfaces for the internal mass
+(ceilings/floors, internal walls), the surface temperature of the
+element is determined by setting the conductive heat transfer out of (in
+to) the surface equal to the radiative and convective heat losses
+(gains). Each element (roof, wall, internal element and ground) can have
+maximum five layers and each layer has three parameters tied to it:
+thickness (x), thermal conductivity (k), volumetric heat capacity
+(rhoCp).
+
+If ESTM is used (QSchoice=4), the files
+`SUEWS_ESTMCoefficients.txt <#SUEWS_ESTMCoefficients.txt>`__,
+`ESTMinput.nml <#ESTMinput.nml>`__ and
+`SS_YYYY_ESTM_Ts_data_tt.txt <#SS_YYYY_ESTM_Ts_data_tt.txt>`__ should be
+prepared.
+
+SUEWS_ESTMCoefficients.txt contains the parameters for the layers of
+each of the elements (roofs, wall, ground, internal mass).
+
+-  If less than five layers are used, the parameters for unused layers
+   should be set to -999.
+-  The ESTM coefficients with the prefix *Surf\_* must be specified for
+   each surface type (plus snow) but the *Wall\_* and *Internal\_*
+   variables apply to the building surfaces only.
+-  For each grid, one set of ESTM coefficients must be specified for
+   each surface type; for paved and building surfaces it is possible to
+   specify up to three and five sets of coefficients per grid (e.g. to
+   represent different building materials) using the relevant columns in
+   `SUEWS_SiteSelect.txt <#SUEWS_SiteSelect.txt>`__. For the model to
+   use these columns in site select, the ESTMCode column in
+   `SUEWS_NonVeg.txt <#SUEWS_NonVeg.txt>`__ should be set to zero.
+
+
+
+**Note ESTM is under development in v2017a and should not be used!**
+
+The following input files are required if ESTM is used to calculate the
+storage heat flux.
+
+
+ESTMinput.nml
+~~~~~~~~~~~~~
+
+ESTMinput.nml specifies the model settings and default values.
+
+A sample file of **ESTMinput.nml** looks like
+
+.. literalinclude:: ESTMinput.nml
+
+.. note::  The file contents can be in any order.
+
+The parameters and their setting instructions
+are provided through :ref:`the links below <ESTMinput>`:
+
+.. hlist::
+    + :option:`TsurfChoice`
+    + :option:`evolveTibld`
+    + :option:`IbldCHmod`
+    + :option:`LBC_soil`
+    + :option:`Theat_fix`
+    + :option:`Theat_off`
+    + :option:`Theat_on`
+
+
+
+
+SSss_YYYY_ESTM_Ts_data_tt.txt
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+SSss_YYYY_ESTM_Ts_data_tt.txt contains a time-series of input surface
+temperature for roof, wall, ground and internal elements.
+
++-----------------------+-----------------------+-----------------------+
+| No.                   | Column name           | Description           |
++=======================+=======================+=======================+
+| 1                     | iy                    | Year [YYYY]           |
++-----------------------+-----------------------+-----------------------+
+| 2                     | id                    | Day of year [DOY]     |
++-----------------------+-----------------------+-----------------------+
+| 3                     | it                    | Hour [H]              |
++-----------------------+-----------------------+-----------------------+
+| 4                     | imin                  | Minute [M]            |
++-----------------------+-----------------------+-----------------------+
+| 5                     | Tiair                 | Indoor air            |
+|                       |                       | temperature [˚C]      |
++-----------------------+-----------------------+-----------------------+
+| 6                     | Tsurf                 | Bulk surface          |
+|                       |                       | temperature [˚C]      |
+|                       |                       | (used when TsurfCoice |
+|                       |                       | = 0)                  |
++-----------------------+-----------------------+-----------------------+
+| 7                     | Troof                 | Roof surface          |
+|                       |                       | temperature [˚C]      |
+|                       |                       | (used when            |
+|                       |                       | TsurfChoice = 1 or 2) |
++-----------------------+-----------------------+-----------------------+
+| 8                     | Troad                 | Ground surface        |
+|                       |                       | temperature [˚C]      |
+|                       |                       | (used when            |
+|                       |                       | TsurfChoice = 1 or 2) |
++-----------------------+-----------------------+-----------------------+
+| 9                     | Twall                 | Wall surface          |
+|                       |                       | temperature [˚C]      |
+|                       |                       | (used when            |
+|                       |                       | TsurfChoice = 1)      |
++-----------------------+-----------------------+-----------------------+
+| 10                    | Twall_n               | North-facing wall     |
+|                       |                       | surface temperature   |
+|                       |                       | [˚C] (used when       |
+|                       |                       | TsurfChoice = 2)      |
++-----------------------+-----------------------+-----------------------+
+| 11                    | Twall_e               | East-facing wall      |
+|                       |                       | surface temperature   |
+|                       |                       | [˚C] (used when       |
+|                       |                       | TsurfChoice = 2)      |
++-----------------------+-----------------------+-----------------------+
+| 12                    | Twall_s               | South-facing wall     |
+|                       |                       | surface temperature   |
+|                       |                       | [˚C] (used when       |
+|                       |                       | TsurfChoice = 2)      |
++-----------------------+-----------------------+-----------------------+
+| 13                    | Twall_w               | West-facing wall      |
+|                       |                       | surface temperature   |
+|                       |                       | [˚C] (used when       |
+|                       |                       | TsurfChoice = 2)      |
++-----------------------+-----------------------+-----------------------+
+
+
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+
+   ESTMinput

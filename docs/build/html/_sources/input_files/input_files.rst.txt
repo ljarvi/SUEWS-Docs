@@ -21,5 +21,5 @@ example) for your site/model domain.
    Initial_Conditions/Initial_Conditions
    met_input
    CBL_input
-   ESTM_input
+   ESTM_related_files/ESTM_related_files
    SOLWEIG_input

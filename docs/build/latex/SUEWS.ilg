@@ -1,7 +1,7 @@
 This is makeindex, version 2.15 [TeX Live 2017] (kpathsea + Thai support).
 Scanning style file ./python.ist.......done (7 attributes redefined, 0 ignored).
-Scanning input file SUEWS.idx....done (104 entries accepted, 0 rejected).
-Sorting entries....done (706 comparisons).
-Generating output file SUEWS.ind....done (208 lines written, 0 warnings).
+Scanning input file SUEWS.idx....done (214 entries accepted, 0 rejected).
+Sorting entries.....done (1753 comparisons).
+Generating output file SUEWS.ind....done (373 lines written, 0 warnings).
 Output written in SUEWS.ind.
 Transcript written in SUEWS.ilg.
