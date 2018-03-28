@@ -139,7 +139,7 @@ htmlhelp_basename = 'SUEWSdoc'
 
 # -- Options for LaTeX output ------------------------------------------------
 # this can be one of ['pdflatex', 'xelatex', 'lualatex', 'platex']
-latex_engine = 'xelatex'
+latex_engine = 'pdflatex'
 latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').
     #
