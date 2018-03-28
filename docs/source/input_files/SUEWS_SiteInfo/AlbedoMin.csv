@@ -1,0 +1,5 @@
+"Referencing Table","Requirement","Comment"
+"`SUEWS_NonVeg.txt`","`MU`","Effective surface albedo (middle of the day value) for wintertime (not including snow). View factors should be taken into account. Not currently used for non-vegetated surfaces – set the same as AlbedoMax."
+"`SUEWS_Veg.txt`","`MU`","Effective surface albedo (middle of the day value) for wintertime (not including snow), leaf-off. View factors should be taken into account. Example values [-] 0.1 EveTr Oke (1987) [35]  0.18 DecTr Oke (1987) [35]  0.21 Grass Oke (1987) [35] "
+"`SUEWS_Water.txt`","`MU`","View factors should be taken into account. Not currently used for water surface - set same as AlbedoMax."
+"`SUEWS_Snow.txt`","`MU`","Example values [-] 0.18 Järvi et al. (2014) [15] "

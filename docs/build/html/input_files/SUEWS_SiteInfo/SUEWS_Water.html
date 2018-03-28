@@ -110,12 +110,13 @@
 <li class="toctree-l3"><a class="reference internal" href="SUEWS_Veg.html">6.2.10. SUEWS_Veg.txt</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">6.2.11. SUEWS_Water.txt</a></li>
 <li class="toctree-l3"><a class="reference internal" href="SUEWS_WithinGridWaterDist.html">6.2.12. SUEWS_WithinGridWaterDist.txt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Input_Options.html">6.2.13. Input_Options</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Initial_Conditions/Initial_Conditions.html">6.3. Initial Conditions file</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../met_input.html">6.4. Meteorological Input File</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../CBL_input.html">6.5. CBL input files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ESTM_input.html">6.6. ESTM-related files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ESTM_related_files/ESTM_related_files.html">6.6. ESTM-related files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../SOLWEIG_input.html">6.7. SOLWEIG input files</a></li>
 </ul>
 </li>
@@ -195,984 +196,134 @@
            <div itemprop="articleBody">
             
   <div class="section" id="suews-water-txt">
-<h1>6.2.11. SUEWS_Water.txt<a class="headerlink" href="#suews-water-txt" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1>6.2.11. SUEWS_Water.txt<a class="headerlink" href="#suews-water-txt" title="Permalink to this headline">¶</a></h1>
 <p>SUEWS_Water.txt specifies the characteristics for the water surface
 cover type by linking codes in column 1 of SUEWS_Water.txt to the codes
 specified in SUEWS_SiteSelect.txt (Code_Water).</p>
-<table border="1" class="docutils">
+<table border="1" class="colwidths-given docutils">
 <colgroup>
-<col width="3%" />
-<col width="3%" />
-<col width="8%" />
 <col width="5%" />
-<col width="72%" />
-<col width="7%" />
-<col width="2%" />
+<col width="5%" />
+<col width="5%" />
+<col width="85%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">No.</th>
+<th class="head">Column Name</th>
 <th class="head">Use</th>
-<th class="head">Column
-name</th>
-<th class="head">Example</th>
-<th class="head">Descripti
-on</th>
-<th class="head">&#160;</th>
-<th class="head">&#160;</th>
+<th class="head">Description</th>
 </tr>
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td>1</td>
-<td>L</td>
-<td>Code</td>
-<td>331</td>
-<td>Code
-linking
-to
-[[#SUEWS_
-SiteSelec
-t.txt</td>
-<td>SUEWS_Sit
-eSelect.t
-xt]]
-for water
-surfaces
-(Code_Wat
-er).
-Value of
-integer
-is
-arbitrary
-but must
-match
-code
-specified
-in
-SUEWS_Sit
-eSelect.t
-xt.</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Code</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code linking to SUEWS_SiteSelect.txt for water surfaces (Code_Water). Value of integer is arbitrary but must match code specified in SUEWS_SiteSelect.txt.</td>
 </tr>
 <tr class="row-odd"><td>2</td>
-<td>MU</td>
-<td>AlbedoMin</td>
-<td>0-1</td>
-<td>Minimum
-albedo of
-this
-surface
-[-]
--  View
-factor
-s
-should
-be
-taken
-into
-accoun
-t.
--  Not
-curren
-tly
-used
-for
-water
-surfac
-e
-- set
-same
-as
-Albedo
-Max.</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-albedomin"><code class="xref any std std-option docutils literal notranslate"><span class="pre">AlbedoMin</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>View factors should be taken into account. Not currently used for water surface - set same as AlbedoMax.</td>
 </tr>
 <tr class="row-even"><td>3</td>
-<td>MU</td>
-<td>AlbedoMax</td>
-<td>0-1</td>
-<td>Albedo of
-this
-surface
-[-]
--  Effect
-ive
-albedo
-of the
-water
-surfac
-e.
--  View
-factor
-s
-should
-be
-taken
-into
-accoun
-t.
-+—+—+
-—+
-+===+
-O
-k
-e
-(
-1
-9
-8
-7
-)
-[
-3
-7
-8
-]
-_
-+—+—+
-—+</td>
-<td>E
-x
-a
-m
-p
-l
-e
-v
-a
-l
-u
-e
-s
-[
--
-]
-0
-.
-1</td>
-<td>W
-a
-t
-e
-r</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-albedomax"><code class="xref any std std-option docutils literal notranslate"><span class="pre">AlbedoMax</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Effective albedo of the water surface. View factors should be taken into account. Example values [-] 0.1 Water Oke (1987) [35]</td>
 </tr>
 <tr class="row-odd"><td>4</td>
-<td>MU</td>
-<td>Emissivit
-y</td>
-<td>0-1</td>
-<td>Emissivit
-y
-of this
-surface
-[-]
--  Effect
-ive
-surfac
-e
-emissi
-vity.
--  View
-factor
-s
-should
-be
-taken
-into
-accoun
-t
-+—+—+
-—+
-+===+
-O
-k
-e
-(
-1
-9
-8
-7
-)
-[
-3
-8
-0
-]
-_
-+—+—+
-—+</td>
-<td>E
-x
-a
-m
-p
-l
-e
-v
-a
-l
-u
-e
-s
-[
--
-]
-0
-.
-9
-5</td>
-<td>W
-a
-t
-e
-r</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-emissivity"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Emissivity</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Effective surface emissivity. View factors should be taken into account Example values [-] 0.95 Water Oke (1987) [35]</td>
 </tr>
 <tr class="row-even"><td>5</td>
-<td>MD</td>
-<td>StorageMi
-n</td>
-<td>&#160;</td>
-<td>Minimum
-water
-storage
-capacity
-of this
-surface
-[mm]
--  Minimu
-m
-water
-storag
-e
-capaci
-ty
-for
-upper
-surfac
-es
-(i.e.
-canopy
-).
--  Min/ma
-x
-values
-are to
-accoun
-t
-for
-season
-al
-variat
-ion
-- not
-used
-for
-water
-surfac
-es.
-+—+—+
-—+
-+===+
-+—+—+
-—+</td>
-<td>E
-x
-a
-m
-p
-l
-e
-v
-a
-l
-u
-e
-s
-[
-m
-m
-]
-0
-.
-5</td>
-<td>W
-a
-t
-e
-r</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-storagemin"><code class="xref any std std-option docutils literal notranslate"><span class="pre">StorageMin</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
+<td>Minimum water storage capacity for upper surfaces (i.e. canopy). Min/max values are to account for seasonal variation - not used for water surfaces. Example values [mm] 0.5 Water</td>
 </tr>
 <tr class="row-odd"><td>6</td>
-<td>MD</td>
-<td>StorageMa
-x</td>
-<td>&#160;</td>
-<td>Maximum
-water
-storage
-capacity
-of this
-surface
-[mm]
--  Maximu
-m
-water
-storag
-e
-capaci
-ty
-for
-upper
-surfac
-es
-(i.e.
-canopy
-)
--  Min
-and
-max
-values
-are to
-accoun
-t
-for
-season
-al
-variat
-ion
-- not
-used
-for
-water
-surfac
-es
-so set
-same
-as
-Storag
-eMin.</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-storagemax"><code class="xref any std std-option docutils literal notranslate"><span class="pre">StorageMax</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
+<td>Maximum water storage capacity for upper surfaces (i.e. canopy) Min and max values are to account for seasonal variation - not used for water surfaces so set same as StorageMin.</td>
 </tr>
 <tr class="row-even"><td>7</td>
-<td>MD</td>
-<td>WetThresh
-old</td>
-<td>&#160;</td>
-<td>Threshold
-for a
-completel
-y
-wet
-surface
-[mm]
--  Depth
-of
-water
-which
-determ
-ines
-whethe
-r
-evapor
-ation
-occurs
-from a
-partia
-lly
-wet or
-comple
-tely
-wet
-surfac
-e.
-+—+—+
-—+
-+===+
-+—+—+
-—+</td>
-<td>E
-x
-a
-m
-p
-l
-e
-v
-a
-l
-u
-e
-s
-[
-m
-m
-]
-0
-.
-5</td>
-<td>W
-a
-t
-e
-r</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-wetthreshold"><code class="xref any std std-option docutils literal notranslate"><span class="pre">WetThreshold</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
+<td>Depth of water which determines whether evaporation occurs from a partially wet or completely wet surface. Example values [mm] 0.5 Water</td>
 </tr>
 <tr class="row-odd"><td>8</td>
-<td>MU</td>
-<td>StateLimi
-t</td>
-<td>&#160;</td>
-<td>Upper
-limit to
-the
-surface
-state
-[mm]
--  Surfac
-e
-state
-cannot
-exceed
-this
-value.
--  Set to
-a
-large
-value
-(e.g.
-20000
-mm =
-20 m)
-if the
-water
-body
-is
-substa
-ntial
-(lake,
-river,
-etc)
-or a
-small
-value
-(e.g.
-10 mm)
-if
-water
-bodies
-are
-very
-shallo
-w
-(e.g.
-founta
-ins).
--  <strong>Wate
-rDepth</strong>
-(colum
-n
-9)
-must
-not
-exceed
-this
-value.</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-statelimit"><code class="xref any std std-option docutils literal notranslate"><span class="pre">StateLimit</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Surface state cannot exceed this value. Set to a large value (e.g. 20000 mm = 20 m) if the water body is substantial (lake, river, etc) or a small value (e.g. 10 mm) if water bodies are very shallow (e.g. fountains). WaterDepth (column 9) must not exceed this value.</td>
 </tr>
 <tr class="row-even"><td>9</td>
-<td>MU</td>
-<td>WaterDept
-h</td>
-<td>&#160;</td>
-<td>Typical
-depth for
-the water
-surface
-[mm]
--  Set to
-a
-large
-value
-(e.g.
-20000
-mm =
-20 m)
-if the
-water
-body
-is
-substa
-ntial
-(lake,
-river,
-etc)
-or a
-small
-value
-(e.g.
-10 mm)
-if
-water
-bodies
-are
-very
-shallo
-w
-(e.g.
-founta
-ins).
--  This
-value
-must
-not
-exceed
-<strong>Stat
-eLimit</strong>
-(colum
-n
-8).</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-waterdepth"><code class="xref any std std-option docutils literal notranslate"><span class="pre">WaterDepth</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Set to a large value (e.g. 20000 mm = 20 m) if the water body is substantial (lake, river, etc) or a small value (e.g. 10 mm) if water bodies are very shallow (e.g. fountains). This value must not exceed StateLimit (column 8).</td>
 </tr>
 <tr class="row-odd"><td>10</td>
-<td>MD</td>
-<td>DrainageE
-q</td>
-<td>-999</td>
-<td>Drainage
-equation
-to use
-for this
-surface.
--  Not
-curren
-tly
-used
-for
-water
-surfac
-e.</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-drainageeq"><code class="xref any std std-option docutils literal notranslate"><span class="pre">DrainageEq</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
+<td>Not currently used for water surface.</td>
 </tr>
 <tr class="row-even"><td>11</td>
-<td>MD</td>
-<td>DrainageC
-oef1</td>
-<td>-999</td>
-<td>Coefficie
-nt
-for
-drainage
-equation
-[units
-vary
-according
-to
-equation]
--  Not
-curren
-tly
-used
-for
-water
-surfac
-e</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-drainagecoef1"><code class="xref any std std-option docutils literal notranslate"><span class="pre">DrainageCoef1</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
+<td>Not currently used for water surface</td>
 </tr>
 <tr class="row-odd"><td>12</td>
-<td>MD</td>
-<td>DrainageC
-oef2</td>
-<td>-999</td>
-<td>Coefficie
-nt
-for
-drainage
-equation
-[units
-vary
-according
-to
-equation]
--  Not
-curren
-tly
-used
-for
-water
-surfac
-e</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-drainagecoef2"><code class="xref any std std-option docutils literal notranslate"><span class="pre">DrainageCoef2</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
+<td>Not currently used for water surface</td>
 </tr>
 <tr class="row-even"><td>13</td>
-<td>L</td>
-<td>OHMCode_S
-ummerWet</td>
-<td>&#160;</td>
-<td>Code for
-OHM
-coefficie
-nts
-to use
-for this
-surface
-during
-wet
-condition
-s
-in
-summer.
-Links to
-<span class="xref std std-ref">suews-ohmcoefficients-txt</span> Value of  integer   is arbitrary but must  match     code      specified in column 1 of</td>
-<td>SUEWS_OHM
-Coefficie
-nts.txt]]
-.
-SUEWS_OHM
-Coefficie
-nts.txt.</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ohmcode-summerwet"><code class="xref any std std-option docutils literal notranslate"><span class="pre">OHMCode_SummerWet</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code for OHM coefficients to use for this surface during wet conditions in summer. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt.</td>
 </tr>
 <tr class="row-odd"><td>14</td>
-<td>L</td>
-<td>OHMCode_S
-ummerDry</td>
-<td>&#160;</td>
-<td>Code for
-OHM
-coefficie
-nts
-to use
-for this
-surface
-during
-dry
-condition
-s
-in
-summer.
-Links to  <span class="xref std std-ref">suews-ohmcoefficients-txt</span></td>
-<td>SUEWS_OHM
-Coefficie
-nts.txt]]
-.
-Value of
-integer
-is
-arbitrary
-but must
-match
-code
-specified
-in column
-1 of
-SUEWS_OHM
-Coefficie
-nts.txt.</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ohmcode-summerdry"><code class="xref any std std-option docutils literal notranslate"><span class="pre">OHMCode_SummerDry</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code for OHM coefficients to use for this surface during dry conditions in summer. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt.</td>
 </tr>
 <tr class="row-even"><td>15</td>
-<td>L</td>
-<td>OHMCode_W
-interWet</td>
-<td>&#160;</td>
-<td>Code for
-OHM
-coefficie
-nts
-to use
-for this
-surface
-during
-wet
-condition
-s
-in
-winter.
-Links to
-[[#SUEWS_
-OHMCoeffi
-cients.tx
-t</td>
-<td>SUEWS_OHM
-Coefficie
-nts.txt]]
-.
-Value of
-integer
-is
-arbitrary
-but must
-match
-code
-specified
-in column
-1 of
-SUEWS_OHM
-Coefficie
-nts.txt.</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ohmcode-winterwet"><code class="xref any std std-option docutils literal notranslate"><span class="pre">OHMCode_WinterWet</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code for OHM coefficients to use for this surface during wet conditions in winter. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt.</td>
 </tr>
 <tr class="row-odd"><td>16</td>
-<td>L</td>
-<td>OHMCode_W
-interDry</td>
-<td>&#160;</td>
-<td>Code for
-OHM
-coefficie
-nts
-to use
-for this
-surface
-during
-dry
-condition
-s
-in
-winter.
-Links to
-[[#SUEWS_
-OHMCoeffi
-cients.tx
-t</td>
-<td>SUEWS_OHM
-Coefficie
-nts.txt]]
-.
-Value of
-integer
-is
-arbitrary
-but must
-match
-code
-specified
-in column
-1 of
-SUEWS_OHM
-Coefficie
-nts.txt.</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ohmcode-winterdry"><code class="xref any std std-option docutils literal notranslate"><span class="pre">OHMCode_WinterDry</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code for OHM coefficients to use for this surface during dry conditions in winter. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt.</td>
 </tr>
 <tr class="row-even"><td>17</td>
-<td>MD</td>
-<td>OHMThresh
-_SW</td>
-<td>10</td>
-<td>Temperatu
-re
-threshold
-determini
-ng
-whether
-summer/wi
-nter
-OHM
-coefficie
-nts
-are
-applied
-[deg C]
-If 5-day
-running
-mean air
-temperatu
-re
-is
-greater
-than or
-equal to
-this
-threshold
-,
-OHM
-coefficie
-nts
-for
-summertim
-e
-are
-applied;
-otherwise
-coefficie
-nts
-for
-wintertim
-e
-are
-applied.</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ohmthresh-sw"><code class="xref any std std-option docutils literal notranslate"><span class="pre">OHMThresh_SW</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
+<td>Temperature threshold determining whether summer/winter OHM coefficients are applied [deg C] If 5-day running mean air temperature is greater than or equal to this threshold, OHM coefficients for summertime are applied; otherwise coefficients for wintertime are applied.</td>
 </tr>
 <tr class="row-odd"><td>18</td>
-<td>MD</td>
-<td>OHMThresh_WD</td>
-<td>0.9</td>
-<td>Soil
-moisture
-threshold
-determini
-ng
-whether
-wet/dry
-OHM
-coefficie
-nts
-are
-applied
-[-] If
-soil
-moisture
-(as a
-proportio
-n
-of
-maximum
-soil
-moisture
-capacity)
-exceeds
-this
-threshold
-for bare
-soil and
-vegetated
-surfaces,
-OHM
-coefficie
-nts
-for wet
-condition
-s
-are
-applied;
-otherwise
-coefficie
-nts
-for dry
-coefficie
-nts
-are
-applied.
-Note that
-OHM
-coefficie
-nts
-for wet
-condition
-s
-are
-applied
-if the
-surface
-is wet.
-<strong>Not
-actually
-used for
-water
-surface
-(as no
-soil
-surface
-beneath).</strong></td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ohmthresh-wd"><code class="xref any std std-option docutils literal notranslate"><span class="pre">OHMThresh_WD</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
+<td>Soil moisture threshold determining whether wet/dry OHM coefficients are applied [-] If soil moisture (as a proportion of maximum soil moisture capacity) exceeds this threshold for bare soil and vegetated surfaces, OHM coefficients for wet conditions are applied; otherwise coefficients for dry coefficients are applied. Note that OHM coefficients for wet conditions are applied if the surface is wet. Not actually used for water surface (as no soil surface beneath).</td>
 </tr>
 <tr class="row-even"><td>19</td>
-<td>L</td>
-<td>ESTMCode</td>
-<td>&#160;</td>
-<td>Code for
-ESTM
-coefficie
-nts
-to use
-for this
-surface.
-Links to
-[[#SUEWS_
-ESTMCoeff
-icients.t
-xt</td>
-<td>SUEWS_EST
-MCoeffici
-ents.txt]
-].
-Value of
-integer
-is
-arbitrary
-but must
-match
-code
-specified
-in column
-1 of
-SUEWS_EST
-MCoeffici
-ents.txt.</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-estmcode"><code class="xref any std std-option docutils literal notranslate"><span class="pre">ESTMCode</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code for ESTM coefficients to use for this surface. Links to SUEWS_ESTMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_ESTMCoefficients.txt.</td>
 </tr>
 <tr class="row-odd"><td>20</td>
-<td>MU</td>
-<td>AnOHM_Cp</td>
-<td>&#160;</td>
-<td>Volumetri
-c
-heat
-capacity
-for this
-surface
-to use in
-AnOHM [J
-m:sup:`
--3`]</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-anohm-cp"><code class="xref any std std-option docutils literal notranslate"><span class="pre">AnOHM_Cp</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Volumetric heat capacity for this surface to use in AnOHM [J m -3 ]</td>
 </tr>
 <tr class="row-even"><td>21</td>
-<td>MU</td>
-<td>AnOHM_Kk</td>
-<td>&#160;</td>
-<td>Thermal
-conductiv
-ity
-for this
-surface
-to use in
-AnOHM [W
-m
-K:sup:`
--1`]</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-anohm-kk"><code class="xref any std std-option docutils literal notranslate"><span class="pre">AnOHM_Kk</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Thermal conductivity for this surface to use in AnOHM [W m K -1 ]</td>
 </tr>
 <tr class="row-odd"><td>22</td>
-<td>MU</td>
-<td>AnOHM_Ch</td>
-<td>&#160;</td>
-<td>Bulk
-transfer
-coefficie
-nt
-for this
-surface
-to use in
-AnOHM [-]</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>&#160;</td>
-<td>&#160;</td>
-<td>&#160;</td>
-<td>&#160;</td>
-<td>&#160;</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-anohm-ch"><code class="xref any std std-option docutils literal notranslate"><span class="pre">AnOHM_Ch</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Bulk transfer coefficient for this surface to use in AnOHM [-]</td>
 </tr>
 </tbody>
 </table>

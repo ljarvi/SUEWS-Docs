@@ -110,12 +110,13 @@
 <li class="toctree-l3"><a class="reference internal" href="SUEWS_Veg.html">6.2.10. SUEWS_Veg.txt</a></li>
 <li class="toctree-l3"><a class="reference internal" href="SUEWS_Water.html">6.2.11. SUEWS_Water.txt</a></li>
 <li class="toctree-l3"><a class="reference internal" href="SUEWS_WithinGridWaterDist.html">6.2.12. SUEWS_WithinGridWaterDist.txt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Input_Options.html">6.2.13. Input_Options</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Initial_Conditions/Initial_Conditions.html">6.3. Initial Conditions file</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../met_input.html">6.4. Meteorological Input File</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../CBL_input.html">6.5. CBL input files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ESTM_input.html">6.6. ESTM-related files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ESTM_related_files/ESTM_related_files.html">6.6. ESTM-related files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../SOLWEIG_input.html">6.7. SOLWEIG input files</a></li>
 </ul>
 </li>
@@ -195,7 +196,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="suews-profiles-txt">
-<h1>6.2.6. SUEWS_Profiles.txt<a class="headerlink" href="#suews-profiles-txt" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1>6.2.6. SUEWS_Profiles.txt<a class="headerlink" href="#suews-profiles-txt" title="Permalink to this headline">¶</a></h1>
 <p>SUEWS_Profiles.txt specifies the daily cycle of variables related to
 human behaviour (energy use, water use and snow clearing). Different
 profiles can be specified for weekdays and weekends. The profiles are
@@ -214,189 +215,30 @@ forcing file, the energy and water use profiles are not used.</p>
 <li>Snow removal (weekday and weekend)</li>
 <li>Human activity (weekday and weekend) <strong>- not used in v2017a</strong>.</li>
 </ul>
-<table border="1" class="docutils">
+<table border="1" class="colwidths-given docutils">
 <colgroup>
-<col width="12%" />
-<col width="10%" />
-<col width="16%" />
-<col width="18%" />
-<col width="22%" />
-<col width="22%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="85%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">No.</th>
+<th class="head">Var</th>
 <th class="head">Use</th>
-<th class="head">Column
-name</th>
-<th class="head">Example</th>
-<th class="head">Descripti
-on</th>
-<th class="head">&#160;</th>
+<th class="head">Description</th>
 </tr>
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td>1</td>
-<td>L</td>
-<td>Code</td>
-<td>&#160;</td>
-<td>Code
-linking
-to the
-following
-columns
-in
-[[#SUEWS_
-SiteSelec
-t.txt</td>
-<td>SUEWS_Sit
-eSelect.t
-xt]]:
--  Energy
-UseProfWD
-:
-Anthro
-pogenic
-heat
-flux,
-weekda
-ys
--  Energy
-UseProfWE
-:
-Anthro
-pogenic
-heat
-flux,
-weeken
-ds
--  WaterU
-seProfMan
-uWD
-:
-Manual
-irriga
-tion,
-weekda
-ys
--  WaterU
-seProfMan
-uWE
-:
-Manual
-irriga
-tion,
-weeken
-ds
--  WaterU
-seProfAut
-oWD
-:
-Automa
-tic
-irriga
-tion,
-weekda
-ys
--  WaterU
-seProfAut
-oWE:
-Automa
-tic
-irriga
-tion,
-weeken
-ds
--  SnowCl
-earingPro
-fWD
-: Snow
-cleari
-ng,
-weekda
-ys
--  SnowCl
-earingPro
-fWE:
-Snow
-cleari
-ng,
-weeken
-ds
--  Activi
-tyProfWD:
-Human
-activi
-ty,
-weekda
-ys
--  Activi
-tyProfWE:
-Human
-activi
-ty,
-weeken
-ds
--  Value
-of
-intege
-r
-is
-arbitr
-ary
-but
-must
-match
-codes
-specif
-ied
-in
-<a href="#id1"><span class="problematic" id="id2">SUEWS_</span></a>
-SiteSelec
-t.txt.</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Code</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code linking to SUEWS_SiteSelect.txt for snow surfaces (SnowCode). Value of integer is arbitrary but must match code specified in SUEWS_SiteSelect.txt.</td>
 </tr>
-<tr class="row-odd"><td>2-25</td>
-<td>MU</td>
-<td>0-23</td>
-<td>&#160;</td>
-<td>Multiplie
-r
-for each
-hour of
-the day
-[-] for
-energy
-and water
-use. For
-SnowClear
-ing,
-set those
-hours to
-1 when
-snow
-removal
-from
-paved and
-roof
-surface
-is
-allowed
-(0
-otherwise
-)
-if the
-snow
-removal
-limits
-set in
-the
-SUEWS_Non
-Veg.txt
-(SnowLimR
-emove
-column)
-are
-exceeded.</td>
-<td>&#160;</td>
+<tr class="row-odd"><td>2</td>
+<td>2-25</td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Multiplier for each hour of the day [-] for energy and water use. For SnowClearing, set those hours to 1 when snow removal from paved and roof surface is allowed (0 otherwise) if the snow removal limits set in the SUEWS_Non Veg.txt (SnowLimR emove column) are exceeded.</td>
 </tr>
 </tbody>
 </table>

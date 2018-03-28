@@ -23,6 +23,8 @@ If CBL slab model is used (:option:`CBLuse = 1 <CBLuse>` in
 |                      | -  Can be in any order            |
 +----------------------+-----------------------------------+
 
+
+.. _CBL_initial_data.txt:
 CBL_initial_data.txt
 ~~~~~~~~~~~~~~~~~~~~
 
@@ -83,6 +85,8 @@ Definitions and example file of initial values prepared for Sacramento.
 |     |     |         |           |          |        |         |       |
 +-----+-----+---------+-----------+----------+--------+---------+-------+
 
+
+.. _CBL_Input.nml:
 CBL_Input.nml
 ~~~~~~~~~~~~~
 

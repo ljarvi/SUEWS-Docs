@@ -110,12 +110,13 @@
 <li class="toctree-l3"><a class="reference internal" href="SUEWS_Veg.html">6.2.10. SUEWS_Veg.txt</a></li>
 <li class="toctree-l3"><a class="reference internal" href="SUEWS_Water.html">6.2.11. SUEWS_Water.txt</a></li>
 <li class="toctree-l3"><a class="reference internal" href="SUEWS_WithinGridWaterDist.html">6.2.12. SUEWS_WithinGridWaterDist.txt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Input_Options.html">6.2.13. Input_Options</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Initial_Conditions/Initial_Conditions.html">6.3. Initial Conditions file</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../met_input.html">6.4. Meteorological Input File</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../CBL_input.html">6.5. CBL input files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ESTM_input.html">6.6. ESTM-related files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ESTM_related_files/ESTM_related_files.html">6.6. ESTM-related files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../SOLWEIG_input.html">6.7. SOLWEIG input files</a></li>
 </ul>
 </li>
@@ -195,8 +196,8 @@
            <div itemprop="articleBody">
             
   <div class="section" id="suews-ohmcoefficients-txt">
-<h1>6.2.5. SUEWS_OHMCoefficients.txt<a class="headerlink" href="#suews-ohmcoefficients-txt" title="Permalink to this headline">¶</a></h1>
-<p>OHM, the Objective Hysteresis Model (Grimmond et al. 1991) <a class="reference internal" href="../../references.html#g91ohm" id="id1">[G91OHM]</a>
+<span id="id1"></span><h1>6.2.5. SUEWS_OHMCoefficients.txt<a class="headerlink" href="#suews-ohmcoefficients-txt" title="Permalink to this headline">¶</a></h1>
+<p>OHM, the Objective Hysteresis Model (Grimmond et al. 1991) <a class="reference internal" href="../../references.html#g91ohm" id="id2">[G91OHM]</a>
 calculates the storage heat flux as a function of net all-wave radiation
 and surface characteristics.</p>
 <ul class="simple">
@@ -229,84 +230,40 @@ conductivity and bulk transfer coefficient. These are specified in
 <a class="reference external" href="#SUEWS_Snow.txt">SUEWS_Snow.txt</a>. No additional files are required
 for AnOHM.</p>
 <p><strong>Note AnOHM is under development in v2017a and should not be used!</strong></p>
-<table border="1" class="docutils">
+<table border="1" class="colwidths-given docutils">
 <colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="85%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">No.</th>
+<th class="head">Column Name</th>
 <th class="head">Use</th>
-<th class="head">Column name</th>
-<th class="head">Example</th>
 <th class="head">Description</th>
 </tr>
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td>1</td>
-<td>L</td>
-<td>Code</td>
-<td>331</td>
-<td>Code
-linking to
-the
-OHMCode_Sum
-merWet,
-OHMCode_Sum
-merDry,
-OHMCode_Win
-terWet
-and
-OHMCode_Win
-terDry
-columns in
-SUEWS_NonVe
-g.txt,
-SUEWS_Veg,t
-xt,
-SUEWS_Water
-.txt
-and
-SUEWS_Snow.
-txt
-files.
-Value of
-integer is
-arbitrary
-but must
-match code
-specified
-in
-SUEWS_SiteS
-elect.txt.</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Code</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code linking to the OHMCode_SummerWet, OHMCode_SummerDry, OHMCode_WinterWet and OHMCode_WinterDry columns in SUEWS_NonVeg.txt, SUEWS_Veg,txt, SUEWS_Water.txt and SUEWS_Snow.txt files. Value of integer is arbitrary but must match code specified in SUEWS_SiteSelect.txt.</td>
 </tr>
 <tr class="row-odd"><td>2</td>
-<td>MU</td>
-<td>a1</td>
-<td>&#160;</td>
-<td>Coefficient
-for Q*
-term [-]</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-a1"><code class="xref any std std-option docutils literal notranslate"><span class="pre">a1</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Coefficient for Q* term [-]</td>
 </tr>
 <tr class="row-even"><td>3</td>
-<td>MU</td>
-<td>a2</td>
-<td>&#160;</td>
-<td>Coefficient
-for dQ*/dt
-term [h]</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-a2"><code class="xref any std std-option docutils literal notranslate"><span class="pre">a2</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Coefficient for dQ*/dt term [h]</td>
 </tr>
 <tr class="row-odd"><td>4</td>
-<td>MU</td>
-<td>a3</td>
-<td>&#160;</td>
-<td>Constant
-term [W
-m:sup:<a href="#id2"><span class="problematic" id="id3">`</span></a>-2
-<a href="#id4"><span class="problematic" id="id5">`</span></a>]</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-a3"><code class="xref any std std-option docutils literal notranslate"><span class="pre">a3</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Constant term [W m -2 ]</td>
 </tr>
 </tbody>
 </table>

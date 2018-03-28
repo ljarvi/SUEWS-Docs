@@ -1,3 +1,5 @@
+.. _SUEWS_WithinGridWaterDist.txt:
+
 SUEWS_WithinGridWaterDist.txt
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -6,7 +8,7 @@ surfaces within a grid/area. It allows impervious connectivity to be
 taken into account.
 
 Each row corresponds to a surface type (linked by the Code in column 1
-to the `SiteSelect.txt <#SiteSelect.txt>`__ columns:
+to the `SUEWS_SiteSelect.txt` columns:
 WithinGridPavedCode, WithinGridBldgsCode, …, WithinGridWaterCode). Each
 column contains the fraction of water flowing from the surface type to
 each of the other surface types or to runoff or the sub-surface soil
@@ -35,41 +37,7 @@ In the table below, for example,
 -  the row corresponding to water contains zeros (as it is currently not
    used).
 
-+----+----+----+----+----+----+----+----+----+----+----+
-| 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9  | 10 |    |
-+====+====+====+====+====+====+====+====+====+====+====+
-| Co | To | To | To | To | To | To | To | To | To |    |
-| de | Pa | Bu | Ev | De | Gr | BS | Wa | Ru | So |    |
-|    | ve | il | eT | cT | as | oi | te | no | il |    |
-|    | d  | t  | r  | r  | s  | l  | r  | ff | St |    |
-|    |    |    |    |    |    |    |    |    | or |    |
-|    |    |    |    |    |    |    |    |    | e  |    |
-+----+----+----+----+----+----+----+----+----+----+----+
-| 10 | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 1  | 0  | Pa |
-|    |    |    |    |    |    |    |    |    |    | ve |
-|    |    |    |    |    |    |    |    |    |    | d  |
-+----+----+----+----+----+----+----+----+----+----+----+
-| 20 | 0. | 0  | 0. | 0. | 0. | 0. | 0  | 0. | 0  | Bl |
-|    | 06 |    | 01 | 01 | 01 | 01 |    | 9  |    | dg |
-|    |    |    |    |    |    |    |    |    |    | s  |
-+----+----+----+----+----+----+----+----+----+----+----+
-| 30 | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 1  | Ev |
-|    |    |    |    |    |    |    |    |    |    | eT |
-|    |    |    |    |    |    |    |    |    |    | r  |
-+----+----+----+----+----+----+----+----+----+----+----+
-| 40 | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 1  | De |
-|    |    |    |    |    |    |    |    |    |    | cT |
-|    |    |    |    |    |    |    |    |    |    | r  |
-+----+----+----+----+----+----+----+----+----+----+----+
-| 50 | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 1  | Gr |
-|    |    |    |    |    |    |    |    |    |    | as |
-|    |    |    |    |    |    |    |    |    |    | s  |
-+----+----+----+----+----+----+----+----+----+----+----+
-| 60 | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 1  | BS |
-|    |    |    |    |    |    |    |    |    |    | oi |
-|    |    |    |    |    |    |    |    |    |    | l  |
-+----+----+----+----+----+----+----+----+----+----+----+
-| 70 | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | Wa |
-|    |    |    |    |    |    |    |    |    |    | te |
-|    |    |    |    |    |    |    |    |    |    | r  |
-+----+----+----+----+----+----+----+----+----+----+----+
+
+.. csv-table::
+  :file: SUEWS_WithinGridWaterDist.csv
+  :header-rows: 1

@@ -3,14 +3,15 @@ SUEWS_SiteInfo.xlsm
 -------------------
 
 The following text files provide SUEWS with information about the study
-area. 
+area.
 
 .. toctree::
    :maxdepth: 1
    :glob:
 
    SUEWS*
-   
+   Input_Options
+
 
 These text files are stored as worksheets in
 **SUEWS_SiteInfo.xlsm** and can be either edited using Excel and then

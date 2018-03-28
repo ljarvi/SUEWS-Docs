@@ -1,0 +1,2 @@
+"Referencing Table","Requirement","Comment"
+"`SUEWS_SiteSelect.txt`","`L`","Code for modelling anthropogenic heat flux Provides the link to column 1 of SUEWS_AnthropogenicHeat.txt, which contains the model coefficients for estimation of the anthropogenic heat flux (used if AnthropHeatChoice = 1, 2 in RunControl.nml ). Value of integer is arbitrary but must match code specified in column 1 of SUEWS_AnthropogenicHeat.txt. "

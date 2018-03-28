@@ -1,9 +1,7 @@
 ESTM-related files
 -----------------------------
 
-
-
-
+.. _SUEWS_ESTMCoefficients.txt:
 
 SUEWS_ESTMCoefficients.txt
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -26,9 +24,9 @@ thickness (x), thermal conductivity (k), volumetric heat capacity
 (rhoCp).
 
 If ESTM is used (QSchoice=4), the files
-`SUEWS_ESTMCoefficients.txt <#SUEWS_ESTMCoefficients.txt>`__,
-`ESTMinput.nml <#ESTMinput.nml>`__ and
-`SS_YYYY_ESTM_Ts_data_tt.txt <#SS_YYYY_ESTM_Ts_data_tt.txt>`__ should be
+`SUEWS_ESTMCoefficients.txt`,
+`ESTMinput.nml` and
+`SSss_YYYY_ESTM_Ts_data_tt.txt` should be
 prepared.
 
 SUEWS_ESTMCoefficients.txt contains the parameters for the layers of
@@ -43,9 +41,9 @@ each of the elements (roofs, wall, ground, internal mass).
    each surface type; for paved and building surfaces it is possible to
    specify up to three and five sets of coefficients per grid (e.g. to
    represent different building materials) using the relevant columns in
-   `SUEWS_SiteSelect.txt <#SUEWS_SiteSelect.txt>`__. For the model to
+   `SUEWS_SiteSelect.txt`. For the model to
    use these columns in site select, the ESTMCode column in
-   `SUEWS_NonVeg.txt <#SUEWS_NonVeg.txt>`__ should be set to zero.
+   `SUEWS_NonVeg.txt` should be set to zero.
 
 
 
@@ -80,11 +78,12 @@ are provided through :ref:`the links below <ESTMinput>`:
 
 
 
+.. _SSss_YYYY_ESTM_Ts_data_tt.txt:
 
 SSss_YYYY_ESTM_Ts_data_tt.txt
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-SSss_YYYY_ESTM_Ts_data_tt.txt contains a time-series of input surface
+`SSss_YYYY_ESTM_Ts_data_tt.txt` contains a time-series of input surface
 temperature for roof, wall, ground and internal elements.
 
 +-----------------------+-----------------------+-----------------------+

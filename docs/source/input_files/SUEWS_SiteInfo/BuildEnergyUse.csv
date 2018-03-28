@@ -1,0 +1,2 @@
+"Referencing Table","Requirement","Comment"
+"`SUEWS_SiteSelect.txt`","`O`","Building energy use [W m-2] Can be used for CO2 flux calculation. Do not use in v2017a - set to -999 "

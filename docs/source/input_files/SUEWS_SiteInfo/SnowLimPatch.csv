@@ -1,0 +1,3 @@
+"Referencing Table","Requirement","Comment"
+"`SUEWS_NonVeg.txt`","`O`","Not needed if SnowUse = 0 in RunControl.nml . Example values [mm] 190 Paved Järvi et al. (2014) [15]  190 Bldgs Järvi et al. (2014) [15]  190 BSoil Järvi et al. (2014) [15] "
+"`SUEWS_Veg.txt`","`O`","Limit of snow water equivalent when the surface surface is fully covered with snow. Not needed if SnowUse = 0 in RunControl.nml . Example values [mm] 190 EveTr Järvi et al. (2014) [15]  190 DecTr Järvi et al. (2014) [15]  190 Grass Järvi et al. (2014) [15] "

@@ -1,4 +1,5 @@
 .. _RunControl:
+.. _RunControl.nml:
 
 RunControl.nml
 --------------

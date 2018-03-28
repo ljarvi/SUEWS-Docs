@@ -110,12 +110,13 @@
 <li class="toctree-l3"><a class="reference internal" href="SUEWS_Veg.html">6.2.10. SUEWS_Veg.txt</a></li>
 <li class="toctree-l3"><a class="reference internal" href="SUEWS_Water.html">6.2.11. SUEWS_Water.txt</a></li>
 <li class="toctree-l3"><a class="reference internal" href="SUEWS_WithinGridWaterDist.html">6.2.12. SUEWS_WithinGridWaterDist.txt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Input_Options.html">6.2.13. Input_Options</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Initial_Conditions/Initial_Conditions.html">6.3. Initial Conditions file</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../met_input.html">6.4. Meteorological Input File</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../CBL_input.html">6.5. CBL input files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ESTM_input.html">6.6. ESTM-related files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ESTM_related_files/ESTM_related_files.html">6.6. ESTM-related files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../SOLWEIG_input.html">6.7. SOLWEIG input files</a></li>
 </ul>
 </li>
@@ -195,7 +196,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="suews-soil-txt">
-<h1>6.2.9. SUEWS_Soil.txt<a class="headerlink" href="#suews-soil-txt" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1>6.2.9. SUEWS_Soil.txt<a class="headerlink" href="#suews-soil-txt" title="Permalink to this headline">¶</a></h1>
 <p>SUEWS_Soil.txt specifies the characteristics of the sub-surface soil
 below each of the non-water surface types (Paved, Bldgs, EveTr, DecTr,
 Grass, BSoil). The model does not have a soi store below the water
@@ -204,284 +205,72 @@ bare soil/unmamnaged surface cover type. Each of the non-water surface
 types need to link to soil characteristics specified here. If the soil
 characteristics are assumed to be the same for all surface types, use a
 single code value to link the characteristics here with the SoilTypeCode
-columns in <a class="reference external" href="#SUEWS_NonVeg.txt">SUEWS_NonVeg.txt</a> and
-<a class="reference external" href="#SUEWS_Veg.txt">SUEWS_Veg.txt</a>.</p>
+columns in <a class="reference internal" href="SUEWS_NonVeg.html#suews-nonveg-txt"><span class="std std-ref">SUEWS_NonVeg.txt</span></a> and <a class="reference internal" href="SUEWS_Veg.html#suews-veg-txt"><span class="std std-ref">SUEWS_Veg.txt</span></a>.</p>
 <p>Soil moisture can either be provided using observational data in the met
 forcing file (smd_choice = 1 or 2 in
-<a class="reference external" href="#RunControl.nml">RunControl.nml</a>) and providing some metadata
-information here (OBS_ columns), or modelled by SUEWS (smd_choice = 0
-in <a class="reference external" href="#RunControl.nml">RunControl.nml</a>). <strong>- Note, the option to use
+<a class="reference internal" href="../RunControl/RunControl.html#runcontrol-nml"><span class="std std-ref">RunControl.nml</span></a>) and providing some metadata
+information here (OBS columns), or modelled by SUEWS (smd_choice = 0
+in <a class="reference internal" href="../RunControl/RunControl.html#runcontrol-nml"><span class="std std-ref">RunControl.nml</span></a>). <strong>- Note, the option to use
 observational data is not operational in the current release!</strong></p>
-<table border="1" class="docutils">
+<table border="1" class="colwidths-given docutils">
 <colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="85%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">No.</th>
+<th class="head">Column Name</th>
 <th class="head">Use</th>
-<th class="head">Column name</th>
-<th class="head">Example</th>
 <th class="head">Description</th>
 </tr>
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td>1</td>
-<td>L</td>
-<td>Code</td>
-<td>331</td>
-<td>Code
-linking to
-the
-SoilTypeCod
-e
-column in
-SUEWS_NonVe
-g.txt
-(for Paved,
-Bldgs and
-BSoil
-surfaces)
-and
-SUEWS_Veg.t
-xt
-(for EveTr,
-DecTr and
-Grass
-surfaces).
-Value of
-integer is
-arbitrary
-but must
-match code
-specified
-in
-SUEWS_SiteS
-elect.txt.</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Code</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code linking to the SoilTypeCode column in SUEWS_NonVeg.txt (for Paved, Bldgs and BSoil surfaces) and SUEWS_Veg.txt (for EveTr, DecTr and Grass surfaces). Value of integer is arbitrary but must match code specified in SUEWS_SiteSelect.txt.</td>
 </tr>
 <tr class="row-odd"><td>2</td>
-<td>MD</td>
-<td>SoilDepth</td>
-<td>350</td>
-<td>Depth of
-sub-surface
-soil store
-[mm] i.e.
-the depth
-of soil
-beneath the
-surface</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-soildepth"><code class="xref any std std-option docutils literal notranslate"><span class="pre">SoilDepth</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
+<td>Depth of sub-surface soil store [mm] i.e. the depth of soil beneath the surface</td>
 </tr>
 <tr class="row-even"><td>3</td>
-<td>MD</td>
-<td>SoilStoreCa
-p</td>
-<td>150</td>
-<td><p class="first">Capacity of
-sub-surface
-soil store
-[mm] i.e.
-how much
-water can
-be stored
-in the
-sub-surface
-soil when
-at maximum
-capacity.</p>
-<ul class="simple">
-<li>SoilStor</li>
-</ul>
-<dl class="docutils">
-<dt>eCap</dt>
-<dd>must not
-be
-greater
-than
-SoilDept</dd>
-</dl>
-<ol class="last loweralpha simple" start="8">
-<li></li>
-</ol>
-</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-soilstorecap"><code class="xref any std std-option docutils literal notranslate"><span class="pre">SoilStoreCap</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
+<td>SoilStoreCap must not be greater than SoilDepth.</td>
 </tr>
 <tr class="row-odd"><td>4</td>
-<td>MD</td>
-<td>SatHydrauli
-cCond</td>
-<td>0.0005</td>
-<td>Hydraulic
-conductivit
-y
-for
-saturated
-soil [mm
-s:sup:<a href="#id1"><span class="problematic" id="id2">`</span></a>-1
-<a href="#id3"><span class="problematic" id="id4">`</span></a>]</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-sathydrauliccond"><code class="xref any std std-option docutils literal notranslate"><span class="pre">SatHydraulicCond</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
+<td>Hydraulic conductivity for saturated soil [mm s -1 ]</td>
 </tr>
 <tr class="row-even"><td>5</td>
-<td>MD</td>
-<td>SoilDensity</td>
-<td>1.16</td>
-<td>Soil
-density [kg
-m:sup:<a href="#id5"><span class="problematic" id="id6">`</span></a>-3
-<a href="#id7"><span class="problematic" id="id8">`</span></a>]</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-soildensity"><code class="xref any std std-option docutils literal notranslate"><span class="pre">SoilDensity</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
+<td>Soil density [kg m -3 ]</td>
 </tr>
 <tr class="row-odd"><td>6</td>
-<td>O</td>
-<td>Infiltratio
-nRate</td>
-<td>-999</td>
-<td><p class="first">Infiltratio
-n
-rate [mm
-h:sup:<a href="#id9"><span class="problematic" id="id10">`</span></a>-1
-<a href="#id11"><span class="problematic" id="id12">`</span></a>]</p>
-<ul class="simple">
-<li>Not
-currentl</li>
-</ul>
-<dl class="last docutils">
-<dt>y</dt>
-<dd>used</dd>
-</dl>
-</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-infiltrationrate"><code class="xref any std std-option docutils literal notranslate"><span class="pre">InfiltrationRate</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
+<td>Not currently used</td>
 </tr>
 <tr class="row-even"><td>7</td>
-<td>O</td>
-<td>OBS_SMDepth</td>
-<td>&#160;</td>
-<td><p class="first">Depth of
-soil
-moisture
-measurement
-s
-[mm]</p>
-<ul class="simple">
-<li>Use only
-if soil
-moisture
-is
-observed
-and
-provided
-in the
-met
-forcing
-file and
-smd_choi</li>
-</ul>
-<dl class="docutils">
-<dt>ce</dt>
-<dd>= 1 or
-2.</dd>
-</dl>
-<ul class="simple">
-<li><a href="#id13"><span class="problematic" id="id14">**</span></a>Use of
-observed
-soil
-moisture
-not
-currentl</li>
-</ul>
-<dl class="last docutils">
-<dt>y</dt>
-<dd>tested**</dd>
-</dl>
-</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-obs-smdepth"><code class="xref any std std-option docutils literal notranslate"><span class="pre">OBS_SMDepth</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
+<td>Use only if soil moisture is observed and provided in the met forcing file and smd_choice = 1 or 2. Use of observed soil moisture not currently tested</td>
 </tr>
 <tr class="row-odd"><td>8</td>
-<td>O</td>
-<td>OBS_SMCap</td>
-<td>&#160;</td>
-<td><p class="first">Maxiumum
-observed
-soil
-moisture
-[m:sup:<cite>3</cite>
-m<sup>-3
-`
-or kg
-kg:sup:</sup>-
-1`]</p>
-<ul class="simple">
-<li>Use only
-if soil
-moisture
-is
-observed
-and
-provided
-in the
-met
-forcing
-file and
-smd_choi</li>
-</ul>
-<dl class="docutils">
-<dt>ce</dt>
-<dd>= 1 or
-2.</dd>
-</dl>
-<ul class="simple">
-<li><a href="#id15"><span class="problematic" id="id16">**</span></a>Use of
-observed
-soil
-moisture
-not
-currentl</li>
-</ul>
-<dl class="last docutils">
-<dt>y</dt>
-<dd>tested**</dd>
-</dl>
-</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-obs-smcap"><code class="xref any std std-option docutils literal notranslate"><span class="pre">OBS_SMCap</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
+<td>Use only if soil moisture is observed and provided in the met forcing file and smd_choice = 1 or 2. Use of observed soil moisture not currently tested</td>
 </tr>
 <tr class="row-even"><td>9</td>
-<td>O</td>
-<td>OBS_SoilNot
-Rocks</td>
-<td>&#160;</td>
-<td><p class="first">Fraction of
-soil
-without
-rocks [-]</p>
-<ul class="simple">
-<li>Use only
-if soil
-moisture
-is
-observed
-and
-provided
-in the
-met
-forcing
-file and
-smd_choi</li>
-</ul>
-<dl class="docutils">
-<dt>ce</dt>
-<dd>= 1 or
-2.</dd>
-</dl>
-<ul class="simple">
-<li><a href="#id17"><span class="problematic" id="id18">**</span></a>Use of
-observed
-soil
-moisture
-not
-currentl</li>
-</ul>
-<dl class="last docutils">
-<dt>y</dt>
-<dd>tested**</dd>
-</dl>
-</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-obs-soilnotrocks"><code class="xref any std std-option docutils literal notranslate"><span class="pre">OBS_SoilNotRocks</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
+<td>Use only if soil moisture is observed and provided in the met forcing file and smd_choice = 1 or 2. Use of observed soil moisture not currently tested</td>
 </tr>
 </tbody>
 </table>

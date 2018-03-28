@@ -110,12 +110,13 @@
 <li class="toctree-l3"><a class="reference internal" href="SUEWS_Veg.html">6.2.10. SUEWS_Veg.txt</a></li>
 <li class="toctree-l3"><a class="reference internal" href="SUEWS_Water.html">6.2.11. SUEWS_Water.txt</a></li>
 <li class="toctree-l3"><a class="reference internal" href="SUEWS_WithinGridWaterDist.html">6.2.12. SUEWS_WithinGridWaterDist.txt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Input_Options.html">6.2.13. Input_Options</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Initial_Conditions/Initial_Conditions.html">6.3. Initial Conditions file</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../met_input.html">6.4. Meteorological Input File</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../CBL_input.html">6.5. CBL input files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ESTM_input.html">6.6. ESTM-related files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ESTM_related_files/ESTM_related_files.html">6.6. ESTM-related files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../SOLWEIG_input.html">6.7. SOLWEIG input files</a></li>
 </ul>
 </li>
@@ -195,1011 +196,156 @@
            <div itemprop="articleBody">
             
   <div class="section" id="suews-snow-txt">
-<h1>6.2.8. SUEWS_Snow.txt<a class="headerlink" href="#suews-snow-txt" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1>6.2.8. SUEWS_Snow.txt<a class="headerlink" href="#suews-snow-txt" title="Permalink to this headline">¶</a></h1>
 <p>SUEWS_Snow.txt specifies the characteristics for snow surfaces when
-SnowUse=1 in <a class="reference external" href="#RunControl.nml">RunControl.nml</a>. If the snow part of
+<a class="reference internal" href="../RunControl/Model_run_options.html#cmdoption-arg-snowuse"><code class="xref any std std-option docutils literal notranslate"><span class="pre">SnowUse=1</span></code></a> in <a class="reference internal" href="../RunControl/RunControl.html#runcontrol-nml"><span class="std std-ref">RunControl.nml</span></a>. If the snow part of
 the model is not run, fill this table with ‘-999’ except for the first
-(Code) column and set SnowUse=0 in <a class="reference external" href="#RunControl.nml">RunControl.nml</a>.
+(Code) column and set <a class="reference internal" href="../RunControl/Model_run_options.html#cmdoption-arg-snowuse"><code class="xref any std std-option docutils literal notranslate"><span class="pre">SnowUse=0</span></code></a> in <a class="reference internal" href="../RunControl/RunControl.html#runcontrol-nml"><span class="std std-ref">RunControl.nml</span></a>.
 For a detailed description of the variables, see Järvi et al.
-(2014) <a class="reference internal" href="../../references.html#leena2014" id="id1">[Leena2014]</a>. <em>In the current release SnowUse should be set to 0.</em></p>
-<table border="1" class="docutils">
+(2014) <a class="reference internal" href="../../references.html#leena2014" id="id2">[Leena2014]</a>.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">In the current release <a class="reference internal" href="../RunControl/Model_run_options.html#cmdoption-arg-snowuse"><code class="xref any std std-option docutils literal notranslate"><span class="pre">SnowUse</span></code></a> should be set to 0.</p>
+</div>
+<table border="1" class="colwidths-given docutils">
 <colgroup>
-<col width="9%" />
-<col width="9%" />
-<col width="16%" />
-<col width="16%" />
-<col width="16%" />
-<col width="16%" />
-<col width="16%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="85%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">No.</th>
+<th class="head">Column Name</th>
 <th class="head">Use</th>
-<th class="head">Column
-name</th>
-<th class="head">Example</th>
-<th class="head">Descrip
-tion</th>
-<th class="head">&#160;</th>
-<th class="head">&#160;</th>
+<th class="head">Description</th>
 </tr>
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td>1</td>
-<td>L</td>
-<td>Code</td>
-<td>331</td>
-<td>Code
-linking
-to
-[[#SUEW
-S_SiteS
-elect.t
-xt</td>
-<td>SUEWS_S
-iteSele
-ct.txt]
-]
-for
-snow
-surface
-s
-(SnowCo
-de).
-Value
-of
-integer
-is
-arbitra
-ry
-but
-must
-match
-code
-specifi
-ed
-in
-SUEWS_S
-iteSele
-ct.txt.</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Code</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code linking to SUEWS_SiteSelect.txt for snow surfaces (SnowCode). Value of integer is arbitrary but must match code specified in SUEWS_SiteSelect.txt.</td>
 </tr>
 <tr class="row-odd"><td>2</td>
-<td>MU</td>
-<td>RadMelt
-Factor</td>
-<td>0.0016</td>
-<td>Hourly
-radiati
-on
-melt
-factor
-of snow
-[mm
-W:sup
-:<cite>-1</cite>
-h:sup
-:<cite>-1</cite>]</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-radmeltfactor"><code class="xref any std std-option docutils literal notranslate"><span class="pre">RadMeltFactor</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Hourly radiation melt factor of snow [mm W -1 h -1 ]</td>
 </tr>
 <tr class="row-even"><td>3</td>
-<td>MU</td>
-<td>TempMel
-tFactor</td>
-<td>0.07</td>
-<td>Hourly
-tempera
-ture
-melt
-factor
-of snow
-[mm
-°C:su
-p:<cite>-1</cite>
-h:sup
-:<cite>-1</cite>]
-(In
-previou
-s
-model
-version
-,
-this
-paramet
-er
-was
-0.12)</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-tempmeltfactor"><code class="xref any std std-option docutils literal notranslate"><span class="pre">TempMeltFactor</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Hourly temperature melt factor of snow [mm °C -1 h -1 ] (In previous model version, this parameter was 0.12)</td>
 </tr>
 <tr class="row-odd"><td>4</td>
-<td>MU</td>
-<td>AlbedoM
-in</td>
-<td>0-1</td>
-<td>Minimum
-snow
-albedo
-[-]
-+—+–
--+
-+===+
-+—+–
--+
-+—+–
--+</td>
-<td>E
-x
-a
-m
-p
-l
-e
-v
-a
-l
-u
-e
-s
-[
--
-]
-0
-.
-1
-8</td>
-<td>J
-ä
-r
-v
-i
-e
-t
-a
-l
-.
-(
-2
-0
-1
-4
-)
-[
-3
-8
-7
-]
-_</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-albedomin"><code class="xref any std std-option docutils literal notranslate"><span class="pre">AlbedoMin</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Example values [-] 0.18 Järvi et al. (2014) [15]</td>
 </tr>
 <tr class="row-even"><td>5</td>
-<td>MU</td>
-<td>AlbedoM
-ax</td>
-<td>0-1</td>
-<td>Maximum
-snow
-albedo
-(fresh
-snow)
-[-]
-+—+–
--+
-+===+
-+—+–
--+
-+—+–
--+</td>
-<td>E
-x
-a
-m
-p
-l
-e
-v
-a
-l
-u
-e
-s
-[
--
-]
-0
-.
-8
-5</td>
-<td>J
-ä
-r
-v
-i
-e
-t
-a
-l
-.
-(
-2
-0
-1
-4
-)
-[
-3
-8
-9
-]
-_</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-albedomax"><code class="xref any std std-option docutils literal notranslate"><span class="pre">AlbedoMax</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Example values [-] 0.85 Järvi et al. (2014) [15]</td>
 </tr>
 <tr class="row-odd"><td>6</td>
-<td>MU</td>
-<td>Emissiv
-ity</td>
-<td>0-1</td>
-<td>Emissiv
-ity
-of this
-surface
-[-]
--  Effe
-ctive
-surf
-ace
-emis
-sivity.
--  View
-fact
-ors
-shou
-ld
-be
-take
-n
-into
-acco
-unt
-+—+–
--+
-+===+
-+—+–
--+
-+—+–
--+</td>
-<td>E
-x
-a
-m
-p
-l
-e
-v
-a
-l
-u
-e
-s
-[
--
-]
-0
-.
-9
-9</td>
-<td>J
-ä
-r
-v
-i
-e
-t
-a
-l
-.
-(
-2
-0
-1
-4
-)
-[
-3
-9
-1
-]
-_</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-emissivity"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Emissivity</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Effective surface emissivity. View factors should be taken into account Example values [-] 0.99 Järvi et al. (2014) [15]</td>
 </tr>
 <tr class="row-even"><td>7</td>
-<td>MD</td>
-<td>tau_a</td>
-<td>0.018</td>
-<td>Time
-constan
-t
-for
-snow
-albedo
-aging
-in cold
-snow
-[-]</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-tau-a"><code class="xref any std std-option docutils literal notranslate"><span class="pre">tau_a</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
+<td>Time constant for snow albedo aging in cold snow [-]</td>
 </tr>
 <tr class="row-odd"><td>8</td>
-<td>MD</td>
-<td>tau_f</td>
-<td>0.11</td>
-<td>Time
-constan
-t
-for
-snow
-albedo
-aging
-in
-melting
-snow
-[-]</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-tau-f"><code class="xref any std std-option docutils literal notranslate"><span class="pre">tau_f</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
+<td>Time constant for snow albedo aging in melting snow [-]</td>
 </tr>
 <tr class="row-even"><td>9</td>
-<td>MD</td>
-<td>Precipi
-LimAlb</td>
-<td>2</td>
-<td>Limit
-for
-hourly
-precipi
-tation
-when
-the
-ground
-is
-fully
-covered
-with
-snow.
-Then
-snow
-albedo
-is
-reset
-to
-AlbedoM
-ax
-[mm]</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-precipilimalb"><code class="xref any std std-option docutils literal notranslate"><span class="pre">PrecipiLimAlb</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
+<td>Limit for hourly precipitation when the ground is fully covered with snow. Then snow albedo is reset to AlbedoMax [mm]</td>
 </tr>
 <tr class="row-odd"><td>10</td>
-<td>MD</td>
-<td>snowDen
-sMin</td>
-<td>100</td>
-<td>Fresh
-snow
-density
-[kg
-m:sup
-:<cite>-3</cite>]</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-snowdensmin"><code class="xref any std std-option docutils literal notranslate"><span class="pre">snowDensMin</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
+<td>Fresh snow density [kg m -3 ]</td>
 </tr>
 <tr class="row-even"><td>11</td>
-<td>MD</td>
-<td>snowDen
-sMax</td>
-<td>400</td>
-<td>Maximum
-snow
-density
-[kg
-m:sup
-:<cite>-3</cite>]</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-snowdensmax"><code class="xref any std std-option docutils literal notranslate"><span class="pre">snowDensMax</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
+<td>Maximum snow density [kg m -3 ]</td>
 </tr>
 <tr class="row-odd"><td>12</td>
-<td>MD</td>
-<td>tau_r</td>
-<td>0.043</td>
-<td>Time
-constan
-t
-for
-snow
-density
-ageing
-[-]</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-tau-r"><code class="xref any std std-option docutils literal notranslate"><span class="pre">tau_r</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
+<td>Time constant for snow density ageing [-]</td>
 </tr>
 <tr class="row-even"><td>13</td>
-<td>MD</td>
-<td>CRWMin</td>
-<td>0.05</td>
-<td>Minimum
-water
-holding
-capacit
-y
-of snow
-[mm]</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-crwmin"><code class="xref any std std-option docutils literal notranslate"><span class="pre">CRWMin</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
+<td>Minimum water holding capacity of snow [mm]</td>
 </tr>
 <tr class="row-odd"><td>14</td>
-<td>MD</td>
-<td>CRWMax</td>
-<td>0.20</td>
-<td>Maximum
-water
-holding
-capacit
-y
-of snow
-[mm]</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-crwmax"><code class="xref any std std-option docutils literal notranslate"><span class="pre">CRWMax</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
+<td>Maximum water holding capacity of snow [mm]</td>
 </tr>
 <tr class="row-even"><td>15</td>
-<td>MD</td>
-<td>PrecipL
-imSnow</td>
-<td>2.2</td>
-<td>Tempera
-ture
-limit
-when
-precipi
-tation
-falls
-as snow
-[°C]
--  Auer
-(197
-4)
-[39
-2]_</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-preciplimsnow"><code class="xref any std std-option docutils literal notranslate"><span class="pre">PrecipLimSnow</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
+<td>Auer (1974) [38]</td>
 </tr>
 <tr class="row-odd"><td>16</td>
-<td>L</td>
-<td>OHMCode
-_Summer
-Wet</td>
-<td>&#160;</td>
-<td>Code
-for OHM
-coeffic
-ients
-to use
-for
-this
-surface
-during
-wet
-conditi
-ons
-in
-summer.
-Links
-to
-[[#SUEW
-S_OHMCo
-efficie
-nts.txt</td>
-<td>SUEWS_O
-HMCoeff
-icients
-.txt]].
-Value
-of
-integer
-is
-arbitra
-ry
-but
-must
-match
-code
-specifi
-ed
-in
-column
-1 of
-SUEWS_O
-HMCoeff
-icients
-.txt.</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ohmcode-summerwet"><code class="xref any std std-option docutils literal notranslate"><span class="pre">OHMCode_SummerWet</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code for OHM coefficients to use for this surface during wet conditions in summer. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt.</td>
 </tr>
 <tr class="row-even"><td>17</td>
-<td>L</td>
-<td>OHMCode
-_Summer
-Dry</td>
-<td>&#160;</td>
-<td>Code
-for OHM
-coeffic
-ients
-to use
-for
-this
-surface
-during
-dry
-conditi
-ons
-in
-summer.
-Links
-to
-[[#SUEW
-S_OHMCo
-efficie
-nts.txt</td>
-<td>SUEWS_O
-HMCoeff
-icients
-.txt]].
-Value
-of
-integer
-is
-arbitra
-ry
-but
-must
-match
-code
-specifi
-ed
-in
-column
-1 of
-SUEWS_O
-HMCoeff
-icients
-.txt.</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ohmcode-summerdry"><code class="xref any std std-option docutils literal notranslate"><span class="pre">OHMCode_SummerDry</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code for OHM coefficients to use for this surface during dry conditions in summer. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt.</td>
 </tr>
 <tr class="row-odd"><td>18</td>
-<td>L</td>
-<td>OHMCode
-_Winter
-Wet</td>
-<td>&#160;</td>
-<td>Code
-for OHM
-coeffic
-ients
-to use
-for
-this
-surface
-during
-wet
-conditi
-ons
-in
-winter.
-Links
-to
-[[#SUEW
-S_OHMCo
-efficie
-nts.txt</td>
-<td>SUEWS_O
-HMCoeff
-icients
-.txt]].
-Value
-of
-integer
-is
-arbitra
-ry
-but
-must
-match
-code
-specifi
-ed
-in
-column
-1 of
-SUEWS_O
-HMCoeff
-icients
-.txt.</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ohmcode-winterwet"><code class="xref any std std-option docutils literal notranslate"><span class="pre">OHMCode_WinterWet</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code for OHM coefficients to use for this surface during wet conditions in winter. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt.</td>
 </tr>
 <tr class="row-even"><td>19</td>
-<td>L</td>
-<td>OHMCode
-_Winter
-Dry</td>
-<td>&#160;</td>
-<td>Code
-for OHM
-coeffic
-ients
-to use
-for
-this
-surface
-during
-dry
-conditi
-ons
-in
-winter.
-Links
-to
-[[#SUEW
-S_OHMCo
-efficie
-nts.txt</td>
-<td>SUEWS_O
-HMCoeff
-icients
-.txt]].
-Value
-of
-integer
-is
-arbitra
-ry
-but
-must
-match
-code
-specifi
-ed
-in
-column
-1 of
-SUEWS_O
-HMCoeff
-icients
-.txt.</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ohmcode-winterdry"><code class="xref any std std-option docutils literal notranslate"><span class="pre">OHMCode_WinterDry</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code for OHM coefficients to use for this surface during dry conditions in winter. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt.</td>
 </tr>
 <tr class="row-odd"><td>20</td>
-<td>MD</td>
-<td>OHMThre
-sh_SW</td>
-<td>10</td>
-<td>Tempera
-ture
-thresho
-ld
-determi
-ning
-whether
-summer/
-winter
-OHM
-coeffic
-ients
-are
-applied
-[deg C]
-If
-5-day
-running
-mean
-air
-tempera
-ture
-is
-greater
-than or
-equal
-to this
-thresho
-ld,
-OHM
-coeffic
-ients
-for
-summert
-ime
-are
-applied
-;
-otherwi
-se
-coeffic
-ients
-for
-wintert
-ime
-are
-applied
-.
-<strong>Not
-actuall
-y
-used
-for
-Snow
-surface
-as
-winter
-wet
-conditi
-ons
-always
-assumed
-.</strong></td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ohmthresh-sw"><code class="xref any std std-option docutils literal notranslate"><span class="pre">OHMThresh_SW</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
+<td>Temperature threshold determining whether summer/winter OHM coefficients are applied [deg C] If 5-day running mean air temperature is greater than or equal to this threshold, OHM coefficients for summertime are applied; otherwise coefficients for wintertime are applied. Not actually used for Snow surface as winter wet conditions always assumed.</td>
 </tr>
 <tr class="row-even"><td>21</td>
-<td>MD</td>
-<td>OHMThre
-sh_WD</td>
-<td>0.9</td>
-<td>Soil
-moistur
-e
-thresho
-ld
-determi
-ning
-whether
-wet/dry
-OHM
-coeffic
-ients
-are
-applied
-[-] If
-soil
-moistur
-e
-(as a
-proport
-ion
-of
-maximum
-soil
-moistur
-e
-capacit
-y)
-exceeds
-this
-thresho
-ld
-for
-bare
-soil
-and
-vegetat
-ed
-surface
-s,
-OHM
-coeffic
-ients
-for wet
-conditi
-ons
-are
-applied
-;
-otherwi
-se
-coeffic
-ients
-for dry
-coeffic
-ients
-are
-applied
-.
-Note
-that
-OHM
-coeffic
-ients
-for wet
-conditi
-ons
-are
-applied
-if the
-surface
-is wet.
-<strong>Not
-actuall
-y
-used
-for
-Snow
-surface
-as
-winter
-wet
-conditi
-ons
-always
-assumed
-.</strong></td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ohmthresh-wd"><code class="xref any std std-option docutils literal notranslate"><span class="pre">OHMThresh_WD</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
+<td>Soil moisture threshold determining whether wet/dry OHM coefficients are applied [-] If soil moisture (as a proportion of maximum soil moisture capacity) exceeds this threshold for bare soil and vegetated surfaces, OHM coefficients for wet conditions are applied; otherwise coefficients for dry coefficients are applied. Note that OHM coefficients for wet conditions are applied if the surface is wet. Not actually used for Snow surface as winter wet conditions always assumed.</td>
 </tr>
-<tr class="row-odd"><td>&#160;</td>
-<td>&#160;</td>
-<td>&#160;</td>
-<td>&#160;</td>
-<td>&#160;</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<tr class="row-odd"><td>22</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-estmcode"><code class="xref any std std-option docutils literal notranslate"><span class="pre">ESTMCode</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>For paved and building surfaces, it is possible to specify multiple codes per grid (3 for paved, 5 for buildings) using SUEWS_SiteSelect.txt . In this case, set ESTM code here to zero.</td>
 </tr>
-<tr class="row-even"><td>22</td>
-<td>L</td>
-<td>ESTMCod
-e</td>
-<td>&#160;</td>
-<td>Code
-for
-ESTM
-coeffic
-ients
-to use
-for
-this
-surface
-.
-Links
-to
-[[#SUEW
-S_ESTMC
-oeffici
-ents.tx
-t</td>
-<td>SUEWS_E
-STMCoef
-ficient
-s.txt]]
-.
-Value
-of
-integer
-is
-arbitra
-ry
-but
-must
-match
-code
-specifi
-ed
-in
-column
-1 of
-SUEWS_E
-STMCoef
-ficient
-s.txt.
-*For
-paved
-and
-buildin
-g
-surface
-s,
-it is
-possibl
-e
-to
-specify
-multipl
-e
-codes
-per
-grid (3
-for
-paved,
-5 for
-buildin
-gs)
-using
-[[#SUEW
-S_SiteS
-elect.t
-xt</td>
-<td>SUEWS_S
-iteSele
-ct.txt]
-].
-In this
-case,
-set
-ESTM
-code
-here to
-zero.</td>
+<tr class="row-even"><td>23</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-anohm-cp"><code class="xref any std std-option docutils literal notranslate"><span class="pre">AnOHM_Cp</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Volumetric heat capacity for this surface to use in AnOHM [J m -3 ]</td>
 </tr>
-<tr class="row-odd"><td>23</td>
-<td>MU</td>
-<td>AnOHM_C
-p</td>
-<td>&#160;</td>
-<td>Volumet
-ric
-heat
-capacit
-y
-for
-this
-surface
-to use
-in
-AnOHM
-[J
-m:sup
-:<cite>-3</cite>]</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<tr class="row-odd"><td>24</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-anohm-kk"><code class="xref any std std-option docutils literal notranslate"><span class="pre">AnOHM_Kk</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Thermal conductivity for this surface to use in AnOHM [W m K -1 ]</td>
 </tr>
-<tr class="row-even"><td>24</td>
-<td>MU</td>
-<td>AnOHM_K
-k</td>
-<td>&#160;</td>
-<td>Thermal
-conduct
-ivity
-for
-this
-surface
-to use
-in
-AnOHM
-[W m
-K:sup
-:<cite>-1</cite>]</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>25</td>
-<td>MU</td>
-<td>AnOHM_C
-h</td>
-<td>&#160;</td>
-<td>Bulk
-transfe
-r
-coeffic
-ient
-for
-this
-surface
-to use
-in
-AnOHM
-[-]</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>&#160;</td>
-<td>&#160;</td>
-<td>&#160;</td>
-<td>&#160;</td>
-<td>&#160;</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<tr class="row-even"><td>25</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-anohm-ch"><code class="xref any std std-option docutils literal notranslate"><span class="pre">AnOHM_Ch</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Bulk transfer coefficient for this surface to use in AnOHM [-]</td>
 </tr>
 </tbody>
 </table>

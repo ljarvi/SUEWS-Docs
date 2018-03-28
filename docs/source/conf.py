@@ -81,7 +81,7 @@ exclude_patterns = []
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
 
-
+default_role = 'any'
 # -- Options for HTML output -------------------------------------------------
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
@@ -127,7 +127,7 @@ htmlhelp_basename = 'SUEWSdoc'
 
 # -- Options for LaTeX output ------------------------------------------------
 # this can be one of ['pdflatex', 'xelatex', 'lualatex', 'platex']
-latex_engine = 'pdflatex'
+latex_engine = 'xelatex'
 latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').
     #

@@ -1,3 +1,5 @@
+.. _SUEWS_OHMCoefficients.txt:
+
 SUEWS_OHMCoefficients.txt
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -37,52 +39,8 @@ for AnOHM.
 
 **Note AnOHM is under development in v2017a and should not be used!**
 
-+-------------+-------------+-------------+-------------+-------------+
-| No.         | Use         | Column name | Example     | Description |
-+=============+=============+=============+=============+=============+
-| 1           | L           | Code        | 331         | Code        |
-|             |             |             |             | linking to  |
-|             |             |             |             | the         |
-|             |             |             |             | OHMCode_Sum |
-|             |             |             |             | merWet,     |
-|             |             |             |             | OHMCode_Sum |
-|             |             |             |             | merDry,     |
-|             |             |             |             | OHMCode_Win |
-|             |             |             |             | terWet      |
-|             |             |             |             | and         |
-|             |             |             |             | OHMCode_Win |
-|             |             |             |             | terDry      |
-|             |             |             |             | columns in  |
-|             |             |             |             | SUEWS_NonVe |
-|             |             |             |             | g.txt,      |
-|             |             |             |             | SUEWS_Veg,t |
-|             |             |             |             | xt,         |
-|             |             |             |             | SUEWS_Water |
-|             |             |             |             | .txt        |
-|             |             |             |             | and         |
-|             |             |             |             | SUEWS_Snow. |
-|             |             |             |             | txt         |
-|             |             |             |             | files.      |
-|             |             |             |             | Value of    |
-|             |             |             |             | integer is  |
-|             |             |             |             | arbitrary   |
-|             |             |             |             | but must    |
-|             |             |             |             | match code  |
-|             |             |             |             | specified   |
-|             |             |             |             | in          |
-|             |             |             |             | SUEWS_SiteS |
-|             |             |             |             | elect.txt.  |
-+-------------+-------------+-------------+-------------+-------------+
-| 2           | MU          | a1          |             | Coefficient |
-|             |             |             |             | for Q\*     |
-|             |             |             |             | term [-]    |
-+-------------+-------------+-------------+-------------+-------------+
-| 3           | MU          | a2          |             | Coefficient |
-|             |             |             |             | for dQ*/dt  |
-|             |             |             |             | term [h]    |
-+-------------+-------------+-------------+-------------+-------------+
-| 4           | MU          | a3          |             | Constant    |
-|             |             |             |             | term [W     |
-|             |             |             |             | m\ :sup:`-2 |
-|             |             |             |             | `]          |
-+-------------+-------------+-------------+-------------+-------------+
+
+.. csv-table::
+  :file: SUEWS_OHMCoefficients.csv
+  :header-rows: 1
+  :widths: 5 5 5 85

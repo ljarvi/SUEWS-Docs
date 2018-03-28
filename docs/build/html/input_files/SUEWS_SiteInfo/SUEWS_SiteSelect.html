@@ -114,12 +114,13 @@
 <li class="toctree-l3"><a class="reference internal" href="SUEWS_Veg.html">6.2.10. SUEWS_Veg.txt</a></li>
 <li class="toctree-l3"><a class="reference internal" href="SUEWS_Water.html">6.2.11. SUEWS_Water.txt</a></li>
 <li class="toctree-l3"><a class="reference internal" href="SUEWS_WithinGridWaterDist.html">6.2.12. SUEWS_WithinGridWaterDist.txt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Input_Options.html">6.2.13. Input_Options</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Initial_Conditions/Initial_Conditions.html">6.3. Initial Conditions file</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../met_input.html">6.4. Meteorological Input File</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../CBL_input.html">6.5. CBL input files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ESTM_input.html">6.6. ESTM-related files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ESTM_related_files/ESTM_related_files.html">6.6. ESTM-related files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../SOLWEIG_input.html">6.7. SOLWEIG input files</a></li>
 </ul>
 </li>
@@ -199,4035 +200,548 @@
            <div itemprop="articleBody">
             
   <div class="section" id="suews-siteselect-txt">
-<h1>6.2.7. SUEWS_SiteSelect.txt<a class="headerlink" href="#suews-siteselect-txt" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1>6.2.7. SUEWS_SiteSelect.txt<a class="headerlink" href="#suews-siteselect-txt" title="Permalink to this headline">¶</a></h1>
 <p>For each year and each grid, site specific surface cover information and
-other input parameters is provided to SUEWS by <strong>SUEWS_SiteSelect.txt</strong>.
+other input parameters is provided to SUEWS by <a class="reference internal" href="#suews-siteselect-txt"><span class="std std-ref">SUEWS_SiteSelect.txt</span></a>.
 The model currently requires a new row for each year of the model run.
 All rows in this file (before the two rows of ‘-9’) will be read by the
 model and run. In this file the <strong>column order is important</strong>. ‘!’ can
 be used to indicate comments in the file. Comments are not read by the
 programme so they can be used by the user to provide notes for their
 interpretation of the contents. This is strongly recommended.</p>
-<table border="1" class="docutils">
+<table border="1" class="colwidths-given docutils">
 <colgroup>
-<col width="9%" />
-<col width="13%" />
-<col width="16%" />
-<col width="16%" />
-<col width="20%" />
-<col width="16%" />
-<col width="9%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="85%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">No.</th>
+<th class="head">Column Name</th>
 <th class="head">Use</th>
-<th class="head">Column
-name</th>
-<th class="head">Example</th>
-<th class="head">Descrip
-tion</th>
-<th class="head">&#160;</th>
-<th class="head">&#160;</th>
+<th class="head">Description</th>
 </tr>
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td>1</td>
-<td>MU</td>
-<td>Grid</td>
-<td>1</td>
-<td>Grid
-number
-(any
-integer
-0-2,147
-,483,64
-7
-(larges
-t
-4-byte
-integer
-))
-identif
-ying
-the
-current
-grid.
--  Grid
-numb
-ers
-do
-not
-need
-to
-be
-cons
-ecutive
-and
-do
-not
-need
-to
-star
-t
-at a
-part
-icular
-valu
-e.
--  Each
-grid
-must
-have
-a
-uniq
-ue
-grid
-numb
-er.
--  All
-grid
-s
-must
-be
-pres
-ent
-for
-all
-year
-s.
-*These
-grid
-numbers
-are
-referre
-d
-to in
-GridCon
-nection
-s
-(column
-s
-64-79)
-(‘’‘N.B
-.
-GridCon
-nection
-s
-not
-current
-ly
-impleme
-nted</td>
-<td>‘’‘)
-The two
-last
-lines
-in this
-column
-must
-read
-‘-9’ to
-indicat
-e
-that
-the
-last
-lines
-have
-been
-reached
-(using
-two
-lines
-allows
-differe
-nces
-in
-compute
-r
-file
-savings
-to be
-dealt
-with).</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-grid"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Grid</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Grid numbers do not need to be consecutive and do not need to start at a particular value. Each grid must have a unique grid number. All grids must be present for all years. These grid numbers are referred to in GridConnections (columns 64-79) ( N.B. GridConnections not currently implemented! )</td>
 </tr>
 <tr class="row-odd"><td>2</td>
-<td>MU</td>
-<td>Year</td>
-<td>2011</td>
-<td>Year
-[YYYY]
-Years
-must be
-continu
-ous.
-If
-running
-multipl
-e
-years,
-ensure
-the
-rows in
-SiteSel
-ect.txt
-are
-arrange
-d
-so that
-all
-grids
-for a
-particu
-lar
-year
-appear
-on
-consecu
-tive
-lines
-(rather
-than
-groupin
-g
-all
-years
-togethe
-r
-for a
-particu
-lar
-grid).</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-year"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Year</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Year [YYYY] Years must be continuous. If running multiple years, ensure the rows in SiteSelect.txt are arranged so that all grids for a particular year appear on consecutive lines (rather than grouping all years together for a particular grid).</td>
 </tr>
 <tr class="row-even"><td>3</td>
-<td>MU</td>
-<td>StartDL
-S</td>
-<td>86</td>
-<td>Start
-of the
-day
-light
-savings
-[DOY]
-See
-section
-on
-[[#Day
-Light
-Savings</td>
-<td>Day
-Light
-Savings
-]].</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-startdls"><code class="xref any std std-option docutils literal notranslate"><span class="pre">StartDLS</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Start of the day light savings [DOY] See section on Day Light Savings .</td>
 </tr>
 <tr class="row-odd"><td>4</td>
-<td>MU</td>
-<td>EndDLS</td>
-<td>303</td>
-<td>End of
-the day
-light
-savings
-[DOY]
-See
-section
-on
-[[#Day
-Light
-Savings</td>
-<td>Day
-Light
-Savings
-]].</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-enddls"><code class="xref any std std-option docutils literal notranslate"><span class="pre">EndDLS</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>End of the day light savings [DOY] See section on Day Light Savings .</td>
 </tr>
 <tr class="row-even"><td>5</td>
-<td>MU</td>
-<td>lat</td>
-<td>60.00</td>
-<td>Latitud
-e
-for the
-centre
-of the
-grid
-[decima
-l
-degrees
-]
--  Use
-coor
-dinate
-syst
-em
-WGS8
-4.
--  Posi
-tive
-valu
-es
-are
-nort
-hern
-hemi
-sphere
-(neg
-ative
-sout
-hern
-hemi
-sphere)
-.
--  Used
-in
-radi
-ation
-calc
-ulation
-s.
--  Note
-,
-if
-the
-tota
-l
-mode
-lled
-area
-is
-smal
-l
-the
-lati
-tude
-and
-long
-itude
-coul
-d
-be
-the
-same
-for
-each
-grid
-but
-smal
-l
-diff
-erences
-in
-radi
-ation
-will
-not
-be
-dete
-rmined.
-If
-you
-are
-defi
-ning
-the
-lati
-tude
-and
-long
-itude
-diff
-erently
-betw
-een
-grid
-s
-make
-cert
-ain
-that
-you
-prov
-ide
-enou
-gh
-deci
-mal
-plac
-es.</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-lat"><code class="xref any std std-option docutils literal notranslate"><span class="pre">lat</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Use coordinate system WGS84. Positive values are northern hemisphere (negative southern hemisphere). Used in radiation calculations. Note, if the total modelled area is small the latitude and longitude could be the same for each grid but small differences in radiation will not be determined. If you are defining the latitude and longitude differently between grids make certain that you provide enough decimal places.</td>
 </tr>
 <tr class="row-odd"><td>6</td>
-<td>MU</td>
-<td>lng</td>
-<td>-18.20</td>
-<td>Longitu
-de
-for the
-centre
-of the
-grid
-[decima
-l
-degrees
-]
--  Use
-coor
-dinate
-syst
-em
-WGS8
-4.
--  For
-comp
-atibili
-ty
-with
-GIS,
-nega
-tive
-valu
-es
-are
-to
-the
-west
-,
-posi
-tive
-valu
-es
-are
-to
-the
-east
-(e.g
-.
-Vanc
-ouver
-=
--123
-.12;
-Shan
-ghai
-=
-121.
-47)
-<strong>No
-te
-this
-is a
-chan
-ge
-of
-sign
-conv
-ention
-betw
-een
-v201
-6a
-and
-v201
-7a</strong>
--  See
-lati
-tude
-for
-more
-deta
-ils.</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-lng"><code class="xref any std std-option docutils literal notranslate"><span class="pre">lng</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Use coordinate system WGS84. For compatibility with GIS, negative values are to the west, positive values are to the east (e.g. Vancouver = -123.12; Shanghai = 121.47) Note this is a change of sign convention between v2016a and v2017a See latitude for more details.</td>
 </tr>
 <tr class="row-even"><td>7</td>
-<td>MU</td>
-<td>Timezon
-e</td>
-<td>0</td>
-<td>Time
-zone
-[h] for
-site
-relativ
-e
-to UTC
-(east
-is
-positiv
-e).
-This
-should
-be set
-accordi
-ng
-to the
-times
-given
-in the
-meteoro
-logical
-forcing
-file(s)
-.</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-timezone"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Timezone</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Time zone [h] for site relative to UTC (east is positive). This should be set according to the times given in the meteorological forcing file(s).</td>
 </tr>
 <tr class="row-odd"><td>8</td>
-<td>MU</td>
-<td>Surface
-Area</td>
-<td>75.3</td>
-<td>Area of
-the
-grid
-[ha].</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-surfacearea"><code class="xref any std std-option docutils literal notranslate"><span class="pre">SurfaceArea</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Area of the grid [ha].</td>
 </tr>
 <tr class="row-even"><td>9</td>
-<td>MU</td>
-<td>Alt</td>
-<td>25.0</td>
-<td>Altitud
-e
-[m]
-Mean
-topogra
-phic
-height
-above
-sea-lev
-el.
--  Used
-for
-both
-the
-radi
-ation
-and
-wate
-r
-flow
-betw
-een
-grid
-s.
-(<strong>N
-.B.
-wate
-r
-flow
-betw
-een
-grid
-s
-not
-curr
-ently
-impl
-emented
-.</strong>)</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-alt"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Alt</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Used for both the radiation and water flow between grids. ( N.B. water flow between grids not currently implemented. )</td>
 </tr>
 <tr class="row-odd"><td>10</td>
-<td>MU</td>
-<td>z</td>
-<td>20.5</td>
-<td>Height
-[m] of
-the
-meteoro
-logical
-forcing
-data.
-The
-most
-importa
-nt
-height
-is that
-of the
-wind
-speed
-measure
-ment.
--  z
-must
-be
-grea
-ter
-than
-the
-disp
-lacemen
-t
-heig
-ht.
--  Forc
-ing
-data
-shou
-ld
-be
-repr
-esentat
-ive
-of
-the
-loca
-l-scale
-,
-i.e.
-abov
-e
-the
-heig
-ht
-of
-the
-roug
-hness
-elem
-ents.</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-z"><code class="xref any std std-option docutils literal notranslate"><span class="pre">z</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>z must be greater than the displacement height. Forcing data should be representative of the local-scale, i.e. above the height of the roughness elements.</td>
 </tr>
 <tr class="row-even"><td>11</td>
-<td>MD</td>
-<td>id</td>
-<td>1</td>
-<td>Day
-[DOY]
-Not
-used:
-set to
-1 in
-this
-version
-.</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-id"><code class="xref any std std-option docutils literal notranslate"><span class="pre">id</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
+<td>Day [DOY] Not used: set to 1 in this version.</td>
 </tr>
 <tr class="row-odd"><td>12</td>
-<td>MD</td>
-<td>ih</td>
-<td>0</td>
-<td>Hour
-[H] Not
-used:
-set to
-0 in
-this
-version
-.</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ih"><code class="xref any std std-option docutils literal notranslate"><span class="pre">ih</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
+<td>Hour [H] Not used: set to 0 in this version.</td>
 </tr>
 <tr class="row-even"><td>13</td>
-<td>MD</td>
-<td>imin</td>
-<td>0</td>
-<td>Minute
-[M] Not
-used:
-set to
-0 in
-this
-version
-.</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-imin"><code class="xref any std std-option docutils literal notranslate"><span class="pre">imin</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
+<td>Minute [M] Not used: set to 0 in this version.</td>
 </tr>
 <tr class="row-odd"><td>14</td>
-<td>MU</td>
-<td>Fr_Pave
-d</td>
-<td>0.20</td>
-<td>Surface
-cover
-fractio
-n
-of
-paved
-surface
-s
-[-]
-Areal
-cover
-fractio
-n
-of
-paved
-surface
-s
-(roads,
-pavemen
-ts,
-car
-parks).
-e.g.
-20% of
-the
-grid is
-covered
-with
-paved
-surface
-s.
--  <strong>Co
-lumns
-14
-to
-20
-must
-sum
-to
-1</strong>.</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-paved"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fr_Paved</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Columns 14 to 20 must sum to 1 .</td>
 </tr>
 <tr class="row-even"><td>15</td>
-<td>MU</td>
-<td>Fr_Bldg
-s</td>
-<td>0.20</td>
-<td>Surface
-cover
-fractio
-n
-of
-buildin
-gs
-[-]</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-bldgs"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fr_Bldgs</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Surface cover fraction of buildings [-]</td>
 </tr>
 <tr class="row-odd"><td>16</td>
-<td>MU</td>
-<td>Fr_EveT
-r</td>
-<td>0.10</td>
-<td>Surface
-cover
-fractio
-n
-of
-evergre
-en
-trees
-and
-shrubs
-[-]</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-evetr"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fr_EveTr</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Surface cover fraction of evergreen trees and shrubs [-]</td>
 </tr>
 <tr class="row-even"><td>17</td>
-<td>MU</td>
-<td>Fr_DecT
-r</td>
-<td>0.10</td>
-<td>Surface
-cover
-fractio
-n
-of
-deciduo
-us
-trees
-and
-shrubs
-[-]</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-dectr"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fr_DecTr</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Surface cover fraction of deciduous trees and shrubs [-]</td>
 </tr>
 <tr class="row-odd"><td>18</td>
-<td>MU</td>
-<td>Fr_Gras
-s</td>
-<td>0.30</td>
-<td>Surface
-cover
-fractio
-n
-of
-grass
-[-]</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-grass"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fr_Grass</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Surface cover fraction of grass [-]</td>
 </tr>
 <tr class="row-even"><td>19</td>
-<td>MU</td>
-<td>Fr_Bsoi
-l</td>
-<td>0.05</td>
-<td>Surface
-cover
-fractio
-n
-of bare
-soil or
-unmanag
-ed
-land
-[-]</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-bsoil"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fr_Bsoil</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Surface cover fraction of bare soil or unmanaged land [-]</td>
 </tr>
 <tr class="row-odd"><td>20</td>
-<td>MU</td>
-<td>Fr_Wate
-r</td>
-<td>0.05</td>
-<td>Surface
-cover
-fractio
-n
-of open
-water
-[-]
-(e.g.
-river,
-lakes,
-ponds,
-swimmin
-g
-pools)</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-water"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fr_Water</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Surface cover fraction of open water [-] (e.g. river, lakes, ponds, swimming pools)</td>
 </tr>
 <tr class="row-even"><td>21</td>
-<td>MU</td>
-<td>IrrFr_E
-veTr</td>
-<td>0.50</td>
-<td>Fractio
-n
-of
-evergre
-en
-trees
-that
-are
-irrigat
-ed
-[-]
-e.g.
-50% of
-the
-evergre
-en
-trees/s
-hrubs
-are
-irrigat
-ed</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-irrfr-evetr"><code class="xref any std std-option docutils literal notranslate"><span class="pre">IrrFr_EveTr</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Fraction of evergreen trees that are irrigated [-] e.g. 50% of the evergreen trees/shrubs are irrigated</td>
 </tr>
 <tr class="row-odd"><td>22</td>
-<td>MU</td>
-<td>IrrFr_D
-ecTr</td>
-<td>0.20</td>
-<td>Fractio
-n
-of
-deciduo
-us
-trees
-that
-are
-irrigat
-ed
-[-]</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-irrfr-dectr"><code class="xref any std std-option docutils literal notranslate"><span class="pre">IrrFr_DecTr</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Fraction of deciduous trees that are irrigated [-]</td>
 </tr>
 <tr class="row-even"><td>23</td>
-<td>MU</td>
-<td>IrrFr_G
-rass</td>
-<td>0.70</td>
-<td>Fractio
-n
-of
-grass
-that is
-irrigat
-ed
-[-]</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-irrfr-grass"><code class="xref any std std-option docutils literal notranslate"><span class="pre">IrrFr_Grass</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Fraction of grass that is irrigated [-]</td>
 </tr>
 <tr class="row-odd"><td>24</td>
-<td>MU</td>
-<td>H_Bldgs</td>
-<td>10</td>
-<td>Mean
-buildin
-g
-height
-[m]</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-h-bldgs"><code class="xref any std std-option docutils literal notranslate"><span class="pre">H_Bldgs</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Mean building height [m]</td>
 </tr>
 <tr class="row-even"><td>25</td>
-<td>MU</td>
-<td>H_EveTr</td>
-<td>15</td>
-<td>Mean
-height
-of
-evergre
-en
-trees
-[m]</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-h-evetr"><code class="xref any std std-option docutils literal notranslate"><span class="pre">H_EveTr</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Mean height of evergreen trees [m]</td>
 </tr>
 <tr class="row-odd"><td>26</td>
-<td>MU</td>
-<td>H_DecTr</td>
-<td>15</td>
-<td>Mean
-height
-of
-deciduo
-us
-trees
-[m]</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-h-dectr"><code class="xref any std std-option docutils literal notranslate"><span class="pre">H_DecTr</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Mean height of deciduous trees [m]</td>
 </tr>
 <tr class="row-even"><td>27</td>
-<td>O</td>
-<td>z0</td>
-<td>0.6</td>
-<td>Roughne
-ss
-length
-for
-momentu
-m
-[m]
-Value
-supplie
-d
-here is
-used if
-RoughLe
-nMomMet
-hod
-= 1 in
-[[#RunC
-ontrol.
-nml</td>
-<td>RunCont
-rol.nml
-]];
-otherwi
-se
-set to
-‘-999’
-and a
-value
-will be
-calcula
-ted
-by the
-model
-(RoughL
-enMomMe
-thod
-= 2,
-3).</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-z0"><code class="xref any std std-option docutils literal notranslate"><span class="pre">z0</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
+<td>Roughness length for momentum [m] Value supplied here is used if RoughLenMomMethod = 1 in RunControl.nml ; otherwise set to ‘-999’ and a value will be calculated by the model (RoughLenMomMethod = 2, 3).</td>
 </tr>
 <tr class="row-odd"><td>28</td>
-<td>O</td>
-<td>zd</td>
-<td>1.5</td>
-<td>Zero-pl
-ane
-displac
-ement
-[m]
-Value
-supplie
-d
-here is
-used if
-RoughLe
-nMomMet
-hod
-= 1 in
-[[#RunC
-ontrol.
-nml</td>
-<td>RunCont
-rol.nml
-]];
-otherwi
-se
-set to
-‘-999’
-and a
-value
-will be
-calcula
-ted
-by the
-model
-(RoughL
-enMomMe
-thod
-= 2,
-3).</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-zd"><code class="xref any std std-option docutils literal notranslate"><span class="pre">zd</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
+<td>Zero-plane displacement [m] Value supplied here is used if RoughLenMomMethod = 1 in RunControl.nml ; otherwise set to ‘-999’ and a value will be calculated by the model (RoughLenMomMethod = 2, 3).</td>
 </tr>
 <tr class="row-even"><td>29</td>
-<td>O</td>
-<td>FAI_Bld
-gs</td>
-<td>0.1</td>
-<td>Frontal
-area
-index
-for
-buildin
-gs
-[-]
-Require
-d
-if
-RoughLe
-nMomMet
-hod
-= 3 in
-[[#RunC
-ontrol.
-nml</td>
-<td>RunCont
-rol.nml
-]].</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fai-bldgs"><code class="xref any std std-option docutils literal notranslate"><span class="pre">FAI_Bldgs</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
+<td>Frontal area index for buildings [-] Required if RoughLenMomMethod = 3 in RunControl.nml .</td>
 </tr>
 <tr class="row-odd"><td>30</td>
-<td>O</td>
-<td>FAI_Eve
-Tr</td>
-<td>0.2</td>
-<td>Frontal
-area
-index
-for
-evergre
-en
-trees
-[-]
-Require
-d
-if
-RoughLe
-nMomMet
-hod
-= 3 in
-[[#RunC
-ontrol.
-nml</td>
-<td>RunCont
-rol.nml
-]].</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fai-evetr"><code class="xref any std std-option docutils literal notranslate"><span class="pre">FAI_EveTr</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
+<td>Frontal area index for evergreen trees [-] Required if RoughLenMomMethod = 3 in RunControl.nml .</td>
 </tr>
 <tr class="row-even"><td>31</td>
-<td>O</td>
-<td>FAI_Dec
-Tr</td>
-<td>0.2</td>
-<td>Frontal
-area
-index
-for
-deciduo
-us
-trees
-[-]
-Require
-d
-if
-RoughLe
-nMomMet
-hod
-= 3 in
-[[#RunC
-ontrol.
-nml</td>
-<td>RunCont
-rol.nml
-]].</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fai-dectr"><code class="xref any std std-option docutils literal notranslate"><span class="pre">FAI_DecTr</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
+<td>Frontal area index for deciduous trees [-] Required if RoughLenMomMethod = 3 in RunControl.nml .</td>
 </tr>
 <tr class="row-odd"><td>32</td>
-<td>O</td>
-<td>PopDens
-Day</td>
-<td>30.7</td>
-<td>Daytime
-populat
-ion
-density
-(i.e.
-workers
-,
-tourist
-s)
-[people
-ha:su
-p:<cite>-1</cite>]
-Populat
-ion
-density
-is
-require
-d
-if
-Anthrop
-HeatMet
-hod
-= 2 in
-[[#RunC
-ontrol.
-nml</td>
-<td>RunCont
-rol.nml
-]].
-The
-model
-will
-use the
-average
-of
-daytime
-and
-night-t
-ime
-populat
-ion
-densiti
-es,
-unless
-only
-one is
-provide
-d.
-If
-daytime
-populat
-ion
-density
-is
-unknown
-,
-set to
--999.</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-popdensday"><code class="xref any std std-option docutils literal notranslate"><span class="pre">PopDensDay</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
+<td>Daytime population density (i.e. workers, tourists) [people ha -1 ] Population density is required if AnthropHeatMethod = 2 in RunControl.nml . The model will use the average of daytime and night-time population densities, unless only one is provided. If daytime population density is unknown, set to -999.</td>
 </tr>
 <tr class="row-even"><td>33</td>
-<td>O</td>
-<td>PopDens
-Night</td>
-<td>10.2</td>
-<td>Night-t
-ime
-populat
-ion
-density
-(i.e.
-residen
-ts)
-[people
-ha:su
-p:<cite>-1</cite>]
-Populat
-ion
-density
-is
-require
-d
-if
-Anthrop
-HeatMet
-hod
-= 2 in
-[[#RunC
-ontrol.
-nml</td>
-<td>RunCont
-rol.nml
-]].
-The
-model
-will
-use the
-average
-of
-daytime
-and
-night-t
-ime
-populat
-ion
-densiti
-es,
-unless
-only
-one is
-provide
-d.
-If
-night-t
-ime
-populat
-ion
-density
-is
-unknown
-,
-set to
--999.</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-popdensnight"><code class="xref any std std-option docutils literal notranslate"><span class="pre">PopDensNight</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
+<td>Night-time population density (i.e. residents) [people ha -1 ] Population density is required if AnthropHeatMethod = 2 in RunControl.nml . The model will use the average of daytime and night-time population densities, unless only one is provided. If night-time population density is unknown, set to -999.</td>
 </tr>
 <tr class="row-odd"><td>34</td>
-<td>O</td>
-<td>Traffic
-Rate</td>
-<td>&#160;</td>
-<td>Traffic
-rate
-[veh km
-m-2
-s-1]
-Can be
-used
-for CO2
-flux
-calcula
-tion.
-<strong>Do
-not use
-in
-v2017a
-- set
-to
--999</strong></td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-trafficrate"><code class="xref any std std-option docutils literal notranslate"><span class="pre">TrafficRate</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
+<td>Traffic rate [veh km m-2 s-1] Can be used for CO2 flux calculation. Do not use in v2017a - set to -999</td>
 </tr>
 <tr class="row-even"><td>35</td>
-<td>O</td>
-<td>BuildEn
-ergyUse</td>
-<td>&#160;</td>
-<td>Buildin
-g
-energy
-use [W
-m-2]
-Can be
-used
-for CO2
-flux
-calcula
-tion.
-<strong>Do
-not use
-in
-v2017a
-- set
-to
--999</strong></td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-buildenergyuse"><code class="xref any std std-option docutils literal notranslate"><span class="pre">BuildEnergyUse</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
+<td>Building energy use [W m-2] Can be used for CO2 flux calculation. Do not use in v2017a - set to -999</td>
 </tr>
 <tr class="row-odd"><td>36</td>
-<td>L</td>
-<td>Code_Pa
-ved</td>
-<td>331</td>
-<td>Code
-for
-Paved
-surface
-charact
-eristic
-s
-Provide
-s
-the
-link to
-column
-1 of
-SUEWS_N
-onVeg.t
-xt,
-which
-contain
-s
-the
-attribu
-tes
-describ
-ing
-paved
-areas
-in this
-grid
-for
-this
-year.
-Value
-of
-integer
-is
-arbitra
-ry
-but
-must
-match
-code
-specifi
-ed
-in
-column
-1 of
-SUEWS_N
-onVeg.t
-xt.
-e.g.
-331
-means
-use the
-charact
-eristic
-s
-specifi
-ed
-in the
-row of
-input
-file
-SUEWS_N
-onVeg.t
-xt
-which
-has 331
-in
-column
-1
-(Code).</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-paved"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Code_Paved</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code for Paved surface characteristics Provides the link to column 1 of SUEWS_NonVeg.txt, which contains the attributes describing paved areas in this grid for this year. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_NonVeg.txt. e.g. 331 means use the characteristics specified in the row of input file SUEWS_NonVeg.txt which has 331 in column 1 (Code).</td>
 </tr>
 <tr class="row-even"><td>37</td>
-<td>L</td>
-<td>Code_Bl
-dgs</td>
-<td>332</td>
-<td>Code
-for
-Bldgs
-surface
-charact
-eristic
-s
-Provide
-s
-the
-link to
-column
-1 of
-SUEWS_N
-onVeg.t
-xt,
-which
-contain
-s
-the
-attribu
-tes
-describ
-ing
-buildin
-gs
-in this
-grid
-for
-this
-year.
-Value
-of
-integer
-is
-arbitra
-ry
-but
-must
-match
-code
-specifi
-ed
-in
-column
-1 of
-SUEWS_N
-onVeg.t
-xt.</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-bldgs"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Code_Bldgs</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code for Bldgs surface characteristics Provides the link to column 1 of SUEWS_NonVeg.txt, which contains the attributes describing buildings in this grid for this year. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_NonVeg.txt.</td>
 </tr>
 <tr class="row-odd"><td>38</td>
-<td>L</td>
-<td>Code_Ev
-eTr</td>
-<td>331</td>
-<td>Code
-for
-EveTr
-surface
-charact
-eristic
-s
-Provide
-s
-the
-link to
-column
-1 of
-SUEWS_V
-eg.txt,
-which
-contain
-s
-the
-attribu
-tes
-describ
-ing
-evergre
-en
-trees
-and
-shrubs
-in this
-grid
-for
-this
-year.
-Value
-of
-integer
-is
-arbitra
-ry
-but
-must
-match
-code
-specifi
-ed
-in
-column
-1 of
-SUEWS_V
-eg.txt.</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-evetr"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Code_EveTr</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code for EveTr surface characteristics Provides the link to column 1 of SUEWS_Veg.txt, which contains the attributes describing evergreen trees and shrubs in this grid for this year. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Veg.txt.</td>
 </tr>
 <tr class="row-even"><td>39</td>
-<td>L</td>
-<td>Code_De
-cTr</td>
-<td>332</td>
-<td>Code
-for
-DecTr
-surface
-charact
-eristic
-s
-Provide
-s
-the
-link to
-column
-1 of
-SUEWS_V
-eg.txt,
-which
-contain
-s
-the
-attribu
-tes
-describ
-ing
-deciduo
-us
-trees
-and
-shrubs
-in this
-grid
-for
-this
-year.
-Value
-of
-integer
-is
-arbitra
-ry
-but
-must
-match
-code
-specifi
-ed
-in
-column
-1 of
-SUEWS_V
-eg.txt.</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-dectr"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Code_DecTr</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code for DecTr surface characteristics Provides the link to column 1 of SUEWS_Veg.txt, which contains the attributes describing deciduous trees and shrubs in this grid for this year. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Veg.txt.</td>
 </tr>
 <tr class="row-odd"><td>40</td>
-<td>L</td>
-<td>Code_Gr
-ass</td>
-<td>333</td>
-<td>Code
-for
-Grass
-surface
-charact
-eristic
-s
-Provide
-s
-the
-link to
-column
-1 of
-SUEWS_V
-eg.txt,
-which
-contain
-s
-the
-attribu
-tes
-describ
-ing
-grass
-surface
-s
-in this
-grid
-for
-this
-year.
-Value
-of
-integer
-is
-arbitra
-ry
-but
-must
-match
-code
-specifi
-ed
-in
-column
-1 of
-SUEWS_V
-eg.txt.</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-grass"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Code_Grass</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code for Grass surface characteristics Provides the link to column 1 of SUEWS_Veg.txt, which contains the attributes describing grass surfaces in this grid for this year. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Veg.txt.</td>
 </tr>
 <tr class="row-even"><td>41</td>
-<td>L</td>
-<td>Code_Bs
-oil</td>
-<td>333</td>
-<td>Code
-for
-BSoil
-surface
-charact
-eristic
-s
-Provide
-s
-the
-link to
-column
-1 of
-SUEWS_N
-onVeg.t
-xt,
-which
-contain
-s
-the
-attribu
-tes
-describ
-ing
-bare
-soil in
-this
-grid
-for
-this
-year.
-Value
-of
-integer
-is
-arbitra
-ry
-but
-must
-match
-code
-specifi
-ed
-in
-column
-1 of
-SUEWS_N
-onVeg.t
-xt.</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-bsoil"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Code_Bsoil</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code for BSoil surface characteristics Provides the link to column 1 of SUEWS_NonVeg.txt, which contains the attributes describing bare soil in this grid for this year. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_NonVeg.txt.</td>
 </tr>
 <tr class="row-odd"><td>42</td>
-<td>L</td>
-<td>Code_Wa
-ter</td>
-<td>331</td>
-<td>Code
-for
-Water
-surface
-charact
-eristic
-s
-Provide
-s
-the
-link to
-column
-1 of
-SUEWS_W
-ater.tx
-t,
-which
-contain
-s
-the
-attribu
-tes
-describ
-ing
-open
-water
-in this
-grid
-for
-this
-year.
-Value
-of
-integer
-is
-arbitra
-ry
-but
-must
-match
-code
-specifi
-ed
-in
-column
-1 of
-SUEWS_W
-ater.tx
-t.</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-water"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Code_Water</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code for Water surface characteristics Provides the link to column 1 of SUEWS_Water.txt, which contains the attributes describing open water in this grid for this year. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Water.txt.</td>
 </tr>
 <tr class="row-even"><td>43</td>
-<td>MD</td>
-<td>LUMPS_D
-rRate</td>
-<td>0.25</td>
-<td>Drainag
-e
-rate of
-bucket
-for
-LUMPS
-[mm
-h:sup
-:<cite>-1</cite>]
-Used
-for
-LUMPS
-surface
-wetness
-control
-.
-Default
-recomme
-nded
-value
-of 0.25
-mm
-h:sup
-:<cite>-1</cite>
-from
-Loridan
-et al.
-(2011)
-<a class="reference internal" href="../../references.html#l2011" id="id1">[L2011]</a>.</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-lumps-drrate"><code class="xref any std std-option docutils literal notranslate"><span class="pre">LUMPS_DrRate</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
+<td>Drainage rate of bucket for LUMPS [mm h -1 ] Used for LUMPS surface wetness control. Default recommended value of 0.25 mm h -1 from Loridan et al. (2011) [5] .</td>
 </tr>
 <tr class="row-odd"><td>44</td>
-<td>MD</td>
-<td>LUMPS_C
-over</td>
-<td>1</td>
-<td>Limit
-when
-surface
-totally
-covered
-with
-water
-[mm]
-Used
-for
-LUMPS
-surface
-wetness
-control
-.
-Default
-recomme
-nded
-value
-of 1 mm
-from
-Loridan
-et al.
-(2011)
-<a class="reference internal" href="../../references.html#l2011" id="id2">[L2011]</a>.</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-lumps-cover"><code class="xref any std std-option docutils literal notranslate"><span class="pre">LUMPS_Cover</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
+<td>Limit when surface totally covered with water [mm] Used for LUMPS surface wetness control. Default recommended value of 1 mm from Loridan et al. (2011) [5] .</td>
 </tr>
 <tr class="row-even"><td>45</td>
-<td>MD</td>
-<td>LUMPS_M
-axRes</td>
-<td>10</td>
-<td>Maximum
-water
-bucket
-reservo
-ir
-[mm]
-Used
-for
-LUMPS
-surface
-wetness
-control
-.
-Default
-recomme
-nded
-value
-of 10
-mm from
-Loridan
-et al.
-(2011)
-<a class="reference internal" href="../../references.html#l2011" id="id3">[L2011]</a>.</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-lumps-maxres"><code class="xref any std std-option docutils literal notranslate"><span class="pre">LUMPS_MaxRes</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
+<td>Maximum water bucket reservoir [mm] Used for LUMPS surface wetness control. Default recommended value of 10 mm from Loridan et al. (2011) [5] .</td>
 </tr>
 <tr class="row-odd"><td>46</td>
-<td>MD</td>
-<td>NARP_Tr
-ans</td>
-<td>1</td>
-<td>Atmosph
-eric
-transmi
-ssivity
-for
-NARP
-[-]
-Value
-must in
-the
-range
-0-1.
-Default
-recomme
-nded
-value
-of 1.</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-narp-trans"><code class="xref any std std-option docutils literal notranslate"><span class="pre">NARP_Trans</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
+<td>Atmospheric transmissivity for NARP [-] Value must in the range 0-1. Default recommended value of 1.</td>
 </tr>
 <tr class="row-even"><td>47</td>
-<td>L</td>
-<td>CondCod
-e</td>
-<td>33</td>
-<td>Code
-for
-surface
-conduct
-ance
-paramet
-ers
-Provide
-s
-the
-link to
-column
-1 of
-SUEWS_C
-onducta
-nce.txt
-,
-which
-contain
-s
-the
-paramet
-ers
-for the
-Jarvis
-(1976)
-paramet
-erisati
-on
-of
-surface
-conduct
-ance.
-Value
-of
-integer
-is
-arbitra
-ry
-but
-must
-match
-code
-specifi
-ed
-in
-column
-1 of
-SUEWS_C
-onducta
-nce.txt
-.
-e.g. 33
-means
-use the
-charact
-eristic
-s
-specifi
-ed
-in the
-row of
-input
-file
-SUEWS_C
-onducta
-nce.txt
-which
-has 33
-in
-column
-1
-(Code).</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-condcode"><code class="xref any std std-option docutils literal notranslate"><span class="pre">CondCode</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code for surface conductance parameters Provides the link to column 1 of SUEWS_Conductance.txt, which contains the parameters for the Jarvis (1976) parameterisation of surface conductance. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Conductance.txt. e.g. 33 means use the characteristics specified in the row of input file SUEWS_Conductance.txt which has 33 in column 1 (Code).</td>
 </tr>
 <tr class="row-odd"><td>48</td>
-<td>L</td>
-<td>SnowCod
-e</td>
-<td>33</td>
-<td>Code
-for
-snow
-surface
-charact
-eristic
-s
-Provide
-s
-the
-link to
-column
-1 of
-SUEWS_S
-now.txt
-,
-which
-contain
-s
-the
-attribu
-tes
-describ
-ing
-snow
-surface
-s
-in this
-grid
-for
-this
-year.
-Value
-of
-integer
-is
-arbitra
-ry
-but
-must
-match
-code
-specifi
-ed
-in
-column
-1 of
-SUEWS_S
-now.txt
-.</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-snowcode"><code class="xref any std std-option docutils literal notranslate"><span class="pre">SnowCode</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code for snow surface characteristics Provides the link to column 1 of SUEWS_Snow.txt, which contains the attributes describing snow surfaces in this grid for this year. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Snow.txt.</td>
 </tr>
 <tr class="row-even"><td>49</td>
-<td>L</td>
-<td>SnowCle
-aringPr
-ofWD</td>
-<td>1</td>
-<td>Code
-for
-snow
-clearin
-g
-profile
-(weekda
-ys)
-Provide
-s
-the
-link to
-column
-1 of
-SUEWS_P
-rofiles
-.txt.
-Value
-of
-integer
-is
-arbitra
-ry
-but
-must
-match
-code
-specifi
-ed
-in
-column
-1 of
-SUEWS_P
-rofiles
-.txt.
-e.g. 1
-means
-use the
-charact
-eristic
-s
-specifi
-ed
-in the
-row of
-input
-file
-SUEWS_P
-rofiles
-.txt
-which
-has 1
-in
-column
-1
-(Code).</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-snowclearingprofwd"><code class="xref any std std-option docutils literal notranslate"><span class="pre">SnowClearingProfWD</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code for snow clearing profile (weekdays) Provides the link to column 1 of SUEWS_Profiles.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt. e.g. 1 means use the characteristics specified in the row of input file SUEWS_Profiles.txt which has 1 in column 1 (Code).</td>
 </tr>
 <tr class="row-odd"><td>50</td>
-<td>L</td>
-<td>SnowCle
-aringPr
-ofWE</td>
-<td>1</td>
-<td>Code
-for
-snow
-clearin
-g
-profile
-(weeken
-ds)
-Provide
-s
-the
-link to
-column
-1 of
-SUEWS_P
-rofiles
-.txt.
-Value
-of
-integer
-is
-arbitra
-ry
-but
-must
-match
-code
-specifi
-ed
-in
-column
-1 of
-SUEWS_P
-rofiles
-.txt.
-e.g. 1
-means
-use the
-charact
-eristic
-s
-specifi
-ed
-in the
-row of
-input
-file
-SUEWS_P
-rofiles
-.txt
-which
-has 1
-in
-column
-1
-(Code).
-Providi
-ng
-the
-same
-code
-for
-SnowCle
-aringPr
-ofWD
-and
-SnowCle
-aringPr
-ofWE
-would
-link to
-the
-same
-row in
-SUEWS_P
-rofiles
-.txt,
-i.e.
-the
-same
-profile
-would
-be used
-for
-weekday
-s
-and
-weekend
-s.</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-snowclearingprofwe"><code class="xref any std std-option docutils literal notranslate"><span class="pre">SnowClearingProfWE</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code for snow clearing profile (weekends) Provides the link to column 1 of SUEWS_Profiles.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt. e.g. 1 means use the characteristics specified in the row of input file SUEWS_Profiles.txt which has 1 in column 1 (Code). Providing the same code for SnowClearingProfWD and SnowClearingProfWE would link to the same row in SUEWS_Profiles.txt, i.e. the same profile would be used for weekdays and weekends.</td>
 </tr>
 <tr class="row-even"><td>51</td>
-<td>L</td>
-<td>Anthrop
-ogenicC
-ode</td>
-<td>33</td>
-<td>Code
-for
-modelli
-ng
-anthrop
-ogenic
-heat
-flux
-Provide
-s
-the
-link to
-column
-1 of
-SUEWS_A
-nthropo
-genicHe
-at.txt,
-which
-contain
-s
-the
-model
-coeffic
-ients
-for
-estimat
-ion
-of the
-anthrop
-ogenic
-heat
-flux
-(used
-if
-Anthrop
-HeatCho
-ice
-= 1, 2
-in
-[[#RunC
-ontrol.
-nml</td>
-<td>RunCont
-rol.nml
-]]).
-Value
-of
-integer
-is
-arbitra
-ry
-but
-must
-match
-code
-specifi
-ed
-in
-column
-1 of
-SUEWS_A
-nthropo
-genicHe
-at.txt.</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-anthropogeniccode"><code class="xref any std std-option docutils literal notranslate"><span class="pre">AnthropogenicCode</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code for modelling anthropogenic heat flux Provides the link to column 1 of SUEWS_AnthropogenicHeat.txt, which contains the model coefficients for estimation of the anthropogenic heat flux (used if AnthropHeatChoice = 1, 2 in RunControl.nml ). Value of integer is arbitrary but must match code specified in column 1 of SUEWS_AnthropogenicHeat.txt.</td>
 </tr>
 <tr class="row-odd"><td>52</td>
-<td>L</td>
-<td>EnergyU
-seProfW
-D</td>
-<td>333</td>
-<td>Code
-for
-energy
-use
-profile
-(weekda
-ys)
-Provide
-s
-the
-link to
-column
-1 of
-SUEWS_P
-rofiles
-.txt.
-Look
-the
-codes
-Value
-of
-integer
-is
-arbitra
-ry
-but
-must
-match
-code
-specifi
-ed
-in
-column
-1 of
-SUEWS_P
-rofiles
-.txt.</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-energyuseprofwd"><code class="xref any std std-option docutils literal notranslate"><span class="pre">EnergyUseProfWD</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code for energy use profile (weekdays) Provides the link to column 1 of SUEWS_Profiles.txt. Look the codes Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt.</td>
 </tr>
 <tr class="row-even"><td>53</td>
-<td>L</td>
-<td>EnergyU
-seProfW
-E</td>
-<td>334</td>
-<td>Code
-for
-energy
-use
-profile
-(weeken
-ds)
-Provide
-s
-the
-link to
-column
-1 of
-SUEWS_P
-rofiles
-.txt.
-Value
-of
-integer
-is
-arbitra
-ry
-but
-must
-match
-code
-specifi
-ed
-in
-column
-1 of
-SUEWS_P
-rofiles
-.txt.</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-energyuseprofwe"><code class="xref any std std-option docutils literal notranslate"><span class="pre">EnergyUseProfWE</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code for energy use profile (weekends) Provides the link to column 1 of SUEWS_Profiles.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt.</td>
 </tr>
 <tr class="row-odd"><td>54</td>
-<td>L</td>
-<td>Activit
-yProfWD</td>
-<td>333</td>
-<td>Code
-for
-human
-activit
-y
-profile
-(weekda
-ys)
-Provide
-s
-the
-link to
-column
-1 of
-SUEWS_P
-rofiles
-.txt.
-Look
-the
-codes
-Value
-of
-integer
-is
-arbitra
-ry
-but
-must
-match
-code
-specifi
-ed
-in
-column
-1 of
-SUEWS_P
-rofiles
-.txt.
-Used
-for CO2
-flux
-calcula
-tion
-- <a href="#id4"><span class="problematic" id="id5">**</span></a>not
-used in
-v2017a*
-*</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-activityprofwd"><code class="xref any std std-option docutils literal notranslate"><span class="pre">ActivityProfWD</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code for human activity profile (weekdays) Provides the link to column 1 of SUEWS_Profiles.txt. Look the codes Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt. Used for CO2 flux calculation - not used in v2017a</td>
 </tr>
 <tr class="row-even"><td>55</td>
-<td>L</td>
-<td>Activit
-yProfWE</td>
-<td>333</td>
-<td>Code
-for
-human
-activit
-y
-profile
-(weeken
-ds)
-Provide
-s
-the
-link to
-column
-1 of
-SUEWS_P
-rofiles
-.txt.
-Look
-the
-codes
-Value
-of
-integer
-is
-arbitra
-ry
-but
-must
-match
-code
-specifi
-ed
-in
-column
-1 of
-SUEWS_P
-rofiles
-.txt.
-Used
-for CO2
-flux
-calcula
-tion
-- <a href="#id6"><span class="problematic" id="id7">**</span></a>not
-used in
-v2017a*
-*</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-activityprofwe"><code class="xref any std std-option docutils literal notranslate"><span class="pre">ActivityProfWE</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code for human activity profile (weekends) Provides the link to column 1 of SUEWS_Profiles.txt. Look the codes Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt. Used for CO2 flux calculation - not used in v2017a</td>
 </tr>
 <tr class="row-odd"><td>56</td>
-<td>L</td>
-<td>Irrigat
-ionCode</td>
-<td>33</td>
-<td>Code
-for
-modelli
-ng
-irrigat
-ion
-Provide
-s
-the
-link to
-column
-1 of
-SUEWS_I
-rrigati
-on.txt,
-which
-contain
-s
-the
-model
-coeffic
-ients
-for
-estimat
-ion
-of the
-water
-use
-(used
-if
-WU_Choi
-ce
-= 0 in
-[[#RunC
-ontrol.
-nml</td>
-<td>RunCont
-rol.nml
-]]).
-Value
-of
-integer
-is
-arbitra
-ry
-but
-must
-match
-code
-specifi
-ed
-in
-column
-1 of
-SUEWS_I
-rrigati
-on.txt.</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-irrigationcode"><code class="xref any std std-option docutils literal notranslate"><span class="pre">IrrigationCode</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code for modelling irrigation Provides the link to column 1 of SUEWS_Irrigation.txt, which contains the model coefficients for estimation of the water use (used if WU_Choice = 0 in RunControl.nml ). Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Irrigation.txt.</td>
 </tr>
 <tr class="row-even"><td>57</td>
-<td>L</td>
-<td>WaterUs
-eProfMa
-nuWD</td>
-<td>335</td>
-<td>Code
-for
-water
-use
-profile
-(manual
-irrigat
-ion,
-weekday
-s)
-Provide
-s
-the
-link to
-column
-1 of
-SUEWS_P
-rofiles
-.txt.
-Value
-of
-integer
-is
-arbitra
-ry
-but
-must
-match
-code
-specifi
-ed
-in
-column
-1 of
-SUEWS_P
-rofiles
-.txt.</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-wateruseprofmanuwd"><code class="xref any std std-option docutils literal notranslate"><span class="pre">WaterUseProfManuWD</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code for water use profile (manual irrigation, weekdays) Provides the link to column 1 of SUEWS_Profiles.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt.</td>
 </tr>
 <tr class="row-odd"><td>58</td>
-<td>L</td>
-<td>WaterUs
-eProfMa
-nuWE</td>
-<td>336</td>
-<td>Code
-for
-water
-use
-profile
-(manual
-irrigat
-ion,
-weekend
-s)
-Provide
-s
-the
-link to
-column
-1 of
-SUEWS_P
-rofiles
-.txt.
-Value
-of
-integer
-is
-arbitra
-ry
-but
-must
-match
-code
-specifi
-ed
-in
-column
-1 of
-SUEWS_P
-rofiles
-.txt.</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-wateruseprofmanuwe"><code class="xref any std std-option docutils literal notranslate"><span class="pre">WaterUseProfManuWE</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code for water use profile (manual irrigation, weekends) Provides the link to column 1 of SUEWS_Profiles.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt.</td>
 </tr>
 <tr class="row-even"><td>59</td>
-<td>L</td>
-<td>WaterUs
-eProfAu
-toWD</td>
-<td>337</td>
-<td>Code
-for
-water
-use
-profile
-(automa
-tic
-irrigat
-ion,
-weekday
-s)
-Provide
-s
-the
-link to
-column
-1 of
-SUEWS_P
-rofiles
-.txt.
-Value
-of
-integer
-is
-arbitra
-ry
-but
-must
-match
-code
-specifi
-ed
-in
-column
-1 of
-SUEWS_P
-rofiles
-.txt.</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-wateruseprofautowd"><code class="xref any std std-option docutils literal notranslate"><span class="pre">WaterUseProfAutoWD</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code for water use profile (automatic irrigation, weekdays) Provides the link to column 1 of SUEWS_Profiles.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt.</td>
 </tr>
 <tr class="row-odd"><td>60</td>
-<td>L</td>
-<td>WaterUs
-eProfAu
-toWE</td>
-<td>338</td>
-<td>Code
-for
-water
-use
-profile
-(automa
-tic
-irrigat
-ion,
-weekend
-s)
-Provide
-s
-the
-link to
-column
-1 of
-SUEWS_P
-rofiles
-.txt.
-Value
-of
-integer
-is
-arbitra
-ry
-but
-must
-match
-code
-specifi
-ed
-in
-column
-1 of
-SUEWS_P
-rofiles
-.txt.</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-wateruseprofautowe"><code class="xref any std std-option docutils literal notranslate"><span class="pre">WaterUseProfAutoWE</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code for water use profile (automatic irrigation, weekends) Provides the link to column 1 of SUEWS_Profiles.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt.</td>
 </tr>
 <tr class="row-even"><td>61</td>
-<td>MD</td>
-<td>FlowCha
-nge</td>
-<td>0</td>
-<td>Differe
-nce
-in
-input
-and
-output
-flows
-for
-water
-surface
-[mm
-h:sup
-:<cite>-1</cite>]
-Used to
-indicat
-e
-river
-or
-stream
-flow
-through
-the
-grid.
-‘’‘Curr
-ently
-not
-fully
-tested</td>
-<td>‘’‘</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-flowchange"><code class="xref any std std-option docutils literal notranslate"><span class="pre">FlowChange</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
+<td>Difference in input and output flows for water surface [mm h -1 ] Used to indicate river or stream flow through the grid. Currently not fully tested!</td>
 </tr>
 <tr class="row-odd"><td>62</td>
-<td>MD,MU</td>
-<td>RunoffT
-oWater</td>
-<td>0.1</td>
-<td>Fractio
-n
-of
-above-g
-round
-runoff
-flowing
-to
-water
-surface
-during
-floodin
-g
-[-]
-Value
-must be
-in the
-range
-0-1.
-Fractio
-n
-of
-above-g
-round
-runoff
-that
-can
-flow to
-the
-water
-surface
-in the
-case of
-floodin
-g.</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-runofftowater"><code class="xref any std std-option docutils literal notranslate"><span class="pre">RunoffToWater</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Fraction of above-ground runoff flowing to water surface during flooding [-] Value must be in the range 0-1. Fraction of above-ground runoff that can flow to the water surface in the case of flooding.</td>
 </tr>
 <tr class="row-even"><td>63</td>
-<td>MD,MU</td>
-<td>PipeCap
-acity</td>
-<td>100</td>
-<td>Storage
-capacit
-y
-of
-pipes
-[mm]
-Runoff
-amounti
-ng
-to less
-than
-the
-value
-specifi
-ed
-here is
-assumed
-to be
-removed
-by
-pipes.</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-pipecapacity"><code class="xref any std std-option docutils literal notranslate"><span class="pre">PipeCapacity</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Storage capacity of pipes [mm] Runoff amounting to less than the value specified here is assumed to be removed by pipes.</td>
 </tr>
 <tr class="row-odd"><td>64</td>
-<td>MD,MU</td>
-<td>GridCon
-nection
-1of8</td>
-<td>2</td>
-<td>Number
-of the
-grid
-where
-water
-can
-flow to
-[-]
--  The
-next
-8
-pair
-s
-of
-colu
-mns
-spec
-ify
-the
-wate
-r
-flow
-betw
-een
-grid
-s.
--  The
-firs
-t
-colu
-mn
-of
-each
-pair
-spec
-ifies
-the
-grid
-that
-the
-wate
-r
-flow
-s
-to
-(fro
-m
-the
-curr
-ent
-grid
-,
-colu
-mn
-1);
-the
-seco
-nd
-colu
-mn
-of
-each
-pair
-spec
-ifies
-the
-frac
-tion
-of
-wate
-r
-that
-flow
-to
-that
-grid
-.
--  The
-frac
-tion
-(i.e
-.
-amou
-nt)
-of
-wate
-r
-tran
-sferred
-may
-be
-esti
-mated
-base
-d
-on
-elev
-ation,
-the
-leng
-th
-of
-conn
-ecting
-surf
-ace
-betw
-een
-grid
-s,
-pres
-ence
-of
-wall
-s,
-etc.
--  Wate
-r
-cann
-ot
-flow
-from
-the
-curr
-ent
-grid
-to
-the
-same
-grid
-,
-so
-the
-grid
-numb
-er
-here
-must
-be
-diff
-erent
-to
-the
-grid
-numb
-er
-in
-colu
-mn
-1.
-Wate
-r
-can
-flow
-to a
-maxi
-mum
-of 8
-othe
-r
-grid
-s.
--  If
-ther
-e
-is
-no
-wate
-r
-flow
-betw
-een
-grid
-s,
-or a
-sing
-le
-grid
-is
-run,
-set
-to
-0.
-*See
-section
-on
-[[#Grid
-Connect
-ions</td>
-<td>Grid
-Connect
-ions]]
-‘’‘Not
-current
-ly
-impleme
-nted</td>
-<td>‘’‘</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-gridconnection1of8"><code class="xref any std std-option docutils literal notranslate"><span class="pre">GridConnection1of8</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>The next 8 pairs of columns specify the water flow between grids. The first column of each pair specifies the grid that the water flows to (from the current grid, column 1); the second column of each pair specifies the fraction of water that flow to that grid. The fraction (i.e. amount) of water transferred may be estimated based on elevation, the length of connecting surface between grids, presence of walls, etc. Water cannot flow from the current grid to the same grid, so the grid number here must be different to the grid number in column 1. Water can flow to a maximum of 8 other grids. If there is no water flow between grids, or a single grid is run, set to 0. See section on Grid Connections</td>
 </tr>
 <tr class="row-even"><td>65</td>
-<td>MD,MU</td>
-<td>Fractio
-n1of8</td>
-<td>0.2</td>
-<td>Fractio
-n
-of
-water
-that
-can
-flow to
-the
-grid
-specifi
-ed
-in
-previou
-s
-column
-[-]</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fraction1of8"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fraction1of8</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Fraction of water that can flow to the grid specified in previous column [-]</td>
 </tr>
 <tr class="row-odd"><td>66</td>
-<td>MD,MU</td>
-<td>GridCon
-nection
-2of8</td>
-<td>0</td>
-<td>Number
-of the
-grid
-where
-water
-can
-flow to</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-gridconnection2of8"><code class="xref any std std-option docutils literal notranslate"><span class="pre">GridConnection2of8</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Number of the grid where water can flow to</td>
 </tr>
 <tr class="row-even"><td>67</td>
-<td>MD,MU</td>
-<td>Fractio
-n2of8</td>
-<td>0</td>
-<td>Fractio
-n
-of
-water
-that
-can
-flow to
-the
-grid
-specifi
-ed
-in
-previou
-s
-column
-[-]</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fraction2of8"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fraction2of8</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Fraction of water that can flow to the grid specified in previous column [-]</td>
 </tr>
 <tr class="row-odd"><td>68</td>
-<td>MD,MU</td>
-<td>GridCon
-nection
-3of8</td>
-<td>0</td>
-<td>Number
-of the
-grid
-where
-water
-can
-flow to</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-gridconnection3of8"><code class="xref any std std-option docutils literal notranslate"><span class="pre">GridConnection3of8</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Number of the grid where water can flow to</td>
 </tr>
 <tr class="row-even"><td>69</td>
-<td>MD,MU</td>
-<td>Fractio
-n3of8</td>
-<td>0</td>
-<td>Fractio
-n
-of
-water
-that
-can
-flow to
-the
-grid
-specifi
-ed
-in
-previou
-s
-column
-[-]</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fraction3of8"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fraction3of8</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Fraction of water that can flow to the grid specified in previous column [-]</td>
 </tr>
 <tr class="row-odd"><td>70</td>
-<td>MD,MU</td>
-<td>GridCon
-nection
-4of8</td>
-<td>0</td>
-<td>Number
-of the
-grid
-where
-water
-can
-flow to</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-gridconnection4of8"><code class="xref any std std-option docutils literal notranslate"><span class="pre">GridConnection4of8</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Number of the grid where water can flow to</td>
 </tr>
 <tr class="row-even"><td>71</td>
-<td>MD,MU</td>
-<td>Fractio
-n4of8</td>
-<td>0</td>
-<td>Fractio
-n
-of
-water
-that
-can
-flow to
-the
-grid
-specifi
-ed
-in
-previou
-s
-column
-[-]</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fraction4of8"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fraction4of8</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Fraction of water that can flow to the grid specified in previous column [-]</td>
 </tr>
 <tr class="row-odd"><td>72</td>
-<td>MD,MU</td>
-<td>GridCon
-nection
-5of8</td>
-<td>0</td>
-<td>Number
-of the
-grid
-where
-water
-can
-flow to</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-gridconnection5of8"><code class="xref any std std-option docutils literal notranslate"><span class="pre">GridConnection5of8</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Number of the grid where water can flow to</td>
 </tr>
 <tr class="row-even"><td>73</td>
-<td>MD,MU</td>
-<td>Fractio
-n5of8</td>
-<td>0</td>
-<td>Fractio
-n
-of
-water
-that
-can
-flow to
-the
-grid
-specifi
-ed
-in
-previou
-s
-column
-[-]</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fraction5of8"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fraction5of8</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Fraction of water that can flow to the grid specified in previous column [-]</td>
 </tr>
 <tr class="row-odd"><td>74</td>
-<td>MD,MU</td>
-<td>GridCon
-nection
-6of8</td>
-<td>0</td>
-<td>Number
-of the
-grid
-where
-water
-can
-flow to</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-gridconnection6of8"><code class="xref any std std-option docutils literal notranslate"><span class="pre">GridConnection6of8</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Number of the grid where water can flow to</td>
 </tr>
 <tr class="row-even"><td>75</td>
-<td>MD,MU</td>
-<td>Fractio
-n6of8</td>
-<td>0</td>
-<td>Fractio
-n
-of
-water
-that
-can
-flow to
-the
-grid
-specifi
-ed
-in
-previou
-s
-column
-[-]</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fraction6of8"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fraction6of8</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Fraction of water that can flow to the grid specified in previous column [-]</td>
 </tr>
 <tr class="row-odd"><td>76</td>
-<td>MD,MU</td>
-<td>GridCon
-nection
-7of8</td>
-<td>0</td>
-<td>Number
-of the
-grid
-where
-water
-can
-flow to</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-gridconnection7of8"><code class="xref any std std-option docutils literal notranslate"><span class="pre">GridConnection7of8</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Number of the grid where water can flow to</td>
 </tr>
 <tr class="row-even"><td>77</td>
-<td>MD,MU</td>
-<td>Fractio
-n7of8</td>
-<td>0</td>
-<td>Fractio
-n
-of
-water
-that
-can
-flow to
-the
-grid
-specifi
-ed
-in
-previou
-s
-column
-[-]</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fraction7of8"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fraction7of8</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Fraction of water that can flow to the grid specified in previous column [-]</td>
 </tr>
 <tr class="row-odd"><td>78</td>
-<td>MD,MU</td>
-<td>GridCon
-nection
-8of8</td>
-<td>0</td>
-<td>Number
-of the
-grid
-where
-water
-can
-flow to</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-gridconnection8of8"><code class="xref any std std-option docutils literal notranslate"><span class="pre">GridConnection8of8</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Number of the grid where water can flow to</td>
 </tr>
 <tr class="row-even"><td>79</td>
-<td>MD,MU</td>
-<td>Fractio
-n8of8</td>
-<td>0</td>
-<td>Fractio
-n
-of
-water
-that
-can
-flow to
-the
-grid
-specifi
-ed
-in
-previou
-s
-column
-[-]</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fraction8of8"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fraction8of8</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Fraction of water that can flow to the grid specified in previous column [-]</td>
 </tr>
 <tr class="row-odd"><td>80</td>
-<td>L</td>
-<td>WithinG
-ridPave
-dCode</td>
-<td>331</td>
-<td>Code
-that
-links
-to the
-fractio
-n
-of
-water
-that
-flows
-from
-Paved
-surface
-s
-to
-surface
-s
-in
-columns
-2-10 of
-[[#SUEW
-S_Withi
-nGridWa
-terDist
-.txt</td>
-<td>SUEWS_W
-ithinGr
-idWater
-Dist.tx
-t]].
-Value
-of
-integer
-is
-arbitra
-ry
-but
-must
-match
-code
-specifi
-ed
-in
-column
-1 of
-SUEWS_W
-ithinGr
-idWater
-Dist.tx
-t.</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-withingridpavedcode"><code class="xref any std std-option docutils literal notranslate"><span class="pre">WithinGridPavedCode</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code that links to the fraction of water that flows from Paved surfaces to surfaces in columns 2-10 of SUEWS_WithinGridWaterDist.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_WithinGridWaterDist.txt.</td>
 </tr>
 <tr class="row-even"><td>81</td>
-<td>L</td>
-<td>WithinG
-ridBldg
-sCode</td>
-<td>332</td>
-<td>Code
-that
-links
-to the
-fractio
-n
-of
-water
-that
-flows
-from
-Bldgs
-surface
-s
-to
-surface
-s
-in
-columns
-2-10 of
-SUEWS_W
-ithinGr
-idWater
-Dist.tx
-t.
-Value
-of
-integer
-is
-arbitra
-ry
-but
-must
-match
-code
-specifi
-ed
-in
-column
-1 of
-SUEWS_W
-ithinGr
-idWater
-Dist.tx
-t.</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-withingridbldgscode"><code class="xref any std std-option docutils literal notranslate"><span class="pre">WithinGridBldgsCode</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code that links to the fraction of water that flows from Bldgs surfaces to surfaces in columns 2-10 of SUEWS_WithinGridWaterDist.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_WithinGridWaterDist.txt.</td>
 </tr>
 <tr class="row-odd"><td>82</td>
-<td>L</td>
-<td>WithinG
-ridEveT
-rCode</td>
-<td>333</td>
-<td>Code
-that
-links
-to the
-fractio
-n
-of
-water
-that
-flows
-from
-EveTr
-surface
-s
-to
-surface
-s
-in
-columns
-2-10 of
-SUEWS_W
-ithinGr
-idWater
-Dist.tx
-t.
-Value
-of
-integer
-is
-arbitra
-ry
-but
-must
-match
-code
-specifi
-ed
-in
-column
-1 of
-SUEWS_W
-ithinGr
-idWater
-Dist.tx
-t.</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-withingridevetrcode"><code class="xref any std std-option docutils literal notranslate"><span class="pre">WithinGridEveTrCode</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code that links to the fraction of water that flows from EveTr surfaces to surfaces in columns 2-10 of SUEWS_WithinGridWaterDist.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_WithinGridWaterDist.txt.</td>
 </tr>
 <tr class="row-even"><td>83</td>
-<td>L</td>
-<td>WithinG
-ridDecT
-rCode</td>
-<td>334</td>
-<td>Code
-that
-links
-to the
-fractio
-n
-of
-water
-that
-flows
-from
-DecTr
-surface
-s
-to
-surface
-s
-in
-columns
-2-10 of
-SUEWS_W
-ithinGr
-idWater
-Dist.tx
-t.
-Value
-of
-integer
-is
-arbitra
-ry
-but
-must
-match
-code
-specifi
-ed
-in
-column
-1 of
-SUEWS_W
-ithinGr
-idWater
-Dist.tx
-t.</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-withingriddectrcode"><code class="xref any std std-option docutils literal notranslate"><span class="pre">WithinGridDecTrCode</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code that links to the fraction of water that flows from DecTr surfaces to surfaces in columns 2-10 of SUEWS_WithinGridWaterDist.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_WithinGridWaterDist.txt.</td>
 </tr>
 <tr class="row-odd"><td>84</td>
-<td>L</td>
-<td>WithinG
-ridGras
-sCode</td>
-<td>335</td>
-<td>Code
-that
-links
-to the
-fractio
-n
-of
-water
-that
-flows
-from
-Grass
-surface
-s
-to
-surface
-s
-in
-columns
-2-10 of
-SUEWS_W
-ithinGr
-idWater
-Dist.tx
-t.
-Value
-of
-integer
-is
-arbitra
-ry
-but
-must
-match
-code
-specifi
-ed
-in
-column
-1 of
-SUEWS_W
-ithinGr
-idWater
-Dist.tx
-t.</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-withingridgrasscode"><code class="xref any std std-option docutils literal notranslate"><span class="pre">WithinGridGrassCode</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code that links to the fraction of water that flows from Grass surfaces to surfaces in columns 2-10 of SUEWS_WithinGridWaterDist.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_WithinGridWaterDist.txt.</td>
 </tr>
 <tr class="row-even"><td>85</td>
-<td>L</td>
-<td>WithinG
-ridBSoi
-lCode</td>
-<td>336</td>
-<td>Code
-that
-links
-to the
-fractio
-n
-of
-water
-that
-flows
-from
-BSoil
-surface
-s
-to
-surface
-s
-in
-columns
-2-10 of
-SUEWS_W
-ithinGr
-idWater
-Dist.tx
-t.
-Value
-of
-integer
-is
-arbitra
-ry
-but
-must
-match
-code
-specifi
-ed
-in
-column
-1 of
-SUEWS_W
-ithinGr
-idWater
-Dist.tx
-t.</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-withingridbsoilcode"><code class="xref any std std-option docutils literal notranslate"><span class="pre">WithinGridBSoilCode</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code that links to the fraction of water that flows from BSoil surfaces to surfaces in columns 2-10 of SUEWS_WithinGridWaterDist.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_WithinGridWaterDist.txt.</td>
 </tr>
 <tr class="row-odd"><td>86</td>
-<td>L</td>
-<td>WithinG
-ridWate
-rCode</td>
-<td>337</td>
-<td>Code
-that
-links
-to the
-fractio
-n
-of
-water
-that
-flows
-from
-Water
-surface
-s
-to
-surface
-s
-in
-columns
-2-10 of
-SUEWS_W
-ithinGr
-idWater
-Dist.tx
-t.
-Value
-of
-integer
-is
-arbitra
-ry
-but
-must
-match
-code
-specifi
-ed
-in
-column
-1 of
-SUEWS_W
-ithinGr
-idWater
-Dist.tx
-t.</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-withingridwatercode"><code class="xref any std std-option docutils literal notranslate"><span class="pre">WithinGridWaterCode</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code that links to the fraction of water that flows from Water surfaces to surfaces in columns 2-10 of SUEWS_WithinGridWaterDist.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_WithinGridWaterDist.txt.</td>
 </tr>
 <tr class="row-even"><td>87</td>
-<td>MU</td>
-<td>AreaWal
-l</td>
-<td>1.08</td>
-<td>Area of
-wall
-within
-grid
-(needed
-for
-ESTM
-calcula
-tion).</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-areawall"><code class="xref any std std-option docutils literal notranslate"><span class="pre">AreaWall</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Area of wall within grid (needed for ESTM calculation).</td>
 </tr>
 <tr class="row-odd"><td>88</td>
-<td>MU</td>
-<td>Fr_ESTM
-Class_P
-aved1</td>
-<td>&#160;</td>
-<td>Fractio
-n
-of
-paved
-surface
-classif
-ied
-as ESTM
-class 1
--  Colu
-mns
-88-9
-0
-must
-add
-up
-to 1</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-estmclass-paved1"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fr_ESTMClass_Paved1</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Columns 88-90 must add up to 1</td>
 </tr>
 <tr class="row-even"><td>89</td>
-<td>MU</td>
-<td>Fr_ESTM
-Class_P
-aved2</td>
-<td>&#160;</td>
-<td>Fractio
-n
-of
-paved
-surface
-classif
-ied
-as ESTM
-class 2
--  Colu
-mns
-88-9
-0
-must
-add
-up
-to 1</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-estmclass-paved2"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fr_ESTMClass_Paved2</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Columns 88-90 must add up to 1</td>
 </tr>
 <tr class="row-odd"><td>90</td>
-<td>MU</td>
-<td>Fr_ESTM
-Class_P
-aved3</td>
-<td>&#160;</td>
-<td>Fractio
-n
-of
-paved
-surface
-classif
-ied
-as ESTM
-class 3
--  Colu
-mns
-88-9
-0
-must
-add
-up
-to 1</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-estmclass-paved3"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fr_ESTMClass_Paved3</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Columns 88-90 must add up to 1</td>
 </tr>
 <tr class="row-even"><td>91</td>
-<td>L</td>
-<td>Code_ES
-TMClass
-_Paved1</td>
-<td>&#160;</td>
-<td>Code
-linking
-to
-[[#SUEW
-S_ESTMC
-oeffici
-ents.tx
-t</td>
-<td>SUEWS_E
-STMCoef
-ficient
-s.txt]]</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-estmclass-paved1"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Code_ESTMClass_Paved1</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code linking to SUEWS_ESTMCoefficients.txt</td>
 </tr>
 <tr class="row-odd"><td>92</td>
-<td>L</td>
-<td>Code_ES
-TMClass
-_Paved2</td>
-<td>&#160;</td>
-<td>Code
-linking
-to
-[[#SUEW
-S_ESTMC
-oeffici
-ents.tx
-t</td>
-<td>SUEWS_E
-STMCoef
-ficient
-s.txt]]</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-estmclass-paved2"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Code_ESTMClass_Paved2</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code linking to SUEWS_ESTMCoefficients.txt</td>
 </tr>
 <tr class="row-even"><td>93</td>
-<td>L</td>
-<td>Code_ES
-TMClass
-_Paved3</td>
-<td>&#160;</td>
-<td>Code
-linking
-to
-[[#SUEW
-S_ESTMC
-oeffici
-ents.tx
-t</td>
-<td>SUEWS_E
-STMCoef
-ficient
-s.txt]]</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-estmclass-paved3"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Code_ESTMClass_Paved3</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code linking to SUEWS_ESTMCoefficients.txt</td>
 </tr>
 <tr class="row-odd"><td>94</td>
-<td>MU</td>
-<td>Fr_ESTM
-Class_B
-ldgs1</td>
-<td>&#160;</td>
-<td>Fractio
-n
-of
-buildin
-g
-surface
-classif
-ied
-as ESTM
-class 1
--  Colu
-mns
-94-9
-8
-must
-add
-up
-to 1</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-estmclass-bldgs1"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fr_ESTMClass_Bldgs1</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Columns 94-98 must add up to 1</td>
 </tr>
 <tr class="row-even"><td>95</td>
-<td>MU</td>
-<td>Fr_ESTM
-Class_B
-ldgs2</td>
-<td>&#160;</td>
-<td>Fractio
-n
-of
-buildin
-g
-surface
-classif
-ied
-as ESTM
-class 2
--  Colu
-mns
-94-9
-8
-must
-add
-up
-to 1</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-estmclass-bldgs2"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fr_ESTMClass_Bldgs2</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Columns 94-98 must add up to 1</td>
 </tr>
 <tr class="row-odd"><td>96</td>
-<td>MU</td>
-<td>Fr_ESTM
-Class_B
-ldgs3</td>
-<td>&#160;</td>
-<td>Fractio
-n
-of
-buildin
-g
-surface
-classif
-ied
-as ESTM
-class 3
--  Colu
-mns
-94-9
-8
-must
-add
-up
-to 1</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-estmclass-bldgs3"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fr_ESTMClass_Bldgs3</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Columns 94-98 must add up to 1</td>
 </tr>
 <tr class="row-even"><td>97</td>
-<td>MU</td>
-<td>Fr_ESTM
-Class_B
-ldgs4</td>
-<td>&#160;</td>
-<td>Fractio
-n
-of
-buildin
-g
-surface
-classif
-ied
-as ESTM
-class 4
--  Colu
-mns
-94-9
-8
-must
-add
-up
-to 1</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-estmclass-bldgs4"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fr_ESTMClass_Bldgs4</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Columns 94-98 must add up to 1</td>
 </tr>
 <tr class="row-odd"><td>98</td>
-<td>MU</td>
-<td>Fr_ESTM
-Class_B
-ldgs5</td>
-<td>&#160;</td>
-<td>Fractio
-n
-of
-buildin
-g
-surface
-classif
-ied
-as ESTM
-class 5
--  Colu
-mns
-94-9
-8
-must
-add
-up
-to 1</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-estmclass-bldgs5"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fr_ESTMClass_Bldgs5</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Columns 94-98 must add up to 1</td>
 </tr>
 <tr class="row-even"><td>99</td>
-<td>L</td>
-<td>Code_ES
-TMClass
-_Bldgs1</td>
-<td>&#160;</td>
-<td>Code
-linking
-to
-[[#SUEW
-S_ESTMC
-oeffici
-ents.tx
-t</td>
-<td>SUEWS_E
-STMCoef
-ficient
-s.txt]]</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-estmclass-bldgs1"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Code_ESTMClass_Bldgs1</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code linking to SUEWS_ESTMCoefficients.txt</td>
 </tr>
 <tr class="row-odd"><td>100</td>
-<td>L</td>
-<td>Code_ES
-TMClass
-_Bldgs2</td>
-<td>&#160;</td>
-<td>Code
-linking
-to
-[[#SUEW
-S_ESTMC
-oeffici
-ents.tx
-t</td>
-<td>SUEWS_E
-STMCoef
-ficient
-s.txt]]</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-estmclass-bldgs2"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Code_ESTMClass_Bldgs2</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code linking to SUEWS_ESTMCoefficients.txt</td>
 </tr>
 <tr class="row-even"><td>101</td>
-<td>L</td>
-<td>Code_ES
-TMClass
-_Bldgs3</td>
-<td>&#160;</td>
-<td>Code
-linking
-to
-[[#SUEW
-S_ESTMC
-oeffici
-ents.tx
-t</td>
-<td>SUEWS_E
-STMCoef
-ficient
-s.txt]]</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-estmclass-bldgs3"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Code_ESTMClass_Bldgs3</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code linking to SUEWS_ESTMCoefficients.txt</td>
 </tr>
 <tr class="row-odd"><td>102</td>
-<td>L</td>
-<td>Code_ES
-TMClass
-_Bldgs4</td>
-<td>&#160;</td>
-<td>Code
-linking
-to
-[[#SUEW
-S_ESTMC
-oeffici
-ents.tx
-t</td>
-<td>SUEWS_E
-STMCoef
-ficient
-s.txt]]</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-estmclass-bldgs4"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Code_ESTMClass_Bldgs4</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code linking to SUEWS_ESTMCoefficients.txt</td>
 </tr>
 <tr class="row-even"><td>103</td>
-<td>L</td>
-<td>Code_ES
-TMClass
-_Bldgs5</td>
-<td>&#160;</td>
-<td>Code
-linking
-to
-[[#SUEW
-S_ESTMC
-oeffici
-ents.tx
-t</td>
-<td>SUEWS_E
-STMCoef
-ficient
-s.txt]]</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>&#160;</td>
-<td>&#160;</td>
-<td>&#160;</td>
-<td>&#160;</td>
-<td>&#160;</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-estmclass-bldgs5"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Code_ESTMClass_Bldgs5</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td>Code linking to SUEWS_ESTMCoefficients.txt</td>
 </tr>
 </tbody>
 </table>
+<p>see this one: <a class="reference internal" href="Input_Options.html#cmdoption-arg-a2"><code class="xref any std std-option docutils literal notranslate"><span class="pre">a2</span></code></a></p>
 <div class="section" id="day-light-savings-dls">
 <h2>6.2.7.1. Day Light Savings (DLS)<a class="headerlink" href="#day-light-savings-dls" title="Permalink to this headline">¶</a></h2>
 <p>The dates for DLS normally vary each year and country as they are often
@@ -4236,9 +750,9 @@ summer and autumn. Note it is important to remember leap years. You can
 check <a class="reference external" href="http://www.timeanddate.com/time/dst/">http://www.timeanddate.com/time/dst/</a> for your city.</p>
 <p>If DLS does not occur give a start and end day immediately after it.
 Make certain the dummy dates are correct for the hemisphere:</p>
-<div class="line-block">
-<div class="line"><code class="docutils literal notranslate"><span class="pre">for&nbsp;northern&nbsp;hemisphere,&nbsp;use:&nbsp;180&nbsp;181</span></code></div>
-<div class="line"><code class="docutils literal notranslate"><span class="pre">for&nbsp;southern&nbsp;hemisphere,&nbsp;use:&nbsp;&nbsp;365&nbsp;1</span></code></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">northern</span> <span class="n">hemisphere</span><span class="p">,</span> <span class="n">use</span><span class="p">:</span> <span class="mi">180</span> <span class="mi">181</span>
+<span class="k">for</span> <span class="n">southern</span> <span class="n">hemisphere</span><span class="p">,</span> <span class="n">use</span><span class="p">:</span>  <span class="mi">365</span> <span class="mi">1</span>
+</pre></div>
 </div>
 <table border="1" class="docutils">
 <colgroup>
@@ -4272,18 +786,13 @@ in Canada)</td>
 <td>172</td>
 <td>242</td>
 </tr>
-<tr class="row-even"><td>&#160;</td>
-<td>&#160;</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
 </tbody>
 </table>
 </div>
 <div class="section" id="grid-connections-water-flow-between-grids">
 <h2>6.2.7.2. Grid Connections (water flow between grids)<a class="headerlink" href="#grid-connections-water-flow-between-grids" title="Permalink to this headline">¶</a></h2>
 <p><strong>N.B. not currently implemented</strong> - columns 64-79 of
-<a class="reference external" href="#SUEWS_SiteSelect.txt">SUEWS_SiteSelect.txt</a> can be set to zero.</p>
+<a class="reference internal" href="#suews-siteselect-txt"><span class="std std-ref">SUEWS_SiteSelect.txt</span></a> can be set to zero.</p>
 <p>This section gives an example of water flow between grids, calculated
 based on the relative elevation of the grids and length of the
 connecting surface between adjacent grids. For the square grids in the
@@ -4291,7 +800,7 @@ figure, water flow is assumed to be zero between diagonally adjacent
 grids, as the length of connecting surface linking the grids is very
 small. Model grids need not be square or the same size.</p>
 <p>The table gives example values for the grid connections part of
-<a class="reference external" href="#SUEWS_SiteSelect.txt">SUEWS_SiteSelect.txt</a> for the grids shown in
+<a class="reference internal" href="#suews-siteselect-txt"><span class="std std-ref">SUEWS_SiteSelect.txt</span></a> for the grids shown in
 the figure. For each row, only water flowing out of the current grid is
 entered (e.g. water flows from 234 to 236 and 237, with a larger
 proportion of water flowing to 237 because of the greater length of
@@ -4301,10 +810,18 @@ elevation difference between these grids. Grids 234 and 238 are at the
 same elevation and only connect at a point, so no water flows between
 them. Water enters grid 234 from grids 230, 231 and 232 as these are
 more elevated.</p>
-<p>[[<a class="reference external" href="File:GridConnections_1.jpg%7Cframe">File:GridConnections_1.jpg%7Cframe</a>|</p>
-<p><code class="docutils literal notranslate"><span class="pre">Example&nbsp;grid&nbsp;connections&nbsp;showing&nbsp;water&nbsp;flow&nbsp;between&nbsp;grids.&nbsp;Arrows&nbsp;indicate&nbsp;the&nbsp;water&nbsp;flow&nbsp;in&nbsp;to&nbsp;and&nbsp;out&nbsp;of&nbsp;grid&nbsp;234,&nbsp;but&nbsp;note&nbsp;that&nbsp;only&nbsp;only&nbsp;water&nbsp;flowing&nbsp;out&nbsp;of&nbsp;each&nbsp;grid&nbsp;is&nbsp;entered&nbsp;in&nbsp;SUEWS_SiteSelect.txt.|none]]</span></code></p>
-<div class="figure">
-<img alt="Example values for the grid connections part of SUEWS_SiteSelect.txt for the grids.|none" src="../../_images/GridConnections_2_v2.jpg" />
+<div class="figure" id="id2">
+<img alt="Example&nbsp;grid&nbsp;connections&nbsp;showing&nbsp;water&nbsp;flow&nbsp;between&nbsp;grids.&nbsp;Arrows&nbsp;indicate&nbsp;the&nbsp;water&nbsp;flow&nbsp;in&nbsp;to&nbsp;and&nbsp;out&nbsp;of&nbsp;grid&nbsp;234,&nbsp;but&nbsp;note&nbsp;that&nbsp;only&nbsp;only&nbsp;water&nbsp;flowing&nbsp;out&nbsp;of&nbsp;each&nbsp;grid&nbsp;is&nbsp;entered&nbsp;in&nbsp;`SUEWS_SiteSelect.txt`" src="../../_images/GridConnections_1.jpg" />
+<p class="caption"><span class="caption-number">Fig. 6.1 </span><span class="caption-text">Example&nbsp;grid&nbsp;connections&nbsp;showing&nbsp;water&nbsp;flow&nbsp;between&nbsp;grids.</span></p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Arrows&nbsp;indicate&nbsp;the&nbsp;water&nbsp;flow&nbsp;in&nbsp;to&nbsp;and&nbsp;out&nbsp;of&nbsp;grid&nbsp;234,
+but&nbsp;note&nbsp;that&nbsp;only&nbsp;only&nbsp;water&nbsp;flowing&nbsp;out&nbsp;of&nbsp;each&nbsp;grid&nbsp;is&nbsp;entered&nbsp;in&nbsp;<a class="reference internal" href="#suews-siteselect-txt"><span class="std std-ref">SUEWS_SiteSelect.txt</span></a></p>
+</div>
+<div class="figure" id="id3">
+<img alt="Example values for the grid connections part of `SUEWS_SiteSelect.txt` for the grids." src="../../_images/GridConnections_2_v2.jpg" />
+<p class="caption"><span class="caption-number">Fig. 6.2 </span><span class="caption-text">Example values for the grid connections part of <a class="reference internal" href="#suews-siteselect-txt"><span class="std std-ref">SUEWS_SiteSelect.txt</span></a> for the grids.</span></p>
 </div>
 </div>
 </div>

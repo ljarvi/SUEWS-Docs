@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    128525,       3007]
-NotebookOptionsPosition[    119686,       2850]
-NotebookOutlinePosition[    120041,       2866]
-CellTagsIndexPosition[    119998,       2863]
+NotebookDataLength[    135705,       3259]
+NotebookOptionsPosition[    125097,       3074]
+NotebookOutlinePosition[    125452,       3090]
+CellTagsIndexPosition[    125409,       3087]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -59,7 +59,8 @@ Cell[BoxData[
     "]"}]}], ";"}]], "Input",
  CellChangeTimes->{
   3.730633536740658*^9, {3.730633590797679*^9, 3.730633618628674*^9}},
- CellLabel->"In[2]:=",ExpressionUUID->"1c075f28-faee-4256-8c89-3a1dd2d23789"],
+ CellLabel->
+  "In[451]:=",ExpressionUUID->"1c075f28-faee-4256-8c89-3a1dd2d23789"],
 
 Cell[CellGroupData[{
 
@@ -1981,7 +1982,7 @@ Cell[BoxData[
  CellLabel->"Out[78]=",ExpressionUUID->"23d94779-e502-48e9-a6a9-430cb9d94a04"]
 }, Open  ]]
 }, Open  ]]
-}, Closed]]
+}, Open  ]]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -2007,9 +2008,9 @@ Cell[BoxData[
    "]"}], "]"}]], "Input",ExpressionUUID->"78d20a3d-208d-4b3e-b116-\
 e0c4154252d4"],
 
-Cell[BoxData[
+Cell[BoxData[{
  RowBox[{
-  RowBox[{"listTableKeyword", "=", 
+  RowBox[{"listInputTableKeyword", "=", 
    RowBox[{"{", 
     RowBox[{
      RowBox[{"{", 
@@ -2072,8 +2073,12 @@ Cell[BoxData[
      RowBox[{"{", 
       RowBox[{
       "\"\<CBL_initial_data\>\"", ",", 
-       "\"\<vertical gradient of specific humidity\>\""}], "}"}], ",", 
-     "\[IndentingNewLine]", 
+       "\"\<vertical gradient of specific humidity\>\""}], "}"}]}], 
+    "\[IndentingNewLine]", "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"listOutputTableKeyword", "=", 
+   RowBox[{"{", 
+    RowBox[{
      RowBox[{"{", 
       RowBox[{"\"\<SSss_YYYY_TT\>\"", ",", "\"\<QElumps\>\""}], "}"}], ",", 
      "\[IndentingNewLine]", 
@@ -2091,7 +2096,7 @@ Cell[BoxData[
      "\[IndentingNewLine]", 
      RowBox[{"{", 
       RowBox[{"\"\<SSss_YYYY_ESTM_TT\>\"", ",", "\"\<QSnet\>\""}], "}"}]}], 
-    "\[IndentingNewLine]", "}"}]}], ";"}]], "Input",
+    "}"}]}], ";"}]}], "Input",
  CellChangeTimes->{{3.7309161913546743`*^9, 3.730916210691908*^9}, {
    3.730916265367456*^9, 3.730916369934781*^9}, {3.7309167974325447`*^9, 
    3.730916894768875*^9}, {3.730916971648107*^9, 3.730916971893093*^9}, {
@@ -2102,15 +2107,16 @@ Cell[BoxData[
    3.7310614273654118`*^9, 3.731061506188837*^9}, 3.73106162095007*^9, {
    3.731061706932497*^9, 3.731061792262906*^9}, {3.7310618310535603`*^9, 
    3.731061850465624*^9}, {3.7310619171691103`*^9, 3.731061942979837*^9}, 
-   3.731061980418841*^9, 3.7310620641203938`*^9, 3.731062489043494*^9},
+   3.731061980418841*^9, 3.7310620641203938`*^9, 3.731062489043494*^9, {
+   3.731067696462525*^9, 3.731067730476646*^9}},
  CellLabel->
-  "In[312]:=",ExpressionUUID->"2bfd3ea7-e0ba-4f69-bac5-9f74489f5ba7"],
+  "In[340]:=",ExpressionUUID->"2bfd3ea7-e0ba-4f69-bac5-9f74489f5ba7"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[{
  RowBox[{
-  RowBox[{"refSeq", "=", 
+  RowBox[{"refSeqInput", "=", 
    RowBox[{"MapThread", "[", 
     RowBox[{
      RowBox[{
@@ -2131,15 +2137,16 @@ Cell[BoxData[{
              "___"}], "}"}], ",", "Infinity"}], "]"}], "\[LeftDoubleBracket]", 
          RowBox[{"1", ",", "1"}], "\[RightDoubleBracket]"}]}], "}"}], "&"}], 
      ",", 
-     RowBox[{"Transpose", "@", "listTableKeyword"}]}], "]"}]}], 
+     RowBox[{"Transpose", "@", "listInputTableKeyword"}]}], "]"}]}], 
   ";"}], "\[IndentingNewLine]", 
- RowBox[{"refSeq", "//", "Grid"}]}], "Input",
+ RowBox[{"refSeqInput", "//", "Grid"}]}], "Input",
  CellChangeTimes->{
   3.730916104056725*^9, {3.7309161430011*^9, 3.730916186268749*^9}, {
    3.730917121070991*^9, 3.730917145626913*^9}, {3.731064527789768*^9, 
-   3.7310645341545753`*^9}, {3.731064565903545*^9, 3.731064583305379*^9}},
+   3.7310645341545753`*^9}, {3.731064565903545*^9, 3.731064583305379*^9}, {
+   3.731067738935223*^9, 3.731067758715715*^9}},
  CellLabel->
-  "In[319]:=",ExpressionUUID->"8cd9d2d1-ab1d-4850-916e-97020059a05f"],
+  "In[342]:=",ExpressionUUID->"8cd9d2d1-ab1d-4850-916e-97020059a05f"],
 
 Cell[BoxData[
  TagBox[GridBox[{
@@ -2159,7 +2166,54 @@ Cell[BoxData[
     {"\<\"SUEWS_ESTMCoefficients\"\>", "45"},
     {"\<\"SSss_YYYY_ESTM_Ts_data_tt\"\>", "49"},
     {"\<\"SSss_YYYY_data_tt\"\>", "56"},
-    {"\<\"CBL_initial_data\"\>", "58"},
+    {"\<\"CBL_initial_data\"\>", "58"}
+   },
+   AutoDelete->False,
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{{3.73091711078906*^9, 3.730917146282531*^9}, {
+   3.731061842441476*^9, 3.731061856281609*^9}, {3.731061921420951*^9, 
+   3.731061945777404*^9}, 3.731061983006536*^9, 3.7310620668413897`*^9, 
+   3.731062492444625*^9, 3.73106453559971*^9, {3.731064569063414*^9, 
+   3.731064584527027*^9}, {3.731067744851829*^9, 3.731067759360136*^9}},
+ CellLabel->
+  "Out[343]=",ExpressionUUID->"49d35650-709a-4f43-9044-da7cac7c379d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"refSeqOutput", "=", 
+   RowBox[{"MapThread", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"#1", ",", 
+        RowBox[{
+         RowBox[{"Position", "[", 
+          RowBox[{
+           RowBox[{
+           "ds", "\[LeftDoubleBracket]", "1", "\[RightDoubleBracket]"}], ",", 
+           
+           RowBox[{"{", 
+            RowBox[{"___", ",", 
+             RowBox[{"s_String", "/;", 
+              RowBox[{"StringMatchQ", "[", 
+               RowBox[{"s", ",", 
+                RowBox[{"___", "~~", "#2", "~~", "___"}]}], "]"}]}], ",", 
+             "___"}], "}"}], ",", "Infinity"}], "]"}], "\[LeftDoubleBracket]", 
+         RowBox[{"1", ",", "1"}], "\[RightDoubleBracket]"}]}], "}"}], "&"}], 
+     ",", 
+     RowBox[{"Transpose", "@", "listOutputTableKeyword"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"refSeqOutput", "//", "Grid"}]}], "Input",
+ CellChangeTimes->{{3.731067772246952*^9, 3.731067786375627*^9}},
+ CellLabel->
+  "In[346]:=",ExpressionUUID->"93b317cf-1438-4604-9789-a457a9fda672"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
     {"\<\"SSss_YYYY_TT\"\>", "65"},
     {"\<\"SSss_DailyState\"\>", "66"},
     {"\<\"SSss_YYYY_snow_TT\"\>", "67"},
@@ -2170,680 +2224,850 @@ Cell[BoxData[
    AutoDelete->False,
    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
   "Grid"]], "Output",
- CellChangeTimes->{{3.73091711078906*^9, 3.730917146282531*^9}, {
-   3.731061842441476*^9, 3.731061856281609*^9}, {3.731061921420951*^9, 
-   3.731061945777404*^9}, 3.731061983006536*^9, 3.7310620668413897`*^9, 
-   3.731062492444625*^9, 3.73106453559971*^9, {3.731064569063414*^9, 
-   3.731064584527027*^9}},
+ CellChangeTimes->{{3.7310677797202797`*^9, 3.731067786930437*^9}},
  CellLabel->
-  "Out[320]=",ExpressionUUID->"27f4070b-81e0-4048-9c54-c30f720d7833"]
+  "Out[347]=",ExpressionUUID->"f7f06640-16b8-49d3-9d6d-cd664c9f4012"]
 }, Open  ]]
-}, Open  ]],
+}, Closed]],
 
 Cell[CellGroupData[{
 
-Cell["convert them into list tables", "Subsection",
- CellChangeTimes->{{3.731060826417409*^9, 
-  3.731060852843731*^9}},ExpressionUUID->"e8fea08b-b940-4b11-9d89-\
+Cell["Input: convert them into list tables", "Subsection",
+ CellChangeTimes->{{3.731060826417409*^9, 3.731060852843731*^9}, {
+  3.731067814590632*^9, 
+  3.7310678161200247`*^9}},ExpressionUUID->"e8fea08b-b940-4b11-9d89-\
 085f57630b9e"],
 
 Cell[BoxData[
  RowBox[{
-  RowBox[{"dataTables", "=", 
+  RowBox[{"dataInputTables", "=", 
    RowBox[{"Extract", "[", 
     RowBox[{
      RowBox[{"ds", "\[LeftDoubleBracket]", "1", "\[RightDoubleBracket]"}], 
      ",", 
      RowBox[{"List", "/@", 
-      RowBox[{"refSeq", "\[LeftDoubleBracket]", 
+      RowBox[{"refSeqInput", "\[LeftDoubleBracket]", 
        RowBox[{"All", ",", "2"}], "\[RightDoubleBracket]"}]}]}], "]"}]}], 
   ";"}]], "Input",
- CellChangeTimes->{{3.731064614972245*^9, 3.731064672813118*^9}},
+ CellChangeTimes->{{3.731064614972245*^9, 3.731064672813118*^9}, {
+  3.7310678206237307`*^9, 3.731067826346394*^9}},
  CellLabel->
-  "In[323]:=",ExpressionUUID->"ef4d5898-1f82-4529-872a-1c57bca9b000"],
+  "In[452]:=",ExpressionUUID->"ef4d5898-1f82-4529-872a-1c57bca9b000"],
 
 Cell[BoxData[
  RowBox[{
-  RowBox[{"asscTables", "=", 
+  RowBox[{"asscInputTables", "=", 
    RowBox[{"AssociationThread", "[", 
     RowBox[{
-     RowBox[{"refSeq", "\[LeftDoubleBracket]", 
+     RowBox[{"refSeqInput", "\[LeftDoubleBracket]", 
       RowBox[{"All", ",", "1"}], "\[RightDoubleBracket]"}], ",", 
-     "dataTables"}], "]"}]}], ";"}]], "Input",
+     "dataInputTables"}], "]"}]}], ";"}]], "Input",
  CellChangeTimes->{{3.731064837969289*^9, 3.731064843441434*^9}, {
-  3.7310648851006308`*^9, 3.731064921508562*^9}},
+  3.7310648851006308`*^9, 3.731064921508562*^9}, {3.7310678220065107`*^9, 
+  3.731067836710266*^9}},
  CellLabel->
-  "In[325]:=",ExpressionUUID->"270160c7-2a8c-411a-a647-35bed292753c"],
+  "In[453]:=",ExpressionUUID->"270160c7-2a8c-411a-a647-35bed292753c"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"asscTables", "\[LeftDoubleBracket]", "2", 
-  "\[RightDoubleBracket]"}]], "Input",
- CellChangeTimes->{{3.731064932431802*^9, 3.7310649388563004`*^9}},
+ RowBox[{"asscInputTables", "\[LeftDoubleBracket]", 
+  RowBox[{
+   RowBox[{"2", ";;", 
+    RowBox[{"-", "1"}]}], ",", "1"}], "\[RightDoubleBracket]"}]], "Input",
+ CellChangeTimes->{{3.731064932431802*^9, 3.7310649388563004`*^9}, 
+   3.73106784172878*^9, {3.731067897391577*^9, 3.73106792297329*^9}},
  CellLabel->
-  "In[327]:=",ExpressionUUID->"76887ff5-0db8-455a-ae2e-f52526a126bf"],
+  "In[454]:=",ExpressionUUID->"76887ff5-0db8-455a-ae2e-f52526a126bf"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"SUEWS_SiteSelect\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\<\"No.\"\>", ",", "\<\"Use\"\>", ",", "\<\"Column name\"\>", 
+      ",", "\<\"Example\"\>", ",", "\<\"Description\"\>"}], "}"}]}], ",", 
+   RowBox[{"\<\"SUEWS_NonVeg\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\<\"No.\"\>", ",", "\<\"Use\"\>", ",", "\<\"Column name\"\>", 
+      ",", "\<\"Example\"\>", ",", "\<\"Description\"\>"}], "}"}]}], ",", 
+   RowBox[{"\<\"SUEWS_Veg\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\<\"No.\"\>", ",", "\<\"Use\"\>", ",", "\<\"Column name\"\>", 
+      ",", "\<\"Example\"\>", ",", "\<\"Description\"\>"}], "}"}]}], ",", 
+   RowBox[{"\<\"SUEWS_Water\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\<\"No.\"\>", ",", "\<\"Use\"\>", ",", "\<\"Column name\"\>", 
+      ",", "\<\"Example\"\>", ",", "\<\"Description\"\>"}], "}"}]}], ",", 
+   RowBox[{"\<\"SUEWS_Snow\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\<\"No.\"\>", ",", "\<\"Use\"\>", ",", "\<\"Column name\"\>", 
+      ",", "\<\"Example\"\>", ",", "\<\"Description\"\>"}], "}"}]}], ",", 
+   RowBox[{"\<\"SUEWS_Soil\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\<\"No.\"\>", ",", "\<\"Use\"\>", ",", "\<\"Column name\"\>", 
+      ",", "\<\"Example\"\>", ",", "\<\"Description\"\>"}], "}"}]}], ",", 
+   RowBox[{"\<\"SUEWS_Conductance\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\<\"No.\"\>", ",", "\<\"Use\"\>", ",", "\<\"Column name\"\>", 
+      ",", "\<\"Example\"\>", ",", "\<\"Description\"\>"}], "}"}]}], ",", 
+   RowBox[{"\<\"SUEWS_AnthropogenicHeat\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\<\"No.\"\>", ",", "\<\"Use\"\>", ",", "\<\"Column name\"\>", 
+      ",", "\<\"Example\"\>", ",", "\<\"Description\"\>"}], "}"}]}], ",", 
+   RowBox[{"\<\"SUEWS_Irrigation\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\<\"No.\"\>", ",", "\<\"Use\"\>", ",", "\<\"Column name\"\>", 
+      ",", "\<\"Example\"\>", ",", "\<\"Description\"\>"}], "}"}]}], ",", 
+   RowBox[{"\<\"SUEWS_Profiles\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\<\"No.\"\>", ",", "\<\"Use\"\>", ",", "\<\"Column name\"\>", 
+      ",", "\<\"Example\"\>", ",", "\<\"Description\"\>"}], "}"}]}], ",", 
+   RowBox[{"\<\"SUEWS_WithinGridWaterDist\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "1", ",", "2", ",", "3", ",", "4", ",", "5", ",", "6", ",", "7", ",", 
+      "8", ",", "9", ",", "10"}], "}"}]}], ",", 
+   RowBox[{"\<\"SUEWS_OHMCoefficients\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\<\"No.\"\>", ",", "\<\"Use\"\>", ",", "\<\"Column name\"\>", 
+      ",", "\<\"Example\"\>", ",", "\<\"Description\"\>"}], "}"}]}], ",", 
+   RowBox[{"\<\"SUEWS_ESTMCoefficients\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\<\"No.\"\>", ",", "\<\"Use\"\>", ",", "\<\"Column name\"\>", 
+      ",", "\<\"Example\"\>", ",", "\<\"Description\"\>"}], "}"}]}], ",", 
+   RowBox[{"\<\"SSss_YYYY_ESTM_Ts_data_tt\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\<\"No.\"\>", ",", "\<\"Column name\"\>", 
+      ",", "\<\"Description\"\>"}], "}"}]}], ",", 
+   RowBox[{"\<\"SSss_YYYY_data_tt\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\<\"No.\"\>", ",", "\<\"Use\"\>", ",", "\<\"Column name\"\>", 
+      ",", "\<\"Description\"\>"}], "}"}]}], ",", 
+   RowBox[{"\<\"CBL_initial_data\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\<\"No.\"\>", ",", "\<\"Column name\"\>", 
+      ",", "\<\"Description\"\>"}], "}"}]}]}], 
+  "\[RightAssociation]"}]], "Output",
+ CellChangeTimes->{{3.731064932784142*^9, 3.731064939684854*^9}, 
+   3.731067842303152*^9, {3.731067897897479*^9, 3.7310679238311663`*^9}, 
+   3.731138620347805*^9},
+ CellLabel->
+  "Out[454]=",ExpressionUUID->"3fcc482f-9341-4e0e-8303-bd4586c903e0"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"format", " ", "input", " ", "tables"}], "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Clear", "[", "fmtTable", "]"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"fmtTable", "[", "tbl0_List", "]"}], ":=", 
+    RowBox[{"Module", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"tbl", ",", "title", ",", "len", ",", "data", ",", "res"}], 
+       "}"}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"tbl", "=", 
+        RowBox[{"tbl0", "/.", 
+         RowBox[{
+          RowBox[{"{", "}"}], "\[Rule]", "Nothing"}]}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"title", "=", 
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"Head", "[", 
+            RowBox[{"tbl", "\[LeftDoubleBracket]", 
+             RowBox[{"1", ",", "1"}], "\[RightDoubleBracket]"}], "]"}], "===",
+            "String"}], ",", 
+          RowBox[{"Cases", "[", 
+           RowBox[{
+            RowBox[{"First", "[", "tbl", "]"}], ",", 
+            RowBox[{
+            "\"\<No.\>\"", "|", "\"\<Use\>\"", "|", "\"\<Column name\>\"", 
+             "|", "\"\<Description\>\""}]}], "]"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{
+          "tbl", "\[LeftDoubleBracket]", "2", "\[RightDoubleBracket]"}]}], 
+         "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"len", "=", 
+        RowBox[{"Length", "[", "title", "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"data", "=", 
+        RowBox[{
+         RowBox[{"Rest", "[", "tbl", "]"}], "/.", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+           "no_Integer", ",", "use_String", ",", "name_String", ",", "exp_", 
+            ",", 
+            RowBox[{"des", ":", 
+             RowBox[{"(", 
+              RowBox[{"_List", "|", "_String"}], ")"}]}]}], "}"}], ":>", 
+          RowBox[{"{", 
+           RowBox[{"no", ",", "use", ",", "name", ",", 
+            RowBox[{"StringRiffle", "[", 
+             RowBox[{
+              RowBox[{"Flatten", "@", 
+               RowBox[{"{", "des", "}"}]}], ",", "\"\< \>\""}], "]"}]}], 
+           "}"}]}]}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"res", "=", 
+        RowBox[{
+         RowBox[{"DeleteDuplicates", "@", 
+          RowBox[{"Join", "[", 
+           RowBox[{
+            RowBox[{"{", "title", "}"}], ",", 
+            RowBox[{"data", "\[LeftDoubleBracket]", 
+             RowBox[{"All", ",", 
+              RowBox[{"1", ";;", "len"}]}], "\[RightDoubleBracket]"}]}], 
+           "]"}]}], "/.", 
+         RowBox[{
+          RowBox[{"{", "}"}], "\[Rule]", "Nothing"}]}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"If", "[", 
+        RowBox[{
+         RowBox[{"MemberQ", "[", 
+          RowBox[{
+           RowBox[{
+           "res", "\[LeftDoubleBracket]", "1", "\[RightDoubleBracket]"}], 
+           ",", "\"\<Use\>\""}], "]"}], ",", "res", ",", 
+         RowBox[{"Join", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"Insert", "[", 
+             RowBox[{
+              RowBox[{
+              "res", "\[LeftDoubleBracket]", "1", "\[RightDoubleBracket]"}], 
+              ",", "\"\<Use\>\"", ",", "2"}], "]"}], "}"}], ",", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"Insert", "[", 
+              RowBox[{"#", ",", "\"\<MU\>\"", ",", "2"}], "]"}], "&"}], "/@", 
+            
+            RowBox[{"Rest", "[", "res", "]"}]}]}], "]"}]}], "]"}]}]}], 
+     "\[IndentingNewLine]", "]"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.731068336388904*^9, 3.731068357783298*^9}, {
+   3.7310704493962507`*^9, 3.731070518495141*^9}, {3.7310705958941727`*^9, 
+   3.731070652830628*^9}, {3.731137277317034*^9, 3.7311372995069733`*^9}, {
+   3.7311373470513897`*^9, 3.731137356246456*^9}, {3.731137427827394*^9, 
+   3.7311374896614723`*^9}, {3.731137629382264*^9, 3.7311376706593637`*^9}, 
+   3.7311377552004137`*^9, {3.7311378284158163`*^9, 3.731137834061453*^9}, {
+   3.731137876553523*^9, 3.7311379485971327`*^9}, {3.7311383370425997`*^9, 
+   3.731138409312065*^9}, {3.7311384589034224`*^9, 3.7311384602735577`*^9}, {
+   3.731141581770509*^9, 3.731141583420643*^9}, {3.7311416327629013`*^9, 
+   3.731141635373085*^9}, {3.731143540486659*^9, 3.731143674539489*^9}, {
+   3.731143709946054*^9, 3.731143716142152*^9}, {3.7311463986038218`*^9, 
+   3.731146415140633*^9}},
+ CellLabel->
+  "In[545]:=",ExpressionUUID->"1ca7ebc1-aae0-4dc9-a2db-6ffe47102800"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"clean", " ", "the", " ", "input", " ", "tables"}], "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"asscInputTablesR", "=", 
+     RowBox[{"fmtTable", "/@", "asscInputTables"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"Dimensions", "/@", "asscInputTablesR"}]}]}]], "Input",
+ CellChangeTimes->{{3.731137549741346*^9, 3.731137565221504*^9}, {
+   3.731137677789584*^9, 3.731137682536497*^9}, {3.731138213692443*^9, 
+   3.731138234648779*^9}, 3.731138419727271*^9, {3.7311384896707897`*^9, 
+   3.7311384995353394`*^9}, {3.731138632618813*^9, 3.731138637391871*^9}, {
+   3.7311437216439466`*^9, 3.73114372268769*^9}},
+ CellLabel->
+  "In[920]:=",ExpressionUUID->"0ca620f0-1630-4b78-aa9d-36d29924de3f"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"use_table\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"5", ",", "2"}], "}"}]}], ",", 
+   RowBox[{"\<\"SUEWS_SiteSelect\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"104", ",", "4"}], "}"}]}], ",", 
+   RowBox[{"\<\"SUEWS_NonVeg\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"25", ",", "4"}], "}"}]}], ",", 
+   RowBox[{"\<\"SUEWS_Veg\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"38", ",", "4"}], "}"}]}], ",", 
+   RowBox[{"\<\"SUEWS_Water\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"23", ",", "4"}], "}"}]}], ",", 
+   RowBox[{"\<\"SUEWS_Snow\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"26", ",", "4"}], "}"}]}], ",", 
+   RowBox[{"\<\"SUEWS_Soil\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"10", ",", "4"}], "}"}]}], ",", 
+   RowBox[{"\<\"SUEWS_Conductance\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"14", ",", "4"}], "}"}]}], ",", 
+   RowBox[{"\<\"SUEWS_AnthropogenicHeat\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"12", ",", "4"}], "}"}]}], ",", 
+   RowBox[{"\<\"SUEWS_Irrigation\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"26", ",", "4"}], "}"}]}], ",", 
+   RowBox[{"\<\"SUEWS_Profiles\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"3", ",", "4"}], "}"}]}], ",", 
+   RowBox[{"\<\"SUEWS_WithinGridWaterDist\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"8", ",", "11"}], "}"}]}], ",", 
+   RowBox[{"\<\"SUEWS_OHMCoefficients\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"5", ",", "4"}], "}"}]}], ",", 
+   RowBox[{"\<\"SUEWS_ESTMCoefficients\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"53", ",", "4"}], "}"}]}], ",", 
+   RowBox[{"\<\"SSss_YYYY_ESTM_Ts_data_tt\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"14", ",", "4"}], "}"}]}], ",", 
+   RowBox[{"\<\"SSss_YYYY_data_tt\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"25", ",", "4"}], "}"}]}], ",", 
+   RowBox[{"\<\"CBL_initial_data\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"9", ",", "4"}], "}"}]}]}], "\[RightAssociation]"}]], "Output",
+ CellChangeTimes->{
+  3.731137682948126*^9, 3.731137759789946*^9, 3.731137836862064*^9, {
+   3.731137895089241*^9, 3.731137913755392*^9}, 3.731137950886965*^9, 
+   3.731138235096427*^9, 3.731138420209548*^9, 3.7311384629156857`*^9, {
+   3.731138496038495*^9, 3.7311384999497547`*^9}, 3.7311386331857357`*^9, 
+   3.731141587214082*^9, 3.731141637572529*^9, 3.731143723233748*^9, {
+   3.731146403224717*^9, 3.731146418201123*^9}, 3.731232796552671*^9},
+ CellLabel->
+  "Out[921]=",ExpressionUUID->"e2025c8f-598e-4399-8186-244f90bfa7c6"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"modify", " ", "`WithinGridWaterDist`"}], "*)"}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"tblWithinWater", "=", 
+     RowBox[{"With", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"varList", "=", 
+         RowBox[{
+          RowBox[{
+           RowBox[{
+           "asscInputTablesR", "[", "\"\<SUEWS_WithinGridWaterDist\>\"", 
+            "]"}], "\[LeftDoubleBracket]", 
+           RowBox[{"1", ",", 
+            RowBox[{"3", ";;", 
+             RowBox[{"-", "1"}]}]}], "\[RightDoubleBracket]"}], "/.", 
+          RowBox[{"\"\<ToBuilt\>\"", "\[Rule]", "\"\<ToBldgs\>\""}]}]}], 
+        "}"}], ",", 
+       RowBox[{"Prepend", "[", 
+        RowBox[{
+         RowBox[{"Table", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"i", ",", "\"\<MU\>\"", ",", 
+             RowBox[{
+             "varList", "\[LeftDoubleBracket]", "i", 
+              "\[RightDoubleBracket]"}], ",", 
+             RowBox[{"\"\<Fraction of water going to \>\"", "~~", 
+              RowBox[{"StringJoin", "[", 
+               RowBox[{"\"\<`\>\"", ",", 
+                RowBox[{"StringDelete", "[", 
+                 RowBox[{
+                  RowBox[{
+                  "varList", "\[LeftDoubleBracket]", "i", 
+                   "\[RightDoubleBracket]"}], ",", "\"\<To\>\""}], "]"}], 
+                ",", "\"\<`\>\""}], "]"}]}]}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"i", ",", 
+             RowBox[{"Length", "[", "varList", "]"}]}], "}"}]}], "]"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+          "\"\<No.\>\"", ",", "\"\<Use\>\"", ",", "\"\<Column name\>\"", ",", 
+           "\"\<Description\>\""}], "}"}]}], "]"}]}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+    "asscInputTablesR", "[", "\"\<SUEWS_WithinGridWaterDist\>\"", "]"}], "=", 
+    "tblWithinWater"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{"tblWithinWater", "=", 
+     RowBox[{"Prepend", "[", 
+      RowBox[{
+       RowBox[{"Transpose", "@", 
+        RowBox[{
+        "asscInputTablesR", "[", "\"\<SUEWS_WithinGridWaterDist\>\"", "]"}]}],
+        ",", 
+       RowBox[{"Range", "[", 
+        RowBox[{"Length", "[", 
+         RowBox[{
+         "tblWithinWater0", "\[LeftDoubleBracket]", "1", 
+          "\[RightDoubleBracket]"}], "]"}], "]"}]}], "]"}]}], 
+    "*)"}]}]}]], "Input",
+ CellChangeTimes->{{3.731229996604658*^9, 3.7312300034560537`*^9}, {
+   3.7312306394805326`*^9, 3.731230719204913*^9}, {3.7312308964837303`*^9, 
+   3.731230908992086*^9}, {3.73123102850348*^9, 3.731231053283181*^9}, {
+   3.731231115194051*^9, 3.731231290759881*^9}, {3.731231353416679*^9, 
+   3.7312313945628033`*^9}, {3.731231436462175*^9, 3.7312314458768473`*^9}, {
+   3.731231690957155*^9, 3.731231701937155*^9}, 3.731231751731395*^9},
+ CellLabel->
+  "In[922]:=",ExpressionUUID->"df6b930c-2736-4ddb-b0e7-427bdfbbb388"],
 
 Cell[BoxData[
  RowBox[{"{", 
   RowBox[{
    RowBox[{"{", 
     RowBox[{"\<\"No.\"\>", ",", "\<\"Use\"\>", ",", "\<\"Column name\"\>", 
-     ",", "\<\"Example\"\>", ",", "\<\"Description\"\>"}], "}"}], ",", 
+     ",", "\<\"Description\"\>"}], "}"}], ",", 
    RowBox[{"{", 
-    RowBox[{"1", ",", "\<\"MU\"\>", ",", "\<\"Grid\"\>", ",", "1", ",", 
-     RowBox[{"{", 
-      RowBox[{"\<\"Grid numbers do not need to be consecutive and do not need \
-to start at a particular value.\"\>", 
-       ",", "\<\"Each grid must have a unique grid number.\"\>", 
-       ",", "\<\"All grids must be present for all years.\"\>", 
-       ",", "\<\"These grid numbers are referred to in GridConnections \
-(columns 64-79) ( N.B. GridConnections not currently implemented! )\"\>"}], 
-      "}"}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "2", ",", "\<\"MU\"\>", ",", "\<\"Year\"\>", ",", "2011", 
-     ",", "\<\"Year [YYYY] Years must be continuous. If running multiple \
-years, ensure the rows in SiteSelect.txt are arranged so that all grids for a \
-particular year appear on consecutive lines (rather than grouping all years \
-together for a particular grid). \"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "3", ",", "\<\"MU\"\>", ",", "\<\"StartDLS\"\>", ",", "86", 
-     ",", "\<\"Start of the day light savings [DOY] See section on Day Light \
-Savings . \"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "4", ",", "\<\"MU\"\>", ",", "\<\"EndDLS\"\>", ",", "303", 
-     ",", "\<\"End of the day light savings [DOY] See section on Day Light \
-Savings . \"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"5", ",", "\<\"MU\"\>", ",", "\<\"lat\"\>", ",", "60.`", ",", 
-     RowBox[{"{", 
-      RowBox[{"\<\"Use coordinate system WGS84.\"\>", 
-       ",", "\<\"Positive values are northern hemisphere (negative southern \
-hemisphere).\"\>", ",", "\<\"Used in radiation calculations.\"\>", 
-       ",", "\<\"Note, if the total modelled area is small the latitude and \
-longitude could be the same for each grid but small differences in radiation \
-will not be determined. If you are defining the latitude and longitude \
-differently between grids make certain that you provide enough decimal \
-places.\"\>"}], "}"}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"6", ",", "\<\"MU\"\>", ",", "\<\"lng\"\>", ",", 
-     RowBox[{"-", "18.2`"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"\<\"Use coordinate system WGS84.\"\>", 
-       ",", "\<\"For compatibility with GIS, negative values are to the west, \
-positive values are to the east (e.g. Vancouver = -123.12; Shanghai = 121.47) \
-Note this is a change of sign convention between v2016a and v2017a\"\>", 
-       ",", "\<\"See latitude for more details.\"\>"}], "}"}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "7", ",", "\<\"MU\"\>", ",", "\<\"Timezone\"\>", ",", "0", 
-     ",", "\<\"Time zone [h] for site relative to UTC (east is positive). \
-This should be set according to the times given in the meteorological forcing \
-file(s).\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "8", ",", "\<\"MU\"\>", ",", "\<\"SurfaceArea\"\>", ",", "75.3`", 
-     ",", "\<\"Area of the grid [ha].\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "9", ",", "\<\"MU\"\>", ",", "\<\"Alt\"\>", ",", "25.`", 
-     ",", "\<\"Used for both the radiation and water flow between grids. ( \
-N.B. water flow between grids not currently implemented. )\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"10", ",", "\<\"MU\"\>", ",", "\<\"z\"\>", ",", "20.5`", ",", 
-     RowBox[{"{", 
-      RowBox[{"\<\"z must be greater than the displacement height.\"\>", 
-       ",", "\<\"Forcing data should be representative of the local-scale, \
-i.e. above the height of the roughness elements.\"\>"}], "}"}]}], "}"}], ",", 
-   
-   RowBox[{"{", 
-    RowBox[{
-    "11", ",", "\<\"MD\"\>", ",", "\<\"id\"\>", ",", "1", 
-     ",", "\<\"Day [DOY] Not used: set to 1 in this version. \"\>"}], "}"}], 
-   ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "12", ",", "\<\"MD\"\>", ",", "\<\"ih\"\>", ",", "0", 
-     ",", "\<\"Hour [H] Not used: set to 0 in this version. \"\>"}], "}"}], 
-   ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "13", ",", "\<\"MD\"\>", ",", "\<\"imin\"\>", ",", "0", 
-     ",", "\<\"Minute [M] Not used: set to 0 in this version. \"\>"}], "}"}], 
-   ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "14", ",", "\<\"MU\"\>", ",", "\<\"Fr_Paved\"\>", ",", "0.2`", 
-     ",", "\<\"Columns 14 to 20 must sum to 1 .\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "15", ",", "\<\"MU\"\>", ",", "\<\"Fr_Bldgs\"\>", ",", "0.2`", 
-     ",", "\<\"Surface cover fraction of buildings [-]\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "16", ",", "\<\"MU\"\>", ",", "\<\"Fr_EveTr\"\>", ",", "0.1`", 
-     ",", "\<\"Surface cover fraction of evergreen trees and shrubs \
-[-]\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "17", ",", "\<\"MU\"\>", ",", "\<\"Fr_DecTr\"\>", ",", "0.1`", 
-     ",", "\<\"Surface cover fraction of deciduous trees and shrubs \
-[-]\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "18", ",", "\<\"MU\"\>", ",", "\<\"Fr_Grass\"\>", ",", "0.3`", 
-     ",", "\<\"Surface cover fraction of grass [-]\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "19", ",", "\<\"MU\"\>", ",", "\<\"Fr_Bsoil\"\>", ",", "0.05`", 
-     ",", "\<\"Surface cover fraction of bare soil or unmanaged land \
-[-]\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "20", ",", "\<\"MU\"\>", ",", "\<\"Fr_Water\"\>", ",", "0.05`", 
-     ",", "\<\"Surface cover fraction of open water [-] (e.g. river, lakes, \
-ponds, swimming pools) \"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "21", ",", "\<\"MU\"\>", ",", "\<\"IrrFr_EveTr\"\>", ",", "0.5`", 
-     ",", "\<\"Fraction of evergreen trees that are irrigated [-] e.g. 50% of \
-the evergreen trees/shrubs are irrigated \"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "22", ",", "\<\"MU\"\>", ",", "\<\"IrrFr_DecTr\"\>", ",", "0.2`", 
-     ",", "\<\"Fraction of deciduous trees that are irrigated [-]\"\>"}], 
-    "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "23", ",", "\<\"MU\"\>", ",", "\<\"IrrFr_Grass\"\>", ",", "0.7`", 
-     ",", "\<\"Fraction of grass that is irrigated [-]\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "24", ",", "\<\"MU\"\>", ",", "\<\"H_Bldgs\"\>", ",", "10", 
-     ",", "\<\"Mean building height [m]\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "25", ",", "\<\"MU\"\>", ",", "\<\"H_EveTr\"\>", ",", "15", 
-     ",", "\<\"Mean height of evergreen trees [m]\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "26", ",", "\<\"MU\"\>", ",", "\<\"H_DecTr\"\>", ",", "15", 
-     ",", "\<\"Mean height of deciduous trees [m]\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "27", ",", "\<\"O\"\>", ",", "\<\"z0\"\>", ",", "0.6`", 
-     ",", "\<\"Roughness length for momentum [m] Value supplied here is used \
-if RoughLenMomMethod = 1 in RunControl.nml ; otherwise set to '-999' and a \
-value will be calculated by the model (RoughLenMomMethod = 2, 3). \"\>"}], 
-    "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "28", ",", "\<\"O\"\>", ",", "\<\"zd\"\>", ",", "1.5`", 
-     ",", "\<\"Zero-plane displacement [m] Value supplied here is used if \
-RoughLenMomMethod = 1 in RunControl.nml ; otherwise set to '-999' and a value \
-will be calculated by the model (RoughLenMomMethod = 2, 3). \"\>"}], "}"}], 
-   ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "29", ",", "\<\"O\"\>", ",", "\<\"FAI_Bldgs\"\>", ",", "0.1`", 
-     ",", "\<\"Frontal area index for buildings [-] Required if \
-RoughLenMomMethod = 3 in RunControl.nml . \"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "30", ",", "\<\"O\"\>", ",", "\<\"FAI_EveTr\"\>", ",", "0.2`", 
-     ",", "\<\"Frontal area index for evergreen trees [-] Required if \
-RoughLenMomMethod = 3 in RunControl.nml . \"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "31", ",", "\<\"O\"\>", ",", "\<\"FAI_DecTr\"\>", ",", "0.2`", 
-     ",", "\<\"Frontal area index for deciduous trees [-] Required if \
-RoughLenMomMethod = 3 in RunControl.nml . \"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "32", ",", "\<\"O\"\>", ",", "\<\"PopDensDay\"\>", ",", "30.7`", 
-     ",", "\<\"Daytime population density (i.e. workers, tourists) [people ha \
--1 ] Population density is required if AnthropHeatMethod = 2 in \
-RunControl.nml . The model will use the average of daytime and night-time \
-population densities, unless only one is provided. If daytime population \
-density is unknown, set to -999. \"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "33", ",", "\<\"O\"\>", ",", "\<\"PopDensNight\"\>", ",", "10.2`", 
-     ",", "\<\"Night-time population density (i.e. residents) [people ha -1 ] \
-Population density is required if AnthropHeatMethod = 2 in RunControl.nml . \
-The model will use the average of daytime and night-time population \
-densities, unless only one is provided. If night-time population density is \
-unknown, set to -999. \"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "34", ",", "\<\"O\"\>", ",", "\<\"TrafficRate\"\>", 
-     ",", "\<\"Traffic rate [veh km m-2 s-1] Can be used for CO2 flux \
-calculation. Do not use in v2017a - set to -999 \"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "35", ",", "\<\"O\"\>", ",", "\<\"BuildEnergyUse\"\>", 
-     ",", "\<\"Building energy use [W m-2] Can be used for CO2 flux \
-calculation. Do not use in v2017a - set to -999 \"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "36", ",", "\<\"L\"\>", ",", "\<\"Code_Paved\"\>", ",", "331", 
-     ",", "\<\"Code for Paved surface characteristics Provides the link to \
-column 1 of SUEWS_NonVeg.txt, which contains the attributes describing paved \
-areas in this grid for this year. Value of integer is arbitrary but must \
-match code specified in column 1 of SUEWS_NonVeg.txt. e.g. 331 means use the \
-characteristics specified in the row of input file SUEWS_NonVeg.txt which has \
-331 in column 1 (Code). \"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "37", ",", "\<\"L\"\>", ",", "\<\"Code_Bldgs\"\>", ",", "332", 
-     ",", "\<\"Code for Bldgs surface characteristics Provides the link to \
-column 1 of SUEWS_NonVeg.txt, which contains the attributes describing \
-buildings in this grid for this year. Value of integer is arbitrary but must \
-match code specified in column 1 of SUEWS_NonVeg.txt. \"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "38", ",", "\<\"L\"\>", ",", "\<\"Code_EveTr\"\>", ",", "331", 
-     ",", "\<\"Code for EveTr surface characteristics Provides the link to \
-column 1 of SUEWS_Veg.txt, which contains the attributes describing evergreen \
-trees and shrubs in this grid for this year. Value of integer is arbitrary \
-but must match code specified in column 1 of SUEWS_Veg.txt. \"\>"}], "}"}], 
-   ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "39", ",", "\<\"L\"\>", ",", "\<\"Code_DecTr\"\>", ",", "332", 
-     ",", "\<\"Code for DecTr surface characteristics Provides the link to \
-column 1 of SUEWS_Veg.txt, which contains the attributes describing deciduous \
-trees and shrubs in this grid for this year. Value of integer is arbitrary \
-but must match code specified in column 1 of SUEWS_Veg.txt. \"\>"}], "}"}], 
-   ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "40", ",", "\<\"L\"\>", ",", "\<\"Code_Grass\"\>", ",", "333", 
-     ",", "\<\"Code for Grass surface characteristics Provides the link to \
-column 1 of SUEWS_Veg.txt, which contains the attributes describing grass \
-surfaces in this grid for this year. Value of integer is arbitrary but must \
-match code specified in column 1 of SUEWS_Veg.txt. \"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "41", ",", "\<\"L\"\>", ",", "\<\"Code_Bsoil\"\>", ",", "333", 
-     ",", "\<\"Code for BSoil surface characteristics Provides the link to \
-column 1 of SUEWS_NonVeg.txt, which contains the attributes describing bare \
-soil in this grid for this year. Value of integer is arbitrary but must match \
-code specified in column 1 of SUEWS_NonVeg.txt. \"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "42", ",", "\<\"L\"\>", ",", "\<\"Code_Water\"\>", ",", "331", 
-     ",", "\<\"Code for Water surface characteristics Provides the link to \
-column 1 of SUEWS_Water.txt, which contains the attributes describing open \
-water in this grid for this year. Value of integer is arbitrary but must \
-match code specified in column 1 of SUEWS_Water.txt. \"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "43", ",", "\<\"MD\"\>", ",", "\<\"LUMPS_DrRate\"\>", ",", "0.25`", 
-     ",", "\<\"Drainage rate of bucket for LUMPS [mm h -1 ] Used for LUMPS \
-surface wetness control. Default recommended value of 0.25 mm h -1 from \
-Loridan et al. (2011) [5] . \"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "44", ",", "\<\"MD\"\>", ",", "\<\"LUMPS_Cover\"\>", ",", "1", 
-     ",", "\<\"Limit when surface totally covered with water [mm] Used for \
-LUMPS surface wetness control. Default recommended value of 1 mm from Loridan \
-et al. (2011) [5] . \"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "45", ",", "\<\"MD\"\>", ",", "\<\"LUMPS_MaxRes\"\>", ",", "10", 
-     ",", "\<\"Maximum water bucket reservoir [mm] Used for LUMPS surface \
-wetness control. Default recommended value of 10 mm from Loridan et al. \
-(2011) [5] . \"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "46", ",", "\<\"MD\"\>", ",", "\<\"NARP_Trans\"\>", ",", "1", 
-     ",", "\<\"Atmospheric transmissivity for NARP [-] Value must in the \
-range 0-1. Default recommended value of 1. \"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "47", ",", "\<\"L\"\>", ",", "\<\"CondCode\"\>", ",", "33", 
-     ",", "\<\"Code for surface conductance parameters Provides the link to \
-column 1 of SUEWS_Conductance.txt, which contains the parameters for the \
-Jarvis (1976) parameterisation of surface conductance. Value of integer is \
-arbitrary but must match code specified in column 1 of SUEWS_Conductance.txt. \
-e.g. 33 means use the characteristics specified in the row of input file \
-SUEWS_Conductance.txt which has 33 in column 1 (Code). \"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "48", ",", "\<\"L\"\>", ",", "\<\"SnowCode\"\>", ",", "33", 
-     ",", "\<\"Code for snow surface characteristics Provides the link to \
-column 1 of SUEWS_Snow.txt, which contains the attributes describing snow \
-surfaces in this grid for this year. Value of integer is arbitrary but must \
-match code specified in column 1 of SUEWS_Snow.txt. \"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "49", ",", "\<\"L\"\>", ",", "\<\"SnowClearingProfWD\"\>", ",", "1", 
-     ",", "\<\"Code for snow clearing profile (weekdays) Provides the link to \
-column 1 of SUEWS_Profiles.txt. Value of integer is arbitrary but must match \
-code specified in column 1 of SUEWS_Profiles.txt. e.g. 1 means use the \
-characteristics specified in the row of input file SUEWS_Profiles.txt which \
-has 1 in column 1 (Code). \"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "50", ",", "\<\"L\"\>", ",", "\<\"SnowClearingProfWE\"\>", ",", "1", 
-     ",", "\<\"Code for snow clearing profile (weekends) Provides the link to \
-column 1 of SUEWS_Profiles.txt. Value of integer is arbitrary but must match \
-code specified in column 1 of SUEWS_Profiles.txt. e.g. 1 means use the \
-characteristics specified in the row of input file SUEWS_Profiles.txt which \
-has 1 in column 1 (Code). Providing the same code for SnowClearingProfWD and \
-SnowClearingProfWE would link to the same row in SUEWS_Profiles.txt, i.e. the \
-same profile would be used for weekdays and weekends. \"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "51", ",", "\<\"L\"\>", ",", "\<\"AnthropogenicCode\"\>", ",", "33", 
-     ",", "\<\"Code for modelling anthropogenic heat flux Provides the link \
-to column 1 of SUEWS_AnthropogenicHeat.txt, which contains the model \
-coefficients for estimation of the anthropogenic heat flux (used if \
-AnthropHeatChoice = 1, 2 in RunControl.nml ). Value of integer is arbitrary \
-but must match code specified in column 1 of SUEWS_AnthropogenicHeat.txt. \
-\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "52", ",", "\<\"L\"\>", ",", "\<\"EnergyUseProfWD\"\>", ",", "333", 
-     ",", "\<\"Code for energy use profile (weekdays) Provides the link to \
-column 1 of SUEWS_Profiles.txt. Look the codes Value of integer is arbitrary \
-but must match code specified in column 1 of SUEWS_Profiles.txt. \"\>"}], 
-    "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "53", ",", "\<\"L\"\>", ",", "\<\"EnergyUseProfWE\"\>", ",", "334", 
-     ",", "\<\"Code for energy use profile (weekends) Provides the link to \
-column 1 of SUEWS_Profiles.txt. Value of integer is arbitrary but must match \
-code specified in column 1 of SUEWS_Profiles.txt. \"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "54", ",", "\<\"L\"\>", ",", "\<\"ActivityProfWD\"\>", ",", "333", 
-     ",", "\<\"Code for human activity profile (weekdays) Provides the link \
-to column 1 of SUEWS_Profiles.txt. Look the codes Value of integer is \
-arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt. \
-Used for CO2 flux calculation - not used in v2017a \"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "55", ",", "\<\"L\"\>", ",", "\<\"ActivityProfWE\"\>", ",", "333", 
-     ",", "\<\"Code for human activity profile (weekends) Provides the link \
-to column 1 of SUEWS_Profiles.txt. Look the codes Value of integer is \
-arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt. \
-Used for CO2 flux calculation - not used in v2017a \"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "56", ",", "\<\"L\"\>", ",", "\<\"IrrigationCode\"\>", ",", "33", 
-     ",", "\<\"Code for modelling irrigation Provides the link to column 1 of \
-SUEWS_Irrigation.txt, which contains the model coefficients for estimation of \
-the water use (used if WU_Choice = 0 in RunControl.nml ). Value of integer is \
-arbitrary but must match code specified in column 1 of SUEWS_Irrigation.txt. \
-\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "57", ",", "\<\"L\"\>", ",", "\<\"WaterUseProfManuWD\"\>", ",", "335", 
-     ",", "\<\"Code for water use profile (manual irrigation, weekdays) \
-Provides the link to column 1 of SUEWS_Profiles.txt. Value of integer is \
-arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt. \"\
-\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "58", ",", "\<\"L\"\>", ",", "\<\"WaterUseProfManuWE\"\>", ",", "336", 
-     ",", "\<\"Code for water use profile (manual irrigation, weekends) \
-Provides the link to column 1 of SUEWS_Profiles.txt. Value of integer is \
-arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt. \"\
-\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "59", ",", "\<\"L\"\>", ",", "\<\"WaterUseProfAutoWD\"\>", ",", "337", 
-     ",", "\<\"Code for water use profile (automatic irrigation, weekdays) \
-Provides the link to column 1 of SUEWS_Profiles.txt. Value of integer is \
-arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt. \"\
-\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "60", ",", "\<\"L\"\>", ",", "\<\"WaterUseProfAutoWE\"\>", ",", "338", 
-     ",", "\<\"Code for water use profile (automatic irrigation, weekends) \
-Provides the link to column 1 of SUEWS_Profiles.txt. Value of integer is \
-arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt. \"\
-\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "61", ",", "\<\"MD\"\>", ",", "\<\"FlowChange\"\>", ",", "0", 
-     ",", "\<\"Difference in input and output flows for water surface [mm h \
--1 ] Used to indicate river or stream flow through the grid. Currently not \
-fully tested! \"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "62", ",", "\<\"MD,MU\"\>", ",", "\<\"RunoffToWater\"\>", ",", "0.1`", 
-     ",", "\<\"Fraction of above-ground runoff flowing to water surface \
-during flooding [-] Value must be in the range 0-1. Fraction of above-ground \
-runoff that can flow to the water surface in the case of flooding. \"\>"}], 
-    "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "63", ",", "\<\"MD,MU\"\>", ",", "\<\"PipeCapacity\"\>", ",", "100", 
-     ",", "\<\"Storage capacity of pipes [mm] Runoff amounting to less than \
-the value specified here is assumed to be removed by pipes. \"\>"}], "}"}], 
-   ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "64", ",", "\<\"MD,MU\"\>", ",", "\<\"GridConnection1of8\"\>", ",", "2", 
-     ",", 
-     RowBox[{"{", 
-      RowBox[{"\<\"The next 8 pairs of columns specify the water flow between \
-grids.\"\>", 
-       ",", "\<\"The first column of each pair specifies the grid that the \
-water flows to (from the current grid, column 1); the second column of each \
-pair specifies the fraction of water that flow to that grid.\"\>", 
-       ",", "\<\"The fraction (i.e. amount) of water transferred may be \
-estimated based on elevation, the length of connecting surface between grids, \
-presence of walls, etc.\"\>", 
-       ",", "\<\"Water cannot flow from the current grid to the same grid, so \
-the grid number here must be different to the grid number in column 1. Water \
-can flow to a maximum of 8 other grids.\"\>", 
-       ",", "\<\"If there is no water flow between grids, or a single grid is \
-run, set to 0.\"\>", ",", "\<\"See section on Grid Connections\"\>"}], 
-      "}"}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "65", ",", "\<\"MD,MU\"\>", ",", "\<\"Fraction1of8\"\>", ",", "0.2`", 
-     ",", "\<\"Fraction of water that can flow to the grid specified in \
-previous column [-]\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "66", ",", "\<\"MD,MU\"\>", ",", "\<\"GridConnection2of8\"\>", ",", "0", 
-     ",", "\<\"Number of the grid where water can flow to\"\>"}], "}"}], ",", 
-   
-   RowBox[{"{", 
-    RowBox[{
-    "67", ",", "\<\"MD,MU\"\>", ",", "\<\"Fraction2of8\"\>", ",", "0", 
-     ",", "\<\"Fraction of water that can flow to the grid specified in \
-previous column [-]\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "68", ",", "\<\"MD,MU\"\>", ",", "\<\"GridConnection3of8\"\>", ",", "0", 
-     ",", "\<\"Number of the grid where water can flow to\"\>"}], "}"}], ",", 
-   
-   RowBox[{"{", 
-    RowBox[{
-    "69", ",", "\<\"MD,MU\"\>", ",", "\<\"Fraction3of8\"\>", ",", "0", 
-     ",", "\<\"Fraction of water that can flow to the grid specified in \
-previous column [-]\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "70", ",", "\<\"MD,MU\"\>", ",", "\<\"GridConnection4of8\"\>", ",", "0", 
-     ",", "\<\"Number of the grid where water can flow to\"\>"}], "}"}], ",", 
-   
-   RowBox[{"{", 
-    RowBox[{
-    "71", ",", "\<\"MD,MU\"\>", ",", "\<\"Fraction4of8\"\>", ",", "0", 
-     ",", "\<\"Fraction of water that can flow to the grid specified in \
-previous column [-]\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "72", ",", "\<\"MD,MU\"\>", ",", "\<\"GridConnection5of8\"\>", ",", "0", 
-     ",", "\<\"Number of the grid where water can flow to\"\>"}], "}"}], ",", 
-   
-   RowBox[{"{", 
-    RowBox[{
-    "73", ",", "\<\"MD,MU\"\>", ",", "\<\"Fraction5of8\"\>", ",", "0", 
-     ",", "\<\"Fraction of water that can flow to the grid specified in \
-previous column [-]\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "74", ",", "\<\"MD,MU\"\>", ",", "\<\"GridConnection6of8\"\>", ",", "0", 
-     ",", "\<\"Number of the grid where water can flow to\"\>"}], "}"}], ",", 
-   
-   RowBox[{"{", 
-    RowBox[{
-    "75", ",", "\<\"MD,MU\"\>", ",", "\<\"Fraction6of8\"\>", ",", "0", 
-     ",", "\<\"Fraction of water that can flow to the grid specified in \
-previous column [-]\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "76", ",", "\<\"MD,MU\"\>", ",", "\<\"GridConnection7of8\"\>", ",", "0", 
-     ",", "\<\"Number of the grid where water can flow to\"\>"}], "}"}], ",", 
-   
-   RowBox[{"{", 
-    RowBox[{
-    "77", ",", "\<\"MD,MU\"\>", ",", "\<\"Fraction7of8\"\>", ",", "0", 
-     ",", "\<\"Fraction of water that can flow to the grid specified in \
-previous column [-]\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "78", ",", "\<\"MD,MU\"\>", ",", "\<\"GridConnection8of8\"\>", ",", "0", 
-     ",", "\<\"Number of the grid where water can flow to\"\>"}], "}"}], ",", 
-   
-   RowBox[{"{", 
-    RowBox[{
-    "79", ",", "\<\"MD,MU\"\>", ",", "\<\"Fraction8of8\"\>", ",", "0", 
-     ",", "\<\"Fraction of water that can flow to the grid specified in \
-previous column [-]\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "80", ",", "\<\"L\"\>", ",", "\<\"WithinGridPavedCode\"\>", ",", "331", 
-     ",", "\<\"Code that links to the fraction of water that flows from Paved \
-surfaces to surfaces in columns 2-10 of SUEWS_WithinGridWaterDist.txt . Value \
-of integer is arbitrary but must match code specified in column 1 of \
-SUEWS_WithinGridWaterDist.txt. \"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "81", ",", "\<\"L\"\>", ",", "\<\"WithinGridBldgsCode\"\>", ",", "332", 
-     ",", "\<\"Code that links to the fraction of water that flows from Bldgs \
-surfaces to surfaces in columns 2-10 of SUEWS_WithinGridWaterDist.txt. Value \
-of integer is arbitrary but must match code specified in column 1 of \
-SUEWS_WithinGridWaterDist.txt. \"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "82", ",", "\<\"L\"\>", ",", "\<\"WithinGridEveTrCode\"\>", ",", "333", 
-     ",", "\<\"Code that links to the fraction of water that flows from EveTr \
-surfaces to surfaces in columns 2-10 of SUEWS_WithinGridWaterDist.txt. Value \
-of integer is arbitrary but must match code specified in column 1 of \
-SUEWS_WithinGridWaterDist.txt. \"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "83", ",", "\<\"L\"\>", ",", "\<\"WithinGridDecTrCode\"\>", ",", "334", 
-     ",", "\<\"Code that links to the fraction of water that flows from DecTr \
-surfaces to surfaces in columns 2-10 of SUEWS_WithinGridWaterDist.txt. Value \
-of integer is arbitrary but must match code specified in column 1 of \
-SUEWS_WithinGridWaterDist.txt. \"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "84", ",", "\<\"L\"\>", ",", "\<\"WithinGridGrassCode\"\>", ",", "335", 
-     ",", "\<\"Code that links to the fraction of water that flows from Grass \
-surfaces to surfaces in columns 2-10 of SUEWS_WithinGridWaterDist.txt. Value \
-of integer is arbitrary but must match code specified in column 1 of \
-SUEWS_WithinGridWaterDist.txt. \"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "85", ",", "\<\"L\"\>", ",", "\<\"WithinGridBSoilCode\"\>", ",", "336", 
-     ",", "\<\"Code that links to the fraction of water that flows from BSoil \
-surfaces to surfaces in columns 2-10 of SUEWS_WithinGridWaterDist.txt. Value \
-of integer is arbitrary but must match code specified in column 1 of \
-SUEWS_WithinGridWaterDist.txt. \"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "86", ",", "\<\"L\"\>", ",", "\<\"WithinGridWaterCode\"\>", ",", "337", 
-     ",", "\<\"Code that links to the fraction of water that flows from Water \
-surfaces to surfaces in columns 2-10 of SUEWS_WithinGridWaterDist.txt. Value \
-of integer is arbitrary but must match code specified in column 1 of \
-SUEWS_WithinGridWaterDist.txt. \"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "87", ",", "\<\"MU\"\>", ",", "\<\"AreaWall\"\>", ",", "1.08`", 
-     ",", "\<\"Area of wall within grid (needed for ESTM calculation).\"\>"}],
-     "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "88", ",", "\<\"MU\"\>", ",", "\<\"Fr_ESTMClass_Paved1\"\>", 
-     ",", "\<\"Columns 88-90 must add up to 1\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "89", ",", "\<\"MU\"\>", ",", "\<\"Fr_ESTMClass_Paved2\"\>", 
-     ",", "\<\"Columns 88-90 must add up to 1\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "90", ",", "\<\"MU\"\>", ",", "\<\"Fr_ESTMClass_Paved3\"\>", 
-     ",", "\<\"Columns 88-90 must add up to 1\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "91", ",", "\<\"L\"\>", ",", "\<\"Code_ESTMClass_Paved1\"\>", 
-     ",", "\<\"Code linking to SUEWS_ESTMCoefficients.txt \"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "92", ",", "\<\"L\"\>", ",", "\<\"Code_ESTMClass_Paved2\"\>", 
-     ",", "\<\"Code linking to SUEWS_ESTMCoefficients.txt \"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "93", ",", "\<\"L\"\>", ",", "\<\"Code_ESTMClass_Paved3\"\>", 
-     ",", "\<\"Code linking to SUEWS_ESTMCoefficients.txt \"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "94", ",", "\<\"MU\"\>", ",", "\<\"Fr_ESTMClass_Bldgs1\"\>", 
-     ",", "\<\"Columns 94-98 must add up to 1\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
     RowBox[{
-    "95", ",", "\<\"MU\"\>", ",", "\<\"Fr_ESTMClass_Bldgs2\"\>", 
-     ",", "\<\"Columns 94-98 must add up to 1\"\>"}], "}"}], ",", 
+    "1", ",", "\<\"MU\"\>", ",", "\<\"ToPaved\"\>", 
+     ",", "\<\"Fraction of water going to `Paved`\"\>"}], "}"}], ",", 
    RowBox[{"{", 
     RowBox[{
-    "96", ",", "\<\"MU\"\>", ",", "\<\"Fr_ESTMClass_Bldgs3\"\>", 
-     ",", "\<\"Columns 94-98 must add up to 1\"\>"}], "}"}], ",", 
+    "2", ",", "\<\"MU\"\>", ",", "\<\"ToBldgs\"\>", 
+     ",", "\<\"Fraction of water going to `Bldgs`\"\>"}], "}"}], ",", 
    RowBox[{"{", 
     RowBox[{
-    "97", ",", "\<\"MU\"\>", ",", "\<\"Fr_ESTMClass_Bldgs4\"\>", 
-     ",", "\<\"Columns 94-98 must add up to 1\"\>"}], "}"}], ",", 
+    "3", ",", "\<\"MU\"\>", ",", "\<\"ToEveTr\"\>", 
+     ",", "\<\"Fraction of water going to `EveTr`\"\>"}], "}"}], ",", 
    RowBox[{"{", 
     RowBox[{
-    "98", ",", "\<\"MU\"\>", ",", "\<\"Fr_ESTMClass_Bldgs5\"\>", 
-     ",", "\<\"Columns 94-98 must add up to 1\"\>"}], "}"}], ",", 
+    "4", ",", "\<\"MU\"\>", ",", "\<\"ToDecTr\"\>", 
+     ",", "\<\"Fraction of water going to `DecTr`\"\>"}], "}"}], ",", 
    RowBox[{"{", 
     RowBox[{
-    "99", ",", "\<\"L\"\>", ",", "\<\"Code_ESTMClass_Bldgs1\"\>", 
-     ",", "\<\"Code linking to SUEWS_ESTMCoefficients.txt \"\>"}], "}"}], ",", 
+    "5", ",", "\<\"MU\"\>", ",", "\<\"ToGrass\"\>", 
+     ",", "\<\"Fraction of water going to `Grass`\"\>"}], "}"}], ",", 
    RowBox[{"{", 
     RowBox[{
-    "100", ",", "\<\"L\"\>", ",", "\<\"Code_ESTMClass_Bldgs2\"\>", 
-     ",", "\<\"Code linking to SUEWS_ESTMCoefficients.txt \"\>"}], "}"}], ",", 
+    "6", ",", "\<\"MU\"\>", ",", "\<\"ToBSoil\"\>", 
+     ",", "\<\"Fraction of water going to `BSoil`\"\>"}], "}"}], ",", 
    RowBox[{"{", 
     RowBox[{
-    "101", ",", "\<\"L\"\>", ",", "\<\"Code_ESTMClass_Bldgs3\"\>", 
-     ",", "\<\"Code linking to SUEWS_ESTMCoefficients.txt \"\>"}], "}"}], ",", 
+    "7", ",", "\<\"MU\"\>", ",", "\<\"ToWater\"\>", 
+     ",", "\<\"Fraction of water going to `Water`\"\>"}], "}"}], ",", 
    RowBox[{"{", 
     RowBox[{
-    "102", ",", "\<\"L\"\>", ",", "\<\"Code_ESTMClass_Bldgs4\"\>", 
-     ",", "\<\"Code linking to SUEWS_ESTMCoefficients.txt \"\>"}], "}"}], ",", 
+    "8", ",", "\<\"MU\"\>", ",", "\<\"ToRunoff\"\>", 
+     ",", "\<\"Fraction of water going to `Runoff`\"\>"}], "}"}], ",", 
    RowBox[{"{", 
     RowBox[{
-    "103", ",", "\<\"L\"\>", ",", "\<\"Code_ESTMClass_Bldgs5\"\>", 
-     ",", "\<\"Code linking to SUEWS_ESTMCoefficients.txt \"\>"}], "}"}]}], 
+    "9", ",", "\<\"MU\"\>", ",", "\<\"ToSoilStore\"\>", 
+     ",", "\<\"Fraction of water going to `SoilStore`\"\>"}], "}"}]}], 
   "}"}]], "Output",
- CellChangeTimes->{{3.731064932784142*^9, 3.731064939684854*^9}},
+ CellChangeTimes->{
+  3.731230682670632*^9, 3.7312307197848883`*^9, {3.731231148824305*^9, 
+   3.731231217826474*^9}, {3.731231274408721*^9, 3.731231292028084*^9}, 
+   3.731231355902912*^9, 3.731231395344389*^9, 3.7312314465801973`*^9, 
+   3.7312317025335417`*^9, 3.731231753460588*^9, 3.7312327619932404`*^9, 
+   3.731232801169127*^9},
  CellLabel->
-  "Out[327]=",ExpressionUUID->"f5c61482-f54c-4455-9889-7960f49ca433"]
+  "Out[923]=",ExpressionUUID->"86c22938-c9a8-491a-b4dc-c782680f03f4"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"asscInputTablesX", "=", 
+   RowBox[{"KeySelect", "[", 
+    RowBox[{"asscInputTablesR", ",", 
+     RowBox[{
+      RowBox[{"StringFreeQ", "[", 
+       RowBox[{"#", ",", 
+        RowBox[{"{", 
+         RowBox[{"\"\<use_table\>\"", ",", "\"\<Profiles\>\""}], 
+         RowBox[{"(*", 
+          RowBox[{",", "\"\<WithinGridWaterDist\>\""}], "*)"}], "}"}]}], 
+       "]"}], "&"}]}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.731142281429319*^9, 3.731142357131299*^9}, {
+   3.731144157704257*^9, 3.731144159242584*^9}, 3.7312313033406353`*^9},
+ CellLabel->
+  "In[924]:=",ExpressionUUID->"5767352a-a207-4c3d-9124-724e3469c334"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"SetDirectory", "[", 
+  RowBox[{"FileNameJoin", "[", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"NotebookDirectory", "[", "]"}], ",", "\"\<source\>\"", ",", 
+     "\"\<input_files\>\"", ",", "\"\<SUEWS_SiteInfo\>\""}], "}"}], "]"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.731175827792677*^9, 3.7311758948143473`*^9}},
+ CellLabel->
+  "In[925]:=",ExpressionUUID->"502c4b62-a3c7-425d-bfd0-598b4cc9b418"],
+
+Cell[BoxData["\<\"/Users/sunt05/Dropbox/8-Research/98.ReadingWork/SUWES-Docs/\
+docs/source/input_files/SUEWS_SiteInfo\"\>"], "Output",
+ CellChangeTimes->{{3.7311758914799433`*^9, 3.731175895803632*^9}, 
+   3.731175960217815*^9, 3.731231452127112*^9, 3.731231714784727*^9, 
+   3.731231757509375*^9, 3.7312328090426197`*^9},
+ CellLabel->
+  "Out[925]=",ExpressionUUID->"108b76af-3ea2-4c7a-bbaf-f1beb0b6dbe4"]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"dsInputTables", "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"Dataset", "[", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"AssociationThread", "[", 
+           RowBox[{
+            RowBox[{"First", "[", "#", "]"}], "\[Rule]", 
+            RowBox[{"Transpose", "[", 
+             RowBox[{"Rest", "[", "#", "]"}], "]"}]}], "]"}], "&"}], "/@", 
+         "asscInputTablesX"}], ")"}], "]"}], "[", 
+      RowBox[{"All", ",", "Transpose"}], "]"}], "[", 
+     RowBox[{"All", ",", "All", ",", 
+      RowBox[{
+       RowBox[{"Append", "[", 
+        RowBox[{"#", ",", 
+         RowBox[{"\[LeftAssociation]", 
+          RowBox[{
+           RowBox[{"\"\<Var\>\"", "\[Rule]", 
+            RowBox[{"#", "[", "\"\<Column name\>\"", "]"}]}], ",", 
+           RowBox[{"\"\<Use\>\"", "\[Rule]", 
+            RowBox[{"(", 
+             RowBox[{"#Use", "/.", 
+              RowBox[{"\"\<R\>\"", "\[Rule]", "\"\<MU\>\""}]}], ")"}]}], ",", 
+           
+           RowBox[{"\"\<Description\>\"", "\[Rule]", 
+            RowBox[{"(", 
+             RowBox[{"StringRiffle", "[", 
+              RowBox[{
+               RowBox[{"Flatten", "[", 
+                RowBox[{"{", "#Description", "}"}], "]"}], ",", "\"\< \>\""}],
+               "]"}], ")"}]}]}], "\[RightAssociation]"}]}], "]"}], "&"}]}], 
+     "]"}], "[", 
+    RowBox[{
+     RowBox[{"MapIndexed", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Append", "[", 
+         RowBox[{"#", ",", 
+          RowBox[{"\[LeftAssociation]", 
+           RowBox[{"\"\<Table\>\"", "\[Rule]", 
+            RowBox[{"StringJoin", "[", 
+             RowBox[{"\"\<`\>\"", ",", 
+              RowBox[{"#2", "\[LeftDoubleBracket]", 
+               RowBox[{"1", ",", "1"}], "\[RightDoubleBracket]"}], ",", 
+              "\"\<.txt`\>\""}], "]"}]}], "\[RightAssociation]"}]}], "]"}], 
+        "&"}], ",", "#", ",", 
+       RowBox[{"{", "2", "}"}]}], "]"}], "&"}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"dsInputTablesX", "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"Join", "@@", 
+       RowBox[{"dsInputTables", "[", "Values", "]"}]}], ")"}], "[", 
+     RowBox[{
+      RowBox[{"GroupBy", "[", 
+       RowBox[{"#Var", "&"}], "]"}], ",", "All", ",", 
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<Var\>\"", ",", "\"\<Use\>\"", ",", "\"\<Description\>\"", ",", 
+        "\"\<Table\>\""}], "}"}]}], "]"}], "[", 
+    RowBox[{"All", ",", "Transpose"}], "]"}]}], 
+  RowBox[{"(*", 
+   RowBox[{"[", 
+    RowBox[{"All", ",", 
+     RowBox[{
+      RowBox[{"Append", "[", 
+       RowBox[{"#", ",", 
+        RowBox[{"\[LeftAssociation]", 
+         RowBox[{
+          RowBox[{"\"\<Use\>\"", "\[Rule]", "#Use"}], "/.", 
+          RowBox[{"\"\<R\>\"", "\[Rule]", "\"\<MU\>\""}]}], 
+         "\[RightAssociation]"}]}], "]"}], "&"}]}], "]"}], "*)"}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{{3.731143874435121*^9, 3.731143891171259*^9}, {
+   3.731143925064123*^9, 3.731143950243404*^9}, {3.731143990786789*^9, 
+   3.731144109956134*^9}, {3.731144172012518*^9, 3.731144200972356*^9}, {
+   3.73114446626413*^9, 3.731144600832428*^9}, {3.731144812096189*^9, 
+   3.731144869640283*^9}, {3.731144930437354*^9, 3.731144933830867*^9}, {
+   3.731145126264532*^9, 3.731145143125515*^9}, {3.731145428227784*^9, 
+   3.731145454957342*^9}, {3.73114548629992*^9, 3.731145496996613*^9}, 
+   3.731145871589402*^9, {3.731146339632123*^9, 3.731146340484681*^9}, 
+   3.7311472823602943`*^9, {3.731151297101701*^9, 3.731151297718148*^9}, {
+   3.731151345431375*^9, 3.731151359064191*^9}, {3.73117127147674*^9, 
+   3.73117127889795*^9}, {3.731171538145647*^9, 3.73117161574533*^9}, {
+   3.7311734602512007`*^9, 3.731173473347917*^9}, 3.731174326885446*^9, {
+   3.731176290002253*^9, 3.731176290416931*^9}, {3.731176389725377*^9, 
+   3.7311763994063787`*^9}, {3.731176442820333*^9, 3.731176448083815*^9}, {
+   3.731176507024115*^9, 3.731176543991452*^9}, {3.7311766145985823`*^9, 
+   3.731176634407506*^9}, {3.731176679949655*^9, 3.731176700156673*^9}, {
+   3.731177653448826*^9, 3.7311777019797077`*^9}, {3.731222567914926*^9, 
+   3.731222577695319*^9}},
+ CellLabel->
+  "In[926]:=",ExpressionUUID->"84252883-fc70-4c4a-8ead-9f55f7a6d4da"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"dsInputTablesXRst", "=", 
+   RowBox[{"dsInputTablesX", "[", 
+    RowBox[{"All", ",", 
+     RowBox[{
+      RowBox[{"Append", "[", 
+       RowBox[{"#", ",", 
+        RowBox[{"\[LeftAssociation]", 
+         RowBox[{
+          RowBox[{"\"\<Var\>\"", "\[Rule]", 
+           RowBox[{"StringJoin", "[", 
+            RowBox[{"\"\<\\n:option:`\>\"", ",", 
+             RowBox[{
+             "#Var", "\[LeftDoubleBracket]", "1", "\[RightDoubleBracket]"}], 
+             ",", "\"\<`\>\""}], "]"}]}], ",", 
+          RowBox[{"\"\<rst\>\"", "\[Rule]", 
+           RowBox[{"StringRiffle", "[", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"\"\<.. option:: \>\"", "~~", 
+                RowBox[{
+                "#Var", "\[LeftDoubleBracket]", "1", 
+                 "\[RightDoubleBracket]"}]}], ",", 
+               RowBox[{"StringRiffle", "[", 
+                RowBox[{
+                 RowBox[{"{", 
+                  RowBox[{
+                   RowBox[{"{", 
+                    RowBox[{"\"\<:Description:\>\"", ",", 
+                    RowBox[{"StringRiffle", "[", 
+                    RowBox[{"#Description", ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    "\"\<\\t\>\"", ",", "\"\< \>\"", ",", "\"\<\>\""}], 
+                    "}"}]}], "]"}]}], "}"}], ",", 
+                   RowBox[{"(*", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"\"\<Requirement:\>\"", ",", "#Use"}], "}"}], 
+                    ","}], "*)"}], 
+                   RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"With", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"data", "=", 
+                    RowBox[{"Prepend", "[", 
+                    RowBox[{
+                    RowBox[{"Transpose", "@", 
+                    RowBox[{"{", 
+                    RowBox[{"#Table", ",", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"StringRiffle", "[", 
+                    RowBox[{
+                    RowBox[{"StringSplit", "[", 
+                    RowBox[{"#", ",", "\"\<,\>\""}], "]"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    "\"\<`\>\"", ",", "\"\<` `\>\"", ",", "\"\<`\>\""}], 
+                    "}"}]}], "]"}], "&"}], "/@", "#Use"}], ",", 
+                    "#Description"}], "}"}]}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    "\"\<Referencing Table\>\"", ",", "\"\<Requirement\>\"", 
+                    ",", "\"\<Comment\>\""}], "}"}]}], "]"}]}], "}"}], ",", 
+                    RowBox[{"Export", "[", 
+                    RowBox[{
+                    RowBox[{"StringJoin", "[", 
+                    RowBox[{
+                    RowBox[{
+                    "#Var", "\[LeftDoubleBracket]", "1", 
+                    "\[RightDoubleBracket]"}], ",", "\"\<.csv\>\""}], "]"}], 
+                    ",", "data"}], "]"}]}], "]"}], ";", "\[IndentingNewLine]", 
+                    RowBox[{"With", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"strTable", "=", 
+                    RowBox[{"{", "\[IndentingNewLine]", 
+                    RowBox[{
+                    "\"\<.. csv-table::\>\"", ",", "\[IndentingNewLine]", 
+                    RowBox[{"\"\<:file: \>\"", "~~", 
+                    RowBox[{
+                    "#Var", "\[LeftDoubleBracket]", "1", 
+                    "\[RightDoubleBracket]"}], "~~", "\"\<.csv\>\""}], ",", 
+                    "\[IndentingNewLine]", "\"\<:header-rows: 1\>\"", ",", 
+                    "\[IndentingNewLine]", "\"\<:widths: 10 10 80\>\""}], 
+                    "}"}]}], "}"}], ",", 
+                    RowBox[{"StringRiffle", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"\"\<:Configuration:\>\"", ",", 
+                    RowBox[{"Sequence", "@@", 
+                    RowBox[{"fmtIndent", "@", "strTable"}]}]}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    "\"\<\>\"", ",", "\"\<\\n\\t\\t\>\"", ",", 
+                    "\"\<\\n\>\""}], "}"}]}], "]"}]}], "]"}]}], "}"}]}], 
+                  "}"}], ",", "\"\<\>\"", ",", 
+                 RowBox[{"{", 
+                  RowBox[{
+                  "\"\<\\n\\t\>\"", ",", "\"\<\\n\\t\>\"", ",", 
+                   "\"\<\\n\>\""}], "}"}]}], "]"}]}], "}"}], ",", 
+             "\"\<\\n\>\""}], "]"}]}]}], "\[RightAssociation]"}]}], "]"}], 
+      "&"}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"dsInputTablesXRst", "[", 
+    RowBox[{"\"\<Code\>\"", ",", "\"\<rst\>\""}], "]"}], "*)"}]}]}], "Input",
+ CellChangeTimes->{{3.731144226398658*^9, 3.731144253285653*^9}, {
+   3.731145228827039*^9, 3.73114529079041*^9}, {3.731145339079194*^9, 
+   3.731145342115182*^9}, {3.731145519947681*^9, 3.731145674432995*^9}, {
+   3.73114579054307*^9, 3.731145832807886*^9}, {3.7311459218967667`*^9, 
+   3.7311460281298523`*^9}, {3.731146066066175*^9, 3.731146066222329*^9}, 
+   3.73114647054853*^9, {3.731146532607287*^9, 3.731146534585256*^9}, {
+   3.7311466936938353`*^9, 3.7311466950020533`*^9}, {3.7311467279329863`*^9, 
+   3.731146764875628*^9}, {3.731146825387694*^9, 3.7311468870040092`*^9}, {
+   3.731147010506735*^9, 3.731147053288352*^9}, {3.731147307340434*^9, 
+   3.73114737224714*^9}, {3.7311474285893917`*^9, 3.7311474929475603`*^9}, {
+   3.7311486825963717`*^9, 3.731148683221612*^9}, {3.731149546216565*^9, 
+   3.731149552511916*^9}, 3.731151253609673*^9, {3.7311513115603333`*^9, 
+   3.731151324952984*^9}, {3.731151417902899*^9, 3.731151422821343*^9}, {
+   3.731172788569048*^9, 3.7311728191479473`*^9}, 3.731172850244893*^9, {
+   3.731174368486224*^9, 3.731174371760541*^9}, {3.731174424973434*^9, 
+   3.731174426548242*^9}, {3.7311744885809107`*^9, 3.731174547830765*^9}, {
+   3.7311746293525133`*^9, 3.731174629543179*^9}, {3.731174672283572*^9, 
+   3.731174721792451*^9}, {3.731174829614469*^9, 3.7311748302865047`*^9}, {
+   3.731175563684142*^9, 3.731175682760425*^9}, {3.7311760180452557`*^9, 
+   3.7311760265828247`*^9}, {3.731176086702868*^9, 3.731176152009696*^9}, {
+   3.73117622459624*^9, 3.731176241391388*^9}, 3.7311775001214027`*^9, {
+   3.731178823608962*^9, 3.731178854285061*^9}, 3.7311793047678223`*^9, 
+   3.73117933859379*^9, {3.731179386542124*^9, 3.73117942937733*^9}, {
+   3.731222582943948*^9, 3.731222638064209*^9}, {3.731222696216153*^9, 
+   3.7312227196484003`*^9}, {3.7312228234931107`*^9, 3.7312228306979*^9}, 
+   3.7312279573157167`*^9, {3.731233685082717*^9, 
+   3.731233685563962*^9}},ExpressionUUID->"5f10386d-a878-4cc1-b811-\
+a98537b05342"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<Input_Options.rst\>\"", ",", 
+   RowBox[{"StringJoin", "[", 
+    RowBox[{
+    "\"\<Input_Options\>\"", ",", "\"\<\\n~~~~~~~~~~~~~\\n\\n\>\"", ",", 
+     RowBox[{"dsInputTablesXRst", "[", 
+      RowBox[{
+       RowBox[{"KeySort", "/*", "Values", "/*", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"StringRiffle", "[", 
+           RowBox[{"#", ",", "\"\<\\n\>\""}], "]"}], "&"}], ")"}]}], ",", 
+       "\"\<rst\>\""}], "]"}]}], "]"}], ",", "\"\<Text\>\""}], "]"}]], "Input",\
+
+ CellChangeTimes->{{3.731176791474872*^9, 3.731176853424591*^9}, {
+  3.7311768886191*^9, 3.731176936686965*^9}, {3.731178871566585*^9, 
+  3.73117891836392*^9}},
+ CellLabel->
+  "In[929]:=",ExpressionUUID->"b7594ef7-e460-4c5b-9ec8-f7548bab50dd"],
+
+Cell[BoxData["\<\"Input_Options.rst\"\>"], "Output",
+ CellChangeTimes->{{3.7311767886725397`*^9, 3.731176810331805*^9}, 
+   3.731176854116865*^9, {3.731176928233541*^9, 3.7311769371401*^9}, 
+   3.73117892106977*^9, 3.7311794509394407`*^9, 3.731231767738749*^9, 
+   3.731232817089737*^9},
+ CellLabel->
+  "Out[929]=",ExpressionUUID->"48792bc3-5f86-4c31-aed9-305da1d17cc7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"Export", "[", 
+    RowBox[{
+     RowBox[{"StringJoin", "[", 
+      RowBox[{"key", ",", "\"\<.csv\>\""}], "]"}], ",", 
+     RowBox[{"dsInputTables", "[", 
+      RowBox[{"key", ",", "All", ",", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+         "\"\<No.\>\"", ",", "\"\<Var\>\"", ",", "\"\<Use\>\"", ",", 
+          "\"\<Description\>\""}], "}"}], "/*", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"\[LeftAssociation]", 
+           RowBox[{
+            RowBox[{"\"\<No.\>\"", "\[Rule]", 
+             RowBox[{"#", "[", "\"\<No.\>\"", "]"}]}], ",", 
+            RowBox[{"\"\<Column Name\>\"", "\[Rule]", 
+             RowBox[{"StringJoin", "[", 
+              RowBox[{"\"\<`\>\"", ",", "#Var", ",", "\"\<`\>\""}], "]"}]}], 
+            ",", 
+            RowBox[{"\"\<Use\>\"", "\[Rule]", 
+             RowBox[{"(", 
+              RowBox[{"StringRiffle", "[", 
+               RowBox[{
+                RowBox[{"StringTrim", "@", 
+                 RowBox[{"StringSplit", "[", 
+                  RowBox[{"#Use", ",", "\"\<,\>\""}], "]"}]}], ",", 
+                RowBox[{"{", 
+                 RowBox[{"\"\<`\>\"", ",", "\"\<` `\>\"", ",", "\"\<`\>\""}], 
+                 "}"}]}], "]"}], ")"}]}], ",", 
+            RowBox[{"\"\<Description\>\"", "\[Rule]", "#Description"}]}], 
+           "\[RightAssociation]"}], "&"}], ")"}]}]}], "]"}], ",", 
+     "\"\<CSV\>\""}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"key", ",", 
+     RowBox[{
+      RowBox[{"dsInputTables", "//", "Keys"}], "//", "Normal"}]}], "}"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.7311779594056883`*^9, 3.7311780427333317`*^9}, {
+   3.731178076407174*^9, 3.731178095406497*^9}, {3.73117813730336*^9, 
+   3.731178177295882*^9}, {3.731178209259577*^9, 3.731178257648116*^9}, {
+   3.7312231813602047`*^9, 3.7312231848678703`*^9}, 3.7312234167659817`*^9, {
+   3.731229838456463*^9, 3.731229842615378*^9}, {3.731229895809842*^9, 
+   3.731229913479761*^9}, 3.731232387750924*^9, 3.73123263661047*^9},
+ CellLabel->
+  "In[930]:=",ExpressionUUID->"40aae075-e7ca-4a54-bb5f-eb4a2ed5abca"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"SUEWS_SiteSelect.csv\"\>", ",", "\<\"SUEWS_NonVeg.csv\"\>", 
+   ",", "\<\"SUEWS_Veg.csv\"\>", ",", "\<\"SUEWS_Water.csv\"\>", 
+   ",", "\<\"SUEWS_Snow.csv\"\>", ",", "\<\"SUEWS_Soil.csv\"\>", 
+   ",", "\<\"SUEWS_Conductance.csv\"\>", 
+   ",", "\<\"SUEWS_AnthropogenicHeat.csv\"\>", 
+   ",", "\<\"SUEWS_Irrigation.csv\"\>", 
+   ",", "\<\"SUEWS_WithinGridWaterDist.csv\"\>", 
+   ",", "\<\"SUEWS_OHMCoefficients.csv\"\>", 
+   ",", "\<\"SUEWS_ESTMCoefficients.csv\"\>", 
+   ",", "\<\"SSss_YYYY_ESTM_Ts_data_tt.csv\"\>", 
+   ",", "\<\"SSss_YYYY_data_tt.csv\"\>", 
+   ",", "\<\"CBL_initial_data.csv\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{{3.731177961083008*^9, 3.73117797113039*^9}, 
+   3.7311780440742817`*^9, 3.731178096644359*^9, 3.731178178735034*^9, 
+   3.731178258639627*^9, 3.731223186290135*^9, 3.731223344127637*^9, 
+   3.7312234178065233`*^9, 3.7312298458209343`*^9, 3.731229949518799*^9, 
+   3.731231776002771*^9, 3.731232390197003*^9, 3.7312328193321657`*^9},
+ CellLabel->
+  "Out[930]=",ExpressionUUID->"8b38c8c4-9eda-4cbc-bb0d-fce06add398f"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -2870,142 +3094,170 @@ Cell[580, 22, 289, 6, 30, "Input",ExpressionUUID->"203e571b-780f-4d2b-8c39-04169
 Cell[872, 30, 428, 7, 34, "Output",ExpressionUUID->"2f7ccd88-57b5-4e03-a268-9dadf731cf29"]
 }, Open  ]],
 Cell[1315, 40, 388, 10, 30, "Input",ExpressionUUID->"b65f7de8-634b-406f-9e80-22c1717a9812"],
-Cell[1706, 52, 359, 9, 30, "Input",ExpressionUUID->"1c075f28-faee-4256-8c89-3a1dd2d23789"],
+Cell[1706, 52, 364, 10, 30, "Input",ExpressionUUID->"1c075f28-faee-4256-8c89-3a1dd2d23789"],
 Cell[CellGroupData[{
-Cell[2090, 65, 406, 9, 30, "Input",ExpressionUUID->"a511ad82-0730-4534-8cd7-34249766f5a5"],
-Cell[2499, 76, 398, 6, 34, "Output",ExpressionUUID->"ebe9cfd6-3549-4159-ac30-d1600a236ac8"]
+Cell[2095, 66, 406, 9, 30, "Input",ExpressionUUID->"a511ad82-0730-4534-8cd7-34249766f5a5"],
+Cell[2504, 77, 398, 6, 34, "Output",ExpressionUUID->"ebe9cfd6-3549-4159-ac30-d1600a236ac8"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2934, 87, 165, 3, 67, "Section",ExpressionUUID->"176e77db-91c6-4e22-b2fa-e466f9dc89e4"],
+Cell[2939, 88, 165, 3, 67, "Section",ExpressionUUID->"176e77db-91c6-4e22-b2fa-e466f9dc89e4"],
 Cell[CellGroupData[{
-Cell[3124, 94, 183, 3, 54, "Subsection",ExpressionUUID->"3151462e-5a0d-466a-9b5c-fa97ee843c8d"],
+Cell[3129, 95, 183, 3, 54, "Subsection",ExpressionUUID->"3151462e-5a0d-466a-9b5c-fa97ee843c8d"],
 Cell[CellGroupData[{
-Cell[3332, 101, 224, 4, 45, "Subsubsection",ExpressionUUID->"2dd6ebbc-26b3-402f-9739-52636139a6ca"],
+Cell[3337, 102, 224, 4, 45, "Subsubsection",ExpressionUUID->"2dd6ebbc-26b3-402f-9739-52636139a6ca"],
 Cell[CellGroupData[{
-Cell[3581, 109, 611, 14, 52, "Input",ExpressionUUID->"69807da5-05f3-4e8d-b57c-451642bd0a64"],
-Cell[4195, 125, 385, 9, 34, "Output",ExpressionUUID->"55b0b4e3-ae53-49bd-9923-a8790a8bbd56"]
+Cell[3586, 110, 611, 14, 52, "Input",ExpressionUUID->"69807da5-05f3-4e8d-b57c-451642bd0a64"],
+Cell[4200, 126, 385, 9, 34, "Output",ExpressionUUID->"55b0b4e3-ae53-49bd-9923-a8790a8bbd56"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[4617, 139, 4464, 123, 409, "Input",ExpressionUUID->"12241569-1c1b-4819-8103-555562545f6c"],
-Cell[9084, 264, 712, 13, 56, "Output",ExpressionUUID->"0ba7ec36-af9a-4c74-81a7-3db63ac86028"]
+Cell[4622, 140, 4464, 123, 409, "Input",ExpressionUUID->"12241569-1c1b-4819-8103-555562545f6c"],
+Cell[9089, 265, 712, 13, 56, "Output",ExpressionUUID->"0ba7ec36-af9a-4c74-81a7-3db63ac86028"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[9833, 282, 483, 11, 73, "Input",ExpressionUUID->"781e5497-4e61-4b6e-9a80-9dea0cf58923"],
-Cell[10319, 295, 576, 14, 105, "Output",ExpressionUUID->"a48090b7-e812-40b8-b7a7-fbd521182430"]
+Cell[9838, 283, 483, 11, 73, "Input",ExpressionUUID->"781e5497-4e61-4b6e-9a80-9dea0cf58923"],
+Cell[10324, 296, 576, 14, 105, "Output",ExpressionUUID->"a48090b7-e812-40b8-b7a7-fbd521182430"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[10932, 314, 430, 10, 30, "Input",ExpressionUUID->"0d2681d4-ebb7-4244-a2d6-a153c0d291c3"],
-Cell[11365, 326, 2805, 48, 699, "Output",ExpressionUUID->"fef228f4-0b34-42f3-9b5f-8e2af220cd15"]
+Cell[10937, 315, 430, 10, 30, "Input",ExpressionUUID->"0d2681d4-ebb7-4244-a2d6-a153c0d291c3"],
+Cell[11370, 327, 2805, 48, 699, "Output",ExpressionUUID->"fef228f4-0b34-42f3-9b5f-8e2af220cd15"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[14207, 379, 726, 19, 52, "Input",ExpressionUUID->"797eb007-9c2f-4a8c-a7db-354453a34858"],
-Cell[14936, 400, 1950, 35, 519, "Output",ExpressionUUID->"7fbaa260-31e1-4cb3-9dd2-2b0bc723366b"]
+Cell[14212, 380, 726, 19, 52, "Input",ExpressionUUID->"797eb007-9c2f-4a8c-a7db-354453a34858"],
+Cell[14941, 401, 1950, 35, 519, "Output",ExpressionUUID->"7fbaa260-31e1-4cb3-9dd2-2b0bc723366b"]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[16935, 441, 176, 3, 37, "Subsubsection",ExpressionUUID->"c2f843f0-a533-4494-829b-be550ecc6cbf"],
-Cell[17114, 446, 2830, 77, 241, "Input",ExpressionUUID->"ae8d148f-d36b-4f03-8afd-c709ae7301c5"],
-Cell[19947, 525, 620, 16, 73, "Input",ExpressionUUID->"48547039-dcb9-4eac-8183-0e249fd3ae65"],
-Cell[20570, 543, 5829, 133, 493, "Input",ExpressionUUID->"4b9a81d5-5e60-4c78-8417-aa75ebfdc932"],
+Cell[16940, 442, 176, 3, 37, "Subsubsection",ExpressionUUID->"c2f843f0-a533-4494-829b-be550ecc6cbf"],
+Cell[17119, 447, 2830, 77, 241, "Input",ExpressionUUID->"ae8d148f-d36b-4f03-8afd-c709ae7301c5"],
+Cell[19952, 526, 620, 16, 73, "Input",ExpressionUUID->"48547039-dcb9-4eac-8183-0e249fd3ae65"],
+Cell[20575, 544, 5829, 133, 493, "Input",ExpressionUUID->"4b9a81d5-5e60-4c78-8417-aa75ebfdc932"],
 Cell[CellGroupData[{
-Cell[26424, 680, 2036, 47, 115, "Input",ExpressionUUID->"25550072-2133-466b-a62f-4818063e55af"],
-Cell[28463, 729, 548, 11, 56, "Output",ExpressionUUID->"4ba5cee5-f5c5-418e-a041-587a7a2366be"]
+Cell[26429, 681, 2036, 47, 115, "Input",ExpressionUUID->"25550072-2133-466b-a62f-4818063e55af"],
+Cell[28468, 730, 548, 11, 56, "Output",ExpressionUUID->"4ba5cee5-f5c5-418e-a041-587a7a2366be"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[29048, 745, 2316, 54, 178, "Input",ExpressionUUID->"8f108c88-27bb-4fb1-84d3-9ca0bbf1ea8f"],
-Cell[31367, 801, 2176, 31, 1295, "Output",ExpressionUUID->"177de3f3-c1b0-400c-b5af-d969303839ea"]
+Cell[29053, 746, 2316, 54, 178, "Input",ExpressionUUID->"8f108c88-27bb-4fb1-84d3-9ca0bbf1ea8f"],
+Cell[31372, 802, 2176, 31, 1295, "Output",ExpressionUUID->"177de3f3-c1b0-400c-b5af-d969303839ea"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[33580, 837, 333, 7, 30, "Input",ExpressionUUID->"41aa4fd9-736d-40c5-9e15-f25db36a4499"],
-Cell[33916, 846, 619, 11, 77, "Output",ExpressionUUID->"9ba6a5f1-e850-4882-9b43-846573e2cac2"]
+Cell[33585, 838, 333, 7, 30, "Input",ExpressionUUID->"41aa4fd9-736d-40c5-9e15-f25db36a4499"],
+Cell[33921, 847, 619, 11, 77, "Output",ExpressionUUID->"9ba6a5f1-e850-4882-9b43-846573e2cac2"]
 }, Open  ]]
 }, Closed]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[34596, 864, 168, 3, 54, "Subsection",ExpressionUUID->"ca61ba8c-a8f2-4f5b-9c99-be52c9dd52e2"],
-Cell[34767, 869, 356, 9, 30, "Input",ExpressionUUID->"7eac1da0-7aaf-4f65-8507-9f55fce8f4ce"],
+Cell[34601, 865, 168, 3, 54, "Subsection",ExpressionUUID->"ca61ba8c-a8f2-4f5b-9c99-be52c9dd52e2"],
+Cell[34772, 870, 356, 9, 30, "Input",ExpressionUUID->"7eac1da0-7aaf-4f65-8507-9f55fce8f4ce"],
 Cell[CellGroupData[{
-Cell[35148, 882, 349, 6, 30, "Input",ExpressionUUID->"ce0125bb-d8ac-44b8-a16d-8a7be84288ec"],
-Cell[35500, 890, 308, 4, 56, "Output",ExpressionUUID->"ae9351a5-775d-492a-a9c4-0b2c2d0f1bec"]
+Cell[35153, 883, 349, 6, 30, "Input",ExpressionUUID->"ce0125bb-d8ac-44b8-a16d-8a7be84288ec"],
+Cell[35505, 891, 308, 4, 56, "Output",ExpressionUUID->"ae9351a5-775d-492a-a9c4-0b2c2d0f1bec"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[35845, 899, 211, 4, 45, "Subsubsection",ExpressionUUID->"005ad184-4070-45af-ab0b-76ce3e9df298"],
+Cell[35850, 900, 211, 4, 45, "Subsubsection",ExpressionUUID->"005ad184-4070-45af-ab0b-76ce3e9df298"],
 Cell[CellGroupData[{
-Cell[36081, 907, 600, 14, 52, "Input",ExpressionUUID->"d735730f-4326-4ce3-87f9-71bbfd22e97a"],
-Cell[36684, 923, 219, 5, 34, "Output",ExpressionUUID->"d72884aa-2399-4f41-8d4b-975b5e40f9d7"]
+Cell[36086, 908, 600, 14, 52, "Input",ExpressionUUID->"d735730f-4326-4ce3-87f9-71bbfd22e97a"],
+Cell[36689, 924, 219, 5, 34, "Output",ExpressionUUID->"d72884aa-2399-4f41-8d4b-975b5e40f9d7"]
 }, Open  ]],
-Cell[36918, 931, 461, 8, 30, "Input",ExpressionUUID->"17e64df7-e9e1-41c1-8512-95254a52ebcb"],
-Cell[37382, 941, 1468, 38, 94, "Input",ExpressionUUID->"eec0f3df-1a7b-498d-97ea-fefd2075c278"],
-Cell[38853, 981, 1947, 46, 115, "Input",ExpressionUUID->"3739238f-c017-4c50-bd19-123bbe3e2c3f"],
-Cell[40803, 1029, 620, 16, 73, "Input",ExpressionUUID->"fa7613bd-e732-4e1b-8b06-96f7035e7bdb"],
-Cell[41426, 1047, 4974, 112, 241, "Input",ExpressionUUID->"b3610fe5-7241-4e8d-bcd4-3d31355ab7ed"],
+Cell[36923, 932, 461, 8, 30, "Input",ExpressionUUID->"17e64df7-e9e1-41c1-8512-95254a52ebcb"],
+Cell[37387, 942, 1468, 38, 94, "Input",ExpressionUUID->"eec0f3df-1a7b-498d-97ea-fefd2075c278"],
+Cell[38858, 982, 1947, 46, 115, "Input",ExpressionUUID->"3739238f-c017-4c50-bd19-123bbe3e2c3f"],
+Cell[40808, 1030, 620, 16, 73, "Input",ExpressionUUID->"fa7613bd-e732-4e1b-8b06-96f7035e7bdb"],
+Cell[41431, 1048, 4974, 112, 241, "Input",ExpressionUUID->"b3610fe5-7241-4e8d-bcd4-3d31355ab7ed"],
 Cell[CellGroupData[{
-Cell[46425, 1163, 2060, 48, 115, "Input",ExpressionUUID->"568e404d-abd8-43f6-b437-05f9f8127f84"],
-Cell[48488, 1213, 667, 13, 56, "Output",ExpressionUUID->"f1ed99fb-930c-4000-b5ee-a64eb7db3da1"]
+Cell[46430, 1164, 2060, 48, 115, "Input",ExpressionUUID->"568e404d-abd8-43f6-b437-05f9f8127f84"],
+Cell[48493, 1214, 667, 13, 56, "Output",ExpressionUUID->"f1ed99fb-930c-4000-b5ee-a64eb7db3da1"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[49192, 1231, 1425, 38, 136, "Input",ExpressionUUID->"ffa8f069-7f63-4672-875d-6e0df33e38b9"],
-Cell[50620, 1271, 2292, 33, 1589, "Output",ExpressionUUID->"a25350d2-103d-4c26-9e13-9777253c23f0"]
+Cell[49197, 1232, 1425, 38, 136, "Input",ExpressionUUID->"ffa8f069-7f63-4672-875d-6e0df33e38b9"],
+Cell[50625, 1272, 2292, 33, 1589, "Output",ExpressionUUID->"a25350d2-103d-4c26-9e13-9777253c23f0"]
 }, Open  ]],
-Cell[52927, 1307, 2465, 57, 178, "Input",ExpressionUUID->"419f391b-bc29-4067-8ca7-ee91552e8633"],
+Cell[52932, 1308, 2465, 57, 178, "Input",ExpressionUUID->"419f391b-bc29-4067-8ca7-ee91552e8633"],
 Cell[CellGroupData[{
-Cell[55417, 1368, 353, 7, 30, "Input",ExpressionUUID->"19ae09f5-1b55-48b3-abe2-a9b5b9a9e7e5"],
-Cell[55773, 1377, 453, 8, 56, "Output",ExpressionUUID->"f291ab38-aef1-45d9-befc-e0cdea58b7fb"]
+Cell[55422, 1369, 353, 7, 30, "Input",ExpressionUUID->"19ae09f5-1b55-48b3-abe2-a9b5b9a9e7e5"],
+Cell[55778, 1378, 453, 8, 56, "Output",ExpressionUUID->"f291ab38-aef1-45d9-befc-e0cdea58b7fb"]
 }, Open  ]]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[56287, 1392, 222, 4, 38, "Subsection",ExpressionUUID->"bf03b14c-6985-451f-b561-34aa00d3eef3"],
-Cell[56512, 1398, 360, 10, 30, "Input",ExpressionUUID->"aacbe3bf-14f3-4333-aec0-53ee885ee4aa"],
+Cell[56292, 1393, 222, 4, 38, "Subsection",ExpressionUUID->"bf03b14c-6985-451f-b561-34aa00d3eef3"],
+Cell[56517, 1399, 360, 10, 30, "Input",ExpressionUUID->"aacbe3bf-14f3-4333-aec0-53ee885ee4aa"],
 Cell[CellGroupData[{
-Cell[56897, 1412, 450, 8, 30, "Input",ExpressionUUID->"4d68fe3d-db84-44fe-8277-07cfcb4f0302"],
-Cell[57350, 1422, 414, 7, 56, "Output",ExpressionUUID->"61bbc1fc-fb13-4182-98d7-ceb7938990ae"]
+Cell[56902, 1413, 450, 8, 30, "Input",ExpressionUUID->"4d68fe3d-db84-44fe-8277-07cfcb4f0302"],
+Cell[57355, 1423, 414, 7, 56, "Output",ExpressionUUID->"61bbc1fc-fb13-4182-98d7-ceb7938990ae"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[57801, 1434, 211, 4, 45, "Subsubsection",ExpressionUUID->"c2e1b8bc-2e7b-4499-b7a7-b4e0f2a0154f"],
+Cell[57806, 1435, 211, 4, 45, "Subsubsection",ExpressionUUID->"c2e1b8bc-2e7b-4499-b7a7-b4e0f2a0154f"],
 Cell[CellGroupData[{
-Cell[58037, 1442, 682, 16, 52, "Input",ExpressionUUID->"6c02ce3c-87bd-4801-9f7b-9110bcd1d21a"],
-Cell[58722, 1460, 470, 14, 34, "Output",ExpressionUUID->"8a8c31de-9b8f-4950-9935-7503b5d31158"]
+Cell[58042, 1443, 682, 16, 52, "Input",ExpressionUUID->"6c02ce3c-87bd-4801-9f7b-9110bcd1d21a"],
+Cell[58727, 1461, 470, 14, 34, "Output",ExpressionUUID->"8a8c31de-9b8f-4950-9935-7503b5d31158"]
 }, Open  ]],
-Cell[59207, 1477, 524, 10, 30, "Input",ExpressionUUID->"750715b3-1854-4bb5-9fdb-25b9c1d7b9ad"],
-Cell[59734, 1489, 2215, 55, 136, "Input",ExpressionUUID->"d1aa43d8-2a44-4a1c-abfa-7542ac097b83"],
-Cell[61952, 1546, 2737, 65, 157, "Input",ExpressionUUID->"2a5333cc-3e64-4239-912d-187ad11ee7e8"],
-Cell[64692, 1613, 624, 17, 73, "Input",ExpressionUUID->"adfea001-8cdd-44f5-a0f6-dcc6b115ef44"],
-Cell[65319, 1632, 6278, 140, 493, "Input",ExpressionUUID->"a48b8f41-fef2-475a-ba80-578127ad9e3e"],
+Cell[59212, 1478, 524, 10, 30, "Input",ExpressionUUID->"750715b3-1854-4bb5-9fdb-25b9c1d7b9ad"],
+Cell[59739, 1490, 2215, 55, 136, "Input",ExpressionUUID->"d1aa43d8-2a44-4a1c-abfa-7542ac097b83"],
+Cell[61957, 1547, 2737, 65, 157, "Input",ExpressionUUID->"2a5333cc-3e64-4239-912d-187ad11ee7e8"],
+Cell[64697, 1614, 624, 17, 73, "Input",ExpressionUUID->"adfea001-8cdd-44f5-a0f6-dcc6b115ef44"],
+Cell[65324, 1633, 6278, 140, 493, "Input",ExpressionUUID->"a48b8f41-fef2-475a-ba80-578127ad9e3e"],
 Cell[CellGroupData[{
-Cell[71622, 1776, 2387, 50, 115, "Input",ExpressionUUID->"194b6f5a-201e-4a40-a809-345f6454ea5d"],
-Cell[74012, 1828, 702, 11, 34, "Output",ExpressionUUID->"ecd3f845-2126-4122-833e-340e136dd6ef"]
+Cell[71627, 1777, 2387, 50, 115, "Input",ExpressionUUID->"194b6f5a-201e-4a40-a809-345f6454ea5d"],
+Cell[74017, 1829, 702, 11, 34, "Output",ExpressionUUID->"ecd3f845-2126-4122-833e-340e136dd6ef"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[74751, 1844, 1608, 42, 136, "Input",ExpressionUUID->"fa0360ba-21eb-48b0-b4de-5447d6dd4629"],
-Cell[76362, 1888, 599, 9, 245, "Output",ExpressionUUID->"dea59ae8-fc7f-4c8e-8d61-3e29258063b3"]
+Cell[74756, 1845, 1608, 42, 136, "Input",ExpressionUUID->"fa0360ba-21eb-48b0-b4de-5447d6dd4629"],
+Cell[76367, 1889, 599, 9, 245, "Output",ExpressionUUID->"dea59ae8-fc7f-4c8e-8d61-3e29258063b3"]
 }, Open  ]],
-Cell[76976, 1900, 2475, 58, 178, "Input",ExpressionUUID->"487ee64e-3724-429d-bb1c-b168433b7ae9"],
+Cell[76981, 1901, 2475, 58, 178, "Input",ExpressionUUID->"487ee64e-3724-429d-bb1c-b168433b7ae9"],
 Cell[CellGroupData[{
-Cell[79476, 1962, 361, 8, 30, "Input",ExpressionUUID->"78c8f7a2-2ed7-429e-92a8-58f300d0c80c"],
-Cell[79840, 1972, 453, 8, 56, "Output",ExpressionUUID->"23d94779-e502-48e9-a6a9-430cb9d94a04"]
+Cell[79481, 1963, 361, 8, 30, "Input",ExpressionUUID->"78c8f7a2-2ed7-429e-92a8-58f300d0c80c"],
+Cell[79845, 1973, 453, 8, 56, "Output",ExpressionUUID->"23d94779-e502-48e9-a6a9-430cb9d94a04"]
 }, Open  ]]
 }, Open  ]]
-}, Closed]]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[80366, 1988, 173, 3, 67, "Section",ExpressionUUID->"dd08d99b-fac4-4cef-9d17-cfc5f8aedfe5"],
-Cell[CellGroupData[{
-Cell[80564, 1995, 163, 3, 54, "Subsection",ExpressionUUID->"26ed7fd0-8430-4470-8fbf-0d8ae97c2453"],
-Cell[80730, 2000, 269, 7, 30, "Input",ExpressionUUID->"78d20a3d-208d-4b3e-b116-e0c4154252d4"],
-Cell[81002, 2009, 4213, 97, 514, "Input",ExpressionUUID->"2bfd3ea7-e0ba-4f69-bac5-9f74489f5ba7"],
-Cell[CellGroupData[{
-Cell[85240, 2110, 1220, 31, 115, "Input",ExpressionUUID->"8cd9d2d1-ab1d-4850-916e-97020059a05f"],
-Cell[86463, 2143, 1458, 35, 423, "Output",ExpressionUUID->"27f4070b-81e0-4048-9c54-c30f720d7833"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[87970, 2184, 177, 3, 54, "Subsection",ExpressionUUID->"e8fea08b-b940-4b11-9d89-085f57630b9e"],
-Cell[88150, 2189, 501, 13, 30, "Input",ExpressionUUID->"ef4d5898-1f82-4529-872a-1c57bca9b000"],
-Cell[88654, 2204, 465, 11, 30, "Input",ExpressionUUID->"270160c7-2a8c-411a-a647-35bed292753c"],
+Cell[80371, 1989, 173, 3, 67, "Section",ExpressionUUID->"dd08d99b-fac4-4cef-9d17-cfc5f8aedfe5"],
 Cell[CellGroupData[{
-Cell[89144, 2219, 256, 5, 30, "Input",ExpressionUUID->"76887ff5-0db8-455a-ae2e-f52526a126bf"],
-Cell[89403, 2226, 30243, 619, 5873, "Output",ExpressionUUID->"f5c61482-f54c-4455-9889-7960f49ca433"]
+Cell[80569, 1996, 163, 3, 54, "Subsection",ExpressionUUID->"26ed7fd0-8430-4470-8fbf-0d8ae97c2453"],
+Cell[80735, 2001, 269, 7, 30, "Input",ExpressionUUID->"78d20a3d-208d-4b3e-b116-e0c4154252d4"],
+Cell[81007, 2010, 4364, 102, 514, "Input",ExpressionUUID->"2bfd3ea7-e0ba-4f69-bac5-9f74489f5ba7"],
+Cell[CellGroupData[{
+Cell[85396, 2116, 1285, 32, 115, "Input",ExpressionUUID->"8cd9d2d1-ab1d-4850-916e-97020059a05f"],
+Cell[86684, 2150, 1274, 29, 319, "Output",ExpressionUUID->"49d35650-709a-4f43-9044-da7cac7c379d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[87995, 2184, 1067, 28, 115, "Input",ExpressionUUID->"93b317cf-1438-4604-9789-a457a9fda672"],
+Cell[89065, 2214, 537, 14, 119, "Output",ExpressionUUID->"f7f06640-16b8-49d3-9d6d-cd664c9f4012"]
+}, Open  ]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[89651, 2234, 235, 4, 38, "Subsection",ExpressionUUID->"e8fea08b-b940-4b11-9d89-085f57630b9e"],
+Cell[89889, 2240, 562, 14, 30, "Input",ExpressionUUID->"ef4d5898-1f82-4529-872a-1c57bca9b000"],
+Cell[90454, 2256, 531, 12, 30, "Input",ExpressionUUID->"270160c7-2a8c-411a-a647-35bed292753c"],
+Cell[CellGroupData[{
+Cell[91010, 2272, 396, 8, 30, "Input",ExpressionUUID->"76887ff5-0db8-455a-ae2e-f52526a126bf"],
+Cell[91409, 2282, 3759, 73, 353, "Output",ExpressionUUID->"3fcc482f-9341-4e0e-8303-bd4586c903e0"]
+}, Open  ]],
+Cell[95183, 2358, 4438, 106, 304, "Input",ExpressionUUID->"1ca7ebc1-aae0-4dc9-a2db-6ffe47102800"],
+Cell[CellGroupData[{
+Cell[99646, 2468, 777, 17, 73, "Input",ExpressionUUID->"0ca620f0-1630-4b78-aa9d-36d29924de3f"],
+Cell[100426, 2487, 2575, 62, 143, "Output",ExpressionUUID->"e2025c8f-598e-4399-8186-244f90bfa7c6"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[103038, 2554, 2948, 73, 283, "Input",ExpressionUUID->"df6b930c-2736-4ddb-b0e7-427bdfbbb388"],
+Cell[105989, 2629, 2013, 50, 203, "Output",ExpressionUUID->"86c22938-c9a8-491a-b4dc-c782680f03f4"]
+}, Open  ]],
+Cell[108017, 2682, 660, 16, 52, "Input",ExpressionUUID->"5767352a-a207-4c3d-9124-724e3469c334"],
+Cell[CellGroupData[{
+Cell[108702, 2702, 427, 10, 30, "Input",ExpressionUUID->"502c4b62-a3c7-425d-bfd0-598b4cc9b418"],
+Cell[109132, 2714, 405, 6, 56, "Output",ExpressionUUID->"108b76af-3ea2-4c7a-bbaf-f1beb0b6dbe4"]
+}, Open  ]],
+Cell[109552, 2723, 4218, 99, 199, "Input",ExpressionUUID->"84252883-fc70-4c4a-8ead-9f55f7a6d4da"],
+Cell[113773, 2824, 6827, 138, 388, "Input",ExpressionUUID->"5f10386d-a878-4cc1-b811-a98537b05342"],
+Cell[CellGroupData[{
+Cell[120625, 2966, 786, 19, 52, "Input",ExpressionUUID->"b7594ef7-e460-4c5b-9ec8-f7548bab50dd"],
+Cell[121414, 2987, 370, 6, 34, "Output",ExpressionUUID->"48792bc3-5f86-4c31-aed9-305da1d17cc7"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[121821, 2998, 2135, 49, 115, "Input",ExpressionUUID->"40aae075-e7ca-4a54-bb5f-eb4a2ed5abca"],
+Cell[123959, 3049, 1098, 20, 98, "Output",ExpressionUUID->"8b38c8c4-9eda-4cbc-bb0d-fce06add398f"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]

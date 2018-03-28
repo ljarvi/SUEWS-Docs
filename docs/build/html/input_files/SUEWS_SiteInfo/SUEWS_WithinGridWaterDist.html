@@ -39,7 +39,7 @@
         <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="SUEWS 2018a documentation" href="../../index.html"/>
         <link rel="up" title="6.2. SUEWS_SiteInfo.xlsm" href="SUEWS_SiteInfo.html"/>
-        <link rel="next" title="6.3. Initial Conditions file" href="../Initial_Conditions/Initial_Conditions.html"/>
+        <link rel="next" title="6.2.13. Input_Options" href="Input_Options.html"/>
         <link rel="prev" title="6.2.11. SUEWS_Water.txt" href="SUEWS_Water.html"/> 
 
   
@@ -110,12 +110,13 @@
 <li class="toctree-l3"><a class="reference internal" href="SUEWS_Veg.html">6.2.10. SUEWS_Veg.txt</a></li>
 <li class="toctree-l3"><a class="reference internal" href="SUEWS_Water.html">6.2.11. SUEWS_Water.txt</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">6.2.12. SUEWS_WithinGridWaterDist.txt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Input_Options.html">6.2.13. Input_Options</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Initial_Conditions/Initial_Conditions.html">6.3. Initial Conditions file</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../met_input.html">6.4. Meteorological Input File</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../CBL_input.html">6.5. CBL input files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ESTM_input.html">6.6. ESTM-related files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ESTM_related_files/ESTM_related_files.html">6.6. ESTM-related files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../SOLWEIG_input.html">6.7. SOLWEIG input files</a></li>
 </ul>
 </li>
@@ -195,12 +196,12 @@
            <div itemprop="articleBody">
             
   <div class="section" id="suews-withingridwaterdist-txt">
-<h1>6.2.12. SUEWS_WithinGridWaterDist.txt<a class="headerlink" href="#suews-withingridwaterdist-txt" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1>6.2.12. SUEWS_WithinGridWaterDist.txt<a class="headerlink" href="#suews-withingridwaterdist-txt" title="Permalink to this headline">¶</a></h1>
 <p>SUEWS_WithinGridWaterDist.txt specifies the movement of water between
 surfaces within a grid/area. It allows impervious connectivity to be
 taken into account.</p>
 <p>Each row corresponds to a surface type (linked by the Code in column 1
-to the <a class="reference external" href="#SiteSelect.txt">SiteSelect.txt</a> columns:
+to the <a class="reference internal" href="SUEWS_SiteSelect.html#suews-siteselect-txt"><span class="std std-ref">SUEWS_SiteSelect.txt</span></a> columns:
 WithinGridPavedCode, WithinGridBldgsCode, …, WithinGridWaterCode). Each
 column contains the fraction of water flowing from the surface type to
 each of the other surface types or to runoff or the sub-surface soil
@@ -230,178 +231,63 @@ used).</li>
 </ul>
 <table border="1" class="docutils">
 <colgroup>
-<col width="9%" />
-<col width="9%" />
-<col width="9%" />
-<col width="9%" />
-<col width="9%" />
-<col width="9%" />
-<col width="9%" />
-<col width="9%" />
-<col width="9%" />
-<col width="9%" />
-<col width="9%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
 </colgroup>
 <thead valign="bottom">
-<tr class="row-odd"><th class="head">1</th>
-<th class="head">2</th>
-<th class="head">3</th>
-<th class="head">4</th>
-<th class="head">5</th>
-<th class="head">6</th>
-<th class="head">7</th>
-<th class="head">8</th>
-<th class="head">9</th>
-<th class="head">10</th>
-<th class="head">&#160;</th>
+<tr class="row-odd"><th class="head">No.</th>
+<th class="head">Column Name</th>
+<th class="head">Use</th>
+<th class="head">Description</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>Co
-de</td>
-<td>To
-Pa
-ve
-d</td>
-<td>To
-Bu
-il
-t</td>
-<td>To
-Ev
-eT
-r</td>
-<td>To
-De
-cT
-r</td>
-<td>To
-Gr
-as
-s</td>
-<td>To
-BS
-oi
-l</td>
-<td>To
-Wa
-te
-r</td>
-<td>To
-Ru
-no
-ff</td>
-<td>To
-So
-il
-St
-or
-e</td>
-<td>&#160;</td>
+<tr class="row-even"><td>1</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-topaved"><code class="xref any std std-option docutils literal notranslate"><span class="pre">ToPaved</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Fraction of water going to <a class="reference internal" href="../../notation.html#term-paved"><code class="xref any std std-term docutils literal notranslate"><span class="pre">Paved</span></code></a></td>
 </tr>
-<tr class="row-odd"><td>10</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>Pa
-ve
-d</td>
+<tr class="row-odd"><td>2</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-tobldgs"><code class="xref any std std-option docutils literal notranslate"><span class="pre">ToBldgs</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Fraction of water going to <a class="reference internal" href="../../notation.html#term-bldgs"><code class="xref any std std-term docutils literal notranslate"><span class="pre">Bldgs</span></code></a></td>
 </tr>
-<tr class="row-even"><td>20</td>
-<td>0.
-06</td>
-<td>0</td>
-<td>0.
-01</td>
-<td>0.
-01</td>
-<td>0.
-01</td>
-<td>0.
-01</td>
-<td>0</td>
-<td>0.
-9</td>
-<td>0</td>
-<td>Bl
-dg
-s</td>
+<tr class="row-even"><td>3</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-toevetr"><code class="xref any std std-option docutils literal notranslate"><span class="pre">ToEveTr</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Fraction of water going to <a class="reference internal" href="../../notation.html#term-evetr"><code class="xref any std std-term docutils literal notranslate"><span class="pre">EveTr</span></code></a></td>
 </tr>
-<tr class="row-odd"><td>30</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>Ev
-eT
-r</td>
+<tr class="row-odd"><td>4</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-todectr"><code class="xref any std std-option docutils literal notranslate"><span class="pre">ToDecTr</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Fraction of water going to <a class="reference internal" href="../../notation.html#term-dectr"><code class="xref any std std-term docutils literal notranslate"><span class="pre">DecTr</span></code></a></td>
 </tr>
-<tr class="row-even"><td>40</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>De
-cT
-r</td>
+<tr class="row-even"><td>5</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-tograss"><code class="xref any std std-option docutils literal notranslate"><span class="pre">ToGrass</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Fraction of water going to <a class="reference internal" href="../../notation.html#term-grass"><code class="xref any std std-term docutils literal notranslate"><span class="pre">Grass</span></code></a></td>
 </tr>
-<tr class="row-odd"><td>50</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>Gr
-as
-s</td>
+<tr class="row-odd"><td>6</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-tobsoil"><code class="xref any std std-option docutils literal notranslate"><span class="pre">ToBSoil</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Fraction of water going to <a class="reference internal" href="../../notation.html#term-bsoil"><code class="xref any std std-term docutils literal notranslate"><span class="pre">BSoil</span></code></a></td>
 </tr>
-<tr class="row-even"><td>60</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>BS
-oi
-l</td>
+<tr class="row-even"><td>7</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-towater"><code class="xref any std std-option docutils literal notranslate"><span class="pre">ToWater</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Fraction of water going to <a class="reference internal" href="../../notation.html#term-water"><code class="xref any std std-term docutils literal notranslate"><span class="pre">Water</span></code></a></td>
 </tr>
-<tr class="row-odd"><td>70</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>Wa
-te
-r</td>
+<tr class="row-odd"><td>8</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-torunoff"><code class="xref any std std-option docutils literal notranslate"><span class="pre">ToRunoff</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Fraction of water going to <code class="xref any docutils literal notranslate"><span class="pre">Runoff</span></code></td>
+</tr>
+<tr class="row-even"><td>9</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-tosoilstore"><code class="xref any std std-option docutils literal notranslate"><span class="pre">ToSoilStore</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td>Fraction of water going to <code class="xref any docutils literal notranslate"><span class="pre">SoilStore</span></code></td>
 </tr>
 </tbody>
 </table>
@@ -417,7 +303,7 @@ r</td>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../Initial_Conditions/Initial_Conditions.html" class="btn btn-neutral float-right" title="6.3. Initial Conditions file" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="Input_Options.html" class="btn btn-neutral float-right" title="6.2.13. Input_Options" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="SUEWS_Water.html" class="btn btn-neutral" title="6.2.11. SUEWS_Water.txt" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

@@ -1,0 +1,4 @@
+"Referencing Table","Requirement","Comment"
+"`SUEWS_NonVeg.txt`","`MD`","Options 1 Falk and Niemczynowicz (1978) [32] 2 Halldin et al. (1979) [33] (Rutter eqn corrected for c=0, see Calder & Wright (1986) [34] ) Recommended [3] for BSoil 3 Falk and Niemczynowicz (1978) [32] Recommended [3] for Paved and Bldgs Coefficients are specified in the following two columns."
+"`SUEWS_Veg.txt`","`MD`","Options 1 Falk and Niemczynowicz (1978) [32] 2 Halldin et al. (1979) [33] (Rutter eqn corrected for c=0, see Calder & Wright (1986) [34] ) Recommended [3] for EveTr, DecTr, Grass (unirrigated) 3 Falk and Niemczynowicz (1978) [32] Recommended [3] for Grass (irrigated) Coefficients are specified in the following two columns."
+"`SUEWS_Water.txt`","`MD`","Not currently used for water surface."
