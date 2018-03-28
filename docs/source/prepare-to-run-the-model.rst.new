@@ -38,7 +38,7 @@ Decide what type of model run you are interested in
    :widths: 50 50
    :header-rows: 1
 
-   * -
+   * - 
      - Available in this release
    * - LUMPS
      - Yes – not standalone
@@ -84,35 +84,58 @@ year and tt the time interval.
      - Input/output
    * - SSss_data.txt
      - Meteorological input
-     - Input file (60-min)
+     - Input   * - 
+     - file (60-min)
+     -
    * - SSss_YYYY_data_5.txt
      - Meteorological input
-     - Input file (5-min)
+     - Input   * - 
+     - file (5-min)
+     -
    * - InitialConditionsSSss
      - Initial conditions
-     - Input - _YYYY.nml(+) file
+     - Input   * - _YYYY.nml(+)
+     - file
+     -
    * - SUEWS_SiteInfo_SSss.x
      - Spreadsheet
-     - Input lsm containing all other input information
+     - Input   * - lsm
+     - containing all other
+     -   * - 
+     - input information
+     -
    * - RunControl.nml
      - Sets model run
-     - Input (located in options main directory)
+     - Input (located in   * - 
+     - options
+     - main directory)
    * - SS_Filechoices.txt
      - Summary of model run
-     - Output  options
+     - Output   * - 
+     - options
+     -
    * - SSss_YYYY_5.txt
      - (Optional) 5-min
-     - Output resolution output file
+     - Output   * - 
+     - resolution output
+     -   * - 
+     - file
+     -
    * - SSss_YYYY_60.txt
      - 60-min resolution
-     - Output output file
+     - Output   * - 
+     - output file
+     -
    * - SSss_DailyState.txt
      - Daily state variables
-     - Output (all years in one file)
-
-
-
-
+     - Output   * - 
+     - (all years in one
+     -   * - 
+     - file)
+     -
+   * - 
+     -
+     -
 
 (+) There is a second file InitialConditionsSSss_YYYY_EndOfRun.nml or
 InitialConditionsSSss_YYYY+1.nml in the input directory. At the end of
@@ -214,42 +237,83 @@ For each grid, the land cover must be classified using the following
 surface types:
 
 .. list-table::
-   :widths: 25 25 50
+   :widths: 25 25 25 25
    :header-rows: 1
-   :stub-columns: 1
 
    * - Classification
      - Surface type
-     - File where characteristics are specified
+     - File where
+     -   * - 
+     -
+     - characteristics
+     -   * - 
+     -
+     - are specified
+     -
    * - Non-vegetated
      - Paved surfaces
-     - `SUEWS_NonVeg.txt`
-   * -
+     - [[#SUEWS_NonVeg
+     - SUEWS_NonVeg.tx   * - 
+     -
+     - .txt
+     - t]]
+   * - 
      - Building
-     - `SUEWS_NonVeg.txt`
-   * -
+     - [[#SUEWS_NonVeg
+     - SUEWS_NonVeg.tx   * - 
+     - surfaces
+     - .txt
+     - t]]
+   * - 
      - Bare soil
-     - `SUEWS_NonVeg.txt`
+     - [[#SUEWS_NonVeg
+     - SUEWS_NonVeg.tx   * - 
+     - surfaces
+     - .txt
+     - t]]
    * - Vegetation
      - Evergreen trees
-     - `SUEWS_Veg.txt`
-   * -
+     - [[#SUEWS_Veg.tx
+     - SUEWS_Veg.txt]]   * - 
+     - and shrubs
+     - t
+     -
+   * - 
      - Deciduous trees
-     - `SUEWS_Veg.txt`
-   * -
+     - [[#SUEWS_Veg.tx
+     - SUEWS_Veg.txt]]   * - 
+     - and shrubs
+     - t
+     -
+   * - 
      - Grass
-     - `SUEWS_Veg.txt`
+     - [[#SUEWS_Veg.tx
+     - SUEWS_Veg.txt]]   * - 
+     -
+     - t
+     -
    * - Water
      - Water
-     - `SUEWS_Water.txt`
+     - [[#SUEWS_Water.
+     - SUEWS_Water.txt   * - 
+     -
+     - txt
+     - ]]
    * - Snow
      - Snow
-     - `SUEWS_Snow.txt`
-
+     - [[#SUEWS_Snow.t
+     - SUEWS_Snow.txt]   * - 
+     -
+     - xt
+     - ]
+   * - 
+     -
+     -
+     -
 
 The surface cover fractions (i.e. proportion of the grid taken up by
 each surface) must be specified in
-`SUEWS_SiteSelect.txt`. The surface cover
+`SUEWS_SiteSelect.txt <#SUEWS_SiteSelect.txt>`__. The surface cover
 fractions are **critical**, so make certain that the different surface
 cover fractions are appropriate for your site.
 
@@ -263,7 +327,7 @@ to a GIS environment using QGIS.
 
 .. _anthropogenic-heat-flux-qf-1:
 
-Anthropogenic heat flux (Q :sub:`F`)
+Anthropogenic heat flux (Q:sub:`F`)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You can either model Q\ :sub:`F` within SUEWS or provide it as an input.
@@ -348,16 +412,10 @@ model (even the with the example datasets) you must either
 #. create the directories specified in the RunControl.nml file
 
 From the given site identification the model identifies the input files
-and generates the output files. For example if you specify::
+and generates the output files. For example if you specify
 
-    FileOutputPath = “C:\FolderName\SUEWSOutput\” 
-
-and use site code SS the model creates an output file::
-
-    C:\FolderName\SUEWSOutput\SSss_YYYY_TT.txt 
-
-.. note:: remember to add the last backslash in windows and slash in Linux/Mac
-
+| **``FileOutputPath``\ ````\ ``=``\ ````\ ``“C:\FolderName\SUEWSOutput\”``**\ `` and use site code SS the model creates an output file ``
+| **``C:\FolderName\SUEWSOutput\SSss_YYYY_TT.txt``**\ `` (remember to add the last backslash in windows and slash in Linux/Mac).``
 
 If the file paths are not correct the program will return an error when
 run (see `error messages <#Error_messages:_problems.txt>`__) and write
@@ -403,25 +461,134 @@ It is a good idea to perform initial checks that the model output looks
 reasonable.
 
 .. list-table::
-   :widths: 20 80
+   :widths: 33 33 33
    :header-rows: 1
 
    * - Characteristic
      - Things to check
+     -
    * - Leaf area index
-     - Does the phenologylook appropriate  (i.e. what does the seasonal cycle of  `leaf area index (LAI) <http://glossary.ametsoc.org/wiki/Leaf_area_index>`__ look like?)
-        * Are the leaves on the trees at approximately the right time of the year?
+     - Does the phenology
+     -   * - 
+     - look appropriate
+     -   * - 
+     - (i.e. what does the
+     -   * - 
+     - seasonal cycle of
+     -   * - 
+     - `leaf area index
+     -   * - 
+     - (LAI) <http://glossar
+     -   * - 
+     - y.ametsoc.org/wiki/Le
+     -   * - 
+     - af_area_index>`__
+     -   * - 
+     - look like?)
+     -   * - 
+     - -  Are the leaves on
+     -   * - 
+     - the trees at
+     -   * - 
+     - approximately the
+     -   * - 
+     - right time of the
+     -   * - 
+     - year?
+     -
    * - Kdown
-     - Is the timing of the diurnal cycle correct for the incoming solar radiation?
-        * Although Kdown is a required input, it is also included in the output file. It is a good idea to check that the timing of Kdown in the output file is appropriate, as problems can indicate errors with the timestamp, incorrect time settings or problems with the disaggregation. In particular, make sure the sign of the longitude is specified correctly in `SUEWS_SiteSelect.txt`.
-        * Checking solar angles (zenith and azimuth) can also be a useful check that the timing is correct.
+     - Is the timing of the
+     - SUEWS_SiteSelect.txt]   * - 
+     - diurnal cycle correct
+     - ].   * - 
+     - for the incoming
+     - -  Checking solar   * - 
+     - solar radiation?
+     - angles (zenith and   * - 
+     - \*Although Kdown is a
+     - azimuth) can also   * - 
+     - required input, it is
+     - be a useful check   * - 
+     - also included in the
+     - that the timing is   * - 
+     - output file. It is a
+     - correct.   * - 
+     - good idea to check
+     -   * - 
+     - that the timing of
+     -   * - 
+     - Kdown in the output
+     -   * - 
+     - file is appropriate,
+     -   * - 
+     - as problems can
+     -   * - 
+     - indicate errors with
+     -   * - 
+     - the timestamp,
+     -   * - 
+     - incorrect time
+     -   * - 
+     - settings or problems
+     -   * - 
+     - with the
+     -   * - 
+     - disaggregation. In
+     -   * - 
+     - particular, make sure
+     -   * - 
+     - the sign of the
+     -   * - 
+     - longitude is
+     -   * - 
+     - specified correctly
+     -   * - 
+     - in
+     -   * - 
+     - [[#SUEWS_SiteSelect.t
+     -   * - 
+     - xt
+     -
    * - Albedo
-     - Is the bulk albedo correct?
-        * This is critical because a small error has an impact on all the fluxes (energy and hydrology).
-        * If you have measurements of outgoing shortwave radiation compare these with the modelled values.
-        * How do the values compare to literature values for your area?
-
-
+     - Is the bulk albedo
+     -   * - 
+     - correct?
+     -   * - 
+     - -  This is critical
+     -   * - 
+     - because a small
+     -   * - 
+     - error has an
+     -   * - 
+     - impact on all the
+     -   * - 
+     - fluxes (energy and
+     -   * - 
+     - hydrology).
+     -   * - 
+     - -  If you have
+     -   * - 
+     - measurements of
+     -   * - 
+     - outgoing shortwave
+     -   * - 
+     - radiation compare
+     -   * - 
+     - these with the
+     -   * - 
+     - modelled values.
+     -   * - 
+     - -  How do the values
+     -   * - 
+     - compare to
+     -   * - 
+     - literature values
+     -   * - 
+     - for your area?
+     -
+   * - 
+     -
+     -
 
 Summary of files
 ----------------
@@ -435,7 +602,8 @@ model time-step.
 
 The last column indicates whether the files are needed/produced once per
 run (1/run), or once per day (1/day), for each year (1/year) or for each
-grid (1/grid)::
+grid (1/grid).
 
-    [B] indicates files used with the CBL part of SUEWS (BLUEWS) and therefore are only needed/produced if this option is selected``
-    [E] indicates files associated with ESTM storage heat flux models and therefore are only needed/produced if this option is selected``
+| ``[B] indicates files used with the CBL part of SUEWS (BLUEWS) and therefore are only needed/produced if this option is selected``
+| ``[E] indicates files associated with ESTM storage heat flux models and therefore are only needed/produced if this option is selected``
+

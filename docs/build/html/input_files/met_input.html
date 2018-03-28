@@ -185,43 +185,56 @@
 <h1>6.4. Meteorological Input File<a class="headerlink" href="#meteorological-input-file" title="Permalink to this headline">¶</a></h1>
 <p>SUEWS is designed to run using commonly measured meteorological
 variables.</p>
-<ul class="simple">
-<li>Required inputs must be continuous – i.e. <strong>gap fill</strong> any missing
-data.</li>
-<li>The table below gives the required (R) and optional (O) additional
-input variables.</li>
-<li>If an optional input variable is not available or will not be used by
-the model, enter ‘-999.0’ for this column.</li>
-<li>Since v2017a forcing files no longer need to end with two rows
-containing ‘-9’ in the first column.</li>
-<li>One single meteorological file can be used for all grids
+<ul>
+<li><p class="first">Required inputs must be continuous – i.e. <strong>gap fill</strong> any missing
+data.</p>
+</li>
+<li><p class="first">The table below gives the required (R) and optional (O) additional
+input variables.</p>
+</li>
+<li><p class="first">If an optional input variable is not available or will not be used by
+the model, enter ‘-999.0’ for this column.</p>
+</li>
+<li><p class="first">Since v2017a forcing files no longer need to end with two rows
+containing ‘-9’ in the first column.</p>
+</li>
+<li><p class="first">One single meteorological file can be used for all grids
 (<strong>MultipleMetFiles=0</strong> in <a class="reference external" href="#RunControl.nml">RunControl.nml</a>, no
-grid number in file name) if appropriate for the study area, or</li>
-<li>separate met files can be used for each grid if data are available
+grid number in file name) if appropriate for the study area, or</p>
+</li>
+<li><p class="first">separate met files can be used for each grid if data are available
 (<strong>MultipleMetFiles=1</strong> in <a class="reference external" href="#RunControl.nml">RunControl.nml</a>,
-filename includes grid number).</li>
-<li>The meteorological forcing file names should be appended with the
+filename includes grid number).</p>
+</li>
+<li><p class="first">The meteorological forcing file names should be appended with the
 temporal resolution in minutes (SS_YYYY_data_tt.txt, or
-SSss_YYYY_data_tt.txt for multiple grids).</li>
-<li>Separate met forcing files should be provided for each year.</li>
-<li>Files do not need to start/end at the start/end of the year, but they
-must contain a whole number of days.</li>
-<li>The meteorological input file should match the information given in
-<a class="reference external" href="#SUEWS_SiteSelect.txt">SUEWS_SiteSelect.txt</a>.</li>
-<li>If a <em>partial year</em> is used that specific year must be given in
-SUEWS_SiteSelect.txt.</li>
-<li>If <em>multiple years</em> are used, all years should be included in
-SUEWS_SiteSelect.txt.</li>
-<li>If a <em>whole year</em> (e.g. 2011) is intended to be modelled using and
+SSss_YYYY_data_tt.txt for multiple grids).</p>
+</li>
+<li><p class="first">Separate met forcing files should be provided for each year.</p>
+</li>
+<li><p class="first">Files do not need to start/end at the start/end of the year, but they
+must contain a whole number of days.</p>
+</li>
+<li><p class="first">The meteorological input file should match the information given in
+<a class="reference external" href="#SUEWS_SiteSelect.txt">SUEWS_SiteSelect.txt</a>.</p>
+</li>
+<li><p class="first">If a <em>partial year</em> is used that specific year must be given in
+SUEWS_SiteSelect.txt.</p>
+</li>
+<li><p class="first">If <em>multiple years</em> are used, all years should be included in
+SUEWS_SiteSelect.txt.</p>
+</li>
+<li><p class="first">If a <em>whole year</em> (e.g. 2011) is intended to be modelled using and
 hourly resolution dataset, the number of lines in the met data file
-should be 8760 and begin and end with:</li>
-</ul>
-<div class="line-block">
-<div class="line"><code class="docutils literal notranslate"><span class="pre">iy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id&nbsp;&nbsp;it&nbsp;&nbsp;imin</span></code></div>
-<div class="line"><code class="docutils literal notranslate"><span class="pre">2011&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;0&nbsp;…</span></code></div>
-<div class="line"><code class="docutils literal notranslate"><span class="pre">…</span></code></div>
-<div class="line"><code class="docutils literal notranslate"><span class="pre">2012&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;0&nbsp;…</span></code></div>
+should be 8760 and begin and end with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>iy     id  it  imin
+2011   1   1   0 …
+…
+2012   1   0   0 …
+</pre></div>
 </div>
+</li>
+</ul>
 <div class="section" id="ssss-yyyy-data-tt-txt">
 <span id="id1"></span><h2>6.4.1. SSss_YYYY_data_tt.txt<a class="headerlink" href="#ssss-yyyy-data-tt-txt" title="Permalink to this headline">¶</a></h2>
 <p>Main meteorological data file.</p>
@@ -268,8 +281,7 @@ should be 8760 and begin and end with:</li>
 all-wave
 radiation
 [W
-m <sup>-2</sup>
-]
+m^-2 ]
 -  Required
 if
 <strong>NetRad
@@ -283,7 +295,7 @@ d</strong>
 <td>Sensible
 heat flux
 [W
-m <sup>-2</sup>
+m^-2
 ]</td>
 </tr>
 <tr class="row-even"><td>7</td>
@@ -291,7 +303,7 @@ m <sup>-2</sup>
 <td>qe</td>
 <td>Latent heat
 flux [W
-m <sup>-2</sup>
+m^-2
 ]</td>
 </tr>
 <tr class="row-odd"><td>8</td>
@@ -300,7 +312,7 @@ m <sup>-2</sup>
 <td>Storage
 heat flux
 [W
-m <sup>-2</sup>
+m^-2
 ]</td>
 </tr>
 <tr class="row-even"><td>9</td>
@@ -310,7 +322,7 @@ m <sup>-2</sup>
 ic
 heat flux
 [W
-m <sup>-2</sup>
+m^-2
 ]</td>
 </tr>
 <tr class="row-odd"><td>10</td>
@@ -318,7 +330,7 @@ m <sup>-2</sup>
 <td>U</td>
 <td>Wind speed
 [m
-s <sup>-1</sup>
+s^-1
 ]
 *Height of
 the wind
@@ -364,10 +376,10 @@ pressure
 shortwave
 radiation
 [W
-m<sup>-2</sup>
+m^-2
 ]
 -  Must be &gt; 0 W
-m:sup: <code class="xref any docutils literal notranslate"><span class="pre">-2</span></code>.</td>
+m^-2.</td>
 </tr>
 <tr class="row-odd"><td>16</td>
 <td>O</td>
@@ -386,7 +398,7 @@ e</strong>
 longwave
 radiation
 [W
-m<sup>-2</sup>]</td>
+m^-2]</td>
 </tr>
 <tr class="row-odd"><td>18</td>
 <td>O</td>
@@ -400,7 +412,7 @@ fraction
 <td>Wuh</td>
 <td>External
 water use
-[m :sup:<code class="xref any docutils literal notranslate"><span class="pre">3</span></code>]</td>
+[m^-3 ]</td>
 </tr>
 <tr class="row-odd"><td>20</td>
 <td>O</td>
@@ -408,10 +420,10 @@ water use
 <td>Observed
 soil
 moisture
-[m :sup:<code class="xref any docutils literal notranslate"><span class="pre">3</span></code>m
-:sup:<code class="xref any docutils literal notranslate"><span class="pre">-3</span></code>]
+[m^-3 m^-3
+]
 or [kg
-kg :sup:<code class="xref any docutils literal notranslate"><span class="pre">-1</span></code>
+kg^-1
 ]</td>
 </tr>
 <tr class="row-even"><td>21</td>
@@ -420,7 +432,8 @@ kg :sup:<code class="xref any docutils literal notranslate"><span class="pre">-1
 <td>Observed
 leaf area
 index
-[m :sup:<code class="xref any docutils literal notranslate"><span class="pre">-2</span></code>m<sup>-2</sup>]</td>
+[m^-2
+m^-2 ]</td>
 </tr>
 <tr class="row-odd"><td>22</td>
 <td>O</td>
@@ -428,7 +441,7 @@ index
 <td>Diffuse
 radiation
 [W
-m <sup>-2</sup>]
+m^-2]
 -  Recommended
 if
 <strong>SOLWEIGUse</strong>
@@ -440,7 +453,7 @@ if
 <td>Direct
 radiation
 [W
-m <sup>-2</sup>
+m^-2
 ]
 -  Recommended
 if

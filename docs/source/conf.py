@@ -81,7 +81,19 @@ exclude_patterns = []
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
 
+# default interpretation of `role` markups
 default_role = 'any'
+
+# some text replacement defintions
+rst_prolog = """
+.. |m^-1| replace :: m :sup:`-1`
+.. |m^-2| replace :: m :sup:`-2`
+.. |m^-3| replace :: m :sup:`-3`
+.. |m^3| replace  :: m :sup:`3`
+.. |s^-1| replace :: m s :sup:`-1`
+.. |kg^-1| replace:: kg :sup:`-1`
+.. |K^-1| replace:: K :sup:`-1`
+"""
 # -- Options for HTML output -------------------------------------------------
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.

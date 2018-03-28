@@ -82,6 +82,7 @@ are provided through :ref:`the links below <ESTMinput>`:
 
    ESTMinput
 
+
 .. _SSss_YYYY_ESTM_Ts_data_tt.txt:
 
 SSss_YYYY_ESTM_Ts_data_tt.txt
@@ -90,57 +91,7 @@ SSss_YYYY_ESTM_Ts_data_tt.txt
 `SSss_YYYY_ESTM_Ts_data_tt.txt` contains a time-series of input surface
 temperature for roof, wall, ground and internal elements.
 
-+-----------------------+-----------------------+-----------------------+
-| No.                   | Column name           | Description           |
-+=======================+=======================+=======================+
-| 1                     | iy                    | Year [YYYY]           |
-+-----------------------+-----------------------+-----------------------+
-| 2                     | id                    | Day of year [DOY]     |
-+-----------------------+-----------------------+-----------------------+
-| 3                     | it                    | Hour [H]              |
-+-----------------------+-----------------------+-----------------------+
-| 4                     | imin                  | Minute [M]            |
-+-----------------------+-----------------------+-----------------------+
-| 5                     | Tiair                 | Indoor air            |
-|                       |                       | temperature [˚C]      |
-+-----------------------+-----------------------+-----------------------+
-| 6                     | Tsurf                 | Bulk surface          |
-|                       |                       | temperature [˚C]      |
-|                       |                       | (used when TsurfCoice |
-|                       |                       | = 0)                  |
-+-----------------------+-----------------------+-----------------------+
-| 7                     | Troof                 | Roof surface          |
-|                       |                       | temperature [˚C]      |
-|                       |                       | (used when            |
-|                       |                       | TsurfChoice = 1 or 2) |
-+-----------------------+-----------------------+-----------------------+
-| 8                     | Troad                 | Ground surface        |
-|                       |                       | temperature [˚C]      |
-|                       |                       | (used when            |
-|                       |                       | TsurfChoice = 1 or 2) |
-+-----------------------+-----------------------+-----------------------+
-| 9                     | Twall                 | Wall surface          |
-|                       |                       | temperature [˚C]      |
-|                       |                       | (used when            |
-|                       |                       | TsurfChoice = 1)      |
-+-----------------------+-----------------------+-----------------------+
-| 10                    | Twall_n               | North-facing wall     |
-|                       |                       | surface temperature   |
-|                       |                       | [˚C] (used when       |
-|                       |                       | TsurfChoice = 2)      |
-+-----------------------+-----------------------+-----------------------+
-| 11                    | Twall_e               | East-facing wall      |
-|                       |                       | surface temperature   |
-|                       |                       | [˚C] (used when       |
-|                       |                       | TsurfChoice = 2)      |
-+-----------------------+-----------------------+-----------------------+
-| 12                    | Twall_s               | South-facing wall     |
-|                       |                       | surface temperature   |
-|                       |                       | [˚C] (used when       |
-|                       |                       | TsurfChoice = 2)      |
-+-----------------------+-----------------------+-----------------------+
-| 13                    | Twall_w               | West-facing wall      |
-|                       |                       | surface temperature   |
-|                       |                       | [˚C] (used when       |
-|                       |                       | TsurfChoice = 2)      |
-+-----------------------+-----------------------+-----------------------+
+.. csv-table::
+  :file: SSss_YYYY_ESTM_Ts_data_tt.csv
+  :header-rows: 1
+  :widths: 5 5 5 85

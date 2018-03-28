@@ -35,12 +35,12 @@ variables.
    SUEWS_SiteSelect.txt.
 -  If a *whole year* (e.g. 2011) is intended to be modelled using and
    hourly resolution dataset, the number of lines in the met data file
-   should be 8760 and begin and end with:
+   should be 8760 and begin and end with::
 
-| ``iy     id  it  imin``
-| ``2011   1   1   0 …``
-| ``…``
-| ``2012   1   0   0 …``
+     iy     id  it  imin
+     2011   1   1   0 …
+     …
+     2012   1   0   0 …
 
 
 .. _SSss_YYYY_data_tt.txt:
@@ -66,8 +66,7 @@ Main meteorological data file.
 |     |     |             | all-wave         |
 |     |     |             | radiation        |
 |     |     |             | [W               |
-|     |     |             | m \ :sup:`-2`    |
-|     |     |             | ]                |
+|     |     |             | m^-2 ]           |
 |     |     |             | -  Required      |
 |     |     |             | if               |
 |     |     |             | **NetRad         |
@@ -78,30 +77,30 @@ Main meteorological data file.
 | 6   | O   | qh          | Sensible         |
 |     |     |             | heat flux        |
 |     |     |             | [W               |
-|     |     |             | m \ :sup:`-2`    |
+|     |     |             | m^-2             |
 |     |     |             | ]                |
 +-----+-----+-------------+------------------+
 | 7   | O   | qe          | Latent heat      |
 |     |     |             | flux [W          |
-|     |     |             | m \ :sup:`-2`    |
+|     |     |             | m^-2             |
 |     |     |             | ]                |
 +-----+-----+-------------+------------------+
 | 8   | O   | qs          | Storage          |
 |     |     |             | heat flux        |
 |     |     |             | [W               |
-|     |     |             | m \ :sup:`-2`    |
+|     |     |             | m^-2             |
 |     |     |             | ]                |
 +-----+-----+-------------+------------------+
 | 9   | O   | qf          | Anthropogen      |
 |     |     |             | ic               |
 |     |     |             | heat flux        |
 |     |     |             | [W               |
-|     |     |             | m \ :sup:`-2`    |
+|     |     |             | m^-2             |
 |     |     |             | ]                |
 +-----+-----+-------------+------------------+
 | 10  | R   | U           | Wind speed       |
 |     |     |             | [m               |
-|     |     |             | s \ :sup:`-1`    |
+|     |     |             | s^-1             |
 |     |     |             | ]                |
 |     |     |             | \*Height of      |
 |     |     |             | the wind         |
@@ -132,10 +131,10 @@ Main meteorological data file.
 |     |     |             | shortwave        |
 |     |     |             | radiation        |
 |     |     |             | [W               |
-|     |     |             | m\ :sup:`-2`     |
+|     |     |             | m^-2             |
 |     |     |             | ]                |
 |     |     |             | -  Must be > 0 W |
-|     |     |             | m\ :sup: `-2`.   |
+|     |     |             | m^-2.            |
 +-----+-----+-------------+------------------+
 | 16  | O   | snow        | Snow [mm]        |
 |     |     |             | -  Required      |
@@ -148,7 +147,7 @@ Main meteorological data file.
 |     |     |             | longwave         |
 |     |     |             | radiation        |
 |     |     |             | [W               |
-|     |     |             | m\ :sup:`-2`\ ]  |
+|     |     |             | m^-2\ ]          |
 +-----+-----+-------------+------------------+
 | 18  | O   | fcld        | Cloud            |
 |     |     |             | fraction         |
@@ -156,27 +155,27 @@ Main meteorological data file.
 +-----+-----+-------------+------------------+
 | 19  | O   | Wuh         | External         |
 |     |     |             | water use        |
-|     |     |             | [m \:sup:`3`\ ]  |
+|     |     |             | [m^-3 ]          |
 +-----+-----+-------------+------------------+
 | 20  | O   | xsmd        | Observed         |
 |     |     |             | soil             |
 |     |     |             | moisture         |
-|     |     |             | [m \:sup:`3`\ m  |
-|     |     |             | \:sup:`-3`\ ]    |
+|     |     |             | [m^-3 m^-3       |
+|     |     |             | ]                |
 |     |     |             | or [kg           |
-|     |     |             | kg \:sup:`-1`    |
+|     |     |             | kg^-1            |
 |     |     |             | ]                |
 +-----+-----+-------------+------------------+
 | 21  | O   | lai         | Observed         |
 |     |     |             | leaf area        |
 |     |     |             | index            |
-|     |     |             | [m \:sup:`-2`\   |
-|     |     |             | m\ :sup:`-2`\ ]  |
+|     |     |             | [m^-2            |
+|     |     |             | m^-2 ]           |
 +-----+-----+-------------+------------------+
 | 22  | O   | kdiff       | Diffuse          |
 |     |     |             | radiation        |
 |     |     |             | [W               |
-|     |     |             | m \ :sup:`-2`]   |
+|     |     |             | m^-2]            |
 |     |     |             | -  Recommended   |
 |     |     |             | if               |
 |     |     |             | **SOLWEIGUse**   |
@@ -185,7 +184,7 @@ Main meteorological data file.
 | 23  | O   | kdir        | Direct           |
 |     |     |             | radiation        |
 |     |     |             | [W               |
-|     |     |             | m \ :sup:`-2`    |
+|     |     |             | m^-2             |
 |     |     |             | ]                |
 |     |     |             | -  Recommended   |
 |     |     |             | if               |
