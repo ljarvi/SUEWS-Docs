@@ -114,7 +114,6 @@
 <li class="toctree-l3"><a class="reference internal" href="SUEWS_Veg.html">6.2.10. SUEWS_Veg.txt</a></li>
 <li class="toctree-l3"><a class="reference internal" href="SUEWS_Water.html">6.2.11. SUEWS_Water.txt</a></li>
 <li class="toctree-l3"><a class="reference internal" href="SUEWS_WithinGridWaterDist.html">6.2.12. SUEWS_WithinGridWaterDist.txt</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Input_Options.html">6.2.13. Input_Options</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Initial_Conditions/Initial_Conditions.html">6.3. Initial Conditions file</a></li>
@@ -748,51 +747,49 @@ interpretation of the contents. This is strongly recommended.</p>
 associated with a specific set of Sunday mornings at the beginning of
 summer and autumn. Note it is important to remember leap years. You can
 check <a class="reference external" href="http://www.timeanddate.com/time/dst/">http://www.timeanddate.com/time/dst/</a> for your city.</p>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
 <p>If DLS does not occur give a start and end day immediately after it.
-Make certain the dummy dates are correct for the hemisphere:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">northern</span> <span class="n">hemisphere</span><span class="p">,</span> <span class="n">use</span><span class="p">:</span> <span class="mi">180</span> <span class="mi">181</span>
-<span class="k">for</span> <span class="n">southern</span> <span class="n">hemisphere</span><span class="p">,</span> <span class="n">use</span><span class="p">:</span>  <span class="mi">365</span> <span class="mi">1</span>
-</pre></div>
+Make certain the dummy dates are correct for the hemisphere</p>
+<blockquote class="last">
+<div><ul class="simple">
+<li>for&nbsp;northern&nbsp;hemisphere,&nbsp;use:&nbsp;180&nbsp;181</li>
+<li>for&nbsp;southern&nbsp;hemisphere,&nbsp;use:&nbsp;&nbsp;365&nbsp;1</li>
+</ul>
+</div></blockquote>
 </div>
-<table border="1" class="docutils">
-<colgroup>
-<col width="33%" />
-<col width="12%" />
-<col width="20%" />
-<col width="35%" />
-</colgroup>
+<dl class="docutils">
+<dt>Example when running  multiple years (in this case 2008 and 2009 in Canada):</dt>
+<dd><table border="1" class="colwidths-auto first last docutils">
 <thead valign="bottom">
-<tr class="row-odd"><th class="head">Example:</th>
-<th class="head">Year</th>
-<th class="head">start of
-daylight
-savings</th>
-<th class="head">end of daylight
-savings</th>
+<tr class="row-odd"><th class="head">Year</th>
+<th class="head">start of daylight savings</th>
+<th class="head">end of daylight savings</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>when running
-multiple years
-(in this case
-2008 and 2009
-in Canada)</td>
-<td>2008</td>
+<tr class="row-even"><td>2008</td>
 <td>170</td>
 <td>240</td>
 </tr>
-<tr class="row-odd"><td>&#160;</td>
-<td>2009</td>
+<tr class="row-odd"><td>2009</td>
 <td>172</td>
 <td>242</td>
 </tr>
 </tbody>
 </table>
+</dd>
+</dl>
 </div>
 <div class="section" id="grid-connections-water-flow-between-grids">
 <h2>6.2.7.2. Grid Connections (water flow between grids)<a class="headerlink" href="#grid-connections-water-flow-between-grids" title="Permalink to this headline">¶</a></h2>
-<p><strong>N.B. not currently implemented</strong> - columns 64-79 of
-<a class="reference internal" href="#suews-siteselect-txt"><span class="std std-ref">SUEWS_SiteSelect.txt</span></a> can be set to zero.</p>
+<div class="admonition caution">
+<p class="first admonition-title">Caution</p>
+<ul class="last simple">
+<li>not currently implemented</li>
+<li>columns 64-79 of <a class="reference internal" href="#suews-siteselect-txt"><span class="std std-ref">SUEWS_SiteSelect.txt</span></a> can be set to zero.</li>
+</ul>
+</div>
 <p>This section gives an example of water flow between grids, calculated
 based on the relative elevation of the grids and length of the
 connecting surface between adjacent grids. For the square grids in the

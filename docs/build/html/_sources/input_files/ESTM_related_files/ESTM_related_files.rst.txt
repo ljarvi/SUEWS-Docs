@@ -76,7 +76,11 @@ are provided through :ref:`the links below <ESTMinput>`:
     + :option:`Theat_off`
     + :option:`Theat_on`
 
+.. toctree::
+   :maxdepth: 1
+   :hidden:
 
+   ESTMinput
 
 .. _SSss_YYYY_ESTM_Ts_data_tt.txt:
 
@@ -140,11 +144,3 @@ temperature for roof, wall, ground and internal elements.
 |                       |                       | [˚C] (used when       |
 |                       |                       | TsurfChoice = 2)      |
 +-----------------------+-----------------------+-----------------------+
-
-
-
-.. toctree::
-   :maxdepth: 1
-   :hidden:
-
-   ESTMinput

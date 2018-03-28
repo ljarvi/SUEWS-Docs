@@ -10,6 +10,10 @@ area.
    :glob:
 
    SUEWS*
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:
    Input_Options
 
 
@@ -62,6 +66,4 @@ always shipped with the SUEWS public release.
 |     | in the corresponding input file), |
 |     | otherwise the model run will      |
 |     | fail.                             |
-+-----+-----------------------------------+
-|     |                                   |
 +-----+-----------------------------------+

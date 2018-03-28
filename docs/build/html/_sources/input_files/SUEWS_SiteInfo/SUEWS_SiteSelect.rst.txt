@@ -28,32 +28,35 @@ associated with a specific set of Sunday mornings at the beginning of
 summer and autumn. Note it is important to remember leap years. You can
 check http://www.timeanddate.com/time/dst/ for your city.
 
-If DLS does not occur give a start and end day immediately after it.
-Make certain the dummy dates are correct for the hemisphere::
 
-    for northern hemisphere, use: 180 181
-    for southern hemisphere, use:  365 1
+.. tip::
+    If DLS does not occur give a start and end day immediately after it.
+    Make certain the dummy dates are correct for the hemisphere
+     - for northern hemisphere, use: 180 181
+     - for southern hemisphere, use:  365 1
 
-+----------------+------+----------+-----------------+
-| Example:       | Year | start of | end of daylight |
-|                |      | daylight | savings         |
-|                |      | savings  |                 |
-+================+======+==========+=================+
-| when running   | 2008 | 170      | 240             |
-| multiple years |      |          |                 |
-| (in this case  |      |          |                 |
-| 2008 and 2009  |      |          |                 |
-| in Canada)     |      |          |                 |
-+----------------+------+----------+-----------------+
-|                | 2009 | 172      | 242             |
-+----------------+------+----------+-----------------+
+Example when running  multiple years (in this case 2008 and 2009 in Canada):
+    .. list-table::
+      :widths: auto
+      :header-rows: 1
+
+      * - Year
+        - start of daylight savings
+        - end of daylight savings
+      * - 2008
+        - 170
+        - 240
+      * - 2009
+        - 172
+        - 242
+
 
 
 Grid Connections (water flow between grids)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-**N.B. not currently implemented** - columns 64-79 of
-`SUEWS_SiteSelect.txt` can be set to zero.
+.. caution::
+    - not currently implemented
+    - columns 64-79 of `SUEWS_SiteSelect.txt` can be set to zero.
 
 This section gives an example of water flow between grids, calculated
 based on the relative elevation of the grids and length of the
