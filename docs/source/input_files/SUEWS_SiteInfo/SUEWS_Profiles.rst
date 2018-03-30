@@ -27,4 +27,4 @@ Profiles are specified for the following
 .. csv-table::
   :file: SUEWS_Profiles.csv
   :header-rows: 1
-  :widths: 5 5 5 85
+  :widths: auto

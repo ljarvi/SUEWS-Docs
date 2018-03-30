@@ -15,4 +15,4 @@ Values <http://urban-climate.net/umep/TypicalValues#Typical_Values>`__.
 .. csv-table::
   :file: SUEWS_Veg.csv
   :header-rows: 1
-  :widths: 5 5 5 85
+  :widths: 5 25 5 65

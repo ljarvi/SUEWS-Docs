@@ -94,4 +94,4 @@ temperature for roof, wall, ground and internal elements.
 .. csv-table::
   :file: SSss_YYYY_ESTM_Ts_data_tt.csv
   :header-rows: 1
-  :widths: 5 5 5 85
+  :widths: auto

@@ -55,7 +55,7 @@ further details v2017a:
    parameterisations-and-sub-models
    prepare-to-run-the-model
    input_files/input_files
-   output-files
+   output_files/output_files
    troubleshooting
    acknowledgement
    notation

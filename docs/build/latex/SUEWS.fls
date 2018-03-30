@@ -228,6 +228,8 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm1
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT Bluews_2.jpg
 INPUT Bluews_2.jpg
+INPUT GridConnections_1.jpg
+INPUT GridConnections_1.jpg
 INPUT GridConnections_2_v2.jpg
 INPUT GridConnections_2_v2.jpg
 INPUT Bluews_1.jpg
