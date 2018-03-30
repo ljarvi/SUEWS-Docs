@@ -43,74 +43,76 @@
 \contentsline {subsection}{\numberline {6.2.5}SUEWS\_OHMCoefficients.txt}{38}{subsection.6.2.5}
 \contentsline {subsection}{\numberline {6.2.6}SUEWS\_Profiles.txt}{38}{subsection.6.2.6}
 \contentsline {subsection}{\numberline {6.2.7}SUEWS\_SiteSelect.txt}{39}{subsection.6.2.7}
-\contentsline {subsubsection}{Day Light Savings (DLS)}{45}{subsubsection*.81}
+\contentsline {subsubsection}{Day Light Savings (DLS)}{46}{subsubsection*.81}
 \contentsline {subsubsection}{Grid Connections (water flow between grids)}{46}{subsubsection*.82}
 \contentsline {subsection}{\numberline {6.2.8}SUEWS\_Snow.txt}{46}{subsection.6.2.8}
-\contentsline {subsection}{\numberline {6.2.9}SUEWS\_Soil.txt}{49}{subsection.6.2.9}
-\contentsline {subsection}{\numberline {6.2.10}SUEWS\_Veg.txt}{49}{subsection.6.2.10}
-\contentsline {subsection}{\numberline {6.2.11}SUEWS\_Water.txt}{52}{subsection.6.2.11}
-\contentsline {subsection}{\numberline {6.2.12}SUEWS\_WithinGridWaterDist.txt}{54}{subsection.6.2.12}
-\contentsline {section}{\numberline {6.3}Initial Conditions file}{55}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Soil moisture states}{57}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Vegetation parameters}{57}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Recent meteorology}{59}{subsection.6.3.3}
-\contentsline {subsection}{\numberline {6.3.4}Above Ground State}{59}{subsection.6.3.4}
-\contentsline {subsection}{\numberline {6.3.5}Snow related parameters}{60}{subsection.6.3.5}
-\contentsline {section}{\numberline {6.4}Meteorological Input File}{64}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}SSss\_YYYY\_data\_tt.txt}{65}{subsection.6.4.1}
-\contentsline {section}{\numberline {6.5}CBL input files}{65}{section.6.5}
-\contentsline {subsection}{\numberline {6.5.1}CBL\_initial\_data.txt}{66}{subsection.6.5.1}
-\contentsline {subsection}{\numberline {6.5.2}CBLInput.nml}{66}{subsection.6.5.2}
-\contentsline {subsubsection}{CBLinput}{67}{subsubsection*.142}
-\contentsline {section}{\numberline {6.6}ESTM-related files}{69}{section.6.6}
-\contentsline {subsection}{\numberline {6.6.1}SUEWS\_ESTMCoefficients.txt}{69}{subsection.6.6.1}
-\contentsline {subsection}{\numberline {6.6.2}ESTMinput.nml}{69}{subsection.6.6.2}
-\contentsline {subsubsection}{ESTMinput}{70}{subsubsection*.152}
-\contentsline {subsection}{\numberline {6.6.3}SSss\_YYYY\_ESTM\_Ts\_data\_tt.txt}{71}{subsection.6.6.3}
-\contentsline {section}{\numberline {6.7}SOLWEIG input files}{72}{section.6.7}
-\contentsline {chapter}{\numberline {7}Output files}{75}{chapter.7}
-\contentsline {section}{\numberline {7.1}Runtime diagnostic information}{75}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Error messages: problems.txt}{75}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Warning messages: warnings.txt}{75}{subsection.7.1.2}
-\contentsline {subsection}{\numberline {7.1.3}Summary of model parameters: SS\_FileChoices.txt}{75}{subsection.7.1.3}
-\contentsline {section}{\numberline {7.2}Model output files}{76}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}SSss\_YYYY\_TT.txt}{76}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}SSss\_YYYY\_nn\_TT.nc}{78}{subsection.7.2.2}
-\contentsline {subsection}{\numberline {7.2.3}SSss\_DailyState.txt}{78}{subsection.7.2.3}
-\contentsline {subsection}{\numberline {7.2.4}InitialConditionsSSss\_YYYY.nml}{79}{subsection.7.2.4}
-\contentsline {subsection}{\numberline {7.2.5}SSss\_YYYY\_snow\_TT.txt}{79}{subsection.7.2.5}
-\contentsline {subsection}{\numberline {7.2.6}SSss\_YYYY\_BL.txt}{81}{subsection.7.2.6}
-\contentsline {subsection}{\numberline {7.2.7}SOLWEIGpoiOut.txt}{82}{subsection.7.2.7}
-\contentsline {subsection}{\numberline {7.2.8}SSss\_YYYY\_ESTM\_TT.txt}{83}{subsection.7.2.8}
-\contentsline {chapter}{\numberline {8}Troubleshooting}{85}{chapter.8}
-\contentsline {section}{\numberline {8.1}How to create a directory?}{85}{section.8.1}
-\contentsline {section}{\numberline {8.2}How to unzip a file}{85}{section.8.2}
-\contentsline {section}{\numberline {8.3}A text editor}{85}{section.8.3}
-\contentsline {section}{\numberline {8.4}Command prompt}{85}{section.8.4}
-\contentsline {section}{\numberline {8.5}Day of year {[}DOY{]}}{85}{section.8.5}
-\contentsline {section}{\numberline {8.6}ESTM output}{85}{section.8.6}
-\contentsline {section}{\numberline {8.7}First things to Check if the program seems to have problems}{86}{section.8.7}
-\contentsline {subsection}{\numberline {8.7.1}A pop-up saying “file path not found”}{86}{subsection.8.7.1}
-\contentsline {subsection}{\numberline {8.7.2}\%T changed to fit limits}{86}{subsection.8.7.2}
-\contentsline {subsection}{\numberline {8.7.3}\%Iteration loop stopped for too stable conditions.}{86}{subsection.8.7.3}
-\contentsline {subsection}{\numberline {8.7.4}“Reference to undefined variable, array element or function result”}{86}{subsection.8.7.4}
-\contentsline {subsection}{\numberline {8.7.5}Email list}{86}{subsection.8.7.5}
-\contentsline {chapter}{\numberline {9}Acknowledgements}{87}{chapter.9}
-\contentsline {chapter}{\numberline {10}Notation}{89}{chapter.10}
-\contentsline {chapter}{\numberline {11}Development, Suggestions and Support}{91}{chapter.11}
-\contentsline {chapter}{\numberline {12}Version History}{93}{chapter.12}
-\contentsline {section}{\numberline {12.1}New in SUEWS Version 2018a}{93}{section.12.1}
-\contentsline {section}{\numberline {12.2}New in SUEWS Version 2017b (released 2 August 2017)}{93}{section.12.2}
-\contentsline {section}{\numberline {12.3}New in SUEWS Version 2017a (Feb 2017)}{93}{section.12.3}
-\contentsline {section}{\numberline {12.4}New in SUEWS Version 2016a (released 21 June 2016)}{94}{section.12.4}
-\contentsline {section}{\numberline {12.5}New in SUEWS Version 2014b (released 8 October 2014)}{95}{section.12.5}
-\contentsline {section}{\numberline {12.6}New in SUEWS Version 2014a.1 (released 26 February 2014)}{95}{section.12.6}
-\contentsline {section}{\numberline {12.7}New in SUEWS Version 2014a (released 21 February 2014)}{95}{section.12.7}
-\contentsline {section}{\numberline {12.8}New in SUEWS Version 2013a}{96}{section.12.8}
-\contentsline {section}{\numberline {12.9}New in SUEWS Version 2012b}{96}{section.12.9}
-\contentsline {section}{\numberline {12.10}New in SUEWS Version 2012a}{97}{section.12.10}
-\contentsline {section}{\numberline {12.11}New in SUEWS Version2011b}{97}{section.12.11}
-\contentsline {chapter}{\numberline {13}Differences between SUEWS, LUMPS and FRAISE}{99}{chapter.13}
-\contentsline {section}{\numberline {13.1}FRAISE Flux Ratio \textendash {} Active Index Surface Exchange}{99}{section.13.1}
-\contentsline {chapter}{References}{101}{chapter*.210}
-\contentsline {chapter}{Index}{105}{section*.253}
+\contentsline {subsection}{\numberline {6.2.9}SUEWS\_Soil.txt}{50}{subsection.6.2.9}
+\contentsline {subsection}{\numberline {6.2.10}SUEWS\_Veg.txt}{50}{subsection.6.2.10}
+\contentsline {subsection}{\numberline {6.2.11}SUEWS\_Water.txt}{53}{subsection.6.2.11}
+\contentsline {subsection}{\numberline {6.2.12}SUEWS\_WithinGridWaterDist.txt}{55}{subsection.6.2.12}
+\contentsline {subsection}{\numberline {6.2.13}Input\_Options}{55}{subsection.6.2.13}
+\contentsline {section}{\numberline {6.3}Initial Conditions file}{133}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Soil moisture states}{134}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Vegetation parameters}{135}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Recent meteorology}{137}{subsection.6.3.3}
+\contentsline {subsection}{\numberline {6.3.4}Above Ground State}{137}{subsection.6.3.4}
+\contentsline {subsection}{\numberline {6.3.5}Snow related parameters}{138}{subsection.6.3.5}
+\contentsline {section}{\numberline {6.4}Meteorological Input File}{142}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}SSss\_YYYY\_data\_tt.txt}{142}{subsection.6.4.1}
+\contentsline {section}{\numberline {6.5}CBL input files}{143}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}CBL\_initial\_data.txt}{143}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}CBLInput.nml}{144}{subsection.6.5.2}
+\contentsline {subsubsection}{CBLinput}{145}{subsubsection*.450}
+\contentsline {section}{\numberline {6.6}ESTM-related files}{147}{section.6.6}
+\contentsline {subsection}{\numberline {6.6.1}SUEWS\_ESTMCoefficients.txt}{147}{subsection.6.6.1}
+\contentsline {subsection}{\numberline {6.6.2}ESTMinput.nml}{147}{subsection.6.6.2}
+\contentsline {subsubsection}{ESTMinput}{148}{subsubsection*.460}
+\contentsline {subsection}{\numberline {6.6.3}SSss\_YYYY\_ESTM\_Ts\_data\_tt.txt}{149}{subsection.6.6.3}
+\contentsline {section}{\numberline {6.7}SOLWEIG input files}{150}{section.6.7}
+\contentsline {subsection}{\numberline {6.7.1}SOLWEIGinput}{150}{subsection.6.7.1}
+\contentsline {chapter}{\numberline {7}Output files}{157}{chapter.7}
+\contentsline {section}{\numberline {7.1}Runtime diagnostic information}{157}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Error messages: problems.txt}{157}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Warning messages: warnings.txt}{157}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.3}Summary of model parameters: SS\_FileChoices.txt}{157}{subsection.7.1.3}
+\contentsline {section}{\numberline {7.2}Model output files}{158}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}SSss\_YYYY\_TT.txt}{158}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}SSss\_YYYY\_nn\_TT.nc}{160}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.3}SSss\_DailyState.txt}{160}{subsection.7.2.3}
+\contentsline {subsection}{\numberline {7.2.4}InitialConditionsSSss\_YYYY.nml}{161}{subsection.7.2.4}
+\contentsline {subsection}{\numberline {7.2.5}SSss\_YYYY\_snow\_TT.txt}{161}{subsection.7.2.5}
+\contentsline {subsection}{\numberline {7.2.6}SSss\_YYYY\_BL.txt}{163}{subsection.7.2.6}
+\contentsline {subsection}{\numberline {7.2.7}SOLWEIGpoiOut.txt}{164}{subsection.7.2.7}
+\contentsline {subsection}{\numberline {7.2.8}SSss\_YYYY\_ESTM\_TT.txt}{165}{subsection.7.2.8}
+\contentsline {chapter}{\numberline {8}Troubleshooting}{167}{chapter.8}
+\contentsline {section}{\numberline {8.1}How to create a directory?}{167}{section.8.1}
+\contentsline {section}{\numberline {8.2}How to unzip a file}{167}{section.8.2}
+\contentsline {section}{\numberline {8.3}A text editor}{167}{section.8.3}
+\contentsline {section}{\numberline {8.4}Command prompt}{167}{section.8.4}
+\contentsline {section}{\numberline {8.5}Day of year {[}DOY{]}}{167}{section.8.5}
+\contentsline {section}{\numberline {8.6}ESTM output}{167}{section.8.6}
+\contentsline {section}{\numberline {8.7}First things to Check if the program seems to have problems}{168}{section.8.7}
+\contentsline {subsection}{\numberline {8.7.1}A pop-up saying “file path not found”}{168}{subsection.8.7.1}
+\contentsline {subsection}{\numberline {8.7.2}\%T changed to fit limits}{168}{subsection.8.7.2}
+\contentsline {subsection}{\numberline {8.7.3}\%Iteration loop stopped for too stable conditions.}{168}{subsection.8.7.3}
+\contentsline {subsection}{\numberline {8.7.4}“Reference to undefined variable, array element or function result”}{168}{subsection.8.7.4}
+\contentsline {subsection}{\numberline {8.7.5}Email list}{168}{subsection.8.7.5}
+\contentsline {chapter}{\numberline {9}Acknowledgements}{169}{chapter.9}
+\contentsline {chapter}{\numberline {10}Notation}{171}{chapter.10}
+\contentsline {chapter}{\numberline {11}Development, Suggestions and Support}{173}{chapter.11}
+\contentsline {chapter}{\numberline {12}Version History}{175}{chapter.12}
+\contentsline {section}{\numberline {12.1}New in SUEWS Version 2018a}{175}{section.12.1}
+\contentsline {section}{\numberline {12.2}New in SUEWS Version 2017b (released 2 August 2017)}{175}{section.12.2}
+\contentsline {section}{\numberline {12.3}New in SUEWS Version 2017a (Feb 2017)}{175}{section.12.3}
+\contentsline {section}{\numberline {12.4}New in SUEWS Version 2016a (released 21 June 2016)}{176}{section.12.4}
+\contentsline {section}{\numberline {12.5}New in SUEWS Version 2014b (released 8 October 2014)}{177}{section.12.5}
+\contentsline {section}{\numberline {12.6}New in SUEWS Version 2014a.1 (released 26 February 2014)}{177}{section.12.6}
+\contentsline {section}{\numberline {12.7}New in SUEWS Version 2014a (released 21 February 2014)}{177}{section.12.7}
+\contentsline {section}{\numberline {12.8}New in SUEWS Version 2013a}{178}{section.12.8}
+\contentsline {section}{\numberline {12.9}New in SUEWS Version 2012b}{178}{section.12.9}
+\contentsline {section}{\numberline {12.10}New in SUEWS Version 2012a}{179}{section.12.10}
+\contentsline {section}{\numberline {12.11}New in SUEWS Version2011b}{179}{section.12.11}
+\contentsline {chapter}{\numberline {13}Differences between SUEWS, LUMPS and FRAISE}{181}{chapter.13}
+\contentsline {section}{\numberline {13.1}FRAISE Flux Ratio \textendash {} Active Index Surface Exchange}{181}{section.13.1}
+\contentsline {chapter}{References}{183}{chapter*.540}
+\contentsline {chapter}{Index}{187}{section*.583}

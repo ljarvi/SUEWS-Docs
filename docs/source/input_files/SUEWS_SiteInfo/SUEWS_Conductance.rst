@@ -16,4 +16,4 @@ different units).
 .. csv-table::
   :file: SUEWS_Conductance.csv
   :header-rows: 1
-  :widths: auto
+  :widths: 5 25 5 65

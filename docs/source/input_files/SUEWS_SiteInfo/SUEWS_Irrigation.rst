@@ -18,4 +18,4 @@ except Code should be set to '-999'.
 .. csv-table::
   :file: SUEWS_Irrigation.csv
   :header-rows: 1
-  :widths: auto
+  :widths: 5 25 5 65

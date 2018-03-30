@@ -21,10 +21,11 @@ Profiles are specified for the following
 -  Anthropogenic heat flux (weekday and weekend)
 -  Water use (weekday and weekend; manual and automatic irrigation)
 -  Snow removal (weekday and weekend)
--  Human activity (weekday and weekend) **- not used in v2017a**.
+-  Human activity (weekday and weekend).
 
+.. note:: Human activity is not used in v2017a
 
 .. csv-table::
   :file: SUEWS_Profiles.csv
   :header-rows: 1
-  :widths: auto
+  :widths: 5 25 5 65

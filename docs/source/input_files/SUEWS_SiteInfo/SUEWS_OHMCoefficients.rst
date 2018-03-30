@@ -31,10 +31,10 @@ Note, **AnOHM** does not use the coefficients specified in
 SUEWS_OHMCoefficients.txt but instead requires three parameters to be
 specified for each surface type (including snow): heat capacity, thermal
 conductivity and bulk transfer coefficient. These are specified in
-`SUEWS_NonVeg.txt <#SUEWS_NonVeg.txt>`__,
-`SUEWS_Veg.txt <#SUEWS_Veg.txt>`__,
-`SUEWS_Water.txt <#SUEWS_Water.txt>`__ and
-`SUEWS_Snow.txt <#SUEWS_Snow.txt>`__. No additional files are required
+`SUEWS_NonVeg.txt`,
+`SUEWS_Veg.txt`,
+`SUEWS_Water.txt` and
+`SUEWS_Snow.txt`. No additional files are required
 for AnOHM.
 
 **Note AnOHM is under development in v2017a and should not be used!**
@@ -43,4 +43,4 @@ for AnOHM.
 .. csv-table::
   :file: SUEWS_OHMCoefficients.csv
   :header-rows: 1
-  :widths: auto
+  :widths: 5 25 5 65

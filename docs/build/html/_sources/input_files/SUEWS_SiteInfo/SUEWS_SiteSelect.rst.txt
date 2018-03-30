@@ -15,7 +15,7 @@ interpretation of the contents. This is strongly recommended.
 .. csv-table::
   :file: SUEWS_SiteSelect.csv
   :header-rows: 1
-  :widths: auto
+  :widths: 5 25 5 65
 
 
 see this one: `a2`

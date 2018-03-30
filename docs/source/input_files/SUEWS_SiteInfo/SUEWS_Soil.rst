@@ -24,4 +24,4 @@ observational data is not operational in the current release!**
 .. csv-table::
   :file: SUEWS_Soil.csv
   :header-rows: 1
-  :widths: auto
+  :widths: 5 25 5 65
