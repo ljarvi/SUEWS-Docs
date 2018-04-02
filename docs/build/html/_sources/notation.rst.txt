@@ -111,6 +111,9 @@ Notation
    Water
      Water surface
 
+   WATCH
+     The WATCH project has produced a large number of data sets which should be of considerable use in regional and global studies of climate and water. see `WATCH webpage <http://www.eu-watch.org/data_availability>`__
+
    zi
      Convective boundary layer height
 

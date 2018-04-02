@@ -264,7 +264,7 @@ to a GIS environment using QGIS.
 .. _anthropogenic-heat-flux-qf-1:
 
 Anthropogenic heat flux (Q :sub:`F`)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You can either model Q\ :sub:`F` within SUEWS or provide it as an input.
 

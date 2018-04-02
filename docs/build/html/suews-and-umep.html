@@ -95,7 +95,7 @@
 <li class="toctree-l1"><a class="reference internal" href="parameterisations-and-sub-models.html">4. Parameterisations and sub-models within SUEWS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="prepare-to-run-the-model.html">5. Preparing to run the model</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input_files/input_files.html">6. Input files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="output-files.html">7. Output files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="output_files/output_files.html">7. Output files</a></li>
 <li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">8. Troubleshooting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="acknowledgement.html">9. Acknowledgements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notation.html">10. Notation</a></li>
@@ -181,178 +181,105 @@ runs all options are set to values to allow intial exploration of the
 model behaviour.</p>
 <p>The version of SUEWS within UMEP is a more recent release of the model
 than the independent SUEWS release.</p>
-<table border="1" class="docutils">
+<table border="1" class="colwidths-given docutils">
 <colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
+<col width="6%" />
+<col width="6%" />
+<col width="11%" />
+<col width="78%" />
 </colgroup>
 <thead valign="bottom">
-<tr class="row-odd"><th class="head" colspan="3">UMEP</th>
+<tr class="row-odd"><th class="head stub">&#160;</th>
+<th class="head stub">UMEP</th>
+<th class="head">&#160;</th>
 <th class="head">Description</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td rowspan="11"><strong>Pre-Processor</strong></td>
-<td rowspan="2">Meteorological
-Data</td>
-<td><a class="reference external" href="http://urban-climate.net/umep/UMEP_Manual#Meteorological_Data:_MetPreprocessor">Prepare
-Existing
-Data</a></td>
-<td>Transforms
-meteorological
-data into UMEP
-format</td>
+<tr class="row-even"><th class="stub">Pre-Processor</th>
+<th class="stub">Meteorological Data</th>
+<td><a class="reference external" href="http://urban-climate.net/umep/UMEP_Manual#Meteorological_Data:_MetPreprocessor">Prepare Existing Data</a></td>
+<td>Transforms meteorological data into UMEP format</td>
 </tr>
-<tr class="row-odd"><td><a class="reference external" href="http://www.urban-climate.net/umep/UMEP_Manual#Meteorological_Data:_Download_data_.28WATCH.29">Download data
-(WATCH)</a></td>
-<td>Prepare
-meteorological
-dataset from
-<a class="reference external" href="http://www.eu-watch.org/data_availability">WATCH</a></td>
+<tr class="row-odd"><th class="stub">&#160;</th>
+<th class="stub">&#160;</th>
+<td><a class="reference external" href="http://www.urban-climate.net/umep/UMEP_Manual#Meteorological_Data:_Download_data_.28WATCH.29">Download data (WATCH)</a></td>
+<td>Prepare meteorological dataset from <a class="reference internal" href="notation.html#term-watch"><code class="xref any std std-term docutils literal notranslate"><span class="pre">WATCH</span></code></a></td>
 </tr>
-<tr class="row-even"><td rowspan="2">Spatial Data</td>
-<td><a class="reference external" href="http://www.urban-climate.net/umep/UMEP_Manual#Spatial_Data:_Spatial_Data_Downloader">Spatial Data
-Downloader</a></td>
-<td>Plugin for
-retrieving
-geodata from
-online services
-suitable for
-various UMEP
-related tools</td>
+<tr class="row-even"><th class="stub">&#160;</th>
+<th class="stub">Spatial Data</th>
+<td><a class="reference external" href="http://www.urban-climate.net/umep/UMEP_Manual#Spatial_Data:_Spatial_Data_Downloader">Spatial Data Downloader</a></td>
+<td>Plugin for retrieving geodata from online services suitable for various UMEP related tools</td>
 </tr>
-<tr class="row-odd"><td><a class="reference external" href="http://www.urban-climate.net/umep/UMEP_Manual#Spatial_Data:_LCZ_Converter">LCZ
-Converter</a></td>
-<td>Conversion from
-Local Climate
-Zones (LCZs) in
-the WUDAPT
-database into
-SUEWS input
-data</td>
+<tr class="row-odd"><th class="stub">&#160;</th>
+<th class="stub">&#160;</th>
+<td><a class="reference external" href="http://www.urban-climate.net/umep/UMEP_Manual#Spatial_Data:_LCZ_Converter">LCZ Converter</a></td>
+<td>Conversion from Local Climate Zones (LCZs) in the WUDAPT database into SUEWS input data</td>
 </tr>
-<tr class="row-even"><td rowspan="3">Urban land
-cover</td>
-<td><a class="reference external" href="http://urban-climate.net/umep/UMEP_Manual#Urban_Land_Cover:_Land_Cover_Reclassifier">Land Cover
-Reclassifier</a></td>
-<td>Reclassifies a
-grid into UMEP
-format land
-cover grid.
-<em>Land surface
-models</em></td>
+<tr class="row-even"><th class="stub">&#160;</th>
+<th class="stub">Urban land cover</th>
+<td><a class="reference external" href="http://urban-climate.net/umep/UMEP_Manual#Urban_Land_Cover:_Land_Cover_Reclassifier">Land Cover Reclassifier</a></td>
+<td>Reclassifies a grid into UMEP format land cover grid. Land surface models</td>
 </tr>
-<tr class="row-odd"><td><a class="reference external" href="http://urban-climate.net/umep/UMEP_Manual#Urban_Land_Cover:_Land_Cover_Reclassifier">Land Cover
-Fraction
-(Point)</a></td>
-<td>Land cover
-fractions
-estimates from
-a land cover
-grid based on a
-specific point
-in space</td>
+<tr class="row-odd"><th class="stub">&#160;</th>
+<th class="stub">&#160;</th>
+<td><a class="reference external" href="http://urban-climate.net/umep/UMEP_Manual#Urban_Land_Cover:_Land_Cover_Reclassifier">Land Cover Fraction (Point)</a></td>
+<td>Land cover fractions estimates from a land cover grid based on a specific point in space</td>
 </tr>
-<tr class="row-even"><td><a class="reference external" href="http://urban-climate.net/umep/UMEP_Mnual#Urban_Land_Cover:_Land_Cover_Fraction_.28Grid.29">Land Cover
-Fraction
-(Grid)</a></td>
-<td>Land cover
-fractions
-estimates from
-a land cover
-grid based on a
-polygon grid</td>
+<tr class="row-even"><th class="stub">&#160;</th>
+<th class="stub">&#160;</th>
+<td><a class="reference external" href="http://urban-climate.net/umep/UMEP_Manual#Urban_Land_Cover:_Land_Cover_Fraction_.28Grid.29">Land Cover Fraction (Grid)</a></td>
+<td>Land cover fractions estimates from a land cover grid based on a polygon grid</td>
 </tr>
-<tr class="row-odd"><td rowspan="3">Urban
-Morphology</td>
-<td><a class="reference external" href="http://urban-climate.net/umep/UMEP_Manual#Urban_Morphology:_Morphometric_Calculator_.28Point">Morphometric
-Calculator (Poi
-nt)</a></td>
-<td>Morphometric
-parameters from
-a DSM based on
-a specific
-point in space</td>
+<tr class="row-odd"><th class="stub">&#160;</th>
+<th class="stub">Urban Morphology</th>
+<td><a class="reference external" href="http://urban-climate.net/umep/UMEP_Manual#Urban_Morphology:_Morphometric_Calculator_.28Point.29">Morphometric Calculator (Point)</a></td>
+<td>Morphometric parameters from a DSM based on a specific point in space</td>
 </tr>
-<tr class="row-even"><td><a class="reference external" href="http://urban-climate.net/umep/UMEP_Manual#Urban_Morphology:_Morphometric_Calculator_.28Grid.29">Morphometric
-Calculator
-(Grid)</a></td>
-<td>Morphometric
-parameters
-estimated from
-a DSM based on
-a polygon grid</td>
+<tr class="row-even"><th class="stub">&#160;</th>
+<th class="stub">&#160;</th>
+<td><a class="reference external" href="http://urban-climate.net/umep/UMEP_Manual#Urban_Morphology:_Morphometric_Calculator_.28Grid.29">Morphometric Calculator (Grid)</a></td>
+<td>Morphometric parameters estimated from a DSM based on a polygon grid</td>
 </tr>
-<tr class="row-odd"><td><a class="reference external" href="http://urban-climate.net/umep/UMEP_Manual#Urban_Morphology:_Source_Area_.28Point.29">Source Area
-Model
-(Point)</a></td>
-<td>Source area
-calculated from
-a DSM based on
-a specific
-point in space.</td>
+<tr class="row-odd"><th class="stub">&#160;</th>
+<th class="stub">&#160;</th>
+<td><a class="reference external" href="http://urban-climate.net/umep/UMEP_Manual#Urban_Morphology:_Source_Area_.28Point.29">Source Area Model (Point)</a></td>
+<td>Source area calculated from a DSM based on a specific point in space.</td>
 </tr>
-<tr class="row-even"><td colspan="2"><a class="reference external" href="http://urban-climate.net/umep/UMEP_Manual#Pre-Processor:_SUEWS_Prepare">SUEWS
-Prepare</a></td>
-<td>Preprocessing
-and preparing
-input data for
-the SUEWS model</td>
+<tr class="row-even"><th class="stub">&#160;</th>
+<th class="stub">SUEWS input data</th>
+<td><a class="reference external" href="http://urban-climate.net/umep/UMEP_Manual#Pre-Processor:_SUEWS_Prepare">SUEWS Prepare</a></td>
+<td>Preprocessing and preparing input data for the SUEWS model</td>
 </tr>
-<tr class="row-odd"><td rowspan="4"><strong>Processor</strong></td>
-<td rowspan="4">Urban Energy
-Balance</td>
-<td>Anthropogenic
-Heat
-(Q:sub:<code class="xref any docutils literal notranslate"><span class="pre">F</span></code>)
-(LQF)</td>
-<td>Spatial
-variations
-anthropogenic
-heat release
-for urban areas</td>
+<tr class="row-odd"><th class="stub">Processor</th>
+<th class="stub">Anthropogenic Heat (Q<sub>F</sub>)</th>
+<td><a class="reference external" href="http://www.urban-climate.net/umep/UMEP_Manual#Urban_Energy_Balance:_LQF">LQF</a></td>
+<td>Spatial variations anthropogenic heat release for urban areas</td>
 </tr>
-<tr class="row-even"><td><a class="reference external" href="http://www.urban-climate.net/umep/UMEP_Manual#Urban_Energy_Balance:_GQF">GQF</a></td>
-<td>Anthropogenic
-Heat
-(Q :sub:<code class="xref any docutils literal notranslate"><span class="pre">F</span></code>).</td>
+<tr class="row-even"><th class="stub">&#160;</th>
+<th class="stub">&#160;</th>
+<td><a class="reference external" href="http://www.urban-climate.net/umep/UMEP_Manual#Urban_Energy_Balance:_GQF">GQF</a></td>
+<td>Anthropogenic Heat (Q<sub>F</sub>).</td>
 </tr>
-<tr class="row-odd"><td><a class="reference external" href="http://urban-climate.net/umep/UMEP_Manual#Urban_Energy_Balance:_Urban_Energy_Balance_.28SUEWS.2C_simple.29">SUEWS
-(Simple)</a></td>
-<td>Urban Energy
-and Water
-Balance.</td>
+<tr class="row-odd"><th class="stub">&#160;</th>
+<th class="stub">Urban Energy Balance</th>
+<td><a class="reference external" href="http://urban-climate.net/umep/UMEP_Manual#Urban_Energy_Balance:_Urban_Energy_Balance_.28SUEWS.2C_simple.29">SUEWS (Simple)</a></td>
+<td>Urban Energy and Water Balance.</td>
 </tr>
-<tr class="row-even"><td><a class="reference external" href="http://urban-climate.net/umep/UMEP_Manual#Urban_Energy_Balance:_Urban_Energy_Balance_.28SUEWS.2FBLUEWS.2C_advanced.29">SUEWS
-(Advanced)</a></td>
-<td>Urban Energy
-and Water
-Balance.</td>
+<tr class="row-even"><th class="stub">&#160;</th>
+<th class="stub">&#160;</th>
+<td><a class="reference external" href="http://urban-climate.net/umep/UMEP_Manual#Urban_Energy_Balance:_Urban_Energy_Balance_.28SUEWS.2FBLUEWS.2C_advanced.29">SUEWS (Advanced)</a></td>
+<td>Urban Energy and Water Balance.</td>
 </tr>
-<tr class="row-odd"><td><strong>Post-Processo
-r</strong></td>
-<td>Urban Energy
-Balance</td>
+<tr class="row-odd"><th class="stub">Post-Processor</th>
+<th class="stub">Urban Energy Balance</th>
 <td><a class="reference external" href="http://urban-climate.net/umep/UMEP_Manual#Urban_Energy_Balance:_SUEWS_Analyser">SUEWS analyser</a></td>
-<td>Plugin for
-plotting and
-statistical
-analysis of
-model results
-from SUEWS
-simple and
-SUEWS advanced</td>
+<td>Plugin for plotting and statistical analysis of model results from SUEWS simple and SUEWS advanced</td>
 </tr>
-<tr class="row-even"><td>&#160;</td>
-<td>Benchmark</td>
-<td><a class="reference external" href="http://urban-climate.net/umep/UMEP_Manual#Benchmark_System">Benchmark
-System</a></td>
-<td>For statistical
-analysis of
-model results,
-such as SUEWS</td>
+<tr class="row-even"><th class="stub">&#160;</th>
+<th class="stub">Benchmark</th>
+<td><a class="reference external" href="http://urban-climate.net/umep/UMEP_Manual#Benchmark_System">Benchmark System</a></td>
+<td>For statistical analysis of model results, such as SUEWS</td>
 </tr>
 </tbody>
 </table>

@@ -93,6 +93,7 @@ rst_prolog = """
 .. |s^-1| replace:: m s :sup:`-1`
 .. |kg^-1| replace:: kg :sup:`-1`
 .. |K^-1| replace:: K :sup:`-1`
+.. |QF| replace:: Q\ :sub:`F`
 """
 # -- Options for HTML output -------------------------------------------------
 # The theme to use for HTML and HTML Help pages.  See the documentation for
