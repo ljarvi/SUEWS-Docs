@@ -47,9 +47,9 @@
 
 
 \title{SUEWS Documentation}
-\date{Mar 30, 2018}
-\release{2018a}
-\author{Sue Grimmond, Ting Sun}
+\date{Apr 03, 2018}
+\release{2018a.alpha}
+\author{micromet@University of Reading, led by Prof Sue Grimmond}
 \newcommand{\sphinxlogo}{\vbox{}}
 \renewcommand{\releasename}{Release}
 \makeindex
@@ -286,264 +286,164 @@ model behaviour.
 
 The version of SUEWS within UMEP is a more recent release of the model
 than the independent SUEWS release.
+\begin{itemize}
+\item {} \begin{description}
+\item[{Pre-Processor}] \leavevmode\begin{itemize}
+\item {} \begin{description}
+\item[{Meteorological Data}] \leavevmode\begin{itemize}
+\item {} \begin{description}
+\item[{\sphinxhref{http://urban-climate.net/umep/UMEP\_Manual\#Meteorological\_Data:\_MetPreprocessor}{Prepare Existing Data}}] \leavevmode
+Transforms meteorological data into UMEP format
+
+\end{description}
+
+\item {} \begin{description}
+\item[{\sphinxhref{http://www.urban-climate.net/umep/UMEP\_Manual\#Meteorological\_Data:\_Download\_data\_.28WATCH.29}{Download data (WATCH)}}] \leavevmode
+Prepare meteorological dataset from {\hyperref[\detokenize{notation:term-watch}]{\sphinxtermref{\sphinxcode{\sphinxupquote{WATCH}}}}}
+
+\end{description}
+
+\end{itemize}
+
+\end{description}
+
+\end{itemize}
+
+\end{description}
+
+\end{itemize}
 
 
 \begin{savenotes}\sphinxattablestart
 \centering
-\begin{tabulary}{\linewidth}[t]{|T|T|T|T|}
+\begin{tabular}[t]{|\X{20}{100}|\X{20}{100}|\X{20}{100}|\X{40}{100}|}
 \hline
-\sphinxstartmulticolumn{3}%
-\begin{varwidth}[t]{\sphinxcolwidth{3}{4}}
-\sphinxstyletheadfamily UMEP
-\par
-\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
-\sphinxstopmulticolumn
+\sphinxstyletheadfamily 
+Procedure
+&\sphinxstyletheadfamily 
+Function Group
+&\sphinxstyletheadfamily 
+UMEP module
 &\sphinxstyletheadfamily 
 Description
 \\
-\hline\sphinxmultirow{11}{3}{%
-\begin{varwidth}[t]{\sphinxcolwidth{1}{4}}
-\sphinxstylestrong{Pre-Processor}
-\par
-\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
-}%
-&\sphinxmultirow{2}{4}{%
-\begin{varwidth}[t]{\sphinxcolwidth{1}{4}}
-Meteorological
-Data
-\par
-\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
-}%
+\hline\sphinxstyletheadfamily 
+Pre-Processor
+&\sphinxstyletheadfamily 
+Meteorological Data
 &
-\sphinxhref{http://urban-climate.net/umep/UMEP\_Manual\#Meteorological\_Data:\_MetPreprocessor}{Prepare
-Existing
-Data}
+\sphinxhref{http://urban-climate.net/umep/UMEP\_Manual\#Meteorological\_Data:\_MetPreprocessor}{Prepare Existing Data}
 &
-Transforms
-meteorological
-data into UMEP
-format
+Transforms meteorological data into UMEP format
 \\
-\cline{3-4}\sphinxtablestrut{3}&\sphinxtablestrut{4}&
-\sphinxhref{http://www.urban-climate.net/umep/UMEP\_Manual\#Meteorological\_Data:\_Download\_data\_.28WATCH.29}{Download data
-(WATCH)}
+\hline\sphinxstyletheadfamily &\sphinxstyletheadfamily &
+\sphinxhref{http://www.urban-climate.net/umep/UMEP\_Manual\#Meteorological\_Data:\_Download\_data\_.28WATCH.29}{Download data (WATCH)}
 &
-Prepare
-meteorological
-dataset from
-\sphinxhref{http://www.eu-watch.org/data\_availability}{WATCH}
+Prepare meteorological dataset from {\hyperref[\detokenize{notation:term-watch}]{\sphinxtermref{\sphinxcode{\sphinxupquote{WATCH}}}}}
 \\
-\cline{2-4}\sphinxtablestrut{3}&\sphinxmultirow{2}{9}{%
-\begin{varwidth}[t]{\sphinxcolwidth{1}{4}}
+\hline\sphinxstyletheadfamily &\sphinxstyletheadfamily 
 Spatial Data
-\par
-\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
-}%
 &
-\sphinxhref{http://www.urban-climate.net/umep/UMEP\_Manual\#Spatial\_Data:\_Spatial\_Data\_Downloader}{Spatial Data
-Downloader}
+\sphinxhref{http://www.urban-climate.net/umep/UMEP\_Manual\#Spatial\_Data:\_Spatial\_Data\_Downloader}{Spatial Data Downloader}
 &
-Plugin for
-retrieving
-geodata from
-online services
-suitable for
-various UMEP
-related tools
+Plugin for retrieving geodata from online services suitable for various UMEP related tools
 \\
-\cline{3-4}\sphinxtablestrut{3}&\sphinxtablestrut{9}&
-\sphinxhref{http://www.urban-climate.net/umep/UMEP\_Manual\#Spatial\_Data:\_LCZ\_Converter}{LCZ
-Converter}
+\hline\sphinxstyletheadfamily &\sphinxstyletheadfamily &
+\sphinxhref{http://www.urban-climate.net/umep/UMEP\_Manual\#Spatial\_Data:\_LCZ\_Converter}{LCZ Converter}
 &
-Conversion from
-Local Climate
-Zones (LCZs) in
-the WUDAPT
-database into
-SUEWS input
-data
+Conversion from Local Climate Zones (LCZs) in the WUDAPT database into SUEWS input data
 \\
-\cline{2-4}\sphinxtablestrut{3}&\sphinxmultirow{3}{14}{%
-\begin{varwidth}[t]{\sphinxcolwidth{1}{4}}
-Urban land
-cover
-\par
-\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
-}%
+\hline\sphinxstyletheadfamily &\sphinxstyletheadfamily 
+Urban land cover
 &
-\sphinxhref{http://urban-climate.net/umep/UMEP\_Manual\#Urban\_Land\_Cover:\_Land\_Cover\_Reclassifier}{Land Cover
-Reclassifier}
+\sphinxhref{http://urban-climate.net/umep/UMEP\_Manual\#Urban\_Land\_Cover:\_Land\_Cover\_Reclassifier}{Land Cover Reclassifier}
 &
-Reclassifies a
-grid into UMEP
-format land
-cover grid.
-\sphinxstyleemphasis{Land surface
-models}
+Reclassifies a grid into UMEP format land cover grid. Land surface models
 \\
-\cline{3-4}\sphinxtablestrut{3}&\sphinxtablestrut{14}&
-\sphinxhref{http://urban-climate.net/umep/UMEP\_Manual\#Urban\_Land\_Cover:\_Land\_Cover\_Reclassifier}{Land Cover
-Fraction
-(Point)}
+\hline\sphinxstyletheadfamily &\sphinxstyletheadfamily &
+\sphinxhref{http://urban-climate.net/umep/UMEP\_Manual\#Urban\_Land\_Cover:\_Land\_Cover\_Reclassifier}{Land Cover Fraction (Point)}
 &
-Land cover
-fractions
-estimates from
-a land cover
-grid based on a
-specific point
-in space
+Land cover fractions estimates from a land cover grid based on a specific point in space
 \\
-\cline{3-4}\sphinxtablestrut{3}&\sphinxtablestrut{14}&
-\sphinxhref{http://urban-climate.net/umep/UMEP\_Mnual\#Urban\_Land\_Cover:\_Land\_Cover\_Fraction\_.28Grid.29}{Land Cover
-Fraction
-(Grid)}
+\hline\sphinxstyletheadfamily &\sphinxstyletheadfamily &
+\sphinxhref{http://urban-climate.net/umep/UMEP\_Manual\#Urban\_Land\_Cover:\_Land\_Cover\_Fraction\_.28Grid.29}{Land Cover Fraction (Grid)}
 &
-Land cover
-fractions
-estimates from
-a land cover
-grid based on a
-polygon grid
+Land cover fractions estimates from a land cover grid based on a polygon grid
 \\
-\cline{2-4}\sphinxtablestrut{3}&\sphinxmultirow{3}{21}{%
-\begin{varwidth}[t]{\sphinxcolwidth{1}{4}}
-Urban
-Morphology
-\par
-\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
-}%
+\hline\sphinxstyletheadfamily &\sphinxstyletheadfamily 
+Urban Morphology
 &
-\sphinxhref{http://urban-climate.net/umep/UMEP\_Manual\#Urban\_Morphology:\_Morphometric\_Calculator\_.28Point}{Morphometric
-Calculator (Poi
-nt)}
+\sphinxhref{http://urban-climate.net/umep/UMEP\_Manual\#Urban\_Morphology:\_Morphometric\_Calculator\_.28Point.29}{Morphometric Calculator (Point)}
 &
-Morphometric
-parameters from
-a DSM based on
-a specific
-point in space
+Morphometric parameters from a DSM based on a specific point in space
 \\
-\cline{3-4}\sphinxtablestrut{3}&\sphinxtablestrut{21}&
-\sphinxhref{http://urban-climate.net/umep/UMEP\_Manual\#Urban\_Morphology:\_Morphometric\_Calculator\_.28Grid.29}{Morphometric
-Calculator
-(Grid)}
+\hline\sphinxstyletheadfamily &\sphinxstyletheadfamily &
+\sphinxhref{http://urban-climate.net/umep/UMEP\_Manual\#Urban\_Morphology:\_Morphometric\_Calculator\_.28Grid.29}{Morphometric Calculator (Grid)}
 &
-Morphometric
-parameters
-estimated from
-a DSM based on
-a polygon grid
+Morphometric parameters estimated from a DSM based on a polygon grid
 \\
-\cline{3-4}\sphinxtablestrut{3}&\sphinxtablestrut{21}&
-\sphinxhref{http://urban-climate.net/umep/UMEP\_Manual\#Urban\_Morphology:\_Source\_Area\_.28Point.29}{Source Area
-Model
-(Point)}
+\hline\sphinxstyletheadfamily &\sphinxstyletheadfamily &
+\sphinxhref{http://urban-climate.net/umep/UMEP\_Manual\#Urban\_Morphology:\_Source\_Area\_.28Point.29}{Source Area Model (Point)}
 &
-Source area
-calculated from
-a DSM based on
-a specific
-point in space.
+Source area calculated from a DSM based on a specific point in space.
 \\
-\cline{2-4}\sphinxtablestrut{3}&\sphinxstartmulticolumn{2}%
-\begin{varwidth}[t]{\sphinxcolwidth{2}{4}}
-\sphinxhref{http://urban-climate.net/umep/UMEP\_Manual\#Pre-Processor:\_SUEWS\_Prepare}{SUEWS
-Prepare}
-\par
-\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
-\sphinxstopmulticolumn
+\hline\sphinxstyletheadfamily &\sphinxstyletheadfamily 
+SUEWS input data
 &
-Preprocessing
-and preparing
-input data for
-the SUEWS model
+\sphinxhref{http://urban-climate.net/umep/UMEP\_Manual\#Pre-Processor:\_SUEWS\_Prepare}{SUEWS Prepare}
+&
+Preprocessing and preparing input data for the SUEWS model
 \\
-\hline\sphinxmultirow{4}{30}{%
-\begin{varwidth}[t]{\sphinxcolwidth{1}{4}}
-\sphinxstylestrong{Processor}
-\par
-\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
-}%
-&\sphinxmultirow{4}{31}{%
-\begin{varwidth}[t]{\sphinxcolwidth{1}{4}}
-Urban Energy
-Balance
-\par
-\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
-}%
+\hline\sphinxstyletheadfamily 
+Processor
+&\sphinxstyletheadfamily 
+Anthropogenic Heat (Q$_{\text{F}}$)
 &
-Anthropogenic
-Heat
-(Q:sub:\sphinxcode{\sphinxupquote{F}})
-(LQF)
+\sphinxhref{http://www.urban-climate.net/umep/UMEP\_Manual\#Urban\_Energy\_Balance:\_LQF}{LQF}
 &
-Spatial
-variations
-anthropogenic
-heat release
-for urban areas
+Spatial variations anthropogenic heat release for urban areas
 \\
-\cline{3-4}\sphinxtablestrut{30}&\sphinxtablestrut{31}&
+\hline\sphinxstyletheadfamily &\sphinxstyletheadfamily &
 \sphinxhref{http://www.urban-climate.net/umep/UMEP\_Manual\#Urban\_Energy\_Balance:\_GQF}{GQF}
 &
-Anthropogenic
-Heat
-(Q :sub:\sphinxcode{\sphinxupquote{F}}).
+Anthropogenic Heat (Q$_{\text{F}}$).
 \\
-\cline{3-4}\sphinxtablestrut{30}&\sphinxtablestrut{31}&
-\sphinxhref{http://urban-climate.net/umep/UMEP\_Manual\#Urban\_Energy\_Balance:\_Urban\_Energy\_Balance\_.28SUEWS.2C\_simple.29}{SUEWS
-(Simple)}
+\hline\sphinxstyletheadfamily &\sphinxstyletheadfamily 
+Urban Energy Balance
 &
-Urban Energy
-and Water
-Balance.
+\sphinxhref{http://urban-climate.net/umep/UMEP\_Manual\#Urban\_Energy\_Balance:\_Urban\_Energy\_Balance\_.28SUEWS.2C\_simple.29}{SUEWS (Simple)}
+&
+Urban Energy and Water Balance.
 \\
-\cline{3-4}\sphinxtablestrut{30}&\sphinxtablestrut{31}&
-\sphinxhref{http://urban-climate.net/umep/UMEP\_Manual\#Urban\_Energy\_Balance:\_Urban\_Energy\_Balance\_.28SUEWS.2FBLUEWS.2C\_advanced.29}{SUEWS
-(Advanced)}
+\hline\sphinxstyletheadfamily &\sphinxstyletheadfamily &
+\sphinxhref{http://urban-climate.net/umep/UMEP\_Manual\#Urban\_Energy\_Balance:\_Urban\_Energy\_Balance\_.28SUEWS.2FBLUEWS.2C\_advanced.29}{SUEWS (Advanced)}
 &
-Urban Energy
-and Water
-Balance.
+Urban Energy and Water Balance.
 \\
-\hline
-\sphinxstylestrong{Post-Processo
-r}
-&
-Urban Energy
-Balance
+\hline\sphinxstyletheadfamily 
+Post-Processor
+&\sphinxstyletheadfamily 
+Urban Energy Balance
 &
 \sphinxhref{http://urban-climate.net/umep/UMEP\_Manual\#Urban\_Energy\_Balance:\_SUEWS\_Analyser}{SUEWS analyser}
 &
-Plugin for
-plotting and
-statistical
-analysis of
-model results
-from SUEWS
-simple and
-SUEWS advanced
+Plugin for plotting and statistical analysis of model results from SUEWS simple and SUEWS advanced
 \\
-\hline&
+\hline\sphinxstyletheadfamily &\sphinxstyletheadfamily 
 Benchmark
 &
-\sphinxhref{http://urban-climate.net/umep/UMEP\_Manual\#Benchmark\_System}{Benchmark
-System}
+\sphinxhref{http://urban-climate.net/umep/UMEP\_Manual\#Benchmark\_System}{Benchmark System}
 &
-For statistical
-analysis of
-model results,
-such as SUEWS
+For statistical analysis of model results, such as SUEWS
 \\
 \hline
-\end{tabulary}
+\end{tabular}
 \par
 \sphinxattableend\end{savenotes}
 
 
 \chapter{Parameterisations and sub-models within SUEWS}
-\label{\detokenize{parameterisations-and-sub-models::doc}}\label{\detokenize{parameterisations-and-sub-models:parameterisations-and-sub-models-within-suews}}
+\label{\detokenize{parameterisations-and-sub-models::doc}}\label{\detokenize{parameterisations-and-sub-models:benchmark-system}}\label{\detokenize{parameterisations-and-sub-models:parameterisations-and-sub-models-within-suews}}
 
 \section{Net all-wave radiation, Q*}
 \label{\detokenize{parameterisations-and-sub-models:net-all-wave-radiation-q}}
@@ -738,9 +638,10 @@ radiation model to estimate mean radiant temperature.
 
 \begin{figure}[htbp]
 \centering
+\capstart
 
 \noindent\sphinxincludegraphics{{Bluews_2}.jpg}
-\end{figure}
+\caption{Overview of scales. Source: Onomura et al. (2015) \label{\detokenize{parameterisations-and-sub-models:id24}}{\hyperref[\detokenize{references:shiho2015}]{\sphinxcrossref{{[}Shiho2015{]}}}} (\autopageref*{\detokenize{references:shiho2015}})}\label{\detokenize{parameterisations-and-sub-models:id25}}\end{figure}
 
 
 \chapter{Preparing to run the model}
@@ -24445,6 +24346,9 @@ time step of data
 
 \item[{Water\index{Water|textbf}}] \leavevmode\phantomsection\label{\detokenize{notation:term-water}}
 Water surface
+
+\item[{WATCH\index{WATCH|textbf}}] \leavevmode\phantomsection\label{\detokenize{notation:term-watch}}
+The WATCH project has produced a large number of data sets which should be of considerable use in regional and global studies of climate and water. see \sphinxhref{http://www.eu-watch.org/data\_availability}{WATCH webpage}
 
 \item[{zi\index{zi|textbf}}] \leavevmode\phantomsection\label{\detokenize{notation:term-zi}}
 Convective boundary layer height
