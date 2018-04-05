@@ -162,6 +162,7 @@ latex_elements = {
     #
     'preamble': r'''
 \usepackage[titles]{tocloft}
+\usepackage{ragged2e}
 \addto\captionsenglish{\renewcommand{\bibname}{References}}
 \cftsetpnumwidth {1.25cm}\cftsetrmarg{1.5cm}
 \setlength{\cftchapnumwidth}{0.75cm}

@@ -39,6 +39,7 @@
 
 
 \usepackage[titles]{tocloft}
+\usepackage{ragged2e}
 \addto\captionsenglish{\renewcommand{\bibname}{References}}
 \cftsetpnumwidth {1.25cm}\cftsetrmarg{1.5cm}
 \setlength{\cftchapnumwidth}{0.75cm}
@@ -95,6 +96,10 @@ International Journal of Climatology.
 See other publications in the next section (if you have papers that could be added, please send them through)
 \end{sphinxadmonition}
 
+\begingroup
+\righthyphenmin=1
+\RaggedRight
+
 
 \chapter{Recent publications}
 \label{\detokenize{recent-publications:recent-publications}}\label{\detokenize{recent-publications:index-page}}\label{\detokenize{recent-publications::doc}}\label{\detokenize{recent-publications:suews-surface-urban-energy-and-water-balance-scheme}}
@@ -113,9 +118,7 @@ list.}
 Application and evalution in cold climates. Implications of warming
 
 \item[{citation}] \leavevmode
-Järvi L, S Grimmond, JP McFadden, A Christen, I Strachan, M Taka, L Warsta, M Heimann 2017:
-Warming effects on the urban hydrology in cold climate regions
-Scientific Reports 7: 5833
+Järvi L, S Grimmond, JP McFadden, A Christen, I Strachan, M Taka, L Warsta, M Heimann 2017: Warming effects on the urban hydrology in cold climate regions Scientific Reports 7: 5833
 
 \end{description}\end{quote}
 \begin{itemize}
@@ -128,8 +131,7 @@ Scientific Reports 7: 5833
 Downscaling climate (rainfall) data to 1 h
 
 \item[{citation}] \leavevmode
-Kokkonen T, CSB Grimmond, O Räty, HC Ward, A Christen, T Oke, S Kotthaus, L Järvi 2017:
-Sensitivity of Surface Urban Energy and Water Balance Scheme (SUEWS)
+Kokkonen T, CSB Grimmond, O Räty, HC Ward, A Christen, T Oke, S Kotthaus, L Järvi 2017: Sensitivity of Surface Urban Energy and Water Balance Scheme (SUEWS)
 
 \end{description}\end{quote}
 \begin{itemize}
@@ -142,10 +144,7 @@ Sensitivity of Surface Urban Energy and Water Balance Scheme (SUEWS)
 for example applications:
 
 \item[{citation}] \leavevmode
-Ward HC, S Grimmond 2017:
-Using biophysical modelling to assess the impact of various scenarios
-on summertime urban climate across Greater London
-Landscape and Urban Planning 165, 142\textendash{}161
+Ward HC, S Grimmond 2017: Using biophysical modelling to assess the impact of various scenarios on summertime urban climate across Greater London Landscape and Urban Planning 165, 142\textendash{}161
 
 \end{description}\end{quote}
 \begin{itemize}
@@ -158,9 +157,7 @@ Landscape and Urban Planning 165, 142\textendash{}161
 evaluation in Singapore and comparison with other urban land surface models
 
 \item[{citation}] \leavevmode
-Demuzere M, S Harshan, L Järvi, M Roth, CSB Grimmond, V Masson, KW Oleson, E Velasco H Wouters 2017:
-Impact of urban canopy models and external parameters on the modelled urban energy balance
-QJRMS, 143, Issue 704, Part A, 1581\textendash{}1596
+Demuzere M, S Harshan, L Järvi, M Roth, CSB Grimmond, V Masson, KW Oleson, E Velasco H Wouters 2017: Impact of urban canopy models and external parameters on the modelled urban energy balance QJRMS, 143, Issue 704, Part A, 1581\textendash{}1596
 
 \end{description}\end{quote}
 \begin{itemize}
@@ -173,9 +170,7 @@ QJRMS, 143, Issue 704, Part A, 1581\textendash{}1596
 Evaluation of SUEWS model
 
 \item[{citation}] \leavevmode
-Ward HC, Kotthaus S, Järvi L and Grimmond CSB (2016)
-Surface Urban Energy and Water Balance Scheme (SUEWS): Development and evaluation at two UK sites.
-Urban Climate
+Ward HC, Kotthaus S, Järvi L and Grimmond CSB (2016) Surface Urban Energy and Water Balance Scheme (SUEWS): Development and evaluation at two UK sites. Urban Climate
 
 \end{description}\end{quote}
 \begin{itemize}
@@ -188,9 +183,7 @@ Urban Climate
 Evaluation of radiation in Shanghai
 
 \item[{citation}] \leavevmode
-Ao XY, CSB Grimmond, DW Liu, ZH Han, P Hu, YD Wang, XR Zhen, JG Tan 2016:
-Radiation fluxes in a business district of Shanghai
-JAMC, 55, 2451-2468
+Ao XY, CSB Grimmond, DW Liu, ZH Han, P Hu, YD Wang, XR Zhen, JG Tan 2016: Radiation fluxes in a business district of Shanghai JAMC, 55, 2451-2468
 
 \end{description}\end{quote}
 \begin{itemize}
@@ -203,10 +196,7 @@ JAMC, 55, 2451-2468
 Boundary layer modelling
 
 \item[{citation}] \leavevmode
-Onomura S, Grimmond CSB, Lindberg F, Holmer B \& Thorsson S (2015)
-Meteorological forcing data for urban outdoor thermal comfort models
-from a coupled convective boundary layer and surface energy balance scheme
-Urban Climate, 11, 1-23
+Onomura S, Grimmond CSB, Lindberg F, Holmer B \& Thorsson S (2015) Meteorological forcing data for urban outdoor thermal comfort models from a coupled convective boundary layer and surface energy balance scheme Urban Climate, 11, 1-23
 
 \end{description}\end{quote}
 \begin{itemize}
@@ -219,13 +209,13 @@ Urban Climate, 11, 1-23
 Snow melt model development
 
 \item[{citation}] \leavevmode
-Järvi L, Grimmond CSB, Taka M, Nordbo A, Setälä H \& Strachan IB 2014:
-Development of the Surface Urban Energy and Water balance Scheme (SUEWS) for cold climate cities
-Geosci. Model Dev. 7, 1691-1711
+Järvi L, Grimmond CSB, Taka M, Nordbo A, Setälä H \& Strachan IB 2014: Development of the Surface Urban Energy and Water balance Scheme (SUEWS) for cold climate cities Geosci. Model Dev. 7, 1691-1711
 
 \end{description}\end{quote}
 
 \sphinxhref{http://urban-climate.net/umep/UMEP\_Manual\#Evaluation\_and\_application\_studies}{Other papers}
+
+\endgroup
 
 
 \chapter{Introduction}
