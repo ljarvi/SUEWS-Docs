@@ -2,4 +2,4 @@
 1,"`Code`","`L`","Code linking to the OHMCode_SummerWet, OHMCode_SummerDry, OHMCode_WinterWet and OHMCode_WinterDry columns in SUEWS_NonVeg.txt, SUEWS_Veg,txt, SUEWS_Water.txt and SUEWS_Snow.txt files. Value of integer is arbitrary but must match code specified in SUEWS_SiteSelect.txt. "
 2,"`a1`","`MU`","Coefficient for Q* term [-]"
 3,"`a2`","`MU`","Coefficient for dQ*/dt term [h]"
-4,"`a3`","`MU`","Constant term [W |m^-2| ]"
+4,"`a3`","`MU`","Constant term [W |m^-2|]"

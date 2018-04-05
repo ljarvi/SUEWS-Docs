@@ -18,6 +18,6 @@
 17,"`OHMThresh_SW`","`MD`","Temperature threshold determining whether summer/winter OHM coefficients are applied [°C] If 5-day running mean air temperature is greater than or equal to this threshold, OHM coefficients for summertime are applied; otherwise coefficients for wintertime are applied. "
 18,"`OHMThresh_WD`","`MD`","Soil moisture threshold determining whether wet/dry OHM coefficients are applied [-] If soil moisture (as a proportion of maximum soil moisture capacity) exceeds this threshold for bare soil and vegetated surfaces, OHM coefficients for wet conditions are applied; otherwise coefficients for dry coefficients are applied. Note that OHM coefficients for wet conditions are applied if the surface is wet. Not actually used for water surface (as no soil surface beneath). "
 19,"`ESTMCode`","`L`","Code for ESTM coefficients to use for this surface. Links to SUEWS_ESTMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_ESTMCoefficients.txt. "
-20,"`AnOHM_Cp`","`MU`","Volumetric heat capacity for this surface to use in AnOHM [J |m^-3| ]"
-21,"`AnOHM_Kk`","`MU`","Thermal conductivity for this surface to use in AnOHM [W m |K^-1| ]"
+20,"`AnOHM_Cp`","`MU`","Volumetric heat capacity for this surface to use in AnOHM [J |m^-3|]"
+21,"`AnOHM_Kk`","`MU`","Thermal conductivity for this surface to use in AnOHM [W m |K^-1|]"
 22,"`AnOHM_Ch`","`MU`","Bulk transfer coefficient for this surface to use in AnOHM [-]"

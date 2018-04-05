@@ -167,6 +167,8 @@ latex_elements = {
 \setlength{\cftchapnumwidth}{0.75cm}
 \setlength{\cftsecindent}{\cftchapnumwidth}
 \setlength{\cftsecnumwidth}{1.25cm}
+\newcolumntype{T}{L}
+\setlength{\tymin}{40pt}
 ''',
 
 

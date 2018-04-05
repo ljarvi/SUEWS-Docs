@@ -1,4 +1,4 @@
 "Referencing Table","Requirement","Comment"
-"`SUEWS_NonVeg.txt`","`MD`","Example values DrainageEq 3 Coefficient b [-] 3 Recommended [3] for Paved and Bldgs 1.71 Coefficient b [m|m^-1| ] 2 Recommended [3] for BSoil"
-"`SUEWS_Veg.txt`","`MD`","Example values DrainageEq 3 Coefficient b [-] 3 Recommended [3] for Grass (irrigated) 1.71 Coefficient b [m|m^-1| ] 2 Recommended [3] for EveTr, DecTr, Grass (unirrigated)"
+"`SUEWS_NonVeg.txt`","`MD`","Example values DrainageEq 3 Coefficient b [-] 3 Recommended [3] for Paved and Bldgs 1.71 Coefficient b [m|m^-1|] 2 Recommended [3] for BSoil"
+"`SUEWS_Veg.txt`","`MD`","Example values DrainageEq 3 Coefficient b [-] 3 Recommended [3] for Grass (irrigated) 1.71 Coefficient b [m|m^-1|] 2 Recommended [3] for EveTr, DecTr, Grass (unirrigated)"
 "`SUEWS_Water.txt`","`MD`","Not currently used for water surface"

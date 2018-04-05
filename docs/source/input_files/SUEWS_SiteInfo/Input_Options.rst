@@ -11,7 +11,7 @@ Input_Options
 			:class: longtable
 			:file: a1.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: a2
@@ -24,20 +24,20 @@ Input_Options
 			:class: longtable
 			:file: a2.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: a3
 
 	:Description:
-		Constant term [W |m^-2| ]
+		Constant term [W |m^-2|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: a3.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: ActivityProfWD
@@ -50,7 +50,7 @@ Input_Options
 			:class: longtable
 			:file: ActivityProfWD.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: ActivityProfWE
@@ -63,7 +63,7 @@ Input_Options
 			:class: longtable
 			:file: ActivityProfWE.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: AHMin
@@ -76,7 +76,7 @@ Input_Options
 			:class: longtable
 			:file: AHMin.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: AHSlope
@@ -89,7 +89,7 @@ Input_Options
 			:class: longtable
 			:file: AHSlope.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: AlbedoMax
@@ -102,7 +102,7 @@ Input_Options
 			:class: longtable
 			:file: AlbedoMax.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: AlbedoMin
@@ -115,7 +115,7 @@ Input_Options
 			:class: longtable
 			:file: AlbedoMin.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Alt
@@ -128,7 +128,7 @@ Input_Options
 			:class: longtable
 			:file: Alt.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: AnOHM_Ch
@@ -141,33 +141,33 @@ Input_Options
 			:class: longtable
 			:file: AnOHM_Ch.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: AnOHM_Cp
 
 	:Description:
-		Volumetric heat capacity for this surface to use in AnOHM [J |m^-3| ] Volumetric heat capacity for this surface to use in AnOHM [J |m^-3| ] Volumetric heat capacity for this surface to use in AnOHM [J |m^-3| ] Volumetric heat capacity for this surface to use in AnOHM [J |m^-3| ]
+		Volumetric heat capacity for this surface to use in AnOHM [J |m^-3|] Volumetric heat capacity for this surface to use in AnOHM [J |m^-3|] Volumetric heat capacity for this surface to use in AnOHM [J |m^-3|] Volumetric heat capacity for this surface to use in AnOHM [J |m^-3|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: AnOHM_Cp.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: AnOHM_Kk
 
 	:Description:
-		Thermal conductivity for this surface to use in AnOHM [W m |K^-1| ] Thermal conductivity for this surface to use in AnOHM [W m |K^-1| ] Thermal conductivity for this surface to use in AnOHM [W m |K^-1| ] Thermal conductivity for this surface to use in AnOHM [W m |K^-1| ]
+		Thermal conductivity for this surface to use in AnOHM [W m |K^-1|] Thermal conductivity for this surface to use in AnOHM [W m |K^-1|] Thermal conductivity for this surface to use in AnOHM [W m |K^-1|] Thermal conductivity for this surface to use in AnOHM [W m |K^-1|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: AnOHM_Kk.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: AnthropogenicCode
@@ -180,7 +180,7 @@ Input_Options
 			:class: longtable
 			:file: AnthropogenicCode.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: AreaWall
@@ -193,7 +193,7 @@ Input_Options
 			:class: longtable
 			:file: AreaWall.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: BaseT
@@ -206,7 +206,7 @@ Input_Options
 			:class: longtable
 			:file: BaseT.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: BaseTe
@@ -219,7 +219,7 @@ Input_Options
 			:class: longtable
 			:file: BaseTe.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: BaseTHDD
@@ -232,7 +232,7 @@ Input_Options
 			:class: longtable
 			:file: BaseTHDD.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: BuildEnergyUse
@@ -245,20 +245,20 @@ Input_Options
 			:class: longtable
 			:file: BuildEnergyUse.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Code
 
 	:Description:
-		Code linking to SUEWS_SiteSelect.txt for paved surfaces (Code_Paved), buildings (Code_Bldgs) and bare soil surfaces (Code_BSoil). Value of integer is arbitrary but must match codes specified in SUEWS_SiteSelect.txt.  Code linking to SUEWS_SiteSelect.txt for evergreen trees and shrubs (Code_EveTr), deciduous trees and shrubs (Code_DecTr) and grass surfaces (Code_Grass). Value of integer is arbitrary but must match codes specified in SUEWS_SiteSelect.txt.  Code linking to SUEWS_SiteSelect.txt for water surfaces (Code_Water). Value of integer is arbitrary but must match code specified in SUEWS_SiteSelect.txt.  Code linking to SUEWS_SiteSelect.txt for snow surfaces (SnowCode). Value of integer is arbitrary but must match code specified in SUEWS_SiteSelect.txt.  Code linking to the SoilTypeCode column in SUEWS_NonVeg.txt (for Paved, Bldgs and BSoil surfaces) and SUEWS_Veg.txt (for EveTr, DecTr and Grass surfaces). Value of integer is arbitrary but must match code specified in SUEWS_SiteSelect.txt.  Code linking to the CondCode column in SUEWS_SiteSelect.txt . Value of integer is arbitrary but must match code specified in SUEWS_SiteSelect.txt.  Code linking to the AnthropogenicCode column in SUEWS_SiteSelect.txt . Value of integer is arbitrary but must match code specified in SUEWS_SiteSelect.txt.  Code linking to [[#SUEWS_SiteSelect.txt|SUEWS_SiteSelect.txt] for irrigation modelling (IrrigationCode). Value of integer is arbitrary but must match codes specified in SUEWS_SiteSelect.txt.  Code linking to the OHMCode_SummerWet, OHMCode_SummerDry, OHMCode_WinterWet and OHMCode_WinterDry columns in SUEWS_NonVeg.txt, SUEWS_Veg,txt, SUEWS_Water.txt and SUEWS_Snow.txt files. Value of integer is arbitrary but must match code specified in SUEWS_SiteSelect.txt.  For buildings and paved surfaces, set to zero if there is more than one ESTM class per grid and the codes and surface fractions specified in SUEWS_SiteSelect.txt will be used instead.
+		Code linking to `SUEWS_SiteSelect.txt` for paved surfaces (Code_Paved), buildings (Code_Bldgs) and bare soil surfaces (Code_BSoil). Value of integer is arbitrary but must match codes specified in `SUEWS_SiteSelect.txt`.  Code linking to `SUEWS_SiteSelect.txt` for evergreen trees and shrubs (Code_EveTr), deciduous trees and shrubs (Code_DecTr) and grass surfaces (Code_Grass). Value of integer is arbitrary but must match codes specified in `SUEWS_SiteSelect.txt`.  Code linking to `SUEWS_SiteSelect.txt` for water surfaces (Code_Water). Value of integer is arbitrary but must match code specified in `SUEWS_SiteSelect.txt`.  Code linking to `SUEWS_SiteSelect.txt` for snow surfaces (SnowCode). Value of integer is arbitrary but must match code specified in `SUEWS_SiteSelect.txt`.  Code linking to the SoilTypeCode column in SUEWS_NonVeg.txt (for Paved, Bldgs and BSoil surfaces) and SUEWS_Veg.txt (for EveTr, DecTr and Grass surfaces). Value of integer is arbitrary but must match code specified in `SUEWS_SiteSelect.txt`.  Code linking to the CondCode column in `SUEWS_SiteSelect.txt` . Value of integer is arbitrary but must match code specified in `SUEWS_SiteSelect.txt`.  Code linking to the AnthropogenicCode column in `SUEWS_SiteSelect.txt` . Value of integer is arbitrary but must match code specified in `SUEWS_SiteSelect.txt`.  Code linking to `SUEWS_SiteSelect.txt` for irrigation modelling (IrrigationCode). Value of integer is arbitrary but must match codes specified in `SUEWS_SiteSelect.txt`.  Code linking to the OHMCode_SummerWet, OHMCode_SummerDry, OHMCode_WinterWet and OHMCode_WinterDry columns in SUEWS_NonVeg.txt, SUEWS_Veg,txt, SUEWS_Water.txt and SUEWS_Snow.txt files. Value of integer is arbitrary but must match code specified in `SUEWS_SiteSelect.txt`.  For buildings and paved surfaces, set to zero if there is more than one ESTM class per grid and the codes and surface fractions specified in `SUEWS_SiteSelect.txt` will be used instead.
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: Code.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Code_Bldgs
@@ -271,7 +271,7 @@ Input_Options
 			:class: longtable
 			:file: Code_Bldgs.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Code_Bsoil
@@ -284,7 +284,7 @@ Input_Options
 			:class: longtable
 			:file: Code_Bsoil.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Code_DecTr
@@ -297,7 +297,7 @@ Input_Options
 			:class: longtable
 			:file: Code_DecTr.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Code_ESTMClass_Bldgs1
@@ -310,7 +310,7 @@ Input_Options
 			:class: longtable
 			:file: Code_ESTMClass_Bldgs1.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Code_ESTMClass_Bldgs2
@@ -323,7 +323,7 @@ Input_Options
 			:class: longtable
 			:file: Code_ESTMClass_Bldgs2.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Code_ESTMClass_Bldgs3
@@ -336,7 +336,7 @@ Input_Options
 			:class: longtable
 			:file: Code_ESTMClass_Bldgs3.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Code_ESTMClass_Bldgs4
@@ -349,7 +349,7 @@ Input_Options
 			:class: longtable
 			:file: Code_ESTMClass_Bldgs4.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Code_ESTMClass_Bldgs5
@@ -362,7 +362,7 @@ Input_Options
 			:class: longtable
 			:file: Code_ESTMClass_Bldgs5.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Code_ESTMClass_Paved1
@@ -375,7 +375,7 @@ Input_Options
 			:class: longtable
 			:file: Code_ESTMClass_Paved1.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Code_ESTMClass_Paved2
@@ -388,7 +388,7 @@ Input_Options
 			:class: longtable
 			:file: Code_ESTMClass_Paved2.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Code_ESTMClass_Paved3
@@ -401,7 +401,7 @@ Input_Options
 			:class: longtable
 			:file: Code_ESTMClass_Paved3.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Code_EveTr
@@ -414,7 +414,7 @@ Input_Options
 			:class: longtable
 			:file: Code_EveTr.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Code_Grass
@@ -427,7 +427,7 @@ Input_Options
 			:class: longtable
 			:file: Code_Grass.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Code_Paved
@@ -440,7 +440,7 @@ Input_Options
 			:class: longtable
 			:file: Code_Paved.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Code_Water
@@ -453,7 +453,7 @@ Input_Options
 			:class: longtable
 			:file: Code_Water.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: CondCode
@@ -466,7 +466,7 @@ Input_Options
 			:class: longtable
 			:file: CondCode.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: CRWMax
@@ -479,7 +479,7 @@ Input_Options
 			:class: longtable
 			:file: CRWMax.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: CRWMin
@@ -492,7 +492,7 @@ Input_Options
 			:class: longtable
 			:file: CRWMin.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: DayWat(1)
@@ -505,7 +505,7 @@ Input_Options
 			:class: longtable
 			:file: DayWat(1).csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: DayWat(2)
@@ -518,7 +518,7 @@ Input_Options
 			:class: longtable
 			:file: DayWat(2).csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: DayWat(3)
@@ -531,7 +531,7 @@ Input_Options
 			:class: longtable
 			:file: DayWat(3).csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: DayWat(4)
@@ -544,7 +544,7 @@ Input_Options
 			:class: longtable
 			:file: DayWat(4).csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: DayWat(5)
@@ -557,7 +557,7 @@ Input_Options
 			:class: longtable
 			:file: DayWat(5).csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: DayWat(6)
@@ -570,7 +570,7 @@ Input_Options
 			:class: longtable
 			:file: DayWat(6).csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: DayWat(7)
@@ -583,7 +583,7 @@ Input_Options
 			:class: longtable
 			:file: DayWat(7).csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: DayWatPer(1)
@@ -596,7 +596,7 @@ Input_Options
 			:class: longtable
 			:file: DayWatPer(1).csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: DayWatPer(2)
@@ -609,7 +609,7 @@ Input_Options
 			:class: longtable
 			:file: DayWatPer(2).csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: DayWatPer(3)
@@ -622,7 +622,7 @@ Input_Options
 			:class: longtable
 			:file: DayWatPer(3).csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: DayWatPer(4)
@@ -635,7 +635,7 @@ Input_Options
 			:class: longtable
 			:file: DayWatPer(4).csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: DayWatPer(5)
@@ -648,7 +648,7 @@ Input_Options
 			:class: longtable
 			:file: DayWatPer(5).csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: DayWatPer(6)
@@ -661,7 +661,7 @@ Input_Options
 			:class: longtable
 			:file: DayWatPer(6).csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: DayWatPer(7)
@@ -674,33 +674,33 @@ Input_Options
 			:class: longtable
 			:file: DayWatPer(7).csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: DrainageCoef1
 
 	:Description:
-		Example values DrainageEq 10 Coefficient D0 [mm |h^-1| ] 3 Recommended [3] for Paved and Bldgs 0.013 Coefficient D0 [mm |h^-1| ] 2 Recommended [3] for BSoil Example values DrainageEq 10 Coefficient D0 [mm |h^-1| ] 3 Recommended [3] for Grass (irrigated) 0.013 Coefficient D0 [mm |h^-1| ] 2 Recommended [3] for EveTr, DecTr, Grass (unirrigated) Not currently used for water surface
+		Example values DrainageEq 10 Coefficient D0 [mm |h^-1|] 3 Recommended [3] for Paved and Bldgs 0.013 Coefficient D0 [mm |h^-1|] 2 Recommended [3] for BSoil Example values DrainageEq 10 Coefficient D0 [mm |h^-1|] 3 Recommended [3] for Grass (irrigated) 0.013 Coefficient D0 [mm |h^-1|] 2 Recommended [3] for EveTr, DecTr, Grass (unirrigated) Not currently used for water surface
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: DrainageCoef1.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: DrainageCoef2
 
 	:Description:
-		Example values DrainageEq 3 Coefficient b [-] 3 Recommended [3] for Paved and Bldgs 1.71 Coefficient b [|mm^-1| ] 2 Recommended [3] for BSoil Example values DrainageEq 3 Coefficient b [-] 3 Recommended [3] for Grass (irrigated) 1.71 Coefficient b [|mm^-1| ] 2 Recommended [3] for EveTr, DecTr, Grass (unirrigated) Not currently used for water surface
+		Example values DrainageEq 3 Coefficient b [-] 3 Recommended [3] for Paved and Bldgs 1.71 Coefficient b [|mm^-1|] 2 Recommended [3] for BSoil Example values DrainageEq 3 Coefficient b [-] 3 Recommended [3] for Grass (irrigated) 1.71 Coefficient b [|mm^-1|] 2 Recommended [3] for EveTr, DecTr, Grass (unirrigated) Not currently used for water surface
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: DrainageCoef2.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: DrainageEq
@@ -713,7 +713,7 @@ Input_Options
 			:class: longtable
 			:file: DrainageEq.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Emissivity
@@ -726,7 +726,7 @@ Input_Options
 			:class: longtable
 			:file: Emissivity.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: EndDLS
@@ -739,7 +739,7 @@ Input_Options
 			:class: longtable
 			:file: EndDLS.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: EnergyUseProfWD
@@ -752,7 +752,7 @@ Input_Options
 			:class: longtable
 			:file: EnergyUseProfWD.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: EnergyUseProfWE
@@ -765,20 +765,20 @@ Input_Options
 			:class: longtable
 			:file: EnergyUseProfWE.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: ESTMCode
 
 	:Description:
-		For paved and building surfaces, it is possible to specify multiple codes per grid (3 for paved, 5 for buildings) using SUEWS_SiteSelect.txt . In this case, set ESTMCode here to zero. Code for ESTM coefficients to use for this surface. Links to SUEWS_ESTMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_ESTMCoefficients.txt.  Code for ESTM coefficients to use for this surface. Links to SUEWS_ESTMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_ESTMCoefficients.txt.  For paved and building surfaces, it is possible to specify multiple codes per grid (3 for paved, 5 for buildings) using SUEWS_SiteSelect.txt . In this case, set ESTM code here to zero.
+		For paved and building surfaces, it is possible to specify multiple codes per grid (3 for paved, 5 for buildings) using `SUEWS_SiteSelect.txt` . In this case, set ESTMCode here to zero. Code for ESTM coefficients to use for this surface. Links to SUEWS_ESTMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_ESTMCoefficients.txt.  Code for ESTM coefficients to use for this surface. Links to SUEWS_ESTMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_ESTMCoefficients.txt.  For paved and building surfaces, it is possible to specify multiple codes per grid (3 for paved, 5 for buildings) using `SUEWS_SiteSelect.txt` . In this case, set ESTM code here to zero.
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: ESTMCode.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: FAI_Bldgs
@@ -791,7 +791,7 @@ Input_Options
 			:class: longtable
 			:file: FAI_Bldgs.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: FAI_DecTr
@@ -804,7 +804,7 @@ Input_Options
 			:class: longtable
 			:file: FAI_DecTr.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: FAI_EveTr
@@ -817,7 +817,7 @@ Input_Options
 			:class: longtable
 			:file: FAI_EveTr.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Faut
@@ -830,7 +830,7 @@ Input_Options
 			:class: longtable
 			:file: Faut.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: fcld
@@ -843,20 +843,20 @@ Input_Options
 			:class: longtable
 			:file: fcld.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: FlowChange
 
 	:Description:
-		Difference in input and output flows for water surface [mm |h^-1| ] Used to indicate river or stream flow through the grid. Currently not fully tested!
+		Difference in input and output flows for water surface [mm |h^-1|] Used to indicate river or stream flow through the grid. Currently not fully tested!
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: FlowChange.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Fraction1of8
@@ -869,7 +869,7 @@ Input_Options
 			:class: longtable
 			:file: Fraction1of8.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Fraction2of8
@@ -882,7 +882,7 @@ Input_Options
 			:class: longtable
 			:file: Fraction2of8.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Fraction3of8
@@ -895,7 +895,7 @@ Input_Options
 			:class: longtable
 			:file: Fraction3of8.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Fraction4of8
@@ -908,7 +908,7 @@ Input_Options
 			:class: longtable
 			:file: Fraction4of8.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Fraction5of8
@@ -921,7 +921,7 @@ Input_Options
 			:class: longtable
 			:file: Fraction5of8.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Fraction6of8
@@ -934,7 +934,7 @@ Input_Options
 			:class: longtable
 			:file: Fraction6of8.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Fraction7of8
@@ -947,7 +947,7 @@ Input_Options
 			:class: longtable
 			:file: Fraction7of8.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Fraction8of8
@@ -960,7 +960,7 @@ Input_Options
 			:class: longtable
 			:file: Fraction8of8.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Fr_Bldgs
@@ -973,7 +973,7 @@ Input_Options
 			:class: longtable
 			:file: Fr_Bldgs.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Fr_Bsoil
@@ -986,7 +986,7 @@ Input_Options
 			:class: longtable
 			:file: Fr_Bsoil.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Fr_DecTr
@@ -999,7 +999,7 @@ Input_Options
 			:class: longtable
 			:file: Fr_DecTr.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Fr_ESTMClass_Bldgs1
@@ -1012,7 +1012,7 @@ Input_Options
 			:class: longtable
 			:file: Fr_ESTMClass_Bldgs1.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Fr_ESTMClass_Bldgs2
@@ -1025,7 +1025,7 @@ Input_Options
 			:class: longtable
 			:file: Fr_ESTMClass_Bldgs2.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Fr_ESTMClass_Bldgs3
@@ -1038,7 +1038,7 @@ Input_Options
 			:class: longtable
 			:file: Fr_ESTMClass_Bldgs3.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Fr_ESTMClass_Bldgs4
@@ -1051,7 +1051,7 @@ Input_Options
 			:class: longtable
 			:file: Fr_ESTMClass_Bldgs4.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Fr_ESTMClass_Bldgs5
@@ -1064,7 +1064,7 @@ Input_Options
 			:class: longtable
 			:file: Fr_ESTMClass_Bldgs5.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Fr_ESTMClass_Paved1
@@ -1077,7 +1077,7 @@ Input_Options
 			:class: longtable
 			:file: Fr_ESTMClass_Paved1.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Fr_ESTMClass_Paved2
@@ -1090,7 +1090,7 @@ Input_Options
 			:class: longtable
 			:file: Fr_ESTMClass_Paved2.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Fr_ESTMClass_Paved3
@@ -1103,7 +1103,7 @@ Input_Options
 			:class: longtable
 			:file: Fr_ESTMClass_Paved3.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Fr_EveTr
@@ -1116,7 +1116,7 @@ Input_Options
 			:class: longtable
 			:file: Fr_EveTr.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Fr_Grass
@@ -1129,7 +1129,7 @@ Input_Options
 			:class: longtable
 			:file: Fr_Grass.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Fr_Paved
@@ -1142,7 +1142,7 @@ Input_Options
 			:class: longtable
 			:file: Fr_Paved.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Fr_Water
@@ -1155,33 +1155,33 @@ Input_Options
 			:class: longtable
 			:file: Fr_Water.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: G1
 
 	:Description:
-		Related to maximum surface conductance [mm |s^-1| ]
+		Related to maximum surface conductance [mm |s^-1|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: G1.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: G2
 
 	:Description:
-		Related to Kdown dependence [W |m^-2| ]
+		Related to Kdown dependence [W |m^-2|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: G2.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: G3
@@ -1194,7 +1194,7 @@ Input_Options
 			:class: longtable
 			:file: G3.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: G4
@@ -1207,7 +1207,7 @@ Input_Options
 			:class: longtable
 			:file: G4.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: G5
@@ -1220,20 +1220,20 @@ Input_Options
 			:class: longtable
 			:file: G5.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: G6
 
 	:Description:
-		Related to soil moisture dependence [|mm^-1| ]
+		Related to soil moisture dependence [|mm^-1|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: G6.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: gamq_gkgm
@@ -1246,7 +1246,7 @@ Input_Options
 			:class: longtable
 			:file: gamq_gkgm.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: gamt_Km
@@ -1259,7 +1259,7 @@ Input_Options
 			:class: longtable
 			:file: gamt_Km.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: GDDFull
@@ -1272,7 +1272,7 @@ Input_Options
 			:class: longtable
 			:file: GDDFull.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Grid
@@ -1285,7 +1285,7 @@ Input_Options
 			:class: longtable
 			:file: Grid.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: GridConnection1of8
@@ -1298,7 +1298,7 @@ Input_Options
 			:class: longtable
 			:file: GridConnection1of8.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: GridConnection2of8
@@ -1311,7 +1311,7 @@ Input_Options
 			:class: longtable
 			:file: GridConnection2of8.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: GridConnection3of8
@@ -1324,7 +1324,7 @@ Input_Options
 			:class: longtable
 			:file: GridConnection3of8.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: GridConnection4of8
@@ -1337,7 +1337,7 @@ Input_Options
 			:class: longtable
 			:file: GridConnection4of8.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: GridConnection5of8
@@ -1350,7 +1350,7 @@ Input_Options
 			:class: longtable
 			:file: GridConnection5of8.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: GridConnection6of8
@@ -1363,7 +1363,7 @@ Input_Options
 			:class: longtable
 			:file: GridConnection6of8.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: GridConnection7of8
@@ -1376,7 +1376,7 @@ Input_Options
 			:class: longtable
 			:file: GridConnection7of8.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: GridConnection8of8
@@ -1389,7 +1389,7 @@ Input_Options
 			:class: longtable
 			:file: GridConnection8of8.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: gsModel
@@ -1402,7 +1402,7 @@ Input_Options
 			:class: longtable
 			:file: gsModel.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: H_Bldgs
@@ -1415,7 +1415,7 @@ Input_Options
 			:class: longtable
 			:file: H_Bldgs.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: H_DecTr
@@ -1428,7 +1428,7 @@ Input_Options
 			:class: longtable
 			:file: H_DecTr.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: H_EveTr
@@ -1441,7 +1441,7 @@ Input_Options
 			:class: longtable
 			:file: H_EveTr.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: id
@@ -1454,7 +1454,7 @@ Input_Options
 			:class: longtable
 			:file: id.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Ie_a1
@@ -1467,20 +1467,20 @@ Input_Options
 			:class: longtable
 			:file: Ie_a1.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Ie_a2
 
 	:Description:
-		Coefficient for automatic irrigation model [mm d -1 |K^-1| ]
+		Coefficient for automatic irrigation model [mm d -1 |K^-1|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: Ie_a2.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Ie_a3
@@ -1493,7 +1493,7 @@ Input_Options
 			:class: longtable
 			:file: Ie_a3.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Ie_end
@@ -1506,7 +1506,7 @@ Input_Options
 			:class: longtable
 			:file: Ie_end.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Ie_m1
@@ -1519,20 +1519,20 @@ Input_Options
 			:class: longtable
 			:file: Ie_m1.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Ie_m2
 
 	:Description:
-		Coefficient for manual irrigation model [mm d -1 |K^-1| ]
+		Coefficient for manual irrigation model [mm d -1 |K^-1|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: Ie_m2.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Ie_m3
@@ -1545,7 +1545,7 @@ Input_Options
 			:class: longtable
 			:file: Ie_m3.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Ie_start
@@ -1558,7 +1558,7 @@ Input_Options
 			:class: longtable
 			:file: Ie_start.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: ih
@@ -1571,7 +1571,7 @@ Input_Options
 			:class: longtable
 			:file: ih.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: imin
@@ -1584,7 +1584,7 @@ Input_Options
 			:class: longtable
 			:file: imin.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: InfiltrationRate
@@ -1597,7 +1597,7 @@ Input_Options
 			:class: longtable
 			:file: InfiltrationRate.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Internal_albedo
@@ -1610,46 +1610,46 @@ Input_Options
 			:class: longtable
 			:file: Internal_albedo.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Internal_CHbld
 
 	:Description:
-		Bulk transfer coefficient of internal building elements [W |m^-2| |K^-1| ] (for building surfaces only and if IbldCHmod == 0 in ESTMinput.nml
+		Bulk transfer coefficient of internal building elements [W |m^-2| |K^-1|] (for building surfaces only and if IbldCHmod == 0 in ESTMinput.nml
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: Internal_CHbld.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Internal_CHroof
 
 	:Description:
-		Bulk transfer coefficient of internal roof [W |m^-2| |K^-1| ] (for building surfaces only and if IbldCHmod == 0 in ESTMinput.nml
+		Bulk transfer coefficient of internal roof [W |m^-2| |K^-1|] (for building surfaces only and if IbldCHmod == 0 in ESTMinput.nml
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: Internal_CHroof.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Internal_CHwall
 
 	:Description:
-		Bulk transfer coefficient of internal wall [W |m^-2| |K^-1| ] (for building surfaces only and if IbldCHmod == 0 in ESTMinput.nml
+		Bulk transfer coefficient of internal wall [W |m^-2| |K^-1|] (for building surfaces only and if IbldCHmod == 0 in ESTMinput.nml
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: Internal_CHwall.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Internal_emissivity
@@ -1662,137 +1662,137 @@ Input_Options
 			:class: longtable
 			:file: Internal_emissivity.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Internal_k1
 
 	:Description:
-		Thermal conductivity of the first layer [W |m^-1| |K^-1| ]
+		Thermal conductivity of the first layer [W |m^-1| |K^-1|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: Internal_k1.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Internal_k2
 
 	:Description:
-		Thermal conductivity of the second layer [W |m^-1| |K^-1| ]
+		Thermal conductivity of the second layer [W |m^-1| |K^-1|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: Internal_k2.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Internal_k3
 
 	:Description:
-		Thermal conductivity of the third layer [W |m^-1| |K^-1| ]
+		Thermal conductivity of the third layer [W |m^-1| |K^-1|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: Internal_k3.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Internal_k4
 
 	:Description:
-		Thermal conductivity of the fourth layer [W |m^-1| |K^-1| ]
+		Thermal conductivity of the fourth layer [W |m^-1| |K^-1|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: Internal_k4.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Internal_k5
 
 	:Description:
-		Thermal conductivity of the fifth layer [W |m^-1| |K^-1| ]
+		Thermal conductivity of the fifth layer [W |m^-1| |K^-1|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: Internal_k5.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Internal_rhoCp1
 
 	:Description:
-		Volumetric heat capacity of the first layer[J |m^-3| |K^-1| ]
+		Volumetric heat capacity of the first layer[J |m^-3| |K^-1|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: Internal_rhoCp1.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Internal_rhoCp2
 
 	:Description:
-		Volumetric heat capacity of the second layer [J |m^-3| |K^-1| ]
+		Volumetric heat capacity of the second layer [J |m^-3| |K^-1|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: Internal_rhoCp2.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Internal_rhoCp3
 
 	:Description:
-		Volumetric heat capacity of the third layer[J |m^-3| |K^-1| ]
+		Volumetric heat capacity of the third layer[J |m^-3| |K^-1|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: Internal_rhoCp3.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Internal_rhoCp4
 
 	:Description:
-		Volumetric heat capacity of the fourth layer [J |m^-3| |K^-1| ]
+		Volumetric heat capacity of the fourth layer [J |m^-3| |K^-1|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: Internal_rhoCp4.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Internal_rhoCp5
 
 	:Description:
-		Volumetric heat capacity of the fifth layer [J |m^-3| |K^-1| ]
+		Volumetric heat capacity of the fifth layer [J |m^-3| |K^-1|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: Internal_rhoCp5.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Internal_thick1
@@ -1805,7 +1805,7 @@ Input_Options
 			:class: longtable
 			:file: Internal_thick1.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Internal_thick2
@@ -1818,7 +1818,7 @@ Input_Options
 			:class: longtable
 			:file: Internal_thick2.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Internal_thick3
@@ -1831,7 +1831,7 @@ Input_Options
 			:class: longtable
 			:file: Internal_thick3.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Internal_thick4
@@ -1844,7 +1844,7 @@ Input_Options
 			:class: longtable
 			:file: Internal_thick4.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Internal_thick5
@@ -1857,20 +1857,20 @@ Input_Options
 			:class: longtable
 			:file: Internal_thick5.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: InternalWaterUse
 
 	:Description:
-		Internal water use [mm |h^-1| ]
+		Internal water use [mm |h^-1|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: InternalWaterUse.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: IrrFr_DecTr
@@ -1883,7 +1883,7 @@ Input_Options
 			:class: longtable
 			:file: IrrFr_DecTr.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: IrrFr_EveTr
@@ -1896,7 +1896,7 @@ Input_Options
 			:class: longtable
 			:file: IrrFr_EveTr.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: IrrFr_Grass
@@ -1909,7 +1909,7 @@ Input_Options
 			:class: longtable
 			:file: IrrFr_Grass.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: IrrigationCode
@@ -1922,7 +1922,7 @@ Input_Options
 			:class: longtable
 			:file: IrrigationCode.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: it
@@ -1935,7 +1935,7 @@ Input_Options
 			:class: longtable
 			:file: it.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: iy
@@ -1948,7 +1948,7 @@ Input_Options
 			:class: longtable
 			:file: iy.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: kdiff
@@ -1961,7 +1961,7 @@ Input_Options
 			:class: longtable
 			:file: kdiff.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: kdir
@@ -1974,7 +1974,7 @@ Input_Options
 			:class: longtable
 			:file: kdir.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: kdown
@@ -1987,33 +1987,33 @@ Input_Options
 			:class: longtable
 			:file: kdown.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Kmax
 
 	:Description:
-		Maximum incoming shortwave radiation [W |m^-2| ]
+		Maximum incoming shortwave radiation [W |m^-2|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: Kmax.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: lai
 
 	:Description:
-		Observed leaf area index [|m^-2| |m^-2| ]
+		Observed leaf area index [|m^-2| |m^-2|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: lai.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: LAIEq
@@ -2026,33 +2026,33 @@ Input_Options
 			:class: longtable
 			:file: LAIEq.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: LAIMax
 
 	:Description:
-		full leaf-on summertime value Example values [|m^-2| |m^-2| ] 5.1 EveTr Breuer et al. (2003) [36]  5.5 DecTr Breuer et al. (2003) [36]  5.9 Grass Breuer et al. (2003) [36]
+		full leaf-on summertime value Example values [|m^-2| |m^-2|] 5.1 EveTr Breuer et al. (2003) [36]  5.5 DecTr Breuer et al. (2003) [36]  5.9 Grass Breuer et al. (2003) [36]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: LAIMax.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: LAIMin
 
 	:Description:
-		leaf-off wintertime value Example values [|m^-2| |m^-2| ] 4. EveTr Järvi et al. (2011) [1]  1. DecTr Järvi et al. (2011) [1]  1.6 Grass Grimmond and Oke (1991) [3] and references therein
+		leaf-off wintertime value Example values [|m^-2| |m^-2|] 4. EveTr Järvi et al. (2011) [1]  1. DecTr Järvi et al. (2011) [1]  1.6 Grass Grimmond and Oke (1991) [3] and references therein
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: LAIMin.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: lat
@@ -2065,20 +2065,20 @@ Input_Options
 			:class: longtable
 			:file: lat.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: ldown
 
 	:Description:
-		Incoming longwave radiation [W |m^-2| ]
+		Incoming longwave radiation [W |m^-2|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: ldown.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: LeafGrowthPower1
@@ -2091,20 +2091,20 @@ Input_Options
 			:class: longtable
 			:file: LeafGrowthPower1.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: LeafGrowthPower2
 
 	:Description:
-		Example values [|K^-1| ] LAIEq 0.0005 Järvi et al. (2011) [1] 0 0.001 Järvi et al. (2014) [15] 1
+		Example values [|K^-1|] LAIEq 0.0005 Järvi et al. (2011) [1] 0 0.001 Järvi et al. (2014) [15] 1
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: LeafGrowthPower2.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: LeafOffPower1
@@ -2117,20 +2117,20 @@ Input_Options
 			:class: longtable
 			:file: LeafOffPower1.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: LeafOffPower2
 
 	:Description:
-		Example values [|K^-1| ] LAIEq 0.0005 Järvi et al. (2011) [1] 0 0.0015 Järvi et al. (2014) [15] 1
+		Example values [|K^-1|] LAIEq 0.0005 Järvi et al. (2011) [1] 0 0.0015 Järvi et al. (2014) [15] 1
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: LeafOffPower2.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: lng
@@ -2143,7 +2143,7 @@ Input_Options
 			:class: longtable
 			:file: lng.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: LUMPS_Cover
@@ -2156,20 +2156,20 @@ Input_Options
 			:class: longtable
 			:file: LUMPS_Cover.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: LUMPS_DrRate
 
 	:Description:
-		Drainage rate of bucket for LUMPS [mm |h^-1| ] Used for LUMPS surface wetness control. Default recommended value of 0.25 mm |h^-1| from Loridan et al. (2011) [5] .
+		Drainage rate of bucket for LUMPS [mm |h^-1|] Used for LUMPS surface wetness control. Default recommended value of 0.25 mm |h^-1| from Loridan et al. (2011) [5] .
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: LUMPS_DrRate.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: LUMPS_MaxRes
@@ -2182,20 +2182,20 @@ Input_Options
 			:class: longtable
 			:file: LUMPS_MaxRes.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: MaxConductance
 
 	:Description:
-		Example values [mm |s^-1| ] 7.4 EveTr Järvi et al. (2011) [1]  11.7 DecTr Järvi et al. (2011) [1]  33.1 Grass (unirrigated) Järvi et al. (2011) [1]  40. Grass (irrigated) Järvi et al. (2011) [1]
+		Example values [mm |s^-1|] 7.4 EveTr Järvi et al. (2011) [1]  11.7 DecTr Järvi et al. (2011) [1]  33.1 Grass (unirrigated) Järvi et al. (2011) [1]  40. Grass (irrigated) Järvi et al. (2011) [1]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: MaxConductance.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: NARP_Trans
@@ -2208,7 +2208,7 @@ Input_Options
 			:class: longtable
 			:file: NARP_Trans.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: nroom
@@ -2221,7 +2221,7 @@ Input_Options
 			:class: longtable
 			:file: nroom.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: OBS_SMCap
@@ -2234,7 +2234,7 @@ Input_Options
 			:class: longtable
 			:file: OBS_SMCap.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: OBS_SMDepth
@@ -2247,7 +2247,7 @@ Input_Options
 			:class: longtable
 			:file: OBS_SMDepth.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: OBS_SoilNotRocks
@@ -2260,7 +2260,7 @@ Input_Options
 			:class: longtable
 			:file: OBS_SoilNotRocks.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: OHMCode_SummerDry
@@ -2273,7 +2273,7 @@ Input_Options
 			:class: longtable
 			:file: OHMCode_SummerDry.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: OHMCode_SummerWet
@@ -2286,7 +2286,7 @@ Input_Options
 			:class: longtable
 			:file: OHMCode_SummerWet.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: OHMCode_WinterDry
@@ -2299,7 +2299,7 @@ Input_Options
 			:class: longtable
 			:file: OHMCode_WinterDry.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: OHMCode_WinterWet
@@ -2312,7 +2312,7 @@ Input_Options
 			:class: longtable
 			:file: OHMCode_WinterWet.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: OHMThresh_SW
@@ -2325,7 +2325,7 @@ Input_Options
 			:class: longtable
 			:file: OHMThresh_SW.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: OHMThresh_WD
@@ -2338,7 +2338,7 @@ Input_Options
 			:class: longtable
 			:file: OHMThresh_WD.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: PipeCapacity
@@ -2351,7 +2351,7 @@ Input_Options
 			:class: longtable
 			:file: PipeCapacity.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: PopDensDay
@@ -2364,7 +2364,7 @@ Input_Options
 			:class: longtable
 			:file: PopDensDay.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: PopDensNight
@@ -2377,7 +2377,7 @@ Input_Options
 			:class: longtable
 			:file: PopDensNight.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: PorosityMax
@@ -2390,7 +2390,7 @@ Input_Options
 			:class: longtable
 			:file: PorosityMax.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: PorosityMin
@@ -2403,7 +2403,7 @@ Input_Options
 			:class: longtable
 			:file: PorosityMin.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: PrecipiLimAlb
@@ -2416,7 +2416,7 @@ Input_Options
 			:class: longtable
 			:file: PrecipiLimAlb.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: PrecipLimSnow
@@ -2429,7 +2429,7 @@ Input_Options
 			:class: longtable
 			:file: PrecipLimSnow.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: pres
@@ -2442,33 +2442,33 @@ Input_Options
 			:class: longtable
 			:file: pres.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: qe
 
 	:Description:
-		Latent heat flux [W |m^-2| ]
+		Latent heat flux [W |m^-2|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: qe.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: qf
 
 	:Description:
-		Anthropogenic heat flux [W |m^-2| ]
+		Anthropogenic heat flux [W |m^-2|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: qf.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: QF_A_Weekday
@@ -2481,7 +2481,7 @@ Input_Options
 			:class: longtable
 			:file: QF_A_Weekday.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: QF_A_Weekend
@@ -2494,7 +2494,7 @@ Input_Options
 			:class: longtable
 			:file: QF_A_Weekend.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: QF_B_Weekday
@@ -2507,7 +2507,7 @@ Input_Options
 			:class: longtable
 			:file: QF_B_Weekday.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: QF_B_Weekend
@@ -2520,7 +2520,7 @@ Input_Options
 			:class: longtable
 			:file: QF_B_Weekend.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: QF_C_Weekday
@@ -2533,7 +2533,7 @@ Input_Options
 			:class: longtable
 			:file: QF_C_Weekday.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: QF_C_Weekend
@@ -2546,7 +2546,7 @@ Input_Options
 			:class: longtable
 			:file: QF_C_Weekend.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: q+_gkg
@@ -2559,7 +2559,7 @@ Input_Options
 			:class: longtable
 			:file: q+_gkg.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: q_gkg
@@ -2572,20 +2572,20 @@ Input_Options
 			:class: longtable
 			:file: q_gkg.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: qh
 
 	:Description:
-		Sensible heat flux [W |m^-2| ]
+		Sensible heat flux [W |m^-2|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: qh.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: qn
@@ -2598,33 +2598,33 @@ Input_Options
 			:class: longtable
 			:file: qn.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: qs
 
 	:Description:
-		Storage heat flux [W |m^-2| ]
+		Storage heat flux [W |m^-2|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: qs.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: RadMeltFactor
 
 	:Description:
-		Hourly radiation melt factor of snow [mm |w^-1| |h^-1| ]
+		Hourly radiation melt factor of snow [mm |w^-1| |h^-1|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: RadMeltFactor.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: rain
@@ -2637,7 +2637,7 @@ Input_Options
 			:class: longtable
 			:file: rain.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: RH
@@ -2650,7 +2650,7 @@ Input_Options
 			:class: longtable
 			:file: RH.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: RunoffToWater
@@ -2663,7 +2663,7 @@ Input_Options
 			:class: longtable
 			:file: RunoffToWater.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: S1
@@ -2676,7 +2676,7 @@ Input_Options
 			:class: longtable
 			:file: S1.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: S2
@@ -2689,20 +2689,20 @@ Input_Options
 			:class: longtable
 			:file: S2.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: SatHydraulicCond
 
 	:Description:
-		Hydraulic conductivity for saturated soil [mm |s^-1| ]
+		Hydraulic conductivity for saturated soil [mm |s^-1|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: SatHydraulicCond.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: SDDFull
@@ -2715,7 +2715,7 @@ Input_Options
 			:class: longtable
 			:file: SDDFull.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: snow
@@ -2728,7 +2728,7 @@ Input_Options
 			:class: longtable
 			:file: snow.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: SnowClearingProfWD
@@ -2741,7 +2741,7 @@ Input_Options
 			:class: longtable
 			:file: SnowClearingProfWD.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: SnowClearingProfWE
@@ -2754,7 +2754,7 @@ Input_Options
 			:class: longtable
 			:file: SnowClearingProfWE.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: SnowCode
@@ -2767,33 +2767,33 @@ Input_Options
 			:class: longtable
 			:file: SnowCode.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: snowDensMax
 
 	:Description:
-		Maximum snow density [kg |m^-3| ]
+		Maximum snow density [kg |m^-3|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: snowDensMax.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: snowDensMin
 
 	:Description:
-		Fresh snow density [kg |m^-3| ]
+		Fresh snow density [kg |m^-3|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: snowDensMin.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: SnowLimPatch
@@ -2806,7 +2806,7 @@ Input_Options
 			:class: longtable
 			:file: SnowLimPatch.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: SnowLimRemove
@@ -2819,20 +2819,20 @@ Input_Options
 			:class: longtable
 			:file: SnowLimRemove.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: SoilDensity
 
 	:Description:
-		Soil density [kg |m^-3| ]
+		Soil density [kg |m^-3|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: SoilDensity.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: SoilDepth
@@ -2845,7 +2845,7 @@ Input_Options
 			:class: longtable
 			:file: SoilDepth.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: SoilStoreCap
@@ -2858,7 +2858,7 @@ Input_Options
 			:class: longtable
 			:file: SoilStoreCap.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: SoilTypeCode
@@ -2871,7 +2871,7 @@ Input_Options
 			:class: longtable
 			:file: SoilTypeCode.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: StartDLS
@@ -2884,7 +2884,7 @@ Input_Options
 			:class: longtable
 			:file: StartDLS.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: StateLimit
@@ -2897,7 +2897,7 @@ Input_Options
 			:class: longtable
 			:file: StateLimit.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: StorageMax
@@ -2910,7 +2910,7 @@ Input_Options
 			:class: longtable
 			:file: StorageMax.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: StorageMin
@@ -2923,7 +2923,7 @@ Input_Options
 			:class: longtable
 			:file: StorageMin.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: SurfaceArea
@@ -2936,137 +2936,137 @@ Input_Options
 			:class: longtable
 			:file: SurfaceArea.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Surf_k1
 
 	:Description:
-		Thermal conductivity of the first layer [W |m^-1| |K^-1| ]
+		Thermal conductivity of the first layer [W |m^-1| |K^-1|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: Surf_k1.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Surf_k2
 
 	:Description:
-		Thermal conductivity of the second layer [W |m^-1| |K^-1| ]
+		Thermal conductivity of the second layer [W |m^-1| |K^-1|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: Surf_k2.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Surf_k3
 
 	:Description:
-		Thermal conductivity of the third layer[W |m^-1| |K^-1| ]
+		Thermal conductivity of the third layer[W |m^-1| |K^-1|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: Surf_k3.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Surf_k4
 
 	:Description:
-		Thermal conductivity of the fourth layer[W |m^-1| |K^-1| ]
+		Thermal conductivity of the fourth layer[W |m^-1| |K^-1|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: Surf_k4.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Surf_k5
 
 	:Description:
-		Thermal conductivity of the fifth layer [W |m^-1| |K^-1| ]
+		Thermal conductivity of the fifth layer [W |m^-1| |K^-1|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: Surf_k5.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Surf_rhoCp1
 
 	:Description:
-		Volumetric heat capacity of the first layer [J |m^-3| |K^-1| ]
+		Volumetric heat capacity of the first layer [J |m^-3| |K^-1|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: Surf_rhoCp1.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Surf_rhoCp2
 
 	:Description:
-		Volumetric heat capacity of the second layer [J |m^-3| |K^-1| ]
+		Volumetric heat capacity of the second layer [J |m^-3| |K^-1|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: Surf_rhoCp2.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Surf_rhoCp3
 
 	:Description:
-		Volumetric heat capacity of the third layer[J |m^-3| |K^-1| ]
+		Volumetric heat capacity of the third layer[J |m^-3| |K^-1|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: Surf_rhoCp3.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Surf_rhoCp4
 
 	:Description:
-		Volumetric heat capacity of the fourth layer [J |m^-3| |K^-1| ]
+		Volumetric heat capacity of the fourth layer [J |m^-3| |K^-1|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: Surf_rhoCp4.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Surf_rhoCp5
 
 	:Description:
-		Volumetric heat capacity of the fifth layer [J |m^-3| |K^-1| ]
+		Volumetric heat capacity of the fifth layer [J |m^-3| |K^-1|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: Surf_rhoCp5.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Surf_thick1
@@ -3079,7 +3079,7 @@ Input_Options
 			:class: longtable
 			:file: Surf_thick1.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Surf_thick2
@@ -3092,7 +3092,7 @@ Input_Options
 			:class: longtable
 			:file: Surf_thick2.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Surf_thick3
@@ -3105,7 +3105,7 @@ Input_Options
 			:class: longtable
 			:file: Surf_thick3.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Surf_thick4
@@ -3118,7 +3118,7 @@ Input_Options
 			:class: longtable
 			:file: Surf_thick4.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Surf_thick5
@@ -3131,7 +3131,7 @@ Input_Options
 			:class: longtable
 			:file: Surf_thick5.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Tair
@@ -3144,7 +3144,7 @@ Input_Options
 			:class: longtable
 			:file: Tair.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: tau_a
@@ -3157,7 +3157,7 @@ Input_Options
 			:class: longtable
 			:file: tau_a.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: tau_f
@@ -3170,7 +3170,7 @@ Input_Options
 			:class: longtable
 			:file: tau_f.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: tau_r
@@ -3183,7 +3183,7 @@ Input_Options
 			:class: longtable
 			:file: tau_r.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: TCritic
@@ -3196,20 +3196,20 @@ Input_Options
 			:class: longtable
 			:file: TCritic.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: TempMeltFactor
 
 	:Description:
-		Hourly temperature melt factor of snow [mm |K^-1| |h^-1| ] (In previous model version, this parameter was 0.12)
+		Hourly temperature melt factor of snow [mm |K^-1| |h^-1|] (In previous model version, this parameter was 0.12)
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: TempMeltFactor.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: TH
@@ -3222,7 +3222,7 @@ Input_Options
 			:class: longtable
 			:file: TH.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Theta+_K
@@ -3235,7 +3235,7 @@ Input_Options
 			:class: longtable
 			:file: Theta+_K.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Theta_K
@@ -3248,7 +3248,7 @@ Input_Options
 			:class: longtable
 			:file: Theta_K.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Tiair
@@ -3261,7 +3261,7 @@ Input_Options
 			:class: longtable
 			:file: Tiair.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Timezone
@@ -3274,7 +3274,7 @@ Input_Options
 			:class: longtable
 			:file: Timezone.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: TL
@@ -3287,7 +3287,7 @@ Input_Options
 			:class: longtable
 			:file: TL.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: ToBldgs
@@ -3300,7 +3300,7 @@ Input_Options
 			:class: longtable
 			:file: ToBldgs.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: ToBSoil
@@ -3313,7 +3313,7 @@ Input_Options
 			:class: longtable
 			:file: ToBSoil.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: ToDecTr
@@ -3326,7 +3326,7 @@ Input_Options
 			:class: longtable
 			:file: ToDecTr.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: ToEveTr
@@ -3339,7 +3339,7 @@ Input_Options
 			:class: longtable
 			:file: ToEveTr.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: ToGrass
@@ -3352,7 +3352,7 @@ Input_Options
 			:class: longtable
 			:file: ToGrass.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: ToPaved
@@ -3365,7 +3365,7 @@ Input_Options
 			:class: longtable
 			:file: ToPaved.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: ToRunoff
@@ -3378,7 +3378,7 @@ Input_Options
 			:class: longtable
 			:file: ToRunoff.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: ToSoilStore
@@ -3391,7 +3391,7 @@ Input_Options
 			:class: longtable
 			:file: ToSoilStore.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: ToWater
@@ -3404,7 +3404,7 @@ Input_Options
 			:class: longtable
 			:file: ToWater.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: TrafficRate
@@ -3417,7 +3417,7 @@ Input_Options
 			:class: longtable
 			:file: TrafficRate.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Troad
@@ -3430,7 +3430,7 @@ Input_Options
 			:class: longtable
 			:file: Troad.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Troof
@@ -3443,7 +3443,7 @@ Input_Options
 			:class: longtable
 			:file: Troof.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Tsurf
@@ -3456,7 +3456,7 @@ Input_Options
 			:class: longtable
 			:file: Tsurf.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Twall
@@ -3469,7 +3469,7 @@ Input_Options
 			:class: longtable
 			:file: Twall.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Twall_e
@@ -3482,7 +3482,7 @@ Input_Options
 			:class: longtable
 			:file: Twall_e.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Twall_n
@@ -3495,7 +3495,7 @@ Input_Options
 			:class: longtable
 			:file: Twall_n.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Twall_s
@@ -3508,7 +3508,7 @@ Input_Options
 			:class: longtable
 			:file: Twall_s.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Twall_w
@@ -3521,150 +3521,150 @@ Input_Options
 			:class: longtable
 			:file: Twall_w.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: U
 
 	:Description:
-		Height of the wind speed measurement (z) is needed in SUEWS_SiteSelect.txt .
+		Height of the wind speed measurement (z) is needed in `SUEWS_SiteSelect.txt` .
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: U.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Wall_k1
 
 	:Description:
-		Thermal conductivity of the first layer [W |m^-1| |K^-1| ]
+		Thermal conductivity of the first layer [W |m^-1| |K^-1|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: Wall_k1.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Wall_k2
 
 	:Description:
-		Thermal conductivity of the second layer [W |m^-1| |K^-1| ]
+		Thermal conductivity of the second layer [W |m^-1| |K^-1|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: Wall_k2.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Wall_k3
 
 	:Description:
-		Thermal conductivity of the third layer [W |m^-1| |K^-1| ]
+		Thermal conductivity of the third layer [W |m^-1| |K^-1|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: Wall_k3.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Wall_k4
 
 	:Description:
-		Thermal conductivity of the fourth layer[W |m^-1| |K^-1| ]
+		Thermal conductivity of the fourth layer[W |m^-1| |K^-1|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: Wall_k4.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Wall_k5
 
 	:Description:
-		Thermal conductivity of the fifth layer[W |m^-1| |K^-1| ]
+		Thermal conductivity of the fifth layer[W |m^-1| |K^-1|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: Wall_k5.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Wall_rhoCp1
 
 	:Description:
-		Volumetric heat capacity of the first layer [J |m^-3| |K^-1| ]
+		Volumetric heat capacity of the first layer [J |m^-3| |K^-1|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: Wall_rhoCp1.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Wall_rhoCp2
 
 	:Description:
-		Volumetric heat capacity of the second layer [J |m^-3| |K^-1| ]
+		Volumetric heat capacity of the second layer [J |m^-3| |K^-1|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: Wall_rhoCp2.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Wall_rhoCp3
 
 	:Description:
-		Volumetric heat capacity of the third layer [J |m^-3| |K^-1| ]
+		Volumetric heat capacity of the third layer [J |m^-3| |K^-1|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: Wall_rhoCp3.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Wall_rhoCp4
 
 	:Description:
-		Volumetric heat capacity of the fourth layer [J |m^-3| |K^-1| ]
+		Volumetric heat capacity of the fourth layer [J |m^-3| |K^-1|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: Wall_rhoCp4.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Wall_rhoCp5
 
 	:Description:
-		Volumetric heat capacity of the fifth layer [J |m^-3| |K^-1| ]
+		Volumetric heat capacity of the fifth layer [J |m^-3| |K^-1|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: Wall_rhoCp5.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Wall_thick1
@@ -3677,7 +3677,7 @@ Input_Options
 			:class: longtable
 			:file: Wall_thick1.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Wall_thick2
@@ -3690,7 +3690,7 @@ Input_Options
 			:class: longtable
 			:file: Wall_thick2.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Wall_thick3
@@ -3703,7 +3703,7 @@ Input_Options
 			:class: longtable
 			:file: Wall_thick3.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Wall_thick4
@@ -3716,7 +3716,7 @@ Input_Options
 			:class: longtable
 			:file: Wall_thick4.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Wall_thick5
@@ -3729,7 +3729,7 @@ Input_Options
 			:class: longtable
 			:file: Wall_thick5.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: WaterDepth
@@ -3742,7 +3742,7 @@ Input_Options
 			:class: longtable
 			:file: WaterDepth.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: WaterUseProfAutoWD
@@ -3755,7 +3755,7 @@ Input_Options
 			:class: longtable
 			:file: WaterUseProfAutoWD.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: WaterUseProfAutoWE
@@ -3768,7 +3768,7 @@ Input_Options
 			:class: longtable
 			:file: WaterUseProfAutoWE.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: WaterUseProfManuWD
@@ -3781,7 +3781,7 @@ Input_Options
 			:class: longtable
 			:file: WaterUseProfManuWD.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: WaterUseProfManuWE
@@ -3794,7 +3794,7 @@ Input_Options
 			:class: longtable
 			:file: WaterUseProfManuWE.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: wdir
@@ -3807,7 +3807,7 @@ Input_Options
 			:class: longtable
 			:file: wdir.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: WetThreshold
@@ -3820,7 +3820,7 @@ Input_Options
 			:class: longtable
 			:file: WetThreshold.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: WithinGridBldgsCode
@@ -3833,7 +3833,7 @@ Input_Options
 			:class: longtable
 			:file: WithinGridBldgsCode.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: WithinGridBSoilCode
@@ -3846,7 +3846,7 @@ Input_Options
 			:class: longtable
 			:file: WithinGridBSoilCode.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: WithinGridDecTrCode
@@ -3859,7 +3859,7 @@ Input_Options
 			:class: longtable
 			:file: WithinGridDecTrCode.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: WithinGridEveTrCode
@@ -3872,7 +3872,7 @@ Input_Options
 			:class: longtable
 			:file: WithinGridEveTrCode.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: WithinGridGrassCode
@@ -3885,7 +3885,7 @@ Input_Options
 			:class: longtable
 			:file: WithinGridGrassCode.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: WithinGridPavedCode
@@ -3898,7 +3898,7 @@ Input_Options
 			:class: longtable
 			:file: WithinGridPavedCode.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: WithinGridWaterCode
@@ -3911,33 +3911,33 @@ Input_Options
 			:class: longtable
 			:file: WithinGridWaterCode.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Wuh
 
 	:Description:
-		External water use [ |m^3| ]
+		External water use [ |m^3|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: Wuh.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: xsmd
 
 	:Description:
-		Observed soil moisture [ |m^3| |m^-3| or kg |kg^-1| ]
+		Observed soil moisture [ |m^3| |m^-3| or kg |kg^-1|]
 
 	:Configuration:
 		.. csv-table::
 			:class: longtable
 			:file: xsmd.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: Year
@@ -3950,7 +3950,7 @@ Input_Options
 			:class: longtable
 			:file: Year.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: z
@@ -3963,7 +3963,7 @@ Input_Options
 			:class: longtable
 			:file: z.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: z0
@@ -3976,7 +3976,7 @@ Input_Options
 			:class: longtable
 			:file: z0.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: zd
@@ -3989,7 +3989,7 @@ Input_Options
 			:class: longtable
 			:file: zd.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38
 
 
 .. option:: zi0
@@ -4002,4 +4002,4 @@ Input_Options
 			:class: longtable
 			:file: zi0.csv
 			:header-rows: 1
-			:widths: 46 18 36
+			:widths: 44 18 38

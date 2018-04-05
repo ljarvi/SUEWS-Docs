@@ -36,7 +36,7 @@ CBLInput.nml.
 Definitions and example file of initial values prepared for Sacramento.
 
 .. list-table::
-   :widths: 33 33 33
+   :widths: auto
    :header-rows: 1
 
    * - No.
@@ -71,7 +71,7 @@ Definitions and example file of initial values prepared for Sacramento.
    for the model performance in appropriate ranges [Shiho2015]_.
 
 .. list-table::
-   :widths: 12 12 12 12 12 12 12 12
+   :widths: auto
    :header-rows: 1
 
    * - id

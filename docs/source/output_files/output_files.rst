@@ -65,8 +65,7 @@ SSss_YYYY_TT.txt
 ~~~~~~~~~~~~~~~~
 
 SUEWS produces the main output file (SSss_YYYY_tt.txt) with time
-resolution (TT min) set by **ResolutionFilesOut** in
-`RunControl <#RunControl>`__.
+resolution (TT min) set by **ResolutionFilesOut** in `RunControl.nml`.
 
 Before these main data files are written out, SUEWS provides a summary
 of the column names, units and variables included in the file

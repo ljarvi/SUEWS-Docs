@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.3.23)  5 APR 2018 12:21
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.3.23)  5 APR 2018 14:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -938,9 +938,11 @@ Package tocloft Info: The document has chapter divisions on input line 44.
 \cfttabindent=\skip113
 \cfttabnumwidth=\skip114
 )
+
+Package array Warning: Column T is already defined on input line 47.
+
 \@indexfile=\write4
 \openout4 = `SUEWS.idx'.
-
 
 Writing index file SUEWS.idx
 (./SUEWS.aux
@@ -951,30 +953,30 @@ fined.
 )
 \openout1 = `SUEWS.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 57.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 57.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 59.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 59.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
 .................................................
 . fontspec info: "setup-math"
 . 
@@ -982,56 +984,56 @@ LaTeX Font Info:    ... okay on input line 57.
 .................................................
 \symlegacymaths=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 57.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 57.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 57.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 57.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 57.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 57.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 57.
-LaTeX Font Info:    Redeclaring math accent \check on input line 57.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 57.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 57.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 57.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 57.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 57.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 57.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 57.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 57.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 57.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 57.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 57.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 57.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 57.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 57.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 57.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 57.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 59.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 59.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 59.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 59.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 59.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 59.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 59.
+LaTeX Font Info:    Redeclaring math accent \check on input line 59.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 59.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 59.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 59.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 59.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 59.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 59.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 59.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 59.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 59.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 59.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 59.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 59.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 59.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 59.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 59.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 59.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 57.
+(Font)              `operators' in the math version `normal' on input line 59.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 57.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 59.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 57.
+(Font)              `operators' in the math version `bold' on input line 59.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 57.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 59.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 57.
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 59.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 57.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 59.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 57.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 59.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 57.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 59.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 57.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 59.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/bx/n on input line 57.
+(Font)                  TU/lmr/m/n --> TU/lmr/bx/n on input line 59.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/bx/it on input line 57.
+(Font)                  OT1/cmr/bx/it --> TU/lmr/bx/it on input line 59.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 57.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 59.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 57.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 59.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1068,7 +1070,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box60
-Package hyperref Info: Link coloring ON on input line 57.
+Package hyperref Info: Link coloring ON on input line 59.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -1077,30 +1079,30 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count179
 )
-LaTeX Info: Redefining \ref on input line 57.
-LaTeX Info: Redefining \pageref on input line 57.
-LaTeX Info: Redefining \nameref on input line 57.
+LaTeX Info: Redefining \ref on input line 59.
+LaTeX Info: Redefining \pageref on input line 59.
+LaTeX Info: Redefining \nameref on input line 59.
 
 (./SUEWS.out) (./SUEWS.out)
 \@outlinefile=\write5
 \openout5 = `SUEWS.out'.
 
-Package hyperref Info: Option `pageanchor' set `false' on input line 60.
+Package hyperref Info: Option `pageanchor' set `false' on input line 62.
 LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <10> not available
-(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 60.
+(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 62.
 LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <17.28> not available
-(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 60.
-LaTeX Font Info:    Try loading font information for U+msa on input line 60.
+(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 62.
+LaTeX Font Info:    Try loading font information for U+msa on input line 62.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 60.
+LaTeX Font Info:    Try loading font information for U+msb on input line 62.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (21.9551pt too wide) in paragraph at lines 60--60
+Overfull \hbox (21.9551pt too wide) in paragraph at lines 62--62
  [][]
  []
 
@@ -1117,7 +1119,7 @@ Overfull \hbox (21.9551pt too wide) in paragraph at lines 60--60
  [2]
 
 LaTeX Warning: Hyper reference `index:index-page' on page 1 undefined on input 
-line 67.
+line 69.
 
 [1
 
@@ -1126,12 +1128,12 @@ line 67.
 ]
 Chapter 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--117
+Underfull \hbox (badness 10000) in paragraph at lines 115--119
 []\TU/lmr/m/n/10 Järvi L, S Grimmond, JP McFadden, A Christen, I Stra-
  []
 
 
-Underfull \hbox (badness 5637) in paragraph at lines 128--131
+Underfull \hbox (badness 5637) in paragraph at lines 130--133
 \TU/lmr/m/n/10 thaus, L Järvi 2017: Sensitivity of Surface Urban Energy and Wat
 er Bal-
  []
@@ -1152,70 +1154,70 @@ Chapter 3.
 Chapter 4.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 495.
+(hyperref)                removing `math shift' on input line 497.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 495.
+(hyperref)                removing `subscript' on input line 497.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 495.
+(hyperref)                removing `math shift' on input line 497.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 532.
+(hyperref)                removing `math shift' on input line 534.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Delta' on input line 532.
+(hyperref)                removing `\Delta' on input line 534.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 532.
+(hyperref)                removing `math shift' on input line 534.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 532.
+(hyperref)                removing `subscript' on input line 534.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 532.
+(hyperref)                removing `math shift' on input line 534.
 
 [9
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 563.
+(hyperref)                removing `math shift' on input line 565.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 563.
+(hyperref)                removing `subscript' on input line 565.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 563.
+(hyperref)                removing `math shift' on input line 565.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 563.
+(hyperref)                removing `math shift' on input line 565.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 563.
+(hyperref)                removing `subscript' on input line 565.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 563.
+(hyperref)                removing `math shift' on input line 565.
 
 
 LaTeX Warning: Hyper reference `parameterisations-and-sub-models:Differences_be
-tween_SUEWS,_LUMPS_and_FRAISE' on page 10 undefined on input line 587.
+tween_SUEWS,_LUMPS_and_FRAISE' on page 10 undefined on input line 589.
 
 
 LaTeX Warning: Hyper reference `parameterisations-and-sub-models:SUEWS_Snow.txt
-' on page 10 undefined on input line 641.
+' on page 10 undefined on input line 643.
 
 [10]
 File: Bluews_2.jpg Graphic file (type QTm)
@@ -1224,7 +1226,7 @@ File: Bluews_2.jpg Graphic file (type QTm)
 ]
 Chapter 5.
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 855--860
+Underfull \hbox (badness 10000) in paragraph at lines 857--862
 []\TU/lmr/m/n/10 (+) There is a second file InitialConditionsSSss_YYYY_EndOfRun
 .nml or InitialCondition-
  []
@@ -1232,970 +1234,910 @@ Underfull \hbox (badness 10000) in paragraph at lines 855--860
 [14]
 
 LaTeX Warning: Hyper reference `prepare-to-run-the-model:SUEWS_Soil.txt' on pag
-e 15 undefined on input line 962.
+e 15 undefined on input line 964.
 
 
 LaTeX Warning: Hyper reference `prepare-to-run-the-model:SUEWS_Veg.txt' on page
- 15 undefined on input line 964.
+ 15 undefined on input line 966.
 
 
 LaTeX Warning: Hyper reference `prepare-to-run-the-model:Input_files' on page 1
-5 undefined on input line 970.
+5 undefined on input line 972.
 
 [15]
 
 LaTeX Warning: Hyper reference `prepare-to-run-the-model:Input_files' on page 1
-6 undefined on input line 1089.
+6 undefined on input line 1091.
 
 
 LaTeX Warning: Hyper reference `prepare-to-run-the-model:A_text_editor' on page
- 16 undefined on input line 1103.
+ 16 undefined on input line 1105.
 
 [16]
 
 LaTeX Warning: Hyper reference `prepare-to-run-the-model:Input_files' on page 1
-7 undefined on input line 1154.
+7 undefined on input line 1156.
 
 
 LaTeX Warning: Hyper reference `prepare-to-run-the-model:A_text_editor' on page
- 17 undefined on input line 1170.
+ 17 undefined on input line 1172.
 
 [17]
-Overfull \hbox (1.28601pt too wide) in paragraph at lines 1266--1266
+Overfull \hbox (1.28601pt too wide) in paragraph at lines 1268--1268
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1266--1266
+Underfull \hbox (badness 10000) in paragraph at lines 1268--1268
 
  []
 
 [18]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <9> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 1315.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 1317.
  [19] [20
 
 ]
 Chapter 6.
 
-Overfull \vbox (2.32843pt too high) detected at line 1374
+Overfull \vbox (2.32843pt too high) detected at line 1376
  []
 
 [21] [22]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 1544.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 1546.
  [23]
-Underfull \hbox (badness 7047) in paragraph at lines 1704--1707
+Underfull \hbox (badness 7047) in paragraph at lines 1706--1709
 \TU/lmr/m/n/10 plied in meteorological forcing file.
  []
 
 
-Underfull \hbox (badness 7047) in paragraph at lines 1722--1727
+Underfull \hbox (badness 7047) in paragraph at lines 1724--1729
 \TU/lmr/m/n/10 plied in meteorological forcing file.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1730--1735
+Underfull \hbox (badness 10000) in paragraph at lines 1732--1737
 \TU/lmr/m/n/10 meteorological forcing file (Loridan
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1730--1735
+Underfull \hbox (badness 10000) in paragraph at lines 1732--1737
 \TU/lmr/m/n/10 counted for in albedo calculation.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1730--1735
+Underfull \hbox (badness 10000) in paragraph at lines 1732--1737
 \TU/lmr/m/n/10 SSss_YYYY_NARPOut.txt file pro-
  []
 
-[24]
-Overfull \hbox (8.2pt too wide) in paragraph at lines 1797--1797
-[]\TU/lmss/m/n/10 Value| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1797--1797
-[]\TU/lmr/m/n/10 Uses values provided in the meteorological forcing file
- []
-
-[25]
-Overfull \hbox (8.2pt too wide) in paragraph at lines 1898--1898
-[]\TU/lmss/m/n/10 Value| 
- []
-
-[26] [27]
-Overfull \hbox (8.2pt too wide) in paragraph at lines 2105--2105
-[]\TU/lmss/m/n/10 Value| 
- []
-
-
-Overfull \hbox (8.2pt too wide) in paragraph at lines 2155--2155
-[]\TU/lmss/m/n/10 Value| 
- []
-
-
-Underfull \hbox (badness 5893) in paragraph at lines 2188--2189
+[24] [25] [26] [27]
+Underfull \hbox (badness 5893) in paragraph at lines 2190--2191
 []\TU/lmr/m/n/10 External water use modelled
  []
 
-[28] [29]
-Overfull \hbox (5.7492pt too wide) in paragraph at lines 2366--2366
-[]\TU/lmss/m/n/10 Value| 
- []
-
-
-Overfull \hbox (4.89684pt too wide) in paragraph at lines 2408--2408
-[]\TU/lmss/m/n/10 Value| 
- []
-
-
-Overfull \hbox (4.4251pt too wide) in paragraph at lines 2450--2450
-[]\TU/lmss/m/n/10 Value| 
- []
-
-[30]
-Overfull \hbox (8.2pt too wide) in paragraph at lines 2491--2491
-[]\TU/lmss/m/n/10 Value| 
- []
-
-
-Overfull \hbox (8.2pt too wide) in paragraph at lines 2532--2532
-[]\TU/lmss/m/n/10 Value| 
- []
-
-
-Overfull \hbox (8.2pt too wide) in paragraph at lines 2577--2577
-[]\TU/lmss/m/n/10 Value| 
- []
-
-
-Overfull \hbox (3.76285pt too wide) in paragraph at lines 2617--2617
-[]\TU/lmss/m/n/10 Value| 
- []
-
-[31] [32]
-Underfull \hbox (badness 10000) in paragraph at lines 2755--2756
+[28] [29] [30] [31] [32]
+Underfull \hbox (badness 10000) in paragraph at lines 2757--2758
 \TU/lmr/m/n/10 among among RainAmongN
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2762--2763
+Underfull \hbox (badness 10000) in paragraph at lines 2764--2765
 \TU/lmr/m/n/10 among among RainAmongN
  []
 
 [33] [34]
-Overfull \hbox (3.79224pt too wide) in paragraph at lines 2974--2975
+Overfull \hbox (3.79224pt too wide) in paragraph at lines 2976--2977
 []|\TU/lmss/m/n/10 No.| 
  []
 
 
-Overfull \hbox (4.08223pt too wide) in paragraph at lines 2978--2979
+Overfull \hbox (4.08223pt too wide) in paragraph at lines 2980--2981
 []|\TU/lmss/m/n/10 Use| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2989--2991
+Underfull \hbox (badness 10000) in paragraph at lines 2991--2993
 []|\TU/lmr/m/n/10 Code linking to the AnthropogenicCode column in
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 2996--2997
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 2998--2999
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 3005--3006
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 3007--3008
 []|[][]\TU/lmtt/m/it/10 MU[][]
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 3014--3015
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 3016--3017
 []|[][]\TU/lmtt/m/it/10 MU[][]
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 3023--3024
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 3025--3026
 []|[][]\TU/lmtt/m/it/10 MU[][]
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 3032--3033
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 3034--3035
 []|[][]\TU/lmtt/m/it/10 MU[][]
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 3041--3042
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 3043--3044
 []|[][]\TU/lmtt/m/it/10 MU[][]
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 3050--3051
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 3052--3053
 []|[][]\TU/lmtt/m/it/10 MU[][]
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 3059--3060
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 3061--3062
 []|[][]\TU/lmtt/m/it/10 MU[][]
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 3068--3069
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 3070--3071
 []|[][]\TU/lmtt/m/it/10 MU[][]
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 3077--3078
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 3079--3080
 []|[][]\TU/lmtt/m/it/10 MU[][]
  []
 
 [35]
-Overfull \hbox (3.79224pt too wide) in paragraph at lines 3105--3106
+Overfull \hbox (3.79224pt too wide) in paragraph at lines 3107--3108
 []|\TU/lmss/m/n/10 No.| 
  []
 
 
-Overfull \hbox (4.08223pt too wide) in paragraph at lines 3109--3110
+Overfull \hbox (4.08223pt too wide) in paragraph at lines 3111--3112
 []|\TU/lmss/m/n/10 Use| 
  []
 
 [36]
-Overfull \hbox (3.79224pt too wide) in paragraph at lines 3256--3257
+Overfull \hbox (3.79224pt too wide) in paragraph at lines 3258--3259
 []|\TU/lmss/m/n/10 No.| 
  []
 
 
-Overfull \hbox (4.08223pt too wide) in paragraph at lines 3260--3261
+Overfull \hbox (4.08223pt too wide) in paragraph at lines 3262--3263
 []|\TU/lmss/m/n/10 Use| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 3278--3279
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 3280--3281
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 3287--3288
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 3289--3290
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 3296--3297
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 3298--3299
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 3305--3306
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 3307--3308
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 3368--3369
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 3370--3371
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 3377--3378
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 3379--3380
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 3386--3387
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 3388--3389
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 3395--3396
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 3397--3398
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 3404--3405
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 3406--3407
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 3413--3414
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 3415--3416
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 3422--3423
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 3424--3425
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 3431--3432
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 3433--3434
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 3440--3441
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 3442--3443
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 3449--3450
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 3451--3452
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 3458--3459
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 3460--3461
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 3467--3468
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 3469--3470
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 3476--3477
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 3478--3479
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 3485--3486
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 3487--3488
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 [37]
-Overfull \hbox (3.79224pt too wide) in paragraph at lines 3507--3509
+Overfull \hbox (3.79224pt too wide) in paragraph at lines 3509--3511
 []|\TU/lmss/m/n/10 No.| 
  []
 
 
-Overfull \hbox (4.08223pt too wide) in paragraph at lines 3511--3513
+Overfull \hbox (4.08223pt too wide) in paragraph at lines 3513--3515
 []|\TU/lmss/m/n/10 Use| 
  []
 
 
-Overfull \hbox (3.79224pt too wide) in paragraph at lines 3522--3524
+Overfull \hbox (3.79224pt too wide) in paragraph at lines 3524--3526
 []|\TU/lmss/m/n/10 No.| 
  []
 
 
-Overfull \hbox (4.08223pt too wide) in paragraph at lines 3526--3528
+Overfull \hbox (4.08223pt too wide) in paragraph at lines 3528--3530
 []|\TU/lmss/m/n/10 Use| 
  []
 
 
-Underfull \hbox (badness 5817) in paragraph at lines 3546--3548
+Underfull \hbox (badness 5817) in paragraph at lines 3548--3550
 []|\TU/lmr/m/n/10 Code linking to SUEWS_SiteSelect.txt for paved surfaces
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 3553--3554
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 3555--3556
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 3562--3563
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 3564--3565
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 3571--3572
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 3573--3574
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 3733--3734
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 3735--3736
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 3742--3743
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 3744--3745
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 3751--3752
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 3753--3754
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 [38] [39]
-Overfull \hbox (3.79224pt too wide) in paragraph at lines 3815--3816
+Overfull \hbox (3.79224pt too wide) in paragraph at lines 3817--3818
 []|\TU/lmss/m/n/10 No.| 
  []
 
 
-Overfull \hbox (4.08223pt too wide) in paragraph at lines 3819--3820
+Overfull \hbox (4.08223pt too wide) in paragraph at lines 3821--3822
 []|\TU/lmss/m/n/10 Use| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3830--3832
+Underfull \hbox (badness 10000) in paragraph at lines 3832--3834
 []|\TU/lmr/m/n/10 Code linking to the OHMCode_SummerWet, OHM-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3830--3832
+Underfull \hbox (badness 10000) in paragraph at lines 3832--3834
 \TU/lmr/m/n/10 Code_SummerDry, OHMCode_WinterWet and OHM-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3830--3832
+Underfull \hbox (badness 10000) in paragraph at lines 3832--3834
 \TU/lmr/m/n/10 Code_WinterDry columns in SUEWS_NonVeg.txt,
  []
 
 
-Underfull \hbox (badness 5652) in paragraph at lines 3830--3832
+Underfull \hbox (badness 5652) in paragraph at lines 3832--3834
 \TU/lmr/m/n/10 SUEWS_Veg,txt, SUEWS_Water.txt and SUEWS_Snow.txt
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 3837--3838
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 3839--3840
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 3846--3847
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 3848--3849
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 3855--3856
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 3857--3858
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 [40]
-Overfull \hbox (3.79224pt too wide) in paragraph at lines 3906--3907
+Overfull \hbox (3.79224pt too wide) in paragraph at lines 3908--3909
 []|\TU/lmss/m/n/10 No.| 
  []
 
 
-Overfull \hbox (4.08223pt too wide) in paragraph at lines 3910--3911
+Overfull \hbox (4.08223pt too wide) in paragraph at lines 3912--3913
 []|\TU/lmss/m/n/10 Use| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 3928--3929
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 3930--3931
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 [41]
-Overfull \hbox (3.79224pt too wide) in paragraph at lines 3952--3954
+Overfull \hbox (3.79224pt too wide) in paragraph at lines 3954--3956
 []|\TU/lmss/m/n/10 No.| 
  []
 
 
-Overfull \hbox (4.08223pt too wide) in paragraph at lines 3956--3958
+Overfull \hbox (4.08223pt too wide) in paragraph at lines 3958--3960
 []|\TU/lmss/m/n/10 Use| 
  []
 
 
-Overfull \hbox (3.79224pt too wide) in paragraph at lines 3967--3969
+Overfull \hbox (3.79224pt too wide) in paragraph at lines 3969--3971
 []|\TU/lmss/m/n/10 No.| 
  []
 
 
-Overfull \hbox (4.08223pt too wide) in paragraph at lines 3971--3973
+Overfull \hbox (4.08223pt too wide) in paragraph at lines 3973--3975
 []|\TU/lmss/m/n/10 Use| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 3989--3990
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 3991--3992
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 3998--3999
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4000--4001
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4007--4008
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4009--4010
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4016--4017
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4018--4019
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4025--4026
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4027--4028
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4034--4035
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4036--4037
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4043--4044
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4045--4046
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4052--4053
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4054--4055
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4061--4062
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4063--4064
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4070--4071
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4072--4073
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4106--4107
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4108--4109
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4115--4116
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4117--4118
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4124--4125
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4126--4127
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4133--4134
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4135--4136
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4142--4143
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4144--4145
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4151--4152
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4153--4154
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4160--4161
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4162--4163
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4169--4170
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4171--4172
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4178--4179
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4180--4181
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4187--4188
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4189--4190
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4196--4197
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4198--4199
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4205--4206
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4207--4208
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4214--4215
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4216--4217
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 [42] [43]
-Underfull \hbox (badness 10000) in paragraph at lines 4538--4539
+Underfull \hbox (badness 10000) in paragraph at lines 4540--4541
 []|[][]\TU/lmtt/m/it/10 MD[][]
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4538--4539
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4540--4541
 [][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4547--4548
+Underfull \hbox (badness 10000) in paragraph at lines 4549--4550
 []|[][]\TU/lmtt/m/it/10 MD[][]
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4547--4548
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4549--4550
 [][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4556--4557
+Underfull \hbox (badness 10000) in paragraph at lines 4558--4559
 []|[][]\TU/lmtt/m/it/10 MD[][]
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4556--4557
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4558--4559
 [][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4565--4566
+Underfull \hbox (badness 10000) in paragraph at lines 4567--4568
 []|[][]\TU/lmtt/m/it/10 MD[][]
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4565--4566
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4567--4568
 [][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4574--4575
+Underfull \hbox (badness 10000) in paragraph at lines 4576--4577
 []|[][]\TU/lmtt/m/it/10 MD[][]
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4574--4575
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4576--4577
 [][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4583--4584
+Underfull \hbox (badness 10000) in paragraph at lines 4585--4586
 []|[][]\TU/lmtt/m/it/10 MD[][]
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4583--4584
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4585--4586
 [][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4592--4593
+Underfull \hbox (badness 10000) in paragraph at lines 4594--4595
 []|[][]\TU/lmtt/m/it/10 MD[][]
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4592--4593
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4594--4595
 [][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4601--4602
+Underfull \hbox (badness 10000) in paragraph at lines 4603--4604
 []|[][]\TU/lmtt/m/it/10 MD[][]
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4601--4602
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4603--4604
 [][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4610--4611
+Underfull \hbox (badness 10000) in paragraph at lines 4612--4613
 []|[][]\TU/lmtt/m/it/10 MD[][]
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4610--4611
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4612--4613
 [][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4619--4620
+Underfull \hbox (badness 10000) in paragraph at lines 4621--4622
 []|[][]\TU/lmtt/m/it/10 MD[][]
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4619--4620
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4621--4622
 [][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4628--4629
+Underfull \hbox (badness 10000) in paragraph at lines 4630--4631
 []|[][]\TU/lmtt/m/it/10 MD[][]
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4628--4629
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4630--4631
 [][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4637--4638
+Underfull \hbox (badness 10000) in paragraph at lines 4639--4640
 []|[][]\TU/lmtt/m/it/10 MD[][]
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4637--4638
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4639--4640
 [][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4646--4647
+Underfull \hbox (badness 10000) in paragraph at lines 4648--4649
 []|[][]\TU/lmtt/m/it/10 MD[][]
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4646--4647
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4648--4649
 [][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4655--4656
+Underfull \hbox (badness 10000) in paragraph at lines 4657--4658
 []|[][]\TU/lmtt/m/it/10 MD[][]
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4655--4656
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4657--4658
 [][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4664--4665
+Underfull \hbox (badness 10000) in paragraph at lines 4666--4667
 []|[][]\TU/lmtt/m/it/10 MD[][]
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4664--4665
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4666--4667
 [][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4673--4674
+Underfull \hbox (badness 10000) in paragraph at lines 4675--4676
 []|[][]\TU/lmtt/m/it/10 MD[][]
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4673--4674
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4675--4676
 [][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4682--4683
+Underfull \hbox (badness 10000) in paragraph at lines 4684--4685
 []|[][]\TU/lmtt/m/it/10 MD[][]
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4682--4683
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4684--4685
 [][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4691--4692
+Underfull \hbox (badness 10000) in paragraph at lines 4693--4694
 []|[][]\TU/lmtt/m/it/10 MD[][]
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4691--4692
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4693--4694
 [][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4702--4704
+Underfull \hbox (badness 10000) in paragraph at lines 4704--4706
 []|\TU/lmr/m/n/10 Code that links to the fraction of water that flows
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4702--4704
+Underfull \hbox (badness 10000) in paragraph at lines 4704--4706
 \TU/lmr/m/n/10 from Paved surfaces to surfaces in columns 2-10 of
  []
 
 
-Underfull \hbox (badness 7064) in paragraph at lines 4702--4704
+Underfull \hbox (badness 7064) in paragraph at lines 4704--4706
 \TU/lmr/m/n/10 SUEWS_WithinGridWaterDist.txt . Value of integer is
  []
 
 [44]
-Underfull \hbox (badness 10000) in paragraph at lines 4711--4713
+Underfull \hbox (badness 10000) in paragraph at lines 4713--4715
 []|\TU/lmr/m/n/10 Code that links to the fraction of water that flows
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4711--4713
+Underfull \hbox (badness 10000) in paragraph at lines 4713--4715
 \TU/lmr/m/n/10 from Bldgs surfaces to surfaces in columns 2-10 of
  []
 
 
-Underfull \hbox (badness 6141) in paragraph at lines 4711--4713
+Underfull \hbox (badness 6141) in paragraph at lines 4713--4715
 \TU/lmr/m/n/10 bitrary but must match code specified in column 1 of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4720--4722
+Underfull \hbox (badness 10000) in paragraph at lines 4722--4724
 []|\TU/lmr/m/n/10 Code that links to the fraction of water that flows
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4720--4722
+Underfull \hbox (badness 10000) in paragraph at lines 4722--4724
 \TU/lmr/m/n/10 from EveTr surfaces to surfaces in columns 2-10 of
  []
 
 
-Underfull \hbox (badness 6141) in paragraph at lines 4720--4722
+Underfull \hbox (badness 6141) in paragraph at lines 4722--4724
 \TU/lmr/m/n/10 bitrary but must match code specified in column 1 of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4729--4731
+Underfull \hbox (badness 10000) in paragraph at lines 4731--4733
 []|\TU/lmr/m/n/10 Code that links to the fraction of water that flows
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4729--4731
+Underfull \hbox (badness 10000) in paragraph at lines 4731--4733
 \TU/lmr/m/n/10 from DecTr surfaces to surfaces in columns 2-10 of
  []
 
 
-Underfull \hbox (badness 6141) in paragraph at lines 4729--4731
+Underfull \hbox (badness 6141) in paragraph at lines 4731--4733
 \TU/lmr/m/n/10 bitrary but must match code specified in column 1 of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4738--4740
+Underfull \hbox (badness 10000) in paragraph at lines 4740--4742
 []|\TU/lmr/m/n/10 Code that links to the fraction of water that flows
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4738--4740
+Underfull \hbox (badness 10000) in paragraph at lines 4740--4742
 \TU/lmr/m/n/10 from Grass surfaces to surfaces in columns 2-10 of
  []
 
 
-Underfull \hbox (badness 6141) in paragraph at lines 4738--4740
+Underfull \hbox (badness 6141) in paragraph at lines 4740--4742
 \TU/lmr/m/n/10 bitrary but must match code specified in column 1 of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4747--4749
+Underfull \hbox (badness 10000) in paragraph at lines 4749--4751
 []|\TU/lmr/m/n/10 Code that links to the fraction of water that flows
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4747--4749
+Underfull \hbox (badness 10000) in paragraph at lines 4749--4751
 \TU/lmr/m/n/10 from BSoil surfaces to surfaces in columns 2-10 of
  []
 
 
-Underfull \hbox (badness 6141) in paragraph at lines 4747--4749
+Underfull \hbox (badness 6141) in paragraph at lines 4749--4751
 \TU/lmr/m/n/10 bitrary but must match code specified in column 1 of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4756--4758
+Underfull \hbox (badness 10000) in paragraph at lines 4758--4760
 []|\TU/lmr/m/n/10 Code that links to the fraction of water that flows
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4756--4758
+Underfull \hbox (badness 10000) in paragraph at lines 4758--4760
 \TU/lmr/m/n/10 from Water surfaces to surfaces in columns 2-10 of
  []
 
 
-Underfull \hbox (badness 6141) in paragraph at lines 4756--4758
+Underfull \hbox (badness 6141) in paragraph at lines 4758--4760
 \TU/lmr/m/n/10 bitrary but must match code specified in column 1 of
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4763--4764
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4765--4766
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4772--4773
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4774--4775
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4781--4782
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4783--4784
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4790--4791
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4792--4793
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (5.31123pt too wide) in paragraph at lines 4797--4798
+Overfull \hbox (5.31123pt too wide) in paragraph at lines 4799--4800
 []|[][]\TU/lmtt/m/it/10 Code_ESTMClass_Paved1[][]| 
  []
 
 
-Overfull \hbox (5.80124pt too wide) in paragraph at lines 4806--4807
+Overfull \hbox (5.80124pt too wide) in paragraph at lines 4808--4809
 []|[][]\TU/lmtt/m/it/10 Code_ESTMClass_Paved2[][]| 
  []
 
 
-Overfull \hbox (5.90123pt too wide) in paragraph at lines 4815--4816
+Overfull \hbox (5.90123pt too wide) in paragraph at lines 4817--4818
 []|[][]\TU/lmtt/m/it/10 Code_ESTMClass_Paved3[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4826--4827
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4828--4829
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4835--4836
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4837--4838
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4844--4845
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4846--4847
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4853--4854
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4855--4856
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 4862--4863
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 4864--4865
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (5.31123pt too wide) in paragraph at lines 4869--4870
+Overfull \hbox (5.31123pt too wide) in paragraph at lines 4871--4872
 []|[][]\TU/lmtt/m/it/10 Code_ESTMClass_Bldgs1[][]| 
  []
 
 
-Overfull \hbox (3.93224pt too wide) in paragraph at lines 4876--4877
+Overfull \hbox (3.93224pt too wide) in paragraph at lines 4878--4879
 []|\TU/lmr/m/n/10 100| 
  []
 
 
-Overfull \hbox (5.80124pt too wide) in paragraph at lines 4878--4879
+Overfull \hbox (5.80124pt too wide) in paragraph at lines 4880--4881
 []|[][]\TU/lmtt/m/it/10 Code_ESTMClass_Bldgs2[][]| 
  []
 
 [45]
-Overfull \hbox (3.93224pt too wide) in paragraph at lines 4885--4886
+Overfull \hbox (3.93224pt too wide) in paragraph at lines 4887--4888
 []|\TU/lmr/m/n/10 101| 
  []
 
 
-Overfull \hbox (5.90123pt too wide) in paragraph at lines 4887--4888
+Overfull \hbox (5.90123pt too wide) in paragraph at lines 4889--4890
 []|[][]\TU/lmtt/m/it/10 Code_ESTMClass_Bldgs3[][]| 
  []
 
 
-Overfull \hbox (3.93224pt too wide) in paragraph at lines 4894--4895
+Overfull \hbox (3.93224pt too wide) in paragraph at lines 4896--4897
 []|\TU/lmr/m/n/10 102| 
  []
 
 
-Overfull \hbox (5.31123pt too wide) in paragraph at lines 4896--4897
+Overfull \hbox (5.31123pt too wide) in paragraph at lines 4898--4899
 []|[][]\TU/lmtt/m/it/10 Code_ESTMClass_Bldgs4[][]| 
  []
 
 
-Overfull \hbox (3.93224pt too wide) in paragraph at lines 4903--4904
+Overfull \hbox (3.93224pt too wide) in paragraph at lines 4905--4906
 []|\TU/lmr/m/n/10 103| 
  []
 
 
-Overfull \hbox (5.90123pt too wide) in paragraph at lines 4905--4906
+Overfull \hbox (5.90123pt too wide) in paragraph at lines 4907--4908
 []|[][]\TU/lmtt/m/it/10 Code_ESTMClass_Bldgs5[][]| 
  []
 
@@ -2205,2323 +2147,1805 @@ File: GridConnections_1.jpg Graphic file (type QTm)
 File: GridConnections_2_v2.jpg Graphic file (type QTm)
  <use  "GridConnections_2_v2.jpg" >
 [48] [49]
-Overfull \hbox (3.79224pt too wide) in paragraph at lines 5037--5039
+Overfull \hbox (3.79224pt too wide) in paragraph at lines 5039--5041
 []|\TU/lmss/m/n/10 No.| 
  []
 
 
-Overfull \hbox (4.08223pt too wide) in paragraph at lines 5041--5043
+Overfull \hbox (4.08223pt too wide) in paragraph at lines 5043--5045
 []|\TU/lmss/m/n/10 Use| 
  []
 
 
-Overfull \hbox (3.79224pt too wide) in paragraph at lines 5052--5054
+Overfull \hbox (3.79224pt too wide) in paragraph at lines 5054--5056
 []|\TU/lmss/m/n/10 No.| 
  []
 
 
-Overfull \hbox (4.08223pt too wide) in paragraph at lines 5056--5058
+Overfull \hbox (4.08223pt too wide) in paragraph at lines 5058--5060
 []|\TU/lmss/m/n/10 Use| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 5083--5084
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 5085--5086
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 5092--5093
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 5094--5095
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 5101--5102
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 5103--5104
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 5110--5111
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 5112--5113
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 5119--5120
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 5121--5122
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 5272--5273
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 5274--5275
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 5281--5282
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 5283--5284
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 5290--5291
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 5292--5293
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 [50]
-Overfull \hbox (3.79224pt too wide) in paragraph at lines 5323--5324
+Overfull \hbox (3.79224pt too wide) in paragraph at lines 5325--5326
 []|\TU/lmss/m/n/10 No.| 
  []
 
 
-Overfull \hbox (4.08223pt too wide) in paragraph at lines 5327--5328
+Overfull \hbox (4.08223pt too wide) in paragraph at lines 5329--5330
 []|\TU/lmss/m/n/10 Use| 
  []
 
 [51]
-Overfull \hbox (3.79224pt too wide) in paragraph at lines 5432--5434
+Overfull \hbox (3.79224pt too wide) in paragraph at lines 5434--5436
 []|\TU/lmss/m/n/10 No.| 
  []
 
 
-Overfull \hbox (4.08223pt too wide) in paragraph at lines 5436--5438
+Overfull \hbox (4.08223pt too wide) in paragraph at lines 5438--5440
 []|\TU/lmss/m/n/10 Use| 
  []
 
 
-Overfull \hbox (3.79224pt too wide) in paragraph at lines 5447--5449
+Overfull \hbox (3.79224pt too wide) in paragraph at lines 5449--5451
 []|\TU/lmss/m/n/10 No.| 
  []
 
 
-Overfull \hbox (4.08223pt too wide) in paragraph at lines 5451--5453
+Overfull \hbox (4.08223pt too wide) in paragraph at lines 5453--5455
 []|\TU/lmss/m/n/10 Use| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 5478--5479
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 5480--5481
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 5487--5488
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 5489--5490
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 5496--5497
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 5498--5499
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 5586--5587
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 5588--5589
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 5595--5596
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 5597--5598
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 5604--5605
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 5606--5607
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 5613--5614
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 5615--5616
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Underfull \hbox (badness 6141) in paragraph at lines 5768--5770
+Underfull \hbox (badness 6141) in paragraph at lines 5770--5772
 \TU/lmr/m/n/10 bitrary but must match code specified in column 1 of
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 5775--5776
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 5777--5778
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 5784--5785
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 5786--5787
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 5793--5794
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 5795--5796
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 [52] [53] [54]
-Overfull \hbox (3.79224pt too wide) in paragraph at lines 5810--5812
+Overfull \hbox (3.79224pt too wide) in paragraph at lines 5812--5814
 []|\TU/lmss/m/n/10 No.| 
  []
 
 
-Overfull \hbox (4.08223pt too wide) in paragraph at lines 5814--5816
+Overfull \hbox (4.08223pt too wide) in paragraph at lines 5816--5818
 []|\TU/lmss/m/n/10 Use| 
  []
 
 
-Overfull \hbox (3.79224pt too wide) in paragraph at lines 5825--5827
+Overfull \hbox (3.79224pt too wide) in paragraph at lines 5827--5829
 []|\TU/lmss/m/n/10 No.| 
  []
 
 
-Overfull \hbox (4.08223pt too wide) in paragraph at lines 5829--5831
+Overfull \hbox (4.08223pt too wide) in paragraph at lines 5831--5833
 []|\TU/lmss/m/n/10 Use| 
  []
 
 
-Underfull \hbox (badness 6332) in paragraph at lines 5849--5851
+Underfull \hbox (badness 6332) in paragraph at lines 5851--5853
 []|\TU/lmr/m/n/10 Code linking to SUEWS_SiteSelect.txt for water surfaces
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 5856--5857
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 5858--5859
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 5865--5866
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 5867--5868
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 5874--5875
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 5876--5877
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 5910--5911
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 5912--5913
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 5919--5920
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 5921--5922
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Underfull \hbox (badness 6141) in paragraph at lines 6011--6013
+Underfull \hbox (badness 6141) in paragraph at lines 6013--6015
 \TU/lmr/m/n/10 bitrary but must match code specified in column 1 of
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 6018--6019
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 6020--6021
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 6027--6028
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 6029--6030
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 
-Overfull \hbox (0.85223pt too wide) in paragraph at lines 6036--6037
+Overfull \hbox (0.85223pt too wide) in paragraph at lines 6038--6039
 []|[][]\TU/lmtt/m/it/10 MU[][]| 
  []
 
 [55] [56] [57]
-Underfull \hbox (badness 10000) in paragraph at lines 6509--6511
-[]|\TU/lmr/m/n/10 Use with AnthropHeat-
- []
-
-[58]
-Underfull \hbox (badness 10000) in paragraph at lines 6562--6564
-[]|\TU/lmr/m/n/10 Use with AnthropHeat-
+Underfull \hbox (badness 10000) in paragraph at lines 6405--6407
+[]|\TU/lmr/m/n/10 Code for human activity
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6615--6617
-[]|\TU/lmr/m/n/10 Effective surface albedo
+Underfull \hbox (badness 5771) in paragraph at lines 6405--6407
+\TU/lmr/m/n/10 profile (weekdays) Provides
  []
 
 
-Underfull \hbox (badness 6332) in paragraph at lines 6615--6617
-\TU/lmr/m/n/10 for summertime. View
+Underfull \hbox (badness 5711) in paragraph at lines 6405--6407
+\TU/lmr/m/n/10 the link to column 1 of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6622--6624
-[]|\TU/lmr/m/n/10 Effective surface albedo
+Underfull \hbox (badness 10000) in paragraph at lines 6458--6460
+[]|\TU/lmr/m/n/10 Code for human activity
  []
 
 
-Underfull \hbox (badness 5726) in paragraph at lines 6622--6624
-\TU/lmr/m/n/10 into account. Example
+Underfull \hbox (badness 6157) in paragraph at lines 6458--6460
+\TU/lmr/m/n/10 profile (weekends) Provides
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6689--6691
-[]|\TU/lmr/m/n/10 Effective surface albedo
+Underfull \hbox (badness 5711) in paragraph at lines 6458--6460
+\TU/lmr/m/n/10 the link to column 1 of
+ []
+
+[58] [59]
+Underfull \hbox (badness 6016) in paragraph at lines 6765--6767
+[]|\TU/lmr/m/n/10 Used for both the radia-
+ []
+
+[60] [61]
+Underfull \hbox (badness 5711) in paragraph at lines 7040--7042
+\TU/lmr/m/n/10 the link to column 1 of
  []
 
 
-Underfull \hbox (badness 5939) in paragraph at lines 6689--6691
-\TU/lmr/m/n/10 wintertime (not including
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6689--6691
-\TU/lmr/m/n/10 currently used for non-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6696--6698
-[]|\TU/lmr/m/n/10 Effective surface albedo
- []
-
-[59]
-Underfull \hbox (badness 10000) in paragraph at lines 6816--6818
-[]|\TU/lmr/m/n/10 Bulk transfer coefficient
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6823--6825
-[]|\TU/lmr/m/n/10 Bulk transfer coefficient
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6830--6832
-[]|\TU/lmr/m/n/10 Bulk transfer coefficient
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6837--6839
-[]|\TU/lmr/m/n/10 Bulk transfer coefficient
- []
-
-[60]
-Underfull \hbox (badness 10000) in paragraph at lines 6890--6892
-[]|\TU/lmr/m/n/10 Volumetric heat capacity
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6897--6899
-[]|\TU/lmr/m/n/10 Volumetric heat capacity
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6904--6906
-[]|\TU/lmr/m/n/10 Volumetric heat capacity
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6911--6913
-[]|\TU/lmr/m/n/10 Volumetric heat capacity
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6964--6966
-[]|\TU/lmr/m/n/10 Thermal conductivity for
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6964--6966
-\TU/lmr/m/n/10 this surface to use in
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6971--6973
-[]|\TU/lmr/m/n/10 Thermal conductivity for
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6971--6973
-\TU/lmr/m/n/10 this surface to use in
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6978--6980
-[]|\TU/lmr/m/n/10 Thermal conductivity for
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6978--6980
-\TU/lmr/m/n/10 this surface to use in
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6985--6987
-[]|\TU/lmr/m/n/10 Thermal conductivity for
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6985--6987
-\TU/lmr/m/n/10 this surface to use in
- []
-
-[61]
-Overfull \hbox (21.87415pt too wide) in paragraph at lines 7038--7040
+Overfull \hbox (14.24104pt too wide) in paragraph at lines 7040--7042
 \TU/lmr/m/n/10 SUEWS_AnthropogenicHeat.txt,
  []
 
 
-Underfull \hbox (badness 7704) in paragraph at lines 7038--7040
+Underfull \hbox (badness 5893) in paragraph at lines 7040--7042
+\TU/lmr/m/n/10 efficients for estimation of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7040--7042
 \TU/lmr/m/n/10 bitrary but must match
  []
 
 
-Overfull \hbox (21.87415pt too wide) in paragraph at lines 7038--7040
+Overfull \hbox (14.24104pt too wide) in paragraph at lines 7040--7042
 \TU/lmr/m/n/10 SUEWS_AnthropogenicHeat.txt.| 
  []
 
-[62]
-Underfull \hbox (badness 6741) in paragraph at lines 7316--7318
-\TU/lmr/m/n/10 files. Value of integer is arbitrary but must match code specifi
-ed in
+
+Underfull \hbox (badness 7291) in paragraph at lines 7093--7095
+[]|\TU/lmr/m/n/10 Area of wall within grid
  []
 
-[63]
-Underfull \hbox (badness 10000) in paragraph at lines 7356--7358
+[62] [63]
+Underfull \hbox (badness 10000) in paragraph at lines 7358--7360
 []|\TU/lmr/m/n/10 Code linking to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7356--7358
-\TU/lmr/m/n/10 SUEWS_SiteSelect.txt
+Underfull \hbox (badness 10000) in paragraph at lines 7358--7360
+[][]\TU/lmr/m/it/10 SUEWS_SiteSelect.txt[][] \TU/lmr/m/n/10 for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7356--7358
-\TU/lmr/m/n/10 for paved surfaces
+Underfull \hbox (badness 10000) in paragraph at lines 7358--7360
+\TU/lmr/m/n/10 buildings (Code_Bldgs)
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7356--7358
-\TU/lmr/m/n/10 (Code_Paved), build-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7356--7358
-\TU/lmr/m/n/10 ings (Code_Bldgs)
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7356--7358
+Underfull \hbox (badness 10000) in paragraph at lines 7358--7360
 \TU/lmr/m/n/10 and bare soil surfaces
  []
 
 
-Underfull \hbox (badness 5548) in paragraph at lines 7356--7358
+Underfull \hbox (badness 7888) in paragraph at lines 7358--7360
+\TU/lmr/m/n/10 (Code_BSoil). Value of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7358--7360
 \TU/lmr/m/n/10 match codes specified in
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7363--7365
+Underfull \hbox (badness 10000) in paragraph at lines 7365--7367
 []|\TU/lmr/m/n/10 Code linking to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7363--7365
-\TU/lmr/m/n/10 SUEWS_SiteSelect.txt
+Underfull \hbox (badness 10000) in paragraph at lines 7365--7367
+[][]\TU/lmr/m/it/10 SUEWS_SiteSelect.txt[][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7363--7365
+Underfull \hbox (badness 10000) in paragraph at lines 7365--7367
 \TU/lmr/m/n/10 for evergreen trees and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7363--7365
+Underfull \hbox (badness 10000) in paragraph at lines 7365--7367
+\TU/lmr/m/n/10 shrubs (Code_EveTr), de-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7365--7367
+\TU/lmr/m/n/10 ciduous trees and shrubs
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7365--7367
 \TU/lmr/m/n/10 (Code_DecTr) and grass
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7363--7365
-\TU/lmr/m/n/10 surfaces (Code_Grass).
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7363--7365
-\TU/lmr/m/n/10 Value of integer is
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7363--7365
-\TU/lmr/m/n/10 arbitrary but must
- []
-
-
-Underfull \hbox (badness 5548) in paragraph at lines 7363--7365
-\TU/lmr/m/n/10 match codes specified in
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7370--7372
+Underfull \hbox (badness 10000) in paragraph at lines 7372--7374
 []|\TU/lmr/m/n/10 Code linking to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7370--7372
-\TU/lmr/m/n/10 SUEWS_SiteSelect.txt
+Underfull \hbox (badness 10000) in paragraph at lines 7372--7374
+[][]\TU/lmr/m/it/10 SUEWS_SiteSelect.txt[][] \TU/lmr/m/n/10 for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7370--7372
-\TU/lmr/m/n/10 for water surfaces
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7370--7372
-\TU/lmr/m/n/10 (Code_Water). Value
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7377--7379
+Underfull \hbox (badness 10000) in paragraph at lines 7379--7381
 []|\TU/lmr/m/n/10 Code linking to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7377--7379
-\TU/lmr/m/n/10 SUEWS_SiteSelect.txt
+Underfull \hbox (badness 10000) in paragraph at lines 7379--7381
+[][]\TU/lmr/m/it/10 SUEWS_SiteSelect.txt[][] \TU/lmr/m/n/10 for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7377--7379
-\TU/lmr/m/n/10 is arbitrary but must
+Underfull \hbox (badness 7595) in paragraph at lines 7379--7381
+\TU/lmr/m/n/10 snow surfaces (SnowCode).
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7377--7379
-\TU/lmr/m/n/10 match code specified in
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7384--7386
+Underfull \hbox (badness 10000) in paragraph at lines 7386--7388
 []|\TU/lmr/m/n/10 Code linking to the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7384--7386
+Underfull \hbox (badness 10000) in paragraph at lines 7386--7388
 \TU/lmr/m/n/10 SoilTypeCode column in
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7384--7386
+Underfull \hbox (badness 10000) in paragraph at lines 7386--7388
 \TU/lmr/m/n/10 SUEWS_NonVeg.txt (for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7384--7386
-\TU/lmr/m/n/10 (for EveTr, DecTr and
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7384--7386
+Underfull \hbox (badness 10000) in paragraph at lines 7386--7388
 \TU/lmr/m/n/10 match code specified in
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7391--7393
+Underfull \hbox (badness 10000) in paragraph at lines 7393--7395
 []|\TU/lmr/m/n/10 Code linking to the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7391--7393
+Underfull \hbox (badness 10000) in paragraph at lines 7393--7395
 \TU/lmr/m/n/10 CondCode column in
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7391--7393
-\TU/lmr/m/n/10 SUEWS_SiteSelect.txt
+Underfull \hbox (badness 10000) in paragraph at lines 7393--7395
+[][]\TU/lmr/m/it/10 SUEWS_SiteSelect.txt[][] \TU/lmr/m/n/10 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7391--7393
-\TU/lmr/m/n/10 . Value of integer
+Underfull \hbox (badness 7344) in paragraph at lines 7400--7402
+[]|\TU/lmr/m/n/10 Code linking to the An-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7391--7393
-\TU/lmr/m/n/10 is arbitrary but must
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7391--7393
-\TU/lmr/m/n/10 match code specified in
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7398--7400
-\TU/lmr/m/n/10 SUEWS_SiteSelect.txt
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7398--7400
-\TU/lmr/m/n/10 . Value of integer
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7398--7400
-\TU/lmr/m/n/10 is arbitrary but must
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7398--7400
-\TU/lmr/m/n/10 match code specified in
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7405--7407
+Underfull \hbox (badness 10000) in paragraph at lines 7407--7409
 []|\TU/lmr/m/n/10 Code linking to
  []
 
 
-Overfull \hbox (96.99416pt too wide) in paragraph at lines 7405--7407
-\TU/lmr/m/n/10 [[#SUEWS_SiteSelect.txt|SUEWS_SiteSelect.txt]
+Underfull \hbox (badness 10000) in paragraph at lines 7407--7409
+[][]\TU/lmr/m/it/10 SUEWS_SiteSelect.txt[][] \TU/lmr/m/n/10 for
  []
 
 
-Underfull \hbox (badness 5548) in paragraph at lines 7405--7407
+Underfull \hbox (badness 10000) in paragraph at lines 7407--7409
+\TU/lmr/m/n/10 irrigation modelling (Ir-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7407--7409
+\TU/lmr/m/n/10 rigationCode). Value of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7407--7409
 \TU/lmr/m/n/10 match codes specified in
  []
 
 
-Underfull \hbox (badness 7963) in paragraph at lines 7412--7414
+Underfull \hbox (badness 10000) in paragraph at lines 7414--7416
+\TU/lmr/m/n/10 Code_SummerWet, OHM-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7414--7416
 \TU/lmr/m/n/10 Code_SummerDry, OHM-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7412--7414
-\TU/lmr/m/n/10 Code_WinterWet and
+Underfull \hbox (badness 10000) in paragraph at lines 7414--7416
+\TU/lmr/m/n/10 Code_WinterDry columns
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7412--7414
-\TU/lmr/m/n/10 OHMCode_WinterDry
+Underfull \hbox (badness 10000) in paragraph at lines 7414--7416
+\TU/lmr/m/n/10 in SUEWS_NonVeg.txt,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7412--7414
-\TU/lmr/m/n/10 columns in
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7412--7414
-\TU/lmr/m/n/10 SUEWS_NonVeg.txt,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7412--7414
+Underfull \hbox (badness 10000) in paragraph at lines 7414--7416
 \TU/lmr/m/n/10 SUEWS_Veg,txt,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7412--7414
-\TU/lmr/m/n/10 SUEWS_Water.txt
+Underfull \hbox (badness 10000) in paragraph at lines 7414--7416
+\TU/lmr/m/n/10 SUEWS_Water.txt and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7412--7414
-\TU/lmr/m/n/10 and SUEWS_Snow.txt
- []
-
-
-Underfull \hbox (badness 5741) in paragraph at lines 7412--7414
-\TU/lmr/m/n/10 files. Value of integer
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7412--7414
-\TU/lmr/m/n/10 is arbitrary but must
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7412--7414
-\TU/lmr/m/n/10 match code specified in
+Underfull \hbox (badness 10000) in paragraph at lines 7414--7416
+\TU/lmr/m/n/10 SUEWS_Snow.txt files.
  []
 
 [64] [65]
-Underfull \hbox (badness 10000) in paragraph at lines 7472--7474
+Underfull \hbox (badness 10000) in paragraph at lines 7474--7476
 []|\TU/lmr/m/n/10 Code for Bldgs surface
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7472--7474
+Underfull \hbox (badness 10000) in paragraph at lines 7474--7476
 \TU/lmr/m/n/10 characteristics Provides
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7472--7474
-\TU/lmr/m/n/10 contains the attributes
+Underfull \hbox (badness 5711) in paragraph at lines 7474--7476
+\TU/lmr/m/n/10 the link to column 1 of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7472--7474
-\TU/lmr/m/n/10 describing buildings in
+Underfull \hbox (badness 7667) in paragraph at lines 7474--7476
+\TU/lmr/m/n/10 SUEWS_NonVeg.txt, which
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7472--7474
-\TU/lmr/m/n/10 this grid for this year.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7525--7527
+Underfull \hbox (badness 10000) in paragraph at lines 7527--7529
 []|\TU/lmr/m/n/10 Code for BSoil surface
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7525--7527
+Underfull \hbox (badness 10000) in paragraph at lines 7527--7529
 \TU/lmr/m/n/10 characteristics Provides
+ []
+
+
+Underfull \hbox (badness 5711) in paragraph at lines 7527--7529
+\TU/lmr/m/n/10 the link to column 1 of
+ []
+
+
+Underfull \hbox (badness 7667) in paragraph at lines 7527--7529
+\TU/lmr/m/n/10 SUEWS_NonVeg.txt, which
+ []
+
+
+Underfull \hbox (badness 6380) in paragraph at lines 7580--7582
+\TU/lmr/m/n/10 arbitrary but must match
  []
 
 [66]
-Underfull \hbox (badness 10000) in paragraph at lines 7578--7580
-[]|\TU/lmr/m/n/10 Code for DecTr surface
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7578--7580
-\TU/lmr/m/n/10 characteristics Provides
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7578--7580
-\TU/lmr/m/n/10 SUEWS_Veg.txt, which
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7578--7580
-\TU/lmr/m/n/10 contains the attributes
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7631--7633
+Underfull \hbox (badness 10000) in paragraph at lines 7633--7635
 []|\TU/lmr/m/n/10 Code linking to
  []
 
 
-Overfull \hbox (12.85416pt too wide) in paragraph at lines 7631--7633
+Overfull \hbox (5.22105pt too wide) in paragraph at lines 7633--7635
 \TU/lmr/m/n/10 SUEWS_ESTMCoefficients.txt| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7684--7686
+Underfull \hbox (badness 10000) in paragraph at lines 7686--7688
 []|\TU/lmr/m/n/10 Code linking to
  []
 
 
-Overfull \hbox (12.85416pt too wide) in paragraph at lines 7684--7686
+Overfull \hbox (5.22105pt too wide) in paragraph at lines 7686--7688
+\TU/lmr/m/n/10 SUEWS_ESTMCoefficients.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7739--7741
+[]|\TU/lmr/m/n/10 Code linking to
+ []
+
+
+Overfull \hbox (5.22105pt too wide) in paragraph at lines 7739--7741
+\TU/lmr/m/n/10 SUEWS_ESTMCoefficients.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7792--7794
+[]|\TU/lmr/m/n/10 Code linking to
+ []
+
+
+Overfull \hbox (5.22105pt too wide) in paragraph at lines 7792--7794
 \TU/lmr/m/n/10 SUEWS_ESTMCoefficients.txt| 
  []
 
 [67]
-Underfull \hbox (badness 10000) in paragraph at lines 7737--7739
+Underfull \hbox (badness 10000) in paragraph at lines 7845--7847
 []|\TU/lmr/m/n/10 Code linking to
  []
 
 
-Overfull \hbox (12.85416pt too wide) in paragraph at lines 7737--7739
+Overfull \hbox (5.22105pt too wide) in paragraph at lines 7845--7847
 \TU/lmr/m/n/10 SUEWS_ESTMCoefficients.txt| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7790--7792
+Underfull \hbox (badness 10000) in paragraph at lines 7898--7900
 []|\TU/lmr/m/n/10 Code linking to
  []
 
 
-Overfull \hbox (12.85416pt too wide) in paragraph at lines 7790--7792
+Overfull \hbox (5.22105pt too wide) in paragraph at lines 7898--7900
 \TU/lmr/m/n/10 SUEWS_ESTMCoefficients.txt| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7843--7845
+Underfull \hbox (badness 10000) in paragraph at lines 7951--7953
 []|\TU/lmr/m/n/10 Code linking to
  []
 
 
-Overfull \hbox (12.85416pt too wide) in paragraph at lines 7843--7845
+Overfull \hbox (5.22105pt too wide) in paragraph at lines 7951--7953
 \TU/lmr/m/n/10 SUEWS_ESTMCoefficients.txt| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7896--7898
+Underfull \hbox (badness 10000) in paragraph at lines 8004--8006
 []|\TU/lmr/m/n/10 Code linking to
  []
 
 
-Overfull \hbox (12.85416pt too wide) in paragraph at lines 7896--7898
+Overfull \hbox (5.22105pt too wide) in paragraph at lines 8004--8006
 \TU/lmr/m/n/10 SUEWS_ESTMCoefficients.txt| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7949--7951
-[]|\TU/lmr/m/n/10 Code linking to
- []
-
-
-Overfull \hbox (12.85416pt too wide) in paragraph at lines 7949--7951
-\TU/lmr/m/n/10 SUEWS_ESTMCoefficients.txt| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8002--8004
-[]|\TU/lmr/m/n/10 Code linking to
- []
-
-
-Overfull \hbox (12.85416pt too wide) in paragraph at lines 8002--8004
-\TU/lmr/m/n/10 SUEWS_ESTMCoefficients.txt| 
+Underfull \hbox (badness 6380) in paragraph at lines 8057--8059
+\TU/lmr/m/n/10 arbitrary but must match
  []
 
 [68]
-Underfull \hbox (badness 10000) in paragraph at lines 8055--8057
-[]|\TU/lmr/m/n/10 Code for EveTr surface
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8055--8057
-\TU/lmr/m/n/10 characteristics Provides
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8055--8057
-\TU/lmr/m/n/10 SUEWS_Veg.txt, which
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8055--8057
-\TU/lmr/m/n/10 contains the attributes
- []
-
-
-Underfull \hbox (badness 5359) in paragraph at lines 8055--8057
-\TU/lmr/m/n/10 describing evergreen trees
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8108--8110
-[]|\TU/lmr/m/n/10 Code for Grass surface
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8108--8110
-\TU/lmr/m/n/10 characteristics Provides
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8108--8110
-\TU/lmr/m/n/10 SUEWS_Veg.txt, which
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8108--8110
-\TU/lmr/m/n/10 contains the attributes
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8108--8110
-\TU/lmr/m/n/10 describing grass surfaces
- []
-
-[69]
-Underfull \hbox (badness 10000) in paragraph at lines 8161--8163
+Underfull \hbox (badness 10000) in paragraph at lines 8163--8165
 []|\TU/lmr/m/n/10 Code for Paved surface
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8161--8163
+Underfull \hbox (badness 10000) in paragraph at lines 8163--8165
 \TU/lmr/m/n/10 characteristics Provides
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8161--8163
-\TU/lmr/m/n/10 contains the attributes
+Underfull \hbox (badness 5711) in paragraph at lines 8163--8165
+\TU/lmr/m/n/10 the link to column 1 of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8161--8163
-\TU/lmr/m/n/10 this grid for this year.
+Underfull \hbox (badness 7667) in paragraph at lines 8163--8165
+\TU/lmr/m/n/10 SUEWS_NonVeg.txt, which
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 8161--8163
-\TU/lmr/m/n/10 Value of integer is ar-
- []
-
-
-Underfull \hbox (badness 7704) in paragraph at lines 8161--8163
-\TU/lmr/m/n/10 bitrary but must match
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8161--8163
-\TU/lmr/m/n/10 characteristics specified
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8214--8216
+[69]
+Underfull \hbox (badness 10000) in paragraph at lines 8216--8218
 []|\TU/lmr/m/n/10 Code for Water surface
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8214--8216
+Underfull \hbox (badness 10000) in paragraph at lines 8216--8218
 \TU/lmr/m/n/10 characteristics Provides
  []
 
 
-Underfull \hbox (badness 5374) in paragraph at lines 8214--8216
+Underfull \hbox (badness 5711) in paragraph at lines 8216--8218
+\TU/lmr/m/n/10 the link to column 1 of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8216--8218
 \TU/lmr/m/n/10 SUEWS_Water.txt, which
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8214--8216
-\TU/lmr/m/n/10 contains the attributes
+Underfull \hbox (badness 10000) in paragraph at lines 8269--8271
+[]|\TU/lmr/m/n/10 Code for surface conduc-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8214--8216
-\TU/lmr/m/n/10 this grid for this year.
+Underfull \hbox (badness 10000) in paragraph at lines 8269--8271
+\TU/lmr/m/n/10 tance parameters Provides
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8267--8269
+Underfull \hbox (badness 5711) in paragraph at lines 8269--8271
+\TU/lmr/m/n/10 the link to column 1 of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8269--8271
 \TU/lmr/m/n/10 SUEWS_Conductance.txt,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8267--8269
-\TU/lmr/m/n/10 which contains the pa-
+Underfull \hbox (badness 7576) in paragraph at lines 8269--8271
+\TU/lmr/m/n/10 parameterisation of surface
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8267--8269
-\TU/lmr/m/n/10 rameters for the Jarvis
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8267--8269
-\TU/lmr/m/n/10 (1976) parameterisation
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8267--8269
-\TU/lmr/m/n/10 of surface conductance.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8267--8269
+Underfull \hbox (badness 10000) in paragraph at lines 8269--8271
 \TU/lmr/m/n/10 SUEWS_Conductance.txt.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8267--8269
+Underfull \hbox (badness 5533) in paragraph at lines 8269--8271
+\TU/lmr/m/n/10 e.g. 33 means use the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8269--8271
 \TU/lmr/m/n/10 characteristics specified
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8267--8269
+Underfull \hbox (badness 6625) in paragraph at lines 8269--8271
+\TU/lmr/m/n/10 in the row of input file
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8269--8271
 \TU/lmr/m/n/10 SUEWS_Conductance.txt
  []
 
-[70] [71]
-Underfull \hbox (badness 10000) in paragraph at lines 8585--8587
-[]|\TU/lmr/m/n/10 Irrigation allowed on
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8585--8587
-\TU/lmr/m/n/10 Wednesdays [1], if not
- []
-
-[72] [73]
-Underfull \hbox (badness 5490) in paragraph at lines 9235--9237
+[70] [71] [72] [73]
+Underfull \hbox (badness 10000) in paragraph at lines 9237--9239
 \TU/lmr/m/n/10 ommended [3] for Paved
  []
 
-[74]
-Underfull \hbox (badness 10000) in paragraph at lines 9302--9304
-\TU/lmr/m/n/10 czynowicz (1978) [32] 2
+
+Underfull \hbox (badness 5260) in paragraph at lines 9244--9246
+\TU/lmr/m/n/10 rigated) 1.71 Coefficient b
+ []
+
+[74] [75]
+Underfull \hbox (badness 5756) in paragraph at lines 9371--9373
+[]|\TU/lmr/m/n/10 Effective surface emissivity.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9309--9311
-\TU/lmr/m/n/10 czynowicz (1978) [32] 2
+Underfull \hbox (badness 5756) in paragraph at lines 9378--9380
+[]|\TU/lmr/m/n/10 Effective surface emissivity.
  []
 
 
-Underfull \hbox (badness 5431) in paragraph at lines 9309--9311
-\TU/lmr/m/n/10 (unirrigated) 3 Falk and
+Underfull \hbox (badness 5756) in paragraph at lines 9385--9387
+[]|\TU/lmr/m/n/10 Effective surface emissivity.
  []
 
-[75] [76]
-Underfull \hbox (badness 10000) in paragraph at lines 9496--9498
+
+Underfull \hbox (badness 5756) in paragraph at lines 9392--9394
+[]|\TU/lmr/m/n/10 Effective surface emissivity.
+ []
+
+[76]
+Underfull \hbox (badness 10000) in paragraph at lines 9498--9500
 \TU/lmr/m/n/10 file (weekdays) Provides
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9549--9551
+Underfull \hbox (badness 5711) in paragraph at lines 9498--9500
+\TU/lmr/m/n/10 the link to column 1 of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9551--9553
 \TU/lmr/m/n/10 file (weekends) Provides
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9549--9551
-\TU/lmr/m/n/10 of integer is arbitrary
+Underfull \hbox (badness 5711) in paragraph at lines 9551--9553
+\TU/lmr/m/n/10 the link to column 1 of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9549--9551
-\TU/lmr/m/n/10 but must match code
- []
-
-[77]
-Underfull \hbox (badness 10000) in paragraph at lines 9609--9611
-[]|\TU/lmr/m/n/10 Code for ESTM co-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9609--9611
-\TU/lmr/m/n/10 efficients to use for
- []
-
-
-Underfull \hbox (badness 5607) in paragraph at lines 9609--9611
-\TU/lmr/m/n/10 this surface. Links to
- []
-
-
-Overfull \hbox (12.85416pt too wide) in paragraph at lines 9609--9611
+Overfull \hbox (5.22105pt too wide) in paragraph at lines 9611--9613
 \TU/lmr/m/n/10 SUEWS_ESTMCoefficients.txt
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9609--9611
-\TU/lmr/m/n/10 trary but must match
+Underfull \hbox (badness 10000) in paragraph at lines 9611--9613
+\TU/lmr/m/n/10 bitrary but must match
  []
 
 
-Overfull \hbox (15.63416pt too wide) in paragraph at lines 9609--9611
+Overfull \hbox (8.00105pt too wide) in paragraph at lines 9611--9613
 \TU/lmr/m/n/10 SUEWS_ESTMCoefficients.txt.| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9616--9618
-[]|\TU/lmr/m/n/10 Code for ESTM co-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9616--9618
-\TU/lmr/m/n/10 efficients to use for
- []
-
-
-Underfull \hbox (badness 5607) in paragraph at lines 9616--9618
-\TU/lmr/m/n/10 this surface. Links to
- []
-
-
-Overfull \hbox (12.85416pt too wide) in paragraph at lines 9616--9618
+Overfull \hbox (5.22105pt too wide) in paragraph at lines 9618--9620
 \TU/lmr/m/n/10 SUEWS_ESTMCoefficients.txt
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9616--9618
-\TU/lmr/m/n/10 trary but must match
+Underfull \hbox (badness 10000) in paragraph at lines 9618--9620
+\TU/lmr/m/n/10 bitrary but must match
  []
 
 
-Overfull \hbox (15.63416pt too wide) in paragraph at lines 9616--9618
+Overfull \hbox (8.00105pt too wide) in paragraph at lines 9618--9620
 \TU/lmr/m/n/10 SUEWS_ESTMCoefficients.txt.| 
  []
 
-[78] [79] [80]
-Underfull \hbox (badness 5316) in paragraph at lines 10418--10420
-[]|\TU/lmr/m/n/10 Surface cover fraction of
- []
-
-[81] [82]
-Underfull \hbox (badness 5316) in paragraph at lines 11054--11056
-[]|\TU/lmr/m/n/10 Surface cover fraction of
- []
-
-[83]
-Underfull \hbox (badness 5316) in paragraph at lines 11160--11162
-[]|\TU/lmr/m/n/10 Surface cover fraction of
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11160--11162
-\TU/lmr/m/n/10 lakes, ponds, swimming
- []
-
-[84] [85] [86] [87] [88]
-Overfull \hbox (2.18864pt too wide) in paragraph at lines 12382--12383
+[77] [78] [79] [80] [81] [82] [83] [84] [85] [86] [87] [88]
+Overfull \hbox (9.82175pt too wide) in paragraph at lines 12384--12385
 []|[][]\TU/lmr/m/it/10 SSss_YYYY_ESTM_Ts_data_tt.txt[][]| 
  []
 
-[89] [90]
-Overfull \hbox (2.18864pt too wide) in paragraph at lines 12933--12934
+[89]
+Underfull \hbox (badness 10000) in paragraph at lines 12614--12616
+[]|\TU/lmr/m/n/10 Day when irrigation ends
+ []
+
+[90]
+Overfull \hbox (9.82175pt too wide) in paragraph at lines 12935--12936
 []|[][]\TU/lmr/m/it/10 SSss_YYYY_ESTM_Ts_data_tt.txt[][]| 
  []
 
-[91] [92] [93] [94]
-Underfull \hbox (badness 5711) in paragraph at lines 13845--13847
-\TU/lmr/m/n/10 [m] for building surfaces
- []
-
-[95]
-Underfull \hbox (badness 6110) in paragraph at lines 14282--14284
+[91] [92] [93] [94] [95]
+Underfull \hbox (badness 6110) in paragraph at lines 14284--14286
 []\TU/lmr/m/n/10 Code for modelling irrigation Provides the link to column 1 of
 
  []
 
 
-Underfull \hbox (badness 6625) in paragraph at lines 14322--14324
+Underfull \hbox (badness 7613) in paragraph at lines 14324--14326
+\TU/lmr/m/n/10 which contains the model
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14324--14326
 \TU/lmr/m/n/10 coefficients for estimation
  []
 
+
+Overfull \hbox (9.82175pt too wide) in paragraph at lines 14373--14374
+[]|[][]\TU/lmr/m/it/10 SSss_YYYY_ESTM_Ts_data_tt.txt[][]| 
+ []
+
 [96]
-Overfull \hbox (2.18864pt too wide) in paragraph at lines 14371--14372
+Overfull \hbox (9.82175pt too wide) in paragraph at lines 14433--14434
 []|[][]\TU/lmr/m/it/10 SSss_YYYY_ESTM_Ts_data_tt.txt[][]| 
  []
 
 
-Overfull \hbox (2.18864pt too wide) in paragraph at lines 14431--14432
-[]|[][]\TU/lmr/m/it/10 SSss_YYYY_ESTM_Ts_data_tt.txt[][]| 
+Underfull \hbox (badness 7667) in paragraph at lines 14497--14499
+[]|\TU/lmr/m/n/10 Recommended if SOLWEI-
  []
 
-[97]
-Underfull \hbox (badness 10000) in paragraph at lines 14813--14815
-[]|\TU/lmr/m/n/10 full leaf-on summertime
+
+Underfull \hbox (badness 7667) in paragraph at lines 14550--14552
+[]|\TU/lmr/m/n/10 Recommended if SOLWEI-
  []
 
-[98]
-Underfull \hbox (badness 10000) in paragraph at lines 14919--14921
+[97] [98]
+Underfull \hbox (badness 10000) in paragraph at lines 14921--14923
 []|\TU/lmr/m/n/10 Use coordinate system
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14919--14921
-\TU/lmr/m/n/10 and longitude differently
+Underfull \hbox (badness 7308) in paragraph at lines 14921--14923
+\TU/lmr/m/n/10 WGS84. Positive values
  []
 
-[99] [100]
-Underfull \hbox (badness 10000) in paragraph at lines 15237--15239
+[99]
+Underfull \hbox (badness 10000) in paragraph at lines 15239--15241
 []|\TU/lmr/m/n/10 Use coordinate system
  []
 
-[101]
-Underfull \hbox (badness 10000) in paragraph at lines 15396--15398
-[]|\TU/lmr/m/n/10 Maximum water bucket
+
+Underfull \hbox (badness 5022) in paragraph at lines 15239--15241
+\TU/lmr/m/n/10 WGS84. For compatibil-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15396--15398
-\TU/lmr/m/n/10 reservoir [mm] Used for
+Underfull \hbox (badness 7030) in paragraph at lines 15239--15241
+\TU/lmr/m/n/10 convention between v2016a
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 15396--15398
-\TU/lmr/m/n/10 LUMPS surface wetness
- []
-
-[102] [103]
-Underfull \hbox (badness 10000) in paragraph at lines 15767--15769
+[100] [101] [102]
+Underfull \hbox (badness 10000) in paragraph at lines 15769--15771
 []|\TU/lmr/m/n/10 Code for OHM coeffi-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15767--15769
+Underfull \hbox (badness 10000) in paragraph at lines 15769--15771
 \TU/lmr/m/n/10 cients to use for this
  []
 
 
-Overfull \hbox (8.54414pt too wide) in paragraph at lines 15767--15769
+Underfull \hbox (badness 10000) in paragraph at lines 15769--15771
+\TU/lmr/m/n/10 surface during dry condi-
+ []
+
+
+Overfull \hbox (0.91104pt too wide) in paragraph at lines 15769--15771
 \TU/lmr/m/n/10 SUEWS_OHMCoefficients.txt
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15767--15769
-\TU/lmr/m/n/10 trary but must match
+Underfull \hbox (badness 10000) in paragraph at lines 15769--15771
+\TU/lmr/m/n/10 bitrary but must match
  []
 
 
-Overfull \hbox (11.32416pt too wide) in paragraph at lines 15767--15769
+Overfull \hbox (3.69106pt too wide) in paragraph at lines 15769--15771
 \TU/lmr/m/n/10 SUEWS_OHMCoefficients.txt.| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15774--15776
+Underfull \hbox (badness 10000) in paragraph at lines 15776--15778
 []|\TU/lmr/m/n/10 Code for OHM coeffi-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15774--15776
+Underfull \hbox (badness 10000) in paragraph at lines 15776--15778
 \TU/lmr/m/n/10 cients to use for this
  []
 
 
-Overfull \hbox (8.54414pt too wide) in paragraph at lines 15774--15776
+Underfull \hbox (badness 10000) in paragraph at lines 15776--15778
+\TU/lmr/m/n/10 surface during dry condi-
+ []
+
+
+Overfull \hbox (0.91104pt too wide) in paragraph at lines 15776--15778
 \TU/lmr/m/n/10 SUEWS_OHMCoefficients.txt
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15774--15776
-\TU/lmr/m/n/10 trary but must match
+Underfull \hbox (badness 10000) in paragraph at lines 15776--15778
+\TU/lmr/m/n/10 bitrary but must match
  []
 
 
-Overfull \hbox (11.32416pt too wide) in paragraph at lines 15774--15776
+Overfull \hbox (3.69106pt too wide) in paragraph at lines 15776--15778
 \TU/lmr/m/n/10 SUEWS_OHMCoefficients.txt.| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15781--15783
+Underfull \hbox (badness 10000) in paragraph at lines 15783--15785
 []|\TU/lmr/m/n/10 Code for OHM coeffi-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15781--15783
+Underfull \hbox (badness 10000) in paragraph at lines 15783--15785
 \TU/lmr/m/n/10 cients to use for this
  []
 
 
-Overfull \hbox (8.54414pt too wide) in paragraph at lines 15781--15783
+Underfull \hbox (badness 10000) in paragraph at lines 15783--15785
+\TU/lmr/m/n/10 surface during dry condi-
+ []
+
+
+Overfull \hbox (0.91104pt too wide) in paragraph at lines 15783--15785
 \TU/lmr/m/n/10 SUEWS_OHMCoefficients.txt
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15781--15783
-\TU/lmr/m/n/10 trary but must match
+Underfull \hbox (badness 10000) in paragraph at lines 15783--15785
+\TU/lmr/m/n/10 bitrary but must match
  []
 
 
-Overfull \hbox (11.32416pt too wide) in paragraph at lines 15781--15783
+Overfull \hbox (3.69106pt too wide) in paragraph at lines 15783--15785
 \TU/lmr/m/n/10 SUEWS_OHMCoefficients.txt.| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15788--15790
+Underfull \hbox (badness 10000) in paragraph at lines 15790--15792
 []|\TU/lmr/m/n/10 Code for OHM coeffi-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15788--15790
+Underfull \hbox (badness 10000) in paragraph at lines 15790--15792
 \TU/lmr/m/n/10 cients to use for this
  []
 
 
-Overfull \hbox (8.54414pt too wide) in paragraph at lines 15788--15790
+Underfull \hbox (badness 10000) in paragraph at lines 15790--15792
+\TU/lmr/m/n/10 surface during dry condi-
+ []
+
+
+Overfull \hbox (0.91104pt too wide) in paragraph at lines 15790--15792
 \TU/lmr/m/n/10 SUEWS_OHMCoefficients.txt
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15788--15790
-\TU/lmr/m/n/10 trary but must match
+Underfull \hbox (badness 10000) in paragraph at lines 15790--15792
+\TU/lmr/m/n/10 bitrary but must match
  []
 
 
-Overfull \hbox (11.32416pt too wide) in paragraph at lines 15788--15790
+Overfull \hbox (3.69106pt too wide) in paragraph at lines 15790--15792
+\TU/lmr/m/n/10 SUEWS_OHMCoefficients.txt.| 
+ []
+
+[103]
+Underfull \hbox (badness 10000) in paragraph at lines 15843--15845
+[]|\TU/lmr/m/n/10 Code for OHM coeffi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15843--15845
+\TU/lmr/m/n/10 cients to use for this
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15843--15845
+\TU/lmr/m/n/10 surface during wet condi-
+ []
+
+
+Overfull \hbox (0.91104pt too wide) in paragraph at lines 15843--15845
+\TU/lmr/m/n/10 SUEWS_OHMCoefficients.txt
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15843--15845
+\TU/lmr/m/n/10 bitrary but must match
+ []
+
+
+Overfull \hbox (3.69106pt too wide) in paragraph at lines 15843--15845
+\TU/lmr/m/n/10 SUEWS_OHMCoefficients.txt.| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15850--15852
+[]|\TU/lmr/m/n/10 Code for OHM coeffi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15850--15852
+\TU/lmr/m/n/10 cients to use for this
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15850--15852
+\TU/lmr/m/n/10 surface during wet condi-
+ []
+
+
+Overfull \hbox (0.91104pt too wide) in paragraph at lines 15850--15852
+\TU/lmr/m/n/10 SUEWS_OHMCoefficients.txt
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15850--15852
+\TU/lmr/m/n/10 bitrary but must match
+ []
+
+
+Overfull \hbox (3.69106pt too wide) in paragraph at lines 15850--15852
+\TU/lmr/m/n/10 SUEWS_OHMCoefficients.txt.| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15857--15859
+[]|\TU/lmr/m/n/10 Code for OHM coeffi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15857--15859
+\TU/lmr/m/n/10 cients to use for this
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15857--15859
+\TU/lmr/m/n/10 surface during wet condi-
+ []
+
+
+Overfull \hbox (0.91104pt too wide) in paragraph at lines 15857--15859
+\TU/lmr/m/n/10 SUEWS_OHMCoefficients.txt
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15857--15859
+\TU/lmr/m/n/10 bitrary but must match
+ []
+
+
+Overfull \hbox (3.69106pt too wide) in paragraph at lines 15857--15859
+\TU/lmr/m/n/10 SUEWS_OHMCoefficients.txt.| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15864--15866
+[]|\TU/lmr/m/n/10 Code for OHM coeffi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15864--15866
+\TU/lmr/m/n/10 cients to use for this
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15864--15866
+\TU/lmr/m/n/10 surface during wet condi-
+ []
+
+
+Overfull \hbox (0.91104pt too wide) in paragraph at lines 15864--15866
+\TU/lmr/m/n/10 SUEWS_OHMCoefficients.txt
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15864--15866
+\TU/lmr/m/n/10 bitrary but must match
+ []
+
+
+Overfull \hbox (3.69106pt too wide) in paragraph at lines 15864--15866
 \TU/lmr/m/n/10 SUEWS_OHMCoefficients.txt.| 
  []
 
 [104]
-Underfull \hbox (badness 10000) in paragraph at lines 15841--15843
-[]|\TU/lmr/m/n/10 Code for OHM coeffi-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15841--15843
-\TU/lmr/m/n/10 cients to use for this
- []
-
-
-Overfull \hbox (8.54414pt too wide) in paragraph at lines 15841--15843
+Overfull \hbox (0.91104pt too wide) in paragraph at lines 15917--15919
 \TU/lmr/m/n/10 SUEWS_OHMCoefficients.txt
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15841--15843
-\TU/lmr/m/n/10 trary but must match
+Underfull \hbox (badness 10000) in paragraph at lines 15917--15919
+\TU/lmr/m/n/10 bitrary but must match
  []
 
 
-Overfull \hbox (11.32416pt too wide) in paragraph at lines 15841--15843
+Overfull \hbox (3.69106pt too wide) in paragraph at lines 15917--15919
 \TU/lmr/m/n/10 SUEWS_OHMCoefficients.txt.| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15848--15850
-[]|\TU/lmr/m/n/10 Code for OHM coeffi-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15848--15850
-\TU/lmr/m/n/10 cients to use for this
- []
-
-
-Overfull \hbox (8.54414pt too wide) in paragraph at lines 15848--15850
+Overfull \hbox (0.91104pt too wide) in paragraph at lines 15924--15926
 \TU/lmr/m/n/10 SUEWS_OHMCoefficients.txt
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15848--15850
-\TU/lmr/m/n/10 trary but must match
+Underfull \hbox (badness 10000) in paragraph at lines 15924--15926
+\TU/lmr/m/n/10 bitrary but must match
  []
 
 
-Overfull \hbox (11.32416pt too wide) in paragraph at lines 15848--15850
+Overfull \hbox (3.69106pt too wide) in paragraph at lines 15924--15926
 \TU/lmr/m/n/10 SUEWS_OHMCoefficients.txt.| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15855--15857
-[]|\TU/lmr/m/n/10 Code for OHM coeffi-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15855--15857
-\TU/lmr/m/n/10 cients to use for this
- []
-
-
-Overfull \hbox (8.54414pt too wide) in paragraph at lines 15855--15857
+Overfull \hbox (0.91104pt too wide) in paragraph at lines 15931--15933
 \TU/lmr/m/n/10 SUEWS_OHMCoefficients.txt
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15855--15857
-\TU/lmr/m/n/10 trary but must match
+Underfull \hbox (badness 10000) in paragraph at lines 15931--15933
+\TU/lmr/m/n/10 bitrary but must match
  []
 
 
-Overfull \hbox (11.32416pt too wide) in paragraph at lines 15855--15857
+Overfull \hbox (3.69106pt too wide) in paragraph at lines 15931--15933
 \TU/lmr/m/n/10 SUEWS_OHMCoefficients.txt.| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15862--15864
-[]|\TU/lmr/m/n/10 Code for OHM coeffi-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15862--15864
-\TU/lmr/m/n/10 cients to use for this
- []
-
-
-Overfull \hbox (8.54414pt too wide) in paragraph at lines 15862--15864
+Overfull \hbox (0.91104pt too wide) in paragraph at lines 15938--15940
 \TU/lmr/m/n/10 SUEWS_OHMCoefficients.txt
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15862--15864
-\TU/lmr/m/n/10 trary but must match
+Underfull \hbox (badness 10000) in paragraph at lines 15938--15940
+\TU/lmr/m/n/10 bitrary but must match
  []
 
 
-Overfull \hbox (11.32416pt too wide) in paragraph at lines 15862--15864
+Overfull \hbox (3.69106pt too wide) in paragraph at lines 15938--15940
 \TU/lmr/m/n/10 SUEWS_OHMCoefficients.txt.| 
  []
 
 [105]
-Underfull \hbox (badness 10000) in paragraph at lines 15915--15917
-[]|\TU/lmr/m/n/10 Code for OHM coeffi-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15915--15917
-\TU/lmr/m/n/10 cients to use for this
- []
-
-
-Overfull \hbox (8.54414pt too wide) in paragraph at lines 15915--15917
+Overfull \hbox (0.91104pt too wide) in paragraph at lines 15991--15993
 \TU/lmr/m/n/10 SUEWS_OHMCoefficients.txt
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15915--15917
-\TU/lmr/m/n/10 trary but must match
+Underfull \hbox (badness 10000) in paragraph at lines 15991--15993
+\TU/lmr/m/n/10 bitrary but must match
  []
 
 
-Overfull \hbox (11.32416pt too wide) in paragraph at lines 15915--15917
+Overfull \hbox (3.69106pt too wide) in paragraph at lines 15991--15993
 \TU/lmr/m/n/10 SUEWS_OHMCoefficients.txt.| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15922--15924
-[]|\TU/lmr/m/n/10 Code for OHM coeffi-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15922--15924
-\TU/lmr/m/n/10 cients to use for this
- []
-
-
-Overfull \hbox (8.54414pt too wide) in paragraph at lines 15922--15924
+Overfull \hbox (0.91104pt too wide) in paragraph at lines 15998--16000
 \TU/lmr/m/n/10 SUEWS_OHMCoefficients.txt
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15922--15924
-\TU/lmr/m/n/10 trary but must match
+Underfull \hbox (badness 10000) in paragraph at lines 15998--16000
+\TU/lmr/m/n/10 bitrary but must match
  []
 
 
-Overfull \hbox (11.32416pt too wide) in paragraph at lines 15922--15924
+Overfull \hbox (3.69106pt too wide) in paragraph at lines 15998--16000
 \TU/lmr/m/n/10 SUEWS_OHMCoefficients.txt.| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15929--15931
-[]|\TU/lmr/m/n/10 Code for OHM coeffi-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15929--15931
-\TU/lmr/m/n/10 cients to use for this
- []
-
-
-Overfull \hbox (8.54414pt too wide) in paragraph at lines 15929--15931
+Overfull \hbox (0.91104pt too wide) in paragraph at lines 16005--16007
 \TU/lmr/m/n/10 SUEWS_OHMCoefficients.txt
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15929--15931
-\TU/lmr/m/n/10 trary but must match
+Underfull \hbox (badness 10000) in paragraph at lines 16005--16007
+\TU/lmr/m/n/10 bitrary but must match
  []
 
 
-Overfull \hbox (11.32416pt too wide) in paragraph at lines 15929--15931
+Overfull \hbox (3.69106pt too wide) in paragraph at lines 16005--16007
 \TU/lmr/m/n/10 SUEWS_OHMCoefficients.txt.| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15936--15938
-[]|\TU/lmr/m/n/10 Code for OHM coeffi-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15936--15938
-\TU/lmr/m/n/10 cients to use for this
- []
-
-
-Overfull \hbox (8.54414pt too wide) in paragraph at lines 15936--15938
+Overfull \hbox (0.91104pt too wide) in paragraph at lines 16012--16014
 \TU/lmr/m/n/10 SUEWS_OHMCoefficients.txt
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15936--15938
-\TU/lmr/m/n/10 trary but must match
+Underfull \hbox (badness 10000) in paragraph at lines 16012--16014
+\TU/lmr/m/n/10 bitrary but must match
  []
 
 
-Overfull \hbox (11.32416pt too wide) in paragraph at lines 15936--15938
+Overfull \hbox (3.69106pt too wide) in paragraph at lines 16012--16014
 \TU/lmr/m/n/10 SUEWS_OHMCoefficients.txt.| 
  []
 
 [106]
-Underfull \hbox (badness 10000) in paragraph at lines 15989--15991
-[]|\TU/lmr/m/n/10 Code for OHM coeffi-
+Underfull \hbox (badness 10000) in paragraph at lines 16065--16067
+[]|\TU/lmr/m/n/10 Temperature threshold de-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15989--15991
-\TU/lmr/m/n/10 cients to use for this
+Underfull \hbox (badness 10000) in paragraph at lines 16065--16067
+\TU/lmr/m/n/10 termining whether sum-
  []
 
 
-Overfull \hbox (8.54414pt too wide) in paragraph at lines 15989--15991
-\TU/lmr/m/n/10 SUEWS_OHMCoefficients.txt
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15989--15991
-\TU/lmr/m/n/10 trary but must match
- []
-
-
-Overfull \hbox (11.32416pt too wide) in paragraph at lines 15989--15991
-\TU/lmr/m/n/10 SUEWS_OHMCoefficients.txt.| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15996--15998
-[]|\TU/lmr/m/n/10 Code for OHM coeffi-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15996--15998
-\TU/lmr/m/n/10 cients to use for this
- []
-
-
-Overfull \hbox (8.54414pt too wide) in paragraph at lines 15996--15998
-\TU/lmr/m/n/10 SUEWS_OHMCoefficients.txt
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15996--15998
-\TU/lmr/m/n/10 trary but must match
- []
-
-
-Overfull \hbox (11.32416pt too wide) in paragraph at lines 15996--15998
-\TU/lmr/m/n/10 SUEWS_OHMCoefficients.txt.| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 16003--16005
-[]|\TU/lmr/m/n/10 Code for OHM coeffi-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 16003--16005
-\TU/lmr/m/n/10 cients to use for this
- []
-
-
-Overfull \hbox (8.54414pt too wide) in paragraph at lines 16003--16005
-\TU/lmr/m/n/10 SUEWS_OHMCoefficients.txt
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 16003--16005
-\TU/lmr/m/n/10 trary but must match
- []
-
-
-Overfull \hbox (11.32416pt too wide) in paragraph at lines 16003--16005
-\TU/lmr/m/n/10 SUEWS_OHMCoefficients.txt.| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 16010--16012
-[]|\TU/lmr/m/n/10 Code for OHM coeffi-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 16010--16012
-\TU/lmr/m/n/10 cients to use for this
- []
-
-
-Overfull \hbox (8.54414pt too wide) in paragraph at lines 16010--16012
-\TU/lmr/m/n/10 SUEWS_OHMCoefficients.txt
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 16010--16012
-\TU/lmr/m/n/10 trary but must match
- []
-
-
-Overfull \hbox (11.32416pt too wide) in paragraph at lines 16010--16012
-\TU/lmr/m/n/10 SUEWS_OHMCoefficients.txt.| 
- []
-
-[107]
-Underfull \hbox (badness 10000) in paragraph at lines 16063--16065
-[]|\TU/lmr/m/n/10 Temperature threshold
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 16063--16065
-\TU/lmr/m/n/10 mer/winter OHM coeffi-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 16063--16065
-\TU/lmr/m/n/10 5-day running mean air
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 16063--16065
-\TU/lmr/m/n/10 summertime are applied;
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 16063--16065
+Underfull \hbox (badness 10000) in paragraph at lines 16065--16067
 \TU/lmr/m/n/10 otherwise coefficients for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16070--16072
-[]|\TU/lmr/m/n/10 Temperature threshold
+Underfull \hbox (badness 10000) in paragraph at lines 16072--16074
+[]|\TU/lmr/m/n/10 Temperature threshold de-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16070--16072
-\TU/lmr/m/n/10 mer/winter OHM coeffi-
+Underfull \hbox (badness 10000) in paragraph at lines 16072--16074
+\TU/lmr/m/n/10 termining whether sum-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16070--16072
-\TU/lmr/m/n/10 5-day running mean air
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 16070--16072
-\TU/lmr/m/n/10 summertime are applied;
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 16070--16072
+Underfull \hbox (badness 10000) in paragraph at lines 16072--16074
 \TU/lmr/m/n/10 otherwise coefficients for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16077--16079
-[]|\TU/lmr/m/n/10 Temperature threshold
+Underfull \hbox (badness 10000) in paragraph at lines 16079--16081
+[]|\TU/lmr/m/n/10 Temperature threshold de-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16077--16079
-\TU/lmr/m/n/10 mer/winter OHM coeffi-
+Underfull \hbox (badness 10000) in paragraph at lines 16079--16081
+\TU/lmr/m/n/10 termining whether sum-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16077--16079
-\TU/lmr/m/n/10 5-day running mean air
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 16077--16079
-\TU/lmr/m/n/10 summertime are applied;
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 16077--16079
+Underfull \hbox (badness 10000) in paragraph at lines 16079--16081
 \TU/lmr/m/n/10 otherwise coefficients for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16084--16086
-[]|\TU/lmr/m/n/10 Temperature threshold
+Underfull \hbox (badness 10000) in paragraph at lines 16086--16088
+[]|\TU/lmr/m/n/10 Temperature threshold de-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16084--16086
-\TU/lmr/m/n/10 mer/winter OHM coeffi-
+Underfull \hbox (badness 10000) in paragraph at lines 16086--16088
+\TU/lmr/m/n/10 termining whether sum-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16084--16086
-\TU/lmr/m/n/10 5-day running mean air
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 16084--16086
-\TU/lmr/m/n/10 summertime are applied;
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 16084--16086
+Underfull \hbox (badness 10000) in paragraph at lines 16086--16088
 \TU/lmr/m/n/10 otherwise coefficients for
  []
 
-[108] [109] [110] [111]
-Underfull \hbox (badness 10000) in paragraph at lines 16370--16372
-[]|\TU/lmr/m/n/10 full leaf-on summertime
+
+Underfull \hbox (badness 10000) in paragraph at lines 16086--16088
+\TU/lmr/m/n/10 as winter wet conditions
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 16423--16425
-[]|\TU/lmr/m/n/10 leaf-off wintertime value
+[107] [108] [109] [110] [111] [112] [113] [114]
+Underfull \hbox (badness 10000) in paragraph at lines 17220--17222
+[]|\TU/lmr/m/n/10 Required if NetRadiation-
  []
 
-[112]
-Underfull \hbox (badness 5519) in paragraph at lines 16476--16478
-\TU/lmr/m/n/10 snow albedo is reset to
- []
-
-[113]
-Underfull \hbox (badness 10000) in paragraph at lines 16741--16743
-[]|\TU/lmr/m/n/10 Use with An-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 16741--16743
-\TU/lmr/m/n/10 thropHeatChoice = 2
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 16741--16743
-\TU/lmr/m/n/10 Example values [W m$[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 16794--16796
-[]|\TU/lmr/m/n/10 Use with AnthropHeat-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 16847--16849
-[]|\TU/lmr/m/n/10 Use with AnthropHeat-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 16900--16902
-[]|\TU/lmr/m/n/10 Use with AnthropHeat-
- []
-
-[114]
-Underfull \hbox (badness 10000) in paragraph at lines 16953--16955
-[]|\TU/lmr/m/n/10 Use with AnthropHeat-
- []
-
-[115] [116]
-Underfull \hbox (badness 10000) in paragraph at lines 17483--17485
+[115]
+Underfull \hbox (badness 10000) in paragraph at lines 17485--17487
 []|\TU/lmr/m/n/10 Fraction of above-ground
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17483--17485
-\TU/lmr/m/n/10 Fraction of above-ground
+Underfull \hbox (badness 5475) in paragraph at lines 17591--17593
+\TU/lmr/m/n/10 pendence [mm] These will
+ []
+
+[116]
+Underfull \hbox (badness 10000) in paragraph at lines 17803--17805
+\TU/lmr/m/n/10 file (weekdays) Provides
  []
 
 
-Underfull \hbox (badness 6691) in paragraph at lines 17536--17538
-[]|\TU/lmr/m/n/10 Related to soil moisture
- []
-
-[117]
-Underfull \hbox (badness 10000) in paragraph at lines 17801--17803
-[]|\TU/lmr/m/n/10 Code for snow clearing
+Underfull \hbox (badness 5711) in paragraph at lines 17803--17805
+\TU/lmr/m/n/10 the link to column 1 of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17801--17803
-\TU/lmr/m/n/10 profile (weekdays) Pro-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 17801--17803
+Underfull \hbox (badness 10000) in paragraph at lines 17803--17805
 \TU/lmr/m/n/10 file SUEWS_Profiles.txt
  []
 
-[118]
-Underfull \hbox (badness 10000) in paragraph at lines 17854--17856
-[]|\TU/lmr/m/n/10 Code for snow clearing
+[117]
+Underfull \hbox (badness 10000) in paragraph at lines 17856--17858
+\TU/lmr/m/n/10 file (weekends) Provides
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17854--17856
-\TU/lmr/m/n/10 profile (weekends) Pro-
+Underfull \hbox (badness 5711) in paragraph at lines 17856--17858
+\TU/lmr/m/n/10 the link to column 1 of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17854--17856
-\TU/lmr/m/n/10 Value of integer is ar-
+Underfull \hbox (badness 10000) in paragraph at lines 17856--17858
+\TU/lmr/m/n/10 SUEWS_Profiles.txt which
  []
 
 
-Underfull \hbox (badness 7704) in paragraph at lines 17854--17856
-\TU/lmr/m/n/10 bitrary but must match
+Underfull \hbox (badness 10000) in paragraph at lines 17856--17858
+\TU/lmr/m/n/10 Providing the same code
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17854--17856
-\TU/lmr/m/n/10 characteristics specified
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 17854--17856
+Underfull \hbox (badness 10000) in paragraph at lines 17856--17858
 \TU/lmr/m/n/10 for SnowClearingProfWD
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17854--17856
+Underfull \hbox (badness 10000) in paragraph at lines 17856--17858
 \TU/lmr/m/n/10 and SnowClearingProfWE
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17854--17856
-\TU/lmr/m/n/10 in SUEWS_Profiles.txt,
- []
-
-[119]
-Underfull \hbox (badness 10000) in paragraph at lines 17907--17909
+Underfull \hbox (badness 10000) in paragraph at lines 17909--17911
 []|\TU/lmr/m/n/10 Code for snow surface
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17907--17909
+Underfull \hbox (badness 10000) in paragraph at lines 17909--17911
 \TU/lmr/m/n/10 characteristics Provides
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17907--17909
+Underfull \hbox (badness 5711) in paragraph at lines 17909--17911
+\TU/lmr/m/n/10 the link to column 1 of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17909--17911
 \TU/lmr/m/n/10 SUEWS_Snow.txt, which
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 17907--17909
-\TU/lmr/m/n/10 contains the attributes
+[118] [119]
+Underfull \hbox (badness 6173) in paragraph at lines 18287--18289
+[]|\TU/lmr/m/n/10 SoilStoreCap must not be
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17907--17909
-\TU/lmr/m/n/10 describing snow surfaces
- []
-
-[120] [121] [122] [123] [124] [125] [126] [127]
-Underfull \hbox (badness 10000) in paragraph at lines 19553--19555
-[]|\TU/lmr/m/n/10 Time constant for snow
+Underfull \hbox (badness 5711) in paragraph at lines 18340--18342
+\TU/lmr/m/n/10 the link to column 1 of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 19606--19608
-[]|\TU/lmr/m/n/10 Time constant for snow
+Underfull \hbox (badness 5711) in paragraph at lines 18347--18349
+\TU/lmr/m/n/10 the link to column 1 of
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 19606--19608
-\TU/lmr/m/n/10 albedo aging in melting
+[120] [121]
+Underfull \hbox (badness 6380) in paragraph at lines 18527--18529
+\TU/lmr/m/n/10 values the same as Stor-
  []
 
-[128]
-Underfull \hbox (badness 10000) in paragraph at lines 19712--19714
-[]|\TU/lmr/m/n/10 Use with AnthropHeat-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 19765--19767
-[]|\TU/lmr/m/n/10 Hourly temperature melt
- []
-
-[129]
-Underfull \hbox (badness 10000) in paragraph at lines 19924--19926
-[]|\TU/lmr/m/n/10 potential temperature in
- []
-
-
-Overfull \hbox (2.18864pt too wide) in paragraph at lines 19973--19974
+[122] [123] [124] [125] [126] [127]
+Overfull \hbox (9.82175pt too wide) in paragraph at lines 19975--19976
 []|[][]\TU/lmr/m/it/10 SSss_YYYY_ESTM_Ts_data_tt.txt[][]| 
  []
 
-[130] [131]
-Overfull \hbox (2.18864pt too wide) in paragraph at lines 20662--20663
+[128] [129] [130]
+Overfull \hbox (9.82175pt too wide) in paragraph at lines 20664--20665
 []|[][]\TU/lmr/m/it/10 SSss_YYYY_ESTM_Ts_data_tt.txt[][]| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20666--20668
-[]|\TU/lmr/m/n/10 Ground surface temper-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 20666--20668
-\TU/lmr/m/n/10 ature [˚C] (used when
- []
-
-[132]
-Overfull \hbox (2.18864pt too wide) in paragraph at lines 20715--20716
+Overfull \hbox (9.82175pt too wide) in paragraph at lines 20717--20718
 []|[][]\TU/lmr/m/it/10 SSss_YYYY_ESTM_Ts_data_tt.txt[][]| 
  []
 
 
-Underfull \hbox (badness 6808) in paragraph at lines 20719--20721
-[]|\TU/lmr/m/n/10 Roof surface temperature
+Overfull \hbox (9.82175pt too wide) in paragraph at lines 20770--20771
+[]|[][]\TU/lmr/m/it/10 SSss_YYYY_ESTM_Ts_data_tt.txt[][]| 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 20719--20721
-\TU/lmr/m/n/10 [˚C] (used when Tsurf-
- []
-
-
-Overfull \hbox (2.18864pt too wide) in paragraph at lines 20768--20769
+[131]
+Overfull \hbox (9.82175pt too wide) in paragraph at lines 20823--20824
 []|[][]\TU/lmr/m/it/10 SSss_YYYY_ESTM_Ts_data_tt.txt[][]| 
  []
 
 
-Underfull \hbox (badness 6808) in paragraph at lines 20772--20774
-[]|\TU/lmr/m/n/10 Bulk surface temperature
- []
-
-
-Overfull \hbox (2.18864pt too wide) in paragraph at lines 20821--20822
+Overfull \hbox (9.82175pt too wide) in paragraph at lines 20876--20877
 []|[][]\TU/lmr/m/it/10 SSss_YYYY_ESTM_Ts_data_tt.txt[][]| 
  []
 
 
-Underfull \hbox (badness 7907) in paragraph at lines 20825--20827
-[]|\TU/lmr/m/n/10 Wall surface temperature
+Underfull \hbox (badness 5652) in paragraph at lines 20880--20882
+\TU/lmr/m/n/10 perature [˚C] (used when
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20825--20827
-\TU/lmr/m/n/10 [˚C] (used when Tsurf-
- []
-
-
-Overfull \hbox (2.18864pt too wide) in paragraph at lines 20874--20875
+Overfull \hbox (9.82175pt too wide) in paragraph at lines 20929--20930
 []|[][]\TU/lmr/m/it/10 SSss_YYYY_ESTM_Ts_data_tt.txt[][]| 
  []
 
 
-Overfull \hbox (2.18864pt too wide) in paragraph at lines 20927--20928
+Underfull \hbox (badness 5652) in paragraph at lines 20933--20935
+\TU/lmr/m/n/10 perature [˚C] (used when
+ []
+
+
+Overfull \hbox (9.82175pt too wide) in paragraph at lines 20982--20983
 []|[][]\TU/lmr/m/it/10 SSss_YYYY_ESTM_Ts_data_tt.txt[][]| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20931--20933
-[]|\TU/lmr/m/n/10 North-facing wall surface
+Underfull \hbox (badness 5652) in paragraph at lines 20986--20988
+\TU/lmr/m/n/10 perature [˚C] (used when
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20931--20933
-\TU/lmr/m/n/10 temperature [˚C] (used
- []
-
-
-Overfull \hbox (2.18864pt too wide) in paragraph at lines 20980--20981
+Overfull \hbox (9.82175pt too wide) in paragraph at lines 21035--21036
 []|[][]\TU/lmr/m/it/10 SSss_YYYY_ESTM_Ts_data_tt.txt[][]| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20984--20986
-[]|\TU/lmr/m/n/10 South-facing wall surface
+Underfull \hbox (badness 5652) in paragraph at lines 21039--21041
+\TU/lmr/m/n/10 perature [˚C] (used when
+ []
+
+[132] [133] [134] [135]
+Underfull \hbox (badness 10000) in paragraph at lines 21993--21995
+\TU/lmr/m/n/10 1 of SUEWS_Profiles.txt.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20984--20986
-\TU/lmr/m/n/10 temperature [˚C] (used
- []
-
-[133]
-Overfull \hbox (2.18864pt too wide) in paragraph at lines 21033--21034
-[]|[][]\TU/lmr/m/it/10 SSss_YYYY_ESTM_Ts_data_tt.txt[][]| 
+Underfull \hbox (badness 10000) in paragraph at lines 21993--21995
+\TU/lmr/m/n/10 Value of integer is arbi-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21037--21039
-[]|\TU/lmr/m/n/10 West-facing wall surface
+Underfull \hbox (badness 10000) in paragraph at lines 21993--21995
+\TU/lmr/m/n/10 specified in column 1 of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21037--21039
-\TU/lmr/m/n/10 temperature [˚C] (used
+Underfull \hbox (badness 10000) in paragraph at lines 22046--22048
+\TU/lmr/m/n/10 1 of SUEWS_Profiles.txt.
  []
 
-[134] [135]
-Underfull \hbox (badness 5711) in paragraph at lines 21673--21675
-\TU/lmr/m/n/10 [m] for building surfaces
+
+Underfull \hbox (badness 10000) in paragraph at lines 22046--22048
+\TU/lmr/m/n/10 Value of integer is arbi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22046--22048
+\TU/lmr/m/n/10 specified in column 1 of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22099--22101
+\TU/lmr/m/n/10 1 of SUEWS_Profiles.txt.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22099--22101
+\TU/lmr/m/n/10 Value of integer is arbi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22099--22101
+\TU/lmr/m/n/10 specified in column 1 of
  []
 
 [136]
-Underfull \hbox (badness 10000) in paragraph at lines 21991--21993
-\TU/lmr/m/n/10 file (automatic irriga-
+Underfull \hbox (badness 10000) in paragraph at lines 22152--22154
+\TU/lmr/m/n/10 1 of SUEWS_Profiles.txt.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21991--21993
-\TU/lmr/m/n/10 tion, weekdays) Provides
+Underfull \hbox (badness 10000) in paragraph at lines 22152--22154
+\TU/lmr/m/n/10 Value of integer is arbi-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21991--21993
-\TU/lmr/m/n/10 of integer is arbitrary
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 21991--21993
-\TU/lmr/m/n/10 but must match code
+Underfull \hbox (badness 10000) in paragraph at lines 22152--22154
+\TU/lmr/m/n/10 specified in column 1 of
  []
 
 [137]
-Underfull \hbox (badness 10000) in paragraph at lines 22044--22046
-\TU/lmr/m/n/10 file (automatic irriga-
+Underfull \hbox (badness 10000) in paragraph at lines 22325--22327
+\TU/lmr/m/n/10 tion of water that flows
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22044--22046
-\TU/lmr/m/n/10 tion, weekends) Provides
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 22044--22046
-\TU/lmr/m/n/10 of integer is arbitrary
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 22044--22046
-\TU/lmr/m/n/10 but must match code
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 22097--22099
-\TU/lmr/m/n/10 file (manual irrigation,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 22097--22099
-\TU/lmr/m/n/10 weekdays) Provides the
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 22097--22099
-\TU/lmr/m/n/10 link to column 1 of
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 22097--22099
-\TU/lmr/m/n/10 SUEWS_Profiles.txt.
- []
-
-[138]
-Underfull \hbox (badness 10000) in paragraph at lines 22150--22152
-\TU/lmr/m/n/10 file (manual irrigation,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 22150--22152
-\TU/lmr/m/n/10 weekends) Provides the
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 22150--22152
-\TU/lmr/m/n/10 link to column 1 of
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 22150--22152
-\TU/lmr/m/n/10 SUEWS_Profiles.txt.
- []
-
-[139]
-Underfull \hbox (badness 7186) in paragraph at lines 22323--22325
-[]|\TU/lmr/m/n/10 Code that links to the
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 22323--22325
+Underfull \hbox (badness 10000) in paragraph at lines 22325--22327
 \TU/lmr/m/n/10 from Bldgs surfaces to
  []
 
 
-Overfull \hbox (32.74416pt too wide) in paragraph at lines 22323--22325
+Overfull \hbox (25.11105pt too wide) in paragraph at lines 22325--22327
 \TU/lmr/m/n/10 SUEWS_WithinGridWaterDist.txt.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22323--22325
-\TU/lmr/m/n/10 Value of integer is ar-
+Underfull \hbox (badness 10000) in paragraph at lines 22325--22327
+\TU/lmr/m/n/10 Value of integer is arbi-
  []
 
 
-Underfull \hbox (badness 7704) in paragraph at lines 22323--22325
-\TU/lmr/m/n/10 bitrary but must match
+Underfull \hbox (badness 10000) in paragraph at lines 22325--22327
+\TU/lmr/m/n/10 specified in column 1 of
  []
 
 
-Overfull \hbox (32.74416pt too wide) in paragraph at lines 22323--22325
+Overfull \hbox (25.11105pt too wide) in paragraph at lines 22325--22327
 \TU/lmr/m/n/10 SUEWS_WithinGridWaterDist.txt.| 
  []
 
 
-Underfull \hbox (badness 7186) in paragraph at lines 22376--22378
-[]|\TU/lmr/m/n/10 Code that links to the
+Underfull \hbox (badness 10000) in paragraph at lines 22378--22380
+\TU/lmr/m/n/10 tion of water that flows
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22376--22378
-\TU/lmr/m/n/10 from BSoil surfaces to
+Underfull \hbox (badness 7486) in paragraph at lines 22378--22380
+\TU/lmr/m/n/10 faces in columns 2-10 of
  []
 
 
-Overfull \hbox (32.74416pt too wide) in paragraph at lines 22376--22378
+Overfull \hbox (25.11105pt too wide) in paragraph at lines 22378--22380
 \TU/lmr/m/n/10 SUEWS_WithinGridWaterDist.txt.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22376--22378
-\TU/lmr/m/n/10 Value of integer is ar-
+Underfull \hbox (badness 10000) in paragraph at lines 22378--22380
+\TU/lmr/m/n/10 Value of integer is arbi-
  []
 
 
-Underfull \hbox (badness 7704) in paragraph at lines 22376--22378
-\TU/lmr/m/n/10 bitrary but must match
+Underfull \hbox (badness 10000) in paragraph at lines 22378--22380
+\TU/lmr/m/n/10 specified in column 1 of
  []
 
 
-Overfull \hbox (32.74416pt too wide) in paragraph at lines 22376--22378
+Overfull \hbox (25.11105pt too wide) in paragraph at lines 22378--22380
 \TU/lmr/m/n/10 SUEWS_WithinGridWaterDist.txt.| 
  []
 
-
-Underfull \hbox (badness 7186) in paragraph at lines 22429--22431
-[]|\TU/lmr/m/n/10 Code that links to the
+[138]
+Underfull \hbox (badness 10000) in paragraph at lines 22431--22433
+\TU/lmr/m/n/10 tion of water that flows
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22429--22431
+Underfull \hbox (badness 10000) in paragraph at lines 22431--22433
 \TU/lmr/m/n/10 from DecTr surfaces to
  []
 
 
-Overfull \hbox (32.74416pt too wide) in paragraph at lines 22429--22431
+Overfull \hbox (25.11105pt too wide) in paragraph at lines 22431--22433
 \TU/lmr/m/n/10 SUEWS_WithinGridWaterDist.txt.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22429--22431
-\TU/lmr/m/n/10 Value of integer is ar-
+Underfull \hbox (badness 10000) in paragraph at lines 22431--22433
+\TU/lmr/m/n/10 Value of integer is arbi-
  []
 
 
-Underfull \hbox (badness 7704) in paragraph at lines 22429--22431
-\TU/lmr/m/n/10 bitrary but must match
+Underfull \hbox (badness 10000) in paragraph at lines 22431--22433
+\TU/lmr/m/n/10 specified in column 1 of
  []
 
 
-Overfull \hbox (32.74416pt too wide) in paragraph at lines 22429--22431
+Overfull \hbox (25.11105pt too wide) in paragraph at lines 22431--22433
 \TU/lmr/m/n/10 SUEWS_WithinGridWaterDist.txt.| 
  []
 
-[140]
-Underfull \hbox (badness 7186) in paragraph at lines 22482--22484
-[]|\TU/lmr/m/n/10 Code that links to the
+
+Underfull \hbox (badness 10000) in paragraph at lines 22484--22486
+\TU/lmr/m/n/10 tion of water that flows
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22482--22484
+Underfull \hbox (badness 10000) in paragraph at lines 22484--22486
 \TU/lmr/m/n/10 from EveTr surfaces to
  []
 
 
-Overfull \hbox (32.74416pt too wide) in paragraph at lines 22482--22484
+Overfull \hbox (25.11105pt too wide) in paragraph at lines 22484--22486
 \TU/lmr/m/n/10 SUEWS_WithinGridWaterDist.txt.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22482--22484
-\TU/lmr/m/n/10 Value of integer is ar-
+Underfull \hbox (badness 10000) in paragraph at lines 22484--22486
+\TU/lmr/m/n/10 Value of integer is arbi-
  []
 
 
-Underfull \hbox (badness 7704) in paragraph at lines 22482--22484
-\TU/lmr/m/n/10 bitrary but must match
+Underfull \hbox (badness 10000) in paragraph at lines 22484--22486
+\TU/lmr/m/n/10 specified in column 1 of
  []
 
 
-Overfull \hbox (32.74416pt too wide) in paragraph at lines 22482--22484
+Overfull \hbox (25.11105pt too wide) in paragraph at lines 22484--22486
 \TU/lmr/m/n/10 SUEWS_WithinGridWaterDist.txt.| 
  []
 
-
-Underfull \hbox (badness 7186) in paragraph at lines 22535--22537
-[]|\TU/lmr/m/n/10 Code that links to the
+[139]
+Underfull \hbox (badness 10000) in paragraph at lines 22537--22539
+\TU/lmr/m/n/10 tion of water that flows
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22535--22537
+Underfull \hbox (badness 10000) in paragraph at lines 22537--22539
 \TU/lmr/m/n/10 from Grass surfaces to
  []
 
 
-Overfull \hbox (32.74416pt too wide) in paragraph at lines 22535--22537
+Overfull \hbox (25.11105pt too wide) in paragraph at lines 22537--22539
 \TU/lmr/m/n/10 SUEWS_WithinGridWaterDist.txt.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22535--22537
-\TU/lmr/m/n/10 Value of integer is ar-
+Underfull \hbox (badness 10000) in paragraph at lines 22537--22539
+\TU/lmr/m/n/10 Value of integer is arbi-
  []
 
 
-Underfull \hbox (badness 7704) in paragraph at lines 22535--22537
-\TU/lmr/m/n/10 bitrary but must match
+Underfull \hbox (badness 10000) in paragraph at lines 22537--22539
+\TU/lmr/m/n/10 specified in column 1 of
  []
 
 
-Overfull \hbox (32.74416pt too wide) in paragraph at lines 22535--22537
+Overfull \hbox (25.11105pt too wide) in paragraph at lines 22537--22539
 \TU/lmr/m/n/10 SUEWS_WithinGridWaterDist.txt.| 
  []
 
 
-Underfull \hbox (badness 7186) in paragraph at lines 22588--22590
-[]|\TU/lmr/m/n/10 Code that links to the
+Underfull \hbox (badness 10000) in paragraph at lines 22590--22592
+\TU/lmr/m/n/10 tion of water that flows
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22588--22590
+Underfull \hbox (badness 10000) in paragraph at lines 22590--22592
 \TU/lmr/m/n/10 from Paved surfaces to
  []
 
 
-Overfull \hbox (29.96416pt too wide) in paragraph at lines 22588--22590
+Overfull \hbox (22.33105pt too wide) in paragraph at lines 22590--22592
 \TU/lmr/m/n/10 SUEWS_WithinGridWaterDist.txt
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22588--22590
-\TU/lmr/m/n/10 trary but must match
- []
-
-
-Overfull \hbox (32.74416pt too wide) in paragraph at lines 22588--22590
-\TU/lmr/m/n/10 SUEWS_WithinGridWaterDist.txt.| 
- []
-
-[141]
-Underfull \hbox (badness 7186) in paragraph at lines 22641--22643
-[]|\TU/lmr/m/n/10 Code that links to the
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 22641--22643
-\TU/lmr/m/n/10 from Water surfaces to
- []
-
-
-Overfull \hbox (32.74416pt too wide) in paragraph at lines 22641--22643
-\TU/lmr/m/n/10 SUEWS_WithinGridWaterDist.txt.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 22641--22643
-\TU/lmr/m/n/10 Value of integer is ar-
- []
-
-
-Underfull \hbox (badness 7704) in paragraph at lines 22641--22643
+Underfull \hbox (badness 10000) in paragraph at lines 22590--22592
 \TU/lmr/m/n/10 bitrary but must match
  []
 
 
-Overfull \hbox (32.74416pt too wide) in paragraph at lines 22641--22643
+Overfull \hbox (25.11105pt too wide) in paragraph at lines 22590--22592
 \TU/lmr/m/n/10 SUEWS_WithinGridWaterDist.txt.| 
  []
 
-[142]
-Underfull \hbox (badness 10000) in paragraph at lines 22906--22908
-\TU/lmr/m/n/10 here is used if Rough-
+
+Underfull \hbox (badness 10000) in paragraph at lines 22643--22645
+\TU/lmr/m/n/10 tion of water that flows
  []
 
 
-Underfull \hbox (badness 7667) in paragraph at lines 22906--22908
-\TU/lmr/m/n/10 LenMomMethod = 1 in
+Underfull \hbox (badness 10000) in paragraph at lines 22643--22645
+\TU/lmr/m/n/10 from Water surfaces to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22906--22908
-\TU/lmr/m/n/10 (RoughLenMomMethod =
+Overfull \hbox (25.11105pt too wide) in paragraph at lines 22643--22645
+\TU/lmr/m/n/10 SUEWS_WithinGridWaterDist.txt.
  []
 
-[143]
+
+Underfull \hbox (badness 10000) in paragraph at lines 22643--22645
+\TU/lmr/m/n/10 Value of integer is arbi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22643--22645
+\TU/lmr/m/n/10 specified in column 1 of
+ []
+
+
+Overfull \hbox (25.11105pt too wide) in paragraph at lines 22643--22645
+\TU/lmr/m/n/10 SUEWS_WithinGridWaterDist.txt.| 
+ []
+
+[140] [141]
+Underfull \hbox (badness 7362) in paragraph at lines 23014--23016
+[]|\TU/lmr/m/n/10 initial convective boundary
+ []
+
 
 LaTeX Warning: Hyper reference `input_files/SUEWS_SiteInfo/SUEWS_SiteInfo:Data_
-Entry' on page 144 undefined on input line 23025.
+Entry' on page 142 undefined on input line 23027.
 
+[142] [143] [144] [145] [146] [147] [148] [149] [150] [151] [152] [153]
+Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
 
-Overfull \hbox (1.67pt too wide) in paragraph at lines 23092--23092
-[]\TU/lmr/m/n/10 MU| 
- []
-
-
-Overfull \hbox (1.81pt too wide) in paragraph at lines 23092--23092
-[]\TU/lmr/m/n/10 MD| 
- []
-
-[144] [145] [146] [147] [148] [149] [150] [151] [152] [153]
-Underfull \hbox (badness 10000) in paragraph at lines 24690--24690
-[]\TU/lmss/m/n/10 Column
- []
-
-[154]
-Underfull \hbox (badness 5475) in paragraph at lines 24772--24774
-[]|\TU/lmr/m/n/10 vertical gradient of potential
- []
-
-
-Overfull \hbox (6.15062pt too wide) in paragraph at lines 24832--24833
-[]|\TU/lmss/m/n/10 gamq_gkgm| 
- []
-
-Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ︙ in font [lmroman10-regular]:mapping=tex-text;!
-[155] [156]
-Overfull \hbox (8.2pt too wide) in paragraph at lines 25120--25120
-[]\TU/lmss/m/n/10 Value| 
- []
-
-[157]
+[154] [155]
 Missing character: There is no ≥ in font [lmroman10-regular]:mapping=tex-text;!
-
-Underfull \hbox (badness 5637) in paragraph at lines 25277--25282
+ [156]
+Underfull \hbox (badness 5637) in paragraph at lines 25182--25187
 []\TU/lmr/m/n/10 If ESTM is used (QSchoice=4), the files [][]\TU/lmr/m/it/10 SU
 EWS_ESTMCoefficients.txt[][]\TU/lmr/m/n/10 , \TU/lmtt/m/n/10 ESTMinput.nml \TU/
 lmr/m/n/10 and
  []
 
-[158] [159] [160] [161] [162] [163] [164] [165] [166]
-Chapter 7.
-
-LaTeX Warning: Hyper reference `output_files/output_files:RunControl' on page 1
-67 undefined on input line 26625.
-
-[167
+[157] [158] [159] [160] [161] [162] [163] [164] [165] [166
 
 ]
-Overfull \hbox (118.063pt too wide) in alignment at lines 26635--26647
+Chapter 7.
+[167]
+Overfull \hbox (31.081pt too wide) in alignment at lines 26539--26551
  [] [] [] [] 
  []
 
 
-Overfull \hbox (118.063pt too wide) in alignment at lines 26647--26662
+Overfull \hbox (31.081pt too wide) in alignment at lines 26551--26566
  [] [] [] [] 
  []
 
 
-Overfull \hbox (118.063pt too wide) in alignment at lines 26662--26666
+Overfull \hbox (31.081pt too wide) in alignment at lines 26566--26570
  [] [] [] [] 
  []
 
 
-Overfull \hbox (118.063pt too wide) in alignment at lines 26666--26668
+Overfull \hbox (31.081pt too wide) in alignment at lines 26570--26572
  [] [] [] [] 
  []
 
 
-Overfull \hbox (118.063pt too wide) in alignment at lines 26668--26849
+Overfull \hbox (31.081pt too wide) in alignment at lines 26572--26753
  [] [] [] [] 
  []
 
 
-Overfull \hbox (118.063pt too wide) in alignment at lines 26849--27029
+Overfull \hbox (31.081pt too wide) in alignment at lines 26753--26933
  [] [] [] [] 
  []
 
 
-Overfull \hbox (118.063pt too wide) in alignment at lines 27029--27209
+Overfull \hbox (31.081pt too wide) in alignment at lines 26933--27113
  [] [] [] [] 
  []
 
 [168]
-Overfull \hbox (118.063pt too wide) in alignment at lines 27209--27389
+Overfull \hbox (31.081pt too wide) in alignment at lines 27113--27293
  [] [] [] [] 
  []
 
 
-Overfull \hbox (118.063pt too wide) in alignment at lines 27389--27426
+Overfull \hbox (31.081pt too wide) in alignment at lines 27293--27330
  [] [] [] [] 
  []
 
 
 LaTeX Warning: Hyper reference `output_files/output_files:RunControl' on page 1
-69 undefined on input line 27431.
+69 undefined on input line 27335.
 
 [169] [170] [171] [172] [173] [174] [175] [176]
 Chapter 8.
@@ -4546,41 +3970,6 @@ Chapter 11.
 Chapter 12.
 [185] [186] [187] [188] [189] [190]
 Chapter 13.
-
-Underfull \hbox (badness 10000) in paragraph at lines 30288--30288
-[]\TU/lmr/m/n/10 Anthropogenic
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 30288--30288
-[]\TU/lmr/m/n/10 DeBruin and Holtslag
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 30288--30288
-[]\TU/lmr/m/n/10 DeBruin and Holtslag
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 30288--30288
-[]\TU/lmr/m/n/10 buildings, paved, coniferous and deciduous
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 30373--30373
-[]\TU/lmr/bx/n/10 Software
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 30373--30373
-[]\TU/lmr/m/n/10 Applicable
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 30373--30373
-[]\TU/lmr/m/n/10 Unique fea-
- []
-
 [191
 
 ] [192] [193
@@ -4595,11 +3984,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 30373--30373
 [201] [202] [203] [204] [205] [206] [207] [208] [209] [210
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 30606.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 30606.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 30510.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 30510.
  (./SUEWS.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 30606.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 30606.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 30510.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 30510.
 
 
 LaTeX Warning: There were undefined references.
@@ -4609,10 +3998,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 23204 strings out of 493005
- 444146 string characters out of 6134596
- 615341 words of memory out of 5000000
- 26893 multiletter control sequences out of 15000+600000
+ 23220 strings out of 493005
+ 444226 string characters out of 6134596
+ 615339 words of memory out of 5000000
+ 26909 multiletter control sequences out of 15000+600000
  10583 words of font info for 72 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
  36i,13n,67p,10381b,624s stack positions out of 5000i,500n,10000p,200000b,80000s

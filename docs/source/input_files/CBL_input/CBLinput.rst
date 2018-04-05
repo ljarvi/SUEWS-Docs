@@ -34,7 +34,7 @@ CBLinput
 	:Requirement:
 		Required
 	:Description:
-		Determines initial values (see CBL_Initial_data.txt)
+		Determines initial values (see `CBL_Initial_data.txt`)
 	:Configuration:
 		.. csv-table::
 			:file: InitialData_use.csv
@@ -83,7 +83,7 @@ CBLinput
 		Required
 
 	:Description:
-		If Sondeflag=1, write the file name including the path from site directory e.g. FileSonde(id)= 'CBLinputfiles\XXX.txt', XXX is an arbitrary name. 
+		If Sondeflag=1, write the file name including the path from site directory e.g. FileSonde(id)= 'CBLinputfiles\XXX.txt', XXX is an arbitrary name.
 	:Configuration:
 		to fill
 
@@ -105,6 +105,6 @@ CBLinput
 		Required
 
 	:Description:
-		Subsidence velocity (m |s^-1| ) in eq. 1 and 2 of Onomura et al. (2015) [17] . (-0.01 m |s^-1| recommended) 
+		Subsidence velocity (m |s^-1| ) in eq. 1 and 2 of Onomura et al. (2015) [17] . (-0.01 m |s^-1| recommended)
 	:Configuration:
 		to fill
