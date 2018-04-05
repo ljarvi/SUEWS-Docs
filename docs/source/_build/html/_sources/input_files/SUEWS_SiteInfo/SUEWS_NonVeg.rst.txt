@@ -1015,7 +1015,7 @@ Values <http://urban-climate.net/umep/TypicalValues#Typical_Values>`__.
 |     |     |         |         | ients   |         |         |   |
 |     |     |         |         | are     |         |         |   |
 |     |     |         |         | applied |         |         |   |
-|     |     |         |         | [deg C] |         |         |   |
+|     |     |         |         | [°C] |         |         |   |
 |     |     |         |         | If      |         |         |   |
 |     |     |         |         | 5-day   |         |         |   |
 |     |     |         |         | running |         |         |   |

@@ -105,6 +105,6 @@ CBLinput
 		Required
 
 	:Description:
-		Subsidence velocity (m s -1 ) in eq. 1 and 2 of Onomura et al. (2015) [17] . (-0.01 m s -1 recommended) 
+		Subsidence velocity (m |s^-1| ) in eq. 1 and 2 of Onomura et al. (2015) [17] . (-0.01 m |s^-1| recommended) 
 	:Configuration:
 		to fill

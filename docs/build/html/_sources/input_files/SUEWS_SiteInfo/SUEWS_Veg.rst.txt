@@ -6,7 +6,7 @@ SUEWS_Veg.txt
 SUEWS_Veg.txt specifies the characteristics for the vegetated surface
 cover types (EveTr, DecTr, Grass) by linking codes in column 1 of
 SUEWS_Veg.txt to the codes specified in
-`SUEWS_SiteSelect.txt <#SUEWS_SiteSelect.txt>`__ (Code_EveTr,
+`SUEWS_SiteSelect.txt` (Code_EveTr,
 Code_DecTr, Code_Grass). Each row should correspond to a particular
 surface type. For suggestions on how to complete this table, see:
 `Typical

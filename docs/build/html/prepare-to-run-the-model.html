@@ -189,7 +189,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="preparing-to-run-the-model">
-<h1>5. Preparing to run the model<a class="headerlink" href="#preparing-to-run-the-model" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1>5. Preparing to run the model<a class="headerlink" href="#preparing-to-run-the-model" title="Permalink to this headline">¶</a></h1>
 <p>The following is to help with the model setup. Note that there is a
 version of SUEWS in <a class="reference external" href="http://urban-climate.net/umep/UMEP_Manual">UMEP</a>
 and there are some starting
@@ -337,7 +337,7 @@ results. When you run the program it will write over the supplied files.</p>
 <p>To run the model you can use <strong>Command Prompt</strong> (in the directory where
 the programme is located type the model name) or just double click the
 executable file.</p>
-<p>Please see <a class="reference external" href="#Troubleshooting">Troubleshooting</a> if you have problems
+<p>Please see <a class="reference internal" href="troubleshooting.html#troubleshooting"><span class="std std-ref">Troubleshooting</span></a> if you have problems
 running the model.</p>
 </div>
 <div class="section" id="preparation-of-data">
@@ -374,16 +374,16 @@ using irrigation and the type of irrigation (automatic or manual).</li>
 is appropriate and representative of the site:</p>
 <ul class="simple">
 <li>Fractions of different land cover types and (less so) heights of
-buildings <a class="reference internal" href="references.html#w16" id="id1">[W16]</a></li>
+buildings <a class="reference internal" href="references.html#w16" id="id2">[W16]</a></li>
 <li>Accurate meteorological forcing data, particularly precipitation and
-incoming shortwave radiation <a class="reference internal" href="references.html#ko17" id="id2">[Ko17]</a></li>
-<li>Initial soil moisture conditions <a class="reference internal" href="references.html#best2014" id="id3">[Best2014]</a></li>
+incoming shortwave radiation <a class="reference internal" href="references.html#ko17" id="id3">[Ko17]</a></li>
+<li>Initial soil moisture conditions <a class="reference internal" href="references.html#best2014" id="id4">[Best2014]</a></li>
 <li>Anthropogenic heat flux parameters, particularly if there are
 considerable energy emissions from transport, buildings, metabolism,
-etc <a class="reference internal" href="references.html#w16" id="id4">[W16]</a></li>
+etc <a class="reference internal" href="references.html#w16" id="id5">[W16]</a></li>
 <li>External water use (if irrigation or street cleaning occurs)</li>
 <li>Snow clearing (if running the snow option)</li>
-<li>Surface conductance parameterisation <a class="reference internal" href="references.html#j11" id="id5">[J11]</a> <a class="reference internal" href="references.html#w16" id="id6">[W16]</a></li>
+<li>Surface conductance parameterisation <a class="reference internal" href="references.html#j11" id="id6">[J11]</a> <a class="reference internal" href="references.html#w16" id="id7">[W16]</a></li>
 </ul>
 <p>SUEWS can be run either for an individual area or for multiple areas.
 There is no requirement for the areas to be of any particular shape but
@@ -391,7 +391,7 @@ here we refer to them as model ‘grids’.</p>
 <div class="section" id="preparation-of-site-characteristics-and-model-parameters">
 <h3>5.5.1. Preparation of site characteristics and model parameters<a class="headerlink" href="#preparation-of-site-characteristics-and-model-parameters" title="Permalink to this headline">¶</a></h3>
 <p>The area to be modelled is described by a set of characteristics that
-are specified in the <a class="reference external" href="#SUEWS_SiteSelect.txt">SUEWS_SiteSelect.txt</a>
+are specified in the <a class="reference internal" href="input_files/SUEWS_SiteInfo/SUEWS_SiteSelect.html#suews-siteselect-txt"><span class="std std-ref">SUEWS_SiteSelect.txt</span></a>
 file. Each row corresponds to one model grid for one year (i.e. running
 a single grid over three years would require three rows; running two
 grids over two years would require four rows). Characteristics are often
@@ -402,7 +402,7 @@ characteristics of deciduous trees in a particular region (links to
 characteristics for different types of urban areas. The codes are
 specified by the user, must be integer values and must be unique within
 the first column of each input file, otherwise the model will return an
-error. (Note in <a class="reference external" href="#SUEWS_SiteSelect.txt">SUEWS_SiteSelect.txt</a> the
+error. (Note in <a class="reference internal" href="input_files/SUEWS_SiteInfo/SUEWS_SiteSelect.html#suews-siteselect-txt"><span class="std std-ref">SUEWS_SiteSelect.txt</span></a> the
 first column is labelled ‘Grid’ and can contain repeat values for
 different years.) See <a class="reference external" href="#Input_files">Input files</a> for details. Note
 <a class="reference external" href="http://urban-climate.net/umep/UMEP">UMEP</a> maybe helpful for
@@ -478,7 +478,7 @@ to a GIS environment using QGIS.</p>
 <li>To model it population density is needed as an input for LUMPS and
 SUEWS to calculate Q<sub>F</sub>.</li>
 <li>If you have no information about the population of the site we
-recommend that you use the LUCY model <a class="reference internal" href="references.html#lucy" id="id7">[lucy]</a>  <a class="reference internal" href="references.html#lucy2" id="id8">[lucy2]</a> to estimate the
+recommend that you use the LUCY model <a class="reference internal" href="references.html#lucy" id="id8">[lucy]</a>  <a class="reference internal" href="references.html#lucy2" id="id9">[lucy2]</a> to estimate the
 anthropogenic heat flux which can then be provided as input SUEWS
 along with the meteorological forcing data. The LUCY model can be
 downloaded from <a class="reference external" href="http://micromet.reading.ac.uk/">here</a>.</li>
@@ -542,7 +542,7 @@ run the model.</p>
 </div>
 <div class="section" id="preparation-of-the-runcontrol-file">
 <h3>5.5.2. Preparation of the RunControl file<a class="headerlink" href="#preparation-of-the-runcontrol-file" title="Permalink to this headline">¶</a></h3>
-<p>In the RunControl.nml file the site name (<a href="#id9"><span class="problematic" id="id10">SS_</span></a>) and directories for the
+<p>In the RunControl.nml file the site name (<a href="#id10"><span class="problematic" id="id11">SS_</span></a>) and directories for the
 model input and output are given. This means <strong>before running</strong> the
 model (even the with the example datasets) you must either</p>
 <ol class="arabic simple">
@@ -565,16 +565,15 @@ and generates the output files. For example if you specify:</p>
 <p class="last">remember&nbsp;to&nbsp;add&nbsp;the&nbsp;last&nbsp;backslash&nbsp;in&nbsp;windows&nbsp;and&nbsp;slash&nbsp;in&nbsp;Linux/Mac</p>
 </div>
 <p>If the file paths are not correct the program will return an error when
-run (see <a class="reference external" href="#Error_messages:_problems.txt">error messages</a>) and write
-the error to the problems.txt file.</p>
+run and write the error to the <a class="reference internal" href="output_files/output_files.html#problems-txt"><span class="std std-ref">Error messages: problems.txt</span></a> file.</p>
 </div>
 <div class="section" id="preparation-of-the-meteorological-forcing-data">
 <h3>5.5.3. Preparation of the Meteorological forcing data<a class="headerlink" href="#preparation-of-the-meteorological-forcing-data" title="Permalink to this headline">¶</a></h3>
-<p>The model time-step is specified in <a class="reference external" href="#RunControl.nml">RunControl.nml</a>
+<p>The model time-step is specified in <a class="reference internal" href="input_files/RunControl/RunControl.html#runcontrol-nml"><span class="std std-ref">RunControl.nml</span></a>
 (5 min is highly recommended). If meteorological forcing data are not
 available at this resolution, SUEWS has the option to downscale (e.g.
 hourly) data to the time-step required. See details about the
-<a class="reference external" href="#SSss_YYYY_data_tt.txt">meteorological forcing data</a> to learn more
+<a class="reference internal" href="input_files/met_input.html#ssss-yyyy-data-tt-txt"><span class="std std-ref">SSss_YYYY_data_tt.txt</span></a> to learn more
 about choices of data input. Each grid can have its own meteorological
 forcing file, or a single file can be used for all grids. The forcing
 data should be representative of the local-scale, i.e. collected (or
@@ -587,7 +586,7 @@ trees).</p>
 before the start of the run are provided in the Initial Conditions file.
 At the very start of the run, each grid can have its own Initial
 Conditions file, or a single file can be used for all grids. For details
-see <a class="reference external" href="#InitialConditions">InitialConditions</a>.</p>
+see <a class="reference internal" href="input_files/Initial_Conditions/Initial_Conditions.html#initial-conditions"><span class="std std-ref">Initial Conditions file</span></a>.</p>
 </div>
 </div>
 <div class="section" id="run-the-model-for-your-site">
@@ -595,7 +594,7 @@ see <a class="reference external" href="#InitialConditions">InitialConditions</a
 <p>To run the model you can use <strong>Command Prompt</strong> (in the directory where
 the programme is located type the model name) or just double click the
 executable file.</p>
-<p>Please see <a class="reference external" href="#Troubleshooting">Troubleshooting</a> if you have problems
+<p>Please see <a class="reference internal" href="troubleshooting.html#troubleshooting"><span class="std std-ref">Troubleshooting</span></a> if you have problems
 running the model.</p>
 </div>
 <div class="section" id="analyse-the-output">

@@ -6,6 +6,8 @@ Output files
 Runtime diagnostic information
 ------------------------------
 
+.. _problems.txt:
+
 Error messages: problems.txt
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -27,11 +29,11 @@ common errors to help the user determine what the problem is. If you
 encounter an error that does not provide an error message please capture
 the details so we can hopefully provide better error messages in future.
 
-See `Troubleshooting <#Troubleshooting>`__ section for help solving
+See `Troubleshooting` section for help solving
 problems. If the file paths are not correct the program will return an
-error when run (see `Preparing to run the
-model <#Preparing_to_run_the_model>`__).
+error when run (see `Preparing_to_run_the_model`).
 
+.. _warnings.txt:
 Warning messages: warnings.txt
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -44,7 +46,7 @@ Warning messages: warnings.txt
    the whole file on Unix-like systems (Linux/mac OS), which may slow
    down your system.
 -  To prevent warnings.txt from being written, set **SuppressWarnings**
-   to 1 in `RunControl.nml <#RunControl.nml>`__.
+   to 1 in `RunControl.nml`.
 -  Warning messages are usually written with a grid number, timestamp
    and error count. If the problem occurs in the initial stages (i.e.
    before grid numbers and timestamps are assigned, these are printed as
@@ -106,14 +108,14 @@ written for each grid so it may contain multiple years.
   :header-rows: 1
   :widths: auto
 
-.. _initialconditionsssss_yyyy.nml-1:
+.. _initialconditionsssss_yyyy.nml:
 
 InitialConditionsSSss_YYYY.nml
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 At the end of the model run (or the end of each year in the model run) a
 new InitialConditions file is written out (to the input folder) for each
-grid, see `InitialConditionsSSss_YYYY.nml`
+grid, see `Initial_Conditions`
 
 SSss_YYYY_snow_TT.txt
 ~~~~~~~~~~~~~~~~~~~~~

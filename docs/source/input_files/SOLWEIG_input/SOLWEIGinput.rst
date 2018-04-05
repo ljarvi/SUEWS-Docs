@@ -13,7 +13,7 @@ SOLWEIGinput
 		.. csv-table::
 			:file: Posture.csv
 			:header-rows: 1
-			:widths: 20 80
+			:widths: auto
 
 
 .. option:: usevegdem
@@ -26,7 +26,7 @@ SOLWEIGinput
 		.. csv-table::
 			:file: usevegdem.csv
 			:header-rows: 1
-			:widths: 20 80
+			:widths: auto
 
 
 .. option:: onlyglobal
@@ -39,7 +39,7 @@ SOLWEIGinput
 		.. csv-table::
 			:file: onlyglobal.csv
 			:header-rows: 1
-			:widths: 20 80
+			:widths: auto
 
 
 .. option:: SOLWEIGpoi_out
@@ -52,7 +52,7 @@ SOLWEIGinput
 		.. csv-table::
 			:file: SOLWEIGpoi_out.csv
 			:header-rows: 1
-			:widths: 20 80
+			:widths: auto
 
 
 .. option:: Tmrt_out
@@ -65,7 +65,7 @@ SOLWEIGinput
 		.. csv-table::
 			:file: Tmrt_out.csv
 			:header-rows: 1
-			:widths: 20 80
+			:widths: auto
 
 
 .. option:: Lup2d_out
@@ -78,7 +78,7 @@ SOLWEIGinput
 		.. csv-table::
 			:file: Lup2d_out.csv
 			:header-rows: 1
-			:widths: 20 80
+			:widths: auto
 
 
 .. option:: Ldown2d_out
@@ -91,7 +91,7 @@ SOLWEIGinput
 		.. csv-table::
 			:file: Ldown2d_out.csv
 			:header-rows: 1
-			:widths: 20 80
+			:widths: auto
 
 
 .. option:: Kup2d_out
@@ -104,7 +104,7 @@ SOLWEIGinput
 		.. csv-table::
 			:file: Kup2d_out.csv
 			:header-rows: 1
-			:widths: 20 80
+			:widths: auto
 
 
 .. option:: Kdown2d_out
@@ -117,7 +117,7 @@ SOLWEIGinput
 		.. csv-table::
 			:file: Kdown2d_out.csv
 			:header-rows: 1
-			:widths: 20 80
+			:widths: auto
 
 
 .. option:: GVF_out
@@ -130,7 +130,7 @@ SOLWEIGinput
 		.. csv-table::
 			:file: GVF_out.csv
 			:header-rows: 1
-			:widths: 20 80
+			:widths: auto
 
 
 .. option:: SOLWEIG_ldown
@@ -143,7 +143,7 @@ SOLWEIGinput
 		.. csv-table::
 			:file: SOLWEIG_ldown.csv
 			:header-rows: 1
-			:widths: 20 80
+			:widths: auto
 
 
 .. option:: RunForGrid
@@ -156,7 +156,7 @@ SOLWEIGinput
 		.. csv-table::
 			:file: RunForGrid.csv
 			:header-rows: 1
-			:widths: 20 80
+			:widths: auto
 
 
 .. option:: absK

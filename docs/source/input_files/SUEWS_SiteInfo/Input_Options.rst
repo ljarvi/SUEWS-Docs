@@ -8,9 +8,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: a1.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: a2
@@ -20,45 +21,49 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: a2.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: a3
 
 	:Description:
-		Constant term [W m -2 ]
+		Constant term [W |m^-2| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: a3.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: ActivityProfWD
 
 	:Description:
-		Code for human activity profile (weekdays) Provides the link to column 1 of SUEWS_Profiles.txt. Look the codes Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt. Used for CO2 flux calculation - not used in v2017a 
+		Code for human activity profile (weekdays) Provides the link to column 1 of SUEWS_Profiles.txt. Look the codes Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt. Used for CO2 flux calculation - not used in v2017a
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: ActivityProfWD.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: ActivityProfWE
 
 	:Description:
-		Code for human activity profile (weekends) Provides the link to column 1 of SUEWS_Profiles.txt. Look the codes Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt. Used for CO2 flux calculation - not used in v2017a 
+		Code for human activity profile (weekends) Provides the link to column 1 of SUEWS_Profiles.txt. Look the codes Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt. Used for CO2 flux calculation - not used in v2017a
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: ActivityProfWE.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: AHMin
@@ -68,9 +73,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: AHMin.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: AHSlope
@@ -80,33 +86,36 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: AHSlope.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: AlbedoMax
 
 	:Description:
-		Effective surface albedo (middle of the day value) for summertime. View factors should be taken into account. Effective surface albedo (middle of the day value) for summertime, full leaf-on. View factors should be taken into account. Example values [-] 0.1 EveTr Oke (1987) [35]  0.18 DecTr Oke (1987) [35]  0.21 Grass Oke (1987) [35]  Effective albedo of the water surface. View factors should be taken into account. Example values [-] 0.1 Water Oke (1987) [35]  Example values [-] 0.85 Järvi et al. (2014) [15] 
+		Effective surface albedo (middle of the day value) for summertime. View factors should be taken into account. Effective surface albedo (middle of the day value) for summertime, full leaf-on. View factors should be taken into account. Example values [-] 0.1 EveTr Oke (1987) [35]  0.18 DecTr Oke (1987) [35]  0.21 Grass Oke (1987) [35]  Effective albedo of the water surface. View factors should be taken into account. Example values [-] 0.1 Water Oke (1987) [35]  Example values [-] 0.85 Järvi et al. (2014) [15]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: AlbedoMax.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: AlbedoMin
 
 	:Description:
-		Effective surface albedo (middle of the day value) for wintertime (not including snow). View factors should be taken into account. Not currently used for non-vegetated surfaces – set the same as AlbedoMax. Effective surface albedo (middle of the day value) for wintertime (not including snow), leaf-off. View factors should be taken into account. Example values [-] 0.1 EveTr Oke (1987) [35]  0.18 DecTr Oke (1987) [35]  0.21 Grass Oke (1987) [35]  View factors should be taken into account. Not currently used for water surface - set same as AlbedoMax. Example values [-] 0.18 Järvi et al. (2014) [15] 
+		Effective surface albedo (middle of the day value) for wintertime (not including snow). View factors should be taken into account. Not currently used for non-vegetated surfaces – set the same as AlbedoMax. Effective surface albedo (middle of the day value) for wintertime (not including snow), leaf-off. View factors should be taken into account. Example values [-] 0.1 EveTr Oke (1987) [35]  0.18 DecTr Oke (1987) [35]  0.21 Grass Oke (1987) [35]  View factors should be taken into account. Not currently used for water surface - set same as AlbedoMax. Example values [-] 0.18 Järvi et al. (2014) [15]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: AlbedoMin.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Alt
@@ -116,9 +125,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Alt.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: AnOHM_Ch
@@ -128,45 +138,49 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: AnOHM_Ch.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: AnOHM_Cp
 
 	:Description:
-		Volumetric heat capacity for this surface to use in AnOHM [J m -3 ] Volumetric heat capacity for this surface to use in AnOHM [J m -3 ] Volumetric heat capacity for this surface to use in AnOHM [J m -3 ] Volumetric heat capacity for this surface to use in AnOHM [J m -3 ]
+		Volumetric heat capacity for this surface to use in AnOHM [J |m^-3| ] Volumetric heat capacity for this surface to use in AnOHM [J |m^-3| ] Volumetric heat capacity for this surface to use in AnOHM [J |m^-3| ] Volumetric heat capacity for this surface to use in AnOHM [J |m^-3| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: AnOHM_Cp.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: AnOHM_Kk
 
 	:Description:
-		Thermal conductivity for this surface to use in AnOHM [W m K -1 ] Thermal conductivity for this surface to use in AnOHM [W m K -1 ] Thermal conductivity for this surface to use in AnOHM [W m K -1 ] Thermal conductivity for this surface to use in AnOHM [W m K -1 ]
+		Thermal conductivity for this surface to use in AnOHM [W m |K^-1| ] Thermal conductivity for this surface to use in AnOHM [W m |K^-1| ] Thermal conductivity for this surface to use in AnOHM [W m |K^-1| ] Thermal conductivity for this surface to use in AnOHM [W m |K^-1| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: AnOHM_Kk.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: AnthropogenicCode
 
 	:Description:
-		Code for modelling anthropogenic heat flux Provides the link to column 1 of SUEWS_AnthropogenicHeat.txt, which contains the model coefficients for estimation of the anthropogenic heat flux (used if AnthropHeatChoice = 1, 2 in RunControl.nml ). Value of integer is arbitrary but must match code specified in column 1 of SUEWS_AnthropogenicHeat.txt. 
+		Code for modelling anthropogenic heat flux Provides the link to column 1 of SUEWS_AnthropogenicHeat.txt, which contains the model coefficients for estimation of the anthropogenic heat flux (used if AnthropHeatChoice = 1, 2 in RunControl.nml ). Value of integer is arbitrary but must match code specified in column 1 of SUEWS_AnthropogenicHeat.txt.
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: AnthropogenicCode.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: AreaWall
@@ -176,57 +190,62 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: AreaWall.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: BaseT
 
 	:Description:
-		See section 2.2 Järvi et al. (2011); Appendix A Järvi et al. (2014). Example values [°C] 5 EveTr Järvi et al. (2011) [1]  5 DecTr Järvi et al. (2011) [1]  5 Grass Järvi et al. (2011) [1] 
+		See section 2.2 Järvi et al. (2011); Appendix A Järvi et al. (2014). Example values [°C] 5 EveTr Järvi et al. (2011) [1]  5 DecTr Järvi et al. (2011) [1]  5 Grass Järvi et al. (2011) [1]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: BaseT.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: BaseTe
 
 	:Description:
-		See section 2.2 Järvi et al. (2011) [1] ; Appendix A Järvi et al. (2014) [15] . Example values [°C] 10 EveTr Järvi et al. (2011) [1]  10 DecTr Järvi et al. (2011) [1]  10 Grass Järvi et al. (2011) [1] 
+		See section 2.2 Järvi et al. (2011) [1] ; Appendix A Järvi et al. (2014) [15] . Example values [°C] 10 EveTr Järvi et al. (2011) [1]  10 DecTr Järvi et al. (2011) [1]  10 Grass Järvi et al. (2011) [1]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: BaseTe.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: BaseTHDD
 
 	:Description:
-		Base temperature for heating degree days [°C] e.g. Sailor and Vasireddy (2006) [39] 
+		Base temperature for heating degree days [°C] e.g. Sailor and Vasireddy (2006) [39]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: BaseTHDD.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: BuildEnergyUse
 
 	:Description:
-		Building energy use [W m-2] Can be used for CO2 flux calculation. Do not use in v2017a - set to -999 
+		Building energy use [W m-2] Can be used for CO2 flux calculation. Do not use in v2017a - set to -999
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: BuildEnergyUse.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Code
@@ -236,201 +255,218 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Code.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Code_Bldgs
 
 	:Description:
-		Code for Bldgs surface characteristics Provides the link to column 1 of SUEWS_NonVeg.txt, which contains the attributes describing buildings in this grid for this year. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_NonVeg.txt. 
+		Code for Bldgs surface characteristics Provides the link to column 1 of SUEWS_NonVeg.txt, which contains the attributes describing buildings in this grid for this year. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_NonVeg.txt.
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Code_Bldgs.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Code_Bsoil
 
 	:Description:
-		Code for BSoil surface characteristics Provides the link to column 1 of SUEWS_NonVeg.txt, which contains the attributes describing bare soil in this grid for this year. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_NonVeg.txt. 
+		Code for BSoil surface characteristics Provides the link to column 1 of SUEWS_NonVeg.txt, which contains the attributes describing bare soil in this grid for this year. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_NonVeg.txt.
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Code_Bsoil.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Code_DecTr
 
 	:Description:
-		Code for DecTr surface characteristics Provides the link to column 1 of SUEWS_Veg.txt, which contains the attributes describing deciduous trees and shrubs in this grid for this year. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Veg.txt. 
+		Code for DecTr surface characteristics Provides the link to column 1 of SUEWS_Veg.txt, which contains the attributes describing deciduous trees and shrubs in this grid for this year. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Veg.txt.
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Code_DecTr.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Code_ESTMClass_Bldgs1
 
 	:Description:
-		Code linking to SUEWS_ESTMCoefficients.txt 
+		Code linking to SUEWS_ESTMCoefficients.txt
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Code_ESTMClass_Bldgs1.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Code_ESTMClass_Bldgs2
 
 	:Description:
-		Code linking to SUEWS_ESTMCoefficients.txt 
+		Code linking to SUEWS_ESTMCoefficients.txt
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Code_ESTMClass_Bldgs2.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Code_ESTMClass_Bldgs3
 
 	:Description:
-		Code linking to SUEWS_ESTMCoefficients.txt 
+		Code linking to SUEWS_ESTMCoefficients.txt
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Code_ESTMClass_Bldgs3.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Code_ESTMClass_Bldgs4
 
 	:Description:
-		Code linking to SUEWS_ESTMCoefficients.txt 
+		Code linking to SUEWS_ESTMCoefficients.txt
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Code_ESTMClass_Bldgs4.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Code_ESTMClass_Bldgs5
 
 	:Description:
-		Code linking to SUEWS_ESTMCoefficients.txt 
+		Code linking to SUEWS_ESTMCoefficients.txt
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Code_ESTMClass_Bldgs5.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Code_ESTMClass_Paved1
 
 	:Description:
-		Code linking to SUEWS_ESTMCoefficients.txt 
+		Code linking to SUEWS_ESTMCoefficients.txt
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Code_ESTMClass_Paved1.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Code_ESTMClass_Paved2
 
 	:Description:
-		Code linking to SUEWS_ESTMCoefficients.txt 
+		Code linking to SUEWS_ESTMCoefficients.txt
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Code_ESTMClass_Paved2.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Code_ESTMClass_Paved3
 
 	:Description:
-		Code linking to SUEWS_ESTMCoefficients.txt 
+		Code linking to SUEWS_ESTMCoefficients.txt
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Code_ESTMClass_Paved3.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Code_EveTr
 
 	:Description:
-		Code for EveTr surface characteristics Provides the link to column 1 of SUEWS_Veg.txt, which contains the attributes describing evergreen trees and shrubs in this grid for this year. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Veg.txt. 
+		Code for EveTr surface characteristics Provides the link to column 1 of SUEWS_Veg.txt, which contains the attributes describing evergreen trees and shrubs in this grid for this year. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Veg.txt.
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Code_EveTr.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Code_Grass
 
 	:Description:
-		Code for Grass surface characteristics Provides the link to column 1 of SUEWS_Veg.txt, which contains the attributes describing grass surfaces in this grid for this year. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Veg.txt. 
+		Code for Grass surface characteristics Provides the link to column 1 of SUEWS_Veg.txt, which contains the attributes describing grass surfaces in this grid for this year. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Veg.txt.
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Code_Grass.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Code_Paved
 
 	:Description:
-		Code for Paved surface characteristics Provides the link to column 1 of SUEWS_NonVeg.txt, which contains the attributes describing paved areas in this grid for this year. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_NonVeg.txt. e.g. 331 means use the characteristics specified in the row of input file SUEWS_NonVeg.txt which has 331 in column 1 (Code). 
+		Code for Paved surface characteristics Provides the link to column 1 of SUEWS_NonVeg.txt, which contains the attributes describing paved areas in this grid for this year. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_NonVeg.txt. e.g. 331 means use the characteristics specified in the row of input file SUEWS_NonVeg.txt which has 331 in column 1 (Code).
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Code_Paved.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Code_Water
 
 	:Description:
-		Code for Water surface characteristics Provides the link to column 1 of SUEWS_Water.txt, which contains the attributes describing open water in this grid for this year. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Water.txt. 
+		Code for Water surface characteristics Provides the link to column 1 of SUEWS_Water.txt, which contains the attributes describing open water in this grid for this year. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Water.txt.
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Code_Water.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: CondCode
 
 	:Description:
-		Code for surface conductance parameters Provides the link to column 1 of SUEWS_Conductance.txt, which contains the parameters for the Jarvis (1976) parameterisation of surface conductance. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Conductance.txt. e.g. 33 means use the characteristics specified in the row of input file SUEWS_Conductance.txt which has 33 in column 1 (Code). 
+		Code for surface conductance parameters Provides the link to column 1 of SUEWS_Conductance.txt, which contains the parameters for the Jarvis (1976) parameterisation of surface conductance. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Conductance.txt. e.g. 33 means use the characteristics specified in the row of input file SUEWS_Conductance.txt which has 33 in column 1 (Code).
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: CondCode.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: CRWMax
@@ -440,9 +476,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: CRWMax.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: CRWMin
@@ -452,9 +489,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: CRWMin.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: DayWat(1)
@@ -464,9 +502,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: DayWat(1).csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: DayWat(2)
@@ -476,9 +515,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: DayWat(2).csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: DayWat(3)
@@ -488,9 +528,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: DayWat(3).csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: DayWat(4)
@@ -500,9 +541,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: DayWat(4).csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: DayWat(5)
@@ -512,9 +554,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: DayWat(5).csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: DayWat(6)
@@ -524,9 +567,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: DayWat(6).csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: DayWat(7)
@@ -536,9 +580,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: DayWat(7).csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: DayWatPer(1)
@@ -548,9 +593,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: DayWatPer(1).csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: DayWatPer(2)
@@ -560,9 +606,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: DayWatPer(2).csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: DayWatPer(3)
@@ -572,9 +619,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: DayWatPer(3).csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: DayWatPer(4)
@@ -584,9 +632,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: DayWatPer(4).csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: DayWatPer(5)
@@ -596,9 +645,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: DayWatPer(5).csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: DayWatPer(6)
@@ -608,9 +658,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: DayWatPer(6).csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: DayWatPer(7)
@@ -620,33 +671,36 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: DayWatPer(7).csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: DrainageCoef1
 
 	:Description:
-		Example values DrainageEq 10 Coefficient D0 [mm h -1 ] 3 Recommended [3] for Paved and Bldgs 0.013 Coefficient D0 [mm h -1 ] 2 Recommended [3] for BSoil Example values DrainageEq 10 Coefficient D0 [mm h -1 ] 3 Recommended [3] for Grass (irrigated) 0.013 Coefficient D0 [mm h -1 ] 2 Recommended [3] for EveTr, DecTr, Grass (unirrigated) Not currently used for water surface
+		Example values DrainageEq 10 Coefficient D0 [mm |h^-1| ] 3 Recommended [3] for Paved and Bldgs 0.013 Coefficient D0 [mm |h^-1| ] 2 Recommended [3] for BSoil Example values DrainageEq 10 Coefficient D0 [mm |h^-1| ] 3 Recommended [3] for Grass (irrigated) 0.013 Coefficient D0 [mm |h^-1| ] 2 Recommended [3] for EveTr, DecTr, Grass (unirrigated) Not currently used for water surface
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: DrainageCoef1.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: DrainageCoef2
 
 	:Description:
-		Example values DrainageEq 3 Coefficient b [-] 3 Recommended [3] for Paved and Bldgs 1.71 Coefficient b [mm -1 ] 2 Recommended [3] for BSoil Example values DrainageEq 3 Coefficient b [-] 3 Recommended [3] for Grass (irrigated) 1.71 Coefficient b [mm -1 ] 2 Recommended [3] for EveTr, DecTr, Grass (unirrigated) Not currently used for water surface
+		Example values DrainageEq 3 Coefficient b [-] 3 Recommended [3] for Paved and Bldgs 1.71 Coefficient b [|mm^-1| ] 2 Recommended [3] for BSoil Example values DrainageEq 3 Coefficient b [-] 3 Recommended [3] for Grass (irrigated) 1.71 Coefficient b [|mm^-1| ] 2 Recommended [3] for EveTr, DecTr, Grass (unirrigated) Not currently used for water surface
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: DrainageCoef2.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: DrainageEq
@@ -656,57 +710,62 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: DrainageEq.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Emissivity
 
 	:Description:
-		Effective surface emissivity. View factors should be taken into account. Effective surface emissivity. View factors should be taken into account. Example values [-] 0.98 EveTr Oke (1987) [35]  0.98 DecTr Oke (1987) [35]  0.93 Grass Oke (1987) [35]  Effective surface emissivity. View factors should be taken into account Example values [-] 0.95 Water Oke (1987) [35]  Effective surface emissivity. View factors should be taken into account Example values [-] 0.99 Järvi et al. (2014) [15] 
+		Effective surface emissivity. View factors should be taken into account. Effective surface emissivity. View factors should be taken into account. Example values [-] 0.98 EveTr Oke (1987) [35]  0.98 DecTr Oke (1987) [35]  0.93 Grass Oke (1987) [35]  Effective surface emissivity. View factors should be taken into account Example values [-] 0.95 Water Oke (1987) [35]  Effective surface emissivity. View factors should be taken into account Example values [-] 0.99 Järvi et al. (2014) [15]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Emissivity.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: EndDLS
 
 	:Description:
-		End of the day light savings [DOY] See section on Day Light Savings . 
+		End of the day light savings [DOY] See section on Day Light Savings .
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: EndDLS.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: EnergyUseProfWD
 
 	:Description:
-		Code for energy use profile (weekdays) Provides the link to column 1 of SUEWS_Profiles.txt. Look the codes Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt. 
+		Code for energy use profile (weekdays) Provides the link to column 1 of SUEWS_Profiles.txt. Look the codes Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt.
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: EnergyUseProfWD.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: EnergyUseProfWE
 
 	:Description:
-		Code for energy use profile (weekends) Provides the link to column 1 of SUEWS_Profiles.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt. 
+		Code for energy use profile (weekends) Provides the link to column 1 of SUEWS_Profiles.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt.
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: EnergyUseProfWE.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: ESTMCode
@@ -716,45 +775,49 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: ESTMCode.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: FAI_Bldgs
 
 	:Description:
-		Frontal area index for buildings [-] Required if RoughLenMomMethod = 3 in RunControl.nml . 
+		Frontal area index for buildings [-] Required if RoughLenMomMethod = 3 in RunControl.nml .
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: FAI_Bldgs.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: FAI_DecTr
 
 	:Description:
-		Frontal area index for deciduous trees [-] Required if RoughLenMomMethod = 3 in RunControl.nml . 
+		Frontal area index for deciduous trees [-] Required if RoughLenMomMethod = 3 in RunControl.nml .
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: FAI_DecTr.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: FAI_EveTr
 
 	:Description:
-		Frontal area index for evergreen trees [-] Required if RoughLenMomMethod = 3 in RunControl.nml . 
+		Frontal area index for evergreen trees [-] Required if RoughLenMomMethod = 3 in RunControl.nml .
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: FAI_EveTr.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Faut
@@ -764,9 +827,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Faut.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: fcld
@@ -776,21 +840,23 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: fcld.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: FlowChange
 
 	:Description:
-		Difference in input and output flows for water surface [mm h -1 ] Used to indicate river or stream flow through the grid. Currently not fully tested! 
+		Difference in input and output flows for water surface [mm |h^-1| ] Used to indicate river or stream flow through the grid. Currently not fully tested!
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: FlowChange.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Fraction1of8
@@ -800,9 +866,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Fraction1of8.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Fraction2of8
@@ -812,9 +879,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Fraction2of8.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Fraction3of8
@@ -824,9 +892,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Fraction3of8.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Fraction4of8
@@ -836,9 +905,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Fraction4of8.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Fraction5of8
@@ -848,9 +918,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Fraction5of8.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Fraction6of8
@@ -860,9 +931,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Fraction6of8.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Fraction7of8
@@ -872,9 +944,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Fraction7of8.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Fraction8of8
@@ -884,9 +957,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Fraction8of8.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Fr_Bldgs
@@ -896,9 +970,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Fr_Bldgs.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Fr_Bsoil
@@ -908,9 +983,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Fr_Bsoil.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Fr_DecTr
@@ -920,9 +996,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Fr_DecTr.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Fr_ESTMClass_Bldgs1
@@ -932,9 +1009,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Fr_ESTMClass_Bldgs1.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Fr_ESTMClass_Bldgs2
@@ -944,9 +1022,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Fr_ESTMClass_Bldgs2.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Fr_ESTMClass_Bldgs3
@@ -956,9 +1035,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Fr_ESTMClass_Bldgs3.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Fr_ESTMClass_Bldgs4
@@ -968,9 +1048,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Fr_ESTMClass_Bldgs4.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Fr_ESTMClass_Bldgs5
@@ -980,9 +1061,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Fr_ESTMClass_Bldgs5.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Fr_ESTMClass_Paved1
@@ -992,9 +1074,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Fr_ESTMClass_Paved1.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Fr_ESTMClass_Paved2
@@ -1004,9 +1087,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Fr_ESTMClass_Paved2.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Fr_ESTMClass_Paved3
@@ -1016,9 +1100,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Fr_ESTMClass_Paved3.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Fr_EveTr
@@ -1028,9 +1113,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Fr_EveTr.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Fr_Grass
@@ -1040,9 +1126,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Fr_Grass.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Fr_Paved
@@ -1052,45 +1139,49 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Fr_Paved.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Fr_Water
 
 	:Description:
-		Surface cover fraction of open water [-] (e.g. river, lakes, ponds, swimming pools) 
+		Surface cover fraction of open water [-] (e.g. river, lakes, ponds, swimming pools)
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Fr_Water.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: G1
 
 	:Description:
-		Related to maximum surface conductance [mm s -1 ]
+		Related to maximum surface conductance [mm |s^-1| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: G1.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: G2
 
 	:Description:
-		Related to Kdown dependence [W m -2 ]
+		Related to Kdown dependence [W |m^-2| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: G2.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: G3
@@ -1100,9 +1191,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: G3.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: G4
@@ -1112,9 +1204,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: G4.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: G5
@@ -1124,57 +1217,62 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: G5.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: G6
 
 	:Description:
-		Related to soil moisture dependence [mm -1 ]
+		Related to soil moisture dependence [|mm^-1| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: G6.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: gamq_gkgm
 
 	:Description:
-		vertical gradient of specific humidity (g kg -1 m -1 )
+		vertical gradient of specific humidity (g |kg^-1| |m^-1| )
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: gamq_gkgm.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: gamt_Km
 
 	:Description:
-		vertical gradient of potential temperature (K m -1 ) strength of the inversion
+		vertical gradient of potential temperature (K |m^-1| ) strength of the inversion
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: gamt_Km.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: GDDFull
 
 	:Description:
-		This should be checked carefully for your study area using modelled LAI from the DailyState output file compared to known behaviour in the study area. See section 2.2 Järvi et al. (2011) [1] ; Appendix A Järvi et al. (2014) [15] for more details. Example values [°C] 300 EveTr Järvi et al. (2011) [1]  300 DecTr Järvi et al. (2011) [1]  300 Grass Järvi et al. (2011) [1] 
+		This should be checked carefully for your study area using modelled LAI from the DailyState output file compared to known behaviour in the study area. See section 2.2 Järvi et al. (2011) [1] ; Appendix A Järvi et al. (2014) [15] for more details. Example values [°C] 300 EveTr Järvi et al. (2011) [1]  300 DecTr Järvi et al. (2011) [1]  300 Grass Järvi et al. (2011) [1]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: GDDFull.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Grid
@@ -1184,9 +1282,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Grid.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: GridConnection1of8
@@ -1196,9 +1295,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: GridConnection1of8.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: GridConnection2of8
@@ -1208,9 +1308,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: GridConnection2of8.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: GridConnection3of8
@@ -1220,9 +1321,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: GridConnection3of8.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: GridConnection4of8
@@ -1232,9 +1334,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: GridConnection4of8.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: GridConnection5of8
@@ -1244,9 +1347,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: GridConnection5of8.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: GridConnection6of8
@@ -1256,9 +1360,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: GridConnection6of8.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: GridConnection7of8
@@ -1268,9 +1373,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: GridConnection7of8.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: GridConnection8of8
@@ -1280,9 +1386,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: GridConnection8of8.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: gsModel
@@ -1292,9 +1399,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: gsModel.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: H_Bldgs
@@ -1304,9 +1412,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: H_Bldgs.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: H_DecTr
@@ -1316,9 +1425,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: H_DecTr.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: H_EveTr
@@ -1328,9 +1438,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: H_EveTr.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: id
@@ -1340,9 +1451,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: id.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Ie_a1
@@ -1352,21 +1464,23 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Ie_a1.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Ie_a2
 
 	:Description:
-		Coefficient for automatic irrigation model [mm d -1 °C -1 ]
+		Coefficient for automatic irrigation model [mm d -1 |K^-1| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Ie_a2.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Ie_a3
@@ -1376,9 +1490,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Ie_a3.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Ie_end
@@ -1388,9 +1503,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Ie_end.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Ie_m1
@@ -1400,21 +1516,23 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Ie_m1.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Ie_m2
 
 	:Description:
-		Coefficient for manual irrigation model [mm d -1 °C -1 ]
+		Coefficient for manual irrigation model [mm d -1 |K^-1| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Ie_m2.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Ie_m3
@@ -1424,9 +1542,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Ie_m3.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Ie_start
@@ -1436,21 +1555,23 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Ie_start.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: ih
 
 	:Description:
-		Hour [H] Not used: set to 0 in this version. 
+		Hour [H] Not used: set to 0 in this version.
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: ih.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: imin
@@ -1460,9 +1581,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: imin.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: InfiltrationRate
@@ -1472,9 +1594,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: InfiltrationRate.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Internal_albedo
@@ -1484,45 +1607,49 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Internal_albedo.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Internal_CHbld
 
 	:Description:
-		Bulk transfer coefficient of internal building elements [W m -2 K -1 ] (for building surfaces only and if IbldCHmod == 0 in ESTMinput.nml 
+		Bulk transfer coefficient of internal building elements [W |m^-2| |K^-1| ] (for building surfaces only and if IbldCHmod == 0 in ESTMinput.nml
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Internal_CHbld.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Internal_CHroof
 
 	:Description:
-		Bulk transfer coefficient of internal roof [W m -2 K -1 ] (for building surfaces only and if IbldCHmod == 0 in ESTMinput.nml 
+		Bulk transfer coefficient of internal roof [W |m^-2| |K^-1| ] (for building surfaces only and if IbldCHmod == 0 in ESTMinput.nml
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Internal_CHroof.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Internal_CHwall
 
 	:Description:
-		Bulk transfer coefficient of internal wall [W m -2 K -1 ] (for building surfaces only and if IbldCHmod == 0 in ESTMinput.nml 
+		Bulk transfer coefficient of internal wall [W |m^-2| |K^-1| ] (for building surfaces only and if IbldCHmod == 0 in ESTMinput.nml
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Internal_CHwall.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Internal_emissivity
@@ -1532,129 +1659,140 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Internal_emissivity.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Internal_k1
 
 	:Description:
-		Thermal conductivity of the first layer [W m -1 K -1 ]
+		Thermal conductivity of the first layer [W |m^-1| |K^-1| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Internal_k1.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Internal_k2
 
 	:Description:
-		Thermal conductivity of the second layer [W m -1 K -1 ]
+		Thermal conductivity of the second layer [W |m^-1| |K^-1| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Internal_k2.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Internal_k3
 
 	:Description:
-		Thermal conductivity of the third layer [W m -1 K -1 ]
+		Thermal conductivity of the third layer [W |m^-1| |K^-1| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Internal_k3.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Internal_k4
 
 	:Description:
-		Thermal conductivity of the fourth layer [W m -1 K -1 ]
+		Thermal conductivity of the fourth layer [W |m^-1| |K^-1| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Internal_k4.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Internal_k5
 
 	:Description:
-		Thermal conductivity of the fifth layer [W m -1 K -1 ]
+		Thermal conductivity of the fifth layer [W |m^-1| |K^-1| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Internal_k5.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Internal_rhoCp1
 
 	:Description:
-		Volumetric heat capacity of the first layer[J m -3 K -1 ]
+		Volumetric heat capacity of the first layer[J |m^-3| |K^-1| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Internal_rhoCp1.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Internal_rhoCp2
 
 	:Description:
-		Volumetric heat capacity of the second layer [J m -3 K -1 ]
+		Volumetric heat capacity of the second layer [J |m^-3| |K^-1| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Internal_rhoCp2.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Internal_rhoCp3
 
 	:Description:
-		Volumetric heat capacity of the third layer[J m -3 K -1 ]
+		Volumetric heat capacity of the third layer[J |m^-3| |K^-1| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Internal_rhoCp3.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Internal_rhoCp4
 
 	:Description:
-		Volumetric heat capacity of the fourth layer [J m -3 K -1 ]
+		Volumetric heat capacity of the fourth layer [J |m^-3| |K^-1| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Internal_rhoCp4.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Internal_rhoCp5
 
 	:Description:
-		Volumetric heat capacity of the fifth layer [J m -3 K -1 ]
+		Volumetric heat capacity of the fifth layer [J |m^-3| |K^-1| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Internal_rhoCp5.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Internal_thick1
@@ -1664,9 +1802,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Internal_thick1.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Internal_thick2
@@ -1676,9 +1815,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Internal_thick2.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Internal_thick3
@@ -1688,9 +1828,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Internal_thick3.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Internal_thick4
@@ -1700,9 +1841,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Internal_thick4.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Internal_thick5
@@ -1712,21 +1854,23 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Internal_thick5.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: InternalWaterUse
 
 	:Description:
-		Internal water use [mm h -1 ]
+		Internal water use [mm |h^-1| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: InternalWaterUse.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: IrrFr_DecTr
@@ -1736,21 +1880,23 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: IrrFr_DecTr.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: IrrFr_EveTr
 
 	:Description:
-		Fraction of evergreen trees that are irrigated [-] e.g. 50% of the evergreen trees/shrubs are irrigated 
+		Fraction of evergreen trees that are irrigated [-] e.g. 50% of the evergreen trees/shrubs are irrigated
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: IrrFr_EveTr.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: IrrFr_Grass
@@ -1760,21 +1906,23 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: IrrFr_Grass.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: IrrigationCode
 
 	:Description:
-		Code for modelling irrigation Provides the link to column 1 of SUEWS_Irrigation.txt, which contains the model coefficients for estimation of the water use (used if WU_Choice = 0 in RunControl.nml ). Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Irrigation.txt. 
+		Code for modelling irrigation Provides the link to column 1 of SUEWS_Irrigation.txt, which contains the model coefficients for estimation of the water use (used if WU_Choice = 0 in RunControl.nml ). Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Irrigation.txt.
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: IrrigationCode.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: it
@@ -1784,9 +1932,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: it.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: iy
@@ -1796,9 +1945,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: iy.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: kdiff
@@ -1808,9 +1958,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: kdiff.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: kdir
@@ -1820,45 +1971,49 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: kdir.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: kdown
 
 	:Description:
-		Must be > 0 W m -2 .
+		Must be > 0 W |m^-2| .
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: kdown.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Kmax
 
 	:Description:
-		Maximum incoming shortwave radiation [W m -2 ]
+		Maximum incoming shortwave radiation [W |m^-2| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Kmax.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: lai
 
 	:Description:
-		Observed leaf area index [m -2 m -2 ]
+		Observed leaf area index [|m^-2| |m^-2| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: lai.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: LAIEq
@@ -1868,33 +2023,36 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: LAIEq.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: LAIMax
 
 	:Description:
-		full leaf-on summertime value Example values [m -2 m -2 ] 5.1 EveTr Breuer et al. (2003) [36]  5.5 DecTr Breuer et al. (2003) [36]  5.9 Grass Breuer et al. (2003) [36] 
+		full leaf-on summertime value Example values [|m^-2| |m^-2| ] 5.1 EveTr Breuer et al. (2003) [36]  5.5 DecTr Breuer et al. (2003) [36]  5.9 Grass Breuer et al. (2003) [36]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: LAIMax.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: LAIMin
 
 	:Description:
-		leaf-off wintertime value Example values [m -2 m -2 ] 4. EveTr Järvi et al. (2011) [1]  1. DecTr Järvi et al. (2011) [1]  1.6 Grass Grimmond and Oke (1991) [3] and references therein
+		leaf-off wintertime value Example values [|m^-2| |m^-2| ] 4. EveTr Järvi et al. (2011) [1]  1. DecTr Järvi et al. (2011) [1]  1.6 Grass Grimmond and Oke (1991) [3] and references therein
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: LAIMin.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: lat
@@ -1904,21 +2062,23 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: lat.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: ldown
 
 	:Description:
-		Incoming longwave radiation [W m -2 ]
+		Incoming longwave radiation [W |m^-2| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: ldown.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: LeafGrowthPower1
@@ -1928,21 +2088,23 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: LeafGrowthPower1.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: LeafGrowthPower2
 
 	:Description:
-		Example values [°C -1 ] LAIEq 0.0005 Järvi et al. (2011) [1] 0 0.001 Järvi et al. (2014) [15] 1
+		Example values [|K^-1| ] LAIEq 0.0005 Järvi et al. (2011) [1] 0 0.001 Järvi et al. (2014) [15] 1
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: LeafGrowthPower2.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: LeafOffPower1
@@ -1952,21 +2114,23 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: LeafOffPower1.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: LeafOffPower2
 
 	:Description:
-		Example values [°C -1 ] LAIEq 0.0005 Järvi et al. (2011) [1] 0 0.0015 Järvi et al. (2014) [15] 1
+		Example values [|K^-1| ] LAIEq 0.0005 Järvi et al. (2011) [1] 0 0.0015 Järvi et al. (2014) [15] 1
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: LeafOffPower2.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: lng
@@ -1976,69 +2140,75 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: lng.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: LUMPS_Cover
 
 	:Description:
-		Limit when surface totally covered with water [mm] Used for LUMPS surface wetness control. Default recommended value of 1 mm from Loridan et al. (2011) [5] . 
+		Limit when surface totally covered with water [mm] Used for LUMPS surface wetness control. Default recommended value of 1 mm from Loridan et al. (2011) [5] .
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: LUMPS_Cover.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: LUMPS_DrRate
 
 	:Description:
-		Drainage rate of bucket for LUMPS [mm h -1 ] Used for LUMPS surface wetness control. Default recommended value of 0.25 mm h -1 from Loridan et al. (2011) [5] . 
+		Drainage rate of bucket for LUMPS [mm |h^-1| ] Used for LUMPS surface wetness control. Default recommended value of 0.25 mm |h^-1| from Loridan et al. (2011) [5] .
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: LUMPS_DrRate.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: LUMPS_MaxRes
 
 	:Description:
-		Maximum water bucket reservoir [mm] Used for LUMPS surface wetness control. Default recommended value of 10 mm from Loridan et al. (2011) [5] . 
+		Maximum water bucket reservoir [mm] Used for LUMPS surface wetness control. Default recommended value of 10 mm from Loridan et al. (2011) [5] .
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: LUMPS_MaxRes.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: MaxConductance
 
 	:Description:
-		Example values [mm s -1 ] 7.4 EveTr Järvi et al. (2011) [1]  11.7 DecTr Järvi et al. (2011) [1]  33.1 Grass (unirrigated) Järvi et al. (2011) [1]  40. Grass (irrigated) Järvi et al. (2011) [1] 
+		Example values [mm |s^-1| ] 7.4 EveTr Järvi et al. (2011) [1]  11.7 DecTr Järvi et al. (2011) [1]  33.1 Grass (unirrigated) Järvi et al. (2011) [1]  40. Grass (irrigated) Järvi et al. (2011) [1]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: MaxConductance.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: NARP_Trans
 
 	:Description:
-		Atmospheric transmissivity for NARP [-] Value must in the range 0-1. Default recommended value of 1. 
+		Atmospheric transmissivity for NARP [-] Value must in the range 0-1. Default recommended value of 1.
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: NARP_Trans.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: nroom
@@ -2048,9 +2218,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: nroom.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: OBS_SMCap
@@ -2060,9 +2231,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: OBS_SMCap.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: OBS_SMDepth
@@ -2072,9 +2244,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: OBS_SMDepth.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: OBS_SoilNotRocks
@@ -2084,117 +2257,127 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: OBS_SoilNotRocks.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: OHMCode_SummerDry
 
 	:Description:
-		Code for OHM coefficients to use for this surface during dry conditions in summer. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt.  Code for OHM coefficients to use for this surface during dry conditions in summer. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt.  Code for OHM coefficients to use for this surface during dry conditions in summer. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt.  Code for OHM coefficients to use for this surface during dry conditions in summer. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt. 
+		Code for OHM coefficients to use for this surface during dry conditions in summer. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt.  Code for OHM coefficients to use for this surface during dry conditions in summer. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt.  Code for OHM coefficients to use for this surface during dry conditions in summer. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt.  Code for OHM coefficients to use for this surface during dry conditions in summer. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt.
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: OHMCode_SummerDry.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: OHMCode_SummerWet
 
 	:Description:
-		Code for OHM coefficients to use for this surface during wet conditions in summer. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt.  Code for OHM coefficients to use for this surface during wet conditions in summer. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt.  Code for OHM coefficients to use for this surface during wet conditions in summer. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt.  Code for OHM coefficients to use for this surface during wet conditions in summer. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt. 
+		Code for OHM coefficients to use for this surface during wet conditions in summer. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt.  Code for OHM coefficients to use for this surface during wet conditions in summer. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt.  Code for OHM coefficients to use for this surface during wet conditions in summer. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt.  Code for OHM coefficients to use for this surface during wet conditions in summer. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt.
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: OHMCode_SummerWet.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: OHMCode_WinterDry
 
 	:Description:
-		Code for OHM coefficients to use for this surface during dry conditions in winter. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt.  Code for OHM coefficients to use for this surface during dry conditions in winter. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt.  Code for OHM coefficients to use for this surface during dry conditions in winter. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt.  Code for OHM coefficients to use for this surface during dry conditions in winter. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt. 
+		Code for OHM coefficients to use for this surface during dry conditions in winter. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt.  Code for OHM coefficients to use for this surface during dry conditions in winter. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt.  Code for OHM coefficients to use for this surface during dry conditions in winter. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt.  Code for OHM coefficients to use for this surface during dry conditions in winter. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt.
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: OHMCode_WinterDry.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: OHMCode_WinterWet
 
 	:Description:
-		Code for OHM coefficients to use for this surface during wet conditions in winter. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt.  Code for OHM coefficients to use for this surface during wet conditions in winter. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt.  Code for OHM coefficients to use for this surface during wet conditions in winter. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt.  Code for OHM coefficients to use for this surface during wet conditions in winter. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt. 
+		Code for OHM coefficients to use for this surface during wet conditions in winter. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt.  Code for OHM coefficients to use for this surface during wet conditions in winter. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt.  Code for OHM coefficients to use for this surface during wet conditions in winter. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt.  Code for OHM coefficients to use for this surface during wet conditions in winter. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt.
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: OHMCode_WinterWet.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: OHMThresh_SW
 
 	:Description:
-		Temperature threshold determining whether summer/winter OHM coefficients are applied [deg C] If 5-day running mean air temperature is greater than or equal to this threshold, OHM coefficients for summertime are applied; otherwise coefficients for wintertime are applied.  Temperature threshold determining whether summer/winter OHM coefficients are applied [deg C] If 5-day running mean air temperature is greater than or equal to this threshold, OHM coefficients for summertime are applied; otherwise coefficients for wintertime are applied.  Temperature threshold determining whether summer/winter OHM coefficients are applied [deg C] If 5-day running mean air temperature is greater than or equal to this threshold, OHM coefficients for summertime are applied; otherwise coefficients for wintertime are applied.  Temperature threshold determining whether summer/winter OHM coefficients are applied [deg C] If 5-day running mean air temperature is greater than or equal to this threshold, OHM coefficients for summertime are applied; otherwise coefficients for wintertime are applied. Not actually used for Snow surface as winter wet conditions always assumed. 
+		Temperature threshold determining whether summer/winter OHM coefficients are applied [°C] If 5-day running mean air temperature is greater than or equal to this threshold, OHM coefficients for summertime are applied; otherwise coefficients for wintertime are applied.  Temperature threshold determining whether summer/winter OHM coefficients are applied [°C] If 5-day running mean air temperature is greater than or equal to this threshold, OHM coefficients for summertime are applied; otherwise coefficients for wintertime are applied.  Temperature threshold determining whether summer/winter OHM coefficients are applied [°C] If 5-day running mean air temperature is greater than or equal to this threshold, OHM coefficients for summertime are applied; otherwise coefficients for wintertime are applied.  Temperature threshold determining whether summer/winter OHM coefficients are applied [°C] If 5-day running mean air temperature is greater than or equal to this threshold, OHM coefficients for summertime are applied; otherwise coefficients for wintertime are applied. Not actually used for Snow surface as winter wet conditions always assumed.
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: OHMThresh_SW.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: OHMThresh_WD
 
 	:Description:
-		Soil moisture threshold determining whether wet/dry OHM coefficients are applied [-] If soil moisture (as a proportion of maximum soil moisture capacity) exceeds this threshold for bare soil and vegetated surfaces, OHM coefficients for wet conditions are applied; otherwise coefficients for dry coefficients are applied. Note that OHM coefficients for wet conditions are applied if the surface is wet. Not actually used for building and paved surfaces (as impervious).  Soil moisture threshold determining whether wet/dry OHM coefficients are applied [-] If soil moisture (as a proportion of maximum soil moisture capacity) exceeds this threshold for bare soil and vegetated surfaces, OHM coefficients for wet conditions are applied; otherwise coefficients for dry coefficients are applied. Note that OHM coefficients for wet conditions are applied if the surface is wet.  Soil moisture threshold determining whether wet/dry OHM coefficients are applied [-] If soil moisture (as a proportion of maximum soil moisture capacity) exceeds this threshold for bare soil and vegetated surfaces, OHM coefficients for wet conditions are applied; otherwise coefficients for dry coefficients are applied. Note that OHM coefficients for wet conditions are applied if the surface is wet. Not actually used for water surface (as no soil surface beneath).  Soil moisture threshold determining whether wet/dry OHM coefficients are applied [-] If soil moisture (as a proportion of maximum soil moisture capacity) exceeds this threshold for bare soil and vegetated surfaces, OHM coefficients for wet conditions are applied; otherwise coefficients for dry coefficients are applied. Note that OHM coefficients for wet conditions are applied if the surface is wet. Not actually used for Snow surface as winter wet conditions always assumed. 
+		Soil moisture threshold determining whether wet/dry OHM coefficients are applied [-] If soil moisture (as a proportion of maximum soil moisture capacity) exceeds this threshold for bare soil and vegetated surfaces, OHM coefficients for wet conditions are applied; otherwise coefficients for dry coefficients are applied. Note that OHM coefficients for wet conditions are applied if the surface is wet. Not actually used for building and paved surfaces (as impervious).  Soil moisture threshold determining whether wet/dry OHM coefficients are applied [-] If soil moisture (as a proportion of maximum soil moisture capacity) exceeds this threshold for bare soil and vegetated surfaces, OHM coefficients for wet conditions are applied; otherwise coefficients for dry coefficients are applied. Note that OHM coefficients for wet conditions are applied if the surface is wet.  Soil moisture threshold determining whether wet/dry OHM coefficients are applied [-] If soil moisture (as a proportion of maximum soil moisture capacity) exceeds this threshold for bare soil and vegetated surfaces, OHM coefficients for wet conditions are applied; otherwise coefficients for dry coefficients are applied. Note that OHM coefficients for wet conditions are applied if the surface is wet. Not actually used for water surface (as no soil surface beneath).  Soil moisture threshold determining whether wet/dry OHM coefficients are applied [-] If soil moisture (as a proportion of maximum soil moisture capacity) exceeds this threshold for bare soil and vegetated surfaces, OHM coefficients for wet conditions are applied; otherwise coefficients for dry coefficients are applied. Note that OHM coefficients for wet conditions are applied if the surface is wet. Not actually used for Snow surface as winter wet conditions always assumed.
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: OHMThresh_WD.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: PipeCapacity
 
 	:Description:
-		Storage capacity of pipes [mm] Runoff amounting to less than the value specified here is assumed to be removed by pipes. 
+		Storage capacity of pipes [mm] Runoff amounting to less than the value specified here is assumed to be removed by pipes.
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: PipeCapacity.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: PopDensDay
 
 	:Description:
-		Daytime population density (i.e. workers, tourists) [people ha -1 ] Population density is required if AnthropHeatMethod = 2 in RunControl.nml . The model will use the average of daytime and night-time population densities, unless only one is provided. If daytime population density is unknown, set to -999. 
+		Daytime population density (i.e. workers, tourists) [people ha -1 ] Population density is required if AnthropHeatMethod = 2 in RunControl.nml . The model will use the average of daytime and night-time population densities, unless only one is provided. If daytime population density is unknown, set to -999.
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: PopDensDay.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: PopDensNight
 
 	:Description:
-		Night-time population density (i.e. residents) [people ha -1 ] Population density is required if AnthropHeatMethod = 2 in RunControl.nml . The model will use the average of daytime and night-time population densities, unless only one is provided. If night-time population density is unknown, set to -999. 
+		Night-time population density (i.e. residents) [people ha -1 ] Population density is required if AnthropHeatMethod = 2 in RunControl.nml . The model will use the average of daytime and night-time population densities, unless only one is provided. If night-time population density is unknown, set to -999.
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: PopDensNight.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: PorosityMax
@@ -2204,9 +2387,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: PorosityMax.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: PorosityMin
@@ -2216,9 +2400,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: PorosityMin.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: PrecipiLimAlb
@@ -2228,9 +2413,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: PrecipiLimAlb.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: PrecipLimSnow
@@ -2240,9 +2426,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: PrecipLimSnow.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: pres
@@ -2252,141 +2439,153 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: pres.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: qe
 
 	:Description:
-		Latent heat flux [W m -2 ]
+		Latent heat flux [W |m^-2| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: qe.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: qf
 
 	:Description:
-		Anthropogenic heat flux [W m -2 ]
+		Anthropogenic heat flux [W |m^-2| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: qf.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: QF_A_Weekday
 
 	:Description:
-		Use with AnthropHeatChoice = 2 Example values [W m -2 (Cap ha-1) -1 ] 0.3081 Järvi et al. (2011) [1]  0.1 Järvi et al. (2014) [15] 
+		Use with AnthropHeatChoice = 2 Example values [W |m^-2| (Cap ha-1) -1 ] 0.3081 Järvi et al. (2011) [1]  0.1 Järvi et al. (2014) [15]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: QF_A_Weekday.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: QF_A_Weekend
 
 	:Description:
-		Use with AnthropHeatMethod = 2 Example values [W m -2 (Cap ha -1 ) -1 ] 0.3081 Järvi et al. (2011) [1]  0.1 Järvi et al. (2014) [15] 
+		Use with AnthropHeatMethod = 2 Example values [W |m^-2| (Cap ha -1 ) -1 ] 0.3081 Järvi et al. (2011) [1]  0.1 Järvi et al. (2014) [15]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: QF_A_Weekend.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: QF_B_Weekday
 
 	:Description:
-		Use with AnthropHeatMethod = 2 Example values [W m -2 K -1 (Cap ha -1 ) -1 ] 0.0099 Järvi et al. (2011) [1]  0.0099 Järvi et al. (2014) [15] 
+		Use with AnthropHeatMethod = 2 Example values [W |m^-2| |K^-1| (Cap ha -1 ) -1 ] 0.0099 Järvi et al. (2011) [1]  0.0099 Järvi et al. (2014) [15]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: QF_B_Weekday.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: QF_B_Weekend
 
 	:Description:
-		Use with AnthropHeatMethod = 2 Example values [W m -2 K -1 (Cap ha -1 ) -1 ] 0.0099 Järvi et al. (2011) [1]  0.0099 Järvi et al. (2014) [15] 
+		Use with AnthropHeatMethod = 2 Example values [W |m^-2| |K^-1| (Cap ha -1 ) -1 ] 0.0099 Järvi et al. (2011) [1]  0.0099 Järvi et al. (2014) [15]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: QF_B_Weekend.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: QF_C_Weekday
 
 	:Description:
-		Use with AnthropHeatMethod = 2 Example values [W m -2 K -1 (Cap ha -1 ) -1 ] 0.0102 Järvi et al. (2011) [1]  0.0102 Järvi et al. (2014) [15] 
+		Use with AnthropHeatMethod = 2 Example values [W |m^-2| |K^-1| (Cap ha -1 ) -1 ] 0.0102 Järvi et al. (2011) [1]  0.0102 Järvi et al. (2014) [15]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: QF_C_Weekday.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: QF_C_Weekend
 
 	:Description:
-		Example values [W m -2 K -1 (Cap ha -1 ) -1 ] 0.0102 Järvi et al. (2011) [1]  0.0102 Järvi et al. (2014) [15] 
+		Example values [W |m^-2| |K^-1| (Cap ha -1 ) -1 ] 0.0102 Järvi et al. (2011) [1]  0.0102 Järvi et al. (2014) [15]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: QF_C_Weekend.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: q+_gkg
 
 	:Description:
-		specific humidity at the top of CBL (g kg -1 )
+		specific humidity at the top of CBL (g |kg^-1| )
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: q+_gkg.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: q_gkg
 
 	:Description:
-		specific humidiy in CBL (g kg -1 )
+		specific humidiy in CBL (g |kg^-1| )
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: q_gkg.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: qh
 
 	:Description:
-		Sensible heat flux [W m -2 ]
+		Sensible heat flux [W |m^-2| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: qh.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: qn
@@ -2396,33 +2595,36 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: qn.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: qs
 
 	:Description:
-		Storage heat flux [W m -2 ]
+		Storage heat flux [W |m^-2| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: qs.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: RadMeltFactor
 
 	:Description:
-		Hourly radiation melt factor of snow [mm W -1 h -1 ]
+		Hourly radiation melt factor of snow [mm |w^-1| |h^-1| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: RadMeltFactor.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: rain
@@ -2432,9 +2634,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: rain.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: RH
@@ -2444,69 +2647,75 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: RH.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: RunoffToWater
 
 	:Description:
-		Fraction of above-ground runoff flowing to water surface during flooding [-] Value must be in the range 0-1. Fraction of above-ground runoff that can flow to the water surface in the case of flooding. 
+		Fraction of above-ground runoff flowing to water surface during flooding [-] Value must be in the range 0-1. Fraction of above-ground runoff that can flow to the water surface in the case of flooding.
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: RunoffToWater.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: S1
 
 	:Description:
-		Related to soil moisture dependence [-] These will change in the future to ensure consistency with soil behaviour 
+		Related to soil moisture dependence [-] These will change in the future to ensure consistency with soil behaviour
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: S1.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: S2
 
 	:Description:
-		Related to soil moisture dependence [mm] These will change in the future to ensure consistency with soil behaviour 
+		Related to soil moisture dependence [mm] These will change in the future to ensure consistency with soil behaviour
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: S2.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: SatHydraulicCond
 
 	:Description:
-		Hydraulic conductivity for saturated soil [mm s -1 ]
+		Hydraulic conductivity for saturated soil [mm |s^-1| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: SatHydraulicCond.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: SDDFull
 
 	:Description:
-		This should be checked carefully for your study area using modelled LAI from the DailyState output file compared to known behaviour in the study area. See section 2.2 Järvi et al. (2011) [1] ; Appendix A Järvi et al. (2014) [15] for more details. Example values [°C] -450 EveTr Järvi et al. (2011) [1]  -450 DecTr Järvi et al. (2011) [1]  -450 Grass Järvi et al. (2011) [1] 
+		This should be checked carefully for your study area using modelled LAI from the DailyState output file compared to known behaviour in the study area. See section 2.2 Järvi et al. (2011) [1] ; Appendix A Järvi et al. (2014) [15] for more details. Example values [°C] -450 EveTr Järvi et al. (2011) [1]  -450 DecTr Järvi et al. (2011) [1]  -450 Grass Järvi et al. (2011) [1]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: SDDFull.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: snow
@@ -2516,117 +2725,127 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: snow.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: SnowClearingProfWD
 
 	:Description:
-		Code for snow clearing profile (weekdays) Provides the link to column 1 of SUEWS_Profiles.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt. e.g. 1 means use the characteristics specified in the row of input file SUEWS_Profiles.txt which has 1 in column 1 (Code). 
+		Code for snow clearing profile (weekdays) Provides the link to column 1 of SUEWS_Profiles.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt. e.g. 1 means use the characteristics specified in the row of input file SUEWS_Profiles.txt which has 1 in column 1 (Code).
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: SnowClearingProfWD.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: SnowClearingProfWE
 
 	:Description:
-		Code for snow clearing profile (weekends) Provides the link to column 1 of SUEWS_Profiles.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt. e.g. 1 means use the characteristics specified in the row of input file SUEWS_Profiles.txt which has 1 in column 1 (Code). Providing the same code for SnowClearingProfWD and SnowClearingProfWE would link to the same row in SUEWS_Profiles.txt, i.e. the same profile would be used for weekdays and weekends. 
+		Code for snow clearing profile (weekends) Provides the link to column 1 of SUEWS_Profiles.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt. e.g. 1 means use the characteristics specified in the row of input file SUEWS_Profiles.txt which has 1 in column 1 (Code). Providing the same code for SnowClearingProfWD and SnowClearingProfWE would link to the same row in SUEWS_Profiles.txt, i.e. the same profile would be used for weekdays and weekends.
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: SnowClearingProfWE.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: SnowCode
 
 	:Description:
-		Code for snow surface characteristics Provides the link to column 1 of SUEWS_Snow.txt, which contains the attributes describing snow surfaces in this grid for this year. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Snow.txt. 
+		Code for snow surface characteristics Provides the link to column 1 of SUEWS_Snow.txt, which contains the attributes describing snow surfaces in this grid for this year. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Snow.txt.
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: SnowCode.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: snowDensMax
 
 	:Description:
-		Maximum snow density [kg m -3 ]
+		Maximum snow density [kg |m^-3| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: snowDensMax.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: snowDensMin
 
 	:Description:
-		Fresh snow density [kg m -3 ]
+		Fresh snow density [kg |m^-3| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: snowDensMin.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: SnowLimPatch
 
 	:Description:
-		Not needed if SnowUse = 0 in RunControl.nml . Example values [mm] 190 Paved Järvi et al. (2014) [15]  190 Bldgs Järvi et al. (2014) [15]  190 BSoil Järvi et al. (2014) [15]  Limit of snow water equivalent when the surface surface is fully covered with snow. Not needed if SnowUse = 0 in RunControl.nml . Example values [mm] 190 EveTr Järvi et al. (2014) [15]  190 DecTr Järvi et al. (2014) [15]  190 Grass Järvi et al. (2014) [15] 
+		Not needed if SnowUse = 0 in RunControl.nml . Example values [mm] 190 Paved Järvi et al. (2014) [15]  190 Bldgs Järvi et al. (2014) [15]  190 BSoil Järvi et al. (2014) [15]  Limit of snow water equivalent when the surface surface is fully covered with snow. Not needed if SnowUse = 0 in RunControl.nml . Example values [mm] 190 EveTr Järvi et al. (2014) [15]  190 DecTr Järvi et al. (2014) [15]  190 Grass Järvi et al. (2014) [15]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: SnowLimPatch.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: SnowLimRemove
 
 	:Description:
-		Not needed if SnowUse = 0 in RunControl.nml . Currently not implemented for BSoil surface Example values [mm] 40 Paved Järvi et al. (2014) [15]  100 Bldgs Järvi et al. (2014) [15] 
+		Not needed if SnowUse = 0 in RunControl.nml . Currently not implemented for BSoil surface Example values [mm] 40 Paved Järvi et al. (2014) [15]  100 Bldgs Järvi et al. (2014) [15]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: SnowLimRemove.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: SoilDensity
 
 	:Description:
-		Soil density [kg m -3 ]
+		Soil density [kg |m^-3| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: SoilDensity.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: SoilDepth
 
 	:Description:
-		Depth of sub-surface soil store [mm] i.e. the depth of soil beneath the surface 
+		Depth of sub-surface soil store [mm] i.e. the depth of soil beneath the surface
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: SoilDepth.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: SoilStoreCap
@@ -2636,33 +2855,36 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: SoilStoreCap.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: SoilTypeCode
 
 	:Description:
-		Code for soil characteristics below this surface Provides the link to column 1 of SUEWS_Soil.txt , which contains the attributes describing sub-surface soil for this surface type. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Soil.txt.  Code for soil characteristics below this surface Provides the link to column 1 of SUEWS_Soil.txt , which contains the attributes describing sub-surface soil for this surface type. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Soil.txt. 
+		Code for soil characteristics below this surface Provides the link to column 1 of SUEWS_Soil.txt , which contains the attributes describing sub-surface soil for this surface type. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Soil.txt.  Code for soil characteristics below this surface Provides the link to column 1 of SUEWS_Soil.txt , which contains the attributes describing sub-surface soil for this surface type. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Soil.txt.
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: SoilTypeCode.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: StartDLS
 
 	:Description:
-		Start of the day light savings [DOY] See section on Day Light Savings . 
+		Start of the day light savings [DOY] See section on Day Light Savings .
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: StartDLS.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: StateLimit
@@ -2672,9 +2894,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: StateLimit.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: StorageMax
@@ -2684,9 +2907,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: StorageMax.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: StorageMin
@@ -2696,9 +2920,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: StorageMin.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: SurfaceArea
@@ -2708,129 +2933,140 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: SurfaceArea.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Surf_k1
 
 	:Description:
-		Thermal conductivity of the first layer [W m -1 K -1 ]
+		Thermal conductivity of the first layer [W |m^-1| |K^-1| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Surf_k1.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Surf_k2
 
 	:Description:
-		Thermal conductivity of the second layer [W m -1 K -1 ]
+		Thermal conductivity of the second layer [W |m^-1| |K^-1| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Surf_k2.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Surf_k3
 
 	:Description:
-		Thermal conductivity of the third layer[W m -1 K -1 ]
+		Thermal conductivity of the third layer[W |m^-1| |K^-1| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Surf_k3.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Surf_k4
 
 	:Description:
-		Thermal conductivity of the fourth layer[W m -1 K -1 ]
+		Thermal conductivity of the fourth layer[W |m^-1| |K^-1| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Surf_k4.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Surf_k5
 
 	:Description:
-		Thermal conductivity of the fifth layer [W m -1 K -1 ]
+		Thermal conductivity of the fifth layer [W |m^-1| |K^-1| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Surf_k5.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Surf_rhoCp1
 
 	:Description:
-		Volumetric heat capacity of the first layer [J m -3 K -1 ]
+		Volumetric heat capacity of the first layer [J |m^-3| |K^-1| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Surf_rhoCp1.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Surf_rhoCp2
 
 	:Description:
-		Volumetric heat capacity of the second layer [J m -3 K -1 ]
+		Volumetric heat capacity of the second layer [J |m^-3| |K^-1| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Surf_rhoCp2.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Surf_rhoCp3
 
 	:Description:
-		Volumetric heat capacity of the third layer[J m -3 K -1 ]
+		Volumetric heat capacity of the third layer[J |m^-3| |K^-1| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Surf_rhoCp3.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Surf_rhoCp4
 
 	:Description:
-		Volumetric heat capacity of the fourth layer [J m -3 K -1 ]
+		Volumetric heat capacity of the fourth layer [J |m^-3| |K^-1| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Surf_rhoCp4.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Surf_rhoCp5
 
 	:Description:
-		Volumetric heat capacity of the fifth layer [J m -3 K -1 ]
+		Volumetric heat capacity of the fifth layer [J |m^-3| |K^-1| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Surf_rhoCp5.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Surf_thick1
@@ -2840,9 +3076,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Surf_thick1.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Surf_thick2
@@ -2852,9 +3089,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Surf_thick2.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Surf_thick3
@@ -2864,9 +3102,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Surf_thick3.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Surf_thick4
@@ -2876,9 +3115,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Surf_thick4.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Surf_thick5
@@ -2888,9 +3128,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Surf_thick5.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Tair
@@ -2900,9 +3141,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Tair.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: tau_a
@@ -2912,9 +3154,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: tau_a.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: tau_f
@@ -2924,9 +3167,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: tau_f.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: tau_r
@@ -2936,9 +3180,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: tau_r.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: TCritic
@@ -2948,21 +3193,23 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: TCritic.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: TempMeltFactor
 
 	:Description:
-		Hourly temperature melt factor of snow [mm °C -1 h -1 ] (In previous model version, this parameter was 0.12)
+		Hourly temperature melt factor of snow [mm |K^-1| |h^-1| ] (In previous model version, this parameter was 0.12)
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: TempMeltFactor.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: TH
@@ -2972,9 +3219,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: TH.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Theta+_K
@@ -2984,9 +3232,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Theta+_K.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Theta_K
@@ -2996,9 +3245,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Theta_K.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Tiair
@@ -3008,9 +3258,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Tiair.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Timezone
@@ -3020,9 +3271,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Timezone.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: TL
@@ -3032,9 +3284,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: TL.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: ToBldgs
@@ -3044,9 +3297,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: ToBldgs.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: ToBSoil
@@ -3056,9 +3310,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: ToBSoil.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: ToDecTr
@@ -3068,9 +3323,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: ToDecTr.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: ToEveTr
@@ -3080,9 +3336,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: ToEveTr.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: ToGrass
@@ -3092,9 +3349,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: ToGrass.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: ToPaved
@@ -3104,9 +3362,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: ToPaved.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: ToRunoff
@@ -3116,9 +3375,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: ToRunoff.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: ToSoilStore
@@ -3128,9 +3388,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: ToSoilStore.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: ToWater
@@ -3140,21 +3401,23 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: ToWater.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: TrafficRate
 
 	:Description:
-		Traffic rate [veh km m-2 s-1] Can be used for CO2 flux calculation. Do not use in v2017a - set to -999 
+		Traffic rate [veh km m-2 s-1] Can be used for CO2 flux calculation. Do not use in v2017a - set to -999
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: TrafficRate.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Troad
@@ -3164,9 +3427,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Troad.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Troof
@@ -3176,9 +3440,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Troof.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Tsurf
@@ -3188,9 +3453,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Tsurf.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Twall
@@ -3200,9 +3466,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Twall.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Twall_e
@@ -3212,9 +3479,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Twall_e.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Twall_n
@@ -3224,9 +3492,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Twall_n.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Twall_s
@@ -3236,9 +3505,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Twall_s.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Twall_w
@@ -3248,9 +3518,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Twall_w.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: U
@@ -3260,129 +3531,140 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: U.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Wall_k1
 
 	:Description:
-		Thermal conductivity of the first layer [W m -1 K -1 ]
+		Thermal conductivity of the first layer [W |m^-1| |K^-1| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Wall_k1.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Wall_k2
 
 	:Description:
-		Thermal conductivity of the second layer [W m -1 K -1 ]
+		Thermal conductivity of the second layer [W |m^-1| |K^-1| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Wall_k2.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Wall_k3
 
 	:Description:
-		Thermal conductivity of the third layer [W m -1 K -1 ]
+		Thermal conductivity of the third layer [W |m^-1| |K^-1| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Wall_k3.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Wall_k4
 
 	:Description:
-		Thermal conductivity of the fourth layer[W m -1 K -1 ]
+		Thermal conductivity of the fourth layer[W |m^-1| |K^-1| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Wall_k4.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Wall_k5
 
 	:Description:
-		Thermal conductivity of the fifth layer[W m -1 K -1 ]
+		Thermal conductivity of the fifth layer[W |m^-1| |K^-1| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Wall_k5.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Wall_rhoCp1
 
 	:Description:
-		Volumetric heat capacity of the first layer [J m -3 K -1 ]
+		Volumetric heat capacity of the first layer [J |m^-3| |K^-1| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Wall_rhoCp1.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Wall_rhoCp2
 
 	:Description:
-		Volumetric heat capacity of the second layer [J m -3 K -1 ]
+		Volumetric heat capacity of the second layer [J |m^-3| |K^-1| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Wall_rhoCp2.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Wall_rhoCp3
 
 	:Description:
-		Volumetric heat capacity of the third layer [J m -3 K -1 ]
+		Volumetric heat capacity of the third layer [J |m^-3| |K^-1| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Wall_rhoCp3.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Wall_rhoCp4
 
 	:Description:
-		Volumetric heat capacity of the fourth layer [J m -3 K -1 ]
+		Volumetric heat capacity of the fourth layer [J |m^-3| |K^-1| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Wall_rhoCp4.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Wall_rhoCp5
 
 	:Description:
-		Volumetric heat capacity of the fifth layer [J m -3 K -1 ]
+		Volumetric heat capacity of the fifth layer [J |m^-3| |K^-1| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Wall_rhoCp5.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Wall_thick1
@@ -3392,9 +3674,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Wall_thick1.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Wall_thick2
@@ -3404,9 +3687,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Wall_thick2.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Wall_thick3
@@ -3416,9 +3700,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Wall_thick3.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Wall_thick4
@@ -3428,9 +3713,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Wall_thick4.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Wall_thick5
@@ -3440,9 +3726,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Wall_thick5.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: WaterDepth
@@ -3452,57 +3739,62 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: WaterDepth.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: WaterUseProfAutoWD
 
 	:Description:
-		Code for water use profile (automatic irrigation, weekdays) Provides the link to column 1 of SUEWS_Profiles.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt. 
+		Code for water use profile (automatic irrigation, weekdays) Provides the link to column 1 of SUEWS_Profiles.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt.
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: WaterUseProfAutoWD.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: WaterUseProfAutoWE
 
 	:Description:
-		Code for water use profile (automatic irrigation, weekends) Provides the link to column 1 of SUEWS_Profiles.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt. 
+		Code for water use profile (automatic irrigation, weekends) Provides the link to column 1 of SUEWS_Profiles.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt.
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: WaterUseProfAutoWE.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: WaterUseProfManuWD
 
 	:Description:
-		Code for water use profile (manual irrigation, weekdays) Provides the link to column 1 of SUEWS_Profiles.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt. 
+		Code for water use profile (manual irrigation, weekdays) Provides the link to column 1 of SUEWS_Profiles.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt.
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: WaterUseProfManuWD.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: WaterUseProfManuWE
 
 	:Description:
-		Code for water use profile (manual irrigation, weekends) Provides the link to column 1 of SUEWS_Profiles.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt. 
+		Code for water use profile (manual irrigation, weekends) Provides the link to column 1 of SUEWS_Profiles.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt.
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: WaterUseProfManuWE.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: wdir
@@ -3512,9 +3804,10 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: wdir.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: WetThreshold
@@ -3524,129 +3817,140 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: WetThreshold.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: WithinGridBldgsCode
 
 	:Description:
-		Code that links to the fraction of water that flows from Bldgs surfaces to surfaces in columns 2-10 of SUEWS_WithinGridWaterDist.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_WithinGridWaterDist.txt. 
+		Code that links to the fraction of water that flows from Bldgs surfaces to surfaces in columns 2-10 of SUEWS_WithinGridWaterDist.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_WithinGridWaterDist.txt.
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: WithinGridBldgsCode.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: WithinGridBSoilCode
 
 	:Description:
-		Code that links to the fraction of water that flows from BSoil surfaces to surfaces in columns 2-10 of SUEWS_WithinGridWaterDist.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_WithinGridWaterDist.txt. 
+		Code that links to the fraction of water that flows from BSoil surfaces to surfaces in columns 2-10 of SUEWS_WithinGridWaterDist.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_WithinGridWaterDist.txt.
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: WithinGridBSoilCode.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: WithinGridDecTrCode
 
 	:Description:
-		Code that links to the fraction of water that flows from DecTr surfaces to surfaces in columns 2-10 of SUEWS_WithinGridWaterDist.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_WithinGridWaterDist.txt. 
+		Code that links to the fraction of water that flows from DecTr surfaces to surfaces in columns 2-10 of SUEWS_WithinGridWaterDist.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_WithinGridWaterDist.txt.
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: WithinGridDecTrCode.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: WithinGridEveTrCode
 
 	:Description:
-		Code that links to the fraction of water that flows from EveTr surfaces to surfaces in columns 2-10 of SUEWS_WithinGridWaterDist.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_WithinGridWaterDist.txt. 
+		Code that links to the fraction of water that flows from EveTr surfaces to surfaces in columns 2-10 of SUEWS_WithinGridWaterDist.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_WithinGridWaterDist.txt.
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: WithinGridEveTrCode.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: WithinGridGrassCode
 
 	:Description:
-		Code that links to the fraction of water that flows from Grass surfaces to surfaces in columns 2-10 of SUEWS_WithinGridWaterDist.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_WithinGridWaterDist.txt. 
+		Code that links to the fraction of water that flows from Grass surfaces to surfaces in columns 2-10 of SUEWS_WithinGridWaterDist.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_WithinGridWaterDist.txt.
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: WithinGridGrassCode.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: WithinGridPavedCode
 
 	:Description:
-		Code that links to the fraction of water that flows from Paved surfaces to surfaces in columns 2-10 of SUEWS_WithinGridWaterDist.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_WithinGridWaterDist.txt. 
+		Code that links to the fraction of water that flows from Paved surfaces to surfaces in columns 2-10 of SUEWS_WithinGridWaterDist.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_WithinGridWaterDist.txt.
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: WithinGridPavedCode.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: WithinGridWaterCode
 
 	:Description:
-		Code that links to the fraction of water that flows from Water surfaces to surfaces in columns 2-10 of SUEWS_WithinGridWaterDist.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_WithinGridWaterDist.txt. 
+		Code that links to the fraction of water that flows from Water surfaces to surfaces in columns 2-10 of SUEWS_WithinGridWaterDist.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_WithinGridWaterDist.txt.
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: WithinGridWaterCode.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Wuh
 
 	:Description:
-		External water use [ 3 ]
+		External water use [ |m^3| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Wuh.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: xsmd
 
 	:Description:
-		Observed soil moisture [ 3 m -3 or kg kg -1 ]
+		Observed soil moisture [ |m^3| |m^-3| or kg |kg^-1| ]
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: xsmd.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: Year
 
 	:Description:
-		Year [YYYY] Years must be continuous. If running multiple years, ensure the rows in SiteSelect.txt are arranged so that all grids for a particular year appear on consecutive lines (rather than grouping all years together for a particular grid). 
+		Year [YYYY] Years must be continuous. If running multiple years, ensure the rows in SiteSelect.txt are arranged so that all grids for a particular year appear on consecutive lines (rather than grouping all years together for a particular grid).
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: Year.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: z
@@ -3656,33 +3960,36 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: z.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: z0
 
 	:Description:
-		Roughness length for momentum [m] Value supplied here is used if RoughLenMomMethod = 1 in RunControl.nml ; otherwise set to '-999' and a value will be calculated by the model (RoughLenMomMethod = 2, 3). 
+		Roughness length for momentum [m] Value supplied here is used if RoughLenMomMethod = 1 in RunControl.nml ; otherwise set to '-999' and a value will be calculated by the model (RoughLenMomMethod = 2, 3).
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: z0.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: zd
 
 	:Description:
-		Zero-plane displacement [m] Value supplied here is used if RoughLenMomMethod = 1 in RunControl.nml ; otherwise set to '-999' and a value will be calculated by the model (RoughLenMomMethod = 2, 3). 
+		Zero-plane displacement [m] Value supplied here is used if RoughLenMomMethod = 1 in RunControl.nml ; otherwise set to '-999' and a value will be calculated by the model (RoughLenMomMethod = 2, 3).
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: zd.csv
 			:header-rows: 1
-			:widths: 10 10 80
+			:widths: 46 18 36
 
 
 .. option:: zi0
@@ -3692,7 +3999,7 @@ Input_Options
 
 	:Configuration:
 		.. csv-table::
+			:class: longtable
 			:file: zi0.csv
 			:header-rows: 1
-			:widths: 10 10 80
-
+			:widths: 46 18 36

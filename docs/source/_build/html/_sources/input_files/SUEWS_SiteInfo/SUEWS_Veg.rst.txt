@@ -2190,7 +2190,7 @@ Values <http://urban-climate.net/umep/TypicalValues#Typical_Values>`__.
 |     |     |           |           | nts           |              |   |   |
 |     |     |           |           | are           |              |   |   |
 |     |     |           |           | applied       |              |   |   |
-|     |     |           |           | [deg C]       |              |   |   |
+|     |     |           |           | [°C]       |              |   |   |
 |     |     |           |           | If 5-day      |              |   |   |
 |     |     |           |           | running       |              |   |   |
 |     |     |           |           | mean air      |              |   |   |

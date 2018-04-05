@@ -88,13 +88,16 @@ default_role = 'any'
 
 # some text replacement defintions
 rst_prolog = """
-.. |m^-1| replace:: m :sup:`-1`
-.. |m^-2| replace:: m :sup:`-2`
-.. |m^-3| replace:: m :sup:`-3`
-.. |m^3| replace:: m :sup:`3`
-.. |s^-1| replace:: m s :sup:`-1`
-.. |kg^-1| replace:: kg :sup:`-1`
-.. |K^-1| replace:: K :sup:`-1`
+.. |mm^-1| replace:: mm\ :sup:`-1`
+.. |m^-1| replace:: m\ :sup:`-1`
+.. |m^-2| replace:: m\ :sup:`-2`
+.. |m^-3| replace:: m\ :sup:`-3`
+.. |m^3| replace:: m\ :sup:`3`
+.. |s^-1| replace:: s\ :sup:`-1`
+.. |kg^-1| replace:: kg\ :sup:`-1`
+.. |K^-1| replace:: K\ :sup:`-1`
+.. |W^-1| replace:: W\ :sup:`-1`
+.. |h^-1| replace:: h\ :sup:`-1`
 .. |QF| replace:: Q\ :sub:`F`
 """
 # -- Options for HTML output -------------------------------------------------
@@ -172,7 +175,7 @@ latex_elements = {
     # 'figure_align': 'htbp',
 }
 
-latex_show_pagerefs = True
+latex_show_pagerefs = False
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,

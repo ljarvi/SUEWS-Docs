@@ -360,7 +360,7 @@ For a detailed description of the variables, see Järvi et al.
 |     |     |         |         | ients   |         |         |
 |     |     |         |         | are     |         |         |
 |     |     |         |         | applied |         |         |
-|     |     |         |         | [deg C] |         |         |
+|     |     |         |         | [°C] |         |         |
 |     |     |         |         | If      |         |         |
 |     |     |         |         | 5-day   |         |         |
 |     |     |         |         | running |         |         |

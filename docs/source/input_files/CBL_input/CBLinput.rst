@@ -13,7 +13,7 @@ CBLinput
 		.. csv-table::
 			:file: EntrainmentType.csv
 			:header-rows: 1
-			:widths: 20 80
+			:widths: auto
 
 
 .. option:: QH_Choice
@@ -26,7 +26,7 @@ CBLinput
 		.. csv-table::
 			:file: QH_Choice.csv
 			:header-rows: 1
-			:widths: 20 80
+			:widths: auto
 
 
 .. option:: InitialData_use
@@ -39,7 +39,7 @@ CBLinput
 		.. csv-table::
 			:file: InitialData_use.csv
 			:header-rows: 1
-			:widths: 20 80
+			:widths: auto
 
 
 .. option:: Sondeflag
@@ -52,7 +52,7 @@ CBLinput
 		.. csv-table::
 			:file: Sondeflag.csv
 			:header-rows: 1
-			:widths: 20 80
+			:widths: auto
 
 
 .. option:: CBLday(id)
@@ -105,6 +105,6 @@ CBLinput
 		Required
 
 	:Description:
-		Subsidence velocity (m s -1 ) in eq. 1 and 2 of Onomura et al. (2015) [17] . (-0.01 m s -1 recommended) 
+		Subsidence velocity (m |s^-1| ) in eq. 1 and 2 of Onomura et al. (2015) [17] . (-0.01 m |s^-1| recommended) 
 	:Configuration:
 		to fill

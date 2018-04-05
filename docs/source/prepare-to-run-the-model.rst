@@ -1,3 +1,5 @@
+.. _Preparing_to_run_the_model:
+
 Preparing to run the model
 ==========================
 
@@ -133,7 +135,7 @@ To run the model you can use **Command Prompt** (in the directory where
 the programme is located type the model name) or just double click the
 executable file.
 
-Please see `Troubleshooting <#Troubleshooting>`__ if you have problems
+Please see `Troubleshooting` if you have problems
 running the model.
 
 Preparation of data
@@ -190,7 +192,7 @@ Preparation of site characteristics and model parameters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The area to be modelled is described by a set of characteristics that
-are specified in the `SUEWS_SiteSelect.txt <#SUEWS_SiteSelect.txt>`__
+are specified in the `SUEWS_SiteSelect.txt`
 file. Each row corresponds to one model grid for one year (i.e. running
 a single grid over three years would require three rows; running two
 grids over two years would require four rows). Characteristics are often
@@ -201,7 +203,7 @@ characteristics of deciduous trees in a particular region (links to
 characteristics for different types of urban areas. The codes are
 specified by the user, must be integer values and must be unique within
 the first column of each input file, otherwise the model will return an
-error. (Note in `SUEWS_SiteSelect.txt <#SUEWS_SiteSelect.txt>`__ the
+error. (Note in `SUEWS_SiteSelect.txt` the
 first column is labelled 'Grid' and can contain repeat values for
 different years.) See `Input files <#Input_files>`__ for details. Note
 `UMEP <http://urban-climate.net/umep/UMEP>`__ maybe helpful for
@@ -360,17 +362,16 @@ and use site code SS the model creates an output file::
 
 
 If the file paths are not correct the program will return an error when
-run (see `error messages <#Error_messages:_problems.txt>`__) and write
-the error to the problems.txt file.
+run and write the error to the `problems.txt` file.
 
 Preparation of the Meteorological forcing data
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The model time-step is specified in `RunControl.nml <#RunControl.nml>`__
+The model time-step is specified in `RunControl.nml`
 (5 min is highly recommended). If meteorological forcing data are not
 available at this resolution, SUEWS has the option to downscale (e.g.
 hourly) data to the time-step required. See details about the
-`meteorological forcing data <#SSss_YYYY_data_tt.txt>`__ to learn more
+`SSss_YYYY_data_tt.txt` to learn more
 about choices of data input. Each grid can have its own meteorological
 forcing file, or a single file can be used for all grids. The forcing
 data should be representative of the local-scale, i.e. collected (or
@@ -384,7 +385,7 @@ Information about the surface state and meteorological conditions just
 before the start of the run are provided in the Initial Conditions file.
 At the very start of the run, each grid can have its own Initial
 Conditions file, or a single file can be used for all grids. For details
-see `InitialConditions <#InitialConditions>`__.
+see `Initial_Conditions`.
 
 Run the model for your site
 ---------------------------
@@ -393,7 +394,7 @@ To run the model you can use **Command Prompt** (in the directory where
 the programme is located type the model name) or just double click the
 executable file.
 
-Please see `Troubleshooting <#Troubleshooting>`__ if you have problems
+Please see `Troubleshooting` if you have problems
 running the model.
 
 Analyse the output
@@ -409,14 +410,16 @@ reasonable.
    * - Characteristic
      - Things to check
    * - Leaf area index
-     - Does the phenologylook appropriate  (i.e. what does the seasonal cycle of  `leaf area index (LAI) <http://glossary.ametsoc.org/wiki/Leaf_area_index>`__ look like?)
+     - Does the phenologylook appropriate?
+        * what does the seasonal cycle of `leaf area index (LAI) <http://glossary.ametsoc.org/wiki/Leaf_area_index>`__ look like?
         * Are the leaves on the trees at approximately the right time of the year?
    * - Kdown
-     - Is the timing of the diurnal cycle correct for the incoming solar radiation?
+     - Is the timing of diurnal cycles correct for the incoming solar radiation?
         * Although Kdown is a required input, it is also included in the output file. It is a good idea to check that the timing of Kdown in the output file is appropriate, as problems can indicate errors with the timestamp, incorrect time settings or problems with the disaggregation. In particular, make sure the sign of the longitude is specified correctly in `SUEWS_SiteSelect.txt`.
         * Checking solar angles (zenith and azimuth) can also be a useful check that the timing is correct.
    * - Albedo
-     - Is the bulk albedo correct?
+     -
+      Is the bulk albedo correct?
         * This is critical because a small error has an impact on all the fluxes (energy and hydrology).
         * If you have measurements of outgoing shortwave radiation compare these with the modelled values.
         * How do the values compare to literature values for your area?
@@ -437,5 +440,5 @@ The last column indicates whether the files are needed/produced once per
 run (1/run), or once per day (1/day), for each year (1/year) or for each
 grid (1/grid)::
 
-    [B] indicates files used with the CBL part of SUEWS (BLUEWS) and therefore are only needed/produced if this option is selected``
-    [E] indicates files associated with ESTM storage heat flux models and therefore are only needed/produced if this option is selected``
+    [B] indicates files used with the CBL part of SUEWS (BLUEWS) and therefore are only needed/produced if this option is selected
+    [E] indicates files associated with ESTM storage heat flux models and therefore are only needed/produced if this option is selected

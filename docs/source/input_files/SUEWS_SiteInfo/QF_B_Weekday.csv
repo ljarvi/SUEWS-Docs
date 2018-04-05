@@ -1,2 +1,2 @@
 "Referencing Table","Requirement","Comment"
-"`SUEWS_AnthropogenicHeat.txt`","`MU` ` O`","Use with AnthropHeatMethod = 2 Example values [W m -2 K -1 (Cap ha -1 ) -1 ] 0.0099 Järvi et al. (2011) [1]  0.0099 Järvi et al. (2014) [15] "
+"`SUEWS_AnthropogenicHeat.txt`","`MU` `O`","Use with AnthropHeatMethod = 2 Example values [W |m^-2| |K^-1| (Cap ha -1 ) -1 ] 0.0099 Järvi et al. (2011) [1]  0.0099 Järvi et al. (2014) [15] "

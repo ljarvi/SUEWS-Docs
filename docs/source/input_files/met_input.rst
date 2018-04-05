@@ -14,10 +14,10 @@ variables.
    containing ‘-9’ in the first column.
 
 -  One single meteorological file can be used for all grids
-   (**MultipleMetFiles=0** in `RunControl.nml <#RunControl.nml>`__, no
+   (**MultipleMetFiles=0** in `RunControl.nml`, no
    grid number in file name) if appropriate for the study area, or
 -  separate met files can be used for each grid if data are available
-   (**MultipleMetFiles=1** in `RunControl.nml <#RunControl.nml>`__,
+   (**MultipleMetFiles=1** in `RunControl.nml`,
    filename includes grid number).
 
 -  The meteorological forcing file names should be appended with the
@@ -28,7 +28,7 @@ variables.
 -  Files do not need to start/end at the start/end of the year, but they
    must contain a whole number of days.
 -  The meteorological input file should match the information given in
-   `SUEWS_SiteSelect.txt <#SUEWS_SiteSelect.txt>`__.
+   `SUEWS_SiteSelect.txt`.
 -  If a *partial year* is used that specific year must be given in
    SUEWS_SiteSelect.txt.
 -  If *multiple years* are used, all years should be included in

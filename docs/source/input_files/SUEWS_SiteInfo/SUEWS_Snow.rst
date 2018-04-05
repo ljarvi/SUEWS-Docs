@@ -15,6 +15,7 @@ For a detailed description of the variables, see Järvi et al.
 
 
 .. csv-table::
+  :class: longtable
   :file: SUEWS_Snow.csv
   :header-rows: 1
   :widths: 5 25 5 65

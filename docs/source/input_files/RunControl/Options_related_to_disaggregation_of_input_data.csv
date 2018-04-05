@@ -3,19 +3,19 @@
 .. csv-table::
   :file: DisaggMethod.csv 
   :header-rows: 1
-  :widths: 20 80
+  :widths: auto
 "
 "KdownZen","O","Can be used to switch off zenith checking in Kdown disaggregation. Note that the zenith calculation requires location information obtained from SUEWS_SiteSelect.txt. If a single met file is used for all grids, the zenith is calculated for the first grid and the disaggregated data is then applied for all grids.","
 .. csv-table::
   :file: KdownZen.csv 
   :header-rows: 1
-  :widths: 20 80
+  :widths: auto
 "
 "RainDisaggMethod","O","Specifies how rain in the meteorological forcing file are disaggregated to the model time step. If present in the original met forcing file, snow is currently disaggregated in the same way as rainfall. ","
 .. csv-table::
   :file: RainDisaggMethod.csv 
   :header-rows: 1
-  :widths: 20 80
+  :widths: auto
 "
 "RainAmongN","O","Specifies the number of subintervals (of length tt) over which to distribute rainfall in each interval (of length TT). Must be an integer value. Use with RainDisaggMethod = 101.",""
 "MultRainAmongN","O","Specifies the number of subintervals (of length tt) over which to distribute rainfall in each interval (of length TT) for up to 5 intensity bins. Must take integer values. Use with RainDisaggMethod = 102. e.g. MultRainAmongN(1) = 5, MultRainAmongN(2) = 8, MultRainAmongN(3) = 12 ",""
@@ -24,5 +24,5 @@
 .. csv-table::
   :file: DisaggMethodESTM.csv 
   :header-rows: 1
-  :widths: 20 80
+  :widths: auto
 "

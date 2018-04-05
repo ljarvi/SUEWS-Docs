@@ -1,2 +1,2 @@
 "Referencing Table","Requirement","Comment"
-"`SUEWS_Irrigation.txt`","`MU`","Internal water use [mm h -1 ]"
+"`SUEWS_Irrigation.txt`","`MU`","Internal water use [mm |h^-1| ]"

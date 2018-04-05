@@ -14,7 +14,7 @@ incoming shortwave radiation to be provided.
    provided as input, instead of incoming longwave being calculated by
    the model.
 #. Other data can be provided as input, such as cloud fraction (see
-   options in `RunControl <#RunControl.nml>`__).
+   options in `RunControl.nml`).
 #. **NARP** (Net All-wave Radiation Parameterization, Offerle et al.
    2003 [O2003]_ , Loridan et al. 2011 [L2011]_ ) scheme calculates outgoing
    shortwave and incoming and outgoing longwave radiation components

@@ -13,7 +13,7 @@ ESTMinput
 		.. csv-table::
 			:file: TsurfChoice.csv
 			:header-rows: 1
-			:widths: 20 80
+			:widths: auto
 
 
 .. option:: evolveTibld
@@ -26,7 +26,7 @@ ESTMinput
 		.. csv-table::
 			:file: evolveTibld.csv
 			:header-rows: 1
-			:widths: 20 80
+			:widths: auto
 
 
 .. option:: IbldCHmod
@@ -39,7 +39,7 @@ ESTMinput
 		.. csv-table::
 			:file: IbldCHmod.csv
 			:header-rows: 1
-			:widths: 20 80
+			:widths: auto
 
 
 .. option:: LBC_soil

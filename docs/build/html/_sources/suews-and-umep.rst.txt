@@ -26,20 +26,6 @@ than the independent SUEWS release.
 		* `Download data (WATCH)`_
 				Prepare meteorological dataset from `WATCH`
 
-.. list-table::
-	:widths: 20 20 20 40
-	:header-rows: 1
-	:stub-columns: 2
-
-	* - Procedure
-	  - Function Group
-	  - UMEP module
-	  - Description
-
-	* - Pre-Processor
-	  - Meteorological Data
-	  - `Prepare Existing Data`_
-	  - Transforms meteorological data into UMEP format
 
 	* -
 	  -

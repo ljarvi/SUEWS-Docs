@@ -18,8 +18,6 @@ interpretation of the contents. This is strongly recommended.
   :widths: 5 25 5 65
 
 
-see this one: `a2`
-
 Day Light Savings (DLS)
 ^^^^^^^^^^^^^^^^^^^^^^^
 

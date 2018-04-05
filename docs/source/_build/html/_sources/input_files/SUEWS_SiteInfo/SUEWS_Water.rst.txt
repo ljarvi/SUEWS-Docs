@@ -502,7 +502,7 @@ specified in SUEWS_SiteSelect.txt (Code_Water).
 |     |     |              |         | nts                                                                                                                      |           |   |
 |     |     |              |         | are                                                                                                                      |           |   |
 |     |     |              |         | applied                                                                                                                  |           |   |
-|     |     |              |         | [deg C]                                                                                                                  |           |   |
+|     |     |              |         | [°C]                                                                                                                  |           |   |
 |     |     |              |         | If 5-day                                                                                                                 |           |   |
 |     |     |              |         | running                                                                                                                  |           |   |
 |     |     |              |         | mean air                                                                                                                 |           |   |
