@@ -9,6 +9,7 @@ specified in SUEWS_SiteSelect.txt (Code_Water).
 
 
 .. csv-table::
+  :class: longtable
   :file: SUEWS_Water.csv
   :header-rows: 1
-  :widths: auto
+  :widths: 5 25 5 65

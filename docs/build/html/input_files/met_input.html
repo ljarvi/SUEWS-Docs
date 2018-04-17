@@ -25,29 +25,20 @@
   
 
   
-  
     <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  
-
-  
-    <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
-  
-
-  
-        <link rel="index" title="Index"
-              href="../genindex.html"/>
-        <link rel="search" title="Search" href="../search.html"/>
-    <link rel="top" title="SUEWS 2018a.alpha documentation" href="../index.html"/>
-        <link rel="up" title="6. Input files" href="input_files.html"/>
-        <link rel="next" title="6.5. CBL input files" href="CBL_input/CBL_input.html"/>
-        <link rel="prev" title="6.3.5. Snow related parameters" href="Initial_Conditions/Snow_related_parameters.html"/> 
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="6.5. CBL input files" href="CBL_input/CBL_input.html" />
+    <link rel="prev" title="6.3.5. Snow related parameters" href="Initial_Conditions/Snow_related_parameters.html" /> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -127,7 +118,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">SUEWS</a>
@@ -135,9 +126,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -238,13 +230,7 @@ should be 8760 and begin and end with:</p>
 <div class="section" id="ssss-yyyy-data-tt-txt">
 <span id="id1"></span><h2>6.4.1. SSss_YYYY_data_tt.txt<a class="headerlink" href="#ssss-yyyy-data-tt-txt" title="Permalink to this headline">¶</a></h2>
 <p>Main meteorological data file.</p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="12%" />
-<col width="12%" />
-<col width="32%" />
-<col width="44%" />
-</colgroup>
+<table border="1" class="colwidths-auto docutils">
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">No.</th>
 <th class="head">Use</th>
@@ -254,221 +240,124 @@ should be 8760 and begin and end with:</p>
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td>1</td>
-<td>R</td>
+<td><a class="reference internal" href="../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>iy</td>
 <td>Year [YYYY]</td>
 </tr>
 <tr class="row-odd"><td>2</td>
-<td>R</td>
+<td><a class="reference internal" href="../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>id</td>
-<td>Day of year
-[DOY]</td>
+<td>Day of year [DOY]</td>
 </tr>
 <tr class="row-even"><td>3</td>
-<td>R</td>
+<td><a class="reference internal" href="../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>it</td>
 <td>Hour [H]</td>
 </tr>
 <tr class="row-odd"><td>4</td>
-<td>R</td>
+<td><a class="reference internal" href="../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>imin</td>
 <td>Minute [M]</td>
 </tr>
 <tr class="row-even"><td>5</td>
-<td>O</td>
+<td><a class="reference internal" href="../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
 <td>qn</td>
-<td>Net
-all-wave
-radiation
-[W
-m^-2 ]
--  Required
-if
-<strong>NetRad
-iationMetho
-d</strong>
-= 1.</td>
+<td>Net all-wave radiation [W m<sup>-2</sup>] Required if <a class="reference internal" href="RunControl/Model_run_options.html#cmdoption-arg-netradiationmethod"><code class="xref any std std-option docutils literal notranslate"><span class="pre">NetRadiationMethod</span></code></a> = 1.</td>
 </tr>
 <tr class="row-odd"><td>6</td>
-<td>O</td>
+<td><a class="reference internal" href="../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
 <td>qh</td>
-<td>Sensible
-heat flux
-[W
-m^-2
-]</td>
+<td>Sensible heat flux [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-even"><td>7</td>
-<td>O</td>
+<td><a class="reference internal" href="../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
 <td>qe</td>
-<td>Latent heat
-flux [W
-m^-2
-]</td>
+<td>Latent heat flux [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-odd"><td>8</td>
-<td>O</td>
+<td><a class="reference internal" href="../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
 <td>qs</td>
-<td>Storage
-heat flux
-[W
-m^-2
-]</td>
+<td>Storage heat flux [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-even"><td>9</td>
-<td>O</td>
+<td><a class="reference internal" href="../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
 <td>qf</td>
-<td>Anthropogen
-ic
-heat flux
-[W
-m^-2
-]</td>
+<td>Anthropogenic heat flux [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-odd"><td>10</td>
-<td>R</td>
+<td><a class="reference internal" href="../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>U</td>
-<td>Wind speed
-[m
-s^-1
-]
-*Height of
-the wind
-speed
-measurement
-(z) is
-needed in
-[[#SUEWS_Si
-teSelect.tx
-t]</td>
+<td>Wind speed [m s-1] Height of the wind speed measurement (z) is needed in <a class="reference internal" href="SUEWS_SiteInfo/SUEWS_SiteSelect.html#suews-siteselect-txt"><span class="std std-ref">SUEWS_SiteSelect.txt</span></a>.</td>
 </tr>
 <tr class="row-even"><td>11</td>
-<td>R</td>
+<td><a class="reference internal" href="../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>RH</td>
-<td>Relative
-Humidity
-[%]</td>
+<td>Relative Humidity [%]</td>
 </tr>
 <tr class="row-odd"><td>12</td>
-<td>R</td>
+<td><a class="reference internal" href="../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Tair</td>
-<td>Air
-temperature
-[°C]</td>
+<td>Air temperature [°C]</td>
 </tr>
 <tr class="row-even"><td>13</td>
-<td>R</td>
+<td><a class="reference internal" href="../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>pres</td>
-<td>Barometric
-pressure
-[kPa]</td>
+<td>Barometric pressure [kPa]</td>
 </tr>
 <tr class="row-odd"><td>14</td>
-<td>R</td>
+<td><a class="reference internal" href="../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>rain</td>
-<td>Rainfall
-[mm]</td>
+<td>Rainfall [mm]</td>
 </tr>
 <tr class="row-even"><td>15</td>
-<td>R</td>
+<td><a class="reference internal" href="../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>kdown</td>
-<td>Incoming
-shortwave
-radiation
-[W
-m^-2
-]
--  Must be &gt; 0 W
-m^-2.</td>
+<td>Incoming shortwave radiation [W m<sup>-2</sup>] Must be &gt; 0 W m<sup>-2</sup>.</td>
 </tr>
 <tr class="row-odd"><td>16</td>
-<td>O</td>
+<td><a class="reference internal" href="../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
 <td>snow</td>
-<td>Snow [mm]
--  Required
-if
-<strong>SnowUs
-e</strong>
-= 1</td>
+<td>Snow [mm]Required if <a class="reference internal" href="RunControl/Model_run_options.html#cmdoption-arg-snowuse"><code class="xref any std std-option docutils literal notranslate"><span class="pre">SnowUse</span></code></a> = 1</td>
 </tr>
 <tr class="row-even"><td>17</td>
-<td>O</td>
+<td><a class="reference internal" href="../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
 <td>ldown</td>
-<td>Incoming
-longwave
-radiation
-[W
-m^-2]</td>
+<td>Incoming longwave radiation [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-odd"><td>18</td>
-<td>O</td>
+<td><a class="reference internal" href="../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
 <td>fcld</td>
-<td>Cloud
-fraction
-[tenths]</td>
+<td>Cloud fraction [tenths]</td>
 </tr>
 <tr class="row-even"><td>19</td>
-<td>O</td>
+<td><a class="reference internal" href="../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
 <td>Wuh</td>
-<td>External
-water use
-[m^-3 ]</td>
+<td>External water use [m<sup>3</sup>]</td>
 </tr>
 <tr class="row-odd"><td>20</td>
-<td>O</td>
+<td><a class="reference internal" href="../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
 <td>xsmd</td>
-<td>Observed
-soil
-moisture
-[m^-3 m^-3
-]
-or [kg
-kg^-1
-]</td>
+<td>Observed soil moisture [m<sup>3</sup> m<sup>-3</sup>] or [kg kg<sup>-1</sup>]</td>
 </tr>
 <tr class="row-even"><td>21</td>
-<td>O</td>
+<td><a class="reference internal" href="../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
 <td>lai</td>
-<td>Observed
-leaf area
-index
-[m^-2
-m^-2 ]</td>
+<td>Observed leaf area index [m<sup>-2</sup> m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-odd"><td>22</td>
-<td>O</td>
+<td><a class="reference internal" href="../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
 <td>kdiff</td>
-<td>Diffuse
-radiation
-[W
-m^-2]
--  Recommended
-if
-<strong>SOLWEIGUse</strong>
-= 1</td>
+<td>Diffuse radiation [W m<sup>-2</sup>] Recommended if <a class="reference internal" href="RunControl/Model_run_options.html#cmdoption-arg-solweiguse"><code class="xref any std std-option docutils literal notranslate"><span class="pre">SOLWEIGUse</span></code></a> = 1</td>
 </tr>
 <tr class="row-even"><td>23</td>
-<td>O</td>
+<td><a class="reference internal" href="../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
 <td>kdir</td>
-<td>Direct
-radiation
-[W
-m^-2
-]
--  Recommended
-if
-<strong>SOLWEIGUse</strong>
-= 1</td>
+<td>Direct radiation [W m<sup>-2</sup>] Recommended if <a class="reference internal" href="RunControl/Model_run_options.html#cmdoption-arg-solweiguse"><code class="xref any std std-option docutils literal notranslate"><span class="pre">SOLWEIGUse</span></code></a> = 1</td>
 </tr>
 <tr class="row-odd"><td>24</td>
-<td>O</td>
+<td><a class="reference internal" href="../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
 <td>wdir</td>
-<td>Wind
-direction
-[°]
--  Currently
-not
-implemented</td>
+<td>Wind direction [°] Currently not implemented</td>
 </tr>
 </tbody>
 </table>
@@ -477,9 +366,7 @@ implemented</td>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -501,7 +388,7 @@ implemented</td>
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -520,6 +407,7 @@ implemented</td>
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
             VERSION:'2018a.alpha',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
@@ -538,14 +426,13 @@ implemented</td>
     <script type="text/javascript" src="../_static/js/theme.js"></script>
   
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

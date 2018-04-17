@@ -25,28 +25,20 @@
   
 
   
-  
     <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  
-
-  
-    <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
-  
-
-  
-        <link rel="index" title="Index"
-              href="../genindex.html"/>
-        <link rel="search" title="Search" href="../search.html"/>
-    <link rel="top" title="SUEWS 2018a.alpha documentation" href="../index.html"/>
-        <link rel="next" title="8. Troubleshooting" href="../troubleshooting.html"/>
-        <link rel="prev" title="6.7.1. SOLWEIGinput" href="../input_files/SOLWEIG_input/SOLWEIGinput.html"/> 
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="8. Troubleshooting" href="../troubleshooting.html" />
+    <link rel="prev" title="6.7.1. SOLWEIGinput" href="../input_files/SOLWEIG_input/SOLWEIGinput.html" /> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -133,7 +125,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">SUEWS</a>
@@ -141,9 +133,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -244,8 +237,7 @@ written out to the file SS_FileChoices.txt.</p>
 <div class="section" id="ssss-yyyy-tt-txt">
 <h3>7.2.1. SSss_YYYY_TT.txt<a class="headerlink" href="#ssss-yyyy-tt-txt" title="Permalink to this headline">¶</a></h3>
 <p>SUEWS produces the main output file (SSss_YYYY_tt.txt) with time
-resolution (TT min) set by <strong>ResolutionFilesOut</strong> in
-<a class="reference external" href="#RunControl">RunControl</a>.</p>
+resolution (TT min) set by <strong>ResolutionFilesOut</strong> in <a class="reference internal" href="../input_files/RunControl/RunControl.html#runcontrol-nml"><span class="std std-ref">RunControl.nml</span></a>.</p>
 <p>Before these main data files are written out, SUEWS provides a summary
 of the column names, units and variables included in the file
 Ss_YYYY_TT_OutputFormat.txt (one file per run).</p>
@@ -288,22 +280,22 @@ to <a class="reference internal" href="../input_files/RunControl/File_related_op
 <tr class="row-odd"><td>6</td>
 <td>Kdown</td>
 <td>0,1,2</td>
-<td>Incoming shortwave radiation [W m <sup>-2</sup> ]</td>
+<td>Incoming shortwave radiation [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-even"><td>7</td>
 <td>Kup</td>
 <td>0,1,2</td>
-<td>Outgoing shortwave radiation [W m <sup>-2</sup> ]</td>
+<td>Outgoing shortwave radiation [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-odd"><td>8</td>
 <td>Ldown</td>
 <td>0,1,2</td>
-<td>Incoming longwave radiation [W m <sup>-2</sup> ]</td>
+<td>Incoming longwave radiation [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-even"><td>9</td>
 <td>Lup</td>
 <td>0,1,2</td>
-<td>Outgoing longwave radiation [W m <sup>-2</sup> ]</td>
+<td>Outgoing longwave radiation [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-odd"><td>10</td>
 <td>Tsurf</td>
@@ -313,42 +305,42 @@ to <a class="reference internal" href="../input_files/RunControl/File_related_op
 <tr class="row-even"><td>11</td>
 <td>QN</td>
 <td>0,1,2</td>
-<td>Net all-wave radiation [W m <sup>-2</sup> ]</td>
+<td>Net all-wave radiation [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-odd"><td>12</td>
 <td>QF</td>
 <td>0,1,2</td>
-<td>Anthropogenic heat flux [W m <sup>-2</sup> ]</td>
+<td>Anthropogenic heat flux [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-even"><td>13</td>
 <td>QS</td>
 <td>0,1,2</td>
-<td>Storage heat flux [W m <sup>-2</sup> ]</td>
+<td>Storage heat flux [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-odd"><td>14</td>
 <td>QH</td>
 <td>0,1,2</td>
-<td>Sensible heat flux (calculated using SUEWS) [W m <sup>-2</sup> ]</td>
+<td>Sensible heat flux (calculated using SUEWS) [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-even"><td>15</td>
 <td>QE</td>
 <td>0,1,2</td>
-<td>Latent heat flux (calculated using SUEWS) [W m <sup>-2</sup> ]</td>
+<td>Latent heat flux (calculated using SUEWS) [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-odd"><td>16</td>
 <td>QHlumps</td>
 <td>0,1</td>
-<td>Sensible heat flux (calculated using LUMPS) [W m <sup>-2</sup> ]</td>
+<td>Sensible heat flux (calculated using LUMPS) [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-even"><td>17</td>
 <td>QElumps</td>
 <td>0,1</td>
-<td>Latent heat flux (calculated using LUMPS) [W m <sup>-2</sup> ]</td>
+<td>Latent heat flux (calculated using LUMPS) [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-odd"><td>18</td>
 <td>QHresis</td>
 <td>0,1</td>
-<td>Sensible heat flux (calculated using resistance method) [W m <sup>-2</sup> ] Do not use in v2017b!</td>
+<td>Sensible heat flux (calculated using resistance method) [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-even"><td>19</td>
 <td>Rain</td>
@@ -543,7 +535,7 @@ to <a class="reference internal" href="../input_files/RunControl/File_related_op
 <tr class="row-even"><td>57</td>
 <td>LAI</td>
 <td>0,1,2</td>
-<td>Leaf area index [m 2 m <sup>-2</sup> ]</td>
+<td>Leaf area index [m 2 m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-odd"><td>58</td>
 <td>z0m</td>
@@ -558,7 +550,7 @@ to <a class="reference internal" href="../input_files/RunControl/File_related_op
 <tr class="row-odd"><td>60</td>
 <td>ustar</td>
 <td>0,1,2</td>
-<td>Friction velocity [m m s <sup>-1</sup> ]</td>
+<td>Friction velocity [m s<sup>-1</sup>]</td>
 </tr>
 <tr class="row-even"><td>61</td>
 <td>Lob</td>
@@ -568,52 +560,52 @@ to <a class="reference internal" href="../input_files/RunControl/File_related_op
 <tr class="row-odd"><td>62</td>
 <td>ra</td>
 <td>0,1</td>
-<td>Aerodynamic resistance [s m -1 ]</td>
+<td>Aerodynamic resistance [s m<sup>-1</sup>]</td>
 </tr>
 <tr class="row-even"><td>63</td>
 <td>rs</td>
 <td>0,1</td>
-<td>Surface resistance [s m -1 ]</td>
+<td>Surface resistance [s m<sup>-1</sup>]</td>
 </tr>
 <tr class="row-odd"><td>64</td>
 <td>Fc</td>
 <td>0,1,2</td>
-<td>CO2 flux [umol m <sup>-2</sup> m s <sup>-1</sup> ] Do not use in v2017b!</td>
+<td>CO2 flux [umol m<sup>-2</sup> s<sup>-1</sup>] Do not use in v2017b!</td>
 </tr>
 <tr class="row-even"><td>65</td>
 <td>FcPhoto</td>
 <td>0,1</td>
-<td>CO2 flux from photosynthesis [umol m <sup>-2</sup> m s <sup>-1</sup> ] Do not use in v2017b!</td>
+<td>CO2 flux from photosynthesis [umol m<sup>-2</sup> s<sup>-1</sup>] Do not use in v2017b!</td>
 </tr>
 <tr class="row-odd"><td>66</td>
 <td>FcRespi</td>
 <td>0,1</td>
-<td>CO2 flux from respiration [umol m <sup>-2</sup> m s <sup>-1</sup> ] Do not use in v2017b!</td>
+<td>CO2 flux from respiration [umol m<sup>-2</sup> s<sup>-1</sup>] Do not use in v2017b!</td>
 </tr>
 <tr class="row-even"><td>67</td>
 <td>FcMetab</td>
 <td>0,1</td>
-<td>CO2 flux from metabolism [umol m <sup>-2</sup> m s <sup>-1</sup> ] Do not use in v2017b!</td>
+<td>CO2 flux from metabolism [umol m<sup>-2</sup> s<sup>-1</sup>] Do not use in v2017b!</td>
 </tr>
 <tr class="row-odd"><td>68</td>
 <td>FcTraff</td>
 <td>0,1</td>
-<td>CO2 flux from traffic [umol m <sup>-2</sup> m s <sup>-1</sup> ] Do not use in v2017b!</td>
+<td>CO2 flux from traffic [umol m<sup>-2</sup> s<sup>-1</sup>] Do not use in v2017b!</td>
 </tr>
 <tr class="row-even"><td>69</td>
 <td>FcBuild</td>
 <td>0,1</td>
-<td>CO2 flux from buildings [umol m <sup>-2</sup> m s <sup>-1</sup> ] Do not use in v2017b!</td>
+<td>CO2 flux from buildings [umol m<sup>-2</sup> s<sup>-1</sup>] Do not use in v2017b!</td>
 </tr>
 <tr class="row-odd"><td>70</td>
 <td>QNSnowFr</td>
 <td>1</td>
-<td>Net all-wave radiation for snow-free area [W m <sup>-2</sup> ]</td>
+<td>Net all-wave radiation for snow-free area [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-even"><td>71</td>
 <td>QNSnow</td>
 <td>1</td>
-<td>Net all-wave radiation for snow area [W m <sup>-2</sup> ]</td>
+<td>Net all-wave radiation for snow area [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-odd"><td>72</td>
 <td>AlbSnow</td>
@@ -623,17 +615,17 @@ to <a class="reference internal" href="../input_files/RunControl/File_related_op
 <tr class="row-even"><td>73</td>
 <td>QM</td>
 <td>1</td>
-<td>Snow-related heat exchange [W m <sup>-2</sup> ]</td>
+<td>Snow-related heat exchange [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-odd"><td>74</td>
 <td>QMFreeze</td>
 <td>1</td>
-<td>Internal energy change [W m <sup>-2</sup> ]</td>
+<td>Internal energy change [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-even"><td>75</td>
 <td>QMRain</td>
 <td>1</td>
-<td>Heat released by rain on snow [W m <sup>-2</sup> ]</td>
+<td>Heat released by rain on snow [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-odd"><td>76</td>
 <td>SWE</td>
@@ -673,12 +665,12 @@ to <a class="reference internal" href="../input_files/RunControl/File_related_op
 <tr class="row-even"><td>83</td>
 <td>Q2</td>
 <td>0,1,2</td>
-<td>Air specific humidity at 2 m agl [g kg <sup>-1</sup> ]</td>
+<td>Air specific humidity at 2 m agl [g kg<sup>-1</sup>]</td>
 </tr>
 <tr class="row-odd"><td>84</td>
 <td>U10</td>
 <td>0,1,2</td>
-<td>Wind speed at 10 m agl [m m s <sup>-1</sup> ]</td>
+<td>Wind speed at 10 m agl [m s<sup>-1</sup>]</td>
 </tr>
 </tbody>
 </table>
@@ -761,15 +753,15 @@ written for each grid so it may contain multiple years.</p>
 </tr>
 <tr class="row-odd"><td>14</td>
 <td>LAI_EveTr</td>
-<td>Leaf area index of evergreen trees [m <sup>-2</sup> m <sup>-2</sup> ]</td>
+<td>Leaf area index of evergreen trees [m<sup>-2</sup> m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-even"><td>15</td>
 <td>LAI_DecTr</td>
-<td>Leaf area index of deciduous trees [m <sup>-2</sup> m <sup>-2</sup> ]</td>
+<td>Leaf area index of deciduous trees [m<sup>-2</sup> m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-odd"><td>16</td>
 <td>LAI_Grass</td>
-<td>Leaf area index of grass [m <sup>-2</sup> m <sup>-2</sup> ]</td>
+<td>Leaf area index of grass [m<sup>-2</sup> m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-even"><td>17</td>
 <td>DecidCap</td>
@@ -841,31 +833,31 @@ written for each grid so it may contain multiple years.</p>
 </tr>
 <tr class="row-odd"><td>34</td>
 <td>DensSnow_Paved</td>
-<td>Snow density - paved surface [kg m <sup>-3</sup> ]</td>
+<td>Snow density - paved surface [kg m<sup>-3</sup>]</td>
 </tr>
 <tr class="row-even"><td>35</td>
 <td>DensSnow_Bldgs</td>
-<td>Snow density - building surface [kg m <sup>-3</sup> ]</td>
+<td>Snow density - building surface [kg m<sup>-3</sup>]</td>
 </tr>
 <tr class="row-odd"><td>36</td>
 <td>DensSnow_EveTr</td>
-<td>Snow density - evergreen surface [kg m <sup>-3</sup> ]</td>
+<td>Snow density - evergreen surface [kg m<sup>-3</sup>]</td>
 </tr>
 <tr class="row-even"><td>37</td>
 <td>DensSnow_DecTr</td>
-<td>Snow density - deciduous surface [kg m <sup>-3</sup> ]</td>
+<td>Snow density - deciduous surface [kg m<sup>-3</sup>]</td>
 </tr>
 <tr class="row-odd"><td>38</td>
 <td>DensSnow_Grass</td>
-<td>Snow density - grass surface [kg m <sup>-3</sup> ]</td>
+<td>Snow density - grass surface [kg m<sup>-3</sup>]</td>
 </tr>
 <tr class="row-even"><td>39</td>
 <td>DensSnow_BSoil</td>
-<td>Snow density - bare soil surface [kg m <sup>-3</sup> ]</td>
+<td>Snow density - bare soil surface [kg m<sup>-3</sup>]</td>
 </tr>
 <tr class="row-odd"><td>40</td>
 <td>DensSnow_Water</td>
-<td>Snow density - water surface [kg m <sup>-3</sup> ]</td>
+<td>Snow density - water surface [kg m<sup>-3</sup>]</td>
 </tr>
 </tbody>
 </table>
@@ -939,115 +931,115 @@ RunControl.nml) with details for each surface type.</p>
 </tr>
 <tr class="row-even"><td>13</td>
 <td>Mw_Paved</td>
-<td>Meltwater – paved surface [mm h <sup>-1</sup> ]</td>
+<td>Meltwater – paved surface [mm h<sup>-1</sup>]</td>
 </tr>
 <tr class="row-odd"><td>14</td>
 <td>Mw_Bldgs</td>
-<td>Meltwater – building surface [mm h <sup>-1</sup> ]</td>
+<td>Meltwater – building surface [mm h<sup>-1</sup>]</td>
 </tr>
 <tr class="row-even"><td>15</td>
 <td>Mw_EveTr</td>
-<td>Meltwater – evergreen surface [mm h <sup>-1</sup> ]</td>
+<td>Meltwater – evergreen surface [mm h<sup>-1</sup>]</td>
 </tr>
 <tr class="row-odd"><td>16</td>
 <td>Mw_DecTr</td>
-<td>Meltwater – deciduous surface [mm h <sup>-1</sup> ]</td>
+<td>Meltwater – deciduous surface [mm h<sup>-1</sup>]</td>
 </tr>
 <tr class="row-even"><td>17</td>
 <td>Mw_Grass</td>
-<td>Meltwater – grass surface [mm h <sup>-1</sup> 1]</td>
+<td>Meltwater – grass surface [mm h<sup>-1</sup> 1]</td>
 </tr>
 <tr class="row-odd"><td>18</td>
 <td>Mw_BSoil</td>
-<td>Meltwater – bare soil surface [mm h <sup>-1</sup> ]</td>
+<td>Meltwater – bare soil surface [mm h<sup>-1</sup>]</td>
 </tr>
 <tr class="row-even"><td>19</td>
 <td>Mw_Water</td>
-<td>Meltwater – water surface [mm h <sup>-1</sup> ]</td>
+<td>Meltwater – water surface [mm h<sup>-1</sup>]</td>
 </tr>
 <tr class="row-odd"><td>20</td>
 <td>Qm_Paved</td>
-<td>Snowmelt-related heat – paved surface [W m <sup>-2</sup> ]</td>
+<td>Snowmelt-related heat – paved surface [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-even"><td>21</td>
 <td>Qm_Bldgs</td>
-<td>Snowmelt-related heat – building surface [W m <sup>-2</sup> ]</td>
+<td>Snowmelt-related heat – building surface [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-odd"><td>22</td>
 <td>Qm_EveTr</td>
-<td>Snowmelt-related heat – evergreen surface [W m <sup>-2</sup> ]</td>
+<td>Snowmelt-related heat – evergreen surface [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-even"><td>23</td>
 <td>Qm_DecTr</td>
-<td>Snowmelt-related heat – deciduous surface [W m <sup>-2</sup> ]</td>
+<td>Snowmelt-related heat – deciduous surface [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-odd"><td>24</td>
 <td>Qm_Grass</td>
-<td>Snowmelt-related heat – grass surface [W m <sup>-2</sup> ]</td>
+<td>Snowmelt-related heat – grass surface [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-even"><td>25</td>
 <td>Qm_BSoil</td>
-<td>Snowmelt-related heat – bare soil surface [W m <sup>-2</sup> ]</td>
+<td>Snowmelt-related heat – bare soil surface [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-odd"><td>26</td>
 <td>Qm_Water</td>
-<td>Snowmelt-related heat – water surface [W m <sup>-2</sup> ]</td>
+<td>Snowmelt-related heat – water surface [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-even"><td>27</td>
 <td>Qa_Paved</td>
-<td>Advective heat – paved surface [W m <sup>-2</sup> ]</td>
+<td>Advective heat – paved surface [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-odd"><td>28</td>
 <td>Qa_Bldgs</td>
-<td>Advective heat – building surface [W m <sup>-2</sup> ]</td>
+<td>Advective heat – building surface [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-even"><td>29</td>
 <td>Qa_EveTr</td>
-<td>Advective heat – evergreen surface [W m <sup>-2</sup> ]</td>
+<td>Advective heat – evergreen surface [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-odd"><td>30</td>
 <td>Qa_DecTr</td>
-<td>Advective heat – deciduous surface [W m <sup>-2</sup> ]</td>
+<td>Advective heat – deciduous surface [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-even"><td>31</td>
 <td>Qa_Grass</td>
-<td>Advective heat – grass surface [W m <sup>-2</sup> ]</td>
+<td>Advective heat – grass surface [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-odd"><td>32</td>
 <td>Qa_BSoil</td>
-<td>Advective heat – bare soil surface [W m <sup>-2</sup> ]</td>
+<td>Advective heat – bare soil surface [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-even"><td>33</td>
 <td>Qa_Water</td>
-<td>Advective heat – water surface [W m <sup>-2</sup> ]</td>
+<td>Advective heat – water surface [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-odd"><td>34</td>
 <td>QmFr_Paved</td>
-<td>Heat related to freezing of surface store – paved surface [W m <sup>-2</sup> ]</td>
+<td>Heat related to freezing of surface store – paved surface [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-even"><td>35</td>
 <td>QmFr_Bldgs</td>
-<td>Heat related to freezing of surface store – building surface [W m <sup>-2</sup> ]</td>
+<td>Heat related to freezing of surface store – building surface [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-odd"><td>36</td>
 <td>QmFr_EveTr</td>
-<td>Heat related to freezing of surface store – evergreen surface [W m <sup>-2</sup> ]</td>
+<td>Heat related to freezing of surface store – evergreen surface [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-even"><td>37</td>
 <td>QmFr_DecTr</td>
-<td>Heat related to freezing of surface store – deciduous surface [W m <sup>-2</sup> ]</td>
+<td>Heat related to freezing of surface store – deciduous surface [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-odd"><td>38</td>
 <td>QmFr_Grass</td>
-<td>Heat related to freezing of surface store – grass surface [W m <sup>-2</sup> ]</td>
+<td>Heat related to freezing of surface store – grass surface [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-even"><td>39</td>
 <td>QmFr_BSoil</td>
-<td>Heat related to freezing of surface store – bare soil surface [W m <sup>-2</sup> ]</td>
+<td>Heat related to freezing of surface store – bare soil surface [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-odd"><td>40</td>
 <td>QmFr_Water</td>
-<td>Heat related to freezing of surface store – water [W m <sup>-2</sup> ]</td>
+<td>Heat related to freezing of surface store – water [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-even"><td>41</td>
 <td>fr_Paved</td>
@@ -1103,59 +1095,59 @@ RunControl.nml) with details for each surface type.</p>
 </tr>
 <tr class="row-odd"><td>54</td>
 <td>qn_PavedSnow</td>
-<td>Net all-wave radiation – paved surface [W m <sup>-2</sup> ]</td>
+<td>Net all-wave radiation – paved surface [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-even"><td>55</td>
 <td>qn_BldgsSnow</td>
-<td>Net all-wave radiation – building surface [W m <sup>-2</sup> ]</td>
+<td>Net all-wave radiation – building surface [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-odd"><td>56</td>
 <td>qn_EveTrSnow</td>
-<td>Net all-wave radiation – evergreen surface [W m <sup>-2</sup> ]</td>
+<td>Net all-wave radiation – evergreen surface [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-even"><td>57</td>
 <td>qn_DecTrSnow</td>
-<td>Net all-wave radiation – deciduous surface [W m <sup>-2</sup> ]</td>
+<td>Net all-wave radiation – deciduous surface [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-odd"><td>58</td>
 <td>qn_GrassSnow</td>
-<td>Net all-wave radiation – grass surface [W m <sup>-2</sup> ]</td>
+<td>Net all-wave radiation – grass surface [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-even"><td>59</td>
 <td>qn_BSoilSnow</td>
-<td>Net all-wave radiation – bare soil surface [W m <sup>-2</sup> ]</td>
+<td>Net all-wave radiation – bare soil surface [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-odd"><td>60</td>
 <td>qn_WaterSnow</td>
-<td>Net all-wave radiation – water surface [W m <sup>-2</sup> ]</td>
+<td>Net all-wave radiation – water surface [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-even"><td>61</td>
 <td>kup_PavedSnow</td>
-<td>Reflected shortwave radiation – paved surface [W m <sup>-2</sup> ]</td>
+<td>Reflected shortwave radiation – paved surface [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-odd"><td>62</td>
 <td>kup_BldgsSnow</td>
-<td>Reflected shortwave radiation – building surface [W m <sup>-2</sup> ]</td>
+<td>Reflected shortwave radiation – building surface [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-even"><td>63</td>
 <td>kup_EveTrSnow</td>
-<td>Reflected shortwave radiation – evergreen surface [W m <sup>-2</sup> ]</td>
+<td>Reflected shortwave radiation – evergreen surface [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-odd"><td>64</td>
 <td>kup_DecTrSnow</td>
-<td>Reflected shortwave radiation – deciduous surface [W m <sup>-2</sup> ]</td>
+<td>Reflected shortwave radiation – deciduous surface [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-even"><td>65</td>
 <td>kup_GrassSnow</td>
-<td>Reflected shortwave radiation – grass surface [W m <sup>-2</sup> ]</td>
+<td>Reflected shortwave radiation – grass surface [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-odd"><td>66</td>
 <td>kup_BSoilSnow</td>
-<td>Reflected shortwave radiation – bare soil surface [W m <sup>-2</sup> ]</td>
+<td>Reflected shortwave radiation – bare soil surface [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-even"><td>67</td>
 <td>kup_WaterSnow</td>
-<td>Reflected shortwave radiation – water surface [W m <sup>-2</sup> ]</td>
+<td>Reflected shortwave radiation – water surface [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-odd"><td>68</td>
 <td>frMelt_Paved</td>
@@ -1215,31 +1207,31 @@ RunControl.nml) with details for each surface type.</p>
 </tr>
 <tr class="row-odd"><td>82</td>
 <td>DensSnow_Paved</td>
-<td>Snow density – paved surface [kg m <sup>-3</sup> ]</td>
+<td>Snow density – paved surface [kg m<sup>-3</sup>]</td>
 </tr>
 <tr class="row-even"><td>83</td>
 <td>DensSnow_Bldgs</td>
-<td>Snow density – building surface [kg m <sup>-3</sup> ]</td>
+<td>Snow density – building surface [kg m<sup>-3</sup>]</td>
 </tr>
 <tr class="row-odd"><td>84</td>
 <td>DensSnow_EveTr</td>
-<td>Snow density – evergreen surface [kg m <sup>-3</sup> ]</td>
+<td>Snow density – evergreen surface [kg m<sup>-3</sup>]</td>
 </tr>
 <tr class="row-even"><td>85</td>
 <td>DensSnow_DecTr</td>
-<td>Snow density – deciduous surface [kg m <sup>-3</sup> ]</td>
+<td>Snow density – deciduous surface [kg m<sup>-3</sup>]</td>
 </tr>
 <tr class="row-odd"><td>86</td>
 <td>DensSnow_Grass</td>
-<td>Snow density – grass surface [kg m <sup>-3</sup> ]</td>
+<td>Snow density – grass surface [kg m<sup>-3</sup>]</td>
 </tr>
 <tr class="row-even"><td>87</td>
 <td>DensSnow_BSoil</td>
-<td>Snow density – bare soil surface [kg m <sup>-3</sup> ]</td>
+<td>Snow density – bare soil surface [kg m<sup>-3</sup>]</td>
 </tr>
 <tr class="row-odd"><td>88</td>
 <td>DensSnow_Water</td>
-<td>Snow density – water surface [kg m <sup>-3</sup> ]</td>
+<td>Snow density – water surface [kg m<sup>-3</sup>]</td>
 </tr>
 <tr class="row-even"><td>89</td>
 <td>Sd_Paved</td>
@@ -1352,7 +1344,7 @@ Input).</p>
 <tr class="row-odd"><td>8</td>
 <td>Q</td>
 <td>Specific humidity in the inertial sublayer</td>
-<td>g kg <sup>-1</sup></td>
+<td>g kg<sup>-1</sup></td>
 </tr>
 <tr class="row-even"><td>9</td>
 <td>theta+</td>
@@ -1362,7 +1354,7 @@ Input).</p>
 <tr class="row-odd"><td>10</td>
 <td>q+</td>
 <td>Specific humidity just above the CBL</td>
-<td>g kg <sup>-1</sup></td>
+<td>g kg<sup>-1</sup></td>
 </tr>
 <tr class="row-even"><td>11</td>
 <td>Temp_C</td>
@@ -1377,12 +1369,12 @@ Input).</p>
 <tr class="row-even"><td>13</td>
 <td>QH_use</td>
 <td>Sensible heat flux used for calculation</td>
-<td>W m <sup>-2</sup></td>
+<td>W m<sup>-2</sup></td>
 </tr>
 <tr class="row-odd"><td>14</td>
 <td>QE_use</td>
 <td>Latent heat flux used for calculation</td>
-<td>W m <sup>-2</sup></td>
+<td>W m<sup>-2</sup></td>
 </tr>
 <tr class="row-even"><td>15</td>
 <td>Press_hPa</td>
@@ -1392,37 +1384,37 @@ Input).</p>
 <tr class="row-odd"><td>16</td>
 <td>avu1</td>
 <td>Wind speed used for calculation</td>
-<td>m m s <sup>-1</sup></td>
+<td>m s<sup>-1</sup></td>
 </tr>
 <tr class="row-even"><td>17</td>
 <td>ustar</td>
 <td>Friction velocity used for calculation</td>
-<td>m m s <sup>-1</sup></td>
+<td>m s<sup>-1</sup></td>
 </tr>
 <tr class="row-odd"><td>18</td>
 <td>avdens</td>
 <td>Air density used for calculation</td>
-<td>kg m <sup>-3</sup></td>
+<td>kg m<sup>-3</sup></td>
 </tr>
 <tr class="row-even"><td>19</td>
 <td>lv_J_kg</td>
 <td>Latent heat of vaporization used for calculation</td>
-<td>J kg <sup>-1</sup></td>
+<td>J kg<sup>-1</sup></td>
 </tr>
 <tr class="row-odd"><td>20</td>
 <td>avcp</td>
 <td>Specific heat capacity used for calculation</td>
-<td>J kg <sup>-1</sup> K <sup>-1</sup></td>
+<td>J kg<sup>-1</sup> K<sup>-1</sup></td>
 </tr>
 <tr class="row-even"><td>21</td>
 <td>gamt</td>
 <td>Vertical gradient of potential temperature</td>
-<td>K m -1</td>
+<td>K m<sup>-1</sup></td>
 </tr>
 <tr class="row-odd"><td>22</td>
 <td>gamq</td>
 <td>Vertical gradient of specific humidity</td>
-<td>kg kg <sup>-1</sup> m -1</td>
+<td>kg kg<sup>-1</sup> m<sup>-1</sup></td>
 </tr>
 </tbody>
 </table>
@@ -1464,77 +1456,77 @@ SOLWEIGinput.nml.</p>
 <tr class="row-even"><td>5</td>
 <td>GlobalRad</td>
 <td>Input Kdn</td>
-<td>W m <sup>-2</sup></td>
+<td>W m<sup>-2</sup></td>
 </tr>
 <tr class="row-odd"><td>6</td>
 <td>DiffuseRad</td>
 <td>Diffuse shortwave radiation</td>
-<td>W m <sup>-2</sup></td>
+<td>W m<sup>-2</sup></td>
 </tr>
 <tr class="row-even"><td>7</td>
 <td>DirectRad</td>
 <td>Direct shortwave radiation</td>
-<td>W m <sup>-2</sup></td>
+<td>W m<sup>-2</sup></td>
 </tr>
 <tr class="row-odd"><td>8</td>
 <td>Kdown2d</td>
 <td>Incoming shortwave radiation at POI</td>
-<td>W m <sup>-2</sup></td>
+<td>W m<sup>-2</sup></td>
 </tr>
 <tr class="row-even"><td>9</td>
 <td>Kup2d</td>
 <td>Outgoing shortwave radiation at POI</td>
-<td>W m <sup>-2</sup></td>
+<td>W m<sup>-2</sup></td>
 </tr>
 <tr class="row-odd"><td>10</td>
 <td>Ksouth</td>
 <td>Shortwave radiation from south at POI</td>
-<td>W m <sup>-2</sup></td>
+<td>W m<sup>-2</sup></td>
 </tr>
 <tr class="row-even"><td>11</td>
 <td>Kwest</td>
 <td>Shortwave radiation from west at POI</td>
-<td>W m <sup>-2</sup></td>
+<td>W m<sup>-2</sup></td>
 </tr>
 <tr class="row-odd"><td>12</td>
 <td>Knorth</td>
 <td>Shortwave radiation from north at POI</td>
-<td>W m <sup>-2</sup></td>
+<td>W m<sup>-2</sup></td>
 </tr>
 <tr class="row-even"><td>13</td>
 <td>Keast</td>
 <td>Shortwave radiation from east at POI</td>
-<td>W m <sup>-2</sup></td>
+<td>W m<sup>-2</sup></td>
 </tr>
 <tr class="row-odd"><td>14</td>
 <td>Ldown2d</td>
 <td>Incoming longwave radiation at POI</td>
-<td>W m <sup>-2</sup></td>
+<td>W m<sup>-2</sup></td>
 </tr>
 <tr class="row-even"><td>15</td>
 <td>Lup2d</td>
 <td>Outgoing longwave radiation at POI</td>
-<td>W m <sup>-2</sup></td>
+<td>W m<sup>-2</sup></td>
 </tr>
 <tr class="row-odd"><td>16</td>
 <td>Lsouth</td>
 <td>Longwave radiation from south at POI</td>
-<td>W m <sup>-2</sup></td>
+<td>W m<sup>-2</sup></td>
 </tr>
 <tr class="row-even"><td>17</td>
 <td>Lwest</td>
 <td>Longwave radiation from west at POI</td>
-<td>W m <sup>-2</sup></td>
+<td>W m<sup>-2</sup></td>
 </tr>
 <tr class="row-odd"><td>18</td>
 <td>Lnorth</td>
 <td>Longwave radiation from north at POI</td>
-<td>W m <sup>-2</sup></td>
+<td>W m<sup>-2</sup></td>
 </tr>
 <tr class="row-even"><td>19</td>
 <td>Least</td>
 <td>Longwave radiation from east at POI</td>
-<td>W m <sup>-2</sup></td>
+<td>W m<sup>-2</sup></td>
 </tr>
 <tr class="row-odd"><td>20</td>
 <td>Tmrt</td>
@@ -1544,7 +1536,7 @@ SOLWEIGinput.nml.</p>
 <tr class="row-even"><td>21</td>
 <td>I0</td>
 <td>theoretical value of maximum incoming solar radiation</td>
-<td>W m <sup>-2</sup></td>
+<td>W m<sup>-2</sup></td>
 </tr>
 <tr class="row-odd"><td>22</td>
 <td>CI</td>
@@ -1627,32 +1619,32 @@ the initial converging phase.</strong></p>
 <tr class="row-odd"><td>6</td>
 <td>QSnet</td>
 <td>Net storage heat flux (QSwall+QSground+QS)</td>
-<td>W m <sup>-2</sup></td>
+<td>W m<sup>-2</sup></td>
 </tr>
 <tr class="row-even"><td>7</td>
 <td>QSair</td>
 <td>Storage heat flux into air</td>
-<td>W m <sup>-2</sup></td>
+<td>W m<sup>-2</sup></td>
 </tr>
 <tr class="row-odd"><td>8</td>
 <td>QSwall</td>
 <td>Storage heat flux into wall</td>
-<td>W m <sup>-2</sup></td>
+<td>W m<sup>-2</sup></td>
 </tr>
 <tr class="row-even"><td>9</td>
 <td>QSroof</td>
 <td>Storage heat flux into roof</td>
-<td>W m <sup>-2</sup></td>
+<td>W m<sup>-2</sup></td>
 </tr>
 <tr class="row-odd"><td>10</td>
 <td>QSground</td>
 <td>Storage heat flux into ground</td>
-<td>W m <sup>-2</sup></td>
+<td>W m<sup>-2</sup></td>
 </tr>
 <tr class="row-even"><td>11</td>
 <td>QSibld</td>
 <td>Storage heat flux into internal elements in buildling</td>
-<td>W m <sup>-2</sup></td>
+<td>W m<sup>-2</sup></td>
 </tr>
 <tr class="row-odd"><td>12</td>
 <td>Twall1</td>
@@ -1767,9 +1759,7 @@ the initial converging phase.</strong></p>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -1791,7 +1781,7 @@ the initial converging phase.</strong></p>
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -1810,6 +1800,7 @@ the initial converging phase.</strong></p>
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
             VERSION:'2018a.alpha',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
@@ -1828,14 +1819,13 @@ the initial converging phase.</strong></p>
     <script type="text/javascript" src="../_static/js/theme.js"></script>
   
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

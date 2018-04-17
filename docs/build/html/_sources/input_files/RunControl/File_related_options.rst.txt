@@ -46,7 +46,7 @@ File related options
 		.. csv-table::
 			:file: MultipleMetFiles.csv
 			:header-rows: 1
-			:widths: 20 80
+			:widths: auto
 
 
 .. option:: MultipleInitFiles
@@ -59,7 +59,7 @@ File related options
 		.. csv-table::
 			:file: MultipleInitFiles.csv
 			:header-rows: 1
-			:widths: 20 80
+			:widths: auto
 
 
 .. option:: MultipleESTMFiles
@@ -72,7 +72,7 @@ File related options
 		.. csv-table::
 			:file: MultipleESTMFiles.csv
 			:header-rows: 1
-			:widths: 20 80
+			:widths: auto
 
 
 .. option:: KeepTstepFilesIn
@@ -85,7 +85,7 @@ File related options
 		.. csv-table::
 			:file: KeepTstepFilesIn.csv
 			:header-rows: 1
-			:widths: 20 80
+			:widths: auto
 
 
 .. option:: KeepTstepFilesOut
@@ -98,7 +98,7 @@ File related options
 		.. csv-table::
 			:file: KeepTstepFilesOut.csv
 			:header-rows: 1
-			:widths: 20 80
+			:widths: auto
 
 
 .. option:: WriteOutOption
@@ -111,7 +111,7 @@ File related options
 		.. csv-table::
 			:file: WriteOutOption.csv
 			:header-rows: 1
-			:widths: 20 80
+			:widths: auto
 
 
 .. option:: SuppressWarnings
@@ -124,4 +124,4 @@ File related options
 		.. csv-table::
 			:file: SuppressWarnings.csv
 			:header-rows: 1
-			:widths: 20 80
+			:widths: auto

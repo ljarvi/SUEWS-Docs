@@ -13,7 +13,7 @@ netCDF related options
 		.. csv-table::
 			:file: ncMode.csv
 			:header-rows: 1
-			:widths: 20 80
+			:widths: auto
 
 
 .. option:: nRow

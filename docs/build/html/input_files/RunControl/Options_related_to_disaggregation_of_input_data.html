@@ -25,29 +25,20 @@
   
 
   
-  
     <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  
-
-  
-    <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
-  
-
-  
-        <link rel="index" title="Index"
-              href="../../genindex.html"/>
-        <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="SUEWS 2018a.alpha documentation" href="../../index.html"/>
-        <link rel="up" title="6.1. RunControl.nml" href="RunControl.html"/>
-        <link rel="next" title="6.1.5. netCDF related options" href="netCDF_related_options.html"/>
-        <link rel="prev" title="6.1.3. File related options" href="File_related_options.html"/> 
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="6.1.5. netCDF related options" href="netCDF_related_options.html" />
+    <link rel="prev" title="6.1.3. File related options" href="File_related_options.html" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -131,7 +122,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">SUEWS</a>
@@ -139,9 +130,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -202,11 +194,7 @@
 <tr class="field-even field"><th class="field-name">Description:</th><td class="field-body"><p class="first">Specifies how meteorological variables in the input file (except rain and snow) are disaggregated to the model time step. Wind direction is not currently downscaled so non -999 values will cause an error.</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Configuration:</th><td class="field-body"><table border="1" class="colwidths-given first last docutils">
-<colgroup>
-<col width="20%" />
-<col width="80%" />
-</colgroup>
+<tr class="field-odd field"><th class="field-name">Configuration:</th><td class="field-body"><table border="1" class="colwidths-auto first last docutils">
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Value</th>
 <th class="head">Comments</th>
@@ -249,11 +237,7 @@
 <tr class="field-even field"><th class="field-name">Description:</th><td class="field-body"><p class="first">Can be used to switch off zenith checking in Kdown disaggregation. Note that the zenith calculation requires location information obtained from SUEWS_SiteSelect.txt. If a single met file is used for all grids, the zenith is calculated for the first grid and the disaggregated data is then applied for all grids.</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Configuration:</th><td class="field-body"><table border="1" class="colwidths-given first last docutils">
-<colgroup>
-<col width="20%" />
-<col width="80%" />
-</colgroup>
+<tr class="field-odd field"><th class="field-name">Configuration:</th><td class="field-body"><table border="1" class="colwidths-auto first last docutils">
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Value</th>
 <th class="head">Comments</th>
@@ -291,11 +275,7 @@
 <tr class="field-even field"><th class="field-name">Description:</th><td class="field-body"><p class="first">Specifies how rain in the meteorological forcing file are disaggregated to the model time step. If present in the original met forcing file, snow is currently disaggregated in the same way as rainfall.</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Configuration:</th><td class="field-body"><table border="1" class="colwidths-given first last docutils">
-<colgroup>
-<col width="20%" />
-<col width="80%" />
-</colgroup>
+<tr class="field-odd field"><th class="field-name">Configuration:</th><td class="field-body"><table border="1" class="colwidths-auto first last docutils">
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Value</th>
 <th class="head">Comments</th>
@@ -389,11 +369,7 @@
 <tr class="field-even field"><th class="field-name">Description:</th><td class="field-body"><p class="first">Specifies how ESTM-related temperatures in the input file are disaggregated to the model time step.</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Configuration:</th><td class="field-body"><table border="1" class="colwidths-given first last docutils">
-<colgroup>
-<col width="20%" />
-<col width="80%" />
-</colgroup>
+<tr class="field-odd field"><th class="field-name">Configuration:</th><td class="field-body"><table border="1" class="colwidths-auto first last docutils">
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Value</th>
 <th class="head">Comments</th>
@@ -422,9 +398,7 @@
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -446,7 +420,7 @@
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -465,6 +439,7 @@
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
             VERSION:'2018a.alpha',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
@@ -483,14 +458,13 @@
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
   
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

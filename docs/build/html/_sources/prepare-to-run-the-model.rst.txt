@@ -410,14 +410,16 @@ reasonable.
    * - Characteristic
      - Things to check
    * - Leaf area index
-     - Does the phenologylook appropriate  (i.e. what does the seasonal cycle of  `leaf area index (LAI) <http://glossary.ametsoc.org/wiki/Leaf_area_index>`__ look like?)
+     - Does the phenologylook appropriate?
+        * what does the seasonal cycle of `leaf area index (LAI) <http://glossary.ametsoc.org/wiki/Leaf_area_index>`__ look like?
         * Are the leaves on the trees at approximately the right time of the year?
    * - Kdown
-     - Is the timing of the diurnal cycle correct for the incoming solar radiation?
+     - Is the timing of diurnal cycles correct for the incoming solar radiation?
         * Although Kdown is a required input, it is also included in the output file. It is a good idea to check that the timing of Kdown in the output file is appropriate, as problems can indicate errors with the timestamp, incorrect time settings or problems with the disaggregation. In particular, make sure the sign of the longitude is specified correctly in `SUEWS_SiteSelect.txt`.
         * Checking solar angles (zenith and azimuth) can also be a useful check that the timing is correct.
    * - Albedo
-     - Is the bulk albedo correct?
+     -
+      Is the bulk albedo correct?
         * This is critical because a small error has an impact on all the fluxes (energy and hydrology).
         * If you have measurements of outgoing shortwave radiation compare these with the modelled values.
         * How do the values compare to literature values for your area?
@@ -438,5 +440,5 @@ The last column indicates whether the files are needed/produced once per
 run (1/run), or once per day (1/day), for each year (1/year) or for each
 grid (1/grid)::
 
-    [B] indicates files used with the CBL part of SUEWS (BLUEWS) and therefore are only needed/produced if this option is selected``
-    [E] indicates files associated with ESTM storage heat flux models and therefore are only needed/produced if this option is selected``
+    [B] indicates files used with the CBL part of SUEWS (BLUEWS) and therefore are only needed/produced if this option is selected
+    [E] indicates files associated with ESTM storage heat flux models and therefore are only needed/produced if this option is selected

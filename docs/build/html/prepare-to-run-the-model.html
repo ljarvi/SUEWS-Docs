@@ -25,28 +25,20 @@
   
 
   
-  
     <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
-
-  
-    <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
-  
-
-  
-        <link rel="index" title="Index"
-              href="genindex.html"/>
-        <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="SUEWS 2018a.alpha documentation" href="index.html"/>
-        <link rel="next" title="6. Input files" href="input_files/input_files.html"/>
-        <link rel="prev" title="4. Parameterisations and sub-models within SUEWS" href="parameterisations-and-sub-models.html"/> 
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="6. Input files" href="input_files/input_files.html" />
+    <link rel="prev" title="4. Parameterisations and sub-models within SUEWS" href="parameterisations-and-sub-models.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -136,7 +128,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">SUEWS</a>
@@ -144,9 +136,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -614,8 +607,9 @@ reasonable.</p>
 <tbody valign="top">
 <tr class="row-even"><td>Leaf area index</td>
 <td><dl class="first last docutils">
-<dt>Does the phenologylook appropriate  (i.e. what does the seasonal cycle of  <a class="reference external" href="http://glossary.ametsoc.org/wiki/Leaf_area_index">leaf area index (LAI)</a> look like?)</dt>
+<dt>Does the phenologylook appropriate?</dt>
 <dd><ul class="first last simple">
+<li>what does the seasonal cycle of <a class="reference external" href="http://glossary.ametsoc.org/wiki/Leaf_area_index">leaf area index (LAI)</a> look like?</li>
 <li>Are the leaves on the trees at approximately the right time of the year?</li>
 </ul>
 </dd>
@@ -624,7 +618,7 @@ reasonable.</p>
 </tr>
 <tr class="row-odd"><td>Kdown</td>
 <td><dl class="first last docutils">
-<dt>Is the timing of the diurnal cycle correct for the incoming solar radiation?</dt>
+<dt>Is the timing of diurnal cycles correct for the incoming solar radiation?</dt>
 <dd><ul class="first last simple">
 <li>Although Kdown is a required input, it is also included in the output file. It is a good idea to check that the timing of Kdown in the output file is appropriate, as problems can indicate errors with the timestamp, incorrect time settings or problems with the disaggregation. In particular, make sure the sign of the longitude is specified correctly in <a class="reference internal" href="input_files/SUEWS_SiteInfo/SUEWS_SiteSelect.html#suews-siteselect-txt"><span class="std std-ref">SUEWS_SiteSelect.txt</span></a>.</li>
 <li>Checking solar angles (zenith and azimuth) can also be a useful check that the timing is correct.</li>
@@ -659,8 +653,8 @@ model time-step.</p>
 <p>The last column indicates whether the files are needed/produced once per
 run (1/run), or once per day (1/day), for each year (1/year) or for each
 grid (1/grid):</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[B] indicates files used with the CBL part of SUEWS (BLUEWS) and therefore are only needed/produced if this option is selected``
-[E] indicates files associated with ESTM storage heat flux models and therefore are only needed/produced if this option is selected``
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">B</span><span class="p">]</span> <span class="n">indicates</span> <span class="n">files</span> <span class="n">used</span> <span class="k">with</span> <span class="n">the</span> <span class="n">CBL</span> <span class="n">part</span> <span class="n">of</span> <span class="n">SUEWS</span> <span class="p">(</span><span class="n">BLUEWS</span><span class="p">)</span> <span class="ow">and</span> <span class="n">therefore</span> <span class="n">are</span> <span class="n">only</span> <span class="n">needed</span><span class="o">/</span><span class="n">produced</span> <span class="k">if</span> <span class="n">this</span> <span class="n">option</span> <span class="ow">is</span> <span class="n">selected</span>
+<span class="p">[</span><span class="n">E</span><span class="p">]</span> <span class="n">indicates</span> <span class="n">files</span> <span class="n">associated</span> <span class="k">with</span> <span class="n">ESTM</span> <span class="n">storage</span> <span class="n">heat</span> <span class="n">flux</span> <span class="n">models</span> <span class="ow">and</span> <span class="n">therefore</span> <span class="n">are</span> <span class="n">only</span> <span class="n">needed</span><span class="o">/</span><span class="n">produced</span> <span class="k">if</span> <span class="n">this</span> <span class="n">option</span> <span class="ow">is</span> <span class="n">selected</span>
 </pre></div>
 </div>
 </div>
@@ -668,9 +662,7 @@ grid (1/grid):</p>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -692,7 +684,7 @@ grid (1/grid):</p>
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -711,6 +703,7 @@ grid (1/grid):</p>
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
             VERSION:'2018a.alpha',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
@@ -729,14 +722,13 @@ grid (1/grid):</p>
     <script type="text/javascript" src="_static/js/theme.js"></script>
   
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

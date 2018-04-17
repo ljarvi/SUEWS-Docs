@@ -25,29 +25,20 @@
   
 
   
-  
     <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  
-
-  
-    <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
-  
-
-  
-        <link rel="index" title="Index"
-              href="../../genindex.html"/>
-        <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="SUEWS 2018a.alpha documentation" href="../../index.html"/>
-        <link rel="up" title="6.6. ESTM-related files" href="ESTM_related_files.html"/>
-        <link rel="next" title="6.7. SOLWEIG input files" href="../SOLWEIG_input/SOLWEIG_input.html"/>
-        <link rel="prev" title="6.6. ESTM-related files" href="ESTM_related_files.html"/> 
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="6.7. SOLWEIG input files" href="../SOLWEIG_input/SOLWEIG_input.html" />
+    <link rel="prev" title="6.6. ESTM-related files" href="ESTM_related_files.html" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -132,7 +123,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">SUEWS</a>
@@ -140,9 +131,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -203,11 +195,7 @@
 <tr class="field-even field"><th class="field-name">Description:</th><td class="field-body"><p class="first">Source of surface temperature data used.</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Configuration:</th><td class="field-body"><table border="1" class="colwidths-given first last docutils">
-<colgroup>
-<col width="20%" />
-<col width="80%" />
-</colgroup>
+<tr class="field-odd field"><th class="field-name">Configuration:</th><td class="field-body"><table border="1" class="colwidths-auto first last docutils">
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Value</th>
 <th class="head">Comments</th>
@@ -215,7 +203,7 @@
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td>0</td>
-<td><a href="#id2"><span class="problematic" id="id3">*</span></a>Tsurf in SSss_YYYY_ESTM_Ts_data_tt.txt used for all surface elements.</td>
+<td><a class="reference internal" href="../SUEWS_SiteInfo/Input_Options.html#cmdoption-arg-tsurf"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Tsurf</span></code></a> in <a class="reference internal" href="ESTM_related_files.html#ssss-yyyy-estm-ts-data-tt-txt"><span class="std std-ref">SSss_YYYY_ESTM_Ts_data_tt.txt</span></a> used for all surface elements.</td>
 </tr>
 <tr class="row-odd"><td>1</td>
 <td>Input surface temperature are different for ground, roof and wall.</td>
@@ -244,11 +232,7 @@
 <tr class="field-even field"><th class="field-name">Description:</th><td class="field-body"><p class="first">Source of internal building temperature (Tibld)</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Configuration:</th><td class="field-body"><table border="1" class="colwidths-given first last docutils">
-<colgroup>
-<col width="20%" />
-<col width="80%" />
-</colgroup>
+<tr class="field-odd field"><th class="field-name">Configuration:</th><td class="field-body"><table border="1" class="colwidths-auto first last docutils">
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Value</th>
 <th class="head">Comments</th>
@@ -256,13 +240,13 @@
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td>0</td>
-<td><a href="#id4"><span class="problematic" id="id5">*</span></a>Tiair in SSss_YYYY_ESTM_Ts_data_tt.txt used.</td>
+<td><a class="reference internal" href="../SUEWS_SiteInfo/Input_Options.html#cmdoption-arg-tiair"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Tiair</span></code></a> in <a class="reference internal" href="ESTM_related_files.html#ssss-yyyy-estm-ts-data-tt-txt"><span class="std std-ref">SSss_YYYY_ESTM_Ts_data_tt.txt</span></a> used.</td>
 </tr>
 <tr class="row-odd"><td>1</td>
-<td><a href="#id6"><span class="problematic" id="id7">*</span></a>Tibld calculated considering the effect of anthropogenic heat from HVAC</td>
+<td>Tibld calculated considering the effect of anthropogenic heat from HVAC</td>
 </tr>
 <tr class="row-even"><td>2</td>
-<td><a href="#id8"><span class="problematic" id="id9">*</span></a>Tibld calculated without considering the influence of HVAC.</td>
+<td>Tibld calculated without considering the influence of HVAC.</td>
 </tr>
 </tbody>
 </table>
@@ -285,11 +269,7 @@
 <tr class="field-even field"><th class="field-name">Description:</th><td class="field-body"><p class="first">Method to calculate internal convective heat exchange coefficients (CH) for internal building, wall and roof if evolveTibld is 1 or 2.</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Configuration:</th><td class="field-body"><table border="1" class="colwidths-given first last docutils">
-<colgroup>
-<col width="20%" />
-<col width="80%" />
-</colgroup>
+<tr class="field-odd field"><th class="field-name">Configuration:</th><td class="field-body"><table border="1" class="colwidths-auto first last docutils">
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Value</th>
 <th class="head">Comments</th>
@@ -385,9 +365,7 @@
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -409,7 +387,7 @@
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -428,6 +406,7 @@
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
             VERSION:'2018a.alpha',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
@@ -446,14 +425,13 @@
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
   
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

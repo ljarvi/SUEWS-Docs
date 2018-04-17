@@ -13,7 +13,7 @@ Model run options
 		.. csv-table::
 			:file: CBLuse.csv
 			:header-rows: 1
-			:widths: 20 80
+			:widths: auto
 
 
 .. option:: SnowUse
@@ -26,7 +26,7 @@ Model run options
 		.. csv-table::
 			:file: SnowUse.csv
 			:header-rows: 1
-			:widths: 20 80
+			:widths: auto
 
 
 .. option:: SOLWEIGUse
@@ -39,7 +39,7 @@ Model run options
 		.. csv-table::
 			:file: SOLWEIGUse.csv
 			:header-rows: 1
-			:widths: 20 80
+			:widths: auto
 
 
 .. option:: NetRadiationMethod
@@ -52,7 +52,7 @@ Model run options
 		.. csv-table::
 			:file: NetRadiationMethod.csv
 			:header-rows: 1
-			:widths: 20 80
+			:widths: auto
 
 
 .. option:: AnthropHeatMethod
@@ -65,7 +65,7 @@ Model run options
 		.. csv-table::
 			:file: AnthropHeatMethod.csv
 			:header-rows: 1
-			:widths: 20 80
+			:widths: auto
 
 
 .. option:: AnthropCO2Method
@@ -78,7 +78,7 @@ Model run options
 		.. csv-table::
 			:file: AnthropCO2Method.csv
 			:header-rows: 1
-			:widths: 20 80
+			:widths: auto
 
 
 .. option:: StorageHeatMethod
@@ -91,7 +91,7 @@ Model run options
 		.. csv-table::
 			:file: StorageHeatMethod.csv
 			:header-rows: 1
-			:widths: 20 80
+			:widths: auto
 
 
 .. option:: OHMIncQF
@@ -104,7 +104,7 @@ Model run options
 		.. csv-table::
 			:file: OHMIncQF.csv
 			:header-rows: 1
-			:widths: 20 80
+			:widths: auto
 
 
 .. option:: StabilityMethod
@@ -117,7 +117,7 @@ Model run options
 		.. csv-table::
 			:file: StabilityMethod.csv
 			:header-rows: 1
-			:widths: 20 80
+			:widths: auto
 
 
 .. option:: RoughLenHeatMethod
@@ -130,7 +130,7 @@ Model run options
 		.. csv-table::
 			:file: RoughLenHeatMethod.csv
 			:header-rows: 1
-			:widths: 20 80
+			:widths: auto
 
 
 .. option:: RoughLenMomMethod
@@ -143,7 +143,7 @@ Model run options
 		.. csv-table::
 			:file: RoughLenMomMethod.csv
 			:header-rows: 1
-			:widths: 20 80
+			:widths: auto
 
 
 .. option:: SMDMethod
@@ -156,7 +156,7 @@ Model run options
 		.. csv-table::
 			:file: SMDMethod.csv
 			:header-rows: 1
-			:widths: 20 80
+			:widths: auto
 
 
 .. option:: WaterUseMethod
@@ -169,4 +169,4 @@ Model run options
 		.. csv-table::
 			:file: WaterUseMethod.csv
 			:header-rows: 1
-			:widths: 20 80
+			:widths: auto

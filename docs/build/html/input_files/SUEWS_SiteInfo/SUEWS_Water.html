@@ -25,29 +25,20 @@
   
 
   
-  
     <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  
-
-  
-    <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
-  
-
-  
-        <link rel="index" title="Index"
-              href="../../genindex.html"/>
-        <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="SUEWS 2018a.alpha documentation" href="../../index.html"/>
-        <link rel="up" title="6.2. SUEWS_SiteInfo.xlsm" href="SUEWS_SiteInfo.html"/>
-        <link rel="next" title="6.2.12. SUEWS_WithinGridWaterDist.txt" href="SUEWS_WithinGridWaterDist.html"/>
-        <link rel="prev" title="6.2.10. SUEWS_Veg.txt" href="SUEWS_Veg.html"/> 
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="6.2.12. SUEWS_WithinGridWaterDist.txt" href="SUEWS_WithinGridWaterDist.html" />
+    <link rel="prev" title="6.2.10. SUEWS_Veg.txt" href="SUEWS_Veg.html" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -139,7 +130,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">SUEWS</a>
@@ -147,9 +138,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -200,7 +192,13 @@
 <p>SUEWS_Water.txt specifies the characteristics for the water surface
 cover type by linking codes in column 1 of SUEWS_Water.txt to the codes
 specified in SUEWS_SiteSelect.txt (Code_Water).</p>
-<table border="1" class="colwidths-auto docutils">
+<table border="1" class="colwidths-given longtable docutils">
+<colgroup>
+<col width="5%" />
+<col width="25%" />
+<col width="5%" />
+<col width="65%" />
+</colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">No.</th>
 <th class="head">Column Name</th>
@@ -307,12 +305,12 @@ specified in SUEWS_SiteSelect.txt (Code_Water).</p>
 <tr class="row-odd"><td>20</td>
 <td><a class="reference internal" href="Input_Options.html#cmdoption-arg-anohm-cp"><code class="xref any std std-option docutils literal notranslate"><span class="pre">AnOHM_Cp</span></code></a></td>
 <td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
-<td>Volumetric heat capacity for this surface to use in AnOHM [J m <sup>-3</sup> ]</td>
+<td>Volumetric heat capacity for this surface to use in AnOHM [J m<sup>-3</sup>]</td>
 </tr>
 <tr class="row-even"><td>21</td>
 <td><a class="reference internal" href="Input_Options.html#cmdoption-arg-anohm-kk"><code class="xref any std std-option docutils literal notranslate"><span class="pre">AnOHM_Kk</span></code></a></td>
 <td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
-<td>Thermal conductivity for this surface to use in AnOHM [W m K <sup>-1</sup> ]</td>
+<td>Thermal conductivity for this surface to use in AnOHM [W m K<sup>-1</sup>]</td>
 </tr>
 <tr class="row-odd"><td>22</td>
 <td><a class="reference internal" href="Input_Options.html#cmdoption-arg-anohm-ch"><code class="xref any std std-option docutils literal notranslate"><span class="pre">AnOHM_Ch</span></code></a></td>
@@ -325,9 +323,7 @@ specified in SUEWS_SiteSelect.txt (Code_Water).</p>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -349,7 +345,7 @@ specified in SUEWS_SiteSelect.txt (Code_Water).</p>
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -368,6 +364,7 @@ specified in SUEWS_SiteSelect.txt (Code_Water).</p>
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
             VERSION:'2018a.alpha',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
@@ -386,14 +383,13 @@ specified in SUEWS_SiteSelect.txt (Code_Water).</p>
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
   
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>
