@@ -16,10 +16,10 @@ How to unzip a file
     please search the web using this phrase if you do not know how to
     unzip a file
 
-A text editor
--------------
+A text editor 90
+-----------------
 
-    is a program to edit plain text files. If you search on the web
+    is a program good to edit plain text files. If you search on the web
     using the phrase ‘text editor’ you will find numerous programs.
     These include for example, NotePad, EditPad, Text Pad etc
 
