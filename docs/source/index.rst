@@ -3,7 +3,7 @@
 SUEWS: Surface Urban Energy and Water Balance Scheme
 ----------------------------------------------------
 
-The current version of SUEWS is v2018a. The software can be downloaded
+The current version of SUEWS is v2017b. The software can be downloaded
 by completing `this form`_.
 
 
@@ -28,7 +28,7 @@ further details v2017a:
 
 .. epigraph::
 
-  Ward HC BLABLALB, Yin San Tan, AM Gabey, S Kotthaus, WTJ Morrison, CSB Grimmond. 
+  Ward HC, Yin San Tan, AM Gabey, S Kotthaus, WTJ Morrison, CSB Grimmond. 
   Impact of temporal resolution of precipitation forcing data on modelled urban-atmosphere exchanges and surface conditions. 
   International Journal of Climatology.
   `doi: 10.1002/joc.5200 <http://doi.org/10.1002/joc.5200/>`_
