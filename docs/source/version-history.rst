@@ -9,6 +9,7 @@ New in SUEWS Version 2018a
 --------------------------
 
 see :ref:`version_history`.
+#. New Manual
 
 
 New in SUEWS Version 2017b (released 2 August 2017)
