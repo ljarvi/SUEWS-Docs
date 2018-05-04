@@ -16,8 +16,7 @@ All rows in this file will be read by the model and run.
 .. attention::
   - Two rows of `-9` should be placed at end of this file.
   - In this file the **column order is important**.
-  - In this file the **row order is important** for simulaitons of **multiple grids and multiple years**.
-    Rows of grids of one year should be placed prior to other years, see below for an example::
+  - In this file the **row order is important** for simulaitons of **multiple grids and multiple years**: ensure the rows in are arranged so that all grids for a particular year appear on consecutive lines (rather than grouping all years together for a particular grid). See below for a valid example::
       Grid  Year ...
       1     2001 ...
       2     2001 ...
