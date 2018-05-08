@@ -6,7 +6,7 @@ variables.
 
 -  Required inputs must be continuous – i.e. **gap fill** any missing
    data.
--  The table below gives the required (R) and optional (O) additional
+-  The table below gives the must-use (MU) and optional (O) additional
    input variables.
 -  If an optional input variable is not available or will not be used by
    the model, enter ‘-999.0’ for this column.
