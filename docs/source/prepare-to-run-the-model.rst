@@ -265,13 +265,13 @@ to a GIS environment using QGIS.
 
 .. _anthropogenic-heat-flux-qf-1:
 
-Anthropogenic heat flux (Q :sub:`F`)
+Anthropogenic heat flux (|QF|)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You can either model Q\ :sub:`F` within SUEWS or provide it as an input.
+You can either model |QF| within SUEWS or provide it as an input.
 
 -  To model it population density is needed as an input for LUMPS and
-   SUEWS to calculate Q\ :sub:`F`.
+   SUEWS to calculate |QF|.
 -  If you have no information about the population of the site we
    recommend that you use the LUCY model [lucy]_  [lucy2]_ to estimate the
    anthropogenic heat flux which can then be provided as input SUEWS
@@ -290,7 +290,7 @@ impact on the model output. However, it is important to consider the
 suitability of all parameters for your site. Using inappropriate
 parameters may result in the model returning an error or, worse,
 generating output that is simply not representative of your site. Please
-read the section on `Input files <#Input_files>`__. Recommended or
+read the section on `input_files`. Recommended or
 reasonable ranges of values are suggested for some parameters, along
 with important considerations for how to select appropriate values for
 your site.
