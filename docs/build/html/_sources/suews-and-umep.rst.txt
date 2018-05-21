@@ -3,15 +3,15 @@ SUEWS and UMEP
 
 
 SUEWS can be run as a standalone model but also can be used within
-`UMEP <http://urban-climate.net/umep/UMEP_Manual>`__. There are numerous
+`UMEP <http://umep-docs.readthedocs.io/en/latest/UMEP_Manual>`__. There are numerous
 tools included within UMEP to help a user get started. The `SUEWS
-simple <http://urban-climate.net/umep/UMEP_Manual#Urban_Energy_Balance:_Urban_Energy_Balance_.28SUEWS.2C_simple.29>`__
+simple <http://umep-docs.readthedocs.io/en/latest/UMEP_Manual#Urban_Energy_Balance:_Urban_Energy_Balance_.28SUEWS.2C_simple.29>`__
 within UMEP is a fast way to start using SUEWS.
 
 The version of SUEWS within UMEP is the complete model. Thus all options
 that are listed in this manual are available to the user. In the UMEP
 `SUEWS
-simple <http://urban-climate.net/umep/UMEP_Manual#Urban_Energy_Balance:_Urban_Energy_Balance_.28SUEWS.2C_simple.29>`__
+simple <http://umep-docs.readthedocs.io/en/latest/UMEP_Manual#Urban_Energy_Balance:_Urban_Energy_Balance_.28SUEWS.2C_simple.29>`__
 runs all options are set to values to allow intial exploration of the
 model behaviour.
 
@@ -74,36 +74,36 @@ than the independent SUEWS release.
 		- `Benchmark System`_
 			For statistical analysis of model results, such as SUEWS
 
-.. _Prepare Existing Data: http://urban-climate.net/umep/UMEP_Manual#Meteorological_Data:_MetPreprocessor
+.. _Prepare Existing Data: http://umep-docs.readthedocs.io/en/latest/pre-processor/Meteorological%20Data%20MetPreprocessor.html
 
-.. _Download data (WATCH): http://www.urban-climate.net/umep/UMEP_Manual#Meteorological_Data:_Download_data_.28WATCH.29
+.. _Download data (WATCH): http://umep-docs.readthedocs.io/en/latest/pre-processor/Meteorological%20Data%20Download%20data%20(WATCH).html
 
-.. _Spatial Data Downloader: http://www.urban-climate.net/umep/UMEP_Manual#Spatial_Data:_Spatial_Data_Downloader
+.. _Spatial Data Downloader: http://umep-docs.readthedocs.io/en/latest/pre-processor/Spatial%20Data%20Spatial%20Data%20Downloader.html
 
-.. _LCZ Converter: http://www.urban-climate.net/umep/UMEP_Manual#Spatial_Data:_LCZ_Converter
+.. _LCZ Converter: http://umep-docs.readthedocs.io/en/latest/pre-processor/Spatial%20Data%20LCZ%20Converter.html
 
-.. _Land Cover Reclassifier: http://urban-climate.net/umep/UMEP_Manual#Urban_Land_Cover:_Land_Cover_Reclassifier
+.. _Land Cover Reclassifier: http://umep-docs.readthedocs.io/en/latest/pre-processor/Urban%20Land%20Cover%20Land%20Cover%20Reclassifier.html
 
-.. _Land Cover Fraction (Point): http://urban-climate.net/umep/UMEP_Manual#Urban_Land_Cover:_Land_Cover_Reclassifier
+.. _Land Cover Fraction (Point): http://umep-docs.readthedocs.io/en/latest/pre-processor/Urban%20Land%20Cover%20Land%20Cover%20Fraction%20(Point).html
 
-.. _Land Cover Fraction (Grid): http://urban-climate.net/umep/UMEP_Manual#Urban_Land_Cover:_Land_Cover_Fraction_.28Grid.29
+.. _Land Cover Fraction (Grid): http://umep-docs.readthedocs.io/en/latest/pre-processor/Urban%20Land%20Cover%20Land%20Cover%20Fraction%20(Grid).html
 
-.. _Morphometric Calculator (Point): http://urban-climate.net/umep/UMEP_Manual#Urban_Morphology:_Morphometric_Calculator_.28Point.29
+.. _Morphometric Calculator (Point): http://umep-docs.readthedocs.io/en/latest/pre-processor/Urban%20Morphology%20Morphometric%20Calculator%20(Point).html
 
-.. _Morphometric Calculator (Grid): http://urban-climate.net/umep/UMEP_Manual#Urban_Morphology:_Morphometric_Calculator_.28Grid.29
+.. _Morphometric Calculator (Grid): http://umep-docs.readthedocs.io/en/latest/pre-processor/Urban%20Morphology%20Morphometric%20Calculator%20(Grid).html
 
-.. _Source Area Model (Point): http://urban-climate.net/umep/UMEP_Manual#Urban_Morphology:_Source_Area_.28Point.29
+.. _Source Area Model (Point): http://umep-docs.readthedocs.io/en/latest/pre-processor/Urban%20Morphology%20Source%20Area%20(Point).html
 
-.. _SUEWS Prepare: http://urban-climate.net/umep/UMEP_Manual#Pre-Processor:_SUEWS_Prepare
+.. _SUEWS Prepare: http://umep-docs.readthedocs.io/en/latest/pre-processor/SUEWS%20Prepare.html
 
-.. _LQF: http://www.urban-climate.net/umep/UMEP_Manual#Urban_Energy_Balance:_LQF
+.. _LQF: http://umep-docs.readthedocs.io/en/latest/processor/Urban%20Energy%20Balance%20LQ.html
 
-.. _GQF: http://www.urban-climate.net/umep/UMEP_Manual#Urban_Energy_Balance:_GQF
+.. _GQF: http://umep-docs.readthedocs.io/en/latest/processor/Urban%20Energy%20Balance%20GQ.html
 
-.. _SUEWS (Simple): http://urban-climate.net/umep/UMEP_Manual#Urban_Energy_Balance:_Urban_Energy_Balance_.28SUEWS.2C_simple.29
+.. _SUEWS (Simple): http://umep-docs.readthedocs.io/en/latest/processor/Urban%20Energy%20Balance%20Urban%20Energy%20Balance%20(SUEWS,%20simple).html
 
-.. _SUEWS (Advanced): http://urban-climate.net/umep/UMEP_Manual#Urban_Energy_Balance:_Urban_Energy_Balance_.28SUEWS.2FBLUEWS.2C_advanced.29
+.. _SUEWS (Advanced): http://umep-docs.readthedocs.io/en/latest/processor/Urban%20Energy%20Balance%20Urban%20Energy%20Balance%20(SUEWS.BLUEWS,%20advanced).html
 
-.. _SUEWS analyser: http://urban-climate.net/umep/UMEP_Manual#Urban_Energy_Balance:_SUEWS_Analyser
+.. _SUEWS analyser: http://umep-docs.readthedocs.io/en/latest/post_processor/Urban%20Energy%20Balance%20SUEWS%20Analyser.html
 
-.. _Benchmark System: http://urban-climate.net/umep/UMEP_Manual#Benchmark_System
+.. _Benchmark System: http://umep-docs.readthedocs.io/en/latest/post_processor/Benchmark%20System.html
