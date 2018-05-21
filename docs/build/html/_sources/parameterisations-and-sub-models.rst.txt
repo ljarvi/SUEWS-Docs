@@ -41,10 +41,10 @@ Anthropogenic heat flux, Q\ :sub:`F`
    -  **LUCY** (Allen et al. 2011 [lucy]_, Lindberg et al. 2013 [lucy2]_). A
       new version has been now included in UMEP. To distinguish it is
       referred to as
-      `**LQF** <http://urban-climate.net/umep/LQF_Manual>`__
+      `LQF`_
    -  **GreaterQF** (Iamarino et al. 2011 [I11]_). A new version has been
       now included in UMEP. To distinguish it is referred to as
-      `**GQF** <http://urban-climate.net/umep/GQF_Manual>`__
+      `GQF`_
 
 Storage heat flux, ΔQ\ :sub:`S`
 -------------------------------
@@ -80,13 +80,12 @@ Turbulent heat fluxes, Q\ :sub:`H` and Q\ :sub:`E`
    versions will have alternative sensible heat and storage heat flux
    options.
 
-Sensible and latent heat fluxes from both LUMPS and SUEWS are provided
-in the :ref:`output_files`. Whether the turbulent heat
+ rom both LUMPS and SUEWS are provided
+in the `output_files`. Whether the turbulent heat
 fluxes are calculated using LUMPS or SUEWS can have a major impact on
 the results. For SUEWS, an appropriate surface conductance
 parameterisation is also critical [J11]_ [W16]_. For more details see
-`Differences between SUEWS, LUMPS and
-FRAISE <#Differences_between_SUEWS,_LUMPS_and_FRAISE>`__.
+`Differences_between_SUEWS&LUMPS_and_FRAISE` .
 
 Water balance
 -------------
@@ -120,7 +119,7 @@ changed. The main difference is that previously all surface state could
 freeze in 1-h time step but now the amount of freezing surface state is
 calculated similar way as melt water can freeze within the snow pack.
 Also the snowmelt-related coefficients have slightly changed (see
-`SUEWS_Snow.txt <#SUEWS_Snow.txt>`__).
+`SUEWS_Snow.txt <#SUEWS_Snow.txt>`__).```check```
 
 Convective boundary layer
 -------------------------
@@ -140,3 +139,9 @@ radiation model to estimate mean radiant temperature.
     :alt:  Overview of scales. Source: Onomura et al. (2015) [Shiho2015]_
 
     Overview of scales. Source: Onomura et al. (2015) [Shiho2015]_
+
+
+
+
+.. _LQF: http://umep-docs.readthedocs.io/en/latest/OtherManuals/LQF_Manual.html
+.. _GQF: http://umep-docs.readthedocs.io/en/latest/OtherManuals/GQF_Manual.html

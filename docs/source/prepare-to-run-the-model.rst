@@ -4,9 +4,9 @@ Preparing to run the model
 ==========================
 
 The following is to help with the model setup. Note that there is a
-version of SUEWS in `UMEP <http://urban-climate.net/umep/UMEP_Manual>`__
+version of SUEWS in `UMEP`_
 and there are some starting
-`tutorials <http://urban-climate.net/umep/UMEP_Manual#Tutorials>`__ for
+`tutorials`_ for
 that. The version there is the same (i.e. the executable) as the
 standalone version so you can swap to that later once you have some
 familiarity.
@@ -65,7 +65,7 @@ data files. Select the appropriate compiled version of the model to
 download. For windows there is an installation version which will put
 the programs and all the files into the appropriate place. There is also
 a version linked to QGIS:
-`**UMEP** <http://urban-climate.net/umep/UMEP>`__.
+`UMEP`_.
 
 Note, as the definition of long double precision varies between
 computers (e.g. Mac vs Windows) slightly different results may occur in
@@ -442,3 +442,7 @@ grid (1/grid)::
 
     [B] indicates files used with the CBL part of SUEWS (BLUEWS) and therefore are only needed/produced if this option is selected
     [E] indicates files associated with ESTM storage heat flux models and therefore are only needed/produced if this option is selected
+
+
+.. _`tutorials`: http://umep-docs.readthedocs.io/en/latest/Tutorials/Tutorials.html
+.. _`UMEP`: http://umep-docs.readthedocs.io/en/latest/index.html
