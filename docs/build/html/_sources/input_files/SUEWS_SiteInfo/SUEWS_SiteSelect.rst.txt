@@ -6,17 +6,28 @@ SUEWS_SiteSelect.txt
 For each year and each grid, site specific surface cover information and
 other input parameters is provided to SUEWS by `SUEWS_SiteSelect.txt`.
 The model currently requires a new row for each year of the model run.
-All rows in this file (before the two rows of '-9') will be read by the
-model and run. In this file the **column order is important**. '!' can
-be used to indicate comments in the file. Comments are not read by the
-programme so they can be used by the user to provide notes for their
-interpretation of the contents. This is strongly recommended.
+All rows in this file will be read by the model and run.
 
 .. csv-table::
   :file: SUEWS_SiteSelect.csv
   :header-rows: 1
   :widths: 5 25 5 65
 
+.. attention::
+  - Two rows of `-9` should be placed at end of this file.
+  - In this file the **column order is important**.
+  - In this file the **row order is important** for simulaitons of **multiple grids and multiple years**.
+    Ensure the rows in are arranged so that all grids for a particular year appear on consecutive lines (rather than grouping all years together for a particular grid). See below for a valid example::
+      Grid  Year ...
+      1     2001 ...
+      2     2001 ...
+      1     2002 ...
+      2     2002 ...
+
+.. tip::
+  `\!` can be used to indicate comments in the file. Comments are not read by the
+  programme so they can be used by the user to provide notes for their
+  interpretation of the contents. This is strongly recommended.
 
 Day Light Savings (DLS)
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -52,6 +63,7 @@ Example when running  multiple years (in this case 2008 and 2009 in Canada):
 
 Grid Connections (water flow between grids)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 .. caution::
     - not currently implemented
     - columns 64-79 of `SUEWS_SiteSelect.txt` can be set to zero.

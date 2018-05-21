@@ -181,7 +181,7 @@ variables.</p>
 <li><p class="first">Required inputs must be continuous – i.e. <strong>gap fill</strong> any missing
 data.</p>
 </li>
-<li><p class="first">The table below gives the required (R) and optional (O) additional
+<li><p class="first">The table below gives the must-use (MU) and optional (O) additional
 input variables.</p>
 </li>
 <li><p class="first">If an optional input variable is not available or will not be used by
@@ -219,7 +219,7 @@ SUEWS_SiteSelect.txt.</p>
 <li><p class="first">If a <em>whole year</em> (e.g. 2011) is intended to be modelled using and
 hourly resolution dataset, the number of lines in the met data file
 should be 8760 and begin and end with:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>iy     id  it  imin
+<div class="highlight-default"><div class="highlight"><pre><span></span>iy     id  it  imin
 2011   1   1   0 …
 …
 2012   1   0   0 …
@@ -231,6 +231,12 @@ should be 8760 and begin and end with:</p>
 <span id="id1"></span><h2>6.4.1. SSss_YYYY_data_tt.txt<a class="headerlink" href="#ssss-yyyy-data-tt-txt" title="Permalink to this headline">¶</a></h2>
 <p>Main meteorological data file.</p>
 <table border="1" class="colwidths-auto docutils">
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">No.</th>
 <th class="head">Use</th>
@@ -240,122 +246,122 @@ should be 8760 and begin and end with:</p>
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td>1</td>
-<td><a class="reference internal" href="../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
 <td>iy</td>
 <td>Year [YYYY]</td>
 </tr>
 <tr class="row-odd"><td>2</td>
-<td><a class="reference internal" href="../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
 <td>id</td>
 <td>Day of year [DOY]</td>
 </tr>
 <tr class="row-even"><td>3</td>
-<td><a class="reference internal" href="../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
 <td>it</td>
 <td>Hour [H]</td>
 </tr>
 <tr class="row-odd"><td>4</td>
-<td><a class="reference internal" href="../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
 <td>imin</td>
 <td>Minute [M]</td>
 </tr>
 <tr class="row-even"><td>5</td>
-<td><a class="reference internal" href="../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
+<td><a class="reference internal" href="../notation.html#term-o"><code class="xref any std std-term docutils literal"><span class="pre">O</span></code></a></td>
 <td>qn</td>
-<td>Net all-wave radiation [W m<sup>-2</sup>] Required if <a class="reference internal" href="RunControl/Model_run_options.html#cmdoption-arg-netradiationmethod"><code class="xref any std std-option docutils literal notranslate"><span class="pre">NetRadiationMethod</span></code></a> = 1.</td>
+<td>Net all-wave radiation [W m<sup>-2</sup>] Required if <a class="reference internal" href="RunControl/Model_run_options.html#cmdoption-arg-netradiationmethod"><code class="xref any std std-option docutils literal"><span class="pre">NetRadiationMethod</span></code></a> = 1.</td>
 </tr>
 <tr class="row-odd"><td>6</td>
-<td><a class="reference internal" href="../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
+<td><a class="reference internal" href="../notation.html#term-o"><code class="xref any std std-term docutils literal"><span class="pre">O</span></code></a></td>
 <td>qh</td>
 <td>Sensible heat flux [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-even"><td>7</td>
-<td><a class="reference internal" href="../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
+<td><a class="reference internal" href="../notation.html#term-o"><code class="xref any std std-term docutils literal"><span class="pre">O</span></code></a></td>
 <td>qe</td>
 <td>Latent heat flux [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-odd"><td>8</td>
-<td><a class="reference internal" href="../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
+<td><a class="reference internal" href="../notation.html#term-o"><code class="xref any std std-term docutils literal"><span class="pre">O</span></code></a></td>
 <td>qs</td>
 <td>Storage heat flux [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-even"><td>9</td>
-<td><a class="reference internal" href="../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
+<td><a class="reference internal" href="../notation.html#term-o"><code class="xref any std std-term docutils literal"><span class="pre">O</span></code></a></td>
 <td>qf</td>
 <td>Anthropogenic heat flux [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-odd"><td>10</td>
-<td><a class="reference internal" href="../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
 <td>U</td>
 <td>Wind speed [m s-1] Height of the wind speed measurement (z) is needed in <a class="reference internal" href="SUEWS_SiteInfo/SUEWS_SiteSelect.html#suews-siteselect-txt"><span class="std std-ref">SUEWS_SiteSelect.txt</span></a>.</td>
 </tr>
 <tr class="row-even"><td>11</td>
-<td><a class="reference internal" href="../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
 <td>RH</td>
 <td>Relative Humidity [%]</td>
 </tr>
 <tr class="row-odd"><td>12</td>
-<td><a class="reference internal" href="../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
 <td>Tair</td>
 <td>Air temperature [°C]</td>
 </tr>
 <tr class="row-even"><td>13</td>
-<td><a class="reference internal" href="../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
 <td>pres</td>
 <td>Barometric pressure [kPa]</td>
 </tr>
 <tr class="row-odd"><td>14</td>
-<td><a class="reference internal" href="../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
 <td>rain</td>
 <td>Rainfall [mm]</td>
 </tr>
 <tr class="row-even"><td>15</td>
-<td><a class="reference internal" href="../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
 <td>kdown</td>
 <td>Incoming shortwave radiation [W m<sup>-2</sup>] Must be &gt; 0 W m<sup>-2</sup>.</td>
 </tr>
 <tr class="row-odd"><td>16</td>
-<td><a class="reference internal" href="../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
+<td><a class="reference internal" href="../notation.html#term-o"><code class="xref any std std-term docutils literal"><span class="pre">O</span></code></a></td>
 <td>snow</td>
-<td>Snow [mm]Required if <a class="reference internal" href="RunControl/Model_run_options.html#cmdoption-arg-snowuse"><code class="xref any std std-option docutils literal notranslate"><span class="pre">SnowUse</span></code></a> = 1</td>
+<td>Snow [mm]Required if <a class="reference internal" href="RunControl/Model_run_options.html#cmdoption-arg-snowuse"><code class="xref any std std-option docutils literal"><span class="pre">SnowUse</span></code></a> = 1</td>
 </tr>
 <tr class="row-even"><td>17</td>
-<td><a class="reference internal" href="../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
+<td><a class="reference internal" href="../notation.html#term-o"><code class="xref any std std-term docutils literal"><span class="pre">O</span></code></a></td>
 <td>ldown</td>
 <td>Incoming longwave radiation [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-odd"><td>18</td>
-<td><a class="reference internal" href="../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
+<td><a class="reference internal" href="../notation.html#term-o"><code class="xref any std std-term docutils literal"><span class="pre">O</span></code></a></td>
 <td>fcld</td>
 <td>Cloud fraction [tenths]</td>
 </tr>
 <tr class="row-even"><td>19</td>
-<td><a class="reference internal" href="../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
+<td><a class="reference internal" href="../notation.html#term-o"><code class="xref any std std-term docutils literal"><span class="pre">O</span></code></a></td>
 <td>Wuh</td>
 <td>External water use [m<sup>3</sup>]</td>
 </tr>
 <tr class="row-odd"><td>20</td>
-<td><a class="reference internal" href="../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
+<td><a class="reference internal" href="../notation.html#term-o"><code class="xref any std std-term docutils literal"><span class="pre">O</span></code></a></td>
 <td>xsmd</td>
 <td>Observed soil moisture [m<sup>3</sup> m<sup>-3</sup>] or [kg kg<sup>-1</sup>]</td>
 </tr>
 <tr class="row-even"><td>21</td>
-<td><a class="reference internal" href="../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
+<td><a class="reference internal" href="../notation.html#term-o"><code class="xref any std std-term docutils literal"><span class="pre">O</span></code></a></td>
 <td>lai</td>
 <td>Observed leaf area index [m<sup>-2</sup> m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-odd"><td>22</td>
-<td><a class="reference internal" href="../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
+<td><a class="reference internal" href="../notation.html#term-o"><code class="xref any std std-term docutils literal"><span class="pre">O</span></code></a></td>
 <td>kdiff</td>
-<td>Diffuse radiation [W m<sup>-2</sup>] Recommended if <a class="reference internal" href="RunControl/Model_run_options.html#cmdoption-arg-solweiguse"><code class="xref any std std-option docutils literal notranslate"><span class="pre">SOLWEIGUse</span></code></a> = 1</td>
+<td>Diffuse radiation [W m<sup>-2</sup>] Recommended if <a class="reference internal" href="RunControl/Model_run_options.html#cmdoption-arg-solweiguse"><code class="xref any std std-option docutils literal"><span class="pre">SOLWEIGUse</span></code></a> = 1</td>
 </tr>
 <tr class="row-even"><td>23</td>
-<td><a class="reference internal" href="../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
+<td><a class="reference internal" href="../notation.html#term-o"><code class="xref any std std-term docutils literal"><span class="pre">O</span></code></a></td>
 <td>kdir</td>
-<td>Direct radiation [W m<sup>-2</sup>] Recommended if <a class="reference internal" href="RunControl/Model_run_options.html#cmdoption-arg-solweiguse"><code class="xref any std std-option docutils literal notranslate"><span class="pre">SOLWEIGUse</span></code></a> = 1</td>
+<td>Direct radiation [W m<sup>-2</sup>] Recommended if <a class="reference internal" href="RunControl/Model_run_options.html#cmdoption-arg-solweiguse"><code class="xref any std std-option docutils literal"><span class="pre">SOLWEIGUse</span></code></a> = 1</td>
 </tr>
 <tr class="row-odd"><td>24</td>
-<td><a class="reference internal" href="../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
+<td><a class="reference internal" href="../notation.html#term-o"><code class="xref any std std-term docutils literal"><span class="pre">O</span></code></a></td>
 <td>wdir</td>
 <td>Wind direction [°] Currently not implemented</td>
 </tr>
@@ -417,7 +423,7 @@ should be 8760 and begin and end with:</p>
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

@@ -28,7 +28,7 @@ further details v2017a:
 
 .. epigraph::
 
-  Ward HC BLABLALB, Yin San Tan, AM Gabey, S Kotthaus, WTJ Morrison, CSB Grimmond. 
+  Ward HC, Yin San Tan, AM Gabey, S Kotthaus, WTJ Morrison, CSB Grimmond. 
   Impact of temporal resolution of precipitation forcing data on modelled urban-atmosphere exchanges and surface conditions. 
   International Journal of Climatology.
   `doi: 10.1002/joc.5200 <http://doi.org/10.1002/joc.5200/>`_

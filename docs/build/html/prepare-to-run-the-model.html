@@ -93,7 +93,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#preparation-of-data">5.5. Preparation of data</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#preparation-of-site-characteristics-and-model-parameters">5.5.1. Preparation of site characteristics and model parameters</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#land-cover">5.5.1.1. Land cover</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#anthropogenic-heat-flux-q-f">5.5.1.2. Anthropogenic heat flux (Q <sub>F</sub>)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#anthropogenic-heat-flux-qf">5.5.1.2. Anthropogenic heat flux (Q<sub>F</sub>)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#other-information">5.5.1.3. Other information</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#data-entry">5.5.1.4. Data Entry</a></li>
 </ul>
@@ -219,7 +219,7 @@ applications</a></p>
 <col width="50%" />
 </colgroup>
 <thead valign="bottom">
-<tr class="row-odd"><th class="head">&#160;</th>
+<tr class="row-odd"><th class="head">&nbsp;</th>
 <th class="head">Available in this release</th>
 </tr>
 </thead>
@@ -380,7 +380,7 @@ etc <a class="reference internal" href="references.html#w16" id="id5">[W16]</a><
 </ul>
 <p>SUEWS can be run either for an individual area or for multiple areas.
 There is no requirement for the areas to be of any particular shape but
-here we refer to them as model ‘grids’.</p>
+here we refer to them as model &#8216;grids&#8217;.</p>
 <div class="section" id="preparation-of-site-characteristics-and-model-parameters">
 <h3>5.5.1. Preparation of site characteristics and model parameters<a class="headerlink" href="#preparation-of-site-characteristics-and-model-parameters" title="Permalink to this headline">¶</a></h3>
 <p>The area to be modelled is described by a set of characteristics that
@@ -396,7 +396,7 @@ characteristics for different types of urban areas. The codes are
 specified by the user, must be integer values and must be unique within
 the first column of each input file, otherwise the model will return an
 error. (Note in <a class="reference internal" href="input_files/SUEWS_SiteInfo/SUEWS_SiteSelect.html#suews-siteselect-txt"><span class="std std-ref">SUEWS_SiteSelect.txt</span></a> the
-first column is labelled ‘Grid’ and can contain repeat values for
+first column is labelled &#8216;Grid&#8217; and can contain repeat values for
 different years.) See <a class="reference external" href="#Input_files">Input files</a> for details. Note
 <a class="reference external" href="http://urban-climate.net/umep/UMEP">UMEP</a> maybe helpful for
 components of this.</p>
@@ -421,11 +421,11 @@ surface types:</p>
 <td>Paved surfaces</td>
 <td><a class="reference internal" href="input_files/SUEWS_SiteInfo/SUEWS_NonVeg.html#suews-nonveg-txt"><span class="std std-ref">SUEWS_NonVeg.txt</span></a></td>
 </tr>
-<tr class="row-odd"><th class="stub">&#160;</th>
+<tr class="row-odd"><th class="stub">&nbsp;</th>
 <td>Building</td>
 <td><a class="reference internal" href="input_files/SUEWS_SiteInfo/SUEWS_NonVeg.html#suews-nonveg-txt"><span class="std std-ref">SUEWS_NonVeg.txt</span></a></td>
 </tr>
-<tr class="row-even"><th class="stub">&#160;</th>
+<tr class="row-even"><th class="stub">&nbsp;</th>
 <td>Bare soil</td>
 <td><a class="reference internal" href="input_files/SUEWS_SiteInfo/SUEWS_NonVeg.html#suews-nonveg-txt"><span class="std std-ref">SUEWS_NonVeg.txt</span></a></td>
 </tr>
@@ -433,11 +433,11 @@ surface types:</p>
 <td>Evergreen trees</td>
 <td><a class="reference internal" href="input_files/SUEWS_SiteInfo/SUEWS_Veg.html#suews-veg-txt"><span class="std std-ref">SUEWS_Veg.txt</span></a></td>
 </tr>
-<tr class="row-even"><th class="stub">&#160;</th>
+<tr class="row-even"><th class="stub">&nbsp;</th>
 <td>Deciduous trees</td>
 <td><a class="reference internal" href="input_files/SUEWS_SiteInfo/SUEWS_Veg.html#suews-veg-txt"><span class="std std-ref">SUEWS_Veg.txt</span></a></td>
 </tr>
-<tr class="row-odd"><th class="stub">&#160;</th>
+<tr class="row-odd"><th class="stub">&nbsp;</th>
 <td>Grass</td>
 <td><a class="reference internal" href="input_files/SUEWS_SiteInfo/SUEWS_Veg.html#suews-veg-txt"><span class="std std-ref">SUEWS_Veg.txt</span></a></td>
 </tr>
@@ -464,8 +464,8 @@ detailed spatial datasets are available,
 <a class="reference external" href="http://urban-climate.net/umep/UMEP">UMEP</a> allows for a direct link
 to a GIS environment using QGIS.</p>
 </div>
-<div class="section" id="anthropogenic-heat-flux-q-f">
-<span id="anthropogenic-heat-flux-qf-1"></span><h4>5.5.1.2. Anthropogenic heat flux (Q <sub>F</sub>)<a class="headerlink" href="#anthropogenic-heat-flux-q-f" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="anthropogenic-heat-flux-qf">
+<span id="anthropogenic-heat-flux-qf-1"></span><h4>5.5.1.2. Anthropogenic heat flux (Q<sub>F</sub>)<a class="headerlink" href="#anthropogenic-heat-flux-qf" title="Permalink to this headline">¶</a></h4>
 <p>You can either model Q<sub>F</sub> within SUEWS or provide it as an input.</p>
 <ul class="simple">
 <li>To model it population density is needed as an input for LUMPS and
@@ -487,7 +487,7 @@ impact on the model output. However, it is important to consider the
 suitability of all parameters for your site. Using inappropriate
 parameters may result in the model returning an error or, worse,
 generating output that is simply not representative of your site. Please
-read the section on <a class="reference external" href="#Input_files">Input files</a>. Recommended or
+read the section on <a class="reference internal" href="input_files/input_files.html#input-files"><span class="std std-ref">Input files</span></a>. Recommended or
 reasonable ranges of values are suggested for some parameters, along
 with important considerations for how to select appropriate values for
 your site.</p>
@@ -522,7 +522,7 @@ templates, as these are checked by the model and errors will be
 returned if particular columns cannot be found.</li>
 <li>Since v2017a it is no longer necessary for the meteorological forcing
 data to have two rows with -9 in column 1 as their last two rows.</li>
-<li>“!” indicates a comment, so any text following “!” on the same line
+<li>“!” indicates a comment, so any text following &#8221;!&#8221; on the same line
 will not be read by the model.</li>
 <li>If data are unavailable or not required, enter the value -999 in the
 correct place in the input file.</li>
@@ -546,11 +546,11 @@ they are correct for your setup, or</li>
 </ol>
 <p>From the given site identification the model identifies the input files
 and generates the output files. For example if you specify:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>FileOutputPath = “C:\FolderName\SUEWSOutput\”
+<div class="highlight-default"><div class="highlight"><pre><span></span>FileOutputPath = “C:\FolderName\SUEWSOutput\”
 </pre></div>
 </div>
 <p>and&nbsp;use&nbsp;site&nbsp;code&nbsp;SS&nbsp;the&nbsp;model&nbsp;creates&nbsp;an&nbsp;output&nbsp;file:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">C</span><span class="p">:</span>\<span class="n">FolderName</span>\<span class="n">SUEWSOutput</span>\<span class="n">SSss_YYYY_TT</span><span class="o">.</span><span class="n">txt</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">C</span><span class="p">:</span>\<span class="n">FolderName</span>\<span class="n">SUEWSOutput</span>\<span class="n">SSss_YYYY_TT</span><span class="o">.</span><span class="n">txt</span>
 </pre></div>
 </div>
 <div class="admonition note">
@@ -653,7 +653,7 @@ model time-step.</p>
 <p>The last column indicates whether the files are needed/produced once per
 run (1/run), or once per day (1/day), for each year (1/year) or for each
 grid (1/grid):</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">B</span><span class="p">]</span> <span class="n">indicates</span> <span class="n">files</span> <span class="n">used</span> <span class="k">with</span> <span class="n">the</span> <span class="n">CBL</span> <span class="n">part</span> <span class="n">of</span> <span class="n">SUEWS</span> <span class="p">(</span><span class="n">BLUEWS</span><span class="p">)</span> <span class="ow">and</span> <span class="n">therefore</span> <span class="n">are</span> <span class="n">only</span> <span class="n">needed</span><span class="o">/</span><span class="n">produced</span> <span class="k">if</span> <span class="n">this</span> <span class="n">option</span> <span class="ow">is</span> <span class="n">selected</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">B</span><span class="p">]</span> <span class="n">indicates</span> <span class="n">files</span> <span class="n">used</span> <span class="k">with</span> <span class="n">the</span> <span class="n">CBL</span> <span class="n">part</span> <span class="n">of</span> <span class="n">SUEWS</span> <span class="p">(</span><span class="n">BLUEWS</span><span class="p">)</span> <span class="ow">and</span> <span class="n">therefore</span> <span class="n">are</span> <span class="n">only</span> <span class="n">needed</span><span class="o">/</span><span class="n">produced</span> <span class="k">if</span> <span class="n">this</span> <span class="n">option</span> <span class="ow">is</span> <span class="n">selected</span>
 <span class="p">[</span><span class="n">E</span><span class="p">]</span> <span class="n">indicates</span> <span class="n">files</span> <span class="n">associated</span> <span class="k">with</span> <span class="n">ESTM</span> <span class="n">storage</span> <span class="n">heat</span> <span class="n">flux</span> <span class="n">models</span> <span class="ow">and</span> <span class="n">therefore</span> <span class="n">are</span> <span class="n">only</span> <span class="n">needed</span><span class="o">/</span><span class="n">produced</span> <span class="k">if</span> <span class="n">this</span> <span class="n">option</span> <span class="ow">is</span> <span class="n">selected</span>
 </pre></div>
 </div>
@@ -713,7 +713,7 @@ grid (1/grid):</p>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 
