@@ -3,12 +3,19 @@
 SUEWS: Surface Urban Energy and Water Balance Scheme
 ----------------------------------------------------
 
-The software can be downloaded by completing `this form`_. 
+.. note::
+
+  This documentation is being migrated from our previous wiki site to this new system.
+  Also, some statement here may NOT be up to date as the model/software is under rapid development.
+  Please report issues on the `GitHub page`_.
+
+The software can be downloaded by completing `this form`_.
 The **latest formal** release of SUEWS is **v2017b** (released 1 August 2017).
 
 
 :ref:`This documentation site <index_page>` is regularly
 updated with new developments. For what's new in this version, see :ref:`new_latest`.
+
 
 
 The manual for SUEWS v2017b can be accessed
@@ -39,6 +46,7 @@ further details v2017a:
 
 .. _this form: `dowload form`_
 .. _dowload form: http://micromet.reading.ac.uk/software/
+.. _GitHub page: https://github.com/sunt05/SUEWS-Docs/issues
 
 
 
