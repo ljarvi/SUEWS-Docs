@@ -3,15 +3,13 @@
 SUEWS: Surface Urban Energy and Water Balance Scheme
 ----------------------------------------------------
 
-The current version of SUEWS is v2017b. The software can be downloaded
-by completing `this form`_.
+The software can be downloaded by completing `this form`_. 
+The **latest formal** release of SUEWS is **v2017b** (released 1 August 2017).
 
 
 :ref:`This documentation site <index_page>` is regularly
 updated with new developments. For what's new in this version, see :ref:`new_latest`.
 
-The **latest formal** release of SUEWS is **v2017b** (released 1 August
-2017).
 
 The manual for SUEWS v2017b can be accessed
 `here <:File:SUEWS_V2017b_Manual.pdf>`__ and should be referenced as
