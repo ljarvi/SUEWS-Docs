@@ -46,7 +46,7 @@ further details v2017a:
 
 .. _this form: `dowload form`_
 .. _dowload form: http://micromet.reading.ac.uk/software/
-.. _GitHub page: https://github.com/sunt05/SUEWS-Docs/issues
+.. _GitHub page: https://github.com/Urban-Meteorology-Reading/SUEWS-Docs/issues
 
 
 
