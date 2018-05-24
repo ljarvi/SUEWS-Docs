@@ -25,28 +25,20 @@
   
 
   
-  
     <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
-
-  
-    <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
-  
-
-  
-        <link rel="index" title="Index"
-              href="genindex.html"/>
-        <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="SUEWS 2018a.alpha documentation" href="index.html"/>
-        <link rel="next" title="5. Preparing to run the model" href="prepare-to-run-the-model.html"/>
-        <link rel="prev" title="3. SUEWS and UMEP" href="suews-and-umep.html"/> 
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="5. Preparing to run the model" href="prepare-to-run-the-model.html" />
+    <link rel="prev" title="3. SUEWS and UMEP" href="suews-and-umep.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -124,7 +116,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">SUEWS</a>
@@ -132,9 +124,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -240,7 +233,7 @@ interior) is calculated from surface temperature measurements and
 knowledge of material properties. (<strong>Not recommended in v2017b</strong>)</li>
 </ul>
 </li>
-<li>Alternatively, ‘observed’ storage heat flux can be supplied with the
+<li>Alternatively, &#8216;observed&#8217; storage heat flux can be supplied with the
 meteorological forcing data.</li>
 </ol>
 </div>
@@ -298,7 +291,7 @@ changed. The main difference is that previously all surface state could
 freeze in 1-h time step but now the amount of freezing surface state is
 calculated similar way as melt water can freeze within the snow pack.
 Also the snowmelt-related coefficients have slightly changed (see
-<a class="reference external" href="#SUEWS_Snow.txt">SUEWS_Snow.txt</a>).```check```</p>
+<a class="reference internal" href="input_files/SUEWS_SiteInfo/SUEWS_Snow.html#suews-snow-txt"><span class="std std-ref">SUEWS_Snow.txt</span></a>).</p>
 </div>
 <div class="section" id="convective-boundary-layer">
 <h2>4.7. Convective boundary layer<a class="headerlink" href="#convective-boundary-layer" title="Permalink to this headline">¶</a></h2>
@@ -320,9 +313,7 @@ radiation model to estimate mean radiant temperature.</p>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -344,7 +335,7 @@ radiation model to estimate mean radiant temperature.</p>
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -363,6 +354,7 @@ radiation model to estimate mean radiant temperature.</p>
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
             VERSION:'2018a.alpha',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
@@ -372,7 +364,7 @@ radiation model to estimate mean radiant temperature.</p>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 
@@ -381,14 +373,13 @@ radiation model to estimate mean radiant temperature.</p>
     <script type="text/javascript" src="_static/js/theme.js"></script>
   
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

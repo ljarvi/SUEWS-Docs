@@ -25,28 +25,20 @@
   
 
   
-  
     <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  
-
-  
-    <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
-  
-
-  
-        <link rel="index" title="Index"
-              href="../genindex.html"/>
-        <link rel="search" title="Search" href="../search.html"/>
-    <link rel="top" title="SUEWS 2018a.alpha documentation" href="../index.html"/>
-        <link rel="next" title="8. Troubleshooting" href="../troubleshooting.html"/>
-        <link rel="prev" title="6.7.1. SOLWEIGinput" href="../input_files/SOLWEIG_input/SOLWEIGinput.html"/> 
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="8. Troubleshooting" href="../troubleshooting.html" />
+    <link rel="prev" title="6.7.1. SOLWEIGinput" href="../input_files/SOLWEIG_input/SOLWEIGinput.html" /> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -133,7 +125,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">SUEWS</a>
@@ -141,9 +133,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -200,7 +193,7 @@ the error message. If this is the case, the last line of problems.txt
 will contain a non-zero number (the error code).</p>
 </li>
 <li><p class="first">If the program runs successfully, problems.txt file ends with:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Run</span> <span class="n">completed</span><span class="o">.</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Run</span> <span class="n">completed</span><span class="o">.</span>
 <span class="mi">0</span>
 </pre></div>
 </div>
@@ -222,7 +215,7 @@ warning may be written to warnings.txt. It is advisable to check the
 warnings to ensure there is not a more serious problem.</li>
 <li>The warnings.txt file can be large (over several GBs) given warning
 messages are written out during a large scale simulation, you can use
-<code class="docutils literal notranslate"><span class="pre">tail</span></code>/<code class="docutils literal notranslate"><span class="pre">head</span></code> to view the ending/starting part without opening
+<code class="docutils literal"><span class="pre">tail</span></code>/<code class="docutils literal"><span class="pre">head</span></code> to view the ending/starting part without opening
 the whole file on Unix-like systems (Linux/mac OS), which may slow
 down your system.</li>
 <li>To prevent warnings.txt from being written, set <strong>SuppressWarnings</strong>
@@ -249,8 +242,14 @@ resolution (TT min) set by <strong>ResolutionFilesOut</strong> in <a class="refe
 of the column names, units and variables included in the file
 Ss_YYYY_TT_OutputFormat.txt (one file per run).</p>
 <p>The variables included in the main output file are determined according
-to <a class="reference internal" href="../input_files/RunControl/File_related_options.html#cmdoption-arg-writeoutoption"><code class="xref std std-option docutils literal notranslate"><span class="pre">WriteOutOption</span></code></a> set in <a class="reference internal" href="../input_files/RunControl/RunControl.html#runcontrol-nml"><span class="std std-ref">RunControl.nml</span></a>.</p>
+to <a class="reference internal" href="../input_files/RunControl/File_related_options.html#cmdoption-arg-writeoutoption"><code class="xref std std-option docutils literal"><span class="pre">WriteOutOption</span></code></a> set in <a class="reference internal" href="../input_files/RunControl/RunControl.html#runcontrol-nml"><span class="std std-ref">RunControl.nml</span></a>.</p>
 <table border="1" class="colwidths-auto docutils">
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Column</th>
 <th class="head">Name</th>
@@ -699,6 +698,11 @@ program setting to avoid the oversize problem in the netCDF files.</p>
 vegetation parameters at a time resolution of one day. One file is
 written for each grid so it may contain multiple years.</p>
 <table border="1" class="colwidths-auto docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Column</th>
 <th class="head">Name</th>
@@ -881,6 +885,11 @@ grid, see <a class="reference internal" href="../input_files/Initial_Conditions/
 RunControl.nml) with details for each surface type.</p>
 <p>File format of SSss_YYYY_snow_60.txt</p>
 <table border="1" class="colwidths-auto docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Column</th>
 <th class="head">Name</th>
@@ -1305,6 +1314,12 @@ RunControl.nml) with details for each surface type.</p>
 in to this file created for each day with time step (see section CBL
 Input).</p>
 <table border="1" class="colwidths-auto docutils">
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Column</th>
 <th class="head">Name</th>
@@ -1316,27 +1331,27 @@ Input).</p>
 <tr class="row-even"><td>1</td>
 <td>iy</td>
 <td>Year [YYYY]</td>
-<td>&#160;</td>
+<td>&nbsp;</td>
 </tr>
 <tr class="row-odd"><td>2</td>
 <td>id</td>
 <td>Day of year [DoY]</td>
-<td>&#160;</td>
+<td>&nbsp;</td>
 </tr>
 <tr class="row-even"><td>3</td>
 <td>it</td>
 <td>Hour [H]</td>
-<td>&#160;</td>
+<td>&nbsp;</td>
 </tr>
 <tr class="row-odd"><td>4</td>
 <td>imin</td>
 <td>Minute [M]</td>
-<td>&#160;</td>
+<td>&nbsp;</td>
 </tr>
 <tr class="row-even"><td>5</td>
 <td>dectime</td>
 <td>Decimal time [-]</td>
-<td>&#160;</td>
+<td>&nbsp;</td>
 </tr>
 <tr class="row-odd"><td>6</td>
 <td>zi</td>
@@ -1432,6 +1447,12 @@ Input).</p>
 SOLWEIGinput.nml.</p>
 <p>SOLWEIG model output file format: SOLWEIGpoiOUT.txt</p>
 <table border="1" class="colwidths-auto docutils">
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Column</th>
 <th class="head">Name</th>
@@ -1443,12 +1464,12 @@ SOLWEIGinput.nml.</p>
 <tr class="row-even"><td>1</td>
 <td>id</td>
 <td>Day of year</td>
-<td>&#160;</td>
+<td>&nbsp;</td>
 </tr>
 <tr class="row-odd"><td>2</td>
 <td>dectime</td>
 <td>Decimal time</td>
-<td>&#160;</td>
+<td>&nbsp;</td>
 </tr>
 <tr class="row-even"><td>3</td>
 <td>azimuth</td>
@@ -1548,27 +1569,27 @@ SOLWEIGinput.nml.</p>
 <tr class="row-odd"><td>22</td>
 <td>CI</td>
 <td>clearness index for Ldown (Lindberg et al. 2008)</td>
-<td>&#160;</td>
+<td>&nbsp;</td>
 </tr>
 <tr class="row-even"><td>23</td>
 <td>gvf</td>
 <td>Ground view factor (Lindberg and Grimmond 2011)</td>
-<td>&#160;</td>
+<td>&nbsp;</td>
 </tr>
 <tr class="row-odd"><td>24</td>
 <td>shadow</td>
 <td>Shadow value (0= shadow, 1 = sun)</td>
-<td>&#160;</td>
+<td>&nbsp;</td>
 </tr>
 <tr class="row-even"><td>25</td>
 <td>svf</td>
 <td>Sky View Factor from ground and buildings</td>
-<td>&#160;</td>
+<td>&nbsp;</td>
 </tr>
 <tr class="row-odd"><td>26</td>
 <td>svfbuveg</td>
 <td>Sky View Factor from ground, buildings and vegetation</td>
-<td>&#160;</td>
+<td>&nbsp;</td>
 </tr>
 <tr class="row-even"><td>27</td>
 <td>Ta</td>
@@ -1590,6 +1611,12 @@ SOLWEIGinput.nml.</p>
 the initial converging phase.</strong></p>
 <p>ESTM output file format</p>
 <table border="1" class="colwidths-auto docutils">
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Column</th>
 <th class="head">Name</th>
@@ -1601,27 +1628,27 @@ the initial converging phase.</strong></p>
 <tr class="row-even"><td>1</td>
 <td>iy</td>
 <td>Year</td>
-<td>&#160;</td>
+<td>&nbsp;</td>
 </tr>
 <tr class="row-odd"><td>2</td>
 <td>id</td>
 <td>Day of year</td>
-<td>&#160;</td>
+<td>&nbsp;</td>
 </tr>
 <tr class="row-even"><td>3</td>
 <td>it</td>
 <td>Hour</td>
-<td>&#160;</td>
+<td>&nbsp;</td>
 </tr>
 <tr class="row-odd"><td>4</td>
 <td>imin</td>
 <td>Minute</td>
-<td>&#160;</td>
+<td>&nbsp;</td>
 </tr>
 <tr class="row-even"><td>5</td>
 <td>dectime</td>
 <td>Decimal time</td>
-<td>&#160;</td>
+<td>&nbsp;</td>
 </tr>
 <tr class="row-odd"><td>6</td>
 <td>QSnet</td>
@@ -1766,9 +1793,7 @@ the initial converging phase.</strong></p>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -1790,7 +1815,7 @@ the initial converging phase.</strong></p>
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -1809,6 +1834,7 @@ the initial converging phase.</strong></p>
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
             VERSION:'2018a.alpha',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
@@ -1818,7 +1844,7 @@ the initial converging phase.</strong></p>
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 
@@ -1827,14 +1853,13 @@ the initial converging phase.</strong></p>
     <script type="text/javascript" src="../_static/js/theme.js"></script>
   
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

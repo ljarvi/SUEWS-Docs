@@ -25,29 +25,20 @@
   
 
   
-  
     <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  
-
-  
-    <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
-  
-
-  
-        <link rel="index" title="Index"
-              href="../../genindex.html"/>
-        <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="SUEWS 2018a.alpha documentation" href="../../index.html"/>
-        <link rel="up" title="6.2. SUEWS_SiteInfo.xlsm" href="SUEWS_SiteInfo.html"/>
-        <link rel="next" title="6.2.3. SUEWS_Irrigation.txt" href="SUEWS_Irrigation.html"/>
-        <link rel="prev" title="6.2.1. SUEWS_AnthropogenicHeat.txt" href="SUEWS_AnthropogenicHeat.html"/> 
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="6.2.3. SUEWS_Irrigation.txt" href="SUEWS_Irrigation.html" />
+    <link rel="prev" title="6.2.1. SUEWS_AnthropogenicHeat.txt" href="SUEWS_AnthropogenicHeat.html" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -139,7 +130,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">SUEWS</a>
@@ -147,9 +138,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -202,8 +194,8 @@
 SUEWS. These values should <strong>not</strong> be changed independently of each
 other. The suggested values below have been derived using datasets for
 Los Angeles and Vancouver (see Järvi et al. (2011) <a class="reference internal" href="../../references.html#j11" id="id2">[J11]</a>) and should be
-used with <a class="reference internal" href="Input_Options.html#cmdoption-arg-gsmodel"><code class="xref any std std-option docutils literal notranslate"><span class="pre">gsModel=1</span></code></a>. An alternative formulation
-(<a class="reference internal" href="Input_Options.html#cmdoption-arg-gsmodel"><code class="xref any std std-option docutils literal notranslate"><span class="pre">gsModel=2</span></code></a>) uses
+used with <a class="reference internal" href="Input_Options.html#cmdoption-arg-gsmodel"><code class="xref any std std-option docutils literal"><span class="pre">gsModel=1</span></code></a>. An alternative formulation
+(<a class="reference internal" href="Input_Options.html#cmdoption-arg-gsmodel"><code class="xref any std std-option docutils literal"><span class="pre">gsModel=2</span></code></a>) uses
 slightly different functional forms and different coefficients (with
 different units).</p>
 <table border="1" class="colwidths-given docutils">
@@ -222,68 +214,68 @@ different units).</p>
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td>1</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Code</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code"><code class="xref any std std-option docutils literal"><span class="pre">Code</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-19"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
 <td>Code linking to the CondCode column in SUEWS_SiteSelect.txt . Value of integer is arbitrary but must match code specified in SUEWS_SiteSelect.txt.</td>
 </tr>
 <tr class="row-odd"><td>2</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-g1"><code class="xref any std std-option docutils literal notranslate"><span class="pre">G1</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-g1"><code class="xref any std std-option docutils literal"><span class="pre">G1</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a></td>
 <td>Related to maximum surface conductance [mm s<sup>-1</sup>]</td>
 </tr>
 <tr class="row-even"><td>3</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-g2"><code class="xref any std std-option docutils literal notranslate"><span class="pre">G2</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-g2"><code class="xref any std std-option docutils literal"><span class="pre">G2</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a></td>
 <td>Related to Kdown dependence [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-odd"><td>4</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-g3"><code class="xref any std std-option docutils literal notranslate"><span class="pre">G3</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-g3"><code class="xref any std std-option docutils literal"><span class="pre">G3</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a></td>
 <td>Related to VPD dependence [units depend on gsChoice in RunControl.nml ]</td>
 </tr>
 <tr class="row-even"><td>5</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-g4"><code class="xref any std std-option docutils literal notranslate"><span class="pre">G4</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-g4"><code class="xref any std std-option docutils literal"><span class="pre">G4</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a></td>
 <td>Related to VPD dependence [units depend on gsChoice in RunControl.nml ]</td>
 </tr>
 <tr class="row-odd"><td>6</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-g5"><code class="xref any std std-option docutils literal notranslate"><span class="pre">G5</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-g5"><code class="xref any std std-option docutils literal"><span class="pre">G5</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a></td>
 <td>Related to temperature dependence [°C]</td>
 </tr>
 <tr class="row-even"><td>7</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-g6"><code class="xref any std std-option docutils literal notranslate"><span class="pre">G6</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-g6"><code class="xref any std std-option docutils literal"><span class="pre">G6</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a></td>
 <td>Related to soil moisture dependence [m|m^-1|]</td>
 </tr>
 <tr class="row-odd"><td>8</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-th"><code class="xref any std std-option docutils literal notranslate"><span class="pre">TH</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-th"><code class="xref any std std-option docutils literal"><span class="pre">TH</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a></td>
 <td>Upper air temperature limit [°C]</td>
 </tr>
 <tr class="row-even"><td>9</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-tl"><code class="xref any std std-option docutils literal notranslate"><span class="pre">TL</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-tl"><code class="xref any std std-option docutils literal"><span class="pre">TL</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a></td>
 <td>Lower air temperature limit [°C]</td>
 </tr>
 <tr class="row-odd"><td>10</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-s1"><code class="xref any std std-option docutils literal notranslate"><span class="pre">S1</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-s1"><code class="xref any std std-option docutils literal"><span class="pre">S1</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a></td>
 <td>Related to soil moisture dependence [-] These will change in the future to ensure consistency with soil behaviour</td>
 </tr>
 <tr class="row-even"><td>11</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-s2"><code class="xref any std std-option docutils literal notranslate"><span class="pre">S2</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-s2"><code class="xref any std std-option docutils literal"><span class="pre">S2</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a></td>
 <td>Related to soil moisture dependence [mm] These will change in the future to ensure consistency with soil behaviour</td>
 </tr>
 <tr class="row-odd"><td>12</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-kmax"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Kmax</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-kmax"><code class="xref any std std-option docutils literal"><span class="pre">Kmax</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a></td>
 <td>Maximum incoming shortwave radiation [W m<sup>-2</sup>]</td>
 </tr>
 <tr class="row-even"><td>13</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-gsmodel"><code class="xref any std std-option docutils literal notranslate"><span class="pre">gsModel</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-gsmodel"><code class="xref any std std-option docutils literal"><span class="pre">gsModel</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a></td>
 <td>1 = Järvi et al. (2011) [1] 2 = Ward et al. (2016) [2] Recommended.</td>
 </tr>
 </tbody>
@@ -292,9 +284,7 @@ different units).</p>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -316,7 +306,7 @@ different units).</p>
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -335,6 +325,7 @@ different units).</p>
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
             VERSION:'2018a.alpha',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
@@ -344,7 +335,7 @@ different units).</p>
       <script type="text/javascript" src="../../_static/jquery.js"></script>
       <script type="text/javascript" src="../../_static/underscore.js"></script>
       <script type="text/javascript" src="../../_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 
@@ -353,14 +344,13 @@ different units).</p>
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
   
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

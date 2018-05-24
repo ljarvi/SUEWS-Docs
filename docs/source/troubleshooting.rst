@@ -16,6 +16,8 @@ How to unzip a file
     please search the web using this phrase if you do not know how to
     unzip a file
 
+
+.. _A_text_editor:
 A text editor
 -------------
 

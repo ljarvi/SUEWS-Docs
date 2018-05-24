@@ -119,7 +119,7 @@ changed. The main difference is that previously all surface state could
 freeze in 1-h time step but now the amount of freezing surface state is
 calculated similar way as melt water can freeze within the snow pack.
 Also the snowmelt-related coefficients have slightly changed (see
-`SUEWS_Snow.txt <#SUEWS_Snow.txt>`__).```check```
+`SUEWS_Snow.txt`).
 
 Convective boundary layer
 -------------------------
