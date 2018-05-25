@@ -14,7 +14,7 @@ All rows in this file will be read by the model and run.
   :widths: 5 25 5 65
 
 .. attention::
-  - Two rows of `-9` should be placed at end of this file.
+  - Two rows of ``-9`` should be placed at end of this file.
   - In this file the **column order is important**.
   - In this file the **row order is important** for simulaitons of **multiple grids and multiple years**.
     Ensure the rows in are arranged so that all grids for a particular year appear on consecutive lines (rather than grouping all years together for a particular grid). See below for a valid example::
@@ -26,7 +26,7 @@ All rows in this file will be read by the model and run.
       2     2002 ...
 
 .. tip::
-  `\!` can be used to indicate comments in the file. Comments are not read by the
+  ``\!`` can be used to indicate comments in the file. Comments are not read by the
   programme so they can be used by the user to provide notes for their
   interpretation of the contents. This is strongly recommended.
 

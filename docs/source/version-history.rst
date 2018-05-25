@@ -105,13 +105,13 @@ New in SUEWS Version 2016a (released 21 June 2016)
 #. Edits to the manual.
 #. CBL model included.
 #. SUEWS has been incorporated into
-   `UMEP <http://urban-climate.net/umep/UMEP>`__
+   `UMEP <http://umep-docs.readthedocs.io/>`__
 
 New in SUEWS Version 2014b (released 8 October 2014)
 ----------------------------------------------------
 
-`V2014
-manual <http://www.met.rdg.ac.uk/micromet/documents/SUEWS_Manual.pdf>`__
+:download:`PDF Manual for v2014b <assets/doc/SUEWS_V2014b_Manual.pdf>`
+
 These affect the run configuration if previously run with older versions
 of the model:
 
@@ -120,7 +120,7 @@ of the model:
 #. Change of input variables in InitialConditions.nml file. Note we now
    refer to CT as ET (ie. Evergreen trees rather than coniferous trees)
 #. In GridConnectionsYYYY.txt, the site names should now be without the
-   underscore (e.g “Sm” and not “Sm_”)
+   underscore (e.g ``Sm`` and not ``Sm_``)
 
 Other issues:
 
@@ -257,7 +257,7 @@ New in SUEWS Version2011b
 -------------------------
 
 #. Storage heat flux (ΔQs) and anthropogenic heat flux (QF) can be set
-   to be 0 W m\ :sup:`-2`
+   to be 0 W |m^-2|
 #. Calculation of hydraulic conductivity in soil has been improved and
    HydraulicConduct in SUEWSInput.nml is replaced with name
    SatHydraulicConduct
