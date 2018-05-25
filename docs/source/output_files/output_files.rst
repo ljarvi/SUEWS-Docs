@@ -62,10 +62,10 @@ written out to the file SS_FileChoices.txt.
 Model output files
 ------------------
 
-SSss_YYYY_TT.txt
-~~~~~~~~~~~~~~~~
+SSss_YYYY_SUEWS_TT.txt
+~~~~~~~~~~~~~~~~~~~~~~
 
-SUEWS produces the main output file (SSss_YYYY_tt.txt) with time
+SUEWS produces the main output file (SSss_YYYY_SUEWS_tt.txt) with time
 resolution (TT min) set by **ResolutionFilesOut** in `RunControl.nml`.
 
 Before these main data files are written out, SUEWS provides a summary
@@ -77,7 +77,7 @@ to :option:`WriteOutOption` set in :ref:`RunControl.nml`.
 
 
 .. csv-table::
-  :file: SSss_YYYY_TT.csv
+  :file: SSss_YYYY_SUEWS_TT.csv
   :header-rows: 1
   :widths: auto
 
