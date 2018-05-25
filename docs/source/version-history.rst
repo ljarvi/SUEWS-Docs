@@ -5,13 +5,15 @@ Version History
 
 .. _new_latest:
 
+.. _new_2018a:
+
 New in SUEWS Version 2018a
 --------------------------
 
-see :ref:`version_history`.
-
+#. Many under-the-hood improvements
 #. New Manual
 
+.. _new_2017b:
 
 New in SUEWS Version 2017b (released 2 August 2017)
 ---------------------------------------------------
