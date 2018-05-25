@@ -7,7 +7,7 @@ Notation
    *λF*
      frontal area  index
 
-   ΔQS*
+   ΔQS
      storage heat flux
 
    BLUEWS
@@ -42,12 +42,17 @@ Notation
    ESTM
      Element Surface Temperature Method (Offerle et al.,2005 [Oaf2005]_)
 
-
    Grass
      Grass surface
 
    BSoil
      Unmanaged land and/or bare soil
+
+   Runoff
+      the water that drains freely off the impervious surface
+
+   SoilStore
+      the water stored in the underlying soil that infiltrates from the pervious surface
 
    L↓
      incoming longwave radiation
@@ -56,8 +61,7 @@ Notation
      Leaf area index
 
    LUMPS
-     Local-scale Urban Meteorological Parameterization Scheme
-     (Loridan   et al. 2011 [L2011]_)
+     Local-scale Urban Meteorological Parameterization Scheme (Loridan et al. 2011 [L2011]_)
 
    MU
      Parameters which must be supplied and must be specific for the site/grid being run.
@@ -81,7 +85,7 @@ Notation
      Paved surface
 
    |Qstar|
-     net all-wave radiation
+     Net all-wave radiation
 
    QE
      latent heat flux

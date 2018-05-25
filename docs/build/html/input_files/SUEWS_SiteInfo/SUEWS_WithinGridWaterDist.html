@@ -209,14 +209,14 @@ store.</p>
 <p>Note:</p>
 <ul class="simple">
 <li>The sum of each row (excluding the Code) must equal 1.</li>
-<li>Water cannot flow from one surface to that same surface, so the
+<li>Water <strong>CAANOT</strong> flow from one surface to that same surface, so the
 diagonal elements should be zero.</li>
 <li>The row corresponding to the water surface should be zero, as there
 is currently no flow permitted from the water surface to other
 surfaces by the model.</li>
-<li>Currently water <strong>cannot</strong> go to both runoff and soil store (i.e. it
-must go to one or the other – runoff for impervious surfaces;
-soilstore for pervious surfaces).</li>
+<li>Currently water <strong>CAANOT</strong> go to both runoff and soil store (i.e. it
+must go to one or the other – <a class="reference internal" href="../../notation.html#term-runoff"><code class="xref any std std-term docutils literal notranslate"><span class="pre">runoff</span></code></a> for impervious surfaces;
+<a class="reference internal" href="../../notation.html#term-soilstore"><code class="xref any std std-term docutils literal notranslate"><span class="pre">soilstore</span></code></a> for pervious surfaces).</li>
 </ul>
 <p>In the table below, for example,</p>
 <ul class="simple">
@@ -282,12 +282,12 @@ used).</li>
 <tr class="row-odd"><td>8</td>
 <td><a class="reference internal" href="Input_Options.html#cmdoption-arg-torunoff"><code class="xref any std std-option docutils literal notranslate"><span class="pre">ToRunoff</span></code></a></td>
 <td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
-<td>Fraction of water going to <code class="xref any docutils literal notranslate"><span class="pre">Runoff</span></code></td>
+<td>Fraction of water going to <a class="reference internal" href="../../notation.html#term-runoff"><code class="xref any std std-term docutils literal notranslate"><span class="pre">Runoff</span></code></a></td>
 </tr>
 <tr class="row-even"><td>9</td>
 <td><a class="reference internal" href="Input_Options.html#cmdoption-arg-tosoilstore"><code class="xref any std std-option docutils literal notranslate"><span class="pre">ToSoilStore</span></code></a></td>
 <td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
-<td>Fraction of water going to <code class="xref any docutils literal notranslate"><span class="pre">SoilStore</span></code></td>
+<td>Fraction of water going to <a class="reference internal" href="../../notation.html#term-soilstore"><code class="xref any std std-term docutils literal notranslate"><span class="pre">SoilStore</span></code></a></td>
 </tr>
 </tbody>
 </table>
