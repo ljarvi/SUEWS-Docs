@@ -26,8 +26,8 @@ thickness (x), thermal conductivity (k), volumetric heat capacity
 If ESTM is used (QSchoice=4), the files
 `SUEWS_ESTMCoefficients.txt`,
 `ESTMinput.nml` and
-`SSss_YYYY_ESTM_Ts_data_tt.txt` should be
-prepared.
+`SSss_YYYY_ESTM_Ts_data_tt.txt`
+should be prepared.
 
 SUEWS_ESTMCoefficients.txt contains the parameters for the layers of
 each of the elements (roofs, wall, ground, internal mass).
@@ -52,6 +52,8 @@ each of the elements (roofs, wall, ground, internal mass).
 The following input files are required if ESTM is used to calculate the
 storage heat flux.
 
+
+.. _ESTMinput.nml:
 
 ESTMinput.nml
 ~~~~~~~~~~~~~

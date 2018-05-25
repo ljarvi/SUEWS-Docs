@@ -12,8 +12,7 @@ Recent publications
 ===================
 
 .. note:: If you have papers to add to this list please let us and others know
-	 via the `email
-	 list. <http://urban-climate.net/umep/SUEWS#Development.2C_Suggestions_and_Support>`_
+	 via the `email list. <www.lists.reading.ac.uk/mailman/listinfo/met-suews>`_
 
 
 - `Järvi et al. (2017) <https://www.nature.com/articles/s41598-017-05733-y>`_
@@ -71,7 +70,7 @@ Recent publications
 :citation:
 		Järvi L, Grimmond CSB, Taka M, Nordbo A, Setälä H & Strachan IB 2014: Development of the Surface Urban Energy and Water balance Scheme (SUEWS) for cold climate cities Geosci. Model Dev. 7, 1691-1711
 
-`Other papers <http://urban-climate.net/umep/UMEP_Manual#Evaluation_and_application_studies>`__
+`Other papers <http://umep-docs.readthedocs.io/en/latest/Introduction.html#evaluation-and-application-studies>`_
 
 .. raw:: latex
 

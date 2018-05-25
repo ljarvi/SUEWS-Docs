@@ -18,6 +18,7 @@ How to unzip a file
 
 
 .. _A_text_editor:
+
 A text editor
 -------------
 

@@ -339,7 +339,7 @@ run the model.
 Preparation of the RunControl file
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In the RunControl.nml file the site name (`SS`) and directories for the
+In the RunControl.nml file the site name (``SS``) and directories for the
 model input and output are given. This means **before running** the
 model (even the with the example datasets) you must either
 

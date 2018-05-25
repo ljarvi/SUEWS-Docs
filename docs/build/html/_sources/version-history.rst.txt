@@ -104,8 +104,7 @@ New in SUEWS Version 2016a (released 21 June 2016)
 #. New suggestions in Troubleshooting section.
 #. Edits to the manual.
 #. CBL model included.
-#. SUEWS has been incorporated into
-   `UMEP <http://umep-docs.readthedocs.io/>`__
+#. SUEWS has been incorporated into `UMEP <http://umep-docs.readthedocs.io/>`_
 
 New in SUEWS Version 2014b (released 8 October 2014)
 ----------------------------------------------------

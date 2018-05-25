@@ -119,4 +119,4 @@ Notation
 
 .. |Qstar| replace:: Q\ :sup:`*`\
 
-.. _Urban Multi-scale Environmental Predictor: http://urban-climate.net/umep/UMEP
+.. _Urban Multi-scale Environmental Predictor: http://umep-docs.readthedocs.io
