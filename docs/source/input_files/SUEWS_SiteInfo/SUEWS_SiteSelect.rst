@@ -18,6 +18,7 @@ All rows in this file will be read by the model and run.
   - In this file the **column order is important**.
   - In this file the **row order is important** for simulaitons of **multiple grids and multiple years**.
     Ensure the rows in are arranged so that all grids for a particular year appear on consecutive lines (rather than grouping all years together for a particular grid). See below for a valid example::
+
       Grid  Year ...
       1     2001 ...
       2     2001 ...
@@ -41,6 +42,7 @@ check http://www.timeanddate.com/time/dst/ for your city.
 .. tip::
     If DLS does not occur give a start and end day immediately after it.
     Make certain the dummy dates are correct for the hemisphere
+
      - for northern hemisphere, use: 180 181
      - for southern hemisphere, use:  365 1
 

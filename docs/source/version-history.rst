@@ -16,7 +16,7 @@ see :ref:`version_history`.
 New in SUEWS Version 2017b (released 2 August 2017)
 ---------------------------------------------------
 
-`PDF Manual for v2017b <:File:SUEWS_V2017b_Manual.pdf>`__
+:download:`PDF Manual for v2017b <assets/doc/SUEWS_V2017b_Manual.pdf>`
 
 #. Surface-level diagnostics: T2 (air temperature at 2 m agl), Q2 (air
    specific humidity at 2 m agl) and U10 (wind speed at 10 m agl) added
@@ -76,7 +76,7 @@ New in SUEWS Version 2017a (Feb 2017)
 New in SUEWS Version 2016a (released 21 June 2016)
 --------------------------------------------------
 
-`PDF Manual for v2016a <:File:SUEWS_V2016a_Manual.pdf>`__
+::download:`PDF Manual for v2016a <assets/doc/SUEWS_V2016a_Manual.pdf>`
 
 #. Major changes to the input file formats to facilitate the running of
    multiple grids and multiple years. Surface characteristics are
