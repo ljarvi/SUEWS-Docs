@@ -76,7 +76,7 @@ New in SUEWS Version 2017a (Feb 2017)
 New in SUEWS Version 2016a (released 21 June 2016)
 --------------------------------------------------
 
-::download:`PDF Manual for v2016a <assets/doc/SUEWS_V2016a_Manual.pdf>`
+:download:`PDF Manual for v2016a <assets/doc/SUEWS_V2016a_Manual.pdf>`
 
 #. Major changes to the input file formats to facilitate the running of
    multiple grids and multiple years. Surface characteristics are
