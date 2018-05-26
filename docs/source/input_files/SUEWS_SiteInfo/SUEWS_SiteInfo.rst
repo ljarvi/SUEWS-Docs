@@ -17,6 +17,7 @@ area.
    :hidden:
 
    Input_Options
+   Typical_Values
 
 
 These text files are stored as worksheets in

@@ -25,20 +25,29 @@
   
 
   
+  
     <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="6.2.4. SUEWS_NonVeg.txt" href="SUEWS_NonVeg.html" />
-    <link rel="prev" title="6.2.2. SUEWS_Conductance.txt" href="SUEWS_Conductance.html" /> 
+  
+
+  
+    <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="SUEWS 2018a.alpha documentation" href="../../index.html"/>
+        <link rel="up" title="6.2. SUEWS_SiteInfo.xlsm" href="SUEWS_SiteInfo.html"/>
+        <link rel="next" title="6.2.4. SUEWS_NonVeg.txt" href="SUEWS_NonVeg.html"/>
+        <link rel="prev" title="6.2.2. SUEWS_Conductance.txt" href="SUEWS_Conductance.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav">
+<body class="wy-body-for-nav" role="document">
 
    
   <div class="wy-grid-for-nav">
@@ -102,6 +111,7 @@
 <li class="toctree-l3"><a class="reference internal" href="SUEWS_Water.html">6.2.11. SUEWS_Water.txt</a></li>
 <li class="toctree-l3"><a class="reference internal" href="SUEWS_WithinGridWaterDist.html">6.2.12. SUEWS_WithinGridWaterDist.txt</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Input_Options.html">6.2.13. Input_Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Typical_Values.html">6.2.14. Typical Values</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Initial_Conditions/Initial_Conditions.html">6.3. Initial Conditions file</a></li>
@@ -119,7 +129,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../version-history.html">12. Version History</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../differences-suews-lumps-fraise.html">13. Differences between SUEWS, LUMPS and FRAISE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../references.html">14. References</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../typical_values.html">15. Typical Values</a></li>
 </ul>
 
             
@@ -131,7 +140,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" aria-label="top navigation">
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">SUEWS</a>
@@ -139,10 +148,9 @@
       </nav>
 
 
+      
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
 
@@ -199,7 +207,7 @@ of water use is modelled according to the daily cycles specified in
 <p>Alternatively, if available, the external water use can be provided in
 the met forcing file (and set WaterUseMethod = 1 in
 <a class="reference internal" href="../RunControl/RunControl.html#runcontrol-nml"><span class="std std-ref">RunControl.nml</span></a>), in which case all columns here
-except Code should be set to &#8216;-999&#8217;.</p>
+except Code should be set to ‘-999’.</p>
 <table border="1" class="colwidths-given docutils">
 <colgroup>
 <col width="5%" />
@@ -216,128 +224,128 @@ except Code should be set to &#8216;-999&#8217;.</p>
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td>1</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code"><code class="xref any std std-option docutils literal"><span class="pre">Code</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Code</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
 <td>Code linking to <a class="reference internal" href="SUEWS_SiteSelect.html#suews-siteselect-txt"><span class="std std-ref">SUEWS_SiteSelect.txt</span></a> for irrigation modelling (IrrigationCode). Value of integer is arbitrary but must match codes specified in SUEWS_SiteSelect.txt.</td>
 </tr>
 <tr class="row-odd"><td>2</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ie-start"><code class="xref any std std-option docutils literal"><span class="pre">Ie_start</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ie-start"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Ie_start</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Day when irrigation starts [DOY]</td>
 </tr>
 <tr class="row-even"><td>3</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ie-end"><code class="xref any std std-option docutils literal"><span class="pre">Ie_end</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ie-end"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Ie_end</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Day when irrigation ends [DOY]</td>
 </tr>
 <tr class="row-odd"><td>4</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-internalwateruse"><code class="xref any std std-option docutils literal"><span class="pre">InternalWaterUse</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-internalwateruse"><code class="xref any std std-option docutils literal notranslate"><span class="pre">InternalWaterUse</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Internal water use [mm h<sup>-1</sup>]</td>
 </tr>
 <tr class="row-even"><td>5</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-faut"><code class="xref any std std-option docutils literal"><span class="pre">Faut</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-faut"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Faut</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Fraction of irrigated area that is irrigated using automated systems (e.g. sprinklers).</td>
 </tr>
 <tr class="row-odd"><td>6</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ie-a1"><code class="xref any std std-option docutils literal"><span class="pre">Ie_a1</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ie-a1"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Ie_a1</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
 <td>Coefficient for automatic irrigation model [mm d -1 ]</td>
 </tr>
 <tr class="row-even"><td>7</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ie-a2"><code class="xref any std std-option docutils literal"><span class="pre">Ie_a2</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ie-a2"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Ie_a2</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
 <td>Coefficient for automatic irrigation model [mm d -1 K<sup>-1</sup>]</td>
 </tr>
 <tr class="row-odd"><td>8</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ie-a3"><code class="xref any std std-option docutils literal"><span class="pre">Ie_a3</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ie-a3"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Ie_a3</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
 <td>Coefficient for automatic irrigation model [mm d -2 ]</td>
 </tr>
 <tr class="row-even"><td>9</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ie-m1"><code class="xref any std std-option docutils literal"><span class="pre">Ie_m1</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ie-m1"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Ie_m1</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
 <td>Coefficient for manual irrigation model [mm d -1 ]</td>
 </tr>
 <tr class="row-odd"><td>10</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ie-m2"><code class="xref any std std-option docutils literal"><span class="pre">Ie_m2</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ie-m2"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Ie_m2</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
 <td>Coefficient for manual irrigation model [mm d -1 K<sup>-1</sup>]</td>
 </tr>
 <tr class="row-even"><td>11</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ie-m3"><code class="xref any std std-option docutils literal"><span class="pre">Ie_m3</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ie-m3"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Ie_m3</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
 <td>Coefficient for manual irrigation model [mm d -2 ]</td>
 </tr>
 <tr class="row-odd"><td>12</td>
-<td><code class="xref any docutils literal"><span class="pre">DayWat(1)</span></code></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-daywat-1"><code class="xref any std std-option docutils literal notranslate"><span class="pre">DayWat(1)</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Irrigation allowed on Sundays [1], if not [0]</td>
 </tr>
 <tr class="row-even"><td>13</td>
-<td><code class="xref any docutils literal"><span class="pre">DayWat(2)</span></code></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-daywat-2"><code class="xref any std std-option docutils literal notranslate"><span class="pre">DayWat(2)</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Irrigation allowed on Mondays [1], if not [0]</td>
 </tr>
 <tr class="row-odd"><td>14</td>
-<td><code class="xref any docutils literal"><span class="pre">DayWat(3)</span></code></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-daywat-3"><code class="xref any std std-option docutils literal notranslate"><span class="pre">DayWat(3)</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Irrigation allowed on Tuesdays [1], if not [0]</td>
 </tr>
 <tr class="row-even"><td>15</td>
-<td><code class="xref any docutils literal"><span class="pre">DayWat(4)</span></code></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-daywat-4"><code class="xref any std std-option docutils literal notranslate"><span class="pre">DayWat(4)</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Irrigation allowed on Wednesdays [1], if not [0]</td>
 </tr>
 <tr class="row-odd"><td>16</td>
-<td><code class="xref any docutils literal"><span class="pre">DayWat(5)</span></code></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-daywat-5"><code class="xref any std std-option docutils literal notranslate"><span class="pre">DayWat(5)</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Irrigation allowed on Thursdays [1], if not [0]</td>
 </tr>
 <tr class="row-even"><td>17</td>
-<td><code class="xref any docutils literal"><span class="pre">DayWat(6)</span></code></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-daywat-6"><code class="xref any std std-option docutils literal notranslate"><span class="pre">DayWat(6)</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Irrigation allowed on Fridays [1], if not [0]</td>
 </tr>
 <tr class="row-odd"><td>18</td>
-<td><code class="xref any docutils literal"><span class="pre">DayWat(7)</span></code></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-daywat-7"><code class="xref any std std-option docutils literal notranslate"><span class="pre">DayWat(7)</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Irrigation allowed on Saturdays [1], if not [0]</td>
 </tr>
 <tr class="row-even"><td>19</td>
-<td><code class="xref any docutils literal"><span class="pre">DayWatPer(1)</span></code></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-daywatper-1"><code class="xref any std std-option docutils literal notranslate"><span class="pre">DayWatPer(1)</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Fraction of properties using irrigation on Sundays [0-1]</td>
 </tr>
 <tr class="row-odd"><td>20</td>
-<td><code class="xref any docutils literal"><span class="pre">DayWatPer(2)</span></code></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-daywatper-2"><code class="xref any std std-option docutils literal notranslate"><span class="pre">DayWatPer(2)</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Fraction of properties using irrigation on Mondays [0-1]</td>
 </tr>
 <tr class="row-even"><td>21</td>
-<td><code class="xref any docutils literal"><span class="pre">DayWatPer(3)</span></code></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-daywatper-3"><code class="xref any std std-option docutils literal notranslate"><span class="pre">DayWatPer(3)</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Fraction of properties using irrigation on Tuesdays [0-1]</td>
 </tr>
 <tr class="row-odd"><td>22</td>
-<td><code class="xref any docutils literal"><span class="pre">DayWatPer(4)</span></code></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-daywatper-4"><code class="xref any std std-option docutils literal notranslate"><span class="pre">DayWatPer(4)</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Fraction of properties using irrigation on Wednesdays [0-1]</td>
 </tr>
 <tr class="row-even"><td>23</td>
-<td><code class="xref any docutils literal"><span class="pre">DayWatPer(5)</span></code></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-daywatper-5"><code class="xref any std std-option docutils literal notranslate"><span class="pre">DayWatPer(5)</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Fraction of properties using irrigation on Thursdays [0-1]</td>
 </tr>
 <tr class="row-odd"><td>24</td>
-<td><code class="xref any docutils literal"><span class="pre">DayWatPer(6)</span></code></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-daywatper-6"><code class="xref any std std-option docutils literal notranslate"><span class="pre">DayWatPer(6)</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Fraction of properties using irrigation on Fridays [0-1]</td>
 </tr>
 <tr class="row-even"><td>25</td>
-<td><code class="xref any docutils literal"><span class="pre">DayWatPer(7)</span></code></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-daywatper-7"><code class="xref any std std-option docutils literal notranslate"><span class="pre">DayWatPer(7)</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Fraction of properties using irrigation on Saturdays [0-1]</td>
 </tr>
 </tbody>
@@ -346,7 +354,9 @@ except Code should be set to &#8216;-999&#8217;.</p>
 
 
            </div>
-           
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
@@ -368,7 +378,7 @@ except Code should be set to &#8216;-999&#8217;.</p>
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -387,7 +397,6 @@ except Code should be set to &#8216;-999&#8217;.</p>
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
             VERSION:'2018a.alpha',
-            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
@@ -397,7 +406,7 @@ except Code should be set to &#8216;-999&#8217;.</p>
       <script type="text/javascript" src="../../_static/jquery.js"></script>
       <script type="text/javascript" src="../../_static/underscore.js"></script>
       <script type="text/javascript" src="../../_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 
@@ -406,13 +415,14 @@ except Code should be set to &#8216;-999&#8217;.</p>
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
   
 
+  
+  
   <script type="text/javascript">
       jQuery(function () {
-          
-          SphinxRtdTheme.Navigation.enableSticky();
-          
+          SphinxRtdTheme.StickyNav.enable();
       });
-  </script> 
+  </script>
+   
 
 </body>
 </html>

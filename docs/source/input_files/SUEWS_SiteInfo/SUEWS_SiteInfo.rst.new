@@ -1,0 +1,30 @@
+
+SUEWS_SiteInfo.xlsm
+-------------------
+
+The following text files provide SUEWS with information about the study
+area.
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   SUEWS*
+
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+
+   Input_Options
+   typical_Values
+
+
+These text files are stored as worksheets in
+**SUEWS_SiteInfo.xlsm** and can be either edited using Excel and then
+generated using the macro, or edited directly (see `Data
+Entry <#Data_Entry>`__). Please note this file is subject to possible
+changes from version to version due to new features, modifications, etc.
+Please be aware of using the correct copy of this worksheet that are
+always shipped with the SUEWS public release.
+

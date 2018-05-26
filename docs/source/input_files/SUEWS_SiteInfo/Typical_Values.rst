@@ -3,6 +3,9 @@ Typical Values
 
 Other values to add - please let us know
 
+Generic Properties
+-------------------------
+
 .. list-table::
    :widths: 16 16 16 16 16
    :header-rows: 1
@@ -604,7 +607,3 @@ OHM Coefficients
      - 0.83
      - -0.83
      - -24.6
-
-
-+ESTM Values
-~~~~~~~~~~~~

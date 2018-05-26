@@ -13,7 +13,7 @@ Notation
    BLUEWS
      Boundary Layer  part of SUEWS
 
-        .. figure:: Bluews_1.jpg
+        .. figure:: /assets/img/Bluews_1.jpg
           :alt: Relation between BLUEWS and SUEWS
 
           Relation between BLUEWS and SUEWS

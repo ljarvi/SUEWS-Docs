@@ -25,20 +25,29 @@
   
 
   
+  
     <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="6.2.8. SUEWS_Snow.txt" href="SUEWS_Snow.html" />
-    <link rel="prev" title="6.2.6. SUEWS_Profiles.txt" href="SUEWS_Profiles.html" /> 
+  
+
+  
+    <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="SUEWS 2018a.alpha documentation" href="../../index.html"/>
+        <link rel="up" title="6.2. SUEWS_SiteInfo.xlsm" href="SUEWS_SiteInfo.html"/>
+        <link rel="next" title="6.2.8. SUEWS_Snow.txt" href="SUEWS_Snow.html"/>
+        <link rel="prev" title="6.2.6. SUEWS_Profiles.txt" href="SUEWS_Profiles.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav">
+<body class="wy-body-for-nav" role="document">
 
    
   <div class="wy-grid-for-nav">
@@ -106,6 +115,7 @@
 <li class="toctree-l3"><a class="reference internal" href="SUEWS_Water.html">6.2.11. SUEWS_Water.txt</a></li>
 <li class="toctree-l3"><a class="reference internal" href="SUEWS_WithinGridWaterDist.html">6.2.12. SUEWS_WithinGridWaterDist.txt</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Input_Options.html">6.2.13. Input_Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Typical_Values.html">6.2.14. Typical Values</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Initial_Conditions/Initial_Conditions.html">6.3. Initial Conditions file</a></li>
@@ -123,7 +133,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../version-history.html">12. Version History</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../differences-suews-lumps-fraise.html">13. Differences between SUEWS, LUMPS and FRAISE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../references.html">14. References</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../typical_values.html">15. Typical Values</a></li>
 </ul>
 
             
@@ -135,7 +144,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" aria-label="top navigation">
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">SUEWS</a>
@@ -143,10 +152,9 @@
       </nav>
 
 
+      
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
 
@@ -214,518 +222,518 @@ All rows in this file will be read by the model and run.</p>
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td>1</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-grid"><code class="xref any std std-option docutils literal"><span class="pre">Grid</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-grid"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Grid</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Grid numbers do not need to be consecutive and do not need to start at a particular value. Each grid must have a unique grid number. All grids must be present for all years. These grid numbers are referred to in GridConnections (columns 64-79) ( N.B. GridConnections not currently implemented! )</td>
 </tr>
 <tr class="row-odd"><td>2</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-year"><code class="xref any std std-option docutils literal"><span class="pre">Year</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-year"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Year</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Year [YYYY] Years must be continuous. If running multiple years, ensure the rows in SiteSelect.txt are arranged so that all grids for a particular year appear on consecutive lines (rather than grouping all years together for a particular grid).</td>
 </tr>
 <tr class="row-even"><td>3</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-startdls"><code class="xref any std std-option docutils literal"><span class="pre">StartDLS</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-startdls"><code class="xref any std std-option docutils literal notranslate"><span class="pre">StartDLS</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Start of the day light savings [DOY] See section on Day Light Savings .</td>
 </tr>
 <tr class="row-odd"><td>4</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-enddls"><code class="xref any std std-option docutils literal"><span class="pre">EndDLS</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-enddls"><code class="xref any std std-option docutils literal notranslate"><span class="pre">EndDLS</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>End of the day light savings [DOY] See section on Day Light Savings .</td>
 </tr>
 <tr class="row-even"><td>5</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-lat"><code class="xref any std std-option docutils literal"><span class="pre">lat</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-lat"><code class="xref any std std-option docutils literal notranslate"><span class="pre">lat</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Use coordinate system WGS84. Positive values are northern hemisphere (negative southern hemisphere). Used in radiation calculations. Note, if the total modelled area is small the latitude and longitude could be the same for each grid but small differences in radiation will not be determined. If you are defining the latitude and longitude differently between grids make certain that you provide enough decimal places.</td>
 </tr>
 <tr class="row-odd"><td>6</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-lng"><code class="xref any std std-option docutils literal"><span class="pre">lng</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-lng"><code class="xref any std std-option docutils literal notranslate"><span class="pre">lng</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Use coordinate system WGS84. For compatibility with GIS, negative values are to the west, positive values are to the east (e.g. Vancouver = -123.12; Shanghai = 121.47) Note this is a change of sign convention between v2016a and v2017a See latitude for more details.</td>
 </tr>
 <tr class="row-even"><td>7</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-timezone"><code class="xref any std std-option docutils literal"><span class="pre">Timezone</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-timezone"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Timezone</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Time zone [h] for site relative to UTC (east is positive). This should be set according to the times given in the meteorological forcing file(s).</td>
 </tr>
 <tr class="row-odd"><td>8</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-surfacearea"><code class="xref any std std-option docutils literal"><span class="pre">SurfaceArea</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-surfacearea"><code class="xref any std std-option docutils literal notranslate"><span class="pre">SurfaceArea</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Area of the grid [ha].</td>
 </tr>
 <tr class="row-even"><td>9</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-alt"><code class="xref any std std-option docutils literal"><span class="pre">Alt</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-alt"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Alt</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Used for both the radiation and water flow between grids. ( N.B. water flow between grids not currently implemented. )</td>
 </tr>
 <tr class="row-odd"><td>10</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-z"><code class="xref any std std-option docutils literal"><span class="pre">z</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-z"><code class="xref any std std-option docutils literal notranslate"><span class="pre">z</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>z must be greater than the displacement height. Forcing data should be representative of the local-scale, i.e. above the height of the roughness elements.</td>
 </tr>
 <tr class="row-even"><td>11</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-id"><code class="xref any std std-option docutils literal"><span class="pre">id</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-id"><code class="xref any std std-option docutils literal notranslate"><span class="pre">id</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
 <td>Day [DOY] Not used: set to 1 in this version.</td>
 </tr>
 <tr class="row-odd"><td>12</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ih"><code class="xref any std std-option docutils literal"><span class="pre">ih</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ih"><code class="xref any std std-option docutils literal notranslate"><span class="pre">ih</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
 <td>Hour [H] Not used: set to 0 in this version.</td>
 </tr>
 <tr class="row-even"><td>13</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-imin"><code class="xref any std std-option docutils literal"><span class="pre">imin</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-imin"><code class="xref any std std-option docutils literal notranslate"><span class="pre">imin</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
 <td>Minute [M] Not used: set to 0 in this version.</td>
 </tr>
 <tr class="row-odd"><td>14</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-paved"><code class="xref any std std-option docutils literal"><span class="pre">Fr_Paved</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-paved"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fr_Paved</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Columns 14 to 20 must sum to 1 .</td>
 </tr>
 <tr class="row-even"><td>15</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-bldgs"><code class="xref any std std-option docutils literal"><span class="pre">Fr_Bldgs</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-bldgs"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fr_Bldgs</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Surface cover fraction of buildings [-]</td>
 </tr>
 <tr class="row-odd"><td>16</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-evetr"><code class="xref any std std-option docutils literal"><span class="pre">Fr_EveTr</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-evetr"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fr_EveTr</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Surface cover fraction of evergreen trees and shrubs [-]</td>
 </tr>
 <tr class="row-even"><td>17</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-dectr"><code class="xref any std std-option docutils literal"><span class="pre">Fr_DecTr</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-dectr"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fr_DecTr</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Surface cover fraction of deciduous trees and shrubs [-]</td>
 </tr>
 <tr class="row-odd"><td>18</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-grass"><code class="xref any std std-option docutils literal"><span class="pre">Fr_Grass</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-grass"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fr_Grass</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Surface cover fraction of grass [-]</td>
 </tr>
 <tr class="row-even"><td>19</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-bsoil"><code class="xref any std std-option docutils literal"><span class="pre">Fr_Bsoil</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-bsoil"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fr_Bsoil</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Surface cover fraction of bare soil or unmanaged land [-]</td>
 </tr>
 <tr class="row-odd"><td>20</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-water"><code class="xref any std std-option docutils literal"><span class="pre">Fr_Water</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-water"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fr_Water</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Surface cover fraction of open water [-] (e.g. river, lakes, ponds, swimming pools)</td>
 </tr>
 <tr class="row-even"><td>21</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-irrfr-evetr"><code class="xref any std std-option docutils literal"><span class="pre">IrrFr_EveTr</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-irrfr-evetr"><code class="xref any std std-option docutils literal notranslate"><span class="pre">IrrFr_EveTr</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Fraction of evergreen trees that are irrigated [-] e.g. 50% of the evergreen trees/shrubs are irrigated</td>
 </tr>
 <tr class="row-odd"><td>22</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-irrfr-dectr"><code class="xref any std std-option docutils literal"><span class="pre">IrrFr_DecTr</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-irrfr-dectr"><code class="xref any std std-option docutils literal notranslate"><span class="pre">IrrFr_DecTr</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Fraction of deciduous trees that are irrigated [-]</td>
 </tr>
 <tr class="row-even"><td>23</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-irrfr-grass"><code class="xref any std std-option docutils literal"><span class="pre">IrrFr_Grass</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-irrfr-grass"><code class="xref any std std-option docutils literal notranslate"><span class="pre">IrrFr_Grass</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Fraction of grass that is irrigated [-]</td>
 </tr>
 <tr class="row-odd"><td>24</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-h-bldgs"><code class="xref any std std-option docutils literal"><span class="pre">H_Bldgs</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-h-bldgs"><code class="xref any std std-option docutils literal notranslate"><span class="pre">H_Bldgs</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Mean building height [m]</td>
 </tr>
 <tr class="row-even"><td>25</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-h-evetr"><code class="xref any std std-option docutils literal"><span class="pre">H_EveTr</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-h-evetr"><code class="xref any std std-option docutils literal notranslate"><span class="pre">H_EveTr</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Mean height of evergreen trees [m]</td>
 </tr>
 <tr class="row-odd"><td>26</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-h-dectr"><code class="xref any std std-option docutils literal"><span class="pre">H_DecTr</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-h-dectr"><code class="xref any std std-option docutils literal notranslate"><span class="pre">H_DecTr</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Mean height of deciduous trees [m]</td>
 </tr>
 <tr class="row-even"><td>27</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-z0"><code class="xref any std std-option docutils literal"><span class="pre">z0</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal"><span class="pre">O</span></code></a></td>
-<td>Roughness length for momentum [m] Value supplied here is used if RoughLenMomMethod = 1 in RunControl.nml ; otherwise set to &#8216;-999&#8217; and a value will be calculated by the model (RoughLenMomMethod = 2, 3).</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-z0"><code class="xref any std std-option docutils literal notranslate"><span class="pre">z0</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
+<td>Roughness length for momentum [m] Value supplied here is used if RoughLenMomMethod = 1 in RunControl.nml ; otherwise set to ‘-999’ and a value will be calculated by the model (RoughLenMomMethod = 2, 3).</td>
 </tr>
 <tr class="row-odd"><td>28</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-zd"><code class="xref any std std-option docutils literal"><span class="pre">zd</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal"><span class="pre">O</span></code></a></td>
-<td>Zero-plane displacement [m] Value supplied here is used if RoughLenMomMethod = 1 in RunControl.nml ; otherwise set to &#8216;-999&#8217; and a value will be calculated by the model (RoughLenMomMethod = 2, 3).</td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-zd"><code class="xref any std std-option docutils literal notranslate"><span class="pre">zd</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
+<td>Zero-plane displacement [m] Value supplied here is used if RoughLenMomMethod = 1 in RunControl.nml ; otherwise set to ‘-999’ and a value will be calculated by the model (RoughLenMomMethod = 2, 3).</td>
 </tr>
 <tr class="row-even"><td>29</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fai-bldgs"><code class="xref any std std-option docutils literal"><span class="pre">FAI_Bldgs</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal"><span class="pre">O</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fai-bldgs"><code class="xref any std std-option docutils literal notranslate"><span class="pre">FAI_Bldgs</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
 <td>Frontal area index for buildings [-] Required if RoughLenMomMethod = 3 in RunControl.nml .</td>
 </tr>
 <tr class="row-odd"><td>30</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fai-evetr"><code class="xref any std std-option docutils literal"><span class="pre">FAI_EveTr</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal"><span class="pre">O</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fai-evetr"><code class="xref any std std-option docutils literal notranslate"><span class="pre">FAI_EveTr</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
 <td>Frontal area index for evergreen trees [-] Required if RoughLenMomMethod = 3 in RunControl.nml .</td>
 </tr>
 <tr class="row-even"><td>31</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fai-dectr"><code class="xref any std std-option docutils literal"><span class="pre">FAI_DecTr</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal"><span class="pre">O</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fai-dectr"><code class="xref any std std-option docutils literal notranslate"><span class="pre">FAI_DecTr</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
 <td>Frontal area index for deciduous trees [-] Required if RoughLenMomMethod = 3 in RunControl.nml .</td>
 </tr>
 <tr class="row-odd"><td>32</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-popdensday"><code class="xref any std std-option docutils literal"><span class="pre">PopDensDay</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal"><span class="pre">O</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-popdensday"><code class="xref any std std-option docutils literal notranslate"><span class="pre">PopDensDay</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
 <td>Daytime population density (i.e. workers, tourists) [people ha -1 ] Population density is required if AnthropHeatMethod = 2 in RunControl.nml . The model will use the average of daytime and night-time population densities, unless only one is provided. If daytime population density is unknown, set to -999.</td>
 </tr>
 <tr class="row-even"><td>33</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-popdensnight"><code class="xref any std std-option docutils literal"><span class="pre">PopDensNight</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal"><span class="pre">O</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-popdensnight"><code class="xref any std std-option docutils literal notranslate"><span class="pre">PopDensNight</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
 <td>Night-time population density (i.e. residents) [people ha -1 ] Population density is required if AnthropHeatMethod = 2 in RunControl.nml . The model will use the average of daytime and night-time population densities, unless only one is provided. If night-time population density is unknown, set to -999.</td>
 </tr>
 <tr class="row-odd"><td>34</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-trafficrate"><code class="xref any std std-option docutils literal"><span class="pre">TrafficRate</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal"><span class="pre">O</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-trafficrate"><code class="xref any std std-option docutils literal notranslate"><span class="pre">TrafficRate</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
 <td>Traffic rate [veh km m-2 s-1] Can be used for CO2 flux calculation. Do not use in v2017a - set to -999</td>
 </tr>
 <tr class="row-even"><td>35</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-buildenergyuse"><code class="xref any std std-option docutils literal"><span class="pre">BuildEnergyUse</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal"><span class="pre">O</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-buildenergyuse"><code class="xref any std std-option docutils literal notranslate"><span class="pre">BuildEnergyUse</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
 <td>Building energy use [W m-2] Can be used for CO2 flux calculation. Do not use in v2017a - set to -999</td>
 </tr>
 <tr class="row-odd"><td>36</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-paved"><code class="xref any std std-option docutils literal"><span class="pre">Code_Paved</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-paved"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Code_Paved</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
 <td>Code for Paved surface characteristics Provides the link to column 1 of SUEWS_NonVeg.txt, which contains the attributes describing paved areas in this grid for this year. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_NonVeg.txt. e.g. 331 means use the characteristics specified in the row of input file SUEWS_NonVeg.txt which has 331 in column 1 (Code).</td>
 </tr>
 <tr class="row-even"><td>37</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-bldgs"><code class="xref any std std-option docutils literal"><span class="pre">Code_Bldgs</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-bldgs"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Code_Bldgs</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
 <td>Code for Bldgs surface characteristics Provides the link to column 1 of SUEWS_NonVeg.txt, which contains the attributes describing buildings in this grid for this year. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_NonVeg.txt.</td>
 </tr>
 <tr class="row-odd"><td>38</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-evetr"><code class="xref any std std-option docutils literal"><span class="pre">Code_EveTr</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-evetr"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Code_EveTr</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
 <td>Code for EveTr surface characteristics Provides the link to column 1 of SUEWS_Veg.txt, which contains the attributes describing evergreen trees and shrubs in this grid for this year. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Veg.txt.</td>
 </tr>
 <tr class="row-even"><td>39</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-dectr"><code class="xref any std std-option docutils literal"><span class="pre">Code_DecTr</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-dectr"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Code_DecTr</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
 <td>Code for DecTr surface characteristics Provides the link to column 1 of SUEWS_Veg.txt, which contains the attributes describing deciduous trees and shrubs in this grid for this year. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Veg.txt.</td>
 </tr>
 <tr class="row-odd"><td>40</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-grass"><code class="xref any std std-option docutils literal"><span class="pre">Code_Grass</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-grass"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Code_Grass</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
 <td>Code for Grass surface characteristics Provides the link to column 1 of SUEWS_Veg.txt, which contains the attributes describing grass surfaces in this grid for this year. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Veg.txt.</td>
 </tr>
 <tr class="row-even"><td>41</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-bsoil"><code class="xref any std std-option docutils literal"><span class="pre">Code_Bsoil</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-bsoil"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Code_Bsoil</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
 <td>Code for BSoil surface characteristics Provides the link to column 1 of SUEWS_NonVeg.txt, which contains the attributes describing bare soil in this grid for this year. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_NonVeg.txt.</td>
 </tr>
 <tr class="row-odd"><td>42</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-water"><code class="xref any std std-option docutils literal"><span class="pre">Code_Water</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-water"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Code_Water</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
 <td>Code for Water surface characteristics Provides the link to column 1 of SUEWS_Water.txt, which contains the attributes describing open water in this grid for this year. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Water.txt.</td>
 </tr>
 <tr class="row-even"><td>43</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-lumps-drrate"><code class="xref any std std-option docutils literal"><span class="pre">LUMPS_DrRate</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-lumps-drrate"><code class="xref any std std-option docutils literal notranslate"><span class="pre">LUMPS_DrRate</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
 <td>Drainage rate of bucket for LUMPS [mm h<sup>-1</sup>] Used for LUMPS surface wetness control. Default recommended value of 0.25 mm h<sup>-1</sup> from Loridan et al. (2011) [5] .</td>
 </tr>
 <tr class="row-odd"><td>44</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-lumps-cover"><code class="xref any std std-option docutils literal"><span class="pre">LUMPS_Cover</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-lumps-cover"><code class="xref any std std-option docutils literal notranslate"><span class="pre">LUMPS_Cover</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
 <td>Limit when surface totally covered with water [mm] Used for LUMPS surface wetness control. Default recommended value of 1 mm from Loridan et al. (2011) [5] .</td>
 </tr>
 <tr class="row-even"><td>45</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-lumps-maxres"><code class="xref any std std-option docutils literal"><span class="pre">LUMPS_MaxRes</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-lumps-maxres"><code class="xref any std std-option docutils literal notranslate"><span class="pre">LUMPS_MaxRes</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
 <td>Maximum water bucket reservoir [mm] Used for LUMPS surface wetness control. Default recommended value of 10 mm from Loridan et al. (2011) [5] .</td>
 </tr>
 <tr class="row-odd"><td>46</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-narp-trans"><code class="xref any std std-option docutils literal"><span class="pre">NARP_Trans</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-narp-trans"><code class="xref any std std-option docutils literal notranslate"><span class="pre">NARP_Trans</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
 <td>Atmospheric transmissivity for NARP [-] Value must in the range 0-1. Default recommended value of 1.</td>
 </tr>
 <tr class="row-even"><td>47</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-condcode"><code class="xref any std std-option docutils literal"><span class="pre">CondCode</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-condcode"><code class="xref any std std-option docutils literal notranslate"><span class="pre">CondCode</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
 <td>Code for surface conductance parameters Provides the link to column 1 of SUEWS_Conductance.txt, which contains the parameters for the Jarvis (1976) parameterisation of surface conductance. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Conductance.txt. e.g. 33 means use the characteristics specified in the row of input file SUEWS_Conductance.txt which has 33 in column 1 (Code).</td>
 </tr>
 <tr class="row-odd"><td>48</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-snowcode"><code class="xref any std std-option docutils literal"><span class="pre">SnowCode</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-snowcode"><code class="xref any std std-option docutils literal notranslate"><span class="pre">SnowCode</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
 <td>Code for snow surface characteristics Provides the link to column 1 of SUEWS_Snow.txt, which contains the attributes describing snow surfaces in this grid for this year. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Snow.txt.</td>
 </tr>
 <tr class="row-even"><td>49</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-snowclearingprofwd"><code class="xref any std std-option docutils literal"><span class="pre">SnowClearingProfWD</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-snowclearingprofwd"><code class="xref any std std-option docutils literal notranslate"><span class="pre">SnowClearingProfWD</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
 <td>Code for snow clearing profile (weekdays) Provides the link to column 1 of SUEWS_Profiles.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt. e.g. 1 means use the characteristics specified in the row of input file SUEWS_Profiles.txt which has 1 in column 1 (Code).</td>
 </tr>
 <tr class="row-odd"><td>50</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-snowclearingprofwe"><code class="xref any std std-option docutils literal"><span class="pre">SnowClearingProfWE</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-snowclearingprofwe"><code class="xref any std std-option docutils literal notranslate"><span class="pre">SnowClearingProfWE</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
 <td>Code for snow clearing profile (weekends) Provides the link to column 1 of SUEWS_Profiles.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt. e.g. 1 means use the characteristics specified in the row of input file SUEWS_Profiles.txt which has 1 in column 1 (Code). Providing the same code for SnowClearingProfWD and SnowClearingProfWE would link to the same row in SUEWS_Profiles.txt, i.e. the same profile would be used for weekdays and weekends.</td>
 </tr>
 <tr class="row-even"><td>51</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-anthropogeniccode"><code class="xref any std std-option docutils literal"><span class="pre">AnthropogenicCode</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-anthropogeniccode"><code class="xref any std std-option docutils literal notranslate"><span class="pre">AnthropogenicCode</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
 <td>Code for modelling anthropogenic heat flux Provides the link to column 1 of SUEWS_AnthropogenicHeat.txt, which contains the model coefficients for estimation of the anthropogenic heat flux (used if AnthropHeatChoice = 1, 2 in RunControl.nml ). Value of integer is arbitrary but must match code specified in column 1 of SUEWS_AnthropogenicHeat.txt.</td>
 </tr>
 <tr class="row-odd"><td>52</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-energyuseprofwd"><code class="xref any std std-option docutils literal"><span class="pre">EnergyUseProfWD</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-energyuseprofwd"><code class="xref any std std-option docutils literal notranslate"><span class="pre">EnergyUseProfWD</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
 <td>Code for energy use profile (weekdays) Provides the link to column 1 of SUEWS_Profiles.txt. Look the codes Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt.</td>
 </tr>
 <tr class="row-even"><td>53</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-energyuseprofwe"><code class="xref any std std-option docutils literal"><span class="pre">EnergyUseProfWE</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-energyuseprofwe"><code class="xref any std std-option docutils literal notranslate"><span class="pre">EnergyUseProfWE</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
 <td>Code for energy use profile (weekends) Provides the link to column 1 of SUEWS_Profiles.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt.</td>
 </tr>
 <tr class="row-odd"><td>54</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-activityprofwd"><code class="xref any std std-option docutils literal"><span class="pre">ActivityProfWD</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-activityprofwd"><code class="xref any std std-option docutils literal notranslate"><span class="pre">ActivityProfWD</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
 <td>Code for human activity profile (weekdays) Provides the link to column 1 of SUEWS_Profiles.txt. Look the codes Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt. Used for CO2 flux calculation - not used in v2017a</td>
 </tr>
 <tr class="row-even"><td>55</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-activityprofwe"><code class="xref any std std-option docutils literal"><span class="pre">ActivityProfWE</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-activityprofwe"><code class="xref any std std-option docutils literal notranslate"><span class="pre">ActivityProfWE</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
 <td>Code for human activity profile (weekends) Provides the link to column 1 of SUEWS_Profiles.txt. Look the codes Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt. Used for CO2 flux calculation - not used in v2017a</td>
 </tr>
 <tr class="row-odd"><td>56</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-irrigationcode"><code class="xref any std std-option docutils literal"><span class="pre">IrrigationCode</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-irrigationcode"><code class="xref any std std-option docutils literal notranslate"><span class="pre">IrrigationCode</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
 <td>Code for modelling irrigation Provides the link to column 1 of SUEWS_Irrigation.txt, which contains the model coefficients for estimation of the water use (used if WU_Choice = 0 in RunControl.nml ). Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Irrigation.txt.</td>
 </tr>
 <tr class="row-even"><td>57</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-wateruseprofmanuwd"><code class="xref any std std-option docutils literal"><span class="pre">WaterUseProfManuWD</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-wateruseprofmanuwd"><code class="xref any std std-option docutils literal notranslate"><span class="pre">WaterUseProfManuWD</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
 <td>Code for water use profile (manual irrigation, weekdays) Provides the link to column 1 of SUEWS_Profiles.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt.</td>
 </tr>
 <tr class="row-odd"><td>58</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-wateruseprofmanuwe"><code class="xref any std std-option docutils literal"><span class="pre">WaterUseProfManuWE</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-wateruseprofmanuwe"><code class="xref any std std-option docutils literal notranslate"><span class="pre">WaterUseProfManuWE</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
 <td>Code for water use profile (manual irrigation, weekends) Provides the link to column 1 of SUEWS_Profiles.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt.</td>
 </tr>
 <tr class="row-even"><td>59</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-wateruseprofautowd"><code class="xref any std std-option docutils literal"><span class="pre">WaterUseProfAutoWD</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-wateruseprofautowd"><code class="xref any std std-option docutils literal notranslate"><span class="pre">WaterUseProfAutoWD</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
 <td>Code for water use profile (automatic irrigation, weekdays) Provides the link to column 1 of SUEWS_Profiles.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt.</td>
 </tr>
 <tr class="row-odd"><td>60</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-wateruseprofautowe"><code class="xref any std std-option docutils literal"><span class="pre">WaterUseProfAutoWE</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-wateruseprofautowe"><code class="xref any std std-option docutils literal notranslate"><span class="pre">WaterUseProfAutoWE</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
 <td>Code for water use profile (automatic irrigation, weekends) Provides the link to column 1 of SUEWS_Profiles.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_Profiles.txt.</td>
 </tr>
 <tr class="row-even"><td>61</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-flowchange"><code class="xref any std std-option docutils literal"><span class="pre">FlowChange</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-flowchange"><code class="xref any std std-option docutils literal notranslate"><span class="pre">FlowChange</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
 <td>Difference in input and output flows for water surface [mm h<sup>-1</sup>] Used to indicate river or stream flow through the grid. Currently not fully tested!</td>
 </tr>
 <tr class="row-odd"><td>62</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-runofftowater"><code class="xref any std std-option docutils literal"><span class="pre">RunoffToWater</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-runofftowater"><code class="xref any std std-option docutils literal notranslate"><span class="pre">RunoffToWater</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Fraction of above-ground runoff flowing to water surface during flooding [-] Value must be in the range 0-1. Fraction of above-ground runoff that can flow to the water surface in the case of flooding.</td>
 </tr>
 <tr class="row-even"><td>63</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-pipecapacity"><code class="xref any std std-option docutils literal"><span class="pre">PipeCapacity</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-pipecapacity"><code class="xref any std std-option docutils literal notranslate"><span class="pre">PipeCapacity</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Storage capacity of pipes [mm] Runoff amounting to less than the value specified here is assumed to be removed by pipes.</td>
 </tr>
 <tr class="row-odd"><td>64</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-gridconnection1of8"><code class="xref any std std-option docutils literal"><span class="pre">GridConnection1of8</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-gridconnection1of8"><code class="xref any std std-option docutils literal notranslate"><span class="pre">GridConnection1of8</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>The next 8 pairs of columns specify the water flow between grids. The first column of each pair specifies the grid that the water flows to (from the current grid, column 1); the second column of each pair specifies the fraction of water that flow to that grid. The fraction (i.e. amount) of water transferred may be estimated based on elevation, the length of connecting surface between grids, presence of walls, etc. Water cannot flow from the current grid to the same grid, so the grid number here must be different to the grid number in column 1. Water can flow to a maximum of 8 other grids. If there is no water flow between grids, or a single grid is run, set to 0. See section on Grid Connections</td>
 </tr>
 <tr class="row-even"><td>65</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fraction1of8"><code class="xref any std std-option docutils literal"><span class="pre">Fraction1of8</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fraction1of8"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fraction1of8</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Fraction of water that can flow to the grid specified in previous column [-]</td>
 </tr>
 <tr class="row-odd"><td>66</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-gridconnection2of8"><code class="xref any std std-option docutils literal"><span class="pre">GridConnection2of8</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-gridconnection2of8"><code class="xref any std std-option docutils literal notranslate"><span class="pre">GridConnection2of8</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Number of the grid where water can flow to</td>
 </tr>
 <tr class="row-even"><td>67</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fraction2of8"><code class="xref any std std-option docutils literal"><span class="pre">Fraction2of8</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fraction2of8"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fraction2of8</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Fraction of water that can flow to the grid specified in previous column [-]</td>
 </tr>
 <tr class="row-odd"><td>68</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-gridconnection3of8"><code class="xref any std std-option docutils literal"><span class="pre">GridConnection3of8</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-gridconnection3of8"><code class="xref any std std-option docutils literal notranslate"><span class="pre">GridConnection3of8</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Number of the grid where water can flow to</td>
 </tr>
 <tr class="row-even"><td>69</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fraction3of8"><code class="xref any std std-option docutils literal"><span class="pre">Fraction3of8</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fraction3of8"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fraction3of8</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Fraction of water that can flow to the grid specified in previous column [-]</td>
 </tr>
 <tr class="row-odd"><td>70</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-gridconnection4of8"><code class="xref any std std-option docutils literal"><span class="pre">GridConnection4of8</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-gridconnection4of8"><code class="xref any std std-option docutils literal notranslate"><span class="pre">GridConnection4of8</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Number of the grid where water can flow to</td>
 </tr>
 <tr class="row-even"><td>71</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fraction4of8"><code class="xref any std std-option docutils literal"><span class="pre">Fraction4of8</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fraction4of8"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fraction4of8</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Fraction of water that can flow to the grid specified in previous column [-]</td>
 </tr>
 <tr class="row-odd"><td>72</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-gridconnection5of8"><code class="xref any std std-option docutils literal"><span class="pre">GridConnection5of8</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-gridconnection5of8"><code class="xref any std std-option docutils literal notranslate"><span class="pre">GridConnection5of8</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Number of the grid where water can flow to</td>
 </tr>
 <tr class="row-even"><td>73</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fraction5of8"><code class="xref any std std-option docutils literal"><span class="pre">Fraction5of8</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fraction5of8"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fraction5of8</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Fraction of water that can flow to the grid specified in previous column [-]</td>
 </tr>
 <tr class="row-odd"><td>74</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-gridconnection6of8"><code class="xref any std std-option docutils literal"><span class="pre">GridConnection6of8</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-gridconnection6of8"><code class="xref any std std-option docutils literal notranslate"><span class="pre">GridConnection6of8</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Number of the grid where water can flow to</td>
 </tr>
 <tr class="row-even"><td>75</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fraction6of8"><code class="xref any std std-option docutils literal"><span class="pre">Fraction6of8</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fraction6of8"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fraction6of8</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Fraction of water that can flow to the grid specified in previous column [-]</td>
 </tr>
 <tr class="row-odd"><td>76</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-gridconnection7of8"><code class="xref any std std-option docutils literal"><span class="pre">GridConnection7of8</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-gridconnection7of8"><code class="xref any std std-option docutils literal notranslate"><span class="pre">GridConnection7of8</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Number of the grid where water can flow to</td>
 </tr>
 <tr class="row-even"><td>77</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fraction7of8"><code class="xref any std std-option docutils literal"><span class="pre">Fraction7of8</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fraction7of8"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fraction7of8</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Fraction of water that can flow to the grid specified in previous column [-]</td>
 </tr>
 <tr class="row-odd"><td>78</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-gridconnection8of8"><code class="xref any std std-option docutils literal"><span class="pre">GridConnection8of8</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-gridconnection8of8"><code class="xref any std std-option docutils literal notranslate"><span class="pre">GridConnection8of8</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Number of the grid where water can flow to</td>
 </tr>
 <tr class="row-even"><td>79</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fraction8of8"><code class="xref any std std-option docutils literal"><span class="pre">Fraction8of8</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fraction8of8"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fraction8of8</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a> <a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Fraction of water that can flow to the grid specified in previous column [-]</td>
 </tr>
 <tr class="row-odd"><td>80</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-withingridpavedcode"><code class="xref any std std-option docutils literal"><span class="pre">WithinGridPavedCode</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-withingridpavedcode"><code class="xref any std std-option docutils literal notranslate"><span class="pre">WithinGridPavedCode</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
 <td>Code that links to the fraction of water that flows from Paved surfaces to surfaces in columns 2-10 of SUEWS_WithinGridWaterDist.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_WithinGridWaterDist.txt.</td>
 </tr>
 <tr class="row-even"><td>81</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-withingridbldgscode"><code class="xref any std std-option docutils literal"><span class="pre">WithinGridBldgsCode</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-withingridbldgscode"><code class="xref any std std-option docutils literal notranslate"><span class="pre">WithinGridBldgsCode</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
 <td>Code that links to the fraction of water that flows from Bldgs surfaces to surfaces in columns 2-10 of SUEWS_WithinGridWaterDist.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_WithinGridWaterDist.txt.</td>
 </tr>
 <tr class="row-odd"><td>82</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-withingridevetrcode"><code class="xref any std std-option docutils literal"><span class="pre">WithinGridEveTrCode</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-withingridevetrcode"><code class="xref any std std-option docutils literal notranslate"><span class="pre">WithinGridEveTrCode</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
 <td>Code that links to the fraction of water that flows from EveTr surfaces to surfaces in columns 2-10 of SUEWS_WithinGridWaterDist.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_WithinGridWaterDist.txt.</td>
 </tr>
 <tr class="row-even"><td>83</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-withingriddectrcode"><code class="xref any std std-option docutils literal"><span class="pre">WithinGridDecTrCode</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-withingriddectrcode"><code class="xref any std std-option docutils literal notranslate"><span class="pre">WithinGridDecTrCode</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
 <td>Code that links to the fraction of water that flows from DecTr surfaces to surfaces in columns 2-10 of SUEWS_WithinGridWaterDist.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_WithinGridWaterDist.txt.</td>
 </tr>
 <tr class="row-odd"><td>84</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-withingridgrasscode"><code class="xref any std std-option docutils literal"><span class="pre">WithinGridGrassCode</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-withingridgrasscode"><code class="xref any std std-option docutils literal notranslate"><span class="pre">WithinGridGrassCode</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
 <td>Code that links to the fraction of water that flows from Grass surfaces to surfaces in columns 2-10 of SUEWS_WithinGridWaterDist.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_WithinGridWaterDist.txt.</td>
 </tr>
 <tr class="row-even"><td>85</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-withingridbsoilcode"><code class="xref any std std-option docutils literal"><span class="pre">WithinGridBSoilCode</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-withingridbsoilcode"><code class="xref any std std-option docutils literal notranslate"><span class="pre">WithinGridBSoilCode</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
 <td>Code that links to the fraction of water that flows from BSoil surfaces to surfaces in columns 2-10 of SUEWS_WithinGridWaterDist.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_WithinGridWaterDist.txt.</td>
 </tr>
 <tr class="row-odd"><td>86</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-withingridwatercode"><code class="xref any std std-option docutils literal"><span class="pre">WithinGridWaterCode</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-withingridwatercode"><code class="xref any std std-option docutils literal notranslate"><span class="pre">WithinGridWaterCode</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
 <td>Code that links to the fraction of water that flows from Water surfaces to surfaces in columns 2-10 of SUEWS_WithinGridWaterDist.txt. Value of integer is arbitrary but must match code specified in column 1 of SUEWS_WithinGridWaterDist.txt.</td>
 </tr>
 <tr class="row-even"><td>87</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-areawall"><code class="xref any std std-option docutils literal"><span class="pre">AreaWall</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-areawall"><code class="xref any std std-option docutils literal notranslate"><span class="pre">AreaWall</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Area of wall within grid (needed for ESTM calculation).</td>
 </tr>
 <tr class="row-odd"><td>88</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-estmclass-paved1"><code class="xref any std std-option docutils literal"><span class="pre">Fr_ESTMClass_Paved1</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-estmclass-paved1"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fr_ESTMClass_Paved1</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Columns 88-90 must add up to 1</td>
 </tr>
 <tr class="row-even"><td>89</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-estmclass-paved2"><code class="xref any std std-option docutils literal"><span class="pre">Fr_ESTMClass_Paved2</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-estmclass-paved2"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fr_ESTMClass_Paved2</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Columns 88-90 must add up to 1</td>
 </tr>
 <tr class="row-odd"><td>90</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-estmclass-paved3"><code class="xref any std std-option docutils literal"><span class="pre">Fr_ESTMClass_Paved3</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-estmclass-paved3"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fr_ESTMClass_Paved3</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Columns 88-90 must add up to 1</td>
 </tr>
 <tr class="row-even"><td>91</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-estmclass-paved1"><code class="xref any std std-option docutils literal"><span class="pre">Code_ESTMClass_Paved1</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-estmclass-paved1"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Code_ESTMClass_Paved1</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
 <td>Code linking to SUEWS_ESTMCoefficients.txt</td>
 </tr>
 <tr class="row-odd"><td>92</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-estmclass-paved2"><code class="xref any std std-option docutils literal"><span class="pre">Code_ESTMClass_Paved2</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-estmclass-paved2"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Code_ESTMClass_Paved2</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
 <td>Code linking to SUEWS_ESTMCoefficients.txt</td>
 </tr>
 <tr class="row-even"><td>93</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-estmclass-paved3"><code class="xref any std std-option docutils literal"><span class="pre">Code_ESTMClass_Paved3</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-estmclass-paved3"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Code_ESTMClass_Paved3</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
 <td>Code linking to SUEWS_ESTMCoefficients.txt</td>
 </tr>
 <tr class="row-odd"><td>94</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-estmclass-bldgs1"><code class="xref any std std-option docutils literal"><span class="pre">Fr_ESTMClass_Bldgs1</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-estmclass-bldgs1"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fr_ESTMClass_Bldgs1</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Columns 94-98 must add up to 1</td>
 </tr>
 <tr class="row-even"><td>95</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-estmclass-bldgs2"><code class="xref any std std-option docutils literal"><span class="pre">Fr_ESTMClass_Bldgs2</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-estmclass-bldgs2"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fr_ESTMClass_Bldgs2</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Columns 94-98 must add up to 1</td>
 </tr>
 <tr class="row-odd"><td>96</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-estmclass-bldgs3"><code class="xref any std std-option docutils literal"><span class="pre">Fr_ESTMClass_Bldgs3</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-estmclass-bldgs3"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fr_ESTMClass_Bldgs3</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Columns 94-98 must add up to 1</td>
 </tr>
 <tr class="row-even"><td>97</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-estmclass-bldgs4"><code class="xref any std std-option docutils literal"><span class="pre">Fr_ESTMClass_Bldgs4</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-estmclass-bldgs4"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fr_ESTMClass_Bldgs4</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Columns 94-98 must add up to 1</td>
 </tr>
 <tr class="row-odd"><td>98</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-estmclass-bldgs5"><code class="xref any std std-option docutils literal"><span class="pre">Fr_ESTMClass_Bldgs5</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-fr-estmclass-bldgs5"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Fr_ESTMClass_Bldgs5</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Columns 94-98 must add up to 1</td>
 </tr>
 <tr class="row-even"><td>99</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-estmclass-bldgs1"><code class="xref any std std-option docutils literal"><span class="pre">Code_ESTMClass_Bldgs1</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-estmclass-bldgs1"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Code_ESTMClass_Bldgs1</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
 <td>Code linking to SUEWS_ESTMCoefficients.txt</td>
 </tr>
 <tr class="row-odd"><td>100</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-estmclass-bldgs2"><code class="xref any std std-option docutils literal"><span class="pre">Code_ESTMClass_Bldgs2</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-estmclass-bldgs2"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Code_ESTMClass_Bldgs2</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
 <td>Code linking to SUEWS_ESTMCoefficients.txt</td>
 </tr>
 <tr class="row-even"><td>101</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-estmclass-bldgs3"><code class="xref any std std-option docutils literal"><span class="pre">Code_ESTMClass_Bldgs3</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-estmclass-bldgs3"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Code_ESTMClass_Bldgs3</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
 <td>Code linking to SUEWS_ESTMCoefficients.txt</td>
 </tr>
 <tr class="row-odd"><td>102</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-estmclass-bldgs4"><code class="xref any std std-option docutils literal"><span class="pre">Code_ESTMClass_Bldgs4</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-estmclass-bldgs4"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Code_ESTMClass_Bldgs4</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
 <td>Code linking to SUEWS_ESTMCoefficients.txt</td>
 </tr>
 <tr class="row-even"><td>103</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-estmclass-bldgs5"><code class="xref any std std-option docutils literal"><span class="pre">Code_ESTMClass_Bldgs5</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code-estmclass-bldgs5"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Code_ESTMClass_Bldgs5</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
 <td>Code linking to SUEWS_ESTMCoefficients.txt</td>
 </tr>
 </tbody>
@@ -733,13 +741,13 @@ All rows in this file will be read by the model and run.</p>
 <div class="admonition attention">
 <p class="first admonition-title">Attention</p>
 <ul class="last">
-<li><p class="first">Two rows of <code class="docutils literal"><span class="pre">-9</span></code> should be placed at end of this file.</p>
+<li><p class="first">Two rows of <code class="docutils literal notranslate"><span class="pre">-9</span></code> should be placed at end of this file.</p>
 </li>
 <li><p class="first">In this file the <strong>column order is important</strong>.</p>
 </li>
 <li><p class="first">In this file the <strong>row order is important</strong> for simulaitons of <strong>multiple grids and multiple years</strong>.
 Ensure the rows in are arranged so that all grids for a particular year appear on consecutive lines (rather than grouping all years together for a particular grid). See below for a valid example:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Grid</span>  <span class="n">Year</span> <span class="o">...</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Grid</span>  <span class="n">Year</span> <span class="o">...</span>
 <span class="mi">1</span>     <span class="mi">2001</span> <span class="o">...</span>
 <span class="mi">2</span>     <span class="mi">2001</span> <span class="o">...</span>
 <span class="mi">1</span>     <span class="mi">2002</span> <span class="o">...</span>
@@ -751,7 +759,7 @@ Ensure the rows in are arranged so that all grids for a particular year appear o
 </div>
 <div class="admonition tip">
 <p class="first admonition-title">Tip</p>
-<p class="last"><code class="docutils literal"><span class="pre">\!</span></code> can be used to indicate comments in the file. Comments are not read by the
+<p class="last"><code class="docutils literal notranslate"><span class="pre">\!</span></code> can be used to indicate comments in the file. Comments are not read by the
 programme so they can be used by the user to provide notes for their
 interpretation of the contents. This is strongly recommended.</p>
 </div>
@@ -775,11 +783,6 @@ Make certain the dummy dates are correct for the hemisphere</p>
 <dl class="docutils">
 <dt>Example when running  multiple years (in this case 2008 and 2009 in Canada):</dt>
 <dd><table border="1" class="colwidths-auto first last docutils">
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Year</th>
 <th class="head">start of daylight savings</th>
@@ -844,7 +847,9 @@ but&nbsp;note&nbsp;that&nbsp;only&nbsp;only&nbsp;water&nbsp;flowing&nbsp;out&nbs
 
 
            </div>
-           
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
@@ -866,7 +871,7 @@ but&nbsp;note&nbsp;that&nbsp;only&nbsp;only&nbsp;water&nbsp;flowing&nbsp;out&nbs
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -885,7 +890,6 @@ but&nbsp;note&nbsp;that&nbsp;only&nbsp;only&nbsp;water&nbsp;flowing&nbsp;out&nbs
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
             VERSION:'2018a.alpha',
-            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
@@ -895,7 +899,7 @@ but&nbsp;note&nbsp;that&nbsp;only&nbsp;only&nbsp;water&nbsp;flowing&nbsp;out&nbs
       <script type="text/javascript" src="../../_static/jquery.js"></script>
       <script type="text/javascript" src="../../_static/underscore.js"></script>
       <script type="text/javascript" src="../../_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 
@@ -904,13 +908,14 @@ but&nbsp;note&nbsp;that&nbsp;only&nbsp;only&nbsp;water&nbsp;flowing&nbsp;out&nbs
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
   
 
+  
+  
   <script type="text/javascript">
       jQuery(function () {
-          
-          SphinxRtdTheme.Navigation.enableSticky();
-          
+          SphinxRtdTheme.StickyNav.enable();
       });
-  </script> 
+  </script>
+   
 
 </body>
 </html>

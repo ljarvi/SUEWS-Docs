@@ -25,20 +25,29 @@
   
 
   
+  
     <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="6.2.9. SUEWS_Soil.txt" href="SUEWS_Soil.html" />
-    <link rel="prev" title="6.2.7. SUEWS_SiteSelect.txt" href="SUEWS_SiteSelect.html" /> 
+  
+
+  
+    <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="SUEWS 2018a.alpha documentation" href="../../index.html"/>
+        <link rel="up" title="6.2. SUEWS_SiteInfo.xlsm" href="SUEWS_SiteInfo.html"/>
+        <link rel="next" title="6.2.9. SUEWS_Soil.txt" href="SUEWS_Soil.html"/>
+        <link rel="prev" title="6.2.7. SUEWS_SiteSelect.txt" href="SUEWS_SiteSelect.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav">
+<body class="wy-body-for-nav" role="document">
 
    
   <div class="wy-grid-for-nav">
@@ -102,6 +111,7 @@
 <li class="toctree-l3"><a class="reference internal" href="SUEWS_Water.html">6.2.11. SUEWS_Water.txt</a></li>
 <li class="toctree-l3"><a class="reference internal" href="SUEWS_WithinGridWaterDist.html">6.2.12. SUEWS_WithinGridWaterDist.txt</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Input_Options.html">6.2.13. Input_Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Typical_Values.html">6.2.14. Typical Values</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Initial_Conditions/Initial_Conditions.html">6.3. Initial Conditions file</a></li>
@@ -119,7 +129,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../version-history.html">12. Version History</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../differences-suews-lumps-fraise.html">13. Differences between SUEWS, LUMPS and FRAISE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../references.html">14. References</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../typical_values.html">15. Typical Values</a></li>
 </ul>
 
             
@@ -131,7 +140,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" aria-label="top navigation">
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">SUEWS</a>
@@ -139,10 +148,9 @@
       </nav>
 
 
+      
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
 
@@ -191,14 +199,14 @@
   <div class="section" id="suews-snow-txt">
 <span id="id1"></span><h1>6.2.8. SUEWS_Snow.txt<a class="headerlink" href="#suews-snow-txt" title="Permalink to this headline">¶</a></h1>
 <p>SUEWS_Snow.txt specifies the characteristics for snow surfaces when
-<a class="reference internal" href="../RunControl/Model_run_options.html#cmdoption-arg-snowuse"><code class="xref any std std-option docutils literal"><span class="pre">SnowUse=1</span></code></a> in <a class="reference internal" href="../RunControl/RunControl.html#runcontrol-nml"><span class="std std-ref">RunControl.nml</span></a>. If the snow part of
+<a class="reference internal" href="../RunControl/Model_run_options.html#cmdoption-arg-snowuse"><code class="xref any std std-option docutils literal notranslate"><span class="pre">SnowUse=1</span></code></a> in <a class="reference internal" href="../RunControl/RunControl.html#runcontrol-nml"><span class="std std-ref">RunControl.nml</span></a>. If the snow part of
 the model is not run, fill this table with ‘-999’ except for the first
-(Code) column and set <a class="reference internal" href="../RunControl/Model_run_options.html#cmdoption-arg-snowuse"><code class="xref any std std-option docutils literal"><span class="pre">SnowUse=0</span></code></a> in <a class="reference internal" href="../RunControl/RunControl.html#runcontrol-nml"><span class="std std-ref">RunControl.nml</span></a>.
+(Code) column and set <a class="reference internal" href="../RunControl/Model_run_options.html#cmdoption-arg-snowuse"><code class="xref any std std-option docutils literal notranslate"><span class="pre">SnowUse=0</span></code></a> in <a class="reference internal" href="../RunControl/RunControl.html#runcontrol-nml"><span class="std std-ref">RunControl.nml</span></a>.
 For a detailed description of the variables, see Järvi et al.
 (2014) <a class="reference internal" href="../../references.html#leena2014" id="id2">[Leena2014]</a>.</p>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
-<p class="last">In the current release <a class="reference internal" href="../RunControl/Model_run_options.html#cmdoption-arg-snowuse"><code class="xref any std std-option docutils literal"><span class="pre">SnowUse</span></code></a> should be set to 0.</p>
+<p class="last">In the current release <a class="reference internal" href="../RunControl/Model_run_options.html#cmdoption-arg-snowuse"><code class="xref any std std-option docutils literal notranslate"><span class="pre">SnowUse</span></code></a> should be set to 0.</p>
 </div>
 <table border="1" class="colwidths-given longtable docutils">
 <colgroup>
@@ -216,128 +224,128 @@ For a detailed description of the variables, see Järvi et al.
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td>1</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code"><code class="xref any std std-option docutils literal"><span class="pre">Code</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Code</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
 <td>Code linking to SUEWS_SiteSelect.txt for snow surfaces (SnowCode). Value of integer is arbitrary but must match code specified in SUEWS_SiteSelect.txt.</td>
 </tr>
 <tr class="row-odd"><td>2</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-radmeltfactor"><code class="xref any std std-option docutils literal"><span class="pre">RadMeltFactor</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-radmeltfactor"><code class="xref any std std-option docutils literal notranslate"><span class="pre">RadMeltFactor</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Hourly radiation melt factor of snow [mm W<sup>-1</sup> h<sup>-1</sup>]</td>
 </tr>
 <tr class="row-even"><td>3</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-tempmeltfactor"><code class="xref any std std-option docutils literal"><span class="pre">TempMeltFactor</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-tempmeltfactor"><code class="xref any std std-option docutils literal notranslate"><span class="pre">TempMeltFactor</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Hourly temperature melt factor of snow [mm K<sup>-1</sup> h<sup>-1</sup>] (In previous model version, this parameter was 0.12)</td>
 </tr>
 <tr class="row-odd"><td>4</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-albedomin"><code class="xref any std std-option docutils literal"><span class="pre">AlbedoMin</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-albedomin"><code class="xref any std std-option docutils literal notranslate"><span class="pre">AlbedoMin</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Example values [-] 0.18 Järvi et al. (2014) [15]</td>
 </tr>
 <tr class="row-even"><td>5</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-albedomax"><code class="xref any std std-option docutils literal"><span class="pre">AlbedoMax</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-albedomax"><code class="xref any std std-option docutils literal notranslate"><span class="pre">AlbedoMax</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Example values [-] 0.85 Järvi et al. (2014) [15]</td>
 </tr>
 <tr class="row-odd"><td>6</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-emissivity"><code class="xref any std std-option docutils literal"><span class="pre">Emissivity</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-emissivity"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Emissivity</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Effective surface emissivity. View factors should be taken into account Example values [-] 0.99 Järvi et al. (2014) [15]</td>
 </tr>
 <tr class="row-even"><td>7</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-tau-a"><code class="xref any std std-option docutils literal"><span class="pre">tau_a</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-tau-a"><code class="xref any std std-option docutils literal notranslate"><span class="pre">tau_a</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
 <td>Time constant for snow albedo aging in cold snow [-]</td>
 </tr>
 <tr class="row-odd"><td>8</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-tau-f"><code class="xref any std std-option docutils literal"><span class="pre">tau_f</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-tau-f"><code class="xref any std std-option docutils literal notranslate"><span class="pre">tau_f</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
 <td>Time constant for snow albedo aging in melting snow [-]</td>
 </tr>
 <tr class="row-even"><td>9</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-precipilimalb"><code class="xref any std std-option docutils literal"><span class="pre">PrecipiLimAlb</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-precipilimalb"><code class="xref any std std-option docutils literal notranslate"><span class="pre">PrecipiLimAlb</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
 <td>Limit for hourly precipitation when the ground is fully covered with snow. Then snow albedo is reset to AlbedoMax [mm]</td>
 </tr>
 <tr class="row-odd"><td>10</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-snowdensmin"><code class="xref any std std-option docutils literal"><span class="pre">snowDensMin</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-snowdensmin"><code class="xref any std std-option docutils literal notranslate"><span class="pre">snowDensMin</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
 <td>Fresh snow density [kg m<sup>-3</sup>]</td>
 </tr>
 <tr class="row-even"><td>11</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-snowdensmax"><code class="xref any std std-option docutils literal"><span class="pre">snowDensMax</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-snowdensmax"><code class="xref any std std-option docutils literal notranslate"><span class="pre">snowDensMax</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
 <td>Maximum snow density [kg m<sup>-3</sup>]</td>
 </tr>
 <tr class="row-odd"><td>12</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-tau-r"><code class="xref any std std-option docutils literal"><span class="pre">tau_r</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-tau-r"><code class="xref any std std-option docutils literal notranslate"><span class="pre">tau_r</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
 <td>Time constant for snow density ageing [-]</td>
 </tr>
 <tr class="row-even"><td>13</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-crwmin"><code class="xref any std std-option docutils literal"><span class="pre">CRWMin</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-crwmin"><code class="xref any std std-option docutils literal notranslate"><span class="pre">CRWMin</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
 <td>Minimum water holding capacity of snow [mm]</td>
 </tr>
 <tr class="row-odd"><td>14</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-crwmax"><code class="xref any std std-option docutils literal"><span class="pre">CRWMax</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-crwmax"><code class="xref any std std-option docutils literal notranslate"><span class="pre">CRWMax</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
 <td>Maximum water holding capacity of snow [mm]</td>
 </tr>
 <tr class="row-even"><td>15</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-preciplimsnow"><code class="xref any std std-option docutils literal"><span class="pre">PrecipLimSnow</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-preciplimsnow"><code class="xref any std std-option docutils literal notranslate"><span class="pre">PrecipLimSnow</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
 <td>Auer (1974) [38]</td>
 </tr>
 <tr class="row-odd"><td>16</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ohmcode-summerwet"><code class="xref any std std-option docutils literal"><span class="pre">OHMCode_SummerWet</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ohmcode-summerwet"><code class="xref any std std-option docutils literal notranslate"><span class="pre">OHMCode_SummerWet</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
 <td>Code for OHM coefficients to use for this surface during wet conditions in summer. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt.</td>
 </tr>
 <tr class="row-even"><td>17</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ohmcode-summerdry"><code class="xref any std std-option docutils literal"><span class="pre">OHMCode_SummerDry</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ohmcode-summerdry"><code class="xref any std std-option docutils literal notranslate"><span class="pre">OHMCode_SummerDry</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
 <td>Code for OHM coefficients to use for this surface during dry conditions in summer. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt.</td>
 </tr>
 <tr class="row-odd"><td>18</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ohmcode-winterwet"><code class="xref any std std-option docutils literal"><span class="pre">OHMCode_WinterWet</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ohmcode-winterwet"><code class="xref any std std-option docutils literal notranslate"><span class="pre">OHMCode_WinterWet</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
 <td>Code for OHM coefficients to use for this surface during wet conditions in winter. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt.</td>
 </tr>
 <tr class="row-even"><td>19</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ohmcode-winterdry"><code class="xref any std std-option docutils literal"><span class="pre">OHMCode_WinterDry</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ohmcode-winterdry"><code class="xref any std std-option docutils literal notranslate"><span class="pre">OHMCode_WinterDry</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
 <td>Code for OHM coefficients to use for this surface during dry conditions in winter. Links to SUEWS_OHMCoefficients.txt . Value of integer is arbitrary but must match code specified in column 1 of SUEWS_OHMCoefficients.txt.</td>
 </tr>
 <tr class="row-odd"><td>20</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ohmthresh-sw"><code class="xref any std std-option docutils literal"><span class="pre">OHMThresh_SW</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ohmthresh-sw"><code class="xref any std std-option docutils literal notranslate"><span class="pre">OHMThresh_SW</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
 <td>Temperature threshold determining whether summer/winter OHM coefficients are applied [°C] If 5-day running mean air temperature is greater than or equal to this threshold, OHM coefficients for summertime are applied; otherwise coefficients for wintertime are applied. Not actually used for Snow surface as winter wet conditions always assumed.</td>
 </tr>
 <tr class="row-even"><td>21</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ohmthresh-wd"><code class="xref any std std-option docutils literal"><span class="pre">OHMThresh_WD</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal"><span class="pre">MD</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ohmthresh-wd"><code class="xref any std std-option docutils literal notranslate"><span class="pre">OHMThresh_WD</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-md"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MD</span></code></a></td>
 <td>Soil moisture threshold determining whether wet/dry OHM coefficients are applied [-] If soil moisture (as a proportion of maximum soil moisture capacity) exceeds this threshold for bare soil and vegetated surfaces, OHM coefficients for wet conditions are applied; otherwise coefficients for dry coefficients are applied. Note that OHM coefficients for wet conditions are applied if the surface is wet. Not actually used for Snow surface as winter wet conditions always assumed.</td>
 </tr>
 <tr class="row-odd"><td>22</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-estmcode"><code class="xref any std std-option docutils literal"><span class="pre">ESTMCode</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-estmcode"><code class="xref any std std-option docutils literal notranslate"><span class="pre">ESTMCode</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
 <td>For paved and building surfaces, it is possible to specify multiple codes per grid (3 for paved, 5 for buildings) using SUEWS_SiteSelect.txt . In this case, set ESTM code here to zero.</td>
 </tr>
 <tr class="row-even"><td>23</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-anohm-cp"><code class="xref any std std-option docutils literal"><span class="pre">AnOHM_Cp</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-anohm-cp"><code class="xref any std std-option docutils literal notranslate"><span class="pre">AnOHM_Cp</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Volumetric heat capacity for this surface to use in AnOHM [J m<sup>-3</sup>]</td>
 </tr>
 <tr class="row-odd"><td>24</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-anohm-kk"><code class="xref any std std-option docutils literal"><span class="pre">AnOHM_Kk</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-anohm-kk"><code class="xref any std std-option docutils literal notranslate"><span class="pre">AnOHM_Kk</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Thermal conductivity for this surface to use in AnOHM [W m K<sup>-1</sup>]</td>
 </tr>
 <tr class="row-even"><td>25</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-anohm-ch"><code class="xref any std std-option docutils literal"><span class="pre">AnOHM_Ch</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-anohm-ch"><code class="xref any std std-option docutils literal notranslate"><span class="pre">AnOHM_Ch</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Bulk transfer coefficient for this surface to use in AnOHM [-]</td>
 </tr>
 </tbody>
@@ -346,7 +354,9 @@ For a detailed description of the variables, see Järvi et al.
 
 
            </div>
-           
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
@@ -368,7 +378,7 @@ For a detailed description of the variables, see Järvi et al.
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -387,7 +397,6 @@ For a detailed description of the variables, see Järvi et al.
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
             VERSION:'2018a.alpha',
-            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
@@ -397,7 +406,7 @@ For a detailed description of the variables, see Järvi et al.
       <script type="text/javascript" src="../../_static/jquery.js"></script>
       <script type="text/javascript" src="../../_static/underscore.js"></script>
       <script type="text/javascript" src="../../_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 
@@ -406,13 +415,14 @@ For a detailed description of the variables, see Järvi et al.
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
   
 
+  
+  
   <script type="text/javascript">
       jQuery(function () {
-          
-          SphinxRtdTheme.Navigation.enableSticky();
-          
+          SphinxRtdTheme.StickyNav.enable();
       });
-  </script> 
+  </script>
+   
 
 </body>
 </html>

@@ -25,20 +25,29 @@
   
 
   
+  
     <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="6.6.2.1. ESTMinput" href="ESTMinput.html" />
-    <link rel="prev" title="6.5.2.1. CBLinput" href="../CBL_input/CBLinput.html" /> 
+  
+
+  
+    <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="SUEWS 2018a.alpha documentation" href="../../index.html"/>
+        <link rel="up" title="6. Input files" href="../input_files.html"/>
+        <link rel="next" title="6.6.2.1. ESTMinput" href="ESTMinput.html"/>
+        <link rel="prev" title="6.5.2.1. CBLinput" href="../CBL_input/CBLinput.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav">
+<body class="wy-body-for-nav" role="document">
 
    
   <div class="wy-grid-for-nav">
@@ -112,7 +121,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../version-history.html">12. Version History</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../differences-suews-lumps-fraise.html">13. Differences between SUEWS, LUMPS and FRAISE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../references.html">14. References</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../typical_values.html">15. Typical Values</a></li>
 </ul>
 
             
@@ -124,7 +132,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" aria-label="top navigation">
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">SUEWS</a>
@@ -132,10 +140,9 @@
       </nav>
 
 
+      
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
 
@@ -227,7 +234,7 @@ storage heat flux.</p>
 <span id="id2"></span><h2>6.6.2. ESTMinput.nml<a class="headerlink" href="#estminput-nml" title="Permalink to this headline">¶</a></h2>
 <p>ESTMinput.nml specifies the model settings and default values.</p>
 <p>A sample file of <strong>ESTMinput.nml</strong> looks like</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>&amp;ESTMinput
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&amp;ESTMinput
 TsurfChoice= 0
 evolveTibld= 0      ! !!!!!FO!!!!! 0 originally
 ibldCHmod  = 0
@@ -245,15 +252,15 @@ THEAT_FIX  = 19.
 <p>The parameters and their setting instructions
 are provided through <a class="reference internal" href="ESTMinput.html#estminput"><span class="std std-ref">the links below</span></a>:</p>
 <table class="hlist"><tr><td><ul class="simple">
-<li><a class="reference internal" href="ESTMinput.html#cmdoption-arg-tsurfchoice"><code class="xref std std-option docutils literal"><span class="pre">TsurfChoice</span></code></a></li>
-<li><a class="reference internal" href="ESTMinput.html#cmdoption-arg-evolvetibld"><code class="xref std std-option docutils literal"><span class="pre">evolveTibld</span></code></a></li>
-<li><a class="reference internal" href="ESTMinput.html#cmdoption-arg-ibldchmod"><code class="xref std std-option docutils literal"><span class="pre">IbldCHmod</span></code></a></li>
-<li><a class="reference internal" href="ESTMinput.html#cmdoption-arg-lbc-soil"><code class="xref std std-option docutils literal"><span class="pre">LBC_soil</span></code></a></li>
+<li><a class="reference internal" href="ESTMinput.html#cmdoption-arg-tsurfchoice"><code class="xref std std-option docutils literal notranslate"><span class="pre">TsurfChoice</span></code></a></li>
+<li><a class="reference internal" href="ESTMinput.html#cmdoption-arg-evolvetibld"><code class="xref std std-option docutils literal notranslate"><span class="pre">evolveTibld</span></code></a></li>
+<li><a class="reference internal" href="ESTMinput.html#cmdoption-arg-ibldchmod"><code class="xref std std-option docutils literal notranslate"><span class="pre">IbldCHmod</span></code></a></li>
+<li><a class="reference internal" href="ESTMinput.html#cmdoption-arg-lbc-soil"><code class="xref std std-option docutils literal notranslate"><span class="pre">LBC_soil</span></code></a></li>
 </ul>
 </td><td><ul class="simple">
-<li><a class="reference internal" href="ESTMinput.html#cmdoption-arg-theat-fix"><code class="xref std std-option docutils literal"><span class="pre">Theat_fix</span></code></a></li>
-<li><a class="reference internal" href="ESTMinput.html#cmdoption-arg-theat-off"><code class="xref std std-option docutils literal"><span class="pre">Theat_off</span></code></a></li>
-<li><a class="reference internal" href="ESTMinput.html#cmdoption-arg-theat-on"><code class="xref std std-option docutils literal"><span class="pre">Theat_on</span></code></a></li>
+<li><a class="reference internal" href="ESTMinput.html#cmdoption-arg-theat-fix"><code class="xref std std-option docutils literal notranslate"><span class="pre">Theat_fix</span></code></a></li>
+<li><a class="reference internal" href="ESTMinput.html#cmdoption-arg-theat-off"><code class="xref std std-option docutils literal notranslate"><span class="pre">Theat_off</span></code></a></li>
+<li><a class="reference internal" href="ESTMinput.html#cmdoption-arg-theat-on"><code class="xref std std-option docutils literal notranslate"><span class="pre">Theat_on</span></code></a></li>
 </ul>
 </td></tr></table>
 <div class="toctree-wrapper compound">
@@ -264,12 +271,6 @@ are provided through <a class="reference internal" href="ESTMinput.html#estminpu
 <p><a class="reference internal" href="#ssss-yyyy-estm-ts-data-tt-txt"><span class="std std-ref">SSss_YYYY_ESTM_Ts_data_tt.txt</span></a> contains a time-series of input surface
 temperature for roof, wall, ground and internal elements.</p>
 <table border="1" class="colwidths-auto docutils">
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">No.</th>
 <th class="head">Column Name</th>
@@ -279,68 +280,68 @@ temperature for roof, wall, ground and internal elements.</p>
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td>1</td>
-<td><a class="reference internal" href="../SUEWS_SiteInfo/Input_Options.html#cmdoption-arg-iy"><code class="xref any std std-option docutils literal"><span class="pre">iy</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="../SUEWS_SiteInfo/Input_Options.html#cmdoption-arg-iy"><code class="xref any std std-option docutils literal notranslate"><span class="pre">iy</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Year [YYYY]</td>
 </tr>
 <tr class="row-odd"><td>2</td>
-<td><a class="reference internal" href="../SUEWS_SiteInfo/Input_Options.html#cmdoption-arg-id"><code class="xref any std std-option docutils literal"><span class="pre">id</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="../SUEWS_SiteInfo/Input_Options.html#cmdoption-arg-id"><code class="xref any std std-option docutils literal notranslate"><span class="pre">id</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Day of year [DOY]</td>
 </tr>
 <tr class="row-even"><td>3</td>
-<td><a class="reference internal" href="../SUEWS_SiteInfo/Input_Options.html#cmdoption-arg-it"><code class="xref any std std-option docutils literal"><span class="pre">it</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="../SUEWS_SiteInfo/Input_Options.html#cmdoption-arg-it"><code class="xref any std std-option docutils literal notranslate"><span class="pre">it</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Hour [H]</td>
 </tr>
 <tr class="row-odd"><td>4</td>
-<td><a class="reference internal" href="../SUEWS_SiteInfo/Input_Options.html#cmdoption-arg-imin"><code class="xref any std std-option docutils literal"><span class="pre">imin</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="../SUEWS_SiteInfo/Input_Options.html#cmdoption-arg-imin"><code class="xref any std std-option docutils literal notranslate"><span class="pre">imin</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Minute [M]</td>
 </tr>
 <tr class="row-even"><td>5</td>
-<td><a class="reference internal" href="../SUEWS_SiteInfo/Input_Options.html#cmdoption-arg-tiair"><code class="xref any std std-option docutils literal"><span class="pre">Tiair</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="../SUEWS_SiteInfo/Input_Options.html#cmdoption-arg-tiair"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Tiair</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Indoor air temperature [˚C]</td>
 </tr>
 <tr class="row-odd"><td>6</td>
-<td><a class="reference internal" href="../SUEWS_SiteInfo/Input_Options.html#cmdoption-arg-tsurf"><code class="xref any std std-option docutils literal"><span class="pre">Tsurf</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="../SUEWS_SiteInfo/Input_Options.html#cmdoption-arg-tsurf"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Tsurf</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Bulk surface temperature [˚C] (used when TsurfCoice = 0)</td>
 </tr>
 <tr class="row-even"><td>7</td>
-<td><a class="reference internal" href="../SUEWS_SiteInfo/Input_Options.html#cmdoption-arg-troof"><code class="xref any std std-option docutils literal"><span class="pre">Troof</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="../SUEWS_SiteInfo/Input_Options.html#cmdoption-arg-troof"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Troof</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Roof surface temperature [˚C] (used when TsurfChoice = 1 or 2)</td>
 </tr>
 <tr class="row-odd"><td>8</td>
-<td><a class="reference internal" href="../SUEWS_SiteInfo/Input_Options.html#cmdoption-arg-troad"><code class="xref any std std-option docutils literal"><span class="pre">Troad</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="../SUEWS_SiteInfo/Input_Options.html#cmdoption-arg-troad"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Troad</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Ground surface temperature [˚C] (used when TsurfChoice = 1 or 2)</td>
 </tr>
 <tr class="row-even"><td>9</td>
-<td><a class="reference internal" href="../SUEWS_SiteInfo/Input_Options.html#cmdoption-arg-twall"><code class="xref any std std-option docutils literal"><span class="pre">Twall</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="../SUEWS_SiteInfo/Input_Options.html#cmdoption-arg-twall"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Twall</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>Wall surface temperature [˚C] (used when TsurfChoice = 1)</td>
 </tr>
 <tr class="row-odd"><td>10</td>
-<td><a class="reference internal" href="../SUEWS_SiteInfo/Input_Options.html#cmdoption-arg-twall-n"><code class="xref any std std-option docutils literal"><span class="pre">Twall_n</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="../SUEWS_SiteInfo/Input_Options.html#cmdoption-arg-twall-n"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Twall_n</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>North-facing wall surface temperature [˚C] (used when TsurfChoice = 2)</td>
 </tr>
 <tr class="row-even"><td>11</td>
-<td><a class="reference internal" href="../SUEWS_SiteInfo/Input_Options.html#cmdoption-arg-twall-e"><code class="xref any std std-option docutils literal"><span class="pre">Twall_e</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="../SUEWS_SiteInfo/Input_Options.html#cmdoption-arg-twall-e"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Twall_e</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>East-facing wall surface temperature [˚C] (used when TsurfChoice = 2)</td>
 </tr>
 <tr class="row-odd"><td>12</td>
-<td><a class="reference internal" href="../SUEWS_SiteInfo/Input_Options.html#cmdoption-arg-twall-s"><code class="xref any std std-option docutils literal"><span class="pre">Twall_s</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="../SUEWS_SiteInfo/Input_Options.html#cmdoption-arg-twall-s"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Twall_s</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>South-facing wall surface temperature [˚C] (used when TsurfChoice = 2)</td>
 </tr>
 <tr class="row-even"><td>13</td>
-<td><a class="reference internal" href="../SUEWS_SiteInfo/Input_Options.html#cmdoption-arg-twall-w"><code class="xref any std std-option docutils literal"><span class="pre">Twall_w</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="../SUEWS_SiteInfo/Input_Options.html#cmdoption-arg-twall-w"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Twall_w</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
 <td>West-facing wall surface temperature [˚C] (used when TsurfChoice = 2)</td>
 </tr>
 </tbody>
@@ -350,7 +351,9 @@ temperature for roof, wall, ground and internal elements.</p>
 
 
            </div>
-           
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
@@ -372,7 +375,7 @@ temperature for roof, wall, ground and internal elements.</p>
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -391,7 +394,6 @@ temperature for roof, wall, ground and internal elements.</p>
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
             VERSION:'2018a.alpha',
-            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
@@ -401,7 +403,7 @@ temperature for roof, wall, ground and internal elements.</p>
       <script type="text/javascript" src="../../_static/jquery.js"></script>
       <script type="text/javascript" src="../../_static/underscore.js"></script>
       <script type="text/javascript" src="../../_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 
@@ -410,13 +412,14 @@ temperature for roof, wall, ground and internal elements.</p>
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
   
 
+  
+  
   <script type="text/javascript">
       jQuery(function () {
-          
-          SphinxRtdTheme.Navigation.enableSticky();
-          
+          SphinxRtdTheme.StickyNav.enable();
       });
-  </script> 
+  </script>
+   
 
 </body>
 </html>
