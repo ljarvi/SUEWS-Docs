@@ -25,29 +25,20 @@
   
 
   
-  
     <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  
-
-  
-    <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
-  
-
-  
-        <link rel="index" title="Index"
-              href="../../genindex.html"/>
-        <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="SUEWS 2018a.alpha documentation" href="../../index.html"/>
-        <link rel="up" title="6.2. SUEWS_SiteInfo.xlsm" href="SUEWS_SiteInfo.html"/>
-        <link rel="next" title="6.2.2. SUEWS_Conductance.txt" href="SUEWS_Conductance.html"/>
-        <link rel="prev" title="6.2. SUEWS_SiteInfo.xlsm" href="SUEWS_SiteInfo.html"/> 
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="6.2.2. SUEWS_Conductance.txt" href="SUEWS_Conductance.html" />
+    <link rel="prev" title="6.2. SUEWS_SiteInfo.xlsm" href="SUEWS_SiteInfo.html" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -128,6 +119,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../version-history.html">12. Version History</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../differences-suews-lumps-fraise.html">13. Differences between SUEWS, LUMPS and FRAISE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../references.html">14. References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../typical_values.html">15. Typical Values</a></li>
 </ul>
 
             
@@ -139,7 +131,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">SUEWS</a>
@@ -147,9 +139,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -224,58 +217,58 @@ case all columns here except Code and BaseTHDD should be set to ’-999’.</p>
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td>1</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Code</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code"><code class="xref any std std-option docutils literal"><span class="pre">Code</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
 <td>Code linking to the AnthropogenicCode column in SUEWS_SiteSelect.txt . Value of integer is arbitrary but must match code specified in SUEWS_SiteSelect.txt.</td>
 </tr>
 <tr class="row-odd"><td>2</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-basethdd"><code class="xref any std std-option docutils literal notranslate"><span class="pre">BaseTHDD</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-basethdd"><code class="xref any std std-option docutils literal"><span class="pre">BaseTHDD</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
 <td>Base temperature for heating degree days [°C] e.g. Sailor and Vasireddy (2006) [39]</td>
 </tr>
 <tr class="row-even"><td>3</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-qf-a-weekday"><code class="xref any std std-option docutils literal notranslate"><span class="pre">QF_A_Weekday</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a> <a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-qf-a-weekday"><code class="xref any std std-option docutils literal"><span class="pre">QF_A_Weekday</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a> <a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal"><span class="pre">O</span></code></a></td>
 <td>Use with AnthropHeatChoice = 2 Example values [W m<sup>-2</sup> (Cap ha-1) -1 ] 0.3081 Järvi et al. (2011) [1]  0.1 Järvi et al. (2014) [15]</td>
 </tr>
 <tr class="row-odd"><td>4</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-qf-b-weekday"><code class="xref any std std-option docutils literal notranslate"><span class="pre">QF_B_Weekday</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a> <a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-qf-b-weekday"><code class="xref any std std-option docutils literal"><span class="pre">QF_B_Weekday</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a> <a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal"><span class="pre">O</span></code></a></td>
 <td>Use with AnthropHeatMethod = 2 Example values [W m<sup>-2</sup> K<sup>-1</sup> (Cap ha -1 ) -1 ] 0.0099 Järvi et al. (2011) [1]  0.0099 Järvi et al. (2014) [15]</td>
 </tr>
 <tr class="row-even"><td>5</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-qf-c-weekday"><code class="xref any std std-option docutils literal notranslate"><span class="pre">QF_C_Weekday</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a> <a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-qf-c-weekday"><code class="xref any std std-option docutils literal"><span class="pre">QF_C_Weekday</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a> <a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal"><span class="pre">O</span></code></a></td>
 <td>Use with AnthropHeatMethod = 2 Example values [W m<sup>-2</sup> K<sup>-1</sup> (Cap ha -1 ) -1 ] 0.0102 Järvi et al. (2011) [1]  0.0102 Järvi et al. (2014) [15]</td>
 </tr>
 <tr class="row-odd"><td>6</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-qf-a-weekend"><code class="xref any std std-option docutils literal notranslate"><span class="pre">QF_A_Weekend</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a> <a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-qf-a-weekend"><code class="xref any std std-option docutils literal"><span class="pre">QF_A_Weekend</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a> <a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal"><span class="pre">O</span></code></a></td>
 <td>Use with AnthropHeatMethod = 2 Example values [W m<sup>-2</sup> (Cap ha -1 ) -1 ] 0.3081 Järvi et al. (2011) [1]  0.1 Järvi et al. (2014) [15]</td>
 </tr>
 <tr class="row-even"><td>7</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-qf-b-weekend"><code class="xref any std std-option docutils literal notranslate"><span class="pre">QF_B_Weekend</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a> <a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-qf-b-weekend"><code class="xref any std std-option docutils literal"><span class="pre">QF_B_Weekend</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a> <a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal"><span class="pre">O</span></code></a></td>
 <td>Use with AnthropHeatMethod = 2 Example values [W m<sup>-2</sup> K<sup>-1</sup> (Cap ha -1 ) -1 ] 0.0099 Järvi et al. (2011) [1]  0.0099 Järvi et al. (2014) [15]</td>
 </tr>
 <tr class="row-odd"><td>8</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-qf-c-weekend"><code class="xref any std std-option docutils literal notranslate"><span class="pre">QF_C_Weekend</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a> <a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-qf-c-weekend"><code class="xref any std std-option docutils literal"><span class="pre">QF_C_Weekend</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a> <a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal"><span class="pre">O</span></code></a></td>
 <td>Example values [W m<sup>-2</sup> K<sup>-1</sup> (Cap ha -1 ) -1 ] 0.0102 Järvi et al. (2011) [1]  0.0102 Järvi et al. (2014) [15]</td>
 </tr>
 <tr class="row-even"><td>9</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ahmin"><code class="xref any std std-option docutils literal notranslate"><span class="pre">AHMin</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a> <a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ahmin"><code class="xref any std std-option docutils literal"><span class="pre">AHMin</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a> <a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal"><span class="pre">O</span></code></a></td>
 <td>Use with AnthropHeatMethod = 1</td>
 </tr>
 <tr class="row-odd"><td>10</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ahslope"><code class="xref any std std-option docutils literal notranslate"><span class="pre">AHSlope</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a> <a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-ahslope"><code class="xref any std std-option docutils literal"><span class="pre">AHSlope</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a> <a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal"><span class="pre">O</span></code></a></td>
 <td>Use with AnthropHeatMethod = 1</td>
 </tr>
 <tr class="row-even"><td>11</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-tcritic"><code class="xref any std std-option docutils literal notranslate"><span class="pre">TCritic</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a> <a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal notranslate"><span class="pre">O</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-tcritic"><code class="xref any std std-option docutils literal"><span class="pre">TCritic</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a> <a class="reference internal" href="../../notation.html#term-o"><code class="xref any std std-term docutils literal"><span class="pre">O</span></code></a></td>
 <td>Use with AnthropHeatMethod = 1</td>
 </tr>
 </tbody>
@@ -284,9 +277,7 @@ case all columns here except Code and BaseTHDD should be set to ’-999’.</p>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -308,7 +299,7 @@ case all columns here except Code and BaseTHDD should be set to ’-999’.</p>
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -327,6 +318,7 @@ case all columns here except Code and BaseTHDD should be set to ’-999’.</p>
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
             VERSION:'2018a.alpha',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
@@ -336,7 +328,7 @@ case all columns here except Code and BaseTHDD should be set to ’-999’.</p>
       <script type="text/javascript" src="../../_static/jquery.js"></script>
       <script type="text/javascript" src="../../_static/underscore.js"></script>
       <script type="text/javascript" src="../../_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 
@@ -345,14 +337,13 @@ case all columns here except Code and BaseTHDD should be set to ’-999’.</p>
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
   
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

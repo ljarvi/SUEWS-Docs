@@ -25,29 +25,20 @@
   
 
   
-  
     <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  
-
-  
-    <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
-  
-
-  
-        <link rel="index" title="Index"
-              href="../../genindex.html"/>
-        <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="SUEWS 2018a.alpha documentation" href="../../index.html"/>
-        <link rel="up" title="6.2. SUEWS_SiteInfo.xlsm" href="SUEWS_SiteInfo.html"/>
-        <link rel="next" title="6.2.7. SUEWS_SiteSelect.txt" href="SUEWS_SiteSelect.html"/>
-        <link rel="prev" title="6.2.5. SUEWS_OHMCoefficients.txt" href="SUEWS_OHMCoefficients.html"/> 
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="6.2.7. SUEWS_SiteSelect.txt" href="SUEWS_SiteSelect.html" />
+    <link rel="prev" title="6.2.5. SUEWS_OHMCoefficients.txt" href="SUEWS_OHMCoefficients.html" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -128,6 +119,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../version-history.html">12. Version History</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../differences-suews-lumps-fraise.html">13. Differences between SUEWS, LUMPS and FRAISE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../references.html">14. References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../typical_values.html">15. Typical Values</a></li>
 </ul>
 
             
@@ -139,7 +131,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">SUEWS</a>
@@ -147,9 +139,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -235,13 +228,13 @@ forcing file, the energy and water use profiles are not used.</p>
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td>1</td>
-<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code"><code class="xref any std std-option docutils literal notranslate"><span class="pre">Code</span></code></a></td>
-<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal notranslate"><span class="pre">L</span></code></a></td>
+<td><a class="reference internal" href="Input_Options.html#cmdoption-arg-code"><code class="xref any std std-option docutils literal"><span class="pre">Code</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-21"><code class="xref any std std-term docutils literal"><span class="pre">L</span></code></a></td>
 <td>Code linking to SUEWS_SiteSelect.txt for snow surfaces (SnowCode). Value of integer is arbitrary but must match code specified in SUEWS_SiteSelect.txt.</td>
 </tr>
 <tr class="row-odd"><td>2</td>
 <td>2-25</td>
-<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal notranslate"><span class="pre">MU</span></code></a></td>
+<td><a class="reference internal" href="../../notation.html#term-mu"><code class="xref any std std-term docutils literal"><span class="pre">MU</span></code></a></td>
 <td>Multiplier for each hour of the day [-] for energy and water use. For SnowClearing, set those hours to 1 when snow removal from paved and roof surface is allowed (0 otherwise) if the snow removal limits set in the SUEWS_Non Veg.txt (SnowLimR emove column) are exceeded.</td>
 </tr>
 </tbody>
@@ -250,9 +243,7 @@ forcing file, the energy and water use profiles are not used.</p>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -274,7 +265,7 @@ forcing file, the energy and water use profiles are not used.</p>
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -293,6 +284,7 @@ forcing file, the energy and water use profiles are not used.</p>
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
             VERSION:'2018a.alpha',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
@@ -302,7 +294,7 @@ forcing file, the energy and water use profiles are not used.</p>
       <script type="text/javascript" src="../../_static/jquery.js"></script>
       <script type="text/javascript" src="../../_static/underscore.js"></script>
       <script type="text/javascript" src="../../_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 
@@ -311,14 +303,13 @@ forcing file, the energy and water use profiles are not used.</p>
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
   
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

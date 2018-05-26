@@ -69,3 +69,4 @@ further details v2017a:
    version-history
    differences-suews-lumps-fraise
    references
+   typical_values
