@@ -2916,8 +2916,7 @@ Input_Options
 .. option:: StorageMin
 
 	:Description:
-		Minimum water storage capacity for upper surfaces (i.e. canopy). Min/max values are to account for seasonal variation (e.g. leaf-on/leaf-off differences for vegetated surfaces). Not currently used for non-vegetated surfaces - set the same as StorageMax. Example values [mm] 0.48 Paved 0.25 Bldgs 0.8 BSoil Minimum water storage capacity for upper surfaces (i.e. canopy). Min/max values are to account for seasonal variation (e.g. leaf-off/leaf-on differences for vegetated surfaces). Example values [mm] 1.3 EveTr Breuer et al. (2003) [36]  0.3 DecTr Breuer et al. (2003) [36]  1.9 Grass Breuer et al. (2003) [36]  Minimum water storage capacity for upper surfaces (i.e. canopy). Min/max values are to account for seasonal variation - not used for water surfaces. Example values [mm] 0.5 Water
-
+	Minimum water storage capacity for upper surfaces (i.e. canopy). Min/max values are to account for seasonal variationMinimum water storage capacity for upper surfaces (i.e. canopy). Min/max values are to account for seasonal variation
 	:Configuration:
 		.. csv-table::
 			:class: longtable
@@ -3813,7 +3812,7 @@ Input_Options
 .. option:: WetThreshold
 
 	:Description:
-		Depth of water which determines whether evaporation occurs from a partially wet or completely wet surface. Example values [mm] 0.6 Paved 0.6 Bldgs 1. BSoil Depth of water which determines whether evaporation occurs from a partially wet or completely wet surface. Example values [mm] 1.8 EveTr 1. DecTr 2. Grass Depth of water which determines whether evaporation occurs from a partially wet or completely wet surface. Example values [mm] 0.5 Water
+     Depth of water which determines whether evaporation occurs from a partially wet or completely wet surface.
 
 	:Configuration:
 		.. csv-table::
