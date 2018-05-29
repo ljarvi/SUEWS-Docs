@@ -2916,7 +2916,7 @@ Input_Options
 .. option:: StorageMin
 
 	:Description:
-	Minimum water storage capacity for upper surfaces (i.e. canopy). Min/max values are to account for seasonal variationMinimum water storage capacity for upper surfaces (i.e. canopy). Min/max values are to account for seasonal variation
+		Minimum water storage capacity for upper surfaces (i.e. canopy). Min/max values are to account for seasonal variationMinimum water storage capacity for upper surfaces (i.e. canopy). Min/max values are to account for seasonal variation
 	:Configuration:
 		.. csv-table::
 			:class: longtable
@@ -3812,7 +3812,7 @@ Input_Options
 .. option:: WetThreshold
 
 	:Description:
-     Depth of water which determines whether evaporation occurs from a partially wet or completely wet surface.
+		Depth of water which determines whether evaporation occurs from a partially wet or completely wet surface.
 
 	:Configuration:
 		.. csv-table::
