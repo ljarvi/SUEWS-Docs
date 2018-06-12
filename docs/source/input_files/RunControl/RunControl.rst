@@ -29,8 +29,7 @@ The parameters and their setting instructions are provided through the links bel
         + :option:`SnowUse`
         + :option:`SOLWEIGUse`
         + :option:`NetRadiationMethod`
-        + :option:`AnthropHeatMethod`
-        + :option:`AnthropCO2Method`
+        + :option:`EmissionMethod`
         + :option:`StorageHeatMethod`
         + :option:`OHMIncQF`
         + :option:`StabilityMethod`
