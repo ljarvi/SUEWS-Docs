@@ -55,7 +55,7 @@ Model run options
 			:widths: auto
 
 
-.. option:: AnthropHeatMethod
+.. option:: EmissionsMethod
 
 	:Requirement:
 		Required
@@ -63,20 +63,7 @@ Model run options
 		Determines method for QF calculation.
 	:Configuration:
 		.. csv-table::
-			:file: AnthropHeatMethod.csv
-			:header-rows: 1
-			:widths: auto
-
-
-.. option:: AnthropCO2Method
-
-	:Requirement:
-		Required
-	:Description:
-		Determines method for CO2 calculation.
-	:Configuration:
-		.. csv-table::
-			:file: AnthropCO2Method.csv
+			:file: AnthropogenicHeat.csv
 			:header-rows: 1
 			:widths: auto
 
